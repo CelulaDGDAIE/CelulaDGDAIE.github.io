@@ -1,0 +1,150 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+.lg-view{
+   display:inline-block;
+}
+
+.sm-view{
+   display:none;
+}
+.frances{
+	text-indent: -4em;
+	margin-left: 6em;
+}
+.frances2{
+	margin-left: 1em;
+}
+.responsive-google-slides {
+position: relative;
+padding-bottom: 56.25%; /* 16:9 Ratio */
+height: 0;
+overflow: hidden;
+}
+.responsive-google-slides iframe {
+border: 0;
+position: absolute;
+top: 0;
+left: 0;
+width: 100% !important;
+height: 100% !important;
+}
+
+#imagen-introduccion{
+    width:75%;
+    height:75%;
+}
+
+
+#modulo1-imagen-introduccion {
+    width: 40%;
+}
+
+#modulo1-imagen-proposito{
+    width:40%;
+}
+
+#modulo1-tema1-imagen-1 {
+    width: 30%;
+}
+
+#modulo1-tema2-imagen-1 {
+    width: 30%;
+}
+
+#modulo1-tema3-imagen-1 {
+    width: 25%;
+}
+
+#modulo1-tema4-imagen-1 {
+    width: 40%;
+}
+br.responsivo {
+	display: none; 
+}
+
+
+
+/*#imagen-tema-1 {
+    width: 45%;    
+}
+
+#imagen-tema-2 {
+    width: 45%;
+}
+
+#imagen-tema-4 {
+    width: 45%;
+}
+*/
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+/*@media (min-width: 576px) {
+
+}
+*/
+/* Medium devices (tablets, 768px and up)*/
+/*@media (min-width: 768px) {
+    
+}*/
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #imagen-introduccion {
+        width: 65%;
+        height: 65%;
+    }
+
+    #imagen-tema-1 {
+        width: 35%;
+    }
+
+    #imagen-tema-2 {
+        width: 35%;
+    }
+
+    #imagen-tema-4 {
+        width: 30%;
+    }
+	
+}
+
+@media screen and (max-width: 600px) {
+	#tabla-evaluacion{
+		text-align:center;
+		width:360px;
+		height:340px;
+		overflow:auto;
+	}
+	.frances{
+		text-indent: 0em;
+		margin-left: 0em;
+	}
+	.frances2{
+	margin-left: 0em;
+}
+	br.responsivo {
+		display: inline; 
+	}
+	 .lg-view{
+       display:none;
+    }
+
+    .sm-view{
+       display:inline-block;
+    }
+	.modulolargo{
+		font-size: 14px;
+	}
+	.modulolargo2{
+		font-size: 7px;
+	}
+	
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+/*@media (min-width: 1200px) {
+    
+}*/
+

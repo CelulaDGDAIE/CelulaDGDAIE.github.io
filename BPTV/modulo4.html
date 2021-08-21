@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/easyScrollDots.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Buenas prácticas para la tutoría virtual</title>
+  </head>
+  <body>
+    <!--Encabezado-->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
+        <div class="container">
+          <div class="navbar-brand pb-0">
+            <div class="row no-gutters mb-1">
+              <div class="col">
+                <img
+                  src="images/logo-profa.png"
+                  class="logo d-inline mr-"
+                  alt="mdb logo"
+                />
+              </div>
+              <div
+                class="col text-secondary d-flex flex-column justify-content-center"
+              >
+                <span class="lg-view h2 font-weight-bold responsivo">Buenas prácticas para la tutoría virtual</span>
+				<span class="sm-view h5 font-weight-bold">Tutoría virtual</span>
+				<p class=" lg-view p-0 m-0 font-weight-bold">
+                  IV. TIC en la tutoría virtual  
+                </p>
+				<p class=" sm-view p-0 m-0 font-weight-bold ">
+                  IV. TIC en la tutoría virtual
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="dropdown"
+            data-target="#menu-indice"
+            aria-controls="menu-indice"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <i class="fas fa-align-justify text-dark"></i>
+          </button>
+          <!--Menú en dispositivos móviles-->
+          <div class="dropdown-menu dropdown-menu-right" id="menu-indice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-secondary text-center p-1">
+                <a
+                  class="text-white"
+                  href="https://www.uv.mx/"
+                  target="_blank"
+                  alt="Ir a Universidad Veracruzana"
+                >
+                  Universidad Veracruzana
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#" class="indice">
+                  <i class="fas fa-home text-primary"></i> Inicio:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-proposito" class="ml-3 indice">
+                  <i class="icon-icono_proposito text-secondary"></i> Propósito:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-introduccion" class="ml-3 indice">
+                  <i class="icon-icono_introduccion text-secondary"></i>
+                  Introducci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-contenido" class="ml-3 indice">
+                  <i class="fas fa-copy text-secondary"></i> Contenido
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-fuentes" class="ml-3 indice">
+                  <i class="icon-icono_fuentes text-secondary"></i> Fuentes de
+                  Informaci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="index.html">
+                  <i class="fas fa-book text-primary"></i> Módulos:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="modulo1.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> I. Sistema Institucional de Tutorías (SIT).
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo2.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> II. Tutoría virtual.
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo3.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> III. Tutor académico virtual.
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo4.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> IV. TIC en la tutoría virtual.
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Menú en dispositivos móviles-->
+        </div>
+      </nav>
+    </header>
+    <!--/Encabezado-->
+        <!--Menú Izquierdo-->
+    <div id="sticky-menu" class="d-none d-lg-block d-lg-flex flex-column">
+      <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="index.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Inicio</em>"
+      >
+        <i class="fas fa-home fa-2x"></i>
+      </a>
+
+      <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="modulo1.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Sistema Institucional de Tutorías (SIT).</em>"
+      >
+        <span class="font-weight-bold lead">I</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="modulo2.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Tutoría virtual.</em>"
+      >
+        <span class="font-weight-bold lead">II</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="modulo3.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Tutor académico virtual.</em>"
+      >
+        <span class="font-weight-bold lead">III</span>
+      </a>
+		<a
+        class="btn btn-lg btn-primary btn-menu"
+        href="modulo4.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>TIC en la tutoría virtual.</em>"
+      >
+        <span class="font-weight-bold lead">IV</span>
+      </a>
+    </div>
+    <!--/Menú Izquierdo-->
+    <!--Propósito-->
+    <section class="bg-primary text-black">
+      <div
+        class="scroll-indicator"
+        id="seccion-proposito"
+        data-scroll-indicator-title="Propósito"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_proposito"></i> Propósito</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 d-flex align-items-center" >
+            <p style="text-align: justify;">Analizar los componentes fundamentales de los entornos de trabajo para la tutoría virtual, haciendo uso de herramientas educativas y medios de comunicación; además de identificar las competencias digitales del tutor académico virtual.</p>
+          </div>
+          <div class="col-6">
+            <figure class="figure">
+              <img
+                src="images/modulo4/1.jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <figcaption class="figure-caption text-right text-black">
+                [1]
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Propósito-->
+    <!--Introducción-->
+    <section class="bg-light text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-introduccion"
+        data-scroll-indicator-title="Introducción"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_introduccion"></i> Introducción</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <figure class="figure" id="modulo1-imagen">
+              <img
+                src="images/modulo4/2.jpg"
+                alt=""
+                class="img-fluid figure-img"
+              />
+              <figcaption class="figure-caption text-white">[2]</figcaption>
+            </figure>
+          </div>
+          <div class="col-9">
+            <p style="text-align: justify;">
+				Las Tecnologías de la Información y Comunicación (TIC) se han posicionado como herramientas básicas en el desarrollo de actividades del quehacer cotidiano como la ciencia, la industria, el comercio y, en general, de toda actividad humana. Las TIC han ampliado la transmisión de información y de conocimientos, además del uso de medios de comunicación en línea, propiciando nuevas estrategias para la tutoría virtual.
+            </p>
+			<p style="text-align: justify;">
+				De manera específica, las TIC han producido importantes cambios en:
+			</p>
+			<ol>
+				<li>La organización de los centros educativos o Instituciones de Educación Superior (IES).</li>
+				<li>Las metodologías de seguimiento.</li>
+				<li>El apoyo a los tutorados en el fortalecimiento de sus procesos.</li>
+				<li>En la forma de informar a los tutorados.</li>
+				<li>En la comunicación sincrónica y asincrónica.</li>
+			</ol>
+			<p style="text-align: justify;">
+				Asimismo, el tutor académico virtual tiene que desarrollar competencias digitales para realizar un proceso de acompañamiento puntual a sus tutorados, entre las que destacan: 
+			</p>
+			<ol>
+				<li>Información y alfabetización informacional.</li>
+				<li>Comunicación y colaboración.</li>
+				<li>Creación de contenido digital.</li>
+				<li>Seguridad.</li>
+				<li>Resolución de problemas.</li>
+			</ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Introducción-->
+    <!--Contenido-->
+    <section class="bg-primary">
+      <div
+        class="scroll-indicator"
+        id="seccion-contenido"
+        data-scroll-indicator-title="Contenido"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="fas fa-copy text-secondary"></i> Contenido</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="list-group">
+              <a
+                href="#seccion-tema-1"
+                class="list-group-item list-group item-action bg-primary text-black indice"
+              >
+               4. TIC en la tutoría virtual.
+              </a>
+			  <a
+                href="#seccion-tema-2"
+                class="list-group-item list-group item-action bg-primary text-black indice"
+              >
+               <span style='margin-left:40pt;'>4.1. Competencias digitales del tutor virtual.</span>
+              </a>
+			  <a
+                href="#seccion-tema-3"
+                class="list-group-item list-group item-action bg-primary text-black indice"
+              >
+               <span style='margin-left:40pt;'>4.2. Entornos virtuales de trabajo y herramientas educativas.</span>
+              </a>
+			  <a
+                href="#seccion-tema-4"
+                class="list-group-item list-group item-action bg-primary text-black indice"
+              >
+               <span style='margin-left:40pt;'>4.3. Medios de comunicación en los entornos en línea.</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Contenido-->
+    <!--Fuentes de Información-->
+    <section class="bg-light text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-fuentes"
+        data-scroll-indicator-title="Fuentes de Información"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header bg-primary" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-black"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Básicas
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body text-dark">
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Andrade, L., &amp; Andrade, M. (2017). Uso de las r&uacute;bricas en ambientes virtuales de aprendizaje. <em>Revista Educaci&oacute;n y Humanismo, 19</em>(32), 102-110. <a href="http://dx.doi.org/10.17081/eduhum.19.32.2535" target="_blank">http://dx.doi.org/10.17081/eduhum.19.32.2535</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Fern&aacute;ndez-Prieto, M. S. (2015). La aplicaci&oacute;n de las nuevas tecnolog&iacute;as en la educaci&oacute;n.&nbsp;<em>Tendencias Pedag&oacute;gicas,&nbsp;6</em>, 139-148. <a href="https://revistas.uam.es/tendenciaspedagogicas/article/view/1811" target="_blank">https://revistas.uam.es/tendenciaspedagogicas/article/view/1811</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Instituto Nacional de Tecnolog&iacute;as Educativas y de Formaci&oacute;n del Profesorado (INTEF). (2017). <em>Marco com&uacute;n de competencia digital docente.</em> Ministerio de Educaci&oacute;n, Cultura y Deporte. <a href="http://educalab.es/documents/10180/12809/marco+competencia+digital+docente+2017/afb07987-1ad6-4b2d-bdc8-58e9faeeccea" target="_blank">http://educalab.es/documents/10180/12809/marco+competencia+digital+docente+2017/afb07987-1ad6-4b2d-bdc8-58e9faeeccea</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Organizaci&oacute;n de las Naciones Unidas para la Educaci&oacute;n, la Ciencia y la Cultura. (2017). <em>74 buenas pr&aacute;cticas docentes. Experiencias con tecnolog&iacute;as en aulas peruanas</em>. UNESCO. <a href="https://repositorio.minedu.gob.pe/handle/20.500.12799/5602" target="_blank">https://repositorio.minedu.gob.pe/handle/20.500.12799/5602</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Prensky, M. (2001). Digital Natives, Digital Immigrants. <em>MCB University Press,</em> 9(5). <a href="https://marcprensky.com/writing/Prensky%20-%20Digital%20Natives,%20Digital%20Immigrants%20-%20Part1.pdf" target="_blank">https://marcprensky.com/writing/Prensky%20-%20Digital%20Natives,%20Digital%20Immigrants%20-%20Part1.pdf</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Rinc&oacute;n, M. L. (2008). Los entornos virtuales como herramientas de asesor&iacute;a acad&eacute;mica en la modalidad a distancia<em>. Revista Virtual Universidad Cat&oacute;lica del Norte, 25. </em><a href="https://www.redalyc.org/pdf/1942/194215513009.pdf" target="_blank">https://www.redalyc.org/pdf/1942/194215513009.pdf</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Santove&ntilde;a, S. M. (2011). Procesos de comunicaci&oacute;n a trav&eacute;s de entornos virtuales y su incidencia en la formaci&oacute;n permanente en red. <em>Revista de Universidad y Sociedad del Conocimiento (RUSC), 8</em>(1), 93-110. <a href="https://core.ac.uk/download/pdf/39015473.pdf" target="_blank">https://core.ac.uk/download/pdf/39015473.pdf</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-primary" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-black"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="true"
+                      aria-controls="collapseTwo"
+                    >
+                      Complementarias
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body text-dark">
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>S&aacute;nchez, C. &amp; Castellanos, A. (2013). Las competencias profesionales del tutor virtual ante las tecnolog&iacute;as emergentes de la sociedad del conocimiento. <em>Edutec. Revista Electr&oacute;nica de Tecnolog&iacute;a Educativa, 44</em>. <a href="http://www.edutec.es/revista/index.php/edutec-e/article/view/319" target="_blank">https://www.edutec.es/revista/index.php/edutec-e/article/view/319</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Silva, J. (2010). El rol del tutor en los entornos virtuales de aprendizaje. <em>Innovaci&oacute;n Educativa, 10</em>(52), 13-23. <a href="https://www.redalyc.org/articulo.oa?id=179420763002" target="_blank">https://www.redalyc.org/articulo.oa?id=179420763002</a>&nbsp;</p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Vel&aacute;squez-Dur&aacute;n, A. (2017). <em>eTraining:</em> aprendizaje colaborativo y desempe&ntilde;o laboral. <em>Education in the Knowledge Society (EKS), 18</em>(4), 53-73. <a href="https://revistas.usal.es/index.php/eks/article/view/eks20171845373" target="_blank">https://revistas.usal.es/index.php/eks/article/view/eks20171845373</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Fuentes de Información-->
+    <!--Tema 1-->
+    <section class="bg-primary text-black">
+      <div
+        class="scroll-indicator"
+        id="seccion-tema-1"
+        data-scroll-indicator-title="4. TIC en la tutoría virtual"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><span class="font-weight-bold">4. TIC en la tutoría virtual</span></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+			<p style="text-align: justify;">
+				La Universidad Veracruzana ha definido las modalidades de atención para la tutoría como los ambientes en los cuales se desarrolla la actividad tutorial, y pueden ser presenciales y no presenciales. En el segundo caso, en la modalidad no presencial, la relación entre el tutor académico y el tutorado está mediada por la distancia física y es predominantemente asincrónica, alcanzando mayor relevancia las Tecnologías de la Información y Comunicación (TIC) y el desarrollo de habilidades digitales para potenciar los procesos de seguimiento, atención oportuna y orientación para tutorados, de tal forma que se les pueda orientar en las decisiones relacionadas con la construcción de su perfil profesional.
+            </p>
+			<div
+			class="scroll-indicator"
+			id="seccion-tema-2"
+			data-scroll-indicator-title="4.1. Competencias digitales del tutor virtual"
+		  ></div>
+			<p style="text-align: justify;">
+				<span class="font-weight-bold">4.1. Competencias digitales del tutor virtual</span>
+            </p>
+			<p style="text-align: justify;">
+				Algunos autores definen a las TIC como el conjunto de herramientas y soportes para la gestión, el tratamiento, el acceso y la distribución de la información; además, señalan una serie de características, entre las que destacan la instantaneidad, la innovación y la facilidad de manipulación.
+            </p>
+			<p style="text-align: justify;">
+				En relación con el tema, se propone el análisis del siguiente texto:
+            </p>
+			<p style="text-align: justify;">
+				La aplicación de las nuevas tecnologías en la educación.
+            </p>
+			<a href="pdfs/tecnologias.pdf" target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+				<span style="display: inline-block;">
+					<object data="images/Boton-Descarga-AZUL.svg" type="image/svg+xml" width="110px" height="50px" style="position: relative; z-index: -1"></object>
+				</span>
+			</a>
+			<p style="text-align: justify;">
+				Dadas las características de las TIC, es importante que los tutores académicos desarrollen competencias digitales que les permitan atender a los llamados nativos digitales, quienes se encuentran cómodos con la tecnología, a tal punto que la entienden como un complemento de su vida cotidiana y que, incluso, la mejora. 
+            </p>
+			<p style="text-align: justify;">
+				Seg&uacute;n el <em>Marco Com&uacute;n de Competencia Digital Docente</em> (INTEF, 2017), la competencia digital implica el uso cr&iacute;tico y seguro de las TIC para el trabajo, el tiempo libre y la comunicaci&oacute;n. Dicho marco contempla cinco competencias digitales b&aacute;sicas para el docente:
+            </p>
+			<ol type="a">
+				<li>Información y alfabetización informacional.</li>
+				<li>Comunicación y colaboración.</li>
+				<li>Creación de contenido digital.</li>
+				<li>Seguridad. </li>
+				<li>Resolución de problemas.</li>
+			</ol>
+			<p style="text-align: justify;">
+				Como fundamento de lo anterior, se presentan los siguientes materiales:
+            </p>
+			<p style="text-align: justify;">
+				<em>Digital Natives, Digital Immigrants.</em>
+            </p>
+			<a href="pdfs/digital.pdf" target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+				<span style="display: inline-block;">
+					<object data="images/Boton-Descarga-AZUL.svg" type="image/svg+xml" width="110px" height="50px" style="position: relative; z-index: -1"></object>
+				</span>
+			</a>
+			<p style="text-align: justify;">
+				<em>Marco común de competencia digital docente. </em>
+            </p>
+			<a href="pdfs/marco.pdf" target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+				<span style="display: inline-block;">
+					<object data="images/Boton-Descarga-AZUL.svg" type="image/svg+xml" width="110px" height="50px" style="position: relative; z-index: -1"></object>
+				</span>
+			</a>
+			<p style="text-align: justify;">
+			Así mismo, se propone para su análisis la siguiente presentación acerca de las TIC en la tutoría virtual:
+			</p>	
+			<figure>
+              <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6100406afee3050d6eccdcaa" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+              <figcaption class="figure-caption text-right text-black">
+                Fuente: Elaboración propia.
+              </figcaption>
+            </figure>
+			<div
+			class="scroll-indicator"
+			id="seccion-tema-3"
+			data-scroll-indicator-title="4.2. Entornos virtuales de trabajo y herramientas educativas"
+		  ></div>
+			<p style="text-align: justify;" class="font-weight-bold">
+				4.2. Entornos virtuales de trabajo y herramientas educativas
+            </p>
+			<p style="text-align: justify;">
+				Los entornos virtuales son aquellos ambientes informáticos digitales que proveen las condiciones para la realización de actividades de aprendizaje, seguimiento, acompañamiento y tutoría, y en los que los tutorados pueden interactuar con su tutor académico, resolver dudas e intercambiar información, así como trabajar conjuntamente para alcanzar un determinado objetivo; además, estos ambientes, en su conjunto, permiten potenciar la comunicación oportuna y objetiva. 
+            </p>
+			<p style="text-align: justify;">
+				En ese sentido, se presentan para su análisis las siguientes lecturas:
+            </p>
+			<p style="text-align: justify;">
+				Uso de las rúbricas en ambientes virtuales de aprendizaje. 
+            </p>
+			<a href="pdfs/rubricas.pdf" target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+				<span style="display: inline-block;">
+					<object data="images/Boton-Descarga-AZUL.svg" type="image/svg+xml" width="110px" height="50px" style="position: relative; z-index: -1"></object>
+				</span>
+			</a>
+			<p style="text-align: justify;">
+				Los entornos virtuales como herramientas de asesoría académica en la modalidad a distancia. 
+            </p>
+			<a href="pdfs/herramientas.pdf" target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+				<span style="display: inline-block;">
+					<object data="images/Boton-Descarga-AZUL.svg" type="image/svg+xml" width="110px" height="50px" style="position: relative; z-index: -1"></object>
+				</span>
+			</a>
+			<p style="text-align: justify;">
+			De igual modo, para reforzar este tema de los entornos virtuales de trabajo y herramientas educativas, se muestra la siguiente presentación:
+			</p>
+			<figure>
+              <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/610040736b59330d469da20b" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+              <figcaption class="figure-caption text-right text-black">
+                Fuente: Elaboración propia.
+              </figcaption>
+            </figure>
+			<div
+				class="scroll-indicator"
+				id="seccion-tema-4"
+				data-scroll-indicator-title="4.3. Medios de comunicación en los entornos en línea"
+			  ></div>
+			<p style="text-align: justify;">
+				<span class="font-weight-bold">4.3. Medios de comunicación en los entornos en línea</span>
+            </p>
+			<p style="text-align: justify;">
+				El conocimiento de los medios de comunicación disponibles y de sus ventajas facilita a los implicados en el proceso de tutoría y, en general, en el proceso de enseñanza-aprendizaje, la transmisión de información de manera eficaz, aumentando las posibilidades de transformar dicha información en conocimiento. Así que el tutor académico virtual debe conocer el proceso de comunicación en línea, y la forma más adecuada de generar mensajes digitales, escritos y/o multimedia.
+            </p>
+			<p style="text-align: justify;">
+				A continuación se propone el análisis de las siguientes lecturas:
+            </p>
+			<p style="text-align: justify;">
+				Procesos de comunicación a través de entornos virtuales y su incidencia en la formación permanente en red. 
+            </p>
+			<a href="pdfs/procesos.pdf" target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+				<span style="display: inline-block;">
+					<object data="images/Boton-Descarga-AZUL.svg" type="image/svg+xml" width="110px" height="50px" style="position: relative; z-index: -1"></object>
+				</span>
+			</a>
+			<p style="text-align: justify;">
+				<em>74 buenas prácticas docentes. Experiencias con tecnología en aulas peruanas.</em>
+            </p>
+			<a href="pdfs/practicas.pdf" target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+				<span style="display: inline-block;">
+					<object data="images/Boton-Descarga-AZUL.svg" type="image/svg+xml" width="110px" height="50px" style="position: relative; z-index: -1"></object>
+				</span>
+			</a>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="alert alert-warning text-dark" role="alert">
+              Para evaluar sus aprendizajes acerca del <span class="font-weight-bold">M&oacute;dulo 4.</span> <span class="font-weight-bold">TIC en la tutor&iacute;a virtual</span>, dir&iacute;jase a la secci&oacute;n de <span class="font-weight-bold">Actividades</span>, e ingrese a la <span class="font-weight-bold">Actividad 2. Dise&ntilde;o de un entorno de trabajo para la tutor&iacute;a virtual </span>y a la<span class="font-weight-bold"> Actividad</span><span class="font-weight-bold"> 3. Gu&iacute;a de buenas pr&aacute;cticas para la tutor&iacute;a virtual</span>, atendiendo las indicaciones para su realizaci&oacute;n.
+            </div>
+          </div>
+        </div>
+        <div class="row bg-light text-white p-2">
+          <div class="col">
+		  <div
+				class="scroll-indicator"
+				id="seccion-actividad"
+				data-scroll-indicator-title="Evaluación Actividad 2"
+			></div>
+            <h4>
+              <span class="font-weight-bold">Actividad 2.</span> Diseño de un entorno de trabajo para la tutoría virtual.
+            </h4>
+            <p class="font-weight-bold">Descripci&oacute;n:</p>
+            <p>Estimadas y estimados participantes, como parte de las actividades para la evaluación del desempeño de este curso-taller, es necesario realizar una propuesta de diseño del "Entorno de trabajo para la tutoría virtual", tomando en cuenta las siguientes instrucciones:</p>
+            <ol>
+				<li>Analizar los materiales de este Módulo 4. TIC en la tutoría virtual.
+					<ol type="a">
+						<li>Presentaci&oacute;n. M&oacute;dulo 4. TIC en la tutor&iacute;a virtual.</li>
+						<li>La aplicaci&oacute;n de las nuevas tecnolog&iacute;as en la educaci&oacute;n.</li>
+						<li><em>74 buenas pr&aacute;cticas docentes: experiencias con tecnolog&iacute;a en aulas peruanas.</em></li>
+						<li>Los entornos virtuales como herramientas de asesor&iacute;a acad&eacute;mica en la modalidad a distancia.</li>
+						<li>Procesos de comunicaci&oacute;n a trav&eacute;s de entornos virtuales y su incidencia en la formaci&oacute;n permanente en red.</li>
+						<li>Las competencias profesionales del tutor virtual ante las tecnolog&iacute;as emergentes de la sociedad del conocimiento.</li>
+						<li>El rol del tutor en los entornos virtuales de aprendizaje.</li>
+					</ol>
+				</li>
+				<li>Diseñar una propuesta para un entorno de trabajo para la tutoría virtual en un procesador de textos, presentador de diapositivas o cualquier otra herramienta web, en la que se considere lo siguiente:
+					<ol type="a">
+						<li>Módulos para la comunicación sincrónica y asincrónica (por ejemplo, plataformas para videoconferencias).</li>
+						<li>Módulos para la colaboración (por ejemplo, documentos compartidos para hacer una edición conjunta-<em>Google Docs</em>).</li>
+						<li>Módulos para la planeación de sesiones (por ejemplo, <em>Google Calendar</em>).</li>
+						<li>Módulos para la creación de planes de trabajo (por ejemplo, <em>Google Docs</em>).</li>
+						<li>Módulos para la creación de expedientes individuales (por ejemplo, Google Drive).</li>
+						<li>Módulos para la creación de contenidos (por ejemplo, <em>Canva, Padlet, LucidChart, MindMeister</em>).</li>
+						<li>Módulos para la evaluación (por ejemplo, <em>Freeonlinesurveys.com</em>).</li>
+					</ol>
+				</li>
+			</ol>
+            <p class="font-weight-bold">Criterios de desempe&ntilde;o:</p>
+            <ol>
+				<li>Manejo adecuado de conceptos.</li>
+				<li>Incorporación de ideas propias.</li>
+				<li>Integración de herramientas educativas y medios de comunicación institucionales, además de recursos abiertos.</li>
+				<li>Referencias electrónicas de cinco artículos, libros o tesis.</li>
+				<li>Redacción clara y concreta.</li>
+				<li>Uso correcto de reglas ortográficas y gramaticales.</li>
+				<li>Entrega oportuna. </li>
+			</ol>
+            <p class="font-weight-bold">Lineamientos de entrega:</p>
+			<ol>
+				<li>Su archivo deberá tener el siguiente nombre: <em>Act2_PrimerApellidoyPrimerNombre</em>. Ejemplo: <em>Act2_VillanuevaTeresa</em>.</li>
+				<li>Envíe su archivo en formato PDF, a través del apartado de <span class="font-weight-bold">Actividades</span> de la plataforma Eminus, a más tardar en la fecha establecida en el <span class="font-weight-bold">Calendario</span> de entregas.</li>
+			</ol>
+          </div>
+        </div>
+		<br>
+		<div class="row bg-light text-white p-2">
+          <div class="col">
+		  <div
+				class="scroll-indicator"
+				id="seccion-actividad2"
+				data-scroll-indicator-title="Evaluación Actividad 3"
+			></div>
+            <h4>
+              <span class="font-weight-bold">Actividad 3.</span> Guía de buenas prácticas para la tutoría virtual.
+            </h4>
+            <p class="font-weight-bold">Descripci&oacute;n:</p>
+            <p>Estimadas y estimados participantes, la siguiente actividad para la evaluación del desempeño de este curso-taller, será la creación de una “Guía de buenas prácticas para la tutoría virtual”, tomando en cuenta las siguientes instrucciones:</p>
+            <ol>
+				<li>Analizar los materiales de este Módulo 4. TIC en la tutoría virtual:
+					<ol type="a">
+						<li>Presentaci&oacute;n. M&oacute;dulo 4. TIC en la tutor&iacute;a virtual.</li>
+						<li>Uso de las r&uacute;bricas en ambientes virtuales de aprendizaje.</li>
+						<li><em>Marco com&uacute;n de competencia digital docente.</em></li>
+						<li>Digital Natives, Digital Immigrants.</li>
+						<li><em>74 buenas pr&aacute;cticas docentes: experiencias con tecnolog&iacute;a en aulas peruanas.</em></li>
+						<li>Las competencias profesionales del tutor virtual ante las tecnolog&iacute;as emergentes de la sociedad del conocimiento.</li>
+						<li>El rol del tutor en los entornos virtuales de aprendizaje.</li>
+					</ol>
+				</li>
+				<li>Integrar, por lo menos, 15 buenas pr&aacute;cticas para la tutor&iacute;a virtual en el <span class="font-weight-bold">documento colaborativo</span> y firmar su aportaci&oacute;n: <a style="color: #47e895; text-decoration: underline;" target="blank" href="https://docs.google.com/document/d/1hDjIAM0oVkwSBvHsAsFziCpYjbau-a7Mz_6Q7uIJfKQ/edit?usp=sharing">https://docs.google.com/document/d/1hDjIAM0oVkwSBvHsAsFziCpYjbau-a7Mz_6Q7uIJfKQ/edit?usp=sharing</a></li>
+				<li>Enriquecer las aportaciones de los compañeros de su grupo, ya que éste se puede compartir de manera virtual.</li>
+				<li>Copiar las aportaciones propias en un documento de texto y enviarlas al apartado de Actividades de la plataforma de Eminus.</li>
+			</ol>
+            <p class="font-weight-bold">Criterios de desempe&ntilde;o:</p>
+            <ol>
+				<li>Manejo adecuado de conceptos.</li>
+				<li>Incorporación de ideas propias.</li>
+				<li>Integración de 15 buenas prácticas para la tutoría virtual por cada participante.</li>
+				<li>Uso de documentos colaborativos.</li>
+				<li>Referencias electrónicas de cinco artículos, libros o tesis. </li>
+				<li>Redacción clara y concreta. </li>
+				<li>Uso correcto de reglas ortográficas y gramaticales.</li> 
+				<li>Entrega oportuna.</li>
+			</ol>
+            <p class="font-weight-bold">Lineamientos de entrega:</p>
+			<ol>
+				<li>Su archivo deberá tener el siguiente nombre: <em>Act3_PrimerApellidoyPrimerNombre</em>. Ejemplo: <em>Act3_VillanuevaTeresa</em>.</li>
+				<li>Envíe su archivo en formato PDF, a través del apartado de <span class="font-weight-bold">Actividades</span> de la plataforma Eminus, a más tardar en la fecha establecida en el <span class="font-weight-bold">Calendario</span> de entregas.</li>
+
+			</ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 1-->
+    
+   
+    <!--Disclaimer-->
+    <section class="bg-light">
+      <div class="container contenedor-menu-contenido">
+        <!--Disclaimer-->
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card bg-info">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i>Disclaimer</i>
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;">
+						<sup>1</sup><em>Pikisuperstar</em> (2020). Concepto de tutoriales en l&iacute;nea vector gratuito. [Imagen]. <em>Freepik</em>. <a href="https://www.freepik.es/vector-gratis/concepto-tutoriales-linea_7915189.htm">https://www.freepik.es/vector-gratis/concepto-tutoriales-linea_7915189.htm</a></p>
+						<p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;">
+						<sup>2</sup>Pch.vector (2020). <em>Group of students watching online webinar Free Vector</em>. [Imagen]. <em>Freepik</em>. <a href="https://www.freepik.com/free-vector/group-students-watching-online-webinar_8271020.htm">https://www.freepik.com/free-vector/group-students-watching-online-webinar_8271020.htm</a></p>
+						
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/Disclaimer-->
+      </div>
+    </section>
+    <!--Disclaimer-->
+    <!--Logo Universidad Veracruzana-->
+    <section id="pie-pagina" class="p-1">
+      <div class="container">
+        <div class="row">
+          <div class="w-100">
+            <div class="row d-flex justify-content-center">
+              <div class="col-3 col-md-2">
+                <img src="images/logo-uv-texto.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Logo Universidad Veracruzana-->
+    <div class="fixed-bottom-right" id="button-up">
+      <a class="btn btn-success indice btn-sm p-3" href="#seccion-proposito">
+        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+      </a>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/easyScrollDots.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/inicializacion.js"></script>
+  </body>
+</html>

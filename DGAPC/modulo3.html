@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/easyScrollDots.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Diplomado de Gestión y Administración de Proyectos Culturales</title>
+  </head>
+  <body>
+    <!--Encabezado-->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
+        <div class="container">
+          <div class="navbar-brand pb-0">
+            <div class="row no-gutters mb-1">
+              <div class="col">
+                <img
+                  src="images/logo_EC.jpg"
+                  class="logo d-inline mr-"
+                  alt="mdb logo"
+                />
+              </div>
+			  
+			  <div
+                class="col text-secondary d-flex flex-column justify-content-center"
+              >
+			  <span class="lg-view h2 font-weight-bold responsivo">Diplomado de Gestión y Administración de Proyectos Culturales</span>
+				<span class="sm-view h2 font-weight-bold">Proyectos Culturales</span>
+
+                <p class=" lg-view p-0 m-0 font-weight-bold">
+                  Módulo III. Implementación del proyecto
+                </p>
+				<p class=" sm-view p-0 m-0 font-weight-bold modulolargo">
+					Módulo III. Implementación del proyecto
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="dropdown"
+            data-target="#menu-indice"
+            aria-controls="menu-indice"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <i class="fas fa-align-justify text-dark"></i>
+          </button>
+          <!--Menú en dispositivos móviles-->
+          <div class="dropdown-menu dropdown-menu-right" id="menu-indice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-secondary text-center p-1">
+                <a
+                  class="text-white"
+                  href="https://www.uv.mx/"
+                  target="_blank"
+                  alt="Ir a Universidad Veracruzana"
+                >
+                  Universidad Veracruzana
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#" class="indice">
+                  <i class="fas fa-home text-primary"></i> Inicio:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-proposito" class="ml-3 indice">
+                  <i class="icon-icono_proposito text-secondary"></i> Propósito:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-introduccion" class="ml-3 indice">
+                  <i class="icon-icono_introduccion text-secondary"></i>
+                  Introducci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-contenido" class="ml-3 indice">
+                  <i class="fas fa-copy text-secondary"></i> Contenido
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-fuentes" class="ml-3 indice">
+                  <i class="icon-icono_fuentes text-secondary"></i> Fuentes de
+                  Informaci&oacute;n
+                </a>
+              </li>
+			 <li class="list-group-item p-1">
+                <a href="index.html">
+                  <i class="fas fa-book text-primary"></i> Módulos:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="modulo1.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> I. Módulo 1. Desarrollo de la idea creativa y conceptos previos para la planeación de un proyecto cultural
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo2.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> II. Planeación del proyecto.
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo3.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> III. Implementación del proyecto.
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#">
+                  <i class="fas fa-book text-primary"></i> Temas:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-1" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.1. 
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-2" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.2 
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Menú en dispositivos móviles-->
+        </div>
+      </nav>
+    </header>
+    <!--/Encabezado-->
+    <!--Menú Izquierdo-->
+	<div id="sticky-menu" class="d-none d-lg-block d-lg-flex flex-column">
+		<a
+        class="btn btn-lg btn-light btn-menu"
+        href="index.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Inicio</em>"
+      >
+        <i class="fas fa-home fa-2x"></i>
+      </a>
+
+      <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="modulo1.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Desarrollo de la idea creativa y conceptos previos para la planeación de un proyecto cultural.</em>"
+      >
+        <span class="font-weight-bold lead">I</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="modulo2.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Planeación del proyecto.</em>"
+      >
+        <span class="font-weight-bold lead">II</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-primary btn-menu d-block"
+        href="#!"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Implementación del proyecto.</em>"
+      >
+        <span class="font-weight-bold lead">III</span>
+      </a>
+    </div>
+    <!--/Menú Izquierdo-->
+    <!--Propósito-->
+    <section class="bg-primary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-proposito"
+        data-scroll-indicator-title="Justificación"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_proposito"></i> Justificación</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            El conocimiento del presupuesto necesario para la operatividad sustentable de un proyecto permite dimensionar las etapas en su implementación y, en función de esto, organizar en términos de temporalidad los objetivos. Aunado a lo anterior, es imperativo determinar las estrategias pertinentes de comunicación y ventas, a través de la generación de una identidad definida que garantice su impacto.
+          </div>
+          <div class="col-6">
+            <figure class="figure" id="modulo1-imagen-proposito">
+              <img
+                src="images/modulo3/1.jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <figcaption class="figure-caption text-right text-white">
+                [1]
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Propósito-->
+    <!--Introducción-->
+    <section class="bg-secondary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-introduccion"
+        data-scroll-indicator-title="Objetivo"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_introduccion"></i> Objetivo</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <figure class="figure" id="modulo1-imagen">
+              <img
+                src="images/modulo3/2.jpg"
+                alt=""
+                class="img-fluid figure-img"
+              />
+              <figcaption class="figure-caption text-white">[2]</figcaption>
+            </figure>
+          </div>
+          <div class="col-9">
+              <p>Crear un cronograma de trabajo y un plan de acción para la implementación del proyecto, así como definir su marca e imagen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Introducción-->
+    <!--Contenido-->
+    <section class="bg-light">
+      <div
+        class="scroll-indicator"
+        id="seccion-contenido"
+        data-scroll-indicator-title="Contenido"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="fas fa-copy text-secondary"></i> Contenido</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="list-group">
+              <a
+                href="#seccion-tema-1"
+                class="list-group-item list-group item-action bg-primary text-white indice"
+              >
+                3.1. Implementación del proyecto. 
+              </a>
+			  <a
+                href="#seccion-tema-2"
+                class="list-group-item list-group item-action bg-primary text-white indice"
+              >
+                3.2. Creación de imagen y marca. 
+              </a>
+			  <a
+                href="#seccion-tema-3"
+                class="list-group-item list-group item-action bg-primary text-white indice"
+              >
+                3.3. Conceptos del <em>marketing</em> cultural.
+              </a>
+			  <a
+                href="#seccion-tema-4"
+                class="list-group-item list-group item-action bg-primary text-white indice"
+              >
+                3.4. Administración exitosa de proyectos.
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Contenido-->
+    <!--Fuentes de Información-->
+    <section class="bg-secondary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-fuentes"
+        data-scroll-indicator-title="Fuentes de Información"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header bg-primary" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Básicas
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body text-dark">
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Galicia, B. (2015). <em>C&oacute;mo crear una marca. Manuales pr&aacute;cticos de la Pyme.</em> Free-eBooks <a href="http://www.utntyh.com/wp-content/uploads/2015/10/Como-Crear-una-Marca.pdf">http://www.utntyh.com/wp-content/uploads/2015/10/Como-Crear-una-Marca.pdf</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Gido, J. &amp; Clements, J. (2012). Administracion exitosa de proyectos (5&ordf;. ed.). Cengage Learning. <a href="https://www.academia.edu/10498757/Administracion_Exitosa_de_Proyectos_5ta_edicion_Guido">https://www.academia.edu/10498757/Administracion_Exitosa_de_Proyectos_5ta_edicion_Guido</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Guardiola, V. &amp; Guerrero Ser&oacute;n, C. (2002). <em>Marketing para Pymes I: Plan de Marketing.</em> Ministerio de Educaci&oacute;n, Cultura y Deporte. <a href="http://www.elmayorportaldegerencia.com/Libros/Mercadeo/%5BPD%5D%20Libros%20-%20Marketing%20para%20Pymes.pdf">http://www.elmayorportaldegerencia.com/Libros/Mercadeo/%5BPD%5D%20Libros%20-%20Marketing%20para%20Pymes.pdf</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Lled&oacute;, P. &amp; Rivarola, G. (2007). <em>Gesti&oacute;n de proyectos</em>. Pearson Educaci&oacute;n. <a href="https://vdocuments.mx/gestion-de-proyectos-pablo-lledo-y-gustavo-rivarola.html">https://vdocuments.mx/gestion-de-proyectos-pablo-lledo-y-gustavo-rivarola.html</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Maldonado, G., Mart&iacute;nez, M. G., &amp; Pinz&oacute;n, S. (2012, junio). La efectividad del marketing en la pyme de Aguascalientes: un estudio emp&iacute;rico. Revista <em>FIR, FAEDPYME International Review</em>, 1(1). <a href="https://www.researchgate.net/publication/274274897_La_Efectividad_del_Marketing_en_la_Pyme_de_Aguascalientes_Un_Estudio_Empirico">https://www.researchgate.net/publication/274274897_La_Efectividad_del_Marketing_en_la_Pyme_de_Aguascalientes_Un_Estudio_Empirico</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Project Management Institute. (2009). Gesti&oacute;n de la integraci&oacute;n del proyecto. En <em>Gu&iacute;a de los fundamentos para la direcci&oacute;n de proyectos / A Guide to the Project Management Body of Knowledge (PMBOK Guide): Official Spanish Translation</em> (4<sup>a</sup> ed.), pp. 71-102. Project Management Inst. <a href=" https://www.academia.edu/18306947">https://www.todostuslibros.com/libros/guia-de-los-fundamentos-para-la-direccion-de-proyectos-guia-del-pmbok-4a-edic_978-1-933890-72-2</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Vega, E. (s. f.). Dise&ntilde;o e identidad visual. <em>Fundamentos de dise&ntilde;o</em>. <a href="http://www.eugeniovega.es/paidos/brand.pdf">http://www.eugeniovega.es/paidos/brand.pdf</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Sastr&eacute;, A. &amp; Azouri, E. (2014). Introducci&oacute;n a la teor&iacute;a del producto sensible. En <em>Teor&iacute;a de Mercaodecnia de las Artes</em> (pp. 1-75). Conaculta/Fonca. <a href="https://www.artsandmarketing.com/doc/capitulo1.pdf">https://www.artsandmarketing.com/doc/capitulo1.pdf</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>99 designs. (2015). <em>El logo perfecto en 4 pasos.</em> 99 designs. <a href="https://ipmark.com/wp-content/uploads/2015/02/ebook-4-steps_ES.pdf">https://ipmark.com/wp-content/uploads/2015/02/ebook-4-steps_ES.pdf</a></p>
+					 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Fuentes de Información-->
+	<!--Tema 1-->
+    <section class="bg-primary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-tema-1"
+        data-scroll-indicator-title="3.1 Implementación del proyecto"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3>3.1 Implementación del proyecto</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+			<p>Despu&eacute;s de la definici&oacute;n y planeaci&oacute;n del proyecto, con la estimaci&oacute;n de sus costos y proyecciones de ingresos, es el momento de poner en marcha todas las actividades del mismo.</p>
+			<p>La cristalizaci&oacute;n del proyecto, por medio de su implementaci&oacute;n, es una tarea en la que se recomienda la segmentaci&oacute;n o fragmentaci&oacute;n de las actividades que, dependiendo de su naturaleza, estar&aacute; a cargo de una o varias &aacute;reas de nuestra organizaci&oacute;n, por eso es fundamental que usted como gestor pueda identificarlas. Las caracter&iacute;sticas de estas actividades son: un tiempo determinado, que sean alcanzables y medibles, as&iacute; como que se les pueda efectuar un seguimiento.</p>
+			<p>La comunicaci&oacute;n en la organizaci&oacute;n es fundamental para el desarrollo de esta importante etapa en la que el flujo de la informaci&oacute;n deber&aacute; fluir por los canales trazados, en la cantidad adecuada, con la intenci&oacute;n de que las actividades que cada persona ejecute sean lo m&aacute;s claras posible, pues su desempe&ntilde;o es fundamental para que el proceso avance de manera &oacute;ptima.</p>
+			<p><span class="font-weight-bold">Figura 3.1</span></p>
+			<figure class="figure" style="width: 50%; margin: auto; display: block;">
+              <img
+                src="images/modulo3/3.jpg"
+                alt="Esquema pendiente"
+                class="img-fluid"
+              />
+              <figcaption class="figure-caption text-right text-white">
+                Fuente: <em>Pixabay.</em> [3]
+              </figcaption>
+            </figure>
+			<p>Es muy importante que se conformen los equipos de trabajo para la ejecuci&oacute;n del proyecto. De acuerdo con las lecturas sugeridas, se puede encontrar que existen algunas estructuras de equipo que, dependiendo de la naturaleza del proyecto, pueden ser muy &uacute;tiles, entre ellas se conocen:</p>
+			<ol style="list-style-type: lower-alpha;">
+			<li>La estructura isom&oacute;rfica.</li>
+			<li>La estructura de equipo de especialistas.</li>
+			<li>La estructura de equipo sin egocentrismo.</li>
+			<li>La estructura de equipo quir&uacute;rgico.</li>
+			</ol>
+			<p>La elección de los perfiles del equipo de trabajo es fundamental, ya que es necesario analizar las diferentes habilidades de cada uno de los integrantes, el contrapeso de las ideologías y las personalidades que tendrán a cargo el proyecto. Es una forma creativa de hacer frente a diferentes escenarios, por lo tanto, en la selección de los perfiles se busca que el grupo pueda funcionar, complementarse, y que exista mediación.</p>
+			
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="alert alert-warning text-dark" role="alert">
+              <p>Para evaluar sus aprendizajes acerca del <span class="font-weight-bold">tema 3.1,</span> dir&iacute;jase a la secci&oacute;n de<em> <span class="font-weight-bold">Actividades</span> </em>e ingrese a la <span class="font-weight-bold"><em>Actividad 7</em></span>, atendiendo las indicaciones para su realizaci&oacute;n</p>
+            </div>
+          </div>
+        </div>
+        <div class="row bg-light text-dark p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold">Actividad 7. Plan para la dirección del proyecto.</span> 
+            </h4>
+            <p><span class="font-weight-bold">Descripci&oacute;n:</span></p>
+			<ol>
+			<li>Efect&uacute;e un an&aacute;lisis de su proyecto.</li>
+			<li>En el camino a la implementaci&oacute;n de su proyecto, por medio de un video, nos gustar&iacute;a saber:
+			<ol type="a">
+			<li>&iquest;Cu&aacute;l ha sido el avance de su proyecto? Desde la concepci&oacute;n de la idea (antes del diplomado), hasta esta fecha.</li>
+			<li>&iquest;Para cu&aacute;ndo tiene contemplada la implementaci&oacute;n de su proyecto? Si no tiene una fecha espec&iacute;fica, la puede comentar de manera estimada.</li>
+			</ol>
+			</li>
+			<li>El video tendrá una duraci&oacute;n m&aacute;xima de 5 minutos, y se recomienda el uso de la orientaci&oacute;n de la imagen de manera horizontal.</li>
+			<li>Puede consultar los tips para realizar videos que se encuentran publicados en: Universidad Veracruzana. (s.f.). <em>Videotips Para el desarrollo de tus recursos audiovisuales. </em>[Video]. Universidad Veracruzana. <a href="https://www.uv.mx/celulaode/videotips/">https://www.uv.mx/celulaode/videotips/</a></li>
+			</ol>
+			<p><span class="font-weight-bold">Bibliograf&iacute;a de apoyo para trabajar la actividad:</span></p>
+			<p><em>Gesti&oacute;n de proyectos</em>. 
+			<br>
+				<a href="https://vdocuments.mx/gestion-de-proyectos-pablo-lledo-y-gustavo-rivarola.html"target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+					<span style="display: inline-block;">
+						<object data="images/Boton-Ver.svg" type="image/svg+xml" width="70px" height="35px" style="position: relative; z-index: -1"></object>
+					</span>
+				</a>
+			</p>
+			<p>Gesti&oacute;n de la integraci&oacute;n del proyecto.
+			<br>
+			<a href="https://www.academia.edu/18306947"target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+					<span style="display: inline-block;">
+						<object data="images/Boton-Ver.svg" type="image/svg+xml" width="70px" height="35px" style="position: relative; z-index: -1"></object>
+					</span>
+				</a>
+			</p>
+			<p><span class="font-weight-bold">Criterios de desempe&ntilde;o:</span></p>
+			<ol>
+			<li>Apego a las indicaciones.</li>
+			<li>Coherencia.</li>
+			<li>Entrega en tiempo y forma.</li>
+			</ol>
+			<p><span class="font-weight-bold">Lineamientos de entrega:</span></p>
+			<ol>
+			<li>Titule el video de la siguiente forma: Act7_PrimerApellidoyPrimerNombre. Ejemplo: <em>Act7_VillanuevaMariaTeresa</em></li>
+			<li>Suba el video a trav&eacute;s del apartado de Actividades en la plataforma Eminus o a YouTube, si opta por la segunda opci&oacute;n comparta el <em>link</em> de su video en el apartado de entregas correspondiente a la actividad, a m&aacute;s tardar en la fecha establecida en el Calendario. As&iacute; mismo, atienda las sugerencias para subir videos a Youtube:</li>
+			</ol>
+			<ol style="list-style-type: lower-alpha;">
+			<li>No olvide etiquetar su video como privado (s&oacute;lo las personas que elija podr&aacute;n verlo).</li>
+			<li>Revise la Biblioteca de su canal y trabaje con m&uacute;sica libre de penalizaciones de derechos de autor (<em>copyright</em>).</li>
+			<li>&nbsp;Utilice m&uacute;sica libre de <em>copyright</em>, ya que el autor tiene la facultad de pedir a Youtube que te penalice y al tercer aviso le pueden cerrar su canal y, como consecuencia, no podr&aacute; mostrar tu trabajo.</li>
+			</ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 1-->
+	<!--Tema 2-->
+    <section class="bg-secondary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-tema-2"
+        data-scroll-indicator-title="3.2 Creación de imagen y marca. "
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3>3.2 Creación de imagen y marca </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">			
+			<p>La creaci&oacute;n de la marca de nuestro proyecto es una parte muy importante porque se convierte en la imagen de nuestro trabajo, por lo que tiene importantes ventajas, tales como conseguir una buena impresi&oacute;n, comunicar la personalidad de la organizaci&oacute;n, destacar ante la competencia, generar valor y posici&oacute;n, permitir que los consumidores nos recuerden y, sobre todo, ayudar a atraer nuevos clientes.</p>
+			<p>El t&eacute;rmino conocido como <em>branding</em> es la asociaci&oacute;n de la marca o logo, con los aspectos positivos o negativos de la empresa. El logo es una representaci&oacute;n de la misi&oacute;n, de la filosof&iacute;a, de los valores, de su personalidad, entre muchos otros, por lo que se debe prestar mucha atenci&oacute;n en la elecci&oacute;n de los elementos que lo conformar&aacute;n.</p>
+			<p>La forma, los colores y la tipograf&iacute;a son importantes en la realizaci&oacute;n de la marca, pues cada uno de estos elementos ser&aacute; utilizado con una intenci&oacute;n; es decir, la marca tendr&aacute; una justificaci&oacute;n en su dise&ntilde;o, tratando de asociar ideas a cada uno de los elementos.</p>
+			<p><span class="font-weight-bold">Figura 3.2</span></p>
+			<figure class="figure" style="width: 50%; margin: auto; display: block;">
+              <img
+                src="images/modulo3/4.jpg"
+                alt="Esquema pendiente"
+                class="img-fluid"
+              />
+              <figcaption class="figure-caption text-right text-white">
+                Fuente: <em>Pixabay.</em> [4]
+              </figcaption>
+            </figure>
+			<p>La aplicaci&oacute;n de la marca ser&aacute; en toda la organizaci&oacute;n, no s&oacute;lo el d&iacute;a del evento, sino en todo el material entregable y en las gestiones internas relacionadas con el mismo, d&aacute;ndole mayor formalidad al proyecto y, sobre todo, posicion&aacute;ndolo. El manual de identidad gr&aacute;fica es aquel documento que especifica el uso de la marca, tama&ntilde;o y posiciones, en todos los consumibles de nuestra organizaci&oacute;n, por ejemplo, en las hojas membretadas, en las tarjetas de presentaci&oacute;n, en los archivos audiovisuales, entre muchas otras aplicaciones; en este manual tambi&eacute;n se explica la tipograf&iacute;a que se utilizar&aacute; de manera formal dentro de la organizaci&oacute;n, as&iacute; como los tipos de alineaciones de los textos. Este manual instruye sobre el uso de los elementos en la organizaci&oacute;n, para que muestren integridad con la marca, generando una buena percepci&oacute;n ante los diversos p&uacute;blicos identificados.</p>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="alert alert-warning text-dark" role="alert">
+              <p>Para evaluar sus aprendizajes acerca del <span class="font-weight-bold">tema 3.2,</span> dir&iacute;jase a la secci&oacute;n de<em> <span class="font-weight-bold">Actividades</span> </em>e ingrese a la <span class="font-weight-bold"><em>Actividad 8</em></span>, atendiendo las indicaciones para su realizaci&oacute;n.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row bg-light text-dark p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold">Actividad 8. Construcción de la marca.</span> 
+            </h4>
+            <p><span class="font-weight-bold">Descripci&oacute;n:</span></p>
+			<ol>
+			<li>Realice una propuesta o boceto de la imagen de su proyecto, que incluya las siguientes caracter&iacute;sticas:
+			<ol style="list-style-type: lower-alpha;">
+			<li>El dise&ntilde;o puede realizarse a mano o en computadora.</li>
+			<li>Agregue una descripci&oacute;n textual del mismo, mejor conocida como denotaci&oacute;n.</li>
+			<li>As&iacute; mismo, realice la connotaci&oacute;n de la imagen, es decir, el sentido asociado que usted busca para su imagen a trav&eacute;s del uso de las formas, de los colores y de la tipograf&iacute;a.</li>
+			</ol>
+			</li>
+			</ol>
+			<p><span class="font-weight-bold">Bibliograf&iacute;a de apoyo para trabajar la actividad:</span></p>
+			<p><em>El logo perfecto en 4 pasos.</em> 99 designs.
+			<br>
+				<a href="https://ipmark.com/wp-content/uploads/2015/02/ebook-4-steps_ES.pdf"target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+					<span style="display: inline-block;">
+						<object data="images/Boton-Ver.svg" type="image/svg+xml" width="70px" height="35px" style="position: relative; z-index: -1"></object>
+					</span>
+				</a>
+			</p>
+			<p><em>C&oacute;mo crear una marca. Manuales pr&aacute;cticos de la Pyme.</em>
+				<br>
+				<a href="http://www.utntyh.com/wp-content/uploads/2015/10/Como-Crear-una-Marca.pdf"target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+					<span style="display: inline-block;">
+						<object data="images/Boton-Ver.svg" type="image/svg+xml" width="70px" height="35px" style="position: relative; z-index: -1"></object>
+					</span>
+				</a>
+			</p>
+			<p><em>Diseño e identidad visual.</em>
+				<br>
+				<a href="http://www.eugeniovega.es/paidos/brand.pdf"target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+					<span style="display: inline-block;">
+						<object data="images/Boton-Ver.svg" type="image/svg+xml" width="70px" height="35px" style="position: relative; z-index: -1"></object>
+					</span>
+				</a>
+			</p>
+			<p><span class="font-weight-bold">Criterios de desempe&ntilde;o:</span></p>
+			<ol>
+			<li>Apego a las indicaciones.</li>
+			<li>Redacci&oacute;n y ortograf&iacute;a correctas.</li>
+			<li>Coherencia.</li>
+			<li>Entrega en tiempo y forma.</li>
+			</ol>
+			<p><span class="font-weight-bold">Lineamientos de entrega:</span></p>
+			<ol>
+			<li>Titule el archivo de la siguiente forma: <em>Act8_PrimerApellidoyPrimerNombre.</em> Ejemplo: <em>Act8_VillanuevaMariaTeresa</em></li>
+			<li>Env&iacute;elo en formato PDF, a trav&eacute;s del apartado de <span class="font-weight-bold">Actividades</span> de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el <span class="font-weight-bold">Calendario</span> de entregas.</li>
+			</ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 2-->
+	<!--Tema 3-->
+    <section class="bg-primary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-tema-3"
+        data-scroll-indicator-title="3.3 Conceptos de marketing cultural"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3>3.3 Conceptos de <em>marketing</em> cultural</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+			<p>Para abordar el concepto de <em>marketing</em> cultural, es necesario entender algunas nociones de <em>marketing</em> (o tambi&eacute;n conocido como mercadotecnia) en t&eacute;rminos generales.</p>
+			<p>La funci&oacute;n de la mercadotecnia dentro de las empresas ha sido muy importante, aunque el concepto se utiliz&oacute; a principios de 1900, &eacute;sta ya exist&iacute;a.</p>
+			<p>Dentro de una empresa, de manera general, se pueden identificar cuatro &aacute;reas:</p>
+			<ol type="a">
+			<li>Finanzas. Encargada de recaudar recursos econ&oacute;micos, as&iacute; como de pagar a los proveedores.</li>
+			<li>Operaciones. El &aacute;rea cuya tarea es hacer y entregar el producto.</li>
+			<li>Direcci&oacute;n. Es el &aacute;rea que toma las decisiones para dar sentido y orientaci&oacute;n a la compa&ntilde;&iacute;a.</li>
+			<li>Mercadotecnia. Es aquella que genera la demanda para nuestro producto.</li>
+			</ol>
+			<p>Se puede decir que la mercadotecnia es el estudio y conocimiento de las pr&aacute;cticas y h&aacute;bitos de consumo, es decir, a trav&eacute;s de &eacute;sta la empresa obtiene informaci&oacute;n sobre los clientes y el mercado.</p>
+			<p><span class="font-weight-bold">Figura 3.3</span></p>
+			<figure class="figure" style="width: 50%; margin: auto; display: block;">
+              <img
+                src="images/modulo3/5.jpg"
+                alt="Esquema pendiente"
+                class="img-fluid"
+              />
+              <figcaption class="figure-caption text-right text-white">
+                Fuente: <em>Pixabay.</em> [5]
+              </figcaption>
+            </figure>
+			<p>Por lo antes expuesto, se puede entender a la estrategia de mercadotecnia como aquellas acciones dirigidas a generar productos y servicios para satisfacer las necesidades de los clientes con mayor efectividad que la competencia, con el fin de propiciar en éstos interés y lealtad hacia una empresa o una marca.</p>
+			<p>La mezcla de mercadotecnia, tambi&eacute;n llamada <em>mix</em> de mercadotecnia, seg&uacute;n los conceptos b&aacute;sicos, es integrada por cuatro elementos a los cuales se les conoce como las 4 P&rsquo;s de mercadotecnia, ya que todos comienzan con la letra P, &eacute;stos son:</p>
+			<ol type="a">
+			<li>Producto. Se encuentra integrado por los bienes tangibles o intangibles (servicios o ideas).</li>
+			<li>Precio. Incluye el valor monetario, el esfuerzo y el tiempo invertido por el cliente al consumir nuestro producto.</li>
+			<li>Plaza. Es la distribuci&oacute;n f&iacute;sica en donde se podr&aacute; encontrar el producto.</li>
+			<li>Promoci&oacute;n. Son las estrategias de comunicaci&oacute;n de la empresa para el consumidor, en donde el mensaje deber&aacute; ser claro en cuanto a la descripci&oacute;n del producto, las ventajas o beneficios que brinda, el lugar y el precio que tiene. Estas estrategias de comunicaci&oacute;n pueden ser:
+				<ul>
+					<li>Ventas directas. Cuando el cliente llega directamente a adquirir el producto.</li>
+					<li>Promoción de ventas. Son los incentivos adicionales que se le ofrecen al cliente al comprar el producto, por ejemplo, descuentos y rebajas.</li>
+					<li>Publicidad. Generalmente se usan los medios masivos de comunicación para dar a conocer el producto, y se paga por ella. Por ejemplo, espectaculares, anuncios en TV, anuncios en prensa, etcétera.</li>
+				</ul>
+			</li>
+			<li>Relaciones Públicas. Es una herramienta por medio de la que se maneja la imagen de la empresa y, en muchas ocasiones, no se paga por ella, o su costo es relativamente bajo. Por ejemplo, una entrevista en un programa de radio, una nota de prensa, entre otras.</li>
+			</ol>
+			<p><span class="font-weight-bold"><em>Diferencias entre mercadotecnia tradicional y mercadotecnia cultural</em></span></p>
+			<p>Para describir las diferencias entre la mercadotecnia tradicional y la mercadotecnia cultural, se hace desde este enfoque: la mercadotecnia tradicional busca satisfacer necesidades del consumidor con el producto, y en la mercadotecnia cultural, el consumidor es parte de &eacute;ste, porque el producto cultural se completa con la interacci&oacute;n del espectador. Por lo tanto, adem&aacute;s del beneficio econ&oacute;mico, en la mercadotecnia cultural se espera el valor cultural en los consumidores, es decir, la reacci&oacute;n positiva reflejada en una mayor asistencia a conciertos, visitas a museos, compra de libros, etc&eacute;tera.</p>
+			<p>De esta manera, el proceso de la mercadotecnia cambia cuando su enfoque es cultural. A continuación, se esquematizan cada uno de ellos.</p>
+			<p><span class="font-weight-bold">Figura 3.4</span></p>
+			<p>Proceso de la mercadotecnia tradicional</p>
+			<figure class="figure">
+              <img
+                src="images/modulo3/M3 - 1.png"
+                alt="Esquema pendiente"
+                class="img-fluid"
+              />
+              <figcaption class="figure-caption text-right text-white">
+                Fuente: Elaboración propia.
+              </figcaption>
+            </figure>
+			<p><span class="font-weight-bold">Figura 3.5</span></p>
+			<p>Proceso de la mercadotecnia cultural</p>
+			<figure class="figure">
+              <img
+                src="images/modulo3/M3 - 2.png"
+                alt="Esquema pendiente"
+                class="img-fluid"
+              />
+              <figcaption class="figure-caption text-right text-white">
+                Fuente: Elaboración propia.
+              </figcaption>
+            </figure>
+			<p>En la <span class="font-weight-bold">mercadotecnia tradicional,</span> el primer paso es la investigación de mercados, que es cuando se identifican las necesidades para que la empresa diseñe un producto que pueda satisfacerlas, y así realizar su mezcla de mercadotecnia. Por otro lado, en la mercadotecnia cultural, el producto es diseñado primero, porque el artista o creador hace su obra, desde sus emociones, sus motivaciones, desde su misma expresión, para que a través de ésta se efectúe la investigación de mercados y se pueda identificar el segmento que puede consumir ese producto cultural, dando paso a la mezcla de mercadotecnia.</p>
+			<p><span class="font-weight-bold"><em>Experiencia sensible</em></span></p>
+			<p>En la actualidad, de manera general, los productos ya no sólo buscan la satisfacción de las necesidades, sino que han evolucionado para agregar una experiencia en su uso. En los productos culturales, a través de los procesos artísticos, se busca una vivencia sensible, explicada de la siguiente manera:</p>
+			<p>El proceso art&iacute;stico se compone por el creador, la obra y el espectador, en el que este &uacute;ltimo es activo y participativo porque le da nuevos s&iacute;mbolos y significados a la obra, por lo tanto, se busca que esa experiencia del espectador sea memorable, llev&aacute;ndolo a un estado de conmoci&oacute;n, a trav&eacute;s de la sensibilidad del arte. De aqu&iacute; es de donde se desprende el t&eacute;rmino experiencia sensible.</p>
+			<p><span class="font-weight-bold">Figura 3.6</span></p>
+			<figure class="figure" style="width: 50%; margin: auto; display: block;">
+              <img
+                src="images/modulo3/6.jpg"
+                alt="Esquema pendiente"
+                class="img-fluid"
+              />
+              <figcaption class="figure-caption text-right text-white">
+                Fuente: <em>Pixabay.</em> [6]
+              </figcaption>
+            </figure>
+			<p>Partiendo de la teor&iacute;a de las necesidades humanas, hecha por Abraham Maslow, las experiencias sensibles, no buscan una satisfacci&oacute;n de las necesidades b&aacute;sicas sociales o afectivas, m&aacute;s bien atienden a la cima de los niveles, que son aquellas relacionadas con la expansi&oacute;n del ser y de la conciencia.</p>
+			<p>Por lo anterior, el enfoque de los productos culturales ha cambiado. En su sentido tradicional, se dec&iacute;a que un producto cultural aportaba a la comunidad, pero entendiendo y aplicando la teor&iacute;a de la experiencia sensible, de manera contempor&aacute;nea, un producto cultural lograr&aacute; hacer comunidad.</p>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="alert alert-warning text-dark" role="alert">
+              <p>Para evaluar sus aprendizajes acerca del <span class="font-weight-bold">tema 3.3,</span> dir&iacute;jase a la secci&oacute;n de<em> <span class="font-weight-bold">Actividades</span> </em>e ingrese a la <span class="font-weight-bold"><em>Actividad 9</em></span>, atendiendo las indicaciones para su realizaci&oacute;n.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row bg-light text-dark p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold">Actividad 9. Plan de <em>marketing</em>.</span> 
+            </h4>
+            <p><span class="font-weight-bold">Descripci&oacute;n:</span></p>
+			<p>De acuerdo con lo aprendido en el Tema 3.3, as&iacute; como con las lecturas sugeridas, dise&ntilde;e de una manera realista, las estrategias de mercadotecnia para su proyecto.</p>
+			<p><span class="font-weight-bold">Bibliograf&iacute;a de apoyo para trabajar la actividad:</span></p>
+			<p><em>Marketing para Pymes I: Plan de Marketing.</em> 
+			<br>
+			<a href="http://www.elmayorportaldegerencia.com/Libros/Mercadeo/%5BPD%5D%20Libros%20-%20Marketing%20para%20Pymes.pdf"target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+						<span style="display: inline-block;">
+							<object data="images/Boton-Ver.svg" type="image/svg+xml" width="70px" height="35px" style="position: relative; z-index: -1"></object>
+						</span>
+				</a>
+			</p>
+			<p>La efectividad del marketing en la pyme de Aguascalientes: un estudio emp&iacute;rico. 
+			<br>
+			<a href="https://www.researchgate.net/publication/274274897_La_Efectividad_del_Marketing_en_la_Pyme_de_Aguascalientes_Un_Estudio_Empirico"target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+						<span style="display: inline-block;">
+							<object data="images/Boton-Ver.svg" type="image/svg+xml" width="70px" height="35px" style="position: relative; z-index: -1"></object>
+						</span>
+				</a>
+			</p>
+			<p>Introducci&oacute;n a la teor&iacute;a del producto sensible.
+			<br>
+			<a href="https://www.artsandmarketing.com/doc/capitulo1.pdf"target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+						<span style="display: inline-block;">
+							<object data="images/Boton-Ver.svg" type="image/svg+xml" width="70px" height="35px" style="position: relative; z-index: -1"></object>
+						</span>
+				</a>
+			</p>
+			<p><span class="font-weight-bold">Criterios de desempe&ntilde;o:</span></p>
+			<ol>
+			<li>Apego a las indicaciones.</li>
+			<li>Redacci&oacute;n y ortograf&iacute;a correctas.</li>
+			<li>Coherencia.</li>
+			<li>Entrega en tiempo y forma.</li>
+			</ol>
+			<p><span class="font-weight-bold">Lineamientos de entrega:</span></p>
+			<ol>
+			<li>Titule el archivo de la siguiente forma: Act9_PrimerApellidoyPrimerNombre. Ejemplo: <em>Act9_VillanuevaMariaTeresa</em></li>
+			<li>Env&iacute;elo en formato PDF, a trav&eacute;s del apartado de <span class="font-weight-bold">Actividades</span> de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el <span class="font-weight-bold">Calendario</span> de entregas.</li>
+			</ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 3-->
+	<!--Tema 4-->
+    <section class="bg-secondary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-tema-4"
+        data-scroll-indicator-title="3.4 Administración exitosa de proyectos"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3>3.4 Administración exitosa de proyectos</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+			<p>De acuerdo con la lecci&oacute;n del M&oacute;dulo II, correspondiente a evaluaci&oacute;n de presupuestos, la planeaci&oacute;n, organizaci&oacute;n, coordinaci&oacute;n, direcci&oacute;n y control de los recursos para lograr el objetivo pertenecen al proceso de <span class="font-weight-bold">administraci&oacute;n de proyectos</span>, que en t&eacute;rminos generales cumple dos funciones principales: establecer un plan y llevarlo a cabo. Como se ha abordado a lo largo de este curso, en un proyecto se necesita establecer el <span class="font-weight-bold">objetivo</span>, definir el<span class="font-weight-bold"> alcance, </span>crear una<span class="font-weight-bold"> estructura organizacional </span>o de divisi&oacute;n de trabajo que asigne responsabilidades y defina las actividades espec&iacute;ficas y su secuencia, estimar los <span class="font-weight-bold">recursos humanos </span>y <span class="font-weight-bold">financieros, </span>as&iacute; como su temporalidad (Gido y Clements, 2012).</p>
+			<p>Para asegurar el &eacute;xito en la ejecuci&oacute;n de un proyecto, se requiere cuidar de los siguientes elementos:</p>
+			<ol type="a">
+			<li><span class="font-weight-bold"> Realizaci&oacute;n del trabajo </span>en apego a las especificaciones del proyecto y sus criterios de aceptaci&oacute;n. Para lograrlo, es fundamental la coordinaci&oacute;n del equipo y una correcta comunicaci&oacute;n entre los grupos de inter&eacute;s, incluyendo el patrocinador o cliente, asegurando el cumplimiento de las expectativas.</li>
+			<li><span class="font-weight-bold"> Monitorear el avance </span>para continuar de acuerdo con lo establecido. De la misma forma, se mide el avance, se compara con lo estimado y, en caso de ser necesario, se implementan acciones correctivas oportunas, por lo que resulta importante que sea revisado con regularidad.</li>
+			<li><span class="font-weight-bold"> Controlar los cambios </span>a trav&eacute;s de un sistema en el que se defina la documentaci&oacute;n, aprobaci&oacute;n y comunicaci&oacute;n de los cambios, con el fin de reducir los impactos negativos en el logro del objetivo, que pueden ser insumos que excedan el costo contemplado, que las actividades requieran m&aacute;s tiempo del previsto o que un riesgo identificado incida.</li>
+			</ol>
+			<p>Tomar el tiempo que sea necesario para la planeaci&oacute;n de cada proyecto es pieza clave en el logro exitoso de &eacute;ste.</p>
+			<p>Otro aspecto vital en el cumplimiento del objetivo son las personas, sus habilidades y conocimientos. El <span class="font-weight-bold">gerente</span> es el responsable principal de la planeaci&oacute;n, organizaci&oacute;n y monitoreo del trabajo para tal cometido, es decir, su funci&oacute;n es la de l&iacute;der en la estructura organizacional. Para ello, debe contar con habilidades y aptitudes que inspiren al equipo a alcanzar el objetivo satisfactoriamente.&nbsp; Entre los atributos de un gerente efectivo deben existir las habilidades de<span class="font-weight-bold"> liderazgo</span>, la capacidad de<span class="font-weight-bold"> fomento del desarrollo de las personas</span>, las habilidades para la<span class="font-weight-bold"> eficiente comunicaci&oacute;n interpersonal</span>, la capacidad de <span class="font-weight-bold">gesti&oacute;n del estr&eacute;s</span>, habilidades de<span class="font-weight-bold"> negociaci&oacute;n, </span>de <span class="font-weight-bold">resoluci&oacute;n de problemas </span>y de <span class="font-weight-bold">administraci&oacute;n del tiempo </span>(Gido y Clements, 2012).</p>
+			<p><span class="font-weight-bold">Figura 3.7</span></p>
+			<figure class="figure">
+              <img
+                src="images/modulo3/7.jpg"
+                alt="Esquema pendiente"
+                class="img-fluid"
+              />
+              <figcaption class="figure-caption text-right text-white">
+                Fuente: <em>Pixabay.</em> [7]
+              </figcaption>
+            </figure>
+			<p>Por su parte, el <span class="font-weight-bold">equipo de proyecto</span> realiza un trabajo interdependiente hacia el logro del objetivo, por lo que es importante que, de ser posible, el gerente elija el perfil de las personas que lo conformar&aacute;n a partir de sus habilidades y experticia.</p>
+			<p>A medida que se establece la relaci&oacute;n personal entre los miembros del equipo, se establece la identidad del mismo y se define el lugar que ocupa cada individuo dentro de la organizaci&oacute;n, no obstante, anterior a que eso ocurra, el equipo pasa por diferentes etapas:</p>
+			<p>La <span class="font-weight-bold">formaci&oacute;n</span>, que implica la transici&oacute;n de lo individual a lo colectivo. Los sentimientos que se experimentan en esta etapa son de <span class="font-weight-bold">emoci&oacute;n</span>,<span class="font-weight-bold"> ansiedad</span>,<span class="font-weight-bold"> suspicacia </span>y<span class="font-weight-bold"> duda</span>. Es aqu&iacute; cuando el gerente debe de indicar las directrices de manera clara, comunicar la visi&oacute;n del resultado y de los beneficios que &eacute;ste proporcionar&aacute;.</p>
+			<p>Posteriormente, se encuentra la <span class="font-weight-bold">lluvia </span>o <span class="font-weight-bold">tormenta</span>, etapa en la que los miembros comienzan a dimensionar la densidad de demanda del trabajo. A partir de ello, se comienzan a experimentar sentimientos como <span class="font-weight-bold">frustraci&oacute;n</span>, <span class="font-weight-bold">ira </span>y <span class="font-weight-bold">hostilidad</span>, surge el cuestionamiento de la viabilidad, los procedimientos, el control y la autoridad. En este momento, el gerente debe brindar comprensi&oacute;n, apoyo, soluci&oacute;n a conflictos y oportunidad de expresi&oacute;n de las preocupaciones de los miembros.</p>
+			<p>Despu&eacute;s, es necesario el <span class="font-weight-bold">establecimiento de normas</span>. En esta etapa, el nivel de conflictos interpersonales es menor, se empieza a generar la confianza, el intercambio de ideas y crece la cooperaci&oacute;n, se desarrolla un sentimiento de <span class="font-weight-bold">camarader&iacute;a, </span>el gerente desempe&ntilde;a un rol de apoyo y reconocimiento de resultados mayor al de la direcci&oacute;n, la productividad se intensifica.</p>
+			<p>Finalmente, llega la etapa de <span class="font-weight-bold">ejecuci&oacute;n</span>, en la cual el equipo est&aacute; muy comprometido con el cumplimiento del objetivo y el desempe&ntilde;o se encuentra en un nivel superior. Se experimentan sentimientos de <span class="font-weight-bold">unidad</span>,<span class="font-weight-bold"> confianza </span>y <span class="font-weight-bold">orgullo</span> por los logros alcanzados. La comunicaci&oacute;n es altamente efectiva y se crea la apertura a colaborar en tareas originalmente no asignadas a los miembros que, adem&aacute;s, aprenden a trabajar en subequipos. En esta etapa, el gerente otorga al equipo la facultad de decisión necesaria, es decir, <span class="font-weight-bold">delega </span>responsabilidades, se concentra en apoyar a los miembros a ejecutar el plan, facilitar su desarrollo, implementar acciones correctivas ante atrasos en el avance real, en relaci&oacute;n con el inicial, y a reconocer los avances y logros.</p>
+			<p>Las caracter&iacute;sticas con las que el equipo de proyecto debe contar son: <span class="font-weight-bold">entender </span>correctamente <span class="font-weight-bold">el objetivo del proyecto</span>, tener claros los <span class="font-weight-bold">roles </span>y <span class="font-weight-bold">responsabilidades</span>, compromiso s&oacute;lido y <span class="font-weight-bold">orientaci&oacute;n hacia los resultados</span>, alto nivel de <span class="font-weight-bold">cooperaci&oacute;n</span>,<span class="font-weight-bold"> colaboraci&oacute;n </span>y <span class="font-weight-bold">confianza </span>(Gido y Clements, 2012).</p>
+			<figure class="figure">
+              <img
+                src="images/modulo3/M3 - 3.png"
+                alt="Esquema pendiente"
+                class="img-fluid"
+              />
+              <figcaption class="figure-caption text-right text-white">
+                
+              </figcaption>
+            </figure>
+		  </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="alert alert-warning text-dark" role="alert">
+              <p>Para evaluar sus aprendizajes acerca del <span class="font-weight-bold">tema 3.4,</span> dir&iacute;jase a la secci&oacute;n de<em> <span class="font-weight-bold">Actividades</span> </em>e ingrese a la <span class="font-weight-bold"><em>Actividad 10</em></span>, atendiendo las indicaciones para su realizaci&oacute;n.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row bg-light text-dark p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold">Actividad 10. Presentación del proyecto.</span> 
+            </h4>
+            <p><span class="font-weight-bold">Descripci&oacute;n: </span></p>
+			<ol>
+			<li>Simule que presentar&aacute; su proyecto ante una organizaci&oacute;n, en una entrevista de convocatoria, un patrocinador o un prospecto de inversionista.</li>
+			<li>Organice los puntos relevantes de su propuesta, según su orden de importancia, así como la información general y los detalles que considere necesario  mencionar.</li>
+			<li>Practique su exposici&oacute;n con apoyo de un cron&oacute;metro.</li>
+			<li>Grabe su presentaci&oacute;n en un <span class="font-weight-bold">video</span> con una duraci&oacute;n m&aacute;xima de 10 minutos. Mencione a qu&eacute; ejemplo de audiencia ser&iacute;a dirigida.</li>
+			<li>Puede consultar los tips para realizar videos que se encuentran publicados en: Universidad Veracruzana. (s.f.). <em>Videotips Para el desarrollo de tus recursos audiovisuales. </em>[Video]. Universidad Veracruzana. <a href="https://www.uv.mx/celulaode/videotips/">https://www.uv.mx/celulaode/videotips/</a></li>
+			</ol>
+			<p><span class="font-weight-bold">Bibliograf&iacute;a de apoyo para trabajar la actividad:</span></p>
+			<p>Administracion exitosa de proyectos.
+			<br>
+			<a href="https://www.academia.edu/10498757/Administracion_Exitosa_de_Proyectos_5ta_edicion_Guido"target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+					<span style="display: inline-block;">
+						<object data="images/Boton-Ver.svg" type="image/svg+xml" width="70px" height="35px" style="position: relative; z-index: -1"></object>
+					</span>
+			</a>
+			</p>
+			<p><span class="font-weight-bold">Criterios de desempe&ntilde;o:</span></p>
+			<ol>
+			<li>Apego a las indicaciones.</li>
+			<li>Coherencia.</li>
+			<li>Entrega en tiempo y forma.</li>
+			</ol>
+			<p><span class="font-weight-bold">Lineamientos de entrega:</span></p>
+			<ol>
+			<li>Titule el video de la siguiente forma: <em>Act10_PrimerApellidoyPrimerNombre. </em> Ejemplo: Act10_VillanuevaMariaTeresa</li>
+			<li>Suba el video a trav&eacute;s del apartado de Actividades en la plataforma Eminus o a YouTube, si opta por la segunda opci&oacute;n comparta el <em>link</em> de su video en el apartado de entregas correspondiente a la actividad, a m&aacute;s tardar en la fecha establecida en el Calendario. As&iacute; mismo, atienda las sugerencias para subir videos a Youtube:
+				<ol type="a">
+			<li>No olvide etiquetar su video como privado (s&oacute;lo las personas que elija podr&aacute;n verlo).</li>
+			<li>Revise la Biblioteca de su canal y trabaje con m&uacute;sica libre de penalizaciones de derechos de autor (<em>copyright</em>).</li>
+			<li>Utilice m&uacute;sica libre de <em>copyright</em>, ya que el autor tiene la facultad de pedir a Youtube que te penalice y al tercer aviso le pueden cerrar su canal y, como consecuencia, no podr&aacute; mostrar tu trabajo.</li>
+			</ol>
+			</li>
+			</ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 4-->
+    
+   
+    <!--Disclaimer-->
+    <section class="bg-light">
+      <div class="container contenedor-menu-contenido">
+        <!--Disclaimer-->
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card bg-info">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i>Disclaimer</i>
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%;">1</sup> <em>GraphicMama-team</em> (2016). <em>Meeting</em>-1453895_1280. [Imagen]. <em>Pixabay</em>. <a href="https://pixabay.com/es/vectors/reuni%c3%b3n-negocio-lluvia-de-ideas-1453895/">https://pixabay.com/es/vectors/reuni%c3%b3n-negocio-lluvia-de-ideas-1453895/</a></p>
+						  <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%;">2</sup> <em>Free-Photos</em> (2015). <em>Day-planner</em>-828611_1920. [Imagen]. <em>Pixabay</em>. <a href="https://pixabay.com/es/photos/planificador-de-d%c3%ada-calendario-828611/">https://pixabay.com/es/photos/planificador-de-d%c3%ada-calendario-828611/</a></p>
+						  <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%;">3</sup> <em>Truthseeker08</em> (2016). <em>Hands</em>-1917895_1920. [Imagen]. <em>Pixabay</em>. <a href="https://pixabay.com/es/photos/manos-equipo-unidos-juntos-1917895/">https://pixabay.com/es/photos/manos-equipo-unidos-juntos-1917895/</a></p>
+						  <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%;">4</sup> <em>Stux</em> (2014). <em>Colored-pencils-374771_1920.</em> [Imagen]. <em>Pixabay</em>. &nbsp;<a href="https://pixabay.com/es/photos/l%c3%a1pices-de-colores-estrella-374771/">https://pixabay.com/es/photos/l%c3%a1pices-de-colores-estrella-374771/</a></p>
+						  <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%;">5</sup> <em>Geralt</em> (2014). <em>Street-sign-</em>562573_1920. [Imagen]. <em>Pixabay</em>. <a href="https://pixabay.com/es/illustrations/calle-signo-carretera-antig%c3%bcedad-562573/">https://pixabay.com/es/illustrations/calle-signo-carretera-antig%c3%bcedad-562573/</a></p>
+						  <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%;">6</sup> <em>Free-Photos</em> (2015). concert-768722_1920. [Imagen]. <em>Pixabay</em>. <a href="https://pixabay.com/es/photos/concierto-multitud-audiencia-768722/">https://pixabay.com/es/photos/concierto-multitud-audiencia-768722/</a></p>
+						  <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%;">7</sup> RonaldCandonga (2020). <em>Work</em>-5382501_1920. [Imagen]. <em>Pixabay</em>. <a href="https://pixabay.com/es/photos/trabajo-oficina-equipo-empresa-5382501/">https://pixabay.com/es/photos/trabajo-oficina-equipo-empresa-5382501/</a></p>
+                  </div>			  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/Disclaimer-->
+      </div>
+    </section>
+    <!--Disclaimer-->
+    <!--Logo Universidad Veracruzana-->
+    <section id="pie-pagina" class="p-1">
+      <div class="container">
+        <div class="row">
+          <div class="w-100">
+            <div class="row d-flex justify-content-center">
+              <div class="col-3 col-md-2">
+                <img src="images/logo-uv-texto.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Logo Universidad Veracruzana-->
+    <div class="fixed-bottom-right" id="button-up">
+      <a class="btn btn-success indice btn-sm p-3" href="#seccion-proposito">
+        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+      </a>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/easyScrollDots.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/inicializacion.js"></script>
+  </body>
+</html>

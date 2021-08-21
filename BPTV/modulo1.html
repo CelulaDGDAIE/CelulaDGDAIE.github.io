@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/easyScrollDots.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Buenas prácticas para la tutoría virtual</title>
+  </head>
+  <body>
+    <!--Encabezado-->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
+        <div class="container">
+          <div class="navbar-brand pb-0">
+            <div class="row no-gutters mb-1">
+              <div class="col">
+                <img
+                  src="images/logo-profa.png"
+                  class="logo d-inline mr-"
+                  alt="mdb logo"
+                />
+              </div>
+              <div
+                class="col text-secondary d-flex flex-column justify-content-center"
+              >
+				<span class="lg-view h2 font-weight-bold responsivo">Buenas prácticas para la tutoría virtual</span>
+				<span class="sm-view h5 font-weight-bold">Tutoría virtual</span>
+				<p class=" lg-view p-0 m-0 font-weight-bold">
+                  I. Sistema Institucional de Tutorías (SIT)  
+                </p>
+				<p class=" sm-view p-0 m-0 font-weight-bold ">
+                  I. SIT
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="dropdown"
+            data-target="#menu-indice"
+            aria-controls="menu-indice"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <i class="fas fa-align-justify text-dark"></i>
+          </button>
+          <!--Menú en dispositivos móviles-->
+          <div class="dropdown-menu dropdown-menu-right" id="menu-indice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-secondary text-center p-1">
+                <a
+                  class="text-white"
+                  href="https://www.uv.mx/"
+                  target="_blank"
+                  alt="Ir a Universidad Veracruzana"
+                >
+                  Universidad Veracruzana
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#" class="indice">
+                  <i class="fas fa-home text-primary"></i> Inicio:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-proposito" class="ml-3 indice">
+                  <i class="icon-icono_proposito text-secondary"></i> Propósito:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-introduccion" class="ml-3 indice">
+                  <i class="icon-icono_introduccion text-secondary"></i>
+                  Introducci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-contenido" class="ml-3 indice">
+                  <i class="fas fa-copy text-secondary"></i> Contenido
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-fuentes" class="ml-3 indice">
+                  <i class="icon-icono_fuentes text-secondary"></i> Fuentes de
+                  Informaci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="index.html">
+                  <i class="fas fa-book text-primary"></i> Módulos:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="modulo1.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> I. Sistema Institucional de Tutorías (SIT).
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo2.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> II. Tutoría virtual.
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo3.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> III. Tutor académico virtual.
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo4.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> IV. TIC en la tutoría virtual.
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Menú en dispositivos móviles-->
+        </div>
+      </nav>
+    </header>
+    <!--/Encabezado-->
+        <!--Menú Izquierdo-->
+    <div id="sticky-menu" class="d-none d-lg-block d-lg-flex flex-column">
+      <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="index.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Inicio</em>"
+      >
+        <i class="fas fa-home fa-2x"></i>
+      </a>
+
+      <a
+        class="btn btn-lg btn-primary btn-menu"
+        href="modulo1.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Sistema Institucional de Tutorías (SIT).</em>"
+      >
+        <span class="font-weight-bold lead">I</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="modulo2.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Tutoría virtual.</em>"
+      >
+        <span class="font-weight-bold lead">II</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="modulo3.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Tutor académico virtual.</em>"
+      >
+        <span class="font-weight-bold lead">III</span>
+      </a>
+		<a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="modulo4.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>TIC en la tutoría virtual.</em>"
+      >
+        <span class="font-weight-bold lead">IV</span>
+      </a>
+    </div>
+    <!--/Menú Izquierdo-->
+    <!--Propósito-->
+    <section class="bg-primary text-black">
+      <div
+        class="scroll-indicator"
+        id="seccion-proposito"
+        data-scroll-indicator-title="Propósito"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_proposito"></i> Propósito</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 d-flex align-items-center" >
+            <p style="text-align: justify;">
+			Analizar las disposiciones generales del Sistema Institucional de Tutorías (SIT), el rol del tutor académico y las modalidades de atención para sus tutorados, mediante la revisión del Reglamento del Sistema Institucional de Tutorías de la Universidad Veracruzana.
+          </div>
+          <div class="col-6">
+            <figure class="figure">
+              <img
+                src="images/modulo1/1.jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <figcaption class="figure-caption text-right text-black">
+                [1]
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Propósito-->
+    <!--Introducción-->
+    <section class="bg-light text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-introduccion"
+        data-scroll-indicator-title="Introducción"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_introduccion"></i> Introducción</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <figure class="figure" id="modulo1-imagen">
+              <img
+                src="images/modulo1/2.jpg"
+                alt=""
+                class="img-fluid figure-img"
+              />
+              <figcaption class="figure-caption text-white">[2]</figcaption>
+            </figure>
+          </div>
+          <div class="col-9">
+            <p style="text-align: justify;">
+				En la actualidad, el mundo atraviesa por innumerables y constantes transformaciones, sin embargo, uno de los motivos que aceleró el uso de la tecnología tanto en nuestra vida cotidiana como en el ambente educativo fue el brote de la pandemia por COVID-19. 
+            </p>
+			<p style="text-align: justify;">
+				Así, la tecnología se ha convertido en una herramienta que puede potenciar los procesos de comunicación, de enseñanza, de aprendizaje y de evaluación para programas educativos formales y no formales.
+            </p>
+			<p style="text-align: justify;">
+				De manera específica, dentro de la Universidad Veracruzana existe una figura muy importante que tiene la responsabilidad de brindar el seguimiento de la trayectoria escolar del <span class="font-weight-bold">tutorado</span> y de la orientación oportuna en la toma de decisiones relacionadas con la construcción de su perfil profesional individual, de acuerdo con sus expectativas, capacidades e intereses. Esta figura es el <span class="font-weight-bold">tutor académico</span>, quien necesita hacer frente a los nuevos desafíos que impone el uso de la tecnología para estar en constante comunicación y dar el seguimiento oportuno a sus tutorados.
+            </p>
+			<p style="text-align: justify;">
+				Así, el tutor académico debe desarrollar sus competencias digitales para realizar su labor de manera eficiente, y emplear sistemas tecnológicos de comunicación masiva y bidireccional que sustituyan la interacción personal como medio preferente de enseñanza, por la acción sistemática y conjunta de recursos didácticos, computacionales, herramientas tecnológicas y el apoyo de una organización tutorial.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Introducción-->
+    <!--Contenido-->
+    <section class="bg-primary">
+      <div
+        class="scroll-indicator"
+        id="seccion-contenido"
+        data-scroll-indicator-title="Contenido"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="fas fa-copy text-secondary"></i> Contenido</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="list-group">
+              <a
+                href="#seccion-tema-1"
+                class="list-group-item list-group item-action bg-primary text-black indice"
+              >
+                1. Sistema Institucional de Tutorías.
+              </a>
+			  <a
+                href="#seccion-tema-2"
+                class="list-group-item list-group item-action bg-primary text-black indice"
+              >
+                <span style='margin-left:40pt;'>1.1 Rol del tutor académico.<span>
+              </a>
+			  <a
+                href="#seccion-tema-3"
+                class="list-group-item list-group item-action bg-primary text-black indice"
+              >
+                <span style='margin-left:40pt;'>1.2 Modalidades de atención.<span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Contenido-->
+    <!--Fuentes de Información-->
+    <section class="bg-light text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-fuentes"
+        data-scroll-indicator-title="Fuentes de Información"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header bg-primary" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-black"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Básicas
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body text-dark">
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Beltr&aacute;n, J., &amp; Su&aacute;rez, J. (2003). <em>El quehacer tutorial. Gu&iacute;a de trabajo.</em> Universidad Veracruzana. <a href="https://www.uv.mx/dgdaie/files/2012/11/zElquehacertutorial.pdf" target="_blank">https://www.uv.mx/dgdaie/files/2012/11/zElquehacertutorial.pdf</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Universidad Veracruzana. (2009).&nbsp;<em>Legislaci&oacute;n Universitaria.</em> <em>Reglamento del Sistema Institucional de Tutor&iacute;as.</em> Universidad Veracruzana. <a href="https://www.uv.mx/legislacion/files/2017/07/Tutorias-Universidad-Veracruzana.pdf" target="_blank">https://www.uv.mx/legislacion/files/2017/07/Tutorias-Universidad-Veracruzana.pdf</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-primary" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-black"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="true"
+                      aria-controls="collapseTwo"
+                    >
+                      Complementarias
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body text-dark">
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>P&eacute;rez, R., Garc&iacute;a, G. &amp; Guerrero, K. (2012).&nbsp;<em>El sistema tutorial: percepci&oacute;n de tutores, tutorados y coordinadores del ST</em>. Universidad Veracruzana en: <a href="https://www.uv.mx/dgdaie/files/2012/11/z-El-sistema-tutorial-en-la-UV.pdf" target="_blank">https://www.uv.mx/dgdaie/files/2012/11/z-El-sistema-tutorial-en-la-UV.pdf</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Vel&aacute;squez, A., D&iacute;az-Camacho, J. E. &amp; Esquivel, I. (2018). Educaci&oacute;n y capacitaci&oacute;n en l&iacute;nea como motor para la innovaci&oacute;n en sistemas y ambientes educativos. <em>Revista de transformaci&oacute;n educativa</em>, 54-82. <a href="https://doi.org/10.5281/zenodo.1210999" target="_blank">https://doi.org/10.5281/zenodo.1210999</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Fuentes de Información-->
+    <!--Tema 1-->
+    <section class="bg-primary text-black">
+      <div
+        class="scroll-indicator"
+        id="seccion-tema-1"
+        data-scroll-indicator-title="1. Sistema Institucional de Tutorías (SIT)"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><span class="font-weight-bold">1. Sistema Institucional de Tutorías (SIT)</span> </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+			<p style="text-align: justify;">
+				El Sistema Institucional de Tutorías (SIT) tiene como objetivo apoyar a los alumnos a resolver problemas de tipo académico, promover su autonomía y formación integral, así como contribuir a mejorar su rendimiento académico, a partir de una atención individual o en pequeños grupos, con el fin de reducir los índices de deserción y reprobación. En un esfuerzo institucional, la Universidad Veracruzana ha desarrollado el Reglamento del SIT, mismo que busca hacer más eficiente el funcionamiento de las tutorías en los programas educativos y es aplicable a los académicos que desempeñan funciones como: 
+            </p>
+			<ol type="a">
+				<li>Coordinadores del Sistema Tutorial.</li>
+				<li>Tutores académicos.</li>
+				<li>Profesores tutores. </li>
+				<li>Alumnos que apoyan las funciones de tutoría académica, denominados <span class="font-weight-bold">monitores</span>.</li>
+				<li>Alumnos que reciban tutoría académica o enseñanza tutorial denominados <span class="font-weight-bold">tutorados</span>, en el nivel de estudios profesionales.</li>
+			</ol>
+			<p style="text-align: justify;">
+				Así, los <span class="font-weight-bold">tutores académicos</span> de la Universidad Veracruzana deben comprender las bases del <span class="font-weight-bold">Sistema Institucional de Tutorías (SIT)</span> e <span class="font-weight-bold">identificar su rol, sus atribuciones y sus obligaciones</span>, así como las <span class="font-weight-bold">modalidades de atención no presencial para sus tutorados</span>, es decir,  aquellas que son mediadas por la distancia física y por la tecnología, principalmente de forma asincrónica.
+            </p>
+			<p style="text-align: justify;">
+				Para reforzar lo antes expuesto, se presenta el Reglamento del Sistema Institucional de Tutorías de la Universidad Veracruzana.
+            </p>
+			<a href="pdfs/Tutorias-Universidad-Veracruzana.pdf" target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+				<span style="display: inline-block;">
+					<object data="images/Boton-Descarga-AZUL.svg" type="image/svg+xml" width="110px" height="50px" style="position: relative; z-index: -1"></object>
+				</span>
+			</a>
+			<p style="text-align: justify;">
+				Ahora, se propone analizar el siguiente material:
+            </p>
+			<figure>
+              <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/60e733910d6dbf0d5b88b53f" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+              <figcaption class="figure-caption text-right text-black">
+                Fuente: Elaboración propia.
+              </figcaption>
+            </figure>
+			<div
+				class="scroll-indicator"
+				id="seccion-tema-2"
+				data-scroll-indicator-title="1.1. Rol del tutor académico"
+			></div>
+			<p style="text-align: justify;" class="font-weight-bold">
+				1.1. Rol del tutor académico
+            </p>
+			<p style="text-align: justify;">
+				El <span class="font-weight-bold">tutor académico</span> es el responsable del seguimiento de la trayectoria escolar del <span class="font-weight-bold">tutorado</span>, así que su rol se enfoca en la orientación oportuna en la toma de decisiones relacionadas con la construcción de su perfil profesional individual, de acuerdo con sus expectativas, capacidades e intereses. 
+            </p>
+			<p style="text-align: justify;">
+				Para fortalecer el argumento anterior se incluye la siguiente presentación:
+            </p>
+			<figure>
+              <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/61003a5ba1f3a50d8cf61846" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+              <figcaption class="figure-caption text-right text-black">
+                Fuente: Elaboración propia.
+              </figcaption>
+            </figure>
+			
+			<div
+				class="scroll-indicator"
+				id="seccion-tema-3"
+				data-scroll-indicator-title="1.2. Modalidades de atención"
+			></div>
+			<p style="text-align: justify;" class="font-weight-bold">
+				1.2. Modalidades de atención
+            </p>
+			<p style="text-align: justify;">
+				Los tipos de tutoría que ofrece la Universidad Veracruzana son la <span class="font-weight-bold">tutoría académica</span> y la <span class="font-weight-bold">enseñanza tutorial</span>, mientras que las modalidades de atención pueden ser presenciales y no presenciales, de acuerdo con las características del programa educativo, los tutorados, los tutores, el tipo de tutoría y los objetivos de la sesión de tutoría.
+            </p>
+			<p style="text-align: justify;">
+				Para una mejor comprensión de lo antes expuesto, se muestra la siguiente presentación:
+            </p>
+			<figure>
+              <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/61003c6bfee3050d6eccdc61" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+              <figcaption class="figure-caption text-right text-black">
+                Fuente: Elaboración propia.
+              </figcaption>
+            </figure>
+			
+			<p style="text-align: justify;">
+				Finalmente, es importante que revise el siguiente video:
+            </p>
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item"
+					src="https://www.youtube.com/embed/sEeaZlsZUbU"
+					frameborder="0"
+					scrolling="no"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen>
+				</iframe>
+			</div>
+			<figure class="embed-responsive-item" style="display: block; text-align: center">
+				<figcaption class="figure-caption text-black text-right">Valeria Herrera. (2019, 3 febrero). <em>Tutorias UV</em> [Video]. YouTube. </figcaption>
+			</figure>
+			
+			
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="alert alert-warning text-dark" role="alert">
+              Para evaluar sus aprendizajes acerca del <span class="font-weight-bold">Módulo 1. Sistema Institucional de Tutorías</span>, diríjase a la sección <span class="font-weight-bold"><em>Exámenes</em></span> e ingrese al <span class="font-weight-bold"><em>Examen 1.SIT</em></span>, atendiendo las indicaciones para su realización.
+            </div>
+          </div>
+        </div>
+        <div class="row bg-light text-white p-2">
+          <div class="col">
+			<div
+				class="scroll-indicator"
+				id="seccion-actividad"
+				data-scroll-indicator-title="Evaluación Examen 1. SIT "
+			></div>
+            <h4>
+              <span class="font-weight-bold">Examen 1.SIT</span> 
+            </h4>
+            <p class="font-weight-bold">Descripci&oacute;n:</p>
+            <p>El <span class="font-weight-bold">Examen1.SIT </span> tiene la finalidad de conocer su aprendizaje adquirido durante este primer módulo titulado: <em>Sistema Institucional de Tutorías (SIT)</em>, para ello le sugerimos prestar especial atención a las instrucciones que se muestran a continuación:</p>
+            <ol type="1">
+				<li>Entre al apartado de Exámenes dentro de la plataforma EMINUS.</li>
+				<li>Considere que el examen estará disponible durante la primera semana del Curso-Taller (7 días).</li>
+				<li>Asegúrese de que su conectividad a internet es estable.</li>
+				<li>Ingrese al <span class="font-weight-bold">Examen 1.SIT</span> y haga clic en el botón <span class="font-weight-bold">Iniciar</span>.</li>
+				<li>Una vez que dé inicio, contará con 45 minutos para completarlo.</li>
+				<li>Es obligatorio que responda todas las preguntas.</li>
+				<li>Finalmente, haga clic sobre el botón <span class="font-weight-bold">Enviar</span>.</li>
+			</ol>
+            <p class="font-weight-bold">Criterios de desempe&ntilde;o:</p>
+            <ol>
+				<li>Domino de saberes acerca del <em>Sistema Institucional de Tutorías (SIT)</em>, específicamente:
+					<ol type="a">
+						<li>Rol del tutor  académico.</li>
+						<li>Modalidades de  atención.</li>
+					</ol>
+				</li>
+			</ol>
+            <p class="font-weight-bold">Lineamientos de entrega:</p>
+			<ol>
+				<li>Responda a las preguntas del <span class="font-weight-bold">Examen 1.SIT</span>, a través del apartado <span class="font-weight-bold">Exámenes</span> de la plataforma EMINUS, a más tardar en la fecha establecida en el <span class="font-weight-bold">Calendario</span> de entregas. </li>
+			</ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 1-->
+    
+   
+    <!--Disclaimer-->
+    <section class="bg-light">
+      <div class="container contenedor-menu-contenido">
+        <!--Disclaimer-->
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card bg-info">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i>Disclaimer</i>
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;">
+						<sup>1</sup><em>Vectorjuice</em>. (2020). <em>Students watching recorded lecture with professor talking from tablet. Podcast courses, audio and video recording, class recording access concept. Vector isolated illustration.</em> [Imagen]. <em>Freepik</em>. <a href="https://www.freepik.com/free-vector/students-watching-recorded-lecture-with-professor-talking-from-tablet-podcast-courses-audio-video-recording-class-recording-access-concept-vector-isolated-illustration_11668304.htm">https://www.freepik.com/free-vector/students-watching-recorded-lecture-with-professor-talking-from-tablet-podcast-courses-audio-video-recording-class-recording-access-concept-vector-isolated-illustration_11668304.htm</a></p>
+						<p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;">
+						<sup>2</sup>Macrovector (2020). <em>Isometric online education illustration.</em> [Imagen]. <em>Freepik</em>. <a href="https://www.freepik.com/free-vector/isometric-online-education-illustration_7439577.htm">https://www.freepik.com/free-vector/isometric-online-education-illustration_7439577.htm</a></p>
+						
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/Disclaimer-->
+      </div>
+    </section>
+    <!--Disclaimer-->
+    <!--Logo Universidad Veracruzana-->
+    <section id="pie-pagina" class="p-1">
+      <div class="container">
+        <div class="row">
+          <div class="w-100">
+            <div class="row d-flex justify-content-center">
+              <div class="col-3 col-md-2">
+                <img src="images/logo-uv-texto.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Logo Universidad Veracruzana-->
+    <div class="fixed-bottom-right" id="button-up">
+      <a class="btn btn-success indice btn-sm p-3" href="#seccion-proposito">
+        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+      </a>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/easyScrollDots.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/inicializacion.js"></script>
+  </body>
+</html>

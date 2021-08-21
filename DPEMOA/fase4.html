@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/easyScrollDots.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Diseño de proyectos educativos mediados por Objetos de Aprendizaje</title>
+  </head>
+  <body>
+    <!--Encabezado-->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
+        <div class="container">
+          <div class="navbar-brand pb-0">
+            <div class="row no-gutters mb-1">
+              <div class="col">
+                <img
+                  src="images/logo-profa.png"
+                  class="logo d-inline mr-"
+                  alt="mdb logo"
+                />
+              </div>
+              <div
+                class="col text-secondary d-flex flex-column justify-content-center"
+              >
+                <span class="h5 font-weight-bold">Diseño de proyectos educativos mediados por objetos de aprendizaje</span>
+                <p class="p-0 m-0 font-weight-bold">
+                  IV. Identificación, planeación, evaluación y usabilidad de un Objeto y/o REA
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="dropdown"
+            data-target="#menu-indice"
+            aria-controls="menu-indice"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <i class="fas fa-align-justify text-dark"></i>
+          </button>
+          <!--Menú en dispositivos móviles-->
+          <div class="dropdown-menu dropdown-menu-right" id="menu-indice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-secondary text-center p-1">
+                <a
+                  class="text-white"
+                  href="https://www.uv.mx/"
+                  target="_blank"
+                  alt="Ir a Universidad Veracruzana"
+                >
+                  Universidad Veracruzana
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#" class="indice">
+                  <i class="fas fa-home text-primary"></i> Inicio:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-proposito" class="ml-3 indice">
+                  <i class="icon-icono_proposito text-secondary"></i> Propósito:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-introduccion" class="ml-3 indice">
+                  <i class="icon-icono_introduccion text-secondary"></i>
+                  Introducci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-contenido" class="ml-3 indice">
+                  <i class="fas fa-copy text-secondary"></i> Contenido
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-fuentes" class="ml-3 indice">
+                  <i class="icon-icono_fuentes text-secondary"></i> Fuentes de
+                  Informaci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#">
+                  <i class="fas fa-book text-primary"></i> Temas:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-1" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.1. Módulo 1
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Menú en dispositivos móviles-->
+        </div>
+      </nav>
+    </header>
+    <!--/Encabezado-->
+    <!--Menú Izquierdo-->
+    <div id="sticky-menu" class="d-none d-lg-block d-lg-flex flex-column">
+      <a
+        class="btn btn-lg btn-light btn-menu"
+        href="index.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Inicio</em>"
+      >
+        <i class="fas fa-home fa-2x"></i>
+      </a>
+
+      <a
+        class="btn btn-lg btn-light btn-menu"
+        href="fase1.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Identificación de un Objeto de aprendizaje (mirada histórica).</em>"
+      >
+        <span class="font-weight-bold lead">I</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu"
+        href="fase2.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Los objetos de aprendizaje y los recursos educativos abiertos. Una evolución.</em>"
+      >
+        <span class="font-weight-bold lead">II</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu"
+        href="fase3.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Políticas en la aplicación y desarrollo de Recursos Educativos Abiertos. Hacia una comunidad del aprendizaje.</em>"
+      >
+        <span class="font-weight-bold lead">III</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-primary btn-menu d-block"
+        href="#!"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Identificación, planeación, evaluación y usabilidad de un Objeto y/o REA.</em>"
+      >
+        <span class="font-weight-bold lead">IV</span>
+      </a>
+    </div>
+    <!--/Menú Izquierdo-->
+    <!--Propósito-->
+    <section class="bg-primary text-black">
+      <div
+        class="scroll-indicator"
+        id="seccion-proposito"
+        data-scroll-indicator-title="Propósito"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_proposito"></i> Propósito</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <p style="text-align: justify;">El participante desarrolla un pequeño proceso de planeación que formaliza la aplicabilidad de un REA dentro de su práctica académica.</p>
+          </div>
+          <div class="col-6">
+            <figure class="figure">
+              <img
+                src="images/fase4/1.jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <figcaption class="figure-caption text-right text-black">
+                [1]
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Propósito-->
+    <!--Introducción-->
+    <section class="bg-light text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-introduccion"
+        data-scroll-indicator-title="Introducción"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_introduccion"></i> Introducción</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <figure class="figure" id="modulo1-imagen">
+              <img
+                src="images/fase4/2.jpg"
+                alt=""
+                class="img-fluid figure-img"
+              />
+              <figcaption class="figure-caption text-white">[2]</figcaption>
+            </figure>
+          </div>
+          <div class="col-9">
+            <p style="text-align: justify;">
+              La importancia del proceso de planeación, en términos educativos, se encuentra en la organización de contenidos y recursos, tales como los OA y/o REA, que se abordarán bajo ciertos saberes específicos, reduciendo la incertidumbre en la operatividad, brindándole, como docente, la oportunidad de prever cambios y reaccionar en función de que existan imprevistos. Al tiempo de que se justifica la usabilidad de ciertos elementos de apoyo con los que se espera lograr ciertas competencias.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Introducción-->
+    <!--Contenido-->
+    <section class="bg-primary">
+      <div
+        class="scroll-indicator"
+        id="seccion-contenido"
+        data-scroll-indicator-title="Contenido"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="fas fa-copy text-secondary"></i> Contenido</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="list-group">
+              <a
+                href="#seccion-tema-1"
+                class="list-group-item list-group item-action bg-primary text-black indice"
+              >
+                4.1	Identificación, planeación, evaluación y usabilidad de un Objeto y/o REA.
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Contenido-->
+    <!--Fuentes de Información-->
+    <section class="bg-light text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-fuentes"
+        data-scroll-indicator-title="Fuentes de Información"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header bg-primary" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-black"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Básicas
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body text-dark">
+                    <p style='margin-left:15.65pt;text-indent:-15.65pt;'>Miao, F., Mishra, S., Orr, D. & Janssen, B. (2020). <em>Directrices para la elaboración de políticas de recursos educativos abiertos</em>. UNESCO y <em>Commonwealth of Learning</em>. <a href="https://www.uv.mx/abp/files/2020/12/CaracteristicasREA_UNESCO.pdf" target="_blank">https://www.uv.mx/abp/files/2020/12/CaracteristicasREA_UNESCO.pdf</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Fuentes de Información-->
+    <!--Tema 1-->
+    <section class="bg-primary text-black">
+      <div
+        class="scroll-indicator"
+        id="seccion-tema-1"
+        data-scroll-indicator-title="3.2 Identificación, planeación, evaluación y usabilidad de un Objeto y/o REA"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3>4.1	Identificación, planeación, evaluación y usabilidad de un Objeto y/o REA</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <figure class="figure float-left pr-3" id="modulo1-tema1-imagen-1">
+              <img
+                src="images/fase4/3.jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <figcaption class="figure-caption text-black">[3]</figcaption>
+            </figure>
+
+            <p style="text-align: justify;">
+				En este punto, debemos tener claridad de lo que representa un REA en el nuevo escenario educativo. Establecer un proyecto educativo, que sea mediado o apoyado por un REA consiste en justificar su aplicabilidad y definir qué saberes se fortalecen durante su aplicación.
+            </p>
+			<p style="text-align: justify;">
+				Una vez que hemos aprendido a identificar nuestro REA y que sabemos en qué momento de la planeación educativa será aplicado, procederemos a describirlo puntualmente y evaluarlo en su sentido de aplicabilidad, detallando lo que se espera lograr al recurrir a él como elemento mediador de los saberes y conocimientos propios de nuestra disciplina educativa.
+            </p>
+			<p style="text-align: justify;">
+			Algunos de los aspectos a tomar en cuenta para este proceso son los siguientes:
+				<ol type="a">
+					<li style="text-align: justify;">Justificación del proceso de aplicación del REA.</li>
+					<li style="text-align: justify;">Unidad de competencia que se espera lograr.</li>
+					<li style="text-align: justify;">Saberes que se pretenden fortalecer con el uso del REA.</li>
+					<li style="text-align: justify;">Descripción del Recurso Educativo Abierto a utilizar (características).</li>
+					<li style="text-align: justify;">Dinámica de aplicación (situación clave en la que se utilizará el REA).</li>
+					<li style="text-align: justify;">Actividad de evaluación para comprobar el grado de desarrollo adquirido de la competencia.</li>
+				</ol>
+            </p>
+          </div>
+        </div>
+        <div class="row bg-light text-white p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold">Actividad 1.</span> Planeación de la aplicación de un Recurso Educativo Abierto.
+            </h4>
+            <p class="font-weight-bold">Descripci&oacute;n de la actividad:</p>
+			<ol type="1">
+				<li style="text-align: justify;">Consulte la siguiente fuente de informaci&oacute;n: Miao, F., Mishra, S., Orr, D. &amp; Janssen, B. (2020). <em>Directrices para la elaboraci&oacute;n de pol&iacute;ticas de recursos educativos abiertos</em>. UNESCO y <em>Commonwealth of Learning.</em> <a target="_blank" style="color: #47e895; text-decoration: underline;" href="https://www.uv.mx/abp/files/2020/12/CaracteristicasREA_UNESCO.pdf">https://www.uv.mx/abp/files/2020/12/CaracteristicasREA_UNESCO.pdf</a></li>
+				<li style="text-align: justify;">A continuación, en un archivo de <em>Word</em> realizaremos nuestro proceso de micro planeación, en el que determinaremos el cómo haremos uso del REA que hemos seleccionado, en función del alcance de los saberes que conforman nuestras experiencias educativas. </li>
+				<li style="text-align: justify;">Los elementos que debemos desarrollar son los siguientes:
+					<ol type="a">
+						<li style="text-align: justify;">Justificación del proceso de aplicación del REA.</li>
+						<li style="text-align: justify;">Unidad de competencia que se espera lograr.</li>
+						<li style="text-align: justify;">Saberes que se pretenden fortalecer con el uso del REA.</li>
+						<li style="text-align: justify;">Descripción del Recurso Educativo Abierto a utilizar (características).</li>
+						<li style="text-align: justify;">Dinámica de aplicación (situación clave en la que se utilizará el REA).</li>
+						<li style="text-align: justify;">Actividad de evaluación para comprobar el grado de desarrollo adquirido de la competencia.</li>
+					</ol>
+				</li>
+				<li style="text-align: justify;">Al finalizar, guarde su archivo y colóquelo en el espacio correspondiente a la actividad para esperar retroalimentación.</li>
+			</ol>
+            
+            <p class="font-weight-bold">Criterios de desempe&ntilde;o:</p>
+            <ol type="1">
+				<li style="text-align: justify;">Claridad.</li>
+				<li style="text-align: justify;">Suficiencia.</li>
+				<li style="text-align: justify;">Coherencia.</li>
+				<li style="text-align: justify;">Pertinencia.</li>
+			</ol>
+            <p class="font-weight-bold">Lineamientos de entrega:</p>
+			<ol type="1">
+				<li style="text-align: justify;">Titule el archivo de la siguiente forma: <br>
+					<em>Act1_PrimerApellidoyPrimerNombre</em>. Ejemplo: <em>Act1_VillanuevaMariaTeresa</em>. 
+				</li>
+				<li style="text-align: justify;">Envíe su archivo, en formato PDF, a través del apartado Actividades de la plataforma Eminus, a más tardar en la fecha establecida en el Calendario de entregas.</li>
+			</ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 1-->
+    
+   
+    <!--Disclaimer-->
+    <section class="bg-light">
+      <div class="container contenedor-menu-contenido">
+        <!--Disclaimer-->
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card bg-info">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i>Disclaimer</i>
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;">
+						<sup>1</sup> StartupStockPhotos (2015). Man-593333_1920. [Imagen]. <em>Pixabay</em>. <a href="https://pixabay.com/es/photos/hombre-escribir-plan-de-escritorio-593333/" target="_blank">https://pixabay.com/es/photos/hombre-escribir-plan-de-escritorio-593333/</a> </p>
+						<p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;">
+						<sup>2</sup> Free-Photos (2016). Writing-1149962_1920. [Imagen]. <em>Pixabay</em>. <a href="https://pixabay.com/es/photos/por-escrito-pluma-hombre-tinta-1149962/" target="_blank">https://pixabay.com/es/photos/por-escrito-pluma-hombre-tinta-1149962/</a> </p>
+						<p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;">
+						<sup>3</sup>  <em>StockSnap</em> (2017). Man-2562325_1920. [Imagen]. <em>Pixabay</em>. <a href="https://pixabay.com/es/photos/hombre-por-escrito-2562325/" target="_blank">https://pixabay.com/es/photos/hombre-por-escrito-2562325/</a> </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/Disclaimer-->
+      </div>
+    </section>
+    <!--Disclaimer-->
+    <!--Logo Universidad Veracruzana-->
+    <section id="pie-pagina" class="p-1">
+      <div class="container">
+        <div class="row">
+          <div class="w-100">
+            <div class="row d-flex justify-content-center">
+              <div class="col-3 col-md-2">
+                <img src="images/logo-uv-texto.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Logo Universidad Veracruzana-->
+    <div class="fixed-bottom-right" id="button-up">
+      <a class="btn btn-success indice btn-sm p-3" href="#seccion-proposito">
+        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+      </a>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/easyScrollDots.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/inicializacion.js"></script>
+  </body>
+</html>
