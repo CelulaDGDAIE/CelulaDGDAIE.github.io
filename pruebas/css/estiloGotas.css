@@ -1,0 +1,66 @@
+.elemento-linea {
+	position:absolute;
+	padding: none;
+}
+.e2{
+	left: 15%;
+}
+@media screen and (max-width: 2000px) {
+  .e2 {
+    left: 7%;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .e2 {
+    left: 10%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .e2 {
+    left: 13%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .e2 {
+    left: 15%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .e2 {
+    left: 20%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .e2 {
+    left: 22.5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .e2 {
+    left: 80%;
+  }
+}
+.elemento-linea:hover .elemento-content object {
+    transform: scale(0.97); 
+}
+.elemento-content{
+	display: inline-block;
+	position: relative; 
+	z-index: 1;
+}
+.elemento-content span{
+	display: inline-block;
+}
+.elemento-content object {
+	position: relative; 
+	z-index: -1;
+	width: 80%; 
+	height: 80%;
+	transform: scale(0.87);
+	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; 
+}
+  
+
+
+  
+  
