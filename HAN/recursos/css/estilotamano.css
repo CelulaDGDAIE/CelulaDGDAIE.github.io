@@ -1,0 +1,145 @@
+.elemento-linea {
+	position:absolute;
+	padding: none;
+	width: 80%; 
+	height: 80%;
+}
+.elemento-linea2 {
+	position:absolute;
+	padding: none;
+	width: 80%; 
+	height: 80%;
+	
+}
+.elemento-trans {
+	position:absolute;
+	padding: none;
+	width: 65%; 
+	height: 65%;
+}
+
+.e2{
+	left: 15%;
+}
+.e3{
+	left: 30%;
+}
+.e4{
+	left: 45%;
+}
+.e5{
+	left: 60%;
+}
+.tran1{
+	left: 75%;
+	top: 10.5%;
+}
+.tran2{
+	left: 75%;
+	top: 36%;
+}
+.e6{
+	left: 50%;
+	top: 50%;
+}
+.e7{
+	left: 45%;
+}
+.e8{
+	left: 30%;
+}
+.e9{
+	left: 15%;
+}
+
+
+.elemento-linea:hover .elemento-content object {
+    transform: scale(0.97); 
+}
+.elemento-linea2:hover .elemento-content object {
+    transform: scale(0.97); 
+}
+.elemento-trans:hover .elemento-content object {
+    transform: scale(0.97); 
+}
+.elemento-content{
+	display: inline-block;
+	position: relative; 
+	z-index: 1;
+}
+.elemento-content span{
+	display: inline-block;
+	text-align:center
+}
+.elemento-content object {
+	position: relative; 
+	z-index: -1;
+	transform: scale(0.87);
+	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; 
+}
+@media screen and (max-width: 2500px) {/* reduce zoom computadora dafie*/
+  .elemento-linea object {
+    width: 30%; 
+	height: 30%;
+  }
+  .elemento-linea2 object {
+    width: 30%; 
+	height: 30%;
+  }
+  .elemento-trans object {
+    width: 30%; 
+	height: 30%;
+  }
+}
+@media screen and (max-width: 2200px) {/* reduce zoom computadora dafie*/
+  .elemento-linea object {
+    width: 28%; 
+	height: 28%;
+  }
+  .elemento-linea2 object {
+    width: 28%; 
+	height: 28%;
+  }
+  .elemento-trans object {
+    width: 30%; 
+	height: 30%;
+  }
+}
+
+@media screen and (max-width: 1900px) {/* computadora dafie*/
+  .elemento-linea object {
+    width: 25%; 
+	height: 25%;
+  }
+  .elemento-linea2 object {
+    width: 25%; 
+	height: 25%;
+  }
+  
+  .elemento-trans object {
+    width: 30%; 
+	height: 30%;
+  }
+}
+@media screen and (max-width: 1800px) {/* aumenta zoom computadora dafie*/
+  .elemento-linea object {
+    width: 23%; 
+	height: 23%;
+  }
+  .elemento-linea2 object {
+    width: 23%; 
+	height: 23%;
+  }
+  
+  .elemento-trans object {
+    width: 30%; 
+	height: 30%;
+  }
+}
+
+
+  
+
+
+  
+  

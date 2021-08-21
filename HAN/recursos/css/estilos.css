@@ -1,0 +1,162 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+#imagen-introduccion{
+    width:75%;
+    height:75%;
+}
+
+
+#modulo1-imagen-introduccion {
+    width: 40%;
+}
+
+#modulo1-imagen-proposito{
+    width:40%;
+}
+
+#modulo1-tema1-imagen-1 {
+    width: 30%;
+}
+
+#modulo1-tema2-imagen-1 {
+    width: 30%;
+}
+
+#modulo1-tema3-imagen-1 {
+    width: 25%;
+}
+
+#modulo1-tema4-imagen-1 {
+    width: 40%;
+}
+
+
+
+/*#imagen-tema-1 {
+    width: 45%;    
+}
+
+#imagen-tema-2 {
+    width: 45%;
+}
+
+#imagen-tema-4 {
+    width: 45%;
+}
+*/
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+/*@media (min-width: 576px) {
+
+}
+*/
+/* Medium devices (tablets, 768px and up)*/
+/*@media (min-width: 768px) {
+    
+}*/
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #imagen-introduccion {
+        width: 65%;
+        height: 65%;
+    }
+
+    #imagen-tema-1 {
+        width: 35%;
+    }
+
+    #imagen-tema-2 {
+        width: 35%;
+    }
+
+    #imagen-tema-4 {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+/*@media (min-width: 1200px) {
+    
+}*/
+
+
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
