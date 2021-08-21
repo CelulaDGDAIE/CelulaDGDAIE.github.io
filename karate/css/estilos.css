@@ -1,0 +1,84 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+#imagen-introduccion{
+    width:75%;
+    height:75%;
+}
+
+
+#modulo1-imagen-introduccion {
+    width: 40%;
+}
+
+#modulo1-imagen-proposito{
+    width:40%;
+}
+
+#modulo1-tema1-imagen-1 {
+    width: 30%;
+}
+
+#modulo1-tema2-imagen-1 {
+    width: 30%;
+}
+
+#modulo1-tema3-imagen-1 {
+    width: 25%;
+}
+
+#modulo1-tema4-imagen-1 {
+    width: 40%;
+}
+
+
+
+/*#imagen-tema-1 {
+    width: 45%;    
+}
+
+#imagen-tema-2 {
+    width: 45%;
+}
+
+#imagen-tema-4 {
+    width: 45%;
+}
+*/
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+/*@media (min-width: 576px) {
+
+}
+*/
+/* Medium devices (tablets, 768px and up)*/
+/*@media (min-width: 768px) {
+    
+}*/
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #imagen-introduccion {
+        width: 65%;
+        height: 65%;
+    }
+
+    #imagen-tema-1 {
+        width: 35%;
+    }
+
+    #imagen-tema-2 {
+        width: 35%;
+    }
+
+    #imagen-tema-4 {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+/*@media (min-width: 1200px) {
+    
+}*/

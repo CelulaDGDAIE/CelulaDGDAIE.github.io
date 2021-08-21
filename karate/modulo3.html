@@ -1,0 +1,829 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/easyScrollDots.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Karate Do</title>
+  </head>
+  <body>
+    <!--Encabezado-->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
+        <div class="container">
+          <div class="navbar-brand pb-0">
+            <div class="row no-gutters mb-1">
+              <div class="col">
+                <img
+                  src="images/logo-afel.png"
+                  class="logo d-inline mr-"
+                  alt="mdb logo"
+                />
+              </div>
+              <div
+                class="col text-secondary d-flex flex-column justify-content-center"
+              >
+                <span class="h2 font-weight-bold"><em>Karate Do</em></span>
+                <p class="p-0 m-0 font-weight-bold">
+                  III. <em>Kata</em> y acondicionamiento físico general.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="dropdown"
+            data-target="#menu-indice"
+            aria-controls="menu-indice"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <i class="fas fa-align-justify text-dark"></i>
+          </button>
+          <!--Menú en dispositivos móviles-->
+          <div class="dropdown-menu dropdown-menu-right" id="menu-indice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-secondary text-center p-1">
+                <a
+                  class="text-white"
+                  href="https://www.uv.mx/"
+                  target="_blank"
+                  alt="Ir a Universidad Veracruzana"
+                >
+                  Universidad Veracruzana
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#" class="indice">
+                  <i class="fas fa-home text-primary"></i> Inicio:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-proposito" class="ml-3 indice">
+                  <i class="icon-icono_proposito text-secondary"></i> Propósito:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-introduccion" class="ml-3 indice">
+                  <i class="icon-icono_introduccion text-secondary"></i>
+                  Introducci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-contenido" class="ml-3 indice">
+                  <i class="fas fa-copy text-secondary"></i> Contenido
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-fuentes" class="ml-3 indice">
+                  <i class="icon-icono_fuentes text-secondary"></i> Fuentes de
+                  Informaci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#">
+                  <i class="fas fa-book text-primary"></i> Temas:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-1" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 3.1
+                  <em>Kata</em> (forma) y acondicionamiento físico general.
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Menú en dispositivos móviles-->
+        </div>
+      </nav>
+    </header>
+    <!--/Encabezado-->
+    <!--Menú Izquierdo-->
+    <div id="sticky-menu" class="d-none d-lg-block d-lg-flex flex-column">
+      <a
+        class="btn btn-lg btn-light btn-menu"
+        href="index.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Inicio</em>"
+      >
+        <i class="fas fa-home fa-2x"></i>
+      </a>
+      <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="modulo1.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Antecedentes históricos del Karate Do</em>"
+      >
+        <span class="font-weight-bold lead">1</span>
+      </a>
+      <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="modulo2.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Kihon y acondicionamiento físico general</em>"
+      >
+        <span class="font-weight-bold lead">2</span>
+      </a>
+      <a
+        class="btn btn-lg btn-primary btn-menu d-block"
+        href="#"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em><em>Kata</em> (forma) y acondicionamiento físico general</em>"
+      >
+        <span class="font-weight-bold lead">3</span>
+      </a>
+      <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="modulo4.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Kumite y acondicionamiento físico general</em>"
+      >
+        <span class="font-weight-bold lead">4</span>
+      </a>
+    </div>
+    <!--/Menú Izquierdo-->
+    <!--Propósito-->
+    <section class="bg-primary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-proposito"
+        data-scroll-indicator-title="Propósito"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_proposito"></i> Propósito</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-8 d-flex align-items-center">
+            <p>
+              El estudiante practica el <em>Kata</em> b&aacute;sico Jono del
+              estilo <em>Shotokan</em>, empleando los saberes aprendidos y las
+              capacidades f&iacute;sicas coordinativas requeridas, para la
+              correcta ejecuci&oacute;n en esta especialidad del <em>Karate Do</em>.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <figure class="figure">
+              <img
+                src="images/modulo3/modulo3_1.jpg"
+                alt=""
+                class="img-fluid figure-img"
+              />
+              <figcaption class="figure-caption text-right text-white">
+                [1]
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Propósito-->
+    <!--Introducción-->
+    <section class="bg-secondary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-introduccion"
+        data-scroll-indicator-title="Introducción"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_introduccion"></i> Introducción</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-3 d-flex align-items-center">
+            <figure class="figure">
+              <img
+                src="images/modulo3/modulo3_2.png"
+                alt=""
+                class="img-fluid figure-img"
+              />
+              <figcaption class="figure-caption text-white">[2]</figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-9">
+            <p>
+              El <em>Kata</em>, traducido literalmente como forma, es un
+              elemento tan antiguo como el <em>Karate Do</em> mismo, ideado como
+              un sistema para el entrenamiento de la t&eacute;cnica
+              b&aacute;sica (<em>Kihon</em>), que en la actualidad ha conseguido
+              un lugar de gran importancia en el &aacute;mbito
+              deportivo/competitivo.
+            </p>
+            <p>
+              Para este m&oacute;dulo, se destaca que es mucho m&aacute;s que
+              solamente repetir t&eacute;cnicas como si de una
+              coreograf&iacute;a se tratase, el <em>Kata</em> es la oportunidad
+              para el karatedoka de explotar la parte art&iacute;stica del
+              <em>Karate Do</em>, el histrionismo con el que se ejecute debe
+              dejar la impresi&oacute;n para quien la observa, de que ah&iacute;
+              se est&aacute; desarrollando un combate de alto nivel. Entrenar
+              <em>Kata</em> con un alto grado de exigencia no implica tener
+              grandes conocimientos sobre <em>Karate Do</em>, basta con que se
+              asuma el entrenamiento con seriedad y compromiso, para conseguir
+              un buen nivel de desarrollo en las capacidades y una mejora
+              sustancial de la buena forma en el <em>Kihon</em>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Introducción-->
+    <!--Contenido-->
+    <section class="bg-light">
+      <div
+        class="scroll-indicator"
+        id="seccion-contenido"
+        data-scroll-indicator-title="Contenido"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="fas fa-copy text-secondary"></i> Contenido</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="list-group">
+              <a
+                href="#seccion-tema-1"
+                class="list-group-item list-group item-action bg-primary text-white indice"
+              >
+                3.1. <em>Kata</em> (forma) y acondicionamiento físico general
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Contenido-->
+    <!--Fuentes de Información-->
+    <section class="bg-secondary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-fuentes"
+        data-scroll-indicator-title="Fuentes de Información"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header bg-primary" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Básicas
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body text-dark">
+                      <ul>
+                          <li>
+                              Educaci&oacute;n y Deporte. (2020, 15 agosto).
+                              <em>Qu&eacute; son las capacidades f&iacute;sicas</em>
+                              [Video]. YouTube.
+                              <a href="https://www.youtube.com/watch?v=EjRb_hT9BWE"
+                                 class="enlace"
+                                 target="_blank">https://www.youtube.com/watch?v=EjRb_hT9BWE</a>
+                          </li>
+                          <li>
+                              Vladimir Shakhov. (2020, 17 mayo).
+                              <em>[JKS] Jo No <em>Kata</em></em> [Video]. YouTube.
+                              <a href="https://www.youtube.com/watch?v=6rO147hNUXY&amp;t=26s"
+                                 class="enlace"
+                                 target="_blank">https://www.youtube.com/watch?v=6rO147hNUXY&amp;t=26s</a>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Fuentes de Información-->
+    <!--Tema 1-->
+    <section class="bg-primary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-tema-1"
+        data-scroll-indicator-title="3.1. <em>Kata</em> (forma) y acondicionamiento físico general"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3>
+              3.1. <em>Kata</em> (forma) y acondicionamiento físico general
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>
+                    El <em>Kata</em>, o forma, es un sistema para el entrenamiento de
+                    las t&eacute;cnicas de ataque y bloqueo, conteniendo algunas
+                    similitudes con el <em>Kihon</em>, con la diferencia de que las
+                    secuencias que las conforman est&aacute;n ya predeterminadas y no
+                    var&iacute;an, algunos de estos <em>Kata</em> son verdaderas
+                    reliquias, puesto que tienen m&aacute;s de un siglo de existencia.
+                </p>
+                <p>
+                    Entrenar <em>Kata</em> proporciona al ejecutante, adem&aacute;s
+                    del perfeccionamiento de la t&eacute;cnica b&aacute;sica, la
+                    habilidad para confrontar un encuentro contra m&aacute;s de un
+                    oponente (lo que es poco sensato, aunque podr&iacute;a no haber
+                    elecci&oacute;n en un momento dado) ya que no se realiza en un
+                    formato lineal (como el <em>Kihon</em>), sino que contiene una
+                    serie de desplazamientos, giros y cambios de direcci&oacute;n que
+                    podr&iacute;an resultar convenientes para evadir un ataque doble o
+                    incluso triple.
+                </p>
+                <p>
+                    Existen varios <em>Kata</em> con diferente grado de dificultad,
+                    tanto en la exigencia f&iacute;sico‑atl&eacute;tica como en la
+                    ejecuci&oacute;n de la t&eacute;cnica y esto obedece al nivel de
+                    entrenamiento del practicante, es decir, conforme el karatedoka
+                    incrementa su grado de aprendizaje, el nivel de dificultad del
+                    <em>Kata</em> se va igualmente acrecentando.
+                </p>
+                <p>
+                    Al entrenar <em>Kata</em>, los movimientos deben efectuarse con un
+                    realismo tal que sea evidente su eficiencia, en alusi&oacute;n a
+                    un ataque en donde la vida misma podr&iacute;a estar en peligro;
+                    de no entrenarlos as&iacute;, la posibilidad de salir bien librado
+                    ante una agresi&oacute;n real ser&iacute;a muy baja.
+                </p>
+                <p>
+                    Para la pr&aacute;ctica del <em>Kata</em> es muy importante
+                    retomar el tema del entrenamiento de las capacidades
+                    f&iacute;sicas condicionales o b&aacute;sicas revisadas en el
+                    m&oacute;dulo 2, para recordarlo, se presenta el siguiente video.
+                </p>
+                <div class="embed-responsive embed-responsive-21by9">
+                    <iframe class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/EjRb_hT9BWE"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+                <p class="text-right">
+                    Educaci&oacute;n y Deporte. (2020, 15 agosto).
+                    <em>Qu&eacute; son las capacidades f&iacute;sicas</em> [Video].
+                    YouTube.
+                </p>
+
+                <p>
+                    Para entrar de lleno en <em>Kata</em>, el alumno debe observar el
+                    siguiente video, mismo que muestra la ejecuci&oacute;n de la forma
+                    <em>Jono <em>Kata</em>, </em>del estilo <em>Shotokan</em>, un
+                    ejercicio para grados principiantes con un bajo grado de
+                    dificultad.
+                </p>
+                <p class="text-center">
+                    <em>(Video del <em>Kata</em> en los tres &aacute;ngulos)</em>
+                </p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                            src="https://lumen.uv.mx/lumen/shared/embed/resource/4183"
+                            frameborder="0"
+                            scrolling="no"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+                <p class="text-right text-white">Kata frente [Video]. Lumen.UV.</p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                            src="https://lumen.uv.mx/lumen/shared/embed/resource/4182"
+                            frameborder="0"
+                            scrolling="no"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+                <p class="text-right text-white">Kata costado [Video]. Lumen.UV.</p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                            src="https://lumen.uv.mx/lumen/shared/embed/resource/4181"
+                            frameborder="0"
+                            scrolling="no"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+                <p class="text-right text-white">Kata espalda [Video]. Lumen.UV.</p>
+            </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="alert alert-warning text-dark" role="alert">
+              Para evaluar tus aprendizajes acerca del tema:
+              <span class="font-weight-bold"
+                ><em>Kata y acondicionamiento f&iacute;sico general</em></span
+              >, dir&iacute;gete a la secci&oacute;n de
+              <span class="font-weight-bold"><em>Actividades</em></span> e
+              ingresa a las
+              <span class="font-weight-bold"><em>actividades 6 y 7</em>,</span>
+              atendiendo las indicaciones para su realizaci&oacute;n.
+            </div>
+          </div>
+        </div>
+        <div class="row bg-light text-dark p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold"
+                >Actividad 6. Preparación física general.</span
+              >
+            </h4>
+            <p>&nbsp;</p>
+            <p><span class="font-weight-bold">Descripci&oacute;n:</span></p>
+            <p>
+              De acuerdo con lo que hemos revisado acerca de las capacidades
+              f&iacute;sicas condicionales o b&aacute;sicas, es importante que
+              lo pongamos en pr&aacute;ctica, para lo anterior deber&aacute;s:
+            </p>
+            <ol>
+              <li>
+                Buscar ejemplos de ejercicios para la resistencia y velocidad
+                general.
+              </li>
+              <li>
+                Mostrar en <span class="font-weight-bold">video</span> las
+                siguientes actividades:
+                <ul>
+                  <li>Dos ejercicios de resistencia general.</li>
+                  <li>Dos ejercicios de velocidad general.</li>
+                </ul>
+              </li>
+              <li>
+                Atender los siguientes detalles en la realizaci&oacute;n del
+                video:
+                <ul>
+                  <li>
+                    Para una mejor apreciaci&oacute;n de tu imagen,
+                    f&iacute;lmate lateralmente en los ejercicios que as&iacute;
+                    lo requieran.
+                  </li>
+                  <li>
+                    Filma en un espacio amplio para que ning&uacute;n objeto o
+                    mueble afecte el desarrollo de tus ejercicios.
+                  </li>
+                  <li>
+                    Para un mejor resultado y calidad en los videos, se
+                    recomienda grabar en un espacio abierto con luz o entradas
+                    de la misma. Evitando que existan tomas a contraluz. &nbsp;
+                  </li>
+                  <li>
+                    Coloca tu dispositivo para grabar en un lugar fijo o usando
+                    un tripi&eacute; y&nbsp;en posici&oacute;n horizontal, tu
+                    imagen no debe aparecer seccionada (sin pies o sin cabeza).
+                  </li>
+                  <li>
+                    Tu video no debe durar m&aacute;s de
+                    <strong>1 minuto</strong>,
+                    <strong>ni tener cortes o ediciones,</strong> as&iacute; que
+                    es recomendable que repases tu rutina varias veces antes de
+                    filmarla definitivamente. De ser necesario, podr&aacute;s
+                    grabar un m&aacute;ximo de dos videos.
+                  </li>
+                  <li>
+                    No te filmes hablando, cualquier comentario que desees
+                    incluir, ser&aacute; por medio de notas en el mismo o en un
+                    archivo de audio agregado posteriormente.
+                  </li>
+                  <li>Los videos deber&aacute;n ser en una sola toma.&nbsp;</li>
+                  <li>
+                    Se recomienda evitar sonidos o m&uacute;sica de fondo.&nbsp;
+                  </li>
+                  <li>
+                    Al finalizar la filmaci&oacute;n, revisa haber permanecido
+                    todo el tiempo &ldquo;a cuadro&rdquo;.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Para efectuar tu video puedes apoyarte en la aplicaci&oacute;n
+                <em>TikTok</em>, para ello se facilita el siguiente tutorial:
+                JuanFe Castro. (2019, 6 diciembre).
+                <em
+                  >C&oacute;mo grabar y editar TikTok | Tips y &iexcl;Trucos! |
+                  JuanFe</em
+                >
+                [Video]. YouTube.
+                <a
+                  href="https://www.youtube.com/watch?v=IBwiUhYe13M&amp;feature=emb_logo"
+                  class="enlace"
+                  target="_blank"
+                  >https://www.youtube.com/watch?v=IBwiUhYe13M&amp;feature=emb_logo</a
+                >, adem&aacute;s de consultar los tips para realizar videos que
+                se publican en:
+                <p>
+                  Universidad Veracruzana. (s. f.).
+                  <em
+                    >Videotips Para el desarrollo de tus recursos
+                    audiovisuales.</em
+                  >
+                  [Video]. UV.C&eacute;lula ODE. &nbsp;<a
+                    href="https://www.uv.mx/celulaode/videotips/"
+                    class="enlace"
+                    target="_blank"
+                    >https://www.uv.mx/celulaode/videotips/</a
+                  >
+                </p>
+              </li>
+            </ol>
+            <p>
+              <span class="font-weight-bold"
+                >Criterios de desempe&ntilde;o:</span
+              >
+            </p>
+            <ul>
+              <li>Presentaci&oacute;n (ropa deportiva).</li>
+              <li>Actitud en general.</li>
+              <li>Intensidad en la ejecuci&oacute;n de los ejercicios.</li>
+              <li>Orden en la realizaci&oacute;n de los ejercicios.</li>
+              <li>
+                Material de apoyo que pueda requerirse para realizar el video
+                (reciclado o adaptado).
+              </li>
+            </ul>
+            <p>
+              <span class="font-weight-bold">Lineamientos de entrega:</span>
+            </p>
+            <ol>
+                <li>
+                    Titula el archivo de la siguiente forma:<br />
+                    <em>Act6_</em>PrimerApellidoyPrimerNombre. Ejemplo: <em>Act6_</em>VillanuevaMariaTeresa
+                </li>
+              <li>
+                Env&iacute;a tu video a trav&eacute;s del apartado de
+                Actividades de la plataforma Eminus, a m&aacute;s tardar en la
+                fecha establecida en el Calendario de entregas.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="row bg-light text-dark p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold">Actividad 7. <em>Kata</em>.</span>
+            </h4>
+            <p>
+              De acuerdo con lo que hemos revisado acerca de <em>Kata</em>, es
+              importante que lo pongamos en pr&aacute;ctica, para lo anterior:
+            </p>
+            <ol>
+              <li>
+                Revisa la secuencia, paso por paso, en el video del
+                <em>Kata</em> y pract&iacute;cala.
+              </li>
+              <li>
+                Una vez que la hayas dominado, realiza un<span
+                  class="font-weight-bold"
+                >
+                  video</span
+                >
+                en el que muestres la ejecuci&oacute;n del mismo <em>Kata</em>.
+              </li>
+              <li>
+                Atiende los siguientes detalles en la realizaci&oacute;n del
+                video:
+                <ul>
+                  <li>
+                    Mant&eacute;n todo el tiempo una actitud marcial, s&eacute;
+                    serio y formal al filmar; ejecuta tus t&eacute;cnicas con
+                    velocidad y fuerza.
+                  </li>
+                  <li>
+                    Filma en un espacio amplio para que ning&uacute;n objeto o
+                    mueble afecte el desarrollo de tus ejercicios.
+                  </li>
+                  <li>
+                    Para un mejor resultado y calidad en los videos se
+                    recomienda grabar en un espacio abierto con luz o entradas
+                    de la misma. Evitando que existan tomas a contraluz. &nbsp;
+                  </li>
+                  <li>
+                    Coloca tu dispositivo para grabar en un lugar fijo o usando
+                    un tripi&eacute; y&nbsp;en posici&oacute;n horizontal, tu
+                    imagen no debe aparecer seccionada (sin pies o sin cabeza).
+                  </li>
+                  <li>
+                    Tu video no debe durar m&aacute;s de
+                    <strong>1 minuto, ni tener cortes o ediciones,</strong>
+                    as&iacute; que es recomendable que repases tu rutina varias
+                    veces antes de filmarla definitivamente.
+                  </li>
+                  <li>
+                    No te filmes hablando, cualquier comentario que desees
+                    incluir, ser&aacute; por medio de notas en el mismo o en un
+                    archivo de audio agregado posteriormente.
+                  </li>
+                  <li>Los videos deber&aacute;n ser en una sola toma.&nbsp;</li>
+                  <li>
+                    Se recomienda evitar sonidos o m&uacute;sica de fondo.&nbsp;
+                  </li>
+                  <li>
+                    Al finalizar la filmaci&oacute;n, revisa haber permanecido
+                    todo el tiempo &ldquo;a cuadro&rdquo;.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Para efectuar tu video puedes apoyarte en la aplicaci&oacute;n
+                <em>TikTok</em>, para ello se facilita el siguiente tutorial:
+                JuanFe Castro. (2019, 6 diciembre).
+                <em
+                  >C&oacute;mo grabar y editar TikTok | Tips y &iexcl;Trucos! |
+                  JuanFe</em
+                >
+                [Video]. YouTube. &nbsp;<a
+                  class="enlace"
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=IBwiUhYe13M&amp;feature=emb_logo"
+                  >https://www.youtube.com/watch?v=IBwiUhYe13M&amp;feature=emb_logo</a
+                >, adem&aacute;s de consultar los tips para realizar videos que
+                se publican en: Universidad Veracruzana. (s. f.).
+                <em
+                  >Videotips Para el desarrollo de tus recursos
+                  audiovisuales.</em
+                >
+                [Video]. UV.C&eacute;lula ODE. &nbsp;<a
+                  class="enlace"
+                  target="_blank"
+                  href="https://www.uv.mx/celulaode/videotips/"
+                  >https://www.uv.mx/celulaode/videotips/</a
+                >
+              </li>
+            </ol>
+            <p>
+              <span class="font-weight-bold"
+                >Criterios de desempe&ntilde;o.</span
+              >
+            </p>
+            <ul>
+              <li>
+                Buena forma (en las t&eacute;cnicas de golpe, bloqueo y
+                posiciones).
+              </li>
+              <li>Aplicaci&oacute;n vigorosa (fuerza y velocidad).</li>
+              <li>
+                Actitud alerta, <em>Zanshin </em>(concentraci&oacute;n; evite
+                re&iacute;rse, distraerse con los ruidos o personas cercanos,
+                dudar al realizar los movimientos, etc.).
+              </li>
+            </ul>
+            <p>
+              <span class="font-weight-bold">Lineamientos de entrega:</span>
+            </p>
+            <ol>
+                <li>
+                    Titula el archivo de la siguiente forma:<br />
+                    <em> Act7_</em>PrimerApellidoyPrimerNombre. Ejemplo: <em>Act7_</em>VillanuevaMariaTeresa
+                </li>
+              <li>
+                Env&iacute;a tu video a trav&eacute;s del apartado Actividades
+                de la plataforma Eminus, a m&aacute;s tardar en la fecha
+                establecida en el Calendario de entregas.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 1-->
+    <!--Disclaimer-->
+    <section class="bg-light">
+      <div class="container contenedor-menu-contenido">
+        <!--Disclaimer-->
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card bg-info">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i>Disclaimer</i>
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    <ul style="list-style-type: none">
+                      <li>
+                        <span class="text-white"
+                          >[1]&nbsp;Dominio público.</span
+                        >
+                      </li>
+                      <li>
+                        <span class="text-white"
+                          >[2]&nbsp;Dominio público.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/Disclaimer-->
+      </div>
+    </section>
+    <!--Disclaimer-->
+    <!--Logo Universidad Veracruzana-->
+    <section id="pie-pagina" class="p-1">
+      <div class="container">
+        <div class="row">
+          <div class="w-100">
+            <div class="row d-flex justify-content-center">
+              <div class="col-3 col-md-2">
+                <img src="images/logo-uv-texto.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Logo Universidad Veracruzana-->
+    <div class="fixed-bottom-right" id="button-up">
+      <a class="btn btn-success indice btn-sm p-3" href="#seccion-contenido">
+        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+      </a>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/easyScrollDots.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/inicializacion.js"></script>
+  </body>
+</html>

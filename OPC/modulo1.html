@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/easyScrollDots.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Orquesta del Propio Cuerpo</title>
+  </head>
+  <body>
+    <!--Encabezado-->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
+        <div class="container">
+          <div class="navbar-brand pb-0">
+            <div class="row no-gutters mb-1">
+              <div class="col">
+                <img
+                  src="images/logo-afel.png"
+                  class="logo d-inline mr-"
+                  alt="mdb logo"
+                />
+              </div>
+              <div
+                class="col text-secondary d-flex flex-column justify-content-center"
+              >
+			<span class="lg-view h2 font-weight-bold responsivo">Orquesta del <br class="responsivo"/>Propio Cuerpo</span>
+			<span class="sm-view h2 font-weight-bold">OPC</span>
+
+                <!--<span class=""
+                  >Orquesta del <br class="responsivo"/>Propio Cuerpo</span
+                >-->
+                <p class="p-0 m-0 font-weight-bold modulolargo">
+                  I. Movimientos significativos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="dropdown"
+            data-target="#menu-indice"
+            aria-controls="menu-indice"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <i class="fas fa-align-justify text-dark"></i>
+          </button>
+          <!--Menú en dispositivos móviles-->
+          <div class="dropdown-menu dropdown-menu-right" id="menu-indice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-secondary text-center p-1">
+                <a
+                  class="text-white"
+                  href="https://www.uv.mx/"
+                  target="_blank"
+                  alt="Ir a Universidad Veracruzana"
+                >
+                  Universidad Veracruzana
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#" class="indice">
+                  <i class="fas fa-home text-primary"></i> Inicio:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-proposito" class="ml-3 indice">
+                  <i class="icon-icono_proposito text-secondary"></i> Propósito:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-introduccion" class="ml-3 indice">
+                  <i class="icon-icono_introduccion text-secondary"></i>
+                  Introducci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-contenido" class="ml-3 indice">
+                  <i class="fas fa-copy text-secondary"></i> Contenido
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-fuentes" class="ml-3 indice">
+                  <i class="icon-icono_fuentes text-secondary"></i> Fuentes de
+                  Informaci&oacute;n
+                </a>
+              </li>
+			 <li class="list-group-item p-1">
+                <a href="index.html">
+                  <i class="fas fa-book text-primary"></i> Módulos:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="modulo1.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> I. Movimientos significativos
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo2.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> II. Sensibilizar y estimular la percepción sensorial con objetos
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo3.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> III. El lenguaje corporal como expresión y comunicación
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#">
+                  <i class="fas fa-book text-primary"></i> Temas:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-1" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.1 Movimientos significativos
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-2" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.2. Recorriendo el espacio
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-3" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.3. Representación de mis sentimientos
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-4" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.4. Acto significativo
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Menú en dispositivos móviles-->
+        </div>
+      </nav>
+    </header>
+    <!--/Encabezado-->
+    <!--Menú Izquierdo-->
+    <div id="sticky-menu" class="d-none d-lg-block d-lg-flex flex-column">
+      <a
+        class="btn btn-lg btn-light btn-menu"
+        href="index.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Inicio</em>"
+      >
+        <i class="fas fa-home fa-2x"></i>
+      </a>
+
+      <a
+        class="btn btn-lg btn-primary btn-menu d-block"
+        href="#!"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Movimientos significativos</em>"
+      >
+        <span class="font-weight-bold lead">I</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="modulo2.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Sensibilizar y estimular la percepción sensorial con objetos</em>"
+      >
+        <span class="font-weight-bold lead">II</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="modulo3.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>El lenguaje corporal como expresión y comunicación</em>"
+      >
+        <span class="font-weight-bold lead">III</span>
+      </a>
+    </div>
+    <!--/Menú Izquierdo-->
+    <!--Propósito-->
+    <section class="bg-primary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-proposito"
+        data-scroll-indicator-title="Propósito"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_proposito"></i> Propósito</h3>
+          </div>
+        </div>
+        <div class="row">
+			<div class="col-8 d-flex align-items-center" >
+				<p>
+				  El estudiante expresa los movimientos naturales del cuerpo en las coordenadas de tiempo-espacio-energía, mediante la ejecución práctica, a partir de la apropiación de saberes y la autorreflexión, para desinhibirse y generar nuevas formas de manifestarse con una actitud de apertura.
+
+				</p>
+			</div>
+			  <div class="col-4">
+				<figure class="figure" id="modulo1-imagen-introduccion">
+				  <img
+					src="images/modulo1/proposito.jpg"
+					alt=""
+					class="img-fluid"
+				  />
+				  <figcaption class="figure-caption text-right text-white">
+					[1]
+				  </figcaption>
+				</figure>
+			  </div>
+        </div>
+      </div>
+    </section>
+    <!--/Propósito-->
+    <!--Introducción-->
+    <section class="bg-secondary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-introduccion"
+        data-scroll-indicator-title="Introducción"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_introduccion"></i> Introducción</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <figure class="figure">
+              <img
+                src="images/modulo1/introduccion.jpg"
+                alt=""
+                class="img-fluid figure-img"
+              />
+              <figcaption class="figure-caption text-white">[2]</figcaption>
+            </figure>
+          </div>
+          <div class="col-9">
+            <p>
+              En este primer módulo, el alumno conocerá los conceptos básicos relacionados con la expresión corporal, a partir de la observación de videos y del movimiento libre, creando un lenguaje propio, mediante el empleo del instrumento-cuerpo, sin códigos preconcebidos, siendo un modo de comunicación que encuentra su propia semántica directa, más allá de la expresión verbal conceptual.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Introducción-->
+    <!--Contenido-->
+    <section class="bg-light">
+      <div
+        class="scroll-indicator"
+        id="seccion-contenido"
+        data-scroll-indicator-title="Contenido"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="fas fa-copy text-secondary"></i> Contenido</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="list-group">
+              <a
+                href="#seccion-tema-1"
+                class="list-group-item list-group item-action bg-primary text-white indice"
+              >
+                1.1. Conceptos básicos de la expresión corporal.
+              </a>
+			  <a
+                href="#seccion-tema-2"
+                class="list-group-item list-group item-action bg-secondary text-white indice"
+              >
+				1.2. Recorriendo el espacio físico en los tres niveles.
+              </a>
+			  <a
+                href="#seccion-tema-3"
+                class="list-group-item list-group item-action bg-primary text-white indice"
+              >
+				1.3. Representación de sentimientos.
+              </a>
+			  <a
+                href="#seccion-tema-4"
+                class="list-group-item list-group item-action bg-secondary text-white indice"
+              >
+				1.4. Acto significativo.
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Contenido-->
+    <!--Fuentes de Información-->
+    <section class="bg-secondary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-fuentes"
+        data-scroll-indicator-title="Fuentes de Información"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header bg-primary" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Básicas
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body text-dark">
+					<!--Barba, E., & Savarese, N. (1988). Anatomía del actor. Diccionario de Antropología Teatral. Grupo Editorial Gaceta.<br><br>
+					Schinca, M. (2010). Expresión corporal: Técnica y expresión del movimiento (4ª. ed.). Wolters Kuwer.-->
+                    <p>Barba, E., & Savarese, N. (1988). <em>Anatomía del actor. Diccionario de Antropología Teatral.</em> Grupo Editorial Gaceta.</p>
+					
+					<p>Schinca, M. (2010). <em>Expresión corporal: Técnica y expresión del movimiento</em> (4ª. ed.). Wolters Kuwer.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-primary text-white" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left collapsed text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Complementarias
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body text-dark">
+					Barba, E. (1994). <em>La canoa de papel. Tratado de Antropología Teatral</em>. [Libro electrónico]. Catálogos editora. <p class="frances"><a href="https://www.academia.edu/38359157/321881017_Eugenio_Barba_La_Canoa_de_Papel_pdf" target="_blank">https://www.academia.edu/38359157/321881017_Eugenio_Barba_La_Canoa_de_Papel_pdf</a></p>
+					Ruano, K., & Sánchez, G. (coords.),  (2015). <em>Expresión corporal y educación</em>. [Libro electrónico]. Wanceulen Editorial <p class="frances">Deportiva. <a href="http://www.xarnalot.com/expresiva/wp-content/uploads/2015/01/12-La-EC-danza-en-Patricia-Stokoe.pdf" target="_blank">http://www.xarnalot.com/expresiva/wp-content/uploads/2015/01/12-La-EC-danza-en-Patricia-Stokoe.pdf</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Fuentes de Información-->
+    <!--Tema 1-->
+    <section class="bg-primary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-tema-1"
+        data-scroll-indicator-title="1.1. Conceptos básicos de la expresión corporal."
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3>1.1. Conceptos básicos de la expresión corporal</em></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>
+				En la década de 1950 surge esta corriente, a partir de análisis personales de la maestra Patricia Stokoe, quien expone sus experiencias de investigación, dándole el nombre de Expresión Corporal e introduciéndose tanto en Argentina como en América Latina. Hoy en día se aplica en Europa, por ejemplo, en España es implementada como materia educativa, esto es debido a que funciona como herramienta para los seres humanos para expresar su vida interior. Cabe señalar que por medio de las disciplinas artísticas (música, artes plásticas, literatura, teatro y danza) el ser humano se ha expresado desde siempre, aunque en las disciplinas de danza y teatro principalmente se manifiesta a sí mismo como herramienta fundamental para su arte; sin embargo, también pueden lograrlo a través de movimientos, gestos o ademanes, incluso en la quietud, sea en forma grupal o individual, en silencio. <br><br>
+				Entrando en materia, la importancia radica en el momento de adquirir conciencia de la organicidad, en cuanto a la forma en que se comporta o responde el cuerpo de un individuo, lo cual permite un sinfín de beneficios y posibilidades en pro de él mismo, es decir, de su vida. Para ello hay que atender a los diferentes estados en los que el cuerpo transita, tales como la relajación, distensión, contracción, reposo, movimiento; atención en las sensaciones, el peso, el tono, rigidez; conocer su estructura ósea, muscular, articular, cómo cada una de ellas funcionan y se interrelacionan, así como atención de estados anímicos, pues ésos también causan indistintas posturas y condicionan la organicidad del cuerpo humano. Para mayor dominio del tema se describen cinco puntos importantes:
+
+			<ol type="a">
+				<li>Sensibilizar es afinar el cuerpo propiamente a partir del punto de vista de los sentidos, no solamente hablando desde la perspectiva visual, táctil y auditiva, sino también de su integración con la percepción de éste en cuanto a su peso, elasticidad, capacidad de movimiento, etcétera.</li>
+				<li>Dominar el cuerpo por medio de su conocimiento cada vez más profundo y reconociendo sus posibilidades y limitaciones en estado consciente.</li>
+				<li>Manejar y dominar la rítmica corporal derivada de los movimientos básicos del cuerpo, ordenados en las coordenadas de espacio-tiempo-energía.</li>
+				<li>Incrementar, por medio de los ejercicios, la búsqueda de imágenes internas, el descubrimiento de sí mismo ampliando su conciencia cotidiana para liberar sus fuerzas creadoras, desarrollándose a través de la sensibilidad del movimiento.</li>
+				<li>La improvisación es de gran importancia porque es una forma en que se logra aflorar la personalidad propia del participante, la que tiene que ver con las experiencias vitales, como la propia historia emocional, reforzando así su identidad, a medida en que se reconoce y se acepta.</li>
+			</ol>  
+			Para ampliar el conocimiento en relación con el tema de la expresión corporal, el alumno visualizará la siguiente infografía:
+			<figure class="figure">
+                <img class="img-fluid" src="images/modulo1/Info-Orquesta-del-Cuerpo.jpg" alt="" />
+                <figcaption class="figure-caption text-white text-right"> Universidad Veracruzana. (2021). <em>Expresión corporal</em> [infografía].</figcaption>
+            </figure>
+            </p>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="alert alert-warning text-dark" role="alert">
+              Para evaluar tus aprendizajes acerca del tema: <span class="font-weight-bold">Conceptos básicos de la expresión corporal</span>, dirígete a la sección de <span class="font-weight-bold">Actividades</span> e ingresa a la <span class="font-weight-bold">Actividad 1</span>, atendiendo las indicaciones para su realización.
+            </div>
+          </div>
+        </div>
+        <div class="row bg-light text-dark p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold">Actividad 1.</span> Conceptos básicos de la expresión corporal.
+            </h4>
+            <p class="font-weight-bold">Descripci&oacute;n:</p>
+            <ol type="1">
+				<li>A partir de la revisión de los conceptos básicos de la expresión corporal, crea tu propia conceptualización de ésta y graba un video explicando dicho concepto.</li>
+				<li>Atiende a los siguientes criterios técnicos para realizar el video:</li>
+				<li>El video deberá durar como máximo 2 minutos.</li>
+				<li>Realiza el video en un espacio cuya iluminación permita apreciar tu expresión facial en la exposición del tema.</li>
+				<li>Podrás utilizar material de apoyo para efectuar tu exposición adecuadamente, recuerda que no debes leer un texto sino demostrar tu comprensión y dominio del tema.</li>
+				<li>Para efectuar tu video puedes consultar los tips para realizar videos que se encuentran publicados en: Universidad Veracruzana. (s.f.). <em>Videotips Para el desarrollo de tus recursos audiovisuales</em>. [Video]. Universidad Veracruzana. <a href="https://www.uv.mx/celulaode/videotips/" target="_blank">https://www.uv.mx/celulaode/videotips/</a></li>
+			</ol>
+            
+            <p class="font-weight-bold">Criterios de desempe&ntilde;o:</p>
+            <ol type="1">
+				<li>Dominio del tema.</li>
+				<li>Comprensión y manejo del lenguaje.</li>
+				<li>Descripción de los objetivos de la expresión corporal.</li>
+			</ol>
+            <p class="font-weight-bold">Lineamientos de entrega:</p>
+            <ol>
+				<li>Titula el video de la siguiente forma: <em>Act1PrimerApellidoyPrimerNombre.</em> Ejemplo: <em>Act1_VillanuevaMariaTeresa.</em>
+				</li>
+				<li>Sube tu video a través del apartado de <span class="font-weight-bold">Actividades</span> en la plataforma Eminus o a YouTube, si optas por la segunda opción comparte el <em>link</em> de tu video en el apartado de entregas correspondiente a la actividad, a más tardar en la fecha establecida en el <span class="font-weight-bold">Calendario</span>. Así mismo, atiende las sugerencias para subir videos en Youtube:
+					<ol type="a">
+						<li>No olvides etiquetar tu video como privado (sólo las personas que elijas podrán verlo).</li>
+						<li>Revisa la Biblioteca de tu canal y trabaja con música libre de penalizaciones de derechos de autor (<em>copyright</em>).</li>
+						<li>Utiliza música libre de <em>copyright</em>, ya que el autor tiene la facultad de pedir a Youtube que te penalice y al tercer aviso te pueden cerrar tu canal y, como consecuencia, no podrás mostrar tu trabajo.</li>
+					</ol>
+				</li>
+			</ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 1-->
+    <!--Tema 2-->
+    <section class="bg-secondary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-tema-2"
+        data-scroll-indicator-title="1.2. Recorriendo el espacio físico en sus tres niveles."
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3>1.2. Recorriendo el espacio físico en los tres niveles</em></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>
+              El espacio que se utiliza para la expresión corporal se divide en tres niveles, tomando como referencia la posición de la cadera, es decir, del nivel bajo, por ejemplo, cuando la cadera se encuentra directamente sobre alguna superficie, por lo que todos los movimientos que se puedan realizar dentro de esta sección serán tomados como <span class="font-weight-bold">nivel bajo;</span> cuando la cadera se encuentra separada del piso con una flexión de rodillas y el centro de gravedad bajo, se considera como un <span class="font-weight-bold">nivel medio</span>, al igual que todos los movimientos que se efectúen dentro del mismo, en donde se puede hacer mayor uso de las extremidades; y, por último, el nivel alto, que es cuando el torso se encuentra totalmente erguido hasta llegar al salto. Con el conocimiento y la puesta en práctica de estos tres niveles el alumno será capaz de realizar una gran variedad de movimientos que podrán ir fluctuando en todo el espacio disponible.<br><br> 
+
+Para mejorar la comprensión acerca de este tema, el alumno visualizará el video titulado <i>Recorriendo espacio tres niveles.</i>
+	
+            </p>
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item"
+					src="https://lumen.uv.mx/lumen/shared/embed/resource/4905"
+					frameborder="0"
+					scrolling="no"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen>
+				</iframe>
+			</div>
+			<figure class="embed-responsive-item" style="display: block; text-align: center">
+                <figcaption class="figure-caption text-white text-right">Orquesta del Propio Cuerpo (Célula Producción DGDAIE). (2021, abril). <em>Recorriendo espacio tres niveles</em> [Video]. Lumen Repositorio Digital Universitario. <sup>[11]<sup></figcaption>
+            </figure>
+			
+			<p>Siguiendo la línea del tema, se presenta el video <i>Siete movimientos naturales,</i> para que el estudiante distinga las formas de desplazarse en el espacio manteniendo una continuidad.</p>
+			<div class="embed-responsive embed-responsive-16by9">
+			  <iframe class="embed-responsive-item"
+				src="https://lumen.uv.mx/lumen/shared/embed/resource/4904"
+				frameborder="0"
+				scrolling="no"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen>
+			  </iframe>
+			</div>
+			<figure class="embed-responsive-item" style="display: block; text-align: center">
+				<figcaption class="figure-caption text-white text-right">Orquesta del Propio Cuerpo (Célula Producción DGDAIE). (2021, abril). <em>Siete movimientos naturales</em> [Video]. Lumen Repositorio Digital Universitario. <sup>[12]<sup></sup></figcaption>
+			</figure>
+			<p>Antes de realizar las actividades del curso, el alumno realizará un previo calentamiento segmentado, logrando un mejor desempeño y evitando lesiones en sus articulaciones y músculos, además de generar energía corporal para entrar en la conciencia del propio cuerpo.</p>
+			<div class="embed-responsive embed-responsive-16by9">
+			  <iframe class="embed-responsive-item"
+				src="https://lumen.uv.mx/lumen/shared/embed/resource/4891"
+				frameborder="0"
+				scrolling="no"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen>
+			  </iframe>
+			</div>
+			<figure class="embed-responsive-item" style="display: block; text-align: center">
+				<figcaption class="figure-caption text-white text-right">Orquesta del Propio Cuerpo (Célula Producción DGDAIE). (2021, abril). <em>Calentamiento</em> [Video]. Lumen Repositorio Digital Universitario.</figcaption>
+			</figure>
+		  </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="alert alert-warning text-dark" role="alert">
+			Para evaluar tus aprendizajes acerca del tema: <span class="font-weight-bold">Recorriendo el espacio físico en los tres niveles,</span> dirígete a la sección de <span class="font-weight-bold">Actividades</span> e ingresa a la <span class="font-weight-bold">Actividad 2 y al Foro 1,</span> atendiendo las indicaciones para su realización.
+            </div>
+          </div>
+        </div>
+        
+		<div class="row bg-light text-dark p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold">Actividad 2.</span> Recorriendo el espacio físico en los tres niveles.
+            </h4>
+            <p class="font-weight-bold">Descripci&oacute;n:</p>
+            <ol type="1">
+				<li>Después de visualizar los videos: <em>Recorriendo el espacio en los tres niveles y Siete movimientos naturales,</em> elabora tu propio video en el que muestres tu comprensión acerca del tema, pero antes de iniciar la actividad recuerda realizar el calentamiento segmentado para que las articulaciones y músculos entren en calor y logres un mejor desempeño.</li>
+				<li>El primer paso en el proceso es la improvisación experimental exploratoria:
+					<ol type="a">
+						<li>Explora el espacio con movimientos sencillos utilizando los siete movimientos naturales del cuerpo (gatear, brincar, reptar, caminar, correr, rodar, girar), buscando variedad en el dibujo que crean los movimientos, mueve tus extremidades variada y libremente.</li>
+						<li>Camina realizando trazos en el espacio con tu cuerpo (piso), desplazándote en diagonal, formando ochos, círculos, laterales, curvas, zigzag, movimiento adelante-atrás, arriba-abajo.</li>
+						<li>Crea diseños corporales espontáneos al caminar (brazos, piernas, torso, cabeza), considerando el uso de niveles y frentes en un recorrido determinado.</li>
+						<li>Ahora agrega algunas dinámicas de contraste, es decir, continúa caminando y trazando figuras en el espacio, pero ahora pasa de movimientos lentos a movimientos rápidos, ya sea de forma gradual o haciendo altos abruptamente.</li>
+						<li>Ahora, imagina y explora distintos espacios, por ejemplo, un laberinto, el bosque, el mar, el aire, etc.).</li>
+						<li>En este momento ya puedes utilizar música, lo principal es que recorras el espacio imaginado con tu cuerpo y moviéndolo según el lugar que hayas proyectado.</li>
+					</ol>
+				</li>
+				<li>Atiende a los siguientes criterios técnicos para realizar el video:
+					<ol type="a">
+						<li>Recuerda que deberás efectuar los ejercicios de calentamiento, sin embargo, <span class="font-weight-bold">no necesitas grabarlos ni incluirlos en el video de tu actividad, esa parte no debe mostrarse.<span></li>
+						<li>Activa tu cámara para poder grabar la actividad, supervisa que esté colocada en un punto en donde se vea todo tu cuerpo. </li>
+						<li>El video debe durar 2 minutos, como máximo.</li>
+						<li>Para efectuar tu video puedes consultar los tips para realizar videos que se encuentran publicados en: Universidad Veracruzana. (s.f.). <em>Videotips Para el desarrollo de tus recursos audiovisuales</em>. [Video]. Universidad Veracruzana. <a href="https://www.uv.mx/celulaode/videotips/" target="_blank">https://www.uv.mx/celulaode/videotips/</a></li>
+					</ol>
+				</li>
+			</ol>
+            <p class="font-weight-bold">Criterios de desempe&ntilde;o:</p>
+            <ol type="1">
+				<li>Variar los diseños para que no resulten repetitivos al momento de ejecutarlos.</li>
+				<li>Deben ser continuos y fluidos para observar tu agilidad.</li>
+				<li>Utilización del espacio total y en sus tres niveles.</li>
+			
+			</ol>
+            <p class="font-weight-bold">Lineamientos de entrega:</p>
+            <ol type="1">
+				<li>Titula el video de la siguiente forma: <em>Act2</em>_PrimerApellidoyPrimerNombre. Ejemplo: <em>Act2</em>_VillanuevaMariaTeresa.
+
+				</li>
+				<li>Sube tu video a través del apartado de <span class="font-weight-bold">Actividades</span> en la plataforma Eminus o a YouTube, si optas por la segunda opción comparte el <em>link</em> de tu video en el apartado de entregas correspondiente a la actividad, a más tardar en la fecha establecida en el <span class="font-weight-bold">Calendario</span>. Así mismo, atiende las sugerencias para subir videos en Youtube:
+					<ol type="a">
+						<li>No olvides etiquetar tu video como privado (sólo las personas que elijas podrán verlo).</li>
+						<li>Revisa la Biblioteca de tu canal y trabaja con música libre de penalizaciones de derechos de autor (<em>copyright</em>).</li>
+						<li>Utiliza música libre de <em>copyright</em>, ya que el autor tiene la facultad de pedir a Youtube que te penalice y al tercer aviso te pueden cerrar tu canal y, como consecuencia, no podrás mostrar tu trabajo.</li>
+					</ol>
+				</li>
+			</ol>
+          </div>
+        </div>
+		<div class="row bg-light text-dark p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold">Foro 1.</span> Recorriendo el espacio físico en los tres niveles.
+            </h4>
+            <p class="font-weight-bold">Descripci&oacute;n:</p>
+            <ol type="1">
+				<li>Una vez efectuada la Actividad 2, comparte tu experiencia en el Foro 1, considerando lo siguiente:
+					<ol type="a">
+						<li>¿Cómo te sentiste al realizar el calentamiento?</li>
+						<li>¿Cuáles son las formas que experimentaste al desplazarte en el espacio al mantener un movimiento fluido?</li>
+						<li>¿Pudiste observar el manejo corporal haciendo uso de los siete movimientos naturales en los tres niveles?</li>
+						<li>Tu intervención deberá apegarse estrictamente a las consideraciones descritas en las <a href="pdfs/reglas_foros_discusion.pdf" target="blank">Reglas para participar en los foros de discusión.pdf</a></li>
+						<li>Finalmente, deberás retroalimentar a, por lo menos, dos de tus compañeros.</li>
+					</ol>
+				</li>
+			</ol>
+            <p class="font-weight-bold">Criterios de desempe&ntilde;o:</p>
+            <ol type="1">
+				<li>Descripción de cada uno de los movimientos naturales y los niveles del cuerpo en el espacio que usaste en la propuesta.</li>
+				<li>Descripción de las formas al desplazarse en el espacio.</li>
+			
+			</ol>
+            <p class="font-weight-bold">Lineamientos de entrega:</p>
+            <ol type="1">
+				<li>Publica tu participación en el Foro 1. <em>Recorriendo el espacio físico en los tres niveles.</em></li>
+				<li>Tu participación en el foro será en la fecha establecida en el <span class="font-weight-bold">Calendario de entregas</span>. Los foros no concederán prórroga.</li>
+			</ol>
+          </div>
+        </div>
+		</div>
+		
+    </section>
+    <!--/Tema 2-->
+	    <!--Tema 3-->
+    <section class="bg-primary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-tema-3"
+        data-scroll-indicator-title="1.3.	Representación de sentimientos."
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3>1.3. Representación de sentimientos</em></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+
+            <p>
+				Los sentimientos surgen a partir de las sensaciones y emociones, éste es el proceso del ser humano en su espacio cognitivo, en su mente, para expresar situaciones que vive, el uso de los sentidos permite crear lazos entre sus percepciones sensomotrices y su imaginación.<br><br>
+				Es necesario emplear las herramientas antes mencionadas para conectar con el interior, sin dejar a un lado los estímulos que se reciben a partir del entorno.<br><br>
+				La apertura de cada individuo consiste en dejarse impresionar por los estímulos del medio, sensibilizándose con todo lo que le rodea y tener la disponibilidad para encontrarse consigo mismo, para vivenciar otras formas de expresar sus sentimientos, sus pensamientos y sus emociones. <br><br>
+				Según distintas apreciaciones, se puede decir que de orden sensorial y emocional, al captar éstas la atención del individuo, puede establecer la unión entre sus percepciones sensoriales y su imaginación, lo que exige una actitud de apertura y de disponibilidad corporal.<br><br>
+				Para profundizar y vivenciar lo citado anteriormente, el estudiante realizará lo siguiente:
+				<ol type="1">
+					<li>Frente a un espejo, observarse de cuerpo completo.</li>
+					<li>Contemplarse atentamente, y más allá del aspecto físico, ¿qué es lo que observa?, ¿quién es esa persona que está reflejada en el espejo?, ¿qué sentimientos experimenta en ese momento?, ¿qué deseos?, ¿qué sensaciones?, ¿qué necesidades?</li>
+					<li>Esta será la pauta para desarrollar la actividad derivada de este tema.</li>
+				</ol>
+				Para mayor comprensión acerca de este tema, se presenta el siguiente video:
+            </p>
+			<div class="embed-responsive embed-responsive-16by9">
+			  <iframe class="embed-responsive-item"
+				src="https://lumen.uv.mx/lumen/shared/embed/resource/4832"
+				frameborder="0"
+				scrolling="no"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen>
+			  </iframe>
+			</div>
+			<figure class="embed-responsive-item" style="display: block; text-align: center">
+				<figcaption class="figure-caption text-white text-right">Orquesta del Propio Cuerpo (Célula Producción DGDAIE). (2021, abril). <em>La Orquesta </em> [Video]. Lumen Repositorio Digital Universitario. <sup>[13]</sup></figcaption>
+			</figure>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="alert alert-warning text-dark" role="alert">
+              Para evaluar tus aprendizajes acerca del tema: <span class="font-weight-bold">Representación de sentimientos</span>, dirígete a la sección de <span class="font-weight-bold">Actividades</span> e ingresa a la <span class="font-weight-bold">Actividad 3,</span> atendiendo las indicaciones para su realización.
+            </div>
+          </div>
+        </div>
+        <div class="row bg-light text-dark p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold">Actividad 3.</span> Representación de sentimientos.
+            </h4>
+            <p class="font-weight-bold">Descripci&oacute;n:</p>
+            <ol tpe="1">
+				<li>Ya que has identificado las sensaciones, sentimientos, deseos y necesidades que experimentas, efectúa lo siguiente, <span class="font-weight-bold">sin mirarte al espejo:</span>
+					<ol type="a">
+						<li>Elige una pieza musical que apoye a las sensaciones, sentimientos, deseos y necesidades identificados, de preferencia sin letra para evitar representar lo que dice la canción.</li>
+						<li>Activa tu cámara para poder grabar tu actividad.</li>
+						<li>Desplázate por el espacio y trata de plasmarlas usando tu cuerpo, es decir, por medio de distintos movimientos (brincos, caídas, equilibrios, giros, etc., sin olvidar los gestos) y utilizando el espacio. </li>
+						<li>Recuerda incluir tu cuerpo completo y tu rostro, mismo que deberá ser congruente con la posición corporal que adoptes en tu representación.</li>
+					</ol>
+				</li>
+				<li>Atiende a los siguientes criterios técnicos para realizar el video:
+					<ol type="a">
+						<li>El video deberá durar, como máximo, 2 minutos.</li>
+						<li>El video deberá ser grabado en un espacio que apoye tu propuesta, busca un lugar en donde puedas salir de cuerpo completo y te permita moverte libremente, evitando salirte del cuadro de la cámara.</li>
+						<li>Para efectuar tu video puedes consultar los tips para realizar videos que se encuentran publicados en: Universidad Veracruzana. (s.f.). <em>Videotips Para el desarrollo de tus recursos audiovisuales</em>. [Video]. Universidad Veracruzana. <a href="https://www.uv.mx/celulaode/videotips/" target="_blank">https://www.uv.mx/celulaode/videotips/</a></li>
+					</ol>
+				</li>
+			</ol>
+            
+            <p class="font-weight-bold">Criterios de desempe&ntilde;o:</p>
+            <ol type="1">
+				<li>La expresión facial debe ser congruente con tu postura corporal.</li>
+				<li>Los diseños corporales deben ser variados, creativos y fluidos. Involucrando todo el cuerpo.</li>
+				<li>Hacer un uso adecuado del espacio-tiempo-energía.</li>
+			</ol>
+            <p class="font-weight-bold">Lineamientos de entrega:</p>
+            <ol type="1">
+				<li>Titula el video de la siguiente forma: <em>Act3_PrimerApellidoyPrimerNombre</em>. Ejemplo: <em>Act3_VillanuevaMariaTeresa.</em>
+				</li>
+				<li>Sube tu video a través del apartado de <span class="font-weight-bold">Actividades</span> en la plataforma Eminus o a YouTube, si optas por la segunda opción comparte el <em>link</em> de tu video en el apartado de entregas correspondiente a la actividad, a más tardar en la fecha establecida en el <span class="font-weight-bold">Calendario</span>. Así mismo, atiende las sugerencias para subir videos en Youtube:
+					<ol type="a">
+						<li>No olvides etiquetar tu video como privado (sólo las personas que elijas podrán verlo).</li>
+						<li>Revisa la Biblioteca de tu canal y trabaja con música libre de penalizaciones de derechos de autor (<em>copyright</em>).</li>
+						<li>Utiliza música libre de <em>copyright</em>, ya que el autor tiene la facultad de pedir a Youtube que te penalice y al tercer aviso te pueden cerrar tu canal y, como consecuencia, no podrás mostrar tu trabajo.</li>
+					</ol>
+				</li>
+			</ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 3-->
+	    <!--Tema 4-->
+    <section class="bg-secondary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-tema-4"
+        data-scroll-indicator-title="1.4.	Acto significativo."
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3>1.4. Acto significativo</em></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+
+            <p>
+				La significación del movimiento estriba no sólo en conocerlo en su aspecto físico, sino también en el afectivo, pues la reacción del cuerpo con el mundo interior y exterior se manifiesta a partir de su propia constitución y de las experiencias vividas estableciendo una real comunicación, pues a través de determinadas posturas, gestos y reacciones somos capaces de descifrar o interpretar indistintas situaciones y afecciones de una persona o de un grupo, las características del cuerpo humano son las mismas, sin embargo, el cúmulo de experiencias adquiridas, de cómo se procesan, son individuales y es lo que da a cada ser su sello distintivo. <br><br>
+				El acto del movimiento denota la emisión, la recepción y la transmisión de algún mensaje. En los diferentes contextos, el movimiento simboliza y genera significados, en donde intervienen los procesos de comunicación.<br><br>
+				Para lograr un acto significativo es necesario experimentar el movimiento y sus componentes. 
+				<ol type="a">
+					<li><span class="font-weight-bold">Espacio</span>: es todo lo que nos rodea. Éste puede ser flexible (se desplaza), directo (lleva una dirección e intención en el espacio y lugar), general (el que se comparte), así mismo, se divide en: íntimo o personal y con otros. La kinesfera es el espacio que nos rodea en forma de esfera, hasta donde nuestras extremidades logran expandirse. Con la periferia nos referimos a los límites de la esfera.</li>
+					<li><span class="font-weight-bold">Tiempo</span>: es la velocidad del movimiento, éste puede ser variable (rápido o lento).</li>
+					<li><span class="font-weight-bold">Energía</span>: libre o controlada. En el movimiento libre, como su nombre lo indica, no tiene límites. En el movimiento controlado, toda la energía se utiliza de manera equilibrada y sostenida, misma que puede ser afectada por la gravedad. Puede ser ligera (con movimientos de elevación) o pesada (con movimientos reafirmados en la Tierra).</li>
+				</ol>
+				La unión de <span class="font-weight-bold">espacio-tiempo-energía</span> permite ir más allá de los movimientos convencionales o códigos preestablecidos, además de implementar los siete movimientos naturales en sus tres niveles. Así mismo, se debe involucrar todo el cuerpo, creando diseños corporales y mantener un flujo corporal sucesivo-simultáneo, incluyendo posturas simétricas y asimétricas.<br><br>
+				El hecho de reconocer las posibilidades corporales dentro del espacio-tiempo-energía permite crear otras formas en donde el uso de movimientos variados ayuda a representar las imágenes a través del cuerpo.
+
+            </p>
+			<p> Para reforzar el concepto de <span class="font-weight-bold">Espacio</span> se muestra el siguiente video:</p>
+			<div class="embed-responsive embed-responsive-16by9">
+			  <iframe class="embed-responsive-item"
+				src="https://lumen.uv.mx/lumen/shared/embed/resource/4835"
+				frameborder="0"
+				scrolling="no"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen>
+			  </iframe>
+			</div>
+			<figure class="embed-responsive-item" style="display: block; text-align: center">
+				<figcaption class="figure-caption text-white text-right">Orquesta del Propio Cuerpo (Célula Producción DGDAIE). (2021, marzo). <em>Mis sentimientos</em> [Video]. Lumen Repositorio Digital Universitario. <sup>[14]</sup></figcaption>
+			</figure>
+			<br><br>
+			<p> Ahora, como ejemplo del concepto de <span class="font-weight-bold">Tiempo</span>, se propone el siguiente video:</p>
+			<div class="embed-responsive embed-responsive-16by9">
+			  <iframe class="embed-responsive-item"
+				src="https://lumen.uv.mx/lumen/shared/embed/resource/4906"
+				frameborder="0"
+				scrolling="no"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen>
+			  </iframe>
+			</div>
+			<figure class="embed-responsive-item" style="display: block; text-align: center">
+				<figcaption class="figure-caption text-white text-right">Orquesta del Propio Cuerpo (Célula Producción DGDAIE). (2021, marzo). <em>Sueño</em> [Video]. Lumen Repositorio Digital Universitario. <sup>[15]</sup></figcaption>
+			</figure>
+			<br><br>
+			<p>Finalmente, el siguiente video muestra la implementación del concepto de <span class="font-weight-bold">Energía:</span></p>
+			<div class="embed-responsive embed-responsive-16by9">
+			  <iframe class="embed-responsive-item"
+				src="https://lumen.uv.mx/lumen/shared/embed/resource/4834"
+				frameborder="0"
+				scrolling="no"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen>
+			  </iframe>
+			</div>
+			<figure class="embed-responsive-item" style="display: block; text-align: center">
+				<figcaption class="figure-caption text-white text-right">Orquesta del Propio Cuerpo (Célula Producción DGDAIE). (2021, marzo). <em>El símbolo del movimiento.</em> [Video]. Lumen Repositorio Digital Universitario. <sup>16</sup></figcaption>
+			</figure>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="alert alert-warning text-dark" role="alert">
+              Para evaluar tus aprendizajes acerca del tema: <span class="font-weight-bold">Acto significativo</span>, dirígete a la sección de <span class="font-weight-bold">Actividades</span> e ingresa a la <span class="font-weight-bold">Actividad 4</span>, atendiendo las indicaciones para su realización.
+            </div>
+          </div>
+        </div>
+        <div class="row bg-light text-dark p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold">Actividad 4.</span> Acto significativo.
+            </h4>
+            <p class="font-weight-bold">Descripci&oacute;n:</p>
+            <ol type="1">
+				<li>A partir del autoanálisis corporal, expresa las emociones y sentimientos que se hayan manifestado, a través de los siete movimientos naturales del cuerpo (correr, caminar, gatear, reptar, brincar, girar, rodar).</li>
+				<li>Para lo anterior, deberás realizar una grabación de ti mismo (a), considerando lo siguiente:
+					<ol type="a">
+						<li>Utiliza la música como estímulo teniendo en cuenta que ésta debe afectar en la línea exterior-interior, el espacio en sus distintos niveles, direcciones y cualidad del movimiento, incluyendo el cuerpo completo y el rostro.</li>
+						<li>Cada movimiento expresivo debe poseer intención y ésta ha de ser comunicativa. Se pretende que encuentres, mediante el empleo del instrumento-cuerpo, un lenguaje propio, un lenguaje corporal puro, sin códigos preconcebidos, un modo de comunicación que descubra su propia semántica directa más allá de la expresión verbal conceptual.</li>
+					</ol>
+				</li>
+				<li>Atiende a los siguientes criterios técnicos para realizar el video:
+					<ol type="a">
+						<li>El video debe durar 2 minutos, como máximo.</li>
+						<li>El video deberá ser grabado en algún lugar que apoye tu propuesta, busca algún espacio que te permita salir de cuerpo completo y moverte libremente, evitando salirte del cuadro de la cámara.</li>
+						<li>Para efectuar tu video puedes consultar los tips para realizar videos que se encuentran publicados en: Universidad Veracruzana. (s.f.). <em>Videotips Para el desarrollo de tus recursos audiovisuales</em>. [Video]. Universidad Veracruzana. <a href="https://www.uv.mx/celulaode/videotips/" target="_blank">https://www.uv.mx/celulaode/videotips/</a></li>
+					</ol>
+				</li>
+			</ol>
+            
+            <p class="font-weight-bold">Criterios de desempe&ntilde;o:</p>
+            <ol type="1">
+				<li>La expresión facial debe ser congruente con tu postura corporal.</li>
+				<li>Los diseños corporales deben ser variados, creativos y fluidos. Involucrando todo el cuerpo.</li>
+				<li>Hacer un uso adecuado del espacio-tiempo-energía.</li>
+			</ol>
+            <p class="font-weight-bold">Lineamientos de entrega:</p>
+            <ol type="1">
+				<li>Titula el video de la siguiente forma: <em>Act4_PrimerApellidoyPrimerNombre</em>. Ejemplo: <em>Act4_VillanuevaMariaTeresa.</em>
+				</li>
+				<li>Sube tu video a través del apartado de <span class="font-weight-bold">Actividades</span> en la plataforma Eminus o a YouTube, si optas por la segunda opción comparte el <em>link</em> de tu video en el apartado de entregas correspondiente a la actividad, a más tardar en la fecha establecida en el <span class="font-weight-bold">Calendario</span>. Así mismo, atiende las sugerencias para subir videos en Youtube:
+					<ol type="a">
+						<li>No olvides etiquetar tu video como privado (sólo las personas que elijas podrán verlo).</li>
+						<li>Revisa la Biblioteca de tu canal y trabaja con música libre de penalizaciones de derechos de autor (<em>copyright</em>).</li>
+						<li>Utiliza música libre de <em>copyright</em>, ya que el autor tiene la facultad de pedir a Youtube que te penalice y al tercer aviso te pueden cerrar tu canal y, como consecuencia, no podrás mostrar tu trabajo.</li>
+					</ol>
+				</li>
+			</ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 4-->
+   
+    <!--Disclaimer-->
+    <section class="bg-light">
+      <div class="container contenedor-menu-contenido">
+        <!--Disclaimer-->
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card bg-info">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i>Disclaimer</i>
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;">
+						<sup style="font-size:60%;">1</sup> Universidad Veracruzana. (2021). Imagen 3.CR2 [Imagen].</p>
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;">
+						<sup style="font-size:60%; ">2</sup> Universidad Veracruzana. (2021). Imagen 4.CR2 [Imagen]. </p>
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%; ">3</sup> Lambtron. (2015). <em>Kinder Theory, a modern dance performed by Daria L.</em> [Imagen]. Recuperado de: https://commons.wikimedia.org/w/index.php?search=ModernDance.jpg&title=Special%3ASearch&go=Go&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1#/media/File:ModernDance.jpg</p>
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%; ">4</sup> Korea.net. (2009). <em>Korean modern dances.</em> [Imagen]. Recuperado de: https://commons.wikimedia.org/w/index.php?search=Korean+Modern+Dance&title=Special%3ASearch&go=Go&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1#/media/File:KOCIS_Korean_Modern_Dance_(6890005709).jpg</p>
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%; ">5</sup> PaoladelCisne. (2010). <em>Bailarines de danza contemporánea.</em> [Imagen]. Recuperado de: https://commons.wikimedia.org/w/index.php?search=PaoladelCisne&title=Special%3ASearch&go=Go&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1#/media/File:Danza-Contemporanea-cuatro.jpg</p>
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%; ">6</sup> Imagen de dominio público.</p>
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%;">7</sup> Imagen de dominio público.</p>
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%; ">8</sup>  Imagen de dominio público.</p>
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%;">9</sup>  Shira Coriat. (2013). מופע של להקת המחול הקיבוצית. [Imagen]. Recuperado de: https://commons.wikimedia.org/w/index.php?search=Kibbutz+Contemporary+Dance+Company+1.JPG&title=Special%3ASearch&go=Go&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1#/media/File:Kibbutz_Contemporary_Dance_Company_1.JPG</p>
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%; ">10</sup>  Imagen de dominio público.</p>
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%; ">11</sup> La obra musical utilizada en el presente recurso de video (<em>Percusiones|Tambores| Intro de guerra-SOUND FREE</em>) no es propiedad de la Universidad Veracruzana. Es empleada con fines meramente educativos y no se obtiene alguna regalía o pago por concepto de utilización de la misma. https://www.youtube.com/watch?v=8oqe_oFp3rQ</p>
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%; ">12</sup> La obra musical utilizada en el presente recurso de video (<em>Música africana</em>-Tu música sin <em>copyright</em> TMSC) no es propiedad de la Universidad Veracruzana. Es empleada con fines meramente educativos y no se obtiene alguna regalía o pago por concepto de utilización de la misma. https://www.youtube.com/watch?v=E-xfNv8vIYc</p>
+                       <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%; ">13</sup> La obra musical utilizada en el presente recurso de video (<em>Take on me</em>/a-ha-Brooklyn Duo) no es propiedad de la Universidad Veracruzana. Es empleada con fines meramente educativos y no se obtiene alguna regalía o pago por concepto de utilización de la misma. https://www.youtube.com/watch?v=DHbLuIxw3y4</p>
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%; ">14</sup> La obra musical utilizada en el presente recurso de video (<em>Piel</em>-Arca) no es propiedad de la Universidad Veracruzana. Es empleada con fines meramente educativos y no se obtiene alguna regalía o pago por concepto de utilización de la misma. https://www.youtube.com/watch?v=vITbsA8WHyo&amp;t=5s</p>
+                       <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%; ">15</sup> La obra musical utilizada en el presente recurso de video (<em>Feeling Good</em>-Michael Bublé bajo la licencia de Creative Commons) no es propiedad de la Universidad Veracruzana. Es empleada con fines meramente educativos y no se obtiene alguna regalía o pago por concepto de utilización de la misma. https://www.youtube.com/watch?v=jAsOisASxmc</p>
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%; ">16</sup> La obra musical utilizada en el presente recurso de video (<em>Lo vas a olvidar</em>-Billie Eilish, ROSALÍA) no es propiedad de la Universidad Veracruzana. Es empleada con fines meramente educativos y no se obtiene alguna regalía o pago por concepto de utilización de la misma. https://www.youtube.com/watch?v=8TsWkuWWXgc</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/Disclaimer-->
+      </div>
+    </section>
+    <!--Disclaimer-->
+    <!--Logo Universidad Veracruzana-->
+    <section id="pie-pagina" class="p-1">
+      <div class="container">
+        <div class="row">
+          <div class="w-100">
+            <div class="row d-flex justify-content-center">
+              <div class="col-3 col-md-2">
+                <img src="images/logo-uv-texto.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Logo Universidad Veracruzana-->
+    <div class="fixed-bottom-right" id="button-up">
+      <a class="btn btn-success indice btn-sm p-3" href="#seccion-proposito">
+        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+      </a>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/easyScrollDots.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/inicializacion.js"></script>
+  </body>
+</html>
