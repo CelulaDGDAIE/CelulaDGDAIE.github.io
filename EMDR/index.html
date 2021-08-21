@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/easyScrollDots.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Estadística y manejo de datos con R</title>
+  </head>
+  <body>
+    <!--Encabezado-->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
+        <div class="container">
+          <div class="navbar-brand pb-0">
+            <div class="row no-gutters mb-1">
+              <div class="col">
+                <img
+                  src="images/logo_EC.jpg"
+                  class="logo d-inline mr-"
+                  alt="mdb logo"
+                />
+              </div>
+              <div
+                class="col text-secondary d-flex flex-column justify-content-center"
+              >
+                <span class="h2 font-weight-bold">Estadística y manejo de datos con R</span>
+              </div>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="dropdown"
+            data-target="#menu-indice"
+            aria-controls="menu-indice"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <i class="fas fa-align-justify text-dark"></i>
+          </button>
+          <!--Menú en dispositivos móviles-->
+          <div class="dropdown-menu dropdown-menu-right" id="menu-indice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-secondary text-center p-1">
+                <a
+                  class="text-white"
+                  href="https://www.uv.mx/"
+                  target="_blank"
+                  alt="Ir a Universidad Veracruzana"
+                >
+                  Universidad Veracruzana
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#inicio" class="indice">
+                  <i class="fas fa-home text-primary"></i> Inicio:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#presentacion" class="ml-3 indice">
+                  <i class="fas fa-info-circle text-secondary"></i>
+                  Presentaci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#autores" class="ml-3 indice">
+                  <i class="fas fa-user-circle text-secondary"></i> Autores
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#unidad-competencia" class="ml-3 indice">
+                  <i class="fas fa-book-reader text-secondary"></i> Unidad de
+                  Competencia
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#contenido" class="ml-3 indice">
+                  <i class="fas fa-copy text-secondary"></i> Contenido
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#evaluacion-desempeno" class="ml-3 indice">
+                  <i class="fas fa-pencil-alt text-secondary"></i> Evaluación
+                  de desempeño
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#datos-contacto" class="ml-3 indice">
+                  <i class="fas fa-address-card text-secondary"></i> Datos de
+                  Contacto
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="index.html">
+                  <i class="fas fa-book text-primary"></i> Temas:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="tema1.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> I. Introducción.
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="tema2.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> II. Datos.
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="tema3.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> III. Gráficos.
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="tema4.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> IV. Programación.
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="tema5.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> V. Estadística.
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Menú en dispositivos móviles-->
+        </div>
+      </nav>
+    </header>
+    <!--/Encabezado-->
+    <!--Menú Izquierdo-->
+    <div id="sticky-menu" class="d-none d-lg-block d-lg-flex flex-column">
+      <a
+        class="btn btn-lg btn-primary btn-menu"
+        href="#!"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Inicio</em>"
+      >
+        <i class="fas fa-home fa-2x"></i>
+      </a>
+
+      <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="tema1.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Introducción.</em>"
+      >
+        <span class="font-weight-bold lead">I</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="tema2.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Datos.</em>"
+      >
+        <span class="font-weight-bold lead">II</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="tema3.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Gráficos.</em>"
+      >
+        <span class="font-weight-bold lead">III</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="tema4.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Programación.</em>"
+      >
+        <span class="font-weight-bold lead">IV</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="tema5.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Estadística.</em>"
+      >
+        <span class="font-weight-bold lead">V</span>
+      </a>
+
+    </div>
+    <!--/Menú Izquierdo-->
+    <!--Video-->
+    <section id="video">
+      <div
+        class="scroll-indicator"
+        id="seccion-video"
+        data-scroll-indicator-title="Inicio"
+      ></div>
+      <div class="overlay"></div>
+      <video
+		style="max-width: 100%; height:auto;"
+        class="embed-responsive-item"
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
+        <source src="Videos/BannerEMDR.mp4" type="video/mp4" />
+      </video>
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white"></div>
+        </div>
+      </div>
+    </section>
+    <!--/Video-->
+    <!--Menu Principal-->
+    <section class="bg-light">
+      <div class="container contenedor-menu-contenido">
+        <div class="row">
+          <div class="col-4 col-md-2 text-center">
+            <a href="#presentacion" class="indice">
+              <div class="card border-0 seccion">
+                <h5 class="card-title">
+                  <i class="fas fa-info-circle fa-3x text-primary"></i>
+                </h5>
+                <p class="card-text">Presentaci&oacute;n</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-4 col-md-2 text-center">
+            <a href="#autores" class="indice">
+              <div class="card border-0 seccion">
+                <h5 class="card-title">
+                  <i class="fas fa-user-circle fa-3x text-primary"></i>
+                </h5>
+                <p class="card-text">Autores de la Experiencia Educativa</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-4 col-md-2 text-center">
+            <a href="#contenido" class="indice">
+              <div class="card border-0 seccion">
+                <h5 class="card-title">
+                  <i class="fas fa-copy fa-3x text-primary"></i>
+                </h5>
+                <p class="card-text">Contenido</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-4 col-md-2 text-center">
+            <a href="#evaluacion-desempeno" class="indice">
+              <div class="card border-0 seccion">
+                <h5 class="card-title">
+                  <i class="fas fa-pencil-alt fa-3x text-primary"></i>
+                </h5>
+                <p class="card-text">
+                  Evaluaci&oacute;n de <br />
+                  desempeño
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-4 col-md-2 text-center">
+            <a href="#datos-contacto" class="indice">
+              <div class="card border-0 seccion">
+                <h5 class="card-title">
+                  <i class="fas fa-address-card fa-3x text-primary"></i>
+                </h5>
+                <p class="card-text">
+                  Datos de <br />
+                  Contacto
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Menu Principal-->
+    <!--Presentación-->
+    <section class="bg-primary text-white" id="presentacion">
+      <div
+        class="scroll-indicator"
+        id="seccion-presentacion"
+        data-scroll-indicator-title="Presentaci&oacute;n"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="fas fa-info-circle"></i> Presentación</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-12">
+            <p>
+				Dar a conocer y practicar el lenguaje computacional básico para manejar bases de datos y realizar estadística descriptiva y analítica, utilizando el programa de código abierto R <a style="color:white; text-decoration: underline;" target="_blank" href="www.r-project.org">www.r-project.org</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Presentación-->
+    <!--Autores-->
+    <section class="bg-secondary text-white" id="autores">
+      <div
+        class="scroll-indicator"
+        id="seccion-autores"
+        data-scroll-indicator-title="Autores"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-3">
+          <div class="col text-center">
+            <h3>Autores de la Experiencia Educativa (EE)</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <div class="row">
+              <div class="col-6 offset-3">
+                <img
+                  src="images/experto1.jpg"
+                  class="img-thumbnail"
+                  id="imagen-experto1"
+                />
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col text-center">
+
+                  <h5>Dr. Luis Pacheco Cobos</h5>
+
+                <p>
+                  <a class="text-light enlace" href="mailto:luipacheco@uv.mx"
+                    >luipacheco@uv.mx</a
+                  >
+                </p>
+				<a
+                  href="#"
+                  data-toggle="modal"
+                  class="text-white enlace"
+                  data-target="#modal-instructor-uno"
+                >
+                  <p class="font-weight-bold">Académico</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col text-center">
+            <div class="row">
+              <div class="col-6 offset-3">
+                <img
+                  src="images/experto2.jpg"
+                  class="img-thumbnail"
+                  id="imagen-experto-1"
+                />
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col text-center">
+                <h5>Dr. Marcos Francisco Rosetti Sciutto</h5>
+                <p>
+                  <a class="text-light enlace" href="mailto:mrosetti@gmail.com"
+                    >m_rosetti@iibiomedicas.unam.mx</a
+                  >
+                </p>
+				<a
+                  href="#"
+                  data-toggle="modal"
+                  class="text-white enlace"
+                  data-target="#modal-instructor-dos"
+                >
+                <p class="font-weight-bold">Académico</p>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Autores-->
+    <!--Contenido-->
+    <section class="bg-primary" id="contenido">
+        <div
+            class="scroll-indicator"
+            id="seccion-contenido"
+            data-scroll-indicator-title="Contenido">
+        </div>
+        <div class="container contenedor-seccion text-white">
+            <div class="row mb-4">
+                <div class="col">
+                    <h3><i class="fas fa-copy"></i> Temario</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mx-5">
+                    <div class="row row-cols-1 row-cols-md-5">
+                        <div class="col mb-4">
+                            <div class="card text-center h-100 bg-white">
+                            <div class="view overlay">
+                                <div
+                                class="card-body bg-secondary d-flex align-items-center justify-content-center"
+                                >
+                                <h3 class="card-title p-3">Tema I</h3>
+                                </div>
+                                <a href="tema1.html">
+                                <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <div class="card-footer text-muted bg-transparent">
+                                Introducción.
+                            </div>
+                            </div>
+                        </div>
+						<div class="col mb-4">
+                            <div class="card text-center h-100 bg-white">
+                            <div class="view overlay">
+                                <div
+                                class="card-body bg-secondary d-flex align-items-center justify-content-center"
+                                >
+                                <h3 class="card-title p-3">Tema II</h3>
+                                </div>
+                                <a href="tema2.html">
+                                <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <div class="card-footer text-muted bg-transparent">
+                                Datos.
+                            </div>
+                            </div>
+                        </div>
+						<div class="col mb-4">
+                            <!-- Modulo 1 -->
+                            <div class="card text-center h-100 bg-white">
+                            <div class="view overlay">
+                                <div
+                                class="card-body bg-secondary d-flex align-items-center justify-content-center"
+                                >
+                                <h3 class="card-title p-3">Tema III</h3>
+                                </div>
+                                <a href="tema3.html">
+                                <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <div class="card-footer text-muted bg-transparent">
+                                Gráficos.
+                            </div>
+                            </div>
+                        </div>
+						<div class="col mb-4">
+                            <!-- Modulo 1 -->
+                            <div class="card text-center h-100 bg-white">
+                            <div class="view overlay">
+                                <div
+                                class="card-body bg-secondary d-flex align-items-center justify-content-center"
+                                >
+                                <h3 class="card-title p-3">Tema IV</h3>
+                                </div>
+                                <a href="tema3.html">
+                                <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <div class="card-footer text-muted bg-transparent">
+                                Programación.
+                            </div>
+                            </div>
+                        </div>
+						<div class="col mb-4">
+                            <!-- Modulo 1 -->
+                            <div class="card text-center h-100 bg-white">
+                            <div class="view overlay">
+                                <div
+                                class="card-body bg-secondary d-flex align-items-center justify-content-center"
+                                >
+                                <h3 class="card-title p-3">Tema V</h3>
+                                </div>
+                                <a href="tema3.html">
+                                <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <div class="card-footer text-muted bg-transparent">
+                                Estadística.
+                            </div>
+                            </div>
+                        </div>
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Contenido-->
+    <!--Evaluacion del Desempeño-->
+    <section class="bg-secondary" id="evaluacion-desempeno">
+      <div
+        class="scroll-indicator"
+        id="seccion-evaluacion-desempeno"
+        data-scroll-indicator-title="Evaluaci&oacute;n de desempe&ntilde;o"
+      ></div>
+      <div class="container contenedor-seccion text-white">
+        <div class="row mb-4">
+          <div class="col-12 col-md-4 col-lg-6">
+            <h3>
+              <i class="fas fa-copy"></i> Evaluaci&oacute;n de desempe&ntilde;o
+            </h3>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 d-flex align-items-start">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 d-flex align-items-start">
+            <a
+              target="_blank"
+              class="btn btn-light"
+              href="pdfs/lineamientos_generales_educacion continua Virtuales.pdf"
+            >
+              <i class="fas fa-clipboard-list"></i> Lineamientos
+            </a>
+          </div>
+        </div>
+          <div id="tabla-evaluacion">
+            <table class="table table-bordered text-white tabla-desempeno">
+              <thead class="bg-light text-dark">
+                <tr>
+                  <th class="text-center p-1">
+					Temas
+				  </th>
+                  <th class="text-center p-1">
+                    Evidencia(s) de <br />desempeño
+                  </th>
+                  <th class="text-center p-1">Porcentaje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="3">
+                    I. Introducción.
+                  </td>
+                  <td>
+                    <p>Actividad 1. Conceptos básicos  (<em>script</em>).</p>
+                  </td>
+                  <td class="text-center align-middle">3%</td>
+                </tr>
+				<tr>
+                  <td>
+                    <p>Actividad 2. Tipos de datos en R (<em>script</em>).
+                      </p>
+                  </td>
+                  <td class="text-center align-middle">3%</td>
+                </tr>
+				<tr>
+                  <td>
+                    <p>Foro 1. Introducción (participación informada.
+                      </p>
+                  </td>
+                  <td class="text-center align-middle">4%</td>
+                </tr>
+				<tr>
+                  <td rowspan="2">
+                    II. Datos.
+                  </td>
+                  <td>
+                    <p>Actividad 3. Datos (<em>script</em>).</p>
+                  </td>
+                  <td class="text-center align-middle">30%</td>
+                </tr>
+				<tr>
+                  <td>
+                    <p>
+                      Foro 2. Datos (participación informada).
+                    </p>
+                  </td>
+                  <td class="text-center align-middle">5%</td>
+                </tr>
+				<tr>
+                  <td rowspan="2">
+                    III. Gráficos.
+                  </td>
+                  <td>
+                    <p>Actividad 4. Gráficos (<em>script</em>).</p>
+                  </td>
+                  <td class="text-center align-middle">10%</td>
+                </tr>
+				<tr>
+                  <td>
+                    <p>
+                      Foro 3. Gráficos (participación informada).
+                    </p>
+                  </td>
+                  <td class="text-center align-middle">5%</td>
+                </tr>
+				<tr>
+                  <td rowspan="2">
+                    IV. Programación.
+                  </td>
+                  <td>
+                    <p>Actividad 5. Programación (<em>script</em>).</p>
+                  </td>
+                  <td class="text-center align-middle">5%</td>
+                </tr>
+				<tr>
+                  <td>
+                    <p>
+                     Foro 4. Programación (participación informada).
+                    </p>
+                  </td>
+                  <td class="text-center align-middle">5%</td>
+                </tr>
+				<tr>
+                  <td rowspan="2">
+                    V. Estadística.
+                  </td>
+                  <td>
+                    <p>Actividad 6. Estadística (<em>script</em>).</p>
+                  </td>
+                  <td class="text-center align-middle">25%</td>
+                </tr>
+				<tr>
+                  <td>
+                    <p>
+                      Foro 5. Estadística (participación informada).
+                    </p>
+                  </td>
+                  <td class="text-center align-middle">5%</td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="text-right font-weight-bold">TOTAL</td>
+                  <td class="text-center font-weight-bold">100%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+      </div>
+    </section>
+    <!--/Evaluacion del Desempeño-->
+    <!--Datos de Contacto-->
+    <section class="bg-primary" id="datos-contacto">
+      <div
+        class="scroll-indicator"
+        id="seccion-datos-contacto"
+        data-scroll-indicator-title="Datos de Contacto"
+      ></div>
+      <div class="container contenedor-seccion text-white">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="fas fa-address-card"></i> Datos de Contacto</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <h5>Departamento de Educación Continua</h5>
+            <p class="font-weight-bold">
+              Mtra. María Luz Pérez Lorenzo 
+            </p>
+            <p>
+              Correo: <a class="text-light enlace" href="mailto:luzperez02@uv.mx "
+                >luzperez02@uv.mx </a
+              >
+            </p>
+            <p>Tel: 2288 42 1700 
+              <br />
+              Ext. 18904 
+            </p>
+          </div>
+          <div class="col-6">
+            <h5></h5>
+            <p class="font-weight-bold">
+              Facultad de Biología
+            </p>
+			<p>Dr. Luis Pacheco Cobos</p>
+            <p>
+			
+              Correo: <a class="text-light enlace" href="mailto:luipacheco@uv.mx"
+                >luipacheco@<br class="responsivo">uv.mx</a
+              >
+            </p>
+            <p>
+              Tel. 2288421700<br />
+              Ext. 11748
+            </p>
+          </div>
+        </div>
+        <!--Disclaimer-->
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card bg-info">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i>Disclaimer</i>
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/Disclaimer-->
+      </div>
+    </section>
+    <!--Datos de Contacto-->
+    <!--Descarga-->
+    <section class="bg-light" id="descarga">
+      <div class="container contenedor-seccion text-center">
+        <a
+          class="btn btn-lg btn-outline-primary"
+          target="_blank"
+          href="pdfs/programa_.pdf"
+        >
+          <span class="mr-3">Programa de la EE</span>
+          <i class="fas fa-file-download fa-2x"></i>
+        </a>
+      </div>
+    </section>
+    <!--/Descarga-->
+    <!--Logo Universidad Veracruzana-->
+    <section id="pie-pagina" class="p-1">
+      <div class="container">
+        <div class="row">
+          <div class="w-100">
+            <div class="row d-flex justify-content-center">
+              <div class="col-3 col-md-2">
+                <img src="images/logo-uv-texto.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Logo Universidad Veracruzana-->
+    <div class="fixed-bottom-right" id="button-up">
+      <a class="btn btn-success indice btn-sm p-3" href="#presentacion">
+        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+      </a>
+    </div>
+    <!--Ventanas Modales-->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal-instructor-uno"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-instructor-uno"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+				Dr. Luis Pacheco Cobos
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4>Estudios:</h4>
+            <ul>
+              
+			<li>Licenciatura en Biología, Facultad de Ciencias, Universidad Nacional Autónoma de México (UNAM).</li>
+			<li>Doctorado en Ciencias, Posgrado en Ciencias Biológicas. Especialidad en Ecología Conductual Humana, Universidad Nacional Autónoma de México (UNAM).</li>
+
+            </ul>
+            <h4>Trabajo actual:</h4>
+            <ul>
+            <li>Investigador de tiempo completo Facultad de Biología-Xalapa, Universidad Veracruzana. </li>
+			<li>Docente de la Maestría en Ciencias Biológicas, Facultad de Biología-Xalapa, Universidad Veracruzana, impartiendo las experiencias educativas:
+				<ul>
+				<li>Ecología cultural.</li>
+				<li>Estudios bioculturales.</li>
+				</ul>
+			</li>
+			<li>Docente de Licenciatura, Facultad de Biología-Xalapa, Universidad Veracruzana, impartiendo las experiencias educativas:
+				<ul>
+				<li>Hongos y líquenes. </li>
+				<li>Etnobiología. </li>
+				</ul>
+			</li>
+			</ul>
+
+			<h4>Distinciones:</h4>
+            <ul>
+				<li>Pertenece al Sistema Nacional de Investigadores (SIN), contando con el Nivel 1 (2020-2022), Consejo Nacional de Ciencia y Tecnología (CONACyT). </li>
+				<li>Cuenta con Perfil Deseable del Programa para el Desarrollo Profesional Docente (PRODEP), Secretaría de Educación Pública (SEP). </li>
+
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary waves-effect"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div
+      class="modal fade"
+      id="modal-instructor-dos"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-instructor-dos"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+				Dr. Marcos Francisco Rosetti Sciutto
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4>Estudios:</h4>
+            <ul>
+              <li>Licenciatura en Biología, Facultad de Ciencias, Universidad Nacional Autónoma de México (UNAM). </li>
+			  <li>Doctorado en Ciencias Computacionales e Inteligencia Artificial, Universidad de Sussex, Reino Unido.</li> 
+
+            </ul>
+            <h4>Trabajo actual:</h4>
+            <ul>
+              <li>
+                Investigador Asociado TC, Unidad Periférica Psicopatología y Desarrollo, Instituto de Investigaciones Biomédicas, Universidad Nacional Autónoma de México (UNAM). 
+              </li>
+			  <li>
+				Profesor de Programación en R, Posgrado en Ciencias Biológicas, Facultad de Ciencias, Universidad Nacional Autónoma de México (UNAM). 
+			  </li>
+            </ul>
+			<h4>Distinciones:</h4>
+            <ul>
+              <li>
+                Pertenece al Sistema Nacional de Investigadores (SIN) en Nivel 1, Consejo Nacional de Ciencia y Tecnología (CONACyT). 
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary waves-effect"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Ventanas Modales-->
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/easyScrollDots.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/inicializacion.js"></script>
+  </body>
+</html>

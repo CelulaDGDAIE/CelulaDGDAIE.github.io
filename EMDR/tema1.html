@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/easyScrollDots.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Estadística y manejo de datos con R</title>
+  </head>
+  <body>
+    <!--Encabezado-->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
+        <div class="container">
+          <div class="navbar-brand pb-0">
+            <div class="row no-gutters mb-1">
+              <div class="col">
+                <img
+                  src="images/logo_EC.jpg"
+                  class="logo d-inline mr-"
+                  alt="mdb logo"
+                />
+              </div>
+			  
+			  <div
+                class="col text-secondary d-flex flex-column justify-content-center"
+              >
+			  <span class="lg-view h2 font-weight-bold responsivo">Estadística y manejo de datos con R</span>
+				<span class="sm-view h2 font-weight-bold">Estadística y manejo de datos con R</span>
+
+                <p class=" lg-view p-0 m-0 font-weight-bold">
+                  Tema 1. Introducción
+                </p>
+				<p class=" sm-view p-0 m-0 font-weight-bold modulolargo">
+                  Tema 1
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="dropdown"
+            data-target="#menu-indice"
+            aria-controls="menu-indice"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <i class="fas fa-align-justify text-dark"></i>
+          </button>
+          <!--Menú en dispositivos móviles-->
+          <div class="dropdown-menu dropdown-menu-right" id="menu-indice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-secondary text-center p-1">
+                <a
+                  class="text-white"
+                  href="https://www.uv.mx/"
+                  target="_blank"
+                  alt="Ir a Universidad Veracruzana"
+                >
+                  Universidad Veracruzana
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#" class="indice">
+                  <i class="fas fa-home text-primary"></i> Inicio:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-proposito" class="ml-3 indice">
+                  <i class="icon-icono_proposito text-secondary"></i> Propósito:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-introduccion" class="ml-3 indice">
+                  <i class="icon-icono_introduccion text-secondary"></i>
+                  Introducci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-contenido" class="ml-3 indice">
+                  <i class="fas fa-copy text-secondary"></i> Contenido
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-fuentes" class="ml-3 indice">
+                  <i class="icon-icono_fuentes text-secondary"></i> Fuentes de
+                  Informaci&oacute;n
+                </a>
+              </li>
+			 <li class="list-group-item p-1">
+                <a href="index.html">
+                  <i class="fas fa-book text-primary"></i> Módulos:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="modulo1.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> I. 
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo2.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> II. 
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo3.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> III. 
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#">
+                  <i class="fas fa-book text-primary"></i> Temas:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-1" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.1. 
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-2" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.2 
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Menú en dispositivos móviles-->
+        </div>
+      </nav>
+    </header>
+    <!--/Encabezado-->
+    <!--Menú Izquierdo-->
+	<div id="sticky-menu" class="d-none d-lg-block d-lg-flex flex-column">
+		<a
+        class="btn btn-lg btn-light btn-menu"
+        href="index.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Inicio</em>"
+      >
+        <i class="fas fa-home fa-2x"></i>
+      </a>
+
+      <a
+        class="btn btn-lg btn-primary btn-menu d-block"
+        href="#!"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Introducción.</em>"
+      >
+        <span class="font-weight-bold lead">I</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu"
+        href="tema2.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Datos.</em>"
+      >
+        <span class="font-weight-bold lead">II</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="tema3.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Gráficos.</em>"
+      >
+        <span class="font-weight-bold lead">III</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="tema4.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Programación.</em>"
+      >
+        <span class="font-weight-bold lead">IV</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="tema5.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Estadística.</em>"
+      >
+        <span class="font-weight-bold lead">V</span>
+      </a>
+    </div>
+    <!--/Menú Izquierdo-->
+	<!--Contenido-->
+    <section class="bg-light">
+      <div
+        class="scroll-indicator"
+        id="seccion-contenido"
+        data-scroll-indicator-title="Contenido"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="fas fa-copy text-secondary"></i> Contenido</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+		  
+            <div class="list-group">
+			<a
+                href="#seccion-introduccion"
+                class="list-group-item list-group item-action bg-primary text-white indice"
+              >
+                1. Introducción.
+              </a>
+              <a
+                href="#seccion-tema-1"
+                class="list-group-item list-group item-action bg-primary text-white indice"
+              >
+                1.1 ¿Cómo funciona R?
+              </a>
+			  <a
+                href="#seccion-tema-2"
+                class="list-group-item list-group item-action bg-primary text-white indice"
+              >
+                1.2 Tipos de datos y formatos de bases de datos.
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Contenido-->
+	<!--Introducción-->
+    <section class="bg-secondary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-tema-1"
+        data-scroll-indicator-title="1. Introducción."
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3>1. Introducción</h3>
+          </div>
+        </div>
+        <div class="row">
+		<div class="col-3">
+            <figure class="figure" >
+              <img
+                src="images/1.jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <figcaption class="figure-caption text-right text-white">
+                [1]
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-9">
+            <p>Este curso est&aacute; dise&ntilde;ado para desarrollarse en Rstudio, por ello es importante que cuente con R (<a class="fot-weight-bold" style="color:white; text-decoration: underline;" target="_blank" href="https://www.r-project.org/">https://www.r-project.org/</a>) y RStudio (<a target="_blank" class="fot-weight-bold" style="color:white; text-decoration: underline;" href="https://www.rstudio.com/">https://www.rstudio.com/</a>) instalados para esta sesi&oacute;n. RStudio es la manera m&aacute;s eficiente de interaccionar con R. Revisaremos los conceptos b&aacute;sicos relacionados con el funcionamiento de este programa de c&oacute;mputo estad&iacute;stico, así mismo, las partes que componen la interfaz gr&aacute;fica y el espacio de trabajo de R. Y, sin m&aacute;s pre&aacute;mbulo, iniciaremos la revisi&oacute;n de los modos (estructuras) en que R puede almacenar y manejar datos en su espacio de trabajo, as&iacute; como las propiedades (<em>pros</em> y contras) de cada estructura. Ser&aacute; una sesi&oacute;n intensa y cargada de ejercicios cortos, planeada as&iacute; para fomentar la interacci&oacute;n con R. Cerraremos revisando de qu&eacute; manera podemos acomodar, agrupar o filtrar datos espec&iacute;ficos o de inter&eacute;s, consultando diferentes bases de datos.</p>
+		</div>
+		</div>
+	
+        </div>
+
+    </section>
+    <!--/Introducción-->
+		<!--Tema 1-->
+    <section class="bg-primary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-tema-2"
+        data-scroll-indicator-title="1.1 &iquest;C&oacute;mo funciona R?"
+      ></div>
+      <div class="container contenedor-seccion">
+	<div class="row">
+		<div class="col">	
+<p class="font-weight-bold">1.1 &iquest;C&oacute;mo funciona R?</p>
+<p class="font-weight-bold"><em>1.1.1. Consola (l&iacute;nea de comandos)</em></p>
+<p>Esta parte de la interfaz gr&aacute;fica es como una gran calculadora que nos permite interactuar con el programa a trav&eacute;s de operaciones y <em>comandos</em> que en el lenguaje de R se conocen como <em>funciones</em>.</p>
+<p>Las variables funcionan como en aritm&eacute;tica b&aacute;sica, en donde se usan caracteres alfab&eacute;ticos para representar valores num&eacute;ricos.</p>
+<p class="font-weight-bold"><em>1.1.2. Espacio de trabajo</em></p>
+<p>En esta parte de la interfaz gr&aacute;fica es en donde est&aacute;n almacenadas y podemos visualizar todas las variables disponibles y sus caracter&iacute;sticas principales.</p>
+<p class="font-weight-bold"><em>1.1.3. Objetos y funciones</em></p>
+<p>Es posible asignar a un <em>objeto</em> en el espacio de trabajo el contenido de una variable, mediante el empleo de <em>&lt;-</em>, un operador flecha. Cuando realizamos una asignaci&oacute;n, R no imprime el contenido, solamente reasigna este valor. Cuando colocamos el nombre de un objeto en la l&iacute;nea de comando y lo ejecutamos, R imprime su contenido.</p>
+<p>Las funciones son piezas de c&oacute;digo prefabricadas que nos ayudan a llevar a cabo de forma sencilla un proceso complejo. Para "llamarlas" debemos especificar su nombre, as&iacute; como los <em>objetos</em> sobre los que queremos que operen. Podemos modificar la forma en que opera una funci&oacute;n mediante la especificaci&oacute;n de sus par&aacute;metros o argumentos.</p>
+<p>Para una comprensión más clara, se muestra la siguiente presentación: </p>
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="pdfs/tema1/Clase 1.0 Introducción y conceptos básicos.pdf" type="text/pdf" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>	
+<br>
+<p>Ahora, revise los videos que se muestran a continuación:</p>
+<div style="text-align:center">
+<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item"
+		src="https://www.youtube.com/embed/BO-BdlDAfcU"
+		frameborder="0"
+		scrolling="no"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen>
+	</iframe>
+	<figure>
+		<figcaption class="figure-caption text-white text-right">Fuente: Estadística y Manejo de Datos con R UV. (2021, 16 agosto). <em>Clase 1 1 RStudio porpartes small </em> [Video]. YouTube.</figcaption>
+	</figure>
+</div>
+
+</div>
+<br>
+<div style="text-align:center">
+<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item"
+		src="https://www.youtube.com/embed/xhX4o-ip4mU"
+		frameborder="0"
+		scrolling="no"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen>
+	</iframe>
+	<figure>
+		<figcaption class="figure-caption text-white text-right">Fuente: Estadística y Manejo de Datos con R UV. (2021, 16 agosto). <em>Clase 1 2 ConceptosBásicos small </em> [Video]. YouTube.</figcaption>
+	</figure>
+</div>
+</div>
+<br>
+<div style="text-align:center">
+<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item"
+		src="https://www.youtube.com/embed/2idIjvSRhsg"
+		frameborder="0"
+		scrolling="no"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen>
+	</iframe>
+	<figure>
+		<figcaption class="figure-caption text-white text-right">Fuente: Estadística y Manejo de Datos con R UV. (2021, 16 agosto). <em>Clase 1 3 Tipos Datos </em> [Video]. YouTube.</figcaption>
+	</figure>
+</div>
+</div>
+<br>
+<p class="font-weight-bold"><em>1.1.4. Ayuda</em></p>
+<p>R tiene una extensa biblioteca de ayuda para sus funciones. Aqu&iacute; revisaremos las m&uacute;ltiples formas de acceder a la ayuda.</p>
+<p>Para ello, acceda a las siguientes presentaciones:</p>
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="pdfs/tema1/Clase 1.2 Datos y dónde encontrarlos-tema2.1.pdf" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>	
+<br>
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="pdfs/tema1/Clase 1.4 Cargando y explorando datos.pdf" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>	
+          </div>
+		  </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 1-->
+		<!--Tema 2-->
+    <section class="bg-secondary text-white">
+	<div
+        class="scroll-indicator"
+        id="seccion-tema-3"
+        data-scroll-indicator-title="1.2 Tipos de datos y formatos de bases de datos?"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row">
+          <div class="col">
+<p class="font-weight-bold">1.2 Tipos de datos y formatos de bases de datos</p>
+<p class="font-weight-bold"><em>1.2.1. Vectores</em></p>
+<p>El vector es la estructura de datos m&aacute;s sencilla de R. Trata de una sola l&iacute;nea horizontal de valores (n&uacute;meros o caracteres). Se construye asignando a un objeto dichos valores con la funci&oacute;n <em>c()</em>. Se pueden referenciar los elementos dentro de un vector usando corchetes [], y dentro de &eacute;stos el n&uacute;mero del elemento a referenciar.</p>
+<p>Revise la siguiente presentación, así como el video correspondientes al tema de Vectores:</p>
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="pdfs/tema1/Clase 1.1 Estructuras de datos-Vectores.pdf" type="text/pdf" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>	
+<br>
+<div style="text-align:center">
+<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item"
+		src="https://www.youtube.com/embed/jn05DAZT7FI"
+		frameborder="0"
+		scrolling="no"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen>
+	</iframe>
+	<figure>
+		<figcaption class="figure-caption text-white text-right">Fuente: Estadística y Manejo de Datos con R UV. (2021, 16 agosto). <em>Clase 1 4 Vectores full</em> [Video]. YouTube.</figcaption>
+	</figure>
+</div>
+</div>
+<p class="font-weight-bold"><em>1.2.2. Factores</em></p>
+<p>El factor es un vector que contiene un elemento agrupador sobre los datos. Autom&aacute;ticamente identifica los elementos distintos y agrega "niveles".</p>
+<p>Revise la siguiente presentación, así como el video que se muestra más adelante:</p>
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="pdfs/tema1/Clase 1.1 Estructuras de datos-Factores.pdf" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>	
+<br>
+<div style="text-align:center">
+<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item"
+		src="https://www.youtube.com/embed/CGWWkXYur4k"
+		frameborder="0"
+		scrolling="no"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen>
+	</iframe>
+	<figure>
+		<figcaption class="figure-caption text-white text-right">Fuente: Estadística y Manejo de Datos con R UV. (2021, 16 agosto). <em>Clase 1 5 Factores small </em> [Video]. YouTube.</figcaption>
+	</figure>
+</div>
+</div>
+<p class="font-weight-bold"><em>1.2.3. Matrices</em></p>
+<p>La matriz es una estructura bidimensional que puede contener valores num&eacute;ricos o caracteres, pero no ambos. Se puede referenciar usando corchetes [] y especificando la fila y columna de un elemento, por ejemplo: [i,j].</p>
+<p>Revise la siguiente presentación, así como el video acerca del tema de matrices:</p>
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="pdfs/tema1/Clase 1.1 Estructuras de datos-Matrices.pdf" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>		
+<br>
+<div style="text-align:center">
+<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item"
+		src="https://www.youtube.com/embed/VxGqBKbEcwE"
+		frameborder="0"
+		scrolling="no"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen>
+	</iframe>
+	<figure>
+		<figcaption class="figure-caption text-white text-right">Fuente: Estadística y Manejo de Datos con R UV. (2021, 16 agosto). <em>Clase 1 6 Matrices ed </em> [Video]. YouTube.</figcaption>
+	</figure>
+</div>
+</div>
+
+
+<p class="font-weight-bold"><em>1.2.4 Marcos de datos</em></p>
+<p>El marco de datos es la estructura de datos que m&aacute;s usaremos. Es bidimensional y puede contener valores num&eacute;ricos y caracteres, a modo de una hoja de Excel. Para referenciar podemos usar corchetes [i,j] con el n&uacute;mero o nombre de la columna (variable). Tambi&eacute;n podemos usar el operador compacto ($) para referenciar el nombre de la columna desde el objeto, por ejemplo, <em>datos$variablex</em>.</p>
+<p>Para reforzar este tema, revise la siguiente presentación, así como el video que se muestra posteriormente:</p>
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="pdfs/tema1/Clase 1.1 Estructuras de datos-Marcos de Datos.pdf" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>	
+<br>
+<div style="text-align:center">
+<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item"
+		src="https://www.youtube.com/embed/vPSFZ34ATHQ"
+		frameborder="0"
+		scrolling="no"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen>
+	</iframe>
+	<figure>
+		<figcaption class="figure-caption text-white text-right">Fuente: Estadística y Manejo de Datos con R UV. (2021, 16 agosto). <em>Clase 1 7 MarcoDeDatos small </em> [Video]. YouTube.</figcaption>
+	</figure>
+</div>
+</div>
+
+<p class="font-weight-bold"><em>1.2.5. Listas</em></p>
+<p>La lista es una estructura de datos que puede contener cualquier otra estructura. Podemos referenciar los elementos que contiene como parte de una lista usando corchetes [i] o el elemento en su forma nativa con corchete doble [[i]].</p>
+<p>Para reforzar este tema, revise la siguiente presentación, así como el video que se muestra posteriormente:</p>
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="pdfs/tema1/Clase 1.1 Estructuras de datos-Listas.pdf" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>		
+<br>
+<div style="text-align:center">
+<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item"
+		src="https://www.youtube.com/embed/vPSFZ34ATHQ"
+		frameborder="0"
+		scrolling="no"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen>
+	</iframe>
+	<figure>
+		<figcaption class="figure-caption text-white text-right">Fuente: Estadística y Manejo de Datos con R UV. (2021, 16 agosto). <em>Clase 1 7 MarcoDeDatos small </em> [Video]. YouTube.</figcaption>
+	</figure>
+</div>
+</div>	
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="alert alert-warning text-dark" role="alert">
+              <p>Para evaluar sus aprendizajes acerca del <span class="font-weight-bold"><em>Tema I. Introducción</em></span><em>, </em>dir&iacute;jase a la secci&oacute;n de <span class="font-weight-bold"><em>Actividades</em></span> e ingrese a las <span class="font-weight-bold">Actividades 1 y 2 </span>y al<span class="font-weight-bold"> Foro del Tema I</span>, atendiendo las indicaciones para su realizaci&oacute;n.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 2-->
+        <!--Fuentes de Información-->
+    <section class="bg-primary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-fuentes"
+        data-scroll-indicator-title="Fuentes de Información"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+			<h3><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header bg-secondary" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Básicas
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body text-dark">
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Gonz&aacute;lez, A. &amp; Gonz&aacute;lez, S. (2000). <em>Introducci&oacute;n a R.</em> R Development Core Team. <a href="http://cran.r-project.org/doc/contrib/R-intro-1.1.0-espanol.1.zip">http://cran.r-project.org/doc/contrib/R-intro-1.1.0-espanol.1.zip</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Paradis, E. (2002). <em>R para principiantes.</em> Traducci&oacute;n por Ahumada, J. A. <a href="http://cran.r-project.org/doc/contrib/rdebuts_es.pdf">http://cran.r-project.org/doc/contrib/rdebuts_es.pdf</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>RStudio. (s. f.). <em>RStudio | Open source &amp; professional software for data science teams</em>. Recuperado 14 de julio de 2021, de <a href="https://www.rstudio.com/">https://www.rstudio.com/</a></p>
+					<p style='margin-left:15.65pt;text-indent:-15.65pt;'>The R Foundation. (s. f.). <em>R: The R Project for Statistical Computing</em>. R-Project.Org. Recuperado 14 de julio de 2021, de <a href="https://www.r-project.org/">https://www.r-project.org/</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Fuentes de Información-->
+   	<!--Actividades-->
+    <section class="bg-secondary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-actividades"
+        data-scroll-indicator-title="Actividades"
+      ></div>
+      <div class="container contenedor-seccion">
+
+
+        <div class="row bg-light text-dark p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold">Actividad 1. Conceptos básicos</span> 
+            </h4>
+            <p><span class="font-weight-bold">Descripci&oacute;n:</span></p>
+<p>&Eacute;ste es un ejercicio simple que tiene como objetivo crear un directorio (<em>folder</em>) de trabajo para concentrar ah&iacute; los materiales del curso, as&iacute; como hacer de dicho espacio en el disco duro su directorio de trabajo en R. El resultado final, un <em>script</em> (*.R), ser&aacute; el medio a trav&eacute;s del que reportar&aacute; todas sus actividades. Dicho archivo de texto contendr&aacute; los comandos en c&oacute;digo y los comentarios que asocie a cada caso. Los <em>script</em> son la materia prima para hacer funcionar R, por lo que la correcta ejecuci&oacute;n y comprensi&oacute;n de este primer ejercicio es vital para sus futuras interacciones con el programa, con otros usuarios y las entregas de actividades.</p>
+<p>Revise la diapositiva indicada de la presentación: Clase 1.0 Introducción y conceptos básicos.pdf (p. 38)</p>
+<p><span class="font-weight-bold">Indicaciones:</span></p>
+<ol>
+<li>Crear un directorio de trabajo (<em>folder</em>) para el curso.</li>
+<li>Hacer de dicho <em>folder</em> el directorio de trabajo en R.</li>
+<li>Entregar un <em>script</em> (*.R) funcional que d&eacute; cuenta de lo anterior.</li>
+<li>Recuerde agregar, como comentarios en su <em>script</em>, sus dudas o los mensajes de advertencia y/o error que R le haya reportado, as&iacute; como los comandos que los originaron. </li>
+</ol>
+<p><span class="font-weight-bold">Criterios de desempe&ntilde;o:</span></p>
+<ol>
+<li>Dominio de la asignaci&oacute;n del directorio de trabajo desde R.</li>
+<li>Apertura y guardado de un archivo con extensi&oacute;n *.R que contenga tanto comentarios como comandos ejecutables.  </li>
+</ol>
+<p><span class="font-weight-bold">Lineamientos de entrega:</span></p>
+<ol>
+<li>Divida su <em>script</em> en secciones, usando <em>hashtag</em> # al inicio de las l&iacute;neas que comente. Para conocer ejemplos de <em>scripts</em> revise la <a href="https://uvmx-my.sharepoint.com/:b:/g/personal/luipacheco_uv_mx/ERTO-QLeJIdFo9MoR3h7XFQB-92QV0r8DYuhnE-vdJ23pg?e=h0U3wr">Clase 3.0 Scripts, funciones y control de flujo.pdf (pp. 1-19)</a>. Por ejemplo, si va a iniciar la secci&oacute;n en que asigna su directorio de trabajo, puede indicarlo con la l&iacute;nea: # Ajustar directorio de trabajo setwd(&ldquo;/Usuario/CursoEMDR&rdquo;) y en las l&iacute;neas subsecuentes agregar los comandos que correspondan a la soluci&oacute;n del ejercicio en turno.</li>
+<li>Titule el archivo (*.R) de la siguiente forma:&nbsp;<em>Act</em><em>ividad</em><em>1._ApellidoPaternoPrimerNombre.R</em>&nbsp; Ejemplo: <em>Act</em><em>ividad</em><em>1._CoyotlPedro.R</em></li>
+<li>Env&iacute;e su archivo (*.R), a trav&eacute;s del apartado <span class="font-weight-bold">Actividades</span> de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el <span class="font-weight-bold">Calendario</span> de entregas.  </li>
+</ol>
+          </div>
+        </div>
+		<br>
+		<div class="row bg-light text-dark p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold">Actividad 2. Tipos de datos en R.</span> 
+            </h4>
+            <p><span class="font-weight-bold">Descripci&oacute;n:</span></p>
+<p>Esta serie de ejercicios tiene como objetivo familiarizarlo con las distintas estructuras (modos) en que R almacena datos, yendo desde el m&aacute;s simple (vector) hasta el m&aacute;s complejo (lista). Reconocer&aacute; tanto las diferencias estructurales como los contextos en que una u otra le ser&aacute;n de utilidad, as&iacute; como las dificultades que aparecen cuando intenta hacer operaciones para los que determinada estructura no est&aacute; habilitada. Tambi&eacute;n revisaremos c&oacute;mo convertir distintos conjuntos de datos de una a otra estructura, cuando esto aplique o sea necesario.</p>
+
+<p><span class="font-weight-bold">Indicaciones:</span></p>
+<p>Explorar, identificar y manipular las distintas estructuras de datos que maneja R.</p>
+
+<p><span class="font-weight-bold">Ejercicios (en las p&aacute;ginas se&ntilde;aladas dentro de las presentaciones):</span></p>
+<p>1.2.1 Vectores. <a href="pdfs/tema1/ejercicios/Clase 1.1 Estructuras de datos-Ejercicios Vectores Act-2.pdf" target="_blank">Clase 1.1 Estructuras de datos.pdf (p. 11)</a></p>
+<p>1.2.2 Factores. <a href="pdfs/tema1/ejercicios/Clase 1.1 Estructuras de datos-Ejercicios Factores-Act-2.pdf" target="_blank">Clase 1.1 Estructuras de datos.pdf (p. 23)</a></p>
+<p>1.2.3 Matrices. <a href="pdfs/tema1/ejercicios/Clase 1.1 Estructuras de datos-Ejercicios Matrices-Act-2.pdf" target="_blank">Clase 1.1 Estructuras de datos.pdf (p. 40)</a></p>
+<p>1.2.4 Marcos de datos. <a href="pdfs/tema1/ejercicios/Clase 1.1 Estructuras de datos-Ejercicios Marcos de Datos-Act2.pdf" target="_blank">Clase 1.1 Estructuras de datos.pdf (p. 58)</a></p>
+<p>1.2.5 Listas. <a href="pdfs/tema1/ejercicios/Clase 1.1 Estructuras de datos-Ejercicios Listas-Act-2.pdf" target="_blank">Clase 1.1 Estructuras de datos.pdf (p. 74)</a></p>
+<p><span class="font-weight-bold">Criterios de desempe&ntilde;o:</span></p>
+<ol>
+<li>Habilidad para identificar el modo (estructura) de los objetos (datos) manejados con R, as&iacute; como para transformar de un tipo de estructura a otro.</li>
+<li>Reconocer y resolver errores en la codificaci&oacute;n de la estructura de datos en turno.</li>
+</ol>
+<p><span class="font-weight-bold">Lineamientos de entrega:</span></p>
+<ol>
+<li>Divida su <em>script</em> en secciones, usando <em>hashtag</em> # al inicio de las l&iacute;neas que comente. Para conocer ejemplos de <em>scripts</em> revise la <a href="https://uvmx-my.sharepoint.com/:b:/g/personal/luipacheco_uv_mx/ERTO-QLeJIdFo9MoR3h7XFQB-92QV0r8DYuhnE-vdJ23pg?e=h0U3wr">Clase 3.0 Scripts, funciones y control de flujo.pdf (pp. 1-19)</a>. Por ejemplo, si va a iniciar la secci&oacute;n de vectores, puede indicarlo con la l&iacute;nea # Vectores vector(x) y en las l&iacute;neas subsecuentes agregue los comandos que correspondan a la soluci&oacute;n del ejercicio en turno.</li>
+<li>Titule su archivo (*.R) de la siguiente forma: <em>Actividad2_ApellidoPaternoPrimerNombre.R.</em>&nbsp; Ejemplo: <em>Actividad2_CoyotlPedro.R</em>
+</li>
+<li>Env&iacute;e su archivo (*.R), a trav&eacute;s del apartado de <span class="font-weight-bold">Actividades</span> de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el<span class="font-weight-bold"> Calendario</span> de entregas.</li>
+
+          </div>
+        </div>
+		<br>
+		<div class="row bg-light text-dark p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold">Foro 1. Introducción.</span> 
+            </h4>
+            <p><span class="font-weight-bold">Descripci&oacute;n:</span></p>
+<ol>
+<li>Este foro estar&aacute; abierto para acompa&ntilde;arse en el proceso de elaborar los ejercicios que competen a este tema, para compartir dudas o estrategias de c&oacute;mo resolverlos, as&iacute; como para participar exponiendo su experiencia y los mensajes que se se&ntilde;alaron al usar el <em>software</em>.</li>
+<li>El foro estar&aacute; abierto s&oacute;lo hasta la fecha l&iacute;mite indicada.</li>
+<li>Recuerde atender a las <a href="pdfs/Reglas Foros de discusion.pdf">Reglas para participar en foros de discusión.</a></li>
+</ol>
+
+<p><span class="font-weight-bold">Criterios de desempe&ntilde;o:</span></p>
+<ol>
+<li>Compartir y discutir soluciones de las actividades.</li>
+<li>Valorar la pertinencia de modificar nuestra estrategia al usar el <em>software</em>.</li>
+<li>Sugerir ideas que den pauta a una pr&aacute;ctica m&aacute;s funcional del <em>software</em>.</li>
+</ol>
+
+<p><span class="font-weight-bold">Lineamientos de entrega:</span></p>
+<ol>
+<li>Publique su participaci&oacute;n en el&nbsp;Foro del Tema I. Introducción.</li>
+
+<li>Su participaci&oacute;n en el foro ser&aacute; en la fecha establecida en el <span class="font-weight-bold">Calendario</span> de entregas. Los foros no conceder&aacute;n pr&oacute;rroga.</li>
+</ol>
+          </div>
+        </div>
+		<br>
+      </div>
+    </section>
+    <!--/Actividades-->
+    <!--Disclaimer-->
+    <section class="bg-light">
+      <div class="container contenedor-menu-contenido">
+        <!--Disclaimer-->
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card bg-info">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i>Disclaimer</i>
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%;">1</sup> </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/Disclaimer-->
+      </div>
+    </section>
+    <!--Disclaimer-->
+    <!--Logo Universidad Veracruzana-->
+    <section id="pie-pagina" class="p-1">
+      <div class="container">
+        <div class="row">
+          <div class="w-100">
+            <div class="row d-flex justify-content-center">
+              <div class="col-3 col-md-2">
+                <img src="images/logo-uv-texto.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Logo Universidad Veracruzana-->
+    <div class="fixed-bottom-right" id="button-up">
+      <a class="btn btn-success indice btn-sm p-3" href="#seccion-proposito">
+        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+      </a>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/easyScrollDots.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/inicializacion.js"></script>
+  </body>
+</html>

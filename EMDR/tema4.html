@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/easyScrollDots.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title></title>
+  </head>
+  <body>
+    <!--Encabezado-->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
+        <div class="container">
+          <div class="navbar-brand pb-0">
+            <div class="row no-gutters mb-1">
+              <div class="col">
+                <img
+                  src="images/logo_EC.jpg"
+                  class="logo d-inline mr-"
+                  alt="mdb logo"
+                />
+              </div>
+			  
+			  <div
+                class="col text-secondary d-flex flex-column justify-content-center"
+              >
+			  <span class="lg-view h2 font-weight-bold responsivo">Estadística y manejo de datos con R</span>
+				<span class="sm-view h2 font-weight-bold">Estadística y manejo de datos con R</span>
+
+                <p class=" lg-view p-0 m-0 font-weight-bold">
+                  Tema IV. Programación.
+                </p>
+				<p class=" sm-view p-0 m-0 font-weight-bold modulolargo">
+                  Tema IV
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="dropdown"
+            data-target="#menu-indice"
+            aria-controls="menu-indice"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <i class="fas fa-align-justify text-dark"></i>
+          </button>
+          <!--Menú en dispositivos móviles-->
+          <div class="dropdown-menu dropdown-menu-right" id="menu-indice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-secondary text-center p-1">
+                <a
+                  class="text-white"
+                  href="https://www.uv.mx/"
+                  target="_blank"
+                  alt="Ir a Universidad Veracruzana"
+                >
+                  Universidad Veracruzana
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#" class="indice">
+                  <i class="fas fa-home text-primary"></i> Inicio:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-proposito" class="ml-3 indice">
+                  <i class="icon-icono_proposito text-secondary"></i> Propósito:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-introduccion" class="ml-3 indice">
+                  <i class="icon-icono_introduccion text-secondary"></i>
+                  Introducci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-contenido" class="ml-3 indice">
+                  <i class="fas fa-copy text-secondary"></i> Contenido
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-fuentes" class="ml-3 indice">
+                  <i class="icon-icono_fuentes text-secondary"></i> Fuentes de
+                  Informaci&oacute;n
+                </a>
+              </li>
+			 <li class="list-group-item p-1">
+                <a href="index.html">
+                  <i class="fas fa-book text-primary"></i> Módulos:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="modulo1.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> I. 
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo2.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> II. 
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo3.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> III. 
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#">
+                  <i class="fas fa-book text-primary"></i> Temas:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-1" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.1. 
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-2" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.2 
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Menú en dispositivos móviles-->
+        </div>
+      </nav>
+    </header>
+    <!--/Encabezado-->
+    <!--Menú Izquierdo-->
+	<div id="sticky-menu" class="d-none d-lg-block d-lg-flex flex-column">
+		<a
+        class="btn btn-lg btn-light btn-menu"
+        href="index.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Inicio</em>"
+      >
+        <i class="fas fa-home fa-2x"></i>
+      </a>
+
+      <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="tema1.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Introducción.</em>"
+      >
+        <span class="font-weight-bold lead">I</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="tema2.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Datos.</em>"
+      >
+        <span class="font-weight-bold lead">II</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="tema3.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Gráficos.</em>"
+      >
+        <span class="font-weight-bold lead">III</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-primary btn-menu d-block"
+        href="#!"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Programación.</em>"
+      >
+        <span class="font-weight-bold lead">IV</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="tema5.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Estadística.</em>"
+      >
+        <span class="font-weight-bold lead">V</span>
+      </a>
+    </div>
+    <!--/Menú Izquierdo-->
+	<!--Contenido-->
+    <section class="bg-light">
+      <div
+        class="scroll-indicator"
+        id="seccion-contenido"
+        data-scroll-indicator-title="Contenido"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="fas fa-copy text-secondary"></i> Contenido</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="list-group">
+			<a
+                href="#seccion-introduccion"
+                class="list-group-item list-group item-action bg-primary text-white indice"
+              >
+                4. Programación.
+              </a>
+              <a
+                href="#seccion-tema-1"
+                class="list-group-item list-group item-action bg-primary text-white indice"
+              >
+                4.1 <em>Scripts</em>.
+              </a>
+			  <a
+                href="#seccion-tema-2"
+                class="list-group-item list-group item-action bg-primary text-white indice"
+              >
+                4.2 Funciones.
+              </a>
+			  <a
+                href="#seccion-tema-3"
+                class="list-group-item list-group item-action bg-primary text-white indice"
+              >
+                4.3 Control condicional.
+              </a>
+			  <a
+                href="#seccion-tema-4"
+                class="list-group-item list-group item-action bg-primary text-white indice"
+              >
+                4.4 Control iterativo.
+              </a>
+			  <a
+                href="#seccion-tema-5"
+                class="list-group-item list-group item-action bg-primary text-white indice"
+              >
+                4.5 Programación funcional.
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Contenido-->
+	<!--introduccion-->
+    <section class="bg-secondary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-introduccion"
+        data-scroll-indicator-title="4. Programación"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3>4. Programación</h3>
+          </div>
+        </div>
+			  <div class="row">
+				<div class="col-3">
+            <figure class="figure" >
+              <img
+                src="images/4.jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <figcaption class="figure-caption text-right text-white">
+                [1]
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-9">
+			<p>En esta secci&oacute;n conocer&aacute; c&oacute;mo elaborar c&oacute;digos en el lenguaje de R, mismos que permiten automatizar el an&aacute;lisis de datos de manera gen&eacute;rica. Por ejemplo, elaborar gr&aacute;ficos a partir de conjuntos de datos con estructura predefinida, codificar funciones que se ajusten a sus necesidades de manejo de datos o anal&iacute;ticas, establecer reglas para revisar y luego incluir o excluir informaci&oacute;n espec&iacute;fica dentro de un conjunto de datos.</p>
+			<p>Desarrollar sus habilidades program&aacute;ticas requiere paciencia y persistencia, a medida que las practique, ganar&aacute; mayor dominio sobre el manejo y an&aacute;lisis de datos. &Eacute;sta es la puerta de entrada a la programaci&oacute;n b&aacute;sica en R.</p>
+          </div>
+		  </div>
+      </div>
+    </section>
+    <!--/introduccion-->
+	<!--Tema 1-->
+    <section class="bg-primary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-tema-1"
+        data-scroll-indicator-title="4.1 Scripts."
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row">
+          <div class="col">
+			<p><span class="font-weight-bold"><em>4.1. Scripts</em></span></p>
+			<p>El <em>script</em> es un archivo de texto que contiene comandos para ejecutar un an&aacute;lisis o procesamiento de datos. Es &uacute;til para automatizar un c&oacute;digo que queremos correr m&uacute;ltiples veces, as&iacute; como para organizar en m&oacute;dulos editables un proceso largo y complejo que rebasa las capacidades de la l&iacute;nea de comando. El <em>script</em> es la forma en que escribimos y guardamos en R un conjunto de instrucciones organizadas jer&aacute;rquicamente.</p>
+			<p>A continuaci&oacute;n, revise la siguiente presentaci&oacute;n: <a href="https://uvmx-my.sharepoint.com/:b:/g/personal/luipacheco_uv_mx/ERTO-QLeJIdFo9MoR3h7XFQB-92QV0r8DYuhnE-vdJ23pg?e=h0U3wr">Clase 3.0 Scripts, funciones y control de flujo.pdf (pp. 1-19)</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 1-->
+		<!--Tema 2-->
+    <section class="bg-secondary text-white">
+	<div
+        class="scroll-indicator"
+        id="seccion-tema-2"
+        data-scroll-indicator-title="4.2 Funciones."
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row">
+          <div class="col">
+
+           
+		<p><span class="font-weight-bold">4.2. Funciones</span></p>
+		<p>Las bibliotecas b&aacute;sicas y complementarias de R contienen un gran n&uacute;mero de funciones, sin embargo, en ocasiones necesitamos crear otras para usos espec&iacute;ficos. En esta secci&oacute;n revisaremos la notaci&oacute;n requerida para construir sus propias funciones, incluyendo par&aacute;metros por defecto y c&oacute;mo organizar el c&oacute;digo para construir funciones anidadas (funciones dentro de otras funciones).</p>
+		<p>Revise la siguiente presentaci&oacute;n: <a href="https://uvmx-my.sharepoint.com/:b:/g/personal/luipacheco_uv_mx/ERTO-QLeJIdFo9MoR3h7XFQB-92QV0r8DYuhnE-vdJ23pg?e=h0U3wr">Clase 3.0 Scripts, funciones y control de flujo.pdf (pp. 20-23)</a>, as&iacute; como el video: <a href="https://uvmx-my.sharepoint.com/:v:/g/personal/luipacheco_uv_mx/EQEoa_Va6HhBjlzOxEWkKhkBAzRTy_qcprjZ-OeWk4eg2w?e=YP92Oq">Clase_4.1_funciones_small</a></p>
+		<br>
+			<div style="text-align:center">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item"
+						src="https://www.youtube.com/embed/59IUjiz-GTA"
+						frameborder="0"
+						scrolling="no"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen>
+					</iframe>
+				</div>
+			</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 2-->
+		<!--Tema 3-->
+    <section class="bg-primary text-white">
+	<div
+        class="scroll-indicator"
+        id="seccion-tema-3"
+        data-scroll-indicator-title="4.3 Control condicional."
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row">
+          <div class="col">
+
+           
+		<p><span class="font-weight-bold">4.3. Control condicional</span></p>
+		<p>Este tipo de control resulta de gran utilidad para regular el flujo en un c&oacute;digo mediante operaciones l&oacute;gicas condicionales. Mediante las funciones <em>if()</em> y <em>else()</em> podemos especificar cu&aacute;ndo R debe ejecutar una pieza de c&oacute;digo y cu&aacute;ndo no. Por ejemplo, podemos utilizar estas funciones para aplicar un c&oacute;digo al cumplir determinada condici&oacute;n (resultado de una operaci&oacute;n que tiene un valor positivo) y un c&oacute;digo alternativo cuando no se cumple (resultado de una operaci&oacute;n que tiene un valor negativo).</p>
+		<p>Revise la siguiente presentaci&oacute;n: <a href="https://uvmx-my.sharepoint.com/:b:/g/personal/luipacheco_uv_mx/ERTO-QLeJIdFo9MoR3h7XFQB-92QV0r8DYuhnE-vdJ23pg?e=h0U3wr">Clase 3.0 Scripts, funciones y control de flujo.pdf (pp. 26-36)</a>, as&iacute; como el video: <a href="https://uvmx-my.sharepoint.com/:v:/g/personal/luipacheco_uv_mx/EVtjpYAKS39Pk22KQO80J1YB6pRgaWu56UGDobkIiVIinw?e=7DDqOX">Clase_4.2_control_condicional_small</a></p>
+		<br>
+			<div style="text-align:center">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item"
+						src="https://www.youtube.com/embed/lTmSusKgBFQ"
+						frameborder="0"
+						scrolling="no"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen>
+					</iframe>
+				</div>
+			</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 3-->
+		<!--Tema 4-->
+    <section class="bg-secondary text-white">
+	<div
+        class="scroll-indicator"
+        id="seccion-tema-4"
+        data-scroll-indicator-title="4.4 Control iterativo."
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row">
+          <div class="col">
+
+		<p><span class="font-weight-bold">4.4. Control iterativo</span></p>
+		<p>Este tipo de control es &uacute;til para ejecutar operaciones que queremos repetir m&uacute;ltiples veces, mediante iteraciones (repeticiones c&iacute;clicas) de una pieza de c&oacute;digo. Con la funci&oacute;n <em>for(){}</em> podemos iterar un n&uacute;mero determinado de veces y cada vez contar con acceso a una variable iterada en cada vuelta, por ejemplo: i = 1, i = 2, i = 3&hellip; i = n. Con la funci&oacute;n <em>while()</em> podemos especificar la condici&oacute;n l&oacute;gica que determinar&aacute; si el c&oacute;digo se repetir&aacute; o no.</p>
+		<p>Observe la siguiente presentaci&oacute;n: <a href="https://uvmx-my.sharepoint.com/:b:/g/personal/luipacheco_uv_mx/ERTO-QLeJIdFo9MoR3h7XFQB-92QV0r8DYuhnE-vdJ23pg?e=h0U3wr">Clase 3.0 Scripts, funciones y control de flujo.pdf (pp. 41-49)</a>, as&iacute; como el video: <a href="https://uvmx-my.sharepoint.com/:v:/g/personal/luipacheco_uv_mx/EdZpr9kNxphBi0fS1h9yV58BP2MvmXlR5xW1zdvyW_Q8BQ?e=v182Uz">Clase_4.4_control_iterativo_small</a></p>
+		<br>
+			<div style="text-align:center">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item"
+						src="https://www.youtube.com/embed/d7XvJmy5wFw"
+						frameborder="0"
+						scrolling="no"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen>
+					</iframe>
+				</div>
+			</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Tema 4-->
+		<!--Tema 5-->
+    <section class="bg-primary text-white">
+	<div
+        class="scroll-indicator"
+        id="seccion-tema-5"
+        data-scroll-indicator-title="4.5 Programación funcional."
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row">
+          <div class="col">
+		<p><span class="font-weight-bold">4.5. Programaci&oacute;n funcional</span></p>
+		<p>Este tipo de programaci&oacute;n nos permite pasar funciones como argumento de otras funciones. Aunque esto puede parecer complejo en un principio, dominar este paradigma de programaci&oacute;n nos ayuda a aumentar la eficiencia. Con la programaci&oacute;n funcional es posible aplicar funciones a grupos peque&ntilde;os y homog&eacute;neos de valores en bases de datos grandes. Por ejemplo, podemos ejecutar los an&aacute;lisis para subconjuntos de una base de datos e ir obteniendo los estad&iacute;sticos respectivos agrupados en un solo objeto al final del proceso. Las bibliotecas de programaci&oacute;n funcional trabajan en equipo con las bibliotecas de <em>tidyverse</em> (<em>dplyr, tidyr</em> y <em>magrittr</em>), resultando en c&oacute;digos sint&eacute;ticos y poderosos.</p>
+		<p>Revise la siguiente presentaci&oacute;n: <a href="https://uvmx-my.sharepoint.com/:b:/g/personal/luipacheco_uv_mx/ERTO-QLeJIdFo9MoR3h7XFQB-92QV0r8DYuhnE-vdJ23pg?e=h0U3wr">Clase 3.0 Scripts, funciones y control de flujo.pdf (pp. 52-67)</a></p>
+			
+          </div>
+        </div>
+		<div class="row mt-2">
+          <div class="col">
+            <div class="alert alert-warning text-dark" role="alert">
+              <p>&nbsp;Para evaluar sus aprendizajes acerca del <span class="font-weight-bold">Tema IV</span>. <span class="font-weight-bold">Programaci&oacute;n</span>, dir&iacute;jase a la&nbsp; secci&oacute;n de <span class="font-weight-bold">Actividades</span> e ingrese a la <span class="font-weight-bold">Actividad 5 </span>y al<span class="font-weight-bold"> Foro del Tema IV</span>, atendiendo las indicaciones para su realizaci&oacute;n.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--/Tema 5-->
+        <!--Fuentes de Información-->
+    <section class="bg-secondary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-fuentes"
+        data-scroll-indicator-title="Fuentes de Información"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header bg-primary" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Básicas
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body text-dark">
+					 <p>Bellosta, C. J. (2018). <em>R para profesionales de los datos: una introducci&oacute;n.</em> Datanalytics.com. <a href="https://datanalytics.com/libro_r/index.html">https://datanalytics.com/libro_r/index.html</a></p>
+						<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Crawley, M. J. (2013). <em>The R Book</em> (2nd ed.). Singapore: Wiley. <a href="http://www.bio.ic.ac.uk/research/mjcraw/therbook/index.htm">http://www.bio.ic.ac.uk/research/mjcraw/therbook/index.htm</a></p>
+						<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Santana, J. S. &amp; Mateos, E. (2014). <em>El arte de programar en R. Un lenguaje para la estad&iacute;stica</em>. Instituto Mexicano de Tecnolog&iacute;a del Agua. UNESCO. Comit&eacute; Nacional Mexicano del Programa Hidrol&oacute;gico Internacional. <a href="http://cran.r-project.org/doc/contrib/Santana_El_arte_de_programar_en_R.pdf">http://cran.r-project.org/doc/contrib/Santana_El_arte_de_programar_en_R.pdf</a></p>
+						<p style='margin-left:15.65pt;text-indent:-15.65pt;'>Wickham, H. (2019). <em>Advanced R</em> (2nd ed.). CRC Press. <a href="https://adv-r.hadley.nz/">https://adv-r.hadley.nz/</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Fuentes de Información-->
+	<!--actividades-->
+    <section class="bg-primary text-white">
+      <div
+        class="scroll-indicator"
+        id="seccion-actividades"
+        data-scroll-indicator-title="Actividades"
+      ></div>
+      <div class="container contenedor-seccion">
+        <div class="row bg-light text-dark p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold">Actividad 5. Programación.</span> 
+            </h4>
+            <p><span class="font-weight-bold">Descripci&oacute;n:</span></p>
+			<p>Los ejercicios de esta actividad le acercar&aacute;n al coraz&oacute;n de R, en primera instancia, practicar&aacute; la elaboraci&oacute;n de sus propias funciones. A fin de cuentas, R nos permite hacer c&aacute;lculos u organizar distintos conjuntos de datos con funciones preestablecidas. En este caso, comprobar&aacute; que puede crear sus propias funciones, seg&uacute;n sus necesidades. A continuaci&oacute;n, se adentrar&aacute; al mundo de la programaci&oacute;n, realizando los ejercicios de control condicional e iterativo y, finalmente, la programaci&oacute;n funcional. Avanzar en el dominio de estas habilidades le permitir&aacute; automatizar procesos de an&aacute;lisis de conjuntos de datos grandes o con estructuras similares.</p>
+			<p><span class="font-weight-bold">Indicaciones: </span></p>
+			<p>Realizar los ejercicios solicitados para elaborar funciones propias, ejercer control condicional e iterativo, as&iacute; como hacer programaci&oacute;n funcional.</p>
+			<p><span class="font-weight-bold">E</span><span class="font-weight-bold">jercicios (en las p&aacute;ginas aqu&iacute; se&ntilde;aladas dentro de las presentaciones):</span></p>
+			<p>4.0.1 Funciones. <a href="https://uvmx-my.sharepoint.com/:b:/g/personal/luipacheco_uv_mx/ERTO-QLeJIdFo9MoR3h7XFQB-92QV0r8DYuhnE-vdJ23pg?e=h0U3wr">Clase 3.0 <em>Scripts</em>, funciones y control de flujo.pdf (p. 24)</a></p>
+			<p>4.1.1 Control condicional. <a href="https://uvmx-my.sharepoint.com/:b:/g/personal/luipacheco_uv_mx/ERTO-QLeJIdFo9MoR3h7XFQB-92QV0r8DYuhnE-vdJ23pg?e=h0U3wr">Clase 3.0 <em>Scripts</em>, funciones y control de flujo.pdf (p. 37)</a></p>
+			<p>4.2. Control iterativo. <a href="https://uvmx-my.sharepoint.com/:b:/g/personal/luipacheco_uv_mx/ERTO-QLeJIdFo9MoR3h7XFQB-92QV0r8DYuhnE-vdJ23pg?e=h0U3wr">Clase 3.0 <em>Scripts</em>, funciones y control de flujo.pdf (p. 50)</a></p>
+			<p>4.3.1 Programaci&oacute;n funcional <a href="https://uvmx-my.sharepoint.com/:b:/g/personal/luipacheco_uv_mx/ERTO-QLeJIdFo9MoR3h7XFQB-92QV0r8DYuhnE-vdJ23pg?e=h0U3wr">Clase 3.0 <em>Scripts</em>, funciones y control de flujo.pdf (p. 68)</a></p>
+			<p><span class="font-weight-bold">Criterios de desempe&ntilde;o:</span></p>
+			<ol>
+			<li>Elaboraci&oacute;n de <em>scripts</em> con c&oacute;digo legible, funcional y bien indentado.</li>
+			<li>Emplear correctamente los operadores l&oacute;gicos para aplicar el control condicional deseado.</li>
+			<li>Codificaci&oacute;n de uno o m&aacute;s comandos que se repetir&aacute;n c&iacute;clicamente (<em>loop</em>) para hacer un c&aacute;lculo, una referenciaci&oacute;n o un gr&aacute;fico.</li>
+			<li>Automatizaci&oacute;n de un proceso anal&iacute;tico.</li>
+			</ol>
+			<p><span class="font-weight-bold">Lineamientos de entrega:</span></p>
+			<ol>
+			<li>Divida su <em>script</em> en secciones, usando <em>hashtag</em> # al inicio de las l&iacute;neas que comente. Para conocer ejemplos de <em>scripts</em> revise la <a href="https://uvmx-my.sharepoint.com/:b:/g/personal/luipacheco_uv_mx/ERTO-QLeJIdFo9MoR3h7XFQB-92QV0r8DYuhnE-vdJ23pg?e=h0U3wr">Clase 3.0 Scripts, funciones y control de flujo.pdf (pp. 1-19)</a>. Por ejemplo, si va a iniciar la secci&oacute;n en que asigna su directorio de trabajo, puede indicarlo con la l&iacute;nea: # Ajustar directorio de trabajo setwd (&ldquo;/Usuario/CursoEMDR&rdquo;) y en las l&iacute;neas subsecuentes agregue los comandos que correspondan a la soluci&oacute;n del ejercicio en turno.</li>
+			<li>Titule el archivo (*.R) de la siguiente forma: <em>Actividad5</em><em>_ApellidoPaternoPrimerNombre.R.</em> Ejemplo: <em>Actividad5_CoyotlPedro.R</em></li>
+			<li>Env&iacute;e su archivo (*.R), a trav&eacute;s del apartado de <span class="font-weight-bold">Actividades</span> de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el<span class="font-weight-bold"> Calendario</span> de entregas.</li>
+			</ol>
+          </div>
+        </div>
+		<br>
+		<div class="row bg-light text-dark p-2">
+          <div class="col">
+            <h4>
+              <span class="font-weight-bold">Foro 4. Programación.</span> 
+            </h4>
+           <p><span class="font-weight-bold">Descripci&oacute;n:</span></p>
+<ol>
+<li>Este foro estar&aacute; abierto para acompa&ntilde;arse en el proceso de elaborar los ejercicios que competen a este tema, para compartir dudas o estrategias de c&oacute;mo resolverlos, as&iacute; como para participar exponiendo su experiencia y los mensajes que se emitieron al usar el <em>software</em>.</li>
+<li>El foro estar&aacute; abierto s&oacute;lo hasta la fecha l&iacute;mite indicada.</li>
+<li>Recuerde atender a las <a href="pdfs/Reglas Foros de discusion.pdf">Reglas para participar en foros de discusión.</a></li>
+</ol>
+<p><span class="font-weight-bold">Criterios de desempe&ntilde;o:</span></p>
+<ol>
+<li>Compartir y discutir soluciones para las actividades.</li>
+<li>Valorar la pertinencia de modificar nuestra estrategia al usar el <em>software</em>.</li>
+<li>Sugerir ideas que den pauta a una pr&aacute;ctica m&aacute;s funcional del <em>software</em>.</li>
+</ol>
+<p><span class="font-weight-bold">Lineamientos de entrega:</span></p>
+<ol>
+<li>Publique su participaci&oacute;n en el&nbsp;Foro del Tema IV Programación.</li>
+<li>Su participaci&oacute;n en el foro ser&aacute; en la fecha establecida en el <span class="font-weight-bold">Calendario</span> de entregas. Los foros no conceder&aacute;n pr&oacute;rroga.</li>
+</ol>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/actividades-->
+   
+    <!--Disclaimer-->
+    <section class="bg-light">
+      <div class="container contenedor-menu-contenido">
+        <!--Disclaimer-->
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card bg-info">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i>Disclaimer</i>
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                        <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%;">1</sup> </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/Disclaimer-->
+      </div>
+    </section>
+    <!--Disclaimer-->
+    <!--Logo Universidad Veracruzana-->
+    <section id="pie-pagina" class="p-1">
+      <div class="container">
+        <div class="row">
+          <div class="w-100">
+            <div class="row d-flex justify-content-center">
+              <div class="col-3 col-md-2">
+                <img src="images/logo-uv-texto.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Logo Universidad Veracruzana-->
+    <div class="fixed-bottom-right" id="button-up">
+      <a class="btn btn-success indice btn-sm p-3" href="#seccion-proposito">
+        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+      </a>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/easyScrollDots.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/inicializacion.js"></script>
+  </body>
+</html>
