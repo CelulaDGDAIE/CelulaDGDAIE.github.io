@@ -1,0 +1,561 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/easyScrollDots.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+
+    <title>Taller para promotores de lectura</title>
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
+
+            <div class="container">
+                <div class="navbar-brand pb-0">
+                    <div class="row no-gutters mb-1">
+                        <div class="col">
+                            <img src="images/logo-afel.png" class="logo d-inline mr-"
+                                 alt="mdb logo">
+                        </div>
+                        <div class="col text-secondary d-flex flex-column justify-content-center">
+                            <span class="h2 font-weight-bold">Taller para promotores de lectura</span>
+                            <p class="p-0 m-0 font-weight-bold">
+                                II. Elementos y contextos sociales que intervienen en el proceso lector.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-toggle="dropdown"
+                        data-target="#menu-indice"
+                        aria-controls="menu-indice"
+                        aria-expanded="false"
+                        aria-label="Dropdown">
+                    <i class="fas fa-align-justify text-dark"></i>
+                </button>
+                <!--Menú en dispositivos móviles-->
+                <div class="dropdown-menu dropdown-menu-right" id="menu-indice">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-secondary text-center p-1">
+                            <a class="text-white"
+                               href="https://www.uv.mx/"
+                               target="_blank"
+                               alt="Ir a Universidad Veracruzana">
+                                Universidad Veracruzana
+                            </a>
+                        </li>
+                        <li class="list-group-item p-1">
+                            <a href="#" class="indice">
+                                <i class="fas fa-home text-primary"></i> Inicio:
+                            </a>
+                        </li>
+                        <li class="list-group-item p-1">
+                            <a href="#seccion-proposito" class="ml-3 indice">
+                                <i class="icon-icono_proposito text-secondary"></i> Propósito:
+                            </a>
+                        </li>
+                        <li class="list-group-item p-1">
+                            <a href="#seccion-introduccion" class="ml-3 indice">
+                                <i class="icon-icono_introduccion text-secondary"></i>
+                                Introducci&oacute;n
+                            </a>
+                        </li>
+                        <li class="list-group-item p-1">
+                            <a href="#seccion-contenido" class="ml-3 indice">
+                                <i class="fas fa-copy  text-secondary"></i> Contenido
+                            </a>
+                        </li>
+                        <li class="list-group-item p-1">
+                            <a href="#seccion-fuentes" class="ml-3 indice">
+                                <i class="icon-icono_fuentes text-secondary"></i> Fuentes de Informaci&oacute;n
+                            </a>
+                        </li>
+                        <li class="list-group-item p-1">
+                            <a href="#">
+                                <i class="fas fa-book text-primary"></i> Temas:
+                            </a>
+                        </li>
+                        <li class="list-group-item p-1">
+                            <a href="#seccion-tema-1" class="ml-3 indice">
+                                <i class="fas fa-bookmark text-secondary"></i> 2.1. Elementos y contextos sociales que intervienen en el proceso lector.
+                            </a>
+                        </li>
+                        <li class="list-group-item p-1">
+                            <a href="#seccion-tema-2" class="ml-3 indice">
+                                <i class="fas fa-bookmark text-secondary"></i> 2.2. Opinando acerca de las lecturas.
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Menú en dispositivos móviles-->
+            </div>
+        </nav>
+    </header>
+    <!--/Encabezado-->
+    <!--Menú Izquierdo-->
+    <div id="sticky-menu" class="d-none d-lg-block d-lg-flex flex-column">
+        <a class="btn btn-lg btn-light btn-menu"
+           href="index.html"
+           data-toggle="tooltip"
+           data-html="true"
+           title="<em>Inicio</em>">
+            <i class="fas fa-home fa-2x"></i>
+        </a>
+
+        <a class="btn btn-lg btn-light btn-menu d-block"
+           href="modulo1.html"
+           data-toggle="tooltip"
+           data-html="true"
+           title="<em>¿Qué es leer? Y su importancia en el siglo XXI.</em>">
+            <span class="font-weight-bold lead">1</span>
+        </a>
+
+        <a class="btn btn-lg btn-primary btn-menu d-block"
+           href="#!"
+           data-toggle="tooltip"
+           data-html="true"
+           title="<em>Elementos y contextos sociales que intervienen en el proceso lector.</em>">
+            <span class="font-weight-bold lead">2</span>
+        </a>
+        <a class="btn btn-lg btn-light btn-menu d-block"
+           href="modulo3.html"
+           data-toggle="tooltip"
+           data-html="true"
+           title="<em>Estrategias, herramientas y elaboración de cartografía lectora.</em>">
+            <span class="font-weight-bold lead">3</span>
+        </a>
+    </div>
+    <!--/Menú Izquierdo-->
+    <!--Propósito-->
+    <section class="bg-primary text-white">
+        <div class="scroll-indicator"
+             id="seccion-proposito"
+             data-scroll-indicator-title="Propósito"></div>
+        <div class="container contenedor-seccion">
+            <div class="row mb-4">
+                <div class="col">
+                    <h3><i class="icon-icono_proposito"></i> Propósito</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8 d-flex align-items-center">
+                    El estudiante conoce cuáles son las condiciones individuales y 
+                    sociales que favorecen el aprendizaje de la lectura y la escritura, y cómo 
+                    la motivación y el entusiasmo logran que se desarrolle el gusto por estas actividades, 
+                    entendiendo la forma en que es posible que cualquier persona se convierta en un lector asiduo.
+                </div>
+                <div class="col-12 col-md-4">
+                    <figure class="figure">
+                        <img src="images/modulo2/modulo2_1.jpg" alt="" class="img-fluid figure-img" />
+                        <figcaption class="figure-caption text-right text-white">[1]</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Propósito-->
+    <!--Introducción-->
+    <section class="bg-secondary text-white">
+        <div class="scroll-indicator"
+             id="seccion-introduccion"
+             data-scroll-indicator-title="Introducción"></div>
+        <div class="container contenedor-seccion">
+            <div class="row mb-4">
+                <div class="col">
+                    <h3><i class="icon-icono_introduccion"></i> Introducción</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-3 d-flex align-items-center">
+                    <figure class="figure">
+                        <img src="images/modulo2/modulo2_2.jpg" alt="" class="img-fluid figure-img" />
+                        <figcaption class="figure-caption text-white">[2]</figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-9">
+                    <p>
+                        No se sabe por qué un individuo logra ser un ávido lector ni tampoco se puede explicar fácilmente el porqué algunas personas nunca accedan al mundo de los libros. Para desarrollar el gusto por la lectura intervienen muchos factores; de ahí que el problema no sea tan sencillo y que existan muchas aristas para dar con el enfoque correcto.
+                    </p>
+                    <p>
+                        En el ámbito educativo, y especialmente en el universitario, son comunes entre los estudiantes las expresiones de que la lectura es aburrida; que los libros que les encargan leer no son interesantes; que es difícil lograr la concentración o la atención; que son costosos; que ningún maestro ha utilizado ni las lecturas ni las herramientas adecuadas para inculcar el hábito lector; que los libros tienen muchas letras y pocas imágenes, etc. Las expresiones de los profesores, así mismo, aluden a que los estudiantes tienen pobreza de vocabulario, dificultades para organizar sus ideas, para escribir correctamente oraciones, para el uso de los verbos; es decir, fallas de sintaxis; se dice que desconocen las reglas básicas de ortografía: el uso de mayúsculas, acentos, coma, y otros signos de puntuación; que no comprenden bien el significado de las palabras y, menos aún, de las que se usan de manera especializada para cada profesión.
+                    </p>
+                    <p>
+                        Muchos de estos inconvenientes se pueden resolver si se realiza la práctica de la lectura todos los días. Pero esto debe hacerse con un método, porque como lo establece el poeta Efraín Bartolomé: para evolucionar de un <em>leedor</em> a un <em>lector</em> se necesita de un entrenamiento.
+                    </p>
+                    <p>
+                        ¿Cuándo y cómo se inicia con el proceso de hacerse lector? ¿Qué elementos intervienen? ¿Se puede formar lectores que disfruten de la lectura?
+                    </p>
+                    <p>
+                        Este módulo mostrará que la lectura necesita de acompañamiento; que el proceso lector se inicia, incluso, desde antes de estar alfabetizado; es decir, antes de saber leer, pero que requiere de ciertas condiciones y estrategias para que se aprenda a leer de manera correcta, de manera eficiente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Introducción-->
+    <!--Contenido-->
+    <section class="bg-light">
+        <div class="scroll-indicator"
+             id="seccion-contenido"
+             data-scroll-indicator-title="Contenido"></div>
+        <div class="container contenedor-seccion">
+            <div class="row mb-4">
+                <div class="col">
+                    <h3><i class="fas fa-copy text-secondary"></i> Contenido</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="list-group">
+                        <a href="#seccion-tema-1" class="list-group-item list-group item-action bg-primary text-white indice">
+                            2.1. Elementos y contextos sociales que intervienen en el proceso lector.
+                        </a>
+                        <a href="#seccion-tema-2" class="list-group-item list-group item-action bg-secondary text-white indice">
+                            2.2. Opinando acerca de las lecturas.
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Contenido-->
+    <!--Fuentes de Información-->
+    <section class="bg-secondary text-white">
+        <div class="scroll-indicator"
+             id="seccion-fuentes"
+             data-scroll-indicator-title="Fuentes de Información"></div>
+        <div class="container contenedor-seccion">
+            <div class="row mb-4">
+                <div class="col">
+                    <h3><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header bg-primary" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Básicas
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body text-dark">
+                                    <ul>
+                                        <li>Jarvio, A. O. (2020). <em>Elementos y contextos sociales que intervienen en el proceso lector</em>.</li>
+                                        <li>Lav&iacute;n, M. (2013). <em>Leo, luego escribo. Ideas para disfrutar de la lectura</em>. Lectorum.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header bg-primary text-white" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed  text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Complementarias
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body text-dark">
+                                    <ul>
+                                        <li>Ch&eacute;jov, A. (s. f.). <em>El enemigo</em>. Apocatastasis.com. <a class="enlace" target="_blank" href="https://www.apocatastasis.com/el-enemigo-anton-chejov.php">https://www.apocatastasis.com/el-enemigo-anton-chejov.php</a></li>
+                                        <li>De Maupassant:, G. (2020, 30 mayo). <em>Guy de Maupassant: El collar</em>. Lecturia: Biblioteca de Relatos. <a class="enlace" target="_blank" href="https://lecturia.org/cuentos-y-relatos/guy-de-maupassant-el-collar/4189/">https://lecturia.org/cuentos-y-relatos/guy-de-maupassant-el-collar/4189/</a></li>
+                                        <li>La tragaz&oacute;n del libro. (2020, 28 octubre). <em>Cuentos para llevar: &laquo;Lucy y el monstruo&raquo; </em>[Video]. YouTube. <a class="enlace" target="_blank" href="https://www.youtube.com/watch?v=UE9-6iWGiog">https://www.youtube.com/watch?v=UE9-6iWGiog</a></li>
+                                        <li>Poe, E. A. (1999). <em>Narraciones extraordinarias</em>. Lectorum.</li>
+                                        <li>Quiroga, H. (2000). <em>De la selva y otros cuentos</em>. Lectorum.</li>
+                                        <li>Roxana Ixtabay con Lecturas para el alma. (2019, 27 noviembre). <em>Olaf oye a Rachmaninoff por Cary Kerner</em> [Video]. YouTube. <a class="enlace" target="_blank" href="https://www.youtube.com/watch?v=QrPwY8RCph4">https://www.youtube.com/watch?v=QrPwY8RCph4</a></li>
+                                        <li>Valad&eacute;s, E. (s. f.). <em>&iquest;Por qu&eacute;?. Minicuento.</em> Biblioteca digital Ciudad Seva. <a class="enlace" target="_blank" href="https://ciudadseva.com/texto/por-que/">https://ciudadseva.com/texto/por-que/</a></li>
+                                        <li>Vivante, A. (1999, 5 septiembre). El faro. <em>La Jornada Semanal</em>. <a class="enlace" target="_blank" href="https://www.jornada.com.mx/1999/09/05/sem-arturo.html">https://www.jornada.com.mx/1999/09/05/sem-arturo.html</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Fuentes de Información-->
+    <!--Tema 1-->
+    <section class="bg-primary text-white">
+        <div class="scroll-indicator"
+             id="seccion-tema-1"
+             data-scroll-indicator-title="2.1. Elementos y contextos sociales que intervienen en el proceso lector."></div>
+        <div class="container contenedor-seccion">
+            <div class="row mb-4">
+                <div class="col">
+                    <h3>2.1. Elementos y contextos sociales que intervienen en el proceso lector.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Antes de iniciar el tema de este m&oacute;dulo, se presenta la siguiente lectura gratuita: <em>La vida secreta de los insectos,</em> de Bernardo Esquinca<span class="font-weight-bold">.</span></p>
+                    <div class="embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v9XurhsuGZA"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                    <p class="text-right">
+                        Esteban Sanders. (2020, 20 mayo). <em>La vida secreta de los insectos. Cuento(s) contigo</em> [Video]. YouTube.
+                    </p>
+                    <p>Una lectura gratuita ofrece la posibilidad de conocer autores y g&eacute;neros. Son textos cortos, disfrutables y que pueden provocar distintas emociones. El objetivo es sorprender a los integrantes de un taller y convidarlos a que quieran leer m&aacute;s sobre el autor o el tema tratado.</p>
+                    <p>Por ejemplo, casi todos los seres humanos han experimentado la siguiente situaci&oacute;n:</p>
+                    <p>Un profesor encarg&oacute; a sus alumnos realizar una lectura &ldquo;cl&aacute;sica&rdquo; de un autor muy reconocido, para, despu&eacute;s, elaborar un resumen. Los estudiantes iniciaron la lectura, sin embargo, no la comprendieron. Tal vez no ten&iacute;an los elementos suficientes y, entonces, tuvieron que empezar nuevamente; despu&eacute;s de dos o tres hojas se percataron de que no sab&iacute;an c&oacute;mo hab&iacute;an llegado hasta ah&iacute; y, sin darse cuenta, hab&iacute;an concluido la lectura. Como consecuencia, ten&iacute;an sensaciones de insatisfacci&oacute;n y, lo peor: no sab&iacute;an qu&eacute; escribir para cumplir con la tarea encomendada. Esta experiencia es una idea errada de lo que es leer. Ante ello, se comparten las siguientes consideraciones:</p>
+                    <ul>
+                        <li>La formaci&oacute;n lectora puede iniciarse desde etapas muy tempranas.</li>
+                        <li>Los padres, los profesores, los bibliotecarios y los amigos juegan un papel fundamental para mostrar que con el contagio del gusto por la lectura; con textos interesantes, amenos, que atrapen la atenci&oacute;n del lector, se pueden despertar emociones. Y esto se logra, sobre todo, con libros de literatura.</li>
+                        <li>&iquest;Por qu&eacute; leer literatura?</li>
+                        <li>Porque son los que m&aacute;s exigen del lector, los que mejor lo ejercitan para comprender el lenguaje escrito; porque los temas que abordan no son comunes para la mayor&iacute;a de los seres humanos.</li>
+                        <li>Porque en la literatura se requiere de la imaginaci&oacute;n, y se manejan los rasgos m&aacute;s &iacute;ntimos de la esencia humana; esa parte que hace volver la mirada hacia el mundo interior.</li>
+                        <li>Porque en este &aacute;mbito se encuentran los elementos que dan vida a los sue&ntilde;os, al arte, a la inteligencia y a la creaci&oacute;n.</li>
+                    </ul>
+                    <p>Para continuar con este tema, se sugiere al estudiante realizar la lectura del texto de la Dra. Antonia Olivia Jarvio Fernández, <em>Elementos y contextos sociales que intervienen en el proceso </em>lector.</p>
+                    <p class="text-center">
+                        <a href="pdfs/elementos_y_contextos_sociales.pdf" target="_blank"
+                           class="enlace text-white">
+                            Elementos y contextos sociales que intervienen en el proceso lector.
+                        </a>
+                    </p>
+                    <p>Finalmente, como complemento de lo anterior, es preciso que el estudiante d&eacute; lectura al libro de Lav&iacute;n, M. (2013). <em>Leo luego escribo. Ideas para disfrutar de la lectura</em>. Lectorum, misma que podr&aacute; encontrar investigando en la red, o bien en bibliotecas virtuales o presenciales.</p>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+                    <div class="alert alert-warning text-dark" role="alert">
+                        Para evaluar tus aprendizajes acerca del tema: <span class="font-weight-bold">Elementos y contextos sociales que intervienen en el proceso lector</span> dir&iacute;gete a la secci&oacute;n de <span class="font-weight-bold"><em>Actividades</em></span> e ingresa a las <span class="font-weight-bold"><em>actividades 3 y 4</em>,</span> atendiendo las indicaciones para su realizaci&oacute;n.
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-light text-dark p-2">
+                <div class="col">
+                    <h4><span class="font-weight-bold">Actividad 3. Elementos y contextos sociales que intervienen en el proceso lector.</span> </h4>
+                    <p><span class="font-weight-bold">Descripci&oacute;n:</span></p>
+                    <ol>
+                        <li>
+                            <span class="font-weight-bold">Cuestionario</span>. A partir de la lectura <em>Elementos y contextos sociales que intervienen en el proceso lector</em>, responde las preguntas que a continuaci&oacute;n se muestran:
+                            <ul>
+                                <li>Describe los elementos m&aacute;s importantes que se deben considerar en el aprendizaje de la lectura.</li>
+                                <li>Define cu&aacute;l es el papel del promotor de la lectura en el desarrollo del proceso lector.</li>
+                                <li>Estructura por etapas, de acuerdo con la edad, los elementos que se requieren para desarrollar el h&aacute;bito lector.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p><strong>Criterios de desempe&ntilde;o:</strong></p>
+                    <ul>
+                        <li>Redacci&oacute;n clara y precisa referente al tema.</li>
+                        <li>Pertinencia respecto de la lectura.</li>
+                        <li>Argumentaci&oacute;n de las ideas que se expresen.</li>
+                        <li>Citar y escribir las referencias correctamente, con base en el <em>Manual de Publicaciones de la APA: </em>S&aacute;nchez, C. (2020, 24 noviembre). <em>Normas APA-7a. edici&oacute;n</em>. Normas-apa.org. Blog. <a class="enlace" target="_blank" href="https://normas-apa.org/">https://normas-apa.org/</a></li>
+                        <li>Tambi&eacute;n puedes descargar el manual en formato PDF directamente desde: <a class="enlace" target="_blank" href="https://normas-apa.org/wp-content/uploads/Guia-Normas-APA-7ma-edicion.pdf"><em>https://normas-apa.org/wp-content/uploads/Guia-Normas-APA-7ma-edicion.pdf</em></a></li>
+                    </ul>
+                    <p><strong>Lineamientos de entrega:</strong></p>
+                    <ol>
+                        <li>
+                            Titula el archivo de la siguiente forma:<br />
+                            &nbsp;&nbsp;&nbsp;<em>Act3_</em>PrimerApellidoyPrimerNombre. Ejemplo: <em>Act3_</em>VillanuevaMariaTeresa
+                        </li>
+                        <li>Env&iacute;a tu archivo, en formato PDF, a trav&eacute;s del apartado de Actividades de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el Calendario de entregas.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row bg-light text-dark p-2">
+                <div class="col">
+                    <h4><span class="font-weight-bold">Actividad 4. Elementos y contextos sociales que intervienen en el proceso lector.</span> </h4>
+                    <p><strong>Descripci&oacute;n:</strong></p>
+                    <p><strong>Ensayo. </strong>Con base en la lectura del libro de Lav&iacute;n (2012), <em>Leo luego escribo. Ideas para disfrutar de la lectura, </em>elabora un ensayo (con un m&iacute;nimo de tres cuartillas), en el que expongas los elementos que la autora considera importantes para disfrutar de esta actividad. Si lo consideras necesario, puedes realizar una b&uacute;squeda de informaci&oacute;n en el internet o en alguna biblioteca para enriquecer tus comentarios.</p>
+                    <p><strong>Criterios de desempe&ntilde;o:</strong></p>
+                    <ul>
+                        <li>Redacci&oacute;n clara y precisa referente al tema.</li>
+                        <li>Pertinencia respecto de la lectura.</li>
+                        <li>Argumentaci&oacute;n de las ideas que se expresen.</li>
+                        <li>Citar y escribir las referencias correctamente, con base en el <em>Manual de Publicaciones de la APA: </em>S&aacute;nchez, C. (2020, 24 noviembre). <em>Normas APA-7a. edici&oacute;n</em>. Normas-apa.org. Blog. <a href="https://normas-apa.org/" target="_blank">https://normas-apa.org/</a></li>
+                        <li>Tambi&eacute;n puedes descargar el manual en formato PDF directamente desde: <em><a href="https://normas-apa.org/wp-content/uploads/Guia-Normas-APA-7ma-edicion.pdf" target="_blank">https://normas-apa.org/wp-content/uploads/Guia-Normas-APA-7ma-edicion.pdf</a></em></li>
+                    </ul>
+                    <p><strong>Lineamientos de entrega:</strong></p>
+                    <ol>
+                        <li>
+                            Titula el archivo de la siguiente forma: <br />
+                            &nbsp;&nbsp;&nbsp;<em>Act4_</em>PrimerApellidoyPrimerNombre. Ejemplo: Act4_VillanuevaMariaTeresa
+                        </li>
+                        <li>Env&iacute;a tu archivo, en formato PDF, a trav&eacute;s del apartado de Actividades de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el Calendario de entregas.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Tema 1-->
+    <!--Tema 2-->
+    <section class="bg-secondary text-white">
+        <div class="scroll-indicator"
+             id="seccion-tema-2"
+             data-scroll-indicator-title="2.2. Opinando acerca de las lecturas"></div>
+        <div class="container contenedor-seccion">
+            <div class="row mb-4">
+                <div class="col">
+                    <h3>2.2. Opinando acerca de las lecturas</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure float-left pr-5" id="modulo2-tema1-imagen-1">
+                        <img src="images/modulo2/modulo2_3.jpg" alt="" class="img-fluid" />
+                        <figcaption class="figure-caption text-white">[3]</figcaption>
+                    </figure>
+                    <p>Ahora que se han identificado los elementos que se requieren para hacerse lector, es importante tener presente lo que las lecturas incluidas en el libro de Lav&iacute;n (2013) expresan.</p>
+                    <p>&nbsp;Tales escritos se pueden localizar con las siguientes referencias, algunas incluyen una liga que conduce a un video:
+                    <ul>
+                        <li>Lav&iacute;n, M. (2013). <em>Leo, luego escribo. Ideas para disfrutar de la lectura</em>. Lectorum.</li>
+                        <li>Poe, E. A. (1999). <em>Narraciones extraordinarias</em>. Lectorum.</li>
+                        <li>Quiroga, H. (2000). <em>De la selva y otros cuentos</em>. Lectorum.</li>
+                        <li>De Maupassant:, G. (2020, 30 mayo). <em>Guy de Maupassant: El collar</em>. Lecturia: Biblioteca de Relatos. <a class="enlace text-white" target="_blank" href="https://lecturia.org/cuentos-y-relatos/guy-de-maupassant-el-collar/4189/">https://lecturia.org/cuentos-y-relatos/guy-de-maupassant-el-collar/4189/</a></li>
+                        <li>Ch&eacute;jov, A. ( f.). <em>El enemigo</em>. Apocatastasis.com. <a class="enlace text-white" target="_blank" href="https://www.apocatastasis.com/el-enemigo-anton-chejov.php">https://www.apocatastasis.com/el-enemigo-anton-chejov.php</a></li>
+                        <li>Roxana Ixtabay con Lecturas para el alma. (2019, 27 noviembre). <em>Olaf oye a Rachmaninoff por Cary Kerner</em> [Video]. YouTube. <a class="enlace text-white" target="_blank" href="https://www.youtube.com/watch?v=QrPwY8RCph4">https://www.youtube.com/watch?v=QrPwY8RCph4</a></li>
+                        <li>Vivante, A. (1999, 5 septiembre). El faro. <em>La Jornada Semanal</em>. <a class="enlace text-white" target="_blank" href="https://www.jornada.com.mx/1999/09/05/sem-arturo.html">https://www.jornada.com.mx/1999/09/05/sem-arturo.html</a></li>
+                        <li>La tragaz&oacute;n del libro. (2020, 28 octubre). <em>Cuentos para llevar: &laquo;Lucy y el monstruo&raquo; </em>[Video]. YouTube. <a class="enlace text-white" target="_blank" href="https://www.youtube.com/watch?v=UE9-6iWGiog">https://www.youtube.com/watch?v=UE9-6iWGiog</a></li>
+                    </ul>
+                    </p>
+                    <p>Una vez que el alumno haya le&iacute;do todos los textos, deber&aacute; responder las siguientes preguntas:</p>
+                    <ul>
+                        <li>&iquest;Cu&aacute;l o cu&aacute;les lecturas disfrutaste m&aacute;s y por qu&eacute;?</li>
+                        <li>&iquest;Cu&aacute;l o cu&aacute;les lecturas podr&iacute;as utilizar en un taller de lectura y por qu&eacute;?</li>
+                        <li>&iquest;En qu&eacute; tipo de taller utilizar&iacute;as <em>Lucy y el monstruo</em>?</li>
+                        <li>&iquest;Con cu&aacute;l de las historias te identificas m&aacute;s? &iquest;Por qu&eacute;?</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+                    <div class="alert alert-warning text-dark" role="alert">
+                        Para responder a las preguntas, dir&iacute;gete a la secci&oacute;n de <span class="font-weight-bold"><em>Foros </em></span>e ingresa al <span class="font-weight-bold"><em>Foro 1</em>,</span> atendiendo las indicaciones para su realizaci&oacute;n.
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-light text-dark p-2">
+                <div class="col">
+                    <h4 class="font-weight-bold">Foro 1: Opinando acerca de las lecturas.</h4>                    
+                    <p><span class="font-weight-bold">Descripci&oacute;n:</span></p>
+                    <ol>
+                        <li>Una vez que has realizado las lecturas incluidas en el texto de Lav&iacute;n (2013), reflexiona acerca de ello.</li>
+                        <li>
+                            Participa compartiendo tu opini&oacute;n al respecto, respondiendo a las siguientes preguntas:
+                            <dl>
+                                <dt class="font-weight-normal">&iquest;Cu&aacute;l o cu&aacute;les lecturas disfrutaste m&aacute;s y por qu&eacute;?</dt>
+                                <dt class="font-weight-normal">&iquest;Cu&aacute;l o cu&aacute;les lecturas podr&iacute;as utilizar en un taller de lectura y por qu&eacute;?</dt>
+                                <dt class="font-weight-normal">&iquest;En qu&eacute; tipo de taller utilizar&iacute;as <em>Lucy y el Monstruo</em>?</dt>
+                                <dt class="font-weight-normal">&iquest;Con cu&aacute;l de las historias te identificas m&aacute;s y por qu&eacute;?</dt>
+                            </dl>
+                        </li>
+                        <li>Lee las participaciones de tus compa&ntilde;eros y retroalimenta los comentarios de, al menos, dos de ellos.</li>
+                        <li>Tu participaci&oacute;n deber&aacute; apegarse estrictamente a las consideraciones descritas en las <a href="pdfs/reglas_foros_discusion.pdf" target="_blank"><u>Reglas para participar en los foros de discusi&oacute;n.</u></a></li>
+                    </ol>                    
+                    <p><span class="font-weight-bold">Criterios de desempe&ntilde;o:</span></p>
+                    <ul>
+                        <li>Redacci&oacute;n clara y precisa referente al tema.</li>
+                        <li>Pertinencia respecto de la lectura.</li>
+                        <li>Argumentaci&oacute;n de las ideas que se expresan.</li>
+                        <li>Citas y referencias de acuerdo con el estilo del <em>Manual de Publicaciones de la APA (7a. edici&oacute;n)</em>: S&aacute;nchez, C. (2020, 24 noviembre). <em>Normas APA</em>-<em> edici&oacute;n</em>. Normas-apa.org. Blog. <a class="enlace" href="https://normas-apa.org/" target="_blank">https://normas-apa.org/</a>, mismo que puedes descargar en formato PDF desde: <a class="enlace" href="https://normas-apa.org/wp-content/uploads/Guia-Normas-APA-7ma-edicion.pdf" target="_blank"><em>https://normas-apa.org/wp-content/uploads/Guia-Normas-APA-7ma-edicion.pdf</em></a></li>
+                        <li>B&uacute;squeda de informaci&oacute;n para enriquecer los comentarios.</li>
+                    </ul>
+                    <p><span class="font-weight-bold">Lineamientos de entrega:</span></p>
+                    <ol>
+                        <li>Publica tu participaci&oacute;n en el <span class="font-weight-bold">Foro 1. </span><span class="font-weight-bold">Opinando acerca de las lecturas.</span></li>
+                        <li>La participaci&oacute;n en el foro ser&aacute; en el tiempo determinado en el Calendario de entregas. Los foros no conceden pr&oacute;rroga.&nbsp;</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Tema 2-->
+    <!--Disclaimer-->
+    <section class="bg-light">
+        <div class="container contenedor-menu-contenido">
+            <!--Disclaimer-->
+            <div class="row">
+                <div class="col">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card bg-info">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i>Disclaimer</i>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul style="list-style-type:none;">
+                                        <li>
+                                            <span class="text-white">[1]&nbsp;Dominio público.</span>
+                                        </li>
+                                        <li>
+                                            <span class="text-white">[2]&nbsp;David Antonio Colorado Ruiz. Leyó-tú-ellos-nosotros: taller de lectura y diálogo igualitario.</span>
+                                        </li>
+                                        <li>
+                                            <span class="text-white">[3]&nbsp <a class="text-white enlace" target="_blank" href='https://www.freepik.com/photos/people'>People photo created by katemangostar - www.freepik.com</a></span>
+                                        </li>
+                                    </ul>
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/Disclaimer-->
+        </div>
+    </section>
+    <!--Disclaimer-->
+    <!--Logo Universidad Veracruzana-->
+    <section id="pie-pagina" class="p-1">
+        <div class="container">
+            <div class="row">
+                <div class="w-100">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-3 col-md-2">
+                            <img src="images/logo-uv-texto.png" class="img-fluid" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Logo Universidad Veracruzana-->
+    <div class="fixed-bottom-right" id="button-up">
+        <a class="btn btn-info indice btn-sm p-3" href="#seccion-contenido">
+            <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+        </a>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+            integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/easyScrollDots.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/inicializacion.js"></script>
+</body>
+</html>

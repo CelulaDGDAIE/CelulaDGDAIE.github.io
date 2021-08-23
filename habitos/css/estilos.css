@@ -1,0 +1,139 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+#modulo1-tema1-imagen-1{
+    width:30%;
+}
+
+#modulo1-tema1-imagen-2 {
+    width: 30%;
+}
+
+#modulo1-tema3-imagen-1{
+    width:20%;
+}
+
+#modulo1-tema3-imagen-2 {
+    width: 20%;
+}
+
+#modulo1-tema3-imagen-3 {
+    width: 20%;
+}
+
+#modulo1-tema3-imagen-4 {
+    width: 25%;
+}
+
+#modulo1-tema4-imagen-1 {
+    width: 25%;
+}
+
+#modulo1-tema4-imagen-2 {
+    width: 25%;
+}
+
+#modulo2-imagen-3 {
+    width: 25%;
+}
+
+#modulo2-imagen-4 {
+    width: 25%;
+}
+
+#modulo2-imagen-5 {
+    width: 25%;
+}
+
+#modulo2-imagen-6 {
+    width: 25%;
+}
+
+#modulo2-imagen-7 {
+    width: 25%;
+}
+
+#modulo2-imagen-8 {
+    width: 25%;
+}
+
+#modulo2-imagen-9 {
+    width: 25%;
+}
+
+#modulo2-imagen-10 {
+    width: 25%;
+}
+
+
+#modulo3-tema1-imagen-1{
+    width:35%;
+}
+
+#modulo3-tema1-imagen-2 {
+    width: 30%;
+}
+
+#modulo3-tema1-imagen-3 {
+    width: 30%;
+}
+
+#modulo3-tema1-imagen-4 {
+    width: 27%;
+}
+
+#modulo3-tema1-imagen-5 {
+    width: 25%;
+}
+
+#modulo3-tema2-cuadro {
+    width: 100%;
+}
+/*#imagen-introduccion {
+    width: 75%;
+    height: 75%;
+}
+
+#imagen-tema-1 {
+    width: 45%;
+}
+
+#imagen-tema-2 {
+    width: 45%;
+}
+
+#imagen-tema-4 {
+    width: 45%;
+}*/
+/* Small devices (landscape phones, 576px and up)*/
+/*@media (min-width: 576px) {
+
+}
+*/
+/* Medium devices (tablets, 768px and up)*/
+/*@media (min-width: 768px) {
+    
+}*/
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #imagen-introduccion {
+        width: 65%;
+        height: 65%;
+    }
+
+    #imagen-tema-1 {
+        width: 35%;
+    }
+
+    #imagen-tema-2 {
+        width: 35%;
+    }
+
+    #imagen-tema-4 {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+/*@media (min-width: 1200px) {
+    
+}*/
