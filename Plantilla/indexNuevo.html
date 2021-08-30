@@ -172,12 +172,12 @@
     </section>
     <!--/Video-->
     <!--Presentación-->
-    <section class="bg-primary text-white" id="presentacion">
+    <section class="text-white" id="presentacion">
       
         <div class="slideshow-container">
 			<div class="mySlides">
 				<div class="row">
-					<div class="col-4 d-flex align-items-center">
+					<div class="col-4 d-flex align-items-center bg-primary">
 						<figure class="figure">
 						  <img
 							src="images/inicio/slide1.jpg"
@@ -189,7 +189,7 @@
 						  </figcaption>
 						</figure>
 					  </div>
-					<div class="col-8" >
+					<div class="col-8 bg-primary" >
 						<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Presentación</h3>
 			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet arcu vitae nulla dignissim dictum. Integer hendrerit dolor a sem sollicitudin, ut commodo justo dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam non nulla nec diam interdum consequat. Donec laoreet commodo porta. Etiam nisi massa, hendrerit eget mauris nec, sollicitudin gravida mi. Aenean vitae lacinia felis. </p>
 			  <p>Cras sagittis sem nec orci iaculis, non dapibus massa cursus. Duis at lacus vulputate, gravida erat sed, aliquam mi. Morbi a sapien a diam varius scelerisque. Quisque ornare justo id augue dignissim, sed euismod justo volutpat. In hac habitasse platea dictumst. Aenean non libero faucibus, dapibus lectus vel, varius ex. Vivamus tempor tellus quis urna eleifend, at dignissim sapien semper. Maecenas sapien massa, efficitur quis nunc sit amet, scelerisque accumsan erat. Pellentesque mauris nisi, posuere eu lobortis quis, tincidunt eget nisi. Mauris eget bibendum magna, sit amet imperdiet sapien. Fusce justo libero, molestie eget bibendum a, posuere a magna. Donec purus justo, aliquet at quam non, fringilla vestibulum turpis. Aenean tempus malesuada turpis, vel hendrerit nunc commodo in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et interdum lorem</p>
@@ -202,12 +202,12 @@
 
 			<div class="mySlides">
 			<div class="row">
-			<div class="col-8" >
+			<div class="col-8 bg-secondary" >
 				<h3 class="font-weight-bold"><i class="fas fa-book-reader"></i> Unidad de competencia</h3>
 				<p>Donec faucibus velit luctus, tempus quam vitae, bibendum tellus. Praesent imperdiet, ante eu aliquam consequat, neque velit cursus dui, id auctor tortor mauris quis libero. Phasellus dapibus vitae nulla eget eleifend. Donec finibus tempus fermentum. Aenean cursus turpis ligula, nec mollis lorem dictum id. Suspendisse consectetur et ex at tincidunt. Etiam ullamcorper risus ex, id efficitur mi condimentum id. Sed sed ultrices est. Aliquam massa orci, venenatis nec porta sollicitudin, porttitor nec diam. </p>
 				<p>Integer malesuada lorem a elit molestie, id auctor augue rhoncus. Donec et rutrum felis. Praesent aliquam iaculis purus, ac eleifend tortor pellentesque eget. Vestibulum arcu ex, pretium non sapien a, pulvinar accumsan mauris. Curabitur convallis posuere fermentum. Curabitur placerat eros augue, ultricies ornare sem fermentum sollicitudin. Duis venenatis fringilla laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis bibendum vestibulum pretium. Vestibulum in tempor risus. Suspendisse lobortis libero non sem dictum, id condimentum urna rhoncus. Nullam in sem lacinia, scelerisque ante scelerisque, sollicitudin sapien. Sed at rutrum urna. Aliquam eget euismod est. </p>
 			</div>
-			  <div class="col-4 d-flex align-items-center">
+			  <div class="col-4 d-flex align-items-center bg-secondary">
 				<figure class="figure">
 				  <img
 					src="images/inicio/slide2.jpg"
@@ -237,21 +237,33 @@
     </section>
     <!--/Presentación-->
     <!--Contenido-->
-    <section class="bg-secondary" id="contenido">
+    <section id="contenido">
 
         <div class="container contenedor-seccion text-white">
-            <div class="row mb-4">
+            <!--<div class="row mb-4">
                 <div class="col">
                     <h3><i class="fas fa-copy"></i> Contenido</h3>
                 </div>
 				<div class="col">
                     <h3><i class="fas fa-copy"></i> Evaluación de desempeño</h3>
                 </div>
-            </div>
+            </div>-->
              <div class="row">
+				<div class="col">
+				  <div class="row">
+					<a class="col-5" style="background-color: #28AD56; text-align: center;">Fase 1<br><br> Nombre fase</a>
+					<div class="col-1"></div>
+					<a class="col-5" style="background-color: #18529D; text-align: center;">Fase 2<br><br> Nombre fase</a>
+				  </div>
+				  <br>
+				  <div class="row">
+					<a class="col-5" style="background-color: #18529D; text-align: center;">Fase 3<br><br> Nombre fase</a>
+					<div class="col-1"></div>
+					<a class="col-5" style="background-color: #28AD56; text-align: center;">Fase 4<br><br> Nombre fase</a>
+				  </div>
+				</div>
 			
-			
-			<div class="col">
+			<!--<div class="col">
 			  <div class="row">
 				<a class="col apartadoModulo" id="modulo1">1</a>
 				<a class="col apartadoModulo" id="modulo2">2</a>
@@ -260,18 +272,13 @@
 				<a class="col apartadoModulo" id="modulo3">3</a>
 				<a class="col apartadoModulo" id="modulo4">4</a>
 			  </div>
-			</div>
-			<div class="col">
-			  <div class="row">
-				<a class="col apartadoModulo" id="evalDes">Evaluación de desempeño</a>
-			  </div>
-			  <div class="row">
-					<a class="col " style="background-color: #28AD56">Facilitador(a) de la EE<br>Nombre: Nombre ejemplo<br>correo: correo@uv.mx</a>
-			  </div>
-			</div>
-			<!--<a class="col evaluacion" id="evalDes">
+			</div>-->
+
+			<a class="col" style="background-color: #18529D;">
 			  Evaluación de desempeño
-			</a>-->
+			  <br>
+			  <br>
+			</a>
 			
 		  </div>
 			
