@@ -1,0 +1,194 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+#imagen-introduccion{
+    width:75%;
+    height:75%;
+}
+
+
+#modulo1-imagen-introduccion {
+    width: 40%;
+}
+
+#modulo1-imagen-proposito{
+    width:40%;
+}
+
+#modulo1-tema1-imagen-1 {
+    width: 30%;
+}
+
+#modulo1-tema2-imagen-1 {
+    width: 30%;
+}
+
+#modulo1-tema3-imagen-1 {
+    width: 25%;
+}
+
+#modulo1-tema4-imagen-1 {
+    width: 40%;
+}
+
+
+
+/*#imagen-tema-1 {
+    width: 45%;    
+}
+
+#imagen-tema-2 {
+    width: 45%;
+}
+
+#imagen-tema-4 {
+    width: 45%;
+}
+*/
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+/*@media (min-width: 576px) {
+
+}
+*/
+/* Medium devices (tablets, 768px and up)*/
+/*@media (min-width: 768px) {
+    
+}*/
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #imagen-introduccion {
+        width: 65%;
+        height: 65%;
+    }
+
+    #imagen-tema-1 {
+        width: 35%;
+    }
+
+    #imagen-tema-2 {
+        width: 35%;
+    }
+
+    #imagen-tema-4 {
+        width: 30%;
+    }
+}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+#modulo1{
+	background-image: url('../images/moduloNormal.png');
+	background-repeat: no-repeat;
+	background-size: 300px 100px;
+	
+}
+#modulo1:hover {
+	background-image: url('../images/modulo1.png');
+	background-repeat: no-repeat;
+	background-size: 300px 100px;
+}
+#modulo2{
+	background-image: url('../images/moduloNormal.png');
+	background-repeat: no-repeat;
+	background-size: 300px 100px;
+	
+}
+#modulo2:hover {
+	background-image: url('../images/modulo2.png');
+	background-repeat: no-repeat;
+	background-size: 300px 100px;
+}
+#modulo3{
+	background-image: url('../images/moduloNormal.png');
+	background-repeat: no-repeat;
+	background-size: 300px 100px;
+	
+}
+#modulo3:hover {
+	background-image: url('../images/modulo3.png');
+	background-repeat: no-repeat;
+	background-size: 300px 100px;
+}
+#modulo4{
+	background-image: url('../images/moduloNormal.png');
+	background-repeat: no-repeat;
+	background-size: 300px 100px;
+	
+}
+#modulo4:hover {
+	background-image: url('../images/modulo4.png');
+	background-repeat: no-repeat;
+	background-size: 300px 100px;
+}
+
+#evalDes{
+	background-image: url('../images/modulo1/slide3.jpg');
+	background-repeat: no-repeat;
+	background-size: 300px 100px;
+}
+#evalDes:hover {
+	background-image: url('../images/eval.jpg');
+	background-repeat: no-repeat;
+	background-size: 300px 100px;
+}
+
+
+
+
+.evaluacion,
+.apartadoModulo {
+    background-image: url('../images/moduloNormal.png');
+	background-repeat: no-repeat;
+	background-size: 300px 100px;
+    margin: 2px;
+    font-size: 1.5em;
+}
+.evaluacion {
+    height: 200px;
+    line-height: 200px;
+}
+.apartadoModulo {
+    height: 100px;
+    line-height: 100px;
+}
