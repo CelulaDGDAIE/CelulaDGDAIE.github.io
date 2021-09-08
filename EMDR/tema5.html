@@ -423,6 +423,11 @@
 			<p><span class="font-weight-bold">5.4. Modelos lineales</span></p>
 			<p>Los modelos lineales son una herramienta estad&iacute;stica fundamental para evaluar la relaci&oacute;n entre variables num&eacute;ricas continuas. En esta secci&oacute;n revisaremos c&oacute;mo construir un modelo lineal sencillo con la funci&oacute;n <em>lm(),</em> as&iacute; como a interpretar el resultado estad&iacute;stico, incluyendo la pendiente, ordenada al origen y los valores de R y R-cuadrada. Tambi&eacute;n veremos c&oacute;mo revisar los gr&aacute;ficos diagn&oacute;sticos de un modelo en donde podemos evaluar la distribuci&oacute;n de residuales (la distancia entre los puntos y la l&iacute;nea de regresi&oacute;n que resulta del modelo), los gr&aacute;ficos QQ y gr&aacute;ficos de distancia de <em>Cook</em>. La revisi&oacute;n de gr&aacute;ficos diagn&oacute;sticos es vital para asegurarnos de que nuestro modelo es confiable y no el resultado de unos cuantos valores at&iacute;picos que tengan una influencia desproporcionada sobre el modelo. Adicionalmente, realizaremos regresiones lineales m&uacute;ltiples. Paso a paso, revisaremos la forma de evaluar, de manera estad&iacute;stica, c&oacute;mo la adici&oacute;n modifica los resultados de una regresi&oacute;n m&uacute;ltiple. Tambi&eacute;n veremos, en el caso de que una adici&oacute;n no contribuya a la capacidad explicativa de un modelo, c&oacute;mo justificar la remoci&oacute;n de variables en un modelo. Finalmente, aprenderemos a automatizar la elaboraci&oacute;n de un modelo, mediante el uso de modelos saturados con el operador punto y la funci&oacute;n <em>step().</em></p>
 			<p>Para reforzar este tema, revise la siguiente presentación:</p>
+			<a href="recursos/movies.csv" target="_blank" style="display: inline-block; position: relative; z-index: 1;">
+				<span style="display: inline-block;">
+					<object data="images/Boton-Descarga-VERDE.svg" type="image/svg+xml" width="110px" height="50px" style="position: relative; z-index: -1"></object>
+				</span>
+			</a>
 			<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="pdfs/tema5/Tema 5.4. Modelos lineales.pdf" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe></div></div>   
 			<br>
 			<p>A continuación, visualice el siguiente video:</p>
@@ -619,7 +624,7 @@
 			<p>5.3.1 Modelos. <a href="pdfs/tema5/ejercicios/Ejercicio 5.3.1 Modelos. Act. 6.pdf" target="_blank">Abrir</a></p>
 			<p>5.4.1 GLM. <a href="pdfs/tema5/ejercicios/Ejercicio 5.4.1 GLM. Act. 6.pdf" target="_blank">Abrir</a></p>
 			<p>5.5.1 GLMM. <a href="pdfs/tema5/ejercicios/Ejercicio 5.5.1 GLMM. Act. 6.pdf" target="_blank">Abrir</a></p>
-			<p>5.6.1 Componentes principales. Ejercicios. <a href="pdfs/tema5/ejercicios/Ejercicio 5.6.1 Componentes principales. PCA Act. 6.pdf" target="_blank">Abrir</a></p>
+			<p>5.6.1 Componentes principales. <a href="pdfs/tema5/ejercicios/Ejercicio 5.6.1 Componentes principales. PCA Act. 6.pdf" target="_blank">Abrir</a></p>
 			<p>5.7.1 <em>Cl</em><em>ustering</em> (agrupamiento). <a href="pdfs/tema5/ejercicios/Ejercicio 5.7.1 Clustering (agrupamiento). Act. 6.pdf" target="_blank">Abrir</a></p>
 			<p><span class="font-weight-bold">Criterios de desempe&ntilde;o:</span></p>
 			<ol>
@@ -632,7 +637,7 @@
 			</ol>
 			<p><span class="font-weight-bold">Lineamientos de entrega:</span></p>
 			<ol>
-			<li>Divida su <em>script</em> en secciones, usando <em>hashtag</em> # al inicio de las l&iacute;neas que comente. Para conocer ejemplos de <em>scripts</em> revise la <a href="pdfs/tema2/Clase 3.0 Scripts, funciones y control de flujo-Act-1-2-3.pdf">Clase 3.0 Scripts, funciones y control de flujo.pdf (pp. 1-19)</a>. Por ejemplo, si va a iniciar la secci&oacute;n en que asigna su directorio de trabajo, puede indicarlo con la l&iacute;nea: # Ajustar directorio de trabajo setwd(&ldquo;/Usuario/CursoEMDR&rdquo;) y en las l&iacute;neas subsecuentes agregue los comandos que correspondan a la soluci&oacute;n del ejercicio en turno.</li>
+			<li>Divida su <em>script</em> en secciones, usando <em>hashtag</em> # al inicio de las l&iacute;neas que comente. Para conocer ejemplos de <em>scripts</em> revise la <a target="_blank" href="pdfs/tema2/Clase 3.0 Scripts, funciones y control de flujo-Act-1-2-3.pdf">Clase 3.0 Scripts, funciones y control de flujo.pdf (pp. 1-19)</a>. Por ejemplo, si va a iniciar la secci&oacute;n en que asigna su directorio de trabajo, puede indicarlo con la l&iacute;nea: # Ajustar directorio de trabajo setwd(&ldquo;/Usuario/CursoEMDR&rdquo;) y en las l&iacute;neas subsecuentes agregue los comandos que correspondan a la soluci&oacute;n del ejercicio en turno.</li>
 			<li>Titule el archivo (*.R) de la siguiente forma: <em>Actividad6</em><em>_ApellidoPaternoPrimerNombre.R.</em> Ejemplo: <em>Actividad6_CoyotlPedro.R</em></li>
 			<li>Env&iacute;e su archivo (*.R), a trav&eacute;s del apartado de <span class="font-weight-bold">Actividades</span> de la plataforma <span class="font-weight-bold">Eminus</span>, a m&aacute;s tardar en la fecha establecida en el<span class="font-weight-bold"> Calendario</span> de entregas.</li>
 			</ol>
@@ -687,9 +692,9 @@
                   <h2 class="mb-0">
                     <button
                       class="btn btn-link btn-block text-left text-white"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseOne"
+                      
+
+                      
                       aria-expanded="true"
                       aria-controls="collapseOne"
                     >
@@ -699,8 +704,8 @@
                 </div>
 
                 <div
-                  id="collapseOne"
-                  class="collapse"
+                  
+
                   aria-labelledby="headingOne"
                   data-parent="#accordionExample"
                 >
@@ -733,7 +738,7 @@
                     <button
                       class="btn btn-link btn-block text-left text-white"
                       type="button"
-                      data-toggle="collapse"
+						data-toggle="collapse"
                       data-target="#collapseOne"
                       aria-expanded="true"
                       aria-controls="collapseOne"
