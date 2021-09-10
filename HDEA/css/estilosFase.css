@@ -175,7 +175,6 @@ img {vertical-align: middle;}
 
 
 
-
 .evaluacion,
 .apartadoModulo {
     background-image: url('../images/moduloNormal.png');
@@ -192,3 +191,39 @@ img {vertical-align: middle;}
     height: 100px;
     line-height: 100px;
 }
+
+
+
+#actividad{
+	height: 150px;
+	background-image: url('../images/fase1/actividad.png');
+	background-repeat: no-repeat;
+}
+#actividad:hover {
+	height: 150px;
+	background-image: url('../images/fase1/actividadMouse.png');
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
