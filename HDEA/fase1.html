@@ -189,7 +189,7 @@
 			<div class="col-4 d-flex align-items-center bg-primary">
 				<figure class="figure" style="width: 50%; margin: auto; display: block;">
 				  <img
-					src="images/fase1/Introduccion.jpg"
+					src="images/fase1/Proposito.jpg"
 					alt="imagen pendiente"
 					class="img-fluid"
 				  />
@@ -215,9 +215,9 @@
 				
 			</div>
 			  <div class="col-4 d-flex align-items-center bg-secondary">
-				<figure class="figure">
+				<figure class="figure" style="width: 50%; margin: auto; display: block;">
 				  <img
-					src="images/fase1/Proposito.jpg"
+					src="images/fase1/Introduccion.jpg"
 					alt="imagen pendiente"
 					class="img-fluid"
 				  />
@@ -414,7 +414,7 @@
 		
 		<div class="col" style="text-align: center;">
 		
-		<a>
+		<a href="#" data-toggle="modal" data-target="#modal-actividad">
 			<div id="actividad"></div>
 			</a>
 		  <!--<img src="images/fase1/actividad.png" alt="pendiente" id="actividad">-->
@@ -433,65 +433,35 @@
             <h3><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <div class="accordion" id="accordionExample">
-              <div class="card">
-                <div class="card-header bg-primary" id="headingOne">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left text-white"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      Básicas
-                    </button>
-                  </h2>
-                </div>
+		<div class="tab">
+		  <button class="tablinks" onclick="abrirFuente(event, 'basicas')" id="defaultOpen">Básicas</button>
+		  <button class="tablinks" onclick="abrirFuente(event, 'complementarias')">Complementarias</button>
+		</div>
 
-                <div
-                  id="collapseOne"
-                  class="collapse"
-                  aria-labelledby="headingOne"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body text-dark">
-					 
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header bg-primary text-white" id="headingTwo">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left collapsed text-white"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Complementarias
-                    </button>
-                  </h2>
-                </div>
-                <div
-                  id="collapseTwo"
-                  class="collapse"
-                  aria-labelledby="headingTwo"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body text-dark">
-						
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+		<div id="basicas" class="tabcontent" style="color: black; background-color: white;">
+			<p class="fuente">CENGAGE. (2021, 30 abril). <i>27 Plataformas virtuales educativas gratuitas</i>. <a href="https://latam.cengage.com/27-plataformas-virtuales-educativas-gratuitas/" target="_blank" rel="noopener">https://latam.cengage.com/27-plataformas-virtuales-educativas-gratuitas/</a></p>
+
+			<p class="fuente">Brown, A., &amp; Green, T. D. (2016). <i>The essentials of instructional design: Connecting fundamental principles with process and practice.</i> Third Edition. <a href="https://ikhsanaira.files.wordpress.com/2016/05/the-essential-of-instructional-design.pdf" target="_blank" rel="noopener">https://ikhsanaira.files.wordpress.com/2016/05/the-essential-of-instructional-design.pdf</a></p>
+
+			<p class="fuente">Chauhan, A. (2021, 12 mayo). <i>11 Digital </i><i>Education</i><i> Tools </i><i>For</i> <i>Teachers</i><i> And </i><i>Students</i><i>. </i>ELearning Industry. <a href="https://elearningindustry.com/digital-education-tools-teachers-students" target="_blank" rel="noopener">https://elearningindustry.com/digital-education-tools-teachers-students</a>.</p>
+
+			<p class="fuente">Contreras, W. (2017). Evolución de las aulas virtuales en las universidades tradicionales chilenas: el caso de la Universidad del Bío-Bío. <i>Horizontes Educacionales</i>, 12(1), 49-58. <a href="https://www.redalyc.org/articulo.oa?id=97916199006" target="_blank" rel="noopener">https://www.redalyc.org/articulo.oa?id=97916199006</a>.</p>
+
+			<p class="fuente">Fernández-Pampillón, A. M. (2009). Las plataformas e-learning para la enseñanza y el aprendizaje universitario en Internet. En <i>Las plataformas de aprendizaje. Del mito a la realidad</i> (pp. 45-73). Biblioteca Nueva. <a href="https://eprints.ucm.es/id/eprint/10682/" target="_blank" rel="noopener">https://eprints.ucm.es/id/eprint/10682</a><a href="https://eprints.ucm.es/id/eprint/10682/">/</a></p>
+
+			<p class="fuente">Segureskola. (2021, 25 junio). <i>Las 5 mejores plataformas educativas digitales para usar en clase</i>. Blog Educación y Bienestar digital. <a href="https://gaptain.com/blog/las-5-mejores-plataformas-educativas-para-usar-en-clase" target="_blank" rel="noopener">https://</a><a href="https://gaptain.com/blog/las-5-mejores-plataformas-educativas-para-usar-en-clase">gaptain.com/blog/las-5-mejores-plataformas-educativas-para-usar-en-clase</a></p>
+
+			<p class="fuente">Galvis, Á. H. &amp; Pedraza, L. d. C. (2016). <i>Desafíos del elearning y del blearning en educación </i><i>superior. An</i><i>álisis</i><i> de buenas prácticas en instituciones líderes. </i>Universidad de los Andes/Conecta-te. Centro de Innovación en Tecnología y Educación. <a href="https://conectate.uniandes.edu.co/images/pdf/desafios_conectate.pdf" target="_blank" rel="noopener">https://conectate.uniandes.edu.co/images/pdf/desafios_conectate.pdf</a>.</p>
+
+			<p class="fuente">Riestra, E. (s. f.). <i>Las plataformas </i>e-learning para la enseñanza y el aprendizaje. Yeira E-learning. Recuperado 13 de julio de 2021 de: <a href="https://www.yeira.training/blog/plataformas-digitales-de-aprendizaje" target="_blank" rel="noopener">https://www.yeira.training/blog/plataformas-digitales-de-aprendizaje</a></p>
+		</div>
+
+		<div id="complementarias" class="tabcontent" style="color: black; background-color: white;">
+			<p class="fuente">GoConqr en Español. (2015, mayo 6). <i>Cómo Crear Mapas Mentales con </i><i>GoConqr</i> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=-fHmt6Bcel0" target="_blank" rel="noopener">https://</a><a href="https://www.youtube.com/watch?v=-fHmt6Bcel0">www.youtube.com</a><a href="https://www.youtube.com/watch?v=-fHmt6Bcel0">/</a><a href="https://www.youtube.com/watch?v=-fHmt6Bcel0">watch?v</a><a href="https://www.youtube.com/watch?v=-fHmt6Bcel0">=-fHmt6Bcel0</a></p>
+			<p class="fuente">GoConqr - Transforma la forma en la que aprendes. (s. f.). GoConqr. Recuperado 2 de julio de 2021, de <u><a href="https://www.goconqr.com/es-ES" target="_blank" rel="noopener">https://</a></u><u><a href="https://www.goconqr.com/es-ES">www.goconqr.com/es-ES</a></u></p>
+		</div>
+
+        
       </div>
     </section>
     <!--/Fuentes de Información-->
@@ -537,7 +507,9 @@
                 >
                   <div class="card-body">
                         <p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
-                          ><sup style="font-size:60%;">1</sup> </p>
+                          ><sup style="font-size:60%;">1</sup> ijeab (2017). Usiness people meeting to discuss the situation on the marketing. Free Photo. [Imagen]. Freepik. https://www.freepik.com/free-photo/usiness-people-meeting-discuss-situation-marketing_1236194.htm</p>
+						<p class="text-white" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%;">2</sup> rawpixel.com (2019). Business people using internet Free Photo. [Imagen]. Freepik. https://www.freepik.com/free-photo/business-people-using-internet_4246721.htm</p>
                   </div>
                 </div>
               </div>
@@ -568,6 +540,81 @@
         <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
       </a>
     </div>
+	
+	<!--Ventanas Modales-->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal-actividad"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-actividad"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Actividad 1: Mapa mental.
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><u>Descripci&oacute;n:</u></p>
+			<ol>
+			<li>Despu&eacute;s de revisar la informaci&oacute;n de esta fase y explorar de manera general los tipos de plataformas digitales para la ense&ntilde;anza y el aprendizaje, elabore un mapa mental que incluya las principales caracter&iacute;sticas de &eacute;stas, as&iacute; como las diferencias en cada una de ellas. Para lo anterior, considere utilizar algunas de las siguientes herramientas:
+				<ol type="a">
+					<li>Observe el video <em>&iquest;C</em><em>&oacute;</em><em>mo</em><em> crear un Mapa Mental con </em><em>GoConqr</em><em>?, </em>localizado en el siguiente enlace: <a href="https://www.youtube.com/watch?v=-fHmt6Bcel0">https://www.youtube.com/watch?v=-fHmt6Bcel0</a>, tome nota de los pasos a seguir para crear un mapa mental y la forma de registrarse.</li>
+					<li>Realice la lectura del <em>Tutorial </em><em>Mindmeister</em>, localizado en el siguiente enlace: <a href="https://www.mindmeister.com/generic_files/get_file/755480?filetype=attachment_file">https://www.mindmeister.com/generic_files/get_file/755480?filetype=attachment_file</a>. Revise cu&aacute;les son los pasos a seguir para crear un mapa mental y la forma de registrarse.</li>
+					<li>Para elaborar su mapa mental, tambi&eacute;n puede usar las siguientes herramientas:
+						<ul>
+							<li>Draw.io (s. f.). <em>Diagrams.net-free </em><em>flowchart</em> <em>maker</em><em> and </em><em>diagrams</em><em> online. </em>Recuperado 13 de julio de 2021 de: <a href="https://app.diagrams.net/">https://app.diagrams.net/</a>, es una herramienta gratuita y sirve para realizar varios tipos de diagramas.</li>
+							<li>XMind Ltd. (s. f.). XMind - Full-featured mind mapping and brainstorming tool. XMind. Recuperado 13 de julio de 2021 de: <a href="https://www.xmind.net/">https://www.xmind.net/</a>. Es una herramienta que posee una versi&oacute;n gratuita y otra de pago, la versi&oacute;n gratuita no permite el uso de im&aacute;genes.</li>
+							<li>Coggle. (s. f.). Coggle-Simple Collaborative Mind Maps. Coggle.it. Recuperado 13 de julio de 2021 de: <a href="https://coggle.it/">https://coggle.it/</a>. Permite el uso de im&aacute;genes y posee la opci&oacute;n de trabajo colaborativo.</li>
+						</ul>
+					</li>
+				</ol>
+			</li>
+			</ol>
+			<ol start="2">
+			<li>La citaci&oacute;n y la escritura de referencias deber&aacute; ser con base en el&nbsp;<em>Manual de Publicaciones de la </em><em>APA,7a. </em><em>ed.,</em> para ello consulte la siguiente p&aacute;gina: S&aacute;nchez, C. (2020, 24 noviembre).&nbsp;Normas APA. 7a. edici&oacute;n. Normas-apa.org. Blog.&nbsp;<a href="https://normas-apa.org/">https://normas-apa.org/</a>. Tambi&eacute;n puede descargar el manual en formato PDF directamente desde:&nbsp;<a href="https://normas-apa.org/wp-content/uploads/Guia-Normas-APA-7ma-edicion.pdf">https://normas-apa.org/wp-content/uploads/Guia-Normas-APA-7ma-edicion.pdf</a>o bien, consultar el video acerca del uso del modo de gestor de referencias bibliogr&aacute;ficas en: Juan Pablo Garc&iacute;a Cuevas. (2020, 16 diciembre).&nbsp;Uso de Scribbr&nbsp;[Video]. YouTube, en:&nbsp;<a href="https://youtu.be/p8Dq48YsZvY">https://youtu.be/p8Dq48YsZvY</a></li>
+			</ol>
+			<p><strong>Criterios de desempe&ntilde;o:</strong></p>
+			<ul>
+			<li>Congruencia entre el contenido y las im&aacute;genes usadas.</li>
+			<li>Identificaci&oacute;n de elementos clave.</li>
+			<li>Organizaci&oacute;n de ideas.</li>
+			<li>Redacci&oacute;n y ortograf&iacute;a adecuadas.</li>
+			</ul>
+			<p><strong>Lineamientos de entrega:</strong></p>
+			<ul>
+			<li>Titule el archivo de la siguiente forma: <em>ActIn1_PrimerApellidoyPrimerNombre</em>.&nbsp;Ejemplo: <em>Act1_VillanuevaMariaTeresa.</em></li>
+			<li>Env&iacute;e su archivo, en formato PNG, a trav&eacute;s del apartado <strong><em>Actividad 1</em></strong> de la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario</strong> de entregas.</li>
+			</ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary waves-effect"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Ventanas Modales-->
+	
+	
+	
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
@@ -616,6 +663,22 @@
 	  }
 	  x[slideIndex[no]-1].style.display = "block";  
 	}
+	function abrirFuente(evt, fuente) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(fuente).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	//document.getElementById("defaultOpen").click();
 	</script>
   </body>
 </html>
