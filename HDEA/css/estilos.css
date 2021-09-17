@@ -262,7 +262,6 @@ q {font-style: italic;}
 #overlay {
   position: absolute;
   display: block;
-  
   top: 0;
   left: 0;
   right: 0;
@@ -270,5 +269,4 @@ q {font-style: italic;}
   background: rgb(162,216,216);
 background: linear-gradient(90deg, rgba(162,216,216,0.6979166666666667) 0%, rgba(110,196,147,0.7035189075630253) 100%);
   z-index: 2;
-  cursor: pointer;
 }
