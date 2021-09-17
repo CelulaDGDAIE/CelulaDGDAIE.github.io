@@ -165,49 +165,64 @@ q {font-style: italic;}
 /* Add a blue color to the author */
 .author {color: cornflowerblue;}
 
+
+.imagenNormal{
+	height : 200px;
+	width : 200px;
+
+}
+
 #modulo1{
-	background-image: url('../images/moduloNormal.png');
+	background-image: url('../images/libro-abierto.png');
 	background-repeat: no-repeat;
-	background-size: 300px 100px;
+	background-size: 200px 200px;
+	background-position: center;
+	
 	
 }
 #modulo1:hover {
+	
 	background-image: url('../images/modulo1.png');
 	background-repeat: no-repeat;
-	background-size: 300px 100px;
+	background-size: 325px 200px;
+	background-position: center;
+	
 }
 #modulo2{
-	background-image: url('../images/moduloNormal.png');
+	background-image: url('../images/libro.png');
 	background-repeat: no-repeat;
-	background-size: 300px 100px;
+	background-size: 200px 200px;
+	background-position: center;
 	
 }
 #modulo2:hover {
-	background-image: url('../images/modulo2.png');
+	/*background-image: url('../images/modulo2.png');
 	background-repeat: no-repeat;
-	background-size: 300px 100px;
+	background-size: 300px 100px;*/
 }
 #modulo3{
-	background-image: url('../images/moduloNormal.png');
+	background-image: url('../images/gorra.png');
 	background-repeat: no-repeat;
-	background-size: 300px 100px;
+	background-size: 200px 200px;
+	background-position: center;
 	
 }
 #modulo3:hover {
-	background-image: url('../images/modulo3.png');
+	/*background-image: url('../images/modulo3.png');
 	background-repeat: no-repeat;
-	background-size: 300px 100px;
+	background-size: 300px 100px;*/
 }
 #modulo4{
-	background-image: url('../images/moduloNormal.png');
+	background-image: url('../images/graduado.png');
 	background-repeat: no-repeat;
-	background-size: 300px 100px;
+	background-size: 200px 200px;
+	background-position: center;
 	
 }
 #modulo4:hover {
-	background-image: url('../images/modulo4.png');
+	/*background-image: url('../images/modulo4.png');
 	background-repeat: no-repeat;
-	background-size: 300px 100px;
+	background-size: 300px 100px;*/
 }
 
 #evalDes{
@@ -226,10 +241,12 @@ q {font-style: italic;}
 
 .evaluacion,
 .apartadoModulo {
-    background-image: url('../images/moduloNormal.png');
+    /*background-image: url('../images/moduloNormal.png');
 	background-repeat: no-repeat;
-	background-size: 300px 100px;
-    margin: 2px;
+	*/
+	background-color: #6ec493;
+	background-size: 100px 100px;
+    margin: 1px;
     font-size: 1.5em;
 }
 .evaluacion {
@@ -237,7 +254,7 @@ q {font-style: italic;}
     line-height: 200px;
 }
 .apartadoModulo {
-    height: 100px;
+    height: 200px;
     line-height: 100px;
 }
 
