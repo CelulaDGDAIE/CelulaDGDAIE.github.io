@@ -99,7 +99,10 @@ body {font-family: Verdana, sans-serif; margin:0}
 /* Slides */
 .mySlides {
   display: none;
-  padding: 80px;
+  padding-top: none;
+  padding-right: 80px;
+  padding-bottom: none;
+  padding-left: 80px;
   text-align: justify;
 }
 
@@ -236,4 +239,19 @@ q {font-style: italic;}
 .apartadoModulo {
     height: 100px;
     line-height: 100px;
+}
+
+
+#overlay {
+  position: absolute;
+  display: block;
+  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(162,216,216);
+background: linear-gradient(90deg, rgba(162,216,216,0.6979166666666667) 0%, rgba(110,196,147,0.7035189075630253) 100%);
+  z-index: 2;
+  cursor: pointer;
 }
