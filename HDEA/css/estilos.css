@@ -184,10 +184,35 @@ q {font-style: italic;}
 	
 	background-image: url('../images/modulo1.png');
 	background-repeat: no-repeat;
-	background-size: 325px 200px;
+	background-size: 200px 200px;
 	background-position: center;
 	
 }
+@media screen and (max-width: 1500px){
+	#modulo1{
+	background-image: url('../images/libro-abierto.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	}
+	#modulo1:hover {
+	
+	background-image: url('../images/modulo1.png');
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center;
+	
+}
+	
+
+  
+}
+
+
+
+
+
+
 #modulo2{
 	background-image: url('../images/libro.png');
 	background-repeat: no-repeat;

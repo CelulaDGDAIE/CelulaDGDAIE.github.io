@@ -35,7 +35,18 @@
 		flex-wrap:wrap;
 		margin-right:-100px;
 		margin-left:-100px;
-	}.no-gutters{
+	}
+	@media screen and (max-width: 1500px){
+	  .row{
+			display:flex;
+			flex-wrap:wrap;
+			margin-right:10px;
+			margin-left:10px;
+		}
+	}
+	
+	
+	.no-gutters{
 		margin-right:0;margin-left:0
 	}
 	.no-gutters>.col,.no-gutters>[class*=col-]{
