@@ -251,7 +251,7 @@ q {font-style: italic;}
 	
 	background-image: url('../images/modulo1.png');
 	background-repeat: no-repeat;
-	background-size: 200px 200px;
+	background-size: 160px 200px;
 	background-position: center;
 	
 }
@@ -265,7 +265,7 @@ q {font-style: italic;}
 #modulo2:hover {
 	background-image: url('../images/modulo2.png');
 	background-repeat: no-repeat;
-	background-size: 200px 200px;
+	background-size: 160px 200px;
 	background-position: center;
 }
 #modulo3{
@@ -278,7 +278,7 @@ q {font-style: italic;}
 #modulo3:hover {
 	background-image: url('../images/modulo3.png');
 	background-repeat: no-repeat;
-	background-size: 200px 200px;
+	background-size: 160px 200px;
 	background-position: center;
 }
 #modulo4{
@@ -291,7 +291,7 @@ q {font-style: italic;}
 #modulo4:hover {
 	background-image: url('../images/modulo4.png');
 	background-repeat: no-repeat;
-	background-size: 200px 200px;
+	background-size: 160px 200px;
 	background-position: center;
 }
 .imagen-unidad{
@@ -322,6 +322,12 @@ q {font-style: italic;}
 }
 
 
+.fondo-azul{
+	background-color: #436894;
+}
+.fondo-morado{
+	background-color: #8983c3;
+}
 
 
 .evaluacion,
@@ -329,7 +335,7 @@ q {font-style: italic;}
     /*background-image: url('../images/moduloNormal.png');
 	background-repeat: no-repeat;
 	*/
-	background-color: #355ca7;
+	background-color: #6ec493;
 	background-size: 100px 100px;
     margin: 1px;
     font-size: 1.5em;
@@ -351,7 +357,7 @@ q {font-style: italic;}
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgb(108,189,180);
-background: linear-gradient(90deg, rgba(108,189,180,0.5) 0%, rgba(76,91,252,0.5) 50%, rgba(53,92,167,0.5) 100%);
+  background: rgb(162,216,216);
+	background: linear-gradient(90deg, rgba(162,216,216,0.5018382352941176) 0%, rgba(110,196,147,0.5018382352941176) 100%);
   z-index: 2;
 }

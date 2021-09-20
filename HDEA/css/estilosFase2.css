@@ -1,0 +1,10 @@
+#recursoModal {
+	text-align:center;
+	color: white;
+	background-color: #355ca7; 
+	height: 250px;
+}
+#recursoModal:hover {
+	background-color: #183d82; 
+	cursos: pointer;
+}

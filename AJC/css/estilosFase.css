@@ -269,11 +269,11 @@ img {vertical-align: middle;}
 	margin-left:15.65pt;
 	text-indent:-15.65pt;
 }
-.fondo_verde{
-	background-color: #6cbdb4;
-}
 .fondo_azul{
-	background-color: #4c5bfc;
+	background-color: #436894;
+}
+.fondo_morado{
+	background-color: #8983c3;
 }
 
 @media screen and (max-width: 1500px){
