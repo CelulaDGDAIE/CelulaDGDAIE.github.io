@@ -307,6 +307,10 @@
 			
 			
 		</div>
+		<button class="fondo_azul" onclick="muestraNota()">NOTA</button>
+
+		<div id="snackbar">Si deseas conocer más acerca de los tipos de Arpa y su ejecución, consulta los videos enlistados en las fuentes de información complementarias. </div>
+
 
 	  
 	</div>
@@ -709,9 +713,11 @@
 	  document.getElementById(fuente).style.display = "block";
 	  evt.currentTarget.className += " active";
 	}
-
-
-	
+	function muestraNota() {
+	  var x = document.getElementById("snackbar");
+	  x.className = "show";
+	  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+	}
 	</script>
   </body>
 </html>
