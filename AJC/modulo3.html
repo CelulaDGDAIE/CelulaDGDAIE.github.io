@@ -241,21 +241,70 @@
 	
 <!--contenido-->
     <section class=" text-white">
-	<div class="container contenedor-seccion">
-	<h3 style="color: #42b2b2"><span class="font-weight-bold">Tema 1.1 Historia del arpa</span></h3>
-		<p>
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    <img src="images/logo-uv.png" alt="Italian Trulli">
-  </a>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-  </div>
-</div>
-	  
-	</div>
-		
+		<div class="container contenedor-seccion">
+			<h3 style="color: #42b2b2"><span class="font-weight-bold"></span></h3>
+			<div class="row">
+			  <div class="col">
+				<div class="accordion" id="accordionTema1">
+				  <div class="card" style="background-color: #6ec493">
+					<div class="card-header" id="headingTema1">
+					  <h2 class="mb-0">
+						<button
+						  class="btn btn-link btn-block text-center text-white"
+						  type="button"
+						  data-toggle="collapse"
+						  data-target="#collapseTema1"
+						  aria-expanded="true"
+						  aria-controls="collapseTema1"
+						>
+						  <img src="" alt="Imagen pendiente"></img>
+						</button>
+					  </h2>
+					</div>
+
+					<div
+					  id="collapseTema1"
+					  class="collapse"
+					  aria-labelledby="headingTema1"
+					  data-parent="#accordionTema1"
+					>
+					  <div class="card-body" style="background-color: white;">
+							
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<br>
+			<div class="tab" style="background-color: #355ca7">
+				<div class="row">
+					<div class="col"></div>
+					<div class="col"><button class="tablinks tabTema" style="font-size: 70%"  onclick="abrirFuente(event, 'video1')" id="defaultOpen">Ballet Folklorico de la UV</button></div>
+					<div class="col"><button class="tablinks tabTema" style="font-size: 70%" onclick="abrirFuente(event, 'video2')">Facebook-Connexion ou inscription. </button></div>
+					<div class="col"><button class="tablinks tabTema" style="font-size: 70%" onclick="abrirFuente(event, 'video3')">TLEN HUICANI-El Cascabel </button></div>
+					<div class="col"><button class="tablinks tabTema" style="font-size: 70%" onclick="abrirFuente(event, 'video4')">NEMATATLÍN </button></div>
+					<div class="col"><button class="tablinks tabTema" style="font-size: 70%" onclick="abrirFuente(event, 'video5')">Facebook-Connexion ou inscription. </button></div>
+					<div class="col"></div>
+				</div>
+			</div>
+			<div id="video1" class="tabcontent" style="color: black; background-color: white; text-align: center;">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/rifnYPSXxpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
+			<div id="video2" class="tabcontent" style="color: black; background-color: white; text-align: center;">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div id="video3" class="tabcontent" style="color: black; background-color: white; text-align: center;">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/eDZFzYoPI-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div id="video4" class="tabcontent" style="color: black; background-color: white; text-align: center;">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Y96X0sEV-3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div id="video5" class="tabcontent" style="color: black; background-color: white; text-align: center;">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
     </section>
     <!--/contenido-->
 	<!--actividades-->
@@ -604,6 +653,7 @@
     <script src="js/inicializacion.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script>
+	document.getElementById("defaultOpen").click();
 	var slideIndex = [1, 1, 1];
 	var slideId = ["mySlides1", "mySlides2", "mySlides3"]
 	showSlides(1, 0);
