@@ -304,40 +304,26 @@
 		<!--/Presentación Genially-->
 
 		<!--Conjunto de Videos YouTube-->
-		<section class=" text-white">
-			<div class="container contenedor-seccion">
-        <div class="row fondo_morado">
-          <div class="col-6 text-center">
-            <button onclick="mostrarVideo1()" style="width: 100%" class="fondo_morado" style="outline: none;">
-                <p>Video 1</p>
-          </button>
-		  </div>
-          <div class="col-6 text-center">
-            <button onclick="mostrarVideo2()" style="width: 100%" class="fondo_morado">
-                <p >Video 2</p>
-            </button>
-          </div>
-      </div>
-	      <div id="video1" style="display: block;" class="align-items-center">
-					<div class="embed-responsive embed-responsive-16by9">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/x7hEghXDWRk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
-						<figure class="embed-responsive-item" style="display: block; text-align: center">
-							<figcaption class="figure-caption text-black text-right">Rodrigo Garc&iacute;a (2021, 13 julio). <em>Ejercicio con vocales. </em>[Video]. YouTube.</figcaption>
-						</figure>
-					</div>
-				<div id="video2" style="display: none;" class="align-items-center">
-					<div class="embed-responsive embed-responsive-16by9">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/1miohLVZobE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
-						<figure class="embed-responsive-item" style="display: block; text-align: center">
-							<figcaption class="figure-caption text-black text-right">Orchestratineret (2011, 16 septiembre). <em>Haydn-Toy Symphony. </em>[Video]. YouTube.</figcaption>
-						</figure>
-					</div>
-				</div>
+
+		<div class="tab">
+			<div class="row">
+				<div class="col"></div>
+				<div class="col"><button class="tablinks linksvideos1" onclick="abrirFuente(event, 'video1')">Video 1</button></div>
+				<div class="col"></div>
+				<div class="col"><button class="tablinks linksvideos1" onclick="abrirFuente(event, 'video2')">Video 2</button></div>
+				<div class="col"></div>
 			</div>
 		</div>
-    </section>
+
+		<div id="video1" class="tabcontent contentvideos1" style="color: black; background-color: white;">
+			<p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/x7hEghXDWRk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+			<figcaption class="figure-caption text-black text-right">Rodrigo Garc&iacute;a (2021, 13 julio). <em>Ejercicio con vocales. </em>[Video]. YouTube.</figcaption>
+		</div>
+		<div id="video2" class="tabcontent contentvideos1" style="color: black; background-color: white;">
+			<p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/1miohLVZobE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+			<figcaption class="figure-caption text-black text-right">Orchestratineret (2011, 16 septiembre). <em>Haydn-Toy Symphony. </em>[Video]. YouTube.</figcaption>
+		</div>
+
     
     <!--Conjunto de Videos YouTube-->
 
@@ -375,7 +361,7 @@
 		<div style="color: black">
 			<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/613fe9c79b03b90d66a2aff4" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
 		</div>
-
+		
 		<br>
 	</div>
 	</div>
@@ -877,25 +863,19 @@
 	  document.getElementById(fuente).style.display = "block";
 	  evt.currentTarget.className += " active";
 	}
-	function mostrarVideo1() {
-	  var x = document.getElementById("video1");
-	  var y = document.getElementById("video2");
-	  if (x.style.display === "none") {
-		x.style.display = "block";
-		y.style.display = "none";
-	  } 
+	function abrirVideos1(evt, video) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("contentvideos1");
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("linksvideos1");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(fuente).style.display = "block";
+	  evt.currentTarget.className += " active";
 	}
-	function mostrarVideo2() {
-	  var x = document.getElementById("video1");
-	  var y = document.getElementById("video2");
-	  if (y.style.display === "none") {
-		x.style.display = "none";
-		y.style.display = "block";
-	  } 
-	}
-
-
-	
 	</script>
   </body>
 </html>
