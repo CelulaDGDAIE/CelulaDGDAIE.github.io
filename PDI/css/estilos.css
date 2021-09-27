@@ -1,0 +1,565 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+#imagen-introduccion{
+    width:75%;
+    height:75%;
+}
+
+
+#modulo1-imagen-introduccion {
+    width: 40%;
+}
+
+#modulo1-imagen-proposito{
+    width:40%;
+}
+
+#modulo1-tema1-imagen-1 {
+    width: 30%;
+}
+
+#modulo1-tema2-imagen-1 {
+    width: 30%;
+}
+
+#modulo1-tema3-imagen-1 {
+    width: 25%;
+}
+
+#modulo1-tema4-imagen-1 {
+    width: 40%;
+}
+
+
+
+/*#imagen-tema-1 {
+    width: 45%;    
+}
+
+#imagen-tema-2 {
+    width: 45%;
+}
+
+#imagen-tema-4 {
+    width: 45%;
+}
+*/
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+/*@media (min-width: 576px) {
+
+}
+*/
+/* Medium devices (tablets, 768px and up)*/
+/*@media (min-width: 768px) {
+    
+}*/
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #imagen-introduccion {
+        width: 65%;
+        height: 65%;
+    }
+
+    #imagen-tema-1 {
+        width: 35%;
+    }
+
+    #imagen-tema-2 {
+        width: 35%;
+    }
+
+    #imagen-tema-4 {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+/*@media (min-width: 1200px) {
+    
+}*/
+
+
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding-top: none;
+  padding-right: 80px;
+  padding-bottom: none;
+  padding-left: 80px;
+  text-align: justify;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: white;
+  background-color: rgba(0,0,0,0.2);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
+.imagenNormal{
+	height : 200px;
+	width : 200px;
+
+}
+
+
+
+.imagen-unidad{
+	width: 70%;
+	margin: auto;
+	display: block;
+}
+
+#modulo1{
+	background-image: url('../images/libro-abierto.png');
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center;
+	
+	
+}
+#modulo1:hover {
+	
+	background-image: url('../images/modulo1.png');
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center;
+	
+}
+#modulo2{
+	background-image: url('../images/libro.png');
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center;
+	
+}
+#modulo2:hover {
+	background-image: url('../images/modulo2.png');
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center;
+}
+#modulo3{
+	background-image: url('../images/gorra.png');
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center;
+	
+}
+#modulo3:hover {
+	background-image: url('../images/modulo3.png');
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center;
+}
+#modulo4{
+	background-image: url('../images/graduado.png');
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center;
+	
+}
+#modulo4:hover {
+	background-image: url('../images/modulo4.png');
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center;
+}
+
+
+
+
+
+@media screen and (max-width: 1500px){
+	#modulo1{
+	background-image: url('../images/libro-abierto.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	}
+	#modulo1:hover {
+	
+	background-image: url('../images/modulo1.png');
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center;
+	
+}
+#modulo2{
+	background-image: url('../images/libro.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	
+}
+#modulo2:hover {
+	background-image: url('../images/modulo2.png');
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center;
+}
+#modulo3{
+	background-image: url('../images/gorra.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	
+}
+#modulo3:hover {
+	background-image: url('../images/modulo3.png');
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center;
+}
+#modulo4{
+	background-image: url('../images/graduado.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	
+}
+#modulo4:hover {
+	background-image: url('../images/modulo4.png');
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center;
+}
+.imagen-unidad{
+	width: 180%;
+}
+	
+
+  
+}
+@media screen and (max-width: 1625px){
+	#modulo1{
+	background-image: url('../images/libro-abierto.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	}
+	#modulo1:hover {
+	
+	background-image: url('../images/modulo1.png');
+	background-repeat: no-repeat;
+	background-size: 350px 200px;
+	background-position: center;
+	
+}
+#modulo2{
+	background-image: url('../images/libro.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	
+}
+#modulo2:hover {
+	background-image: url('../images/modulo2.png');
+	background-repeat: no-repeat;
+	background-size: 350px 200px;
+	background-position: center;
+}
+#modulo3{
+	background-image: url('../images/gorra.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	
+}
+#modulo3:hover {
+	background-image: url('../images/modulo3.png');
+	background-repeat: no-repeat;
+	background-size: 350px 200px;
+	background-position: center;
+}
+#modulo4{
+	background-image: url('../images/graduado.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	
+}
+#modulo4:hover {
+	background-image: url('../images/modulo4.png');
+	background-repeat: no-repeat;
+	background-size: 350px 200px;
+	background-position: center;
+}
+.imagen-unidad{
+	width: 100%;
+}
+}
+
+
+
+@media screen and (max-width: 1750px){
+	#modulo1{
+	background-image: url('../images/libro-abierto.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	}
+	#modulo1:hover {
+	
+	background-image: url('../images/modulo1.png');
+	background-repeat: no-repeat;
+	background-size: 300px 200px;
+	background-position: center;
+	
+}
+#modulo2{
+	background-image: url('../images/libro.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	
+}
+#modulo2:hover {
+	background-image: url('../images/modulo2.png');
+	background-repeat: no-repeat;
+	background-size: 300px 200px;
+	background-position: center;
+}
+#modulo3{
+	background-image: url('../images/gorra.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	
+}
+#modulo3:hover {
+	background-image: url('../images/modulo3.png');
+	background-repeat: no-repeat;
+	background-size: 300px 200px;
+	background-position: center;
+}
+#modulo4{
+	background-image: url('../images/graduado.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	
+}
+#modulo4:hover {
+	background-image: url('../images/modulo4.png');
+	background-repeat: no-repeat;
+	background-size: 300px 200px;
+	background-position: center;
+}
+.imagen-unidad{
+	width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 2000px){
+	#modulo1{
+	background-image: url('../images/libro-abierto.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	}
+	#modulo1:hover {
+	
+	background-image: url('../images/modulo1.png');
+	background-repeat: no-repeat;
+	background-size: 400px 200px;
+	background-position: center;
+	
+}
+#modulo2{
+	background-image: url('../images/libro.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	
+}
+#modulo2:hover {
+	background-image: url('../images/modulo2.png');
+	background-repeat: no-repeat;
+	background-size: 400px 200px;
+	background-position: center;
+}
+#modulo3{
+	background-image: url('../images/gorra.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	
+}
+#modulo3:hover {
+	background-image: url('../images/modulo3.png');
+	background-repeat: no-repeat;
+	background-size: 400px 200px;
+	background-position: center;
+}
+#modulo4{
+	background-image: url('../images/graduado.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	
+}
+#modulo4:hover {
+	background-image: url('../images/modulo4.png');
+	background-repeat: no-repeat;
+	background-size: 400px 200px;
+	background-position: center;
+}
+.imagen-unidad{
+	width: 100%;
+}
+	
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#evalDes{
+	background-image: url('../images/modulo1/slide3.jpg');
+	background-repeat: no-repeat;
+	background-size: 300px 100px;
+}
+#evalDes:hover {
+	background-image: url('../images/eval.jpg');
+	background-repeat: no-repeat;
+	background-size: 300px 100px;
+}
+
+
+
+
+.evaluacion,
+.apartadoModulo {
+    /*background-image: url('../images/moduloNormal.png');
+	background-repeat: no-repeat;
+	*/
+	background-color: #355ca7;
+	background-size: 100px 100px;
+    margin: 1px;
+    font-size: 1.5em;
+}
+.evaluacion {
+    height: 200px;
+    line-height: 200px;
+}
+.apartadoModulo {
+    height: 200px;
+    line-height: 100px;
+}
+
+
+#overlay {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(108,189,180);
+background: linear-gradient(90deg, rgba(108,189,180,0.5) 0%, rgba(76,91,252,0.5) 50%, rgba(53,92,167,0.5) 100%);
+  z-index: 2;
+}
