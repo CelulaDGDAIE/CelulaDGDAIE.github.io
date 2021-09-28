@@ -48,12 +48,12 @@
 	
 	
 
-	@media screen and (max-width: 2000px){
+	@media screen and (max-width: 2000px){ /*laptop casa*/
 	  .row{
 			display:flex;
 			flex-wrap:wrap;
-			margin-right:-160px;
-			margin-left:-160px;
+			margin-right:-10px;
+			margin-left:-10px;
 		}
 	}
 	
