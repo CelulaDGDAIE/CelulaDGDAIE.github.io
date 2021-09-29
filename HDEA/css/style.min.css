@@ -30,14 +30,46 @@
 			max-width:1140px
 		}
 	}
+	@media(min-width: 1500px){
+		.container-xl,.container-lg,.container-md,.container-sm,.container{
+			max-width:1180px
+		}
+	}
+	
+	@media(min-width: 1800px){/*computadora DAFIE*/
+		.container-xl,.container-lg,.container-md,.container-sm,.container{
+			max-width:1490px
+		}
+	}
+	@media(min-width: 1900px){
+		.container-xl,.container-lg,.container-md,.container-sm,.container{
+			max-width:1390px
+		}
+	}
+	
+	
+	
+	/*@media(min-width: 1700px){
+		.container-xl,.container-lg,.container-md,.container-sm,.container{
+			max-width:1290px
+		}
+	}*/
+	@media(min-width: 2000px){
+		.container-xl,.container-lg,.container-md,.container-sm,.container{
+			max-width:1390px
+		}
+	}
 	.row{
 		display:flex;
 		flex-wrap:wrap;
 		margin-right:-100px;
 		margin-left:-100px;
 	}
+	@media(min-width: 1800px){/*computadora DAFIE*/
+		
+	}
 
-	@media screen and (max-width: 1500px){
+	/*@media screen and (max-width: 1500px){
 	  .row{
 			display:flex;
 			flex-wrap:wrap;
@@ -48,14 +80,14 @@
 	
 	
 
-	@media screen and (max-width: 2000px){ /*laptop casa*/
+	@media screen and (max-width: 2000px){ 
 	  .row{
 			display:flex;
 			flex-wrap:wrap;
 			margin-right:-10px;
 			margin-left:-10px;
 		}
-	}
+	}*/
 	
 	
 	.no-gutters{
