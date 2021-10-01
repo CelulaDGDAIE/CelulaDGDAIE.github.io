@@ -90,7 +90,7 @@ img {vertical-align: middle;}
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev, .next, .prevGeni, .nextGeni {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -104,6 +104,7 @@ img {vertical-align: middle;}
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+
 
 .prev {
   left: -9%;
@@ -219,12 +220,13 @@ img {vertical-align: middle;}
 .tab {
   overflow: hidden;
   border-radius: 20px;
-  background-color: #6377A9;
+  background-color: #4C5BFC;
+  max-width: 1800px;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: #6377A9;
+  background-color: #4C5BFC;
   color: white;
   float: left;
   border: none;
@@ -235,7 +237,7 @@ img {vertical-align: middle;}
   font-size: 17px;
 }
 .tab .tabTema{
-  background-color: #355ca7;
+  background-color: #4C5BFC;
   color: white;
   float: left;
   border: none;
@@ -253,8 +255,8 @@ img {vertical-align: middle;}
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: white;
-  color: black;
+  background-color: #6CBDB4;
+  color: white;
 }
 
 /* Style the tab content */
@@ -263,6 +265,7 @@ img {vertical-align: middle;}
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+
 }
 
 .fuente{
@@ -275,6 +278,14 @@ img {vertical-align: middle;}
 .fondo_azul{
 	background-color: #4c5bfc;
 }
+.disclaimer{
+	font-size: small;
+	margin-left:15.65pt;
+	text-indent:-15.65pt;
+	margin:0.3em;
+	color: black;
+}
+
 
 @media screen and (max-width: 1500px){
 	/* Slideshow container */
@@ -293,7 +304,85 @@ img {vertical-align: middle;}
 	  border-radius: 3px 0 0 3px;
 	}
 }
-
+@media(min-width: 1300px){/*computadora casa*/
+	.container-xl,.container-lg,.container-md,.container-sm,.container{
+		max-width:920px
+	}
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 900px;
+	  position: relative;
+	  margin: auto;
+	}
+	.prev {
+	  left: -10%;
+	  border-radius: 3px 0 0 3px;
+	}
+	/* Position the "next button" to the right */
+	.next {
+	  right: -10%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.prevGeni {
+	  left: 20%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.nextGeni {
+	  right: 20%;
+	  border-radius: 3px 0 0 3px;
+	}
+	#imagenIntroduccion{
+		width: 100%;
+	}
+	#textoIntroduccion{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#imagenProposito{
+		width: 100%;
+	}
+	#textoProposito{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#br3{
+		display: block;
+	}
+	#br4{
+		display: block;
+	}
+	#brInicio{
+		display: block;
+	}
+	#textoTema2{
+		font-size: 90%;
+		text-align: justify;
+	}
+	#img3{
+		font-size: 70%;
+	}
+	#img4{
+		font-size: 100%;
+	}
+	#textoTema22{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#textoIntroFase2{
+		font-size: 90%;
+		text-align: justify;
+	}
+	#textoPropFase2{
+		font-size: 180%;
+		text-align: justify;
+	}
+	.imagenLogo{
+		width: 40%;
+	}
+	.geniallyFrame{
+		width: 40%;
+	}
+}
 
 
 

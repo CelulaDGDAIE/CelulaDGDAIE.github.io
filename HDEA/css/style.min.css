@@ -30,11 +30,7 @@
 			max-width:1140px
 		}
 	}
-	@media(min-width: 1500px){
-		.container-xl,.container-lg,.container-md,.container-sm,.container{
-			max-width:1180px
-		}
-	}
+	
 	
 	@media(min-width: 1800px){/*computadora DAFIE*/
 		.container-xl,.container-lg,.container-md,.container-sm,.container{

@@ -180,340 +180,6 @@ q {font-style: italic;}
 	display: block;
 }
 
-#modulo1{
-	background-image: url('../images/libro-abierto.png');
-	background-repeat: no-repeat;
-	background-size: 200px 200px;
-	background-position: center;
-	
-	
-}
-#modulo1:hover {
-	
-	background-image: url('../images/modulo1.png');
-	background-repeat: no-repeat;
-	background-size: 200px 200px;
-	background-position: center;
-	
-}
-#modulo2{
-	background-image: url('../images/libro.png');
-	background-repeat: no-repeat;
-	background-size: 200px 200px;
-	background-position: center;
-	
-}
-#modulo2:hover {
-	background-image: url('../images/modulo2.png');
-	background-repeat: no-repeat;
-	background-size: 200px 200px;
-	background-position: center;
-}
-#modulo3{
-	background-image: url('../images/gorra.png');
-	background-repeat: no-repeat;
-	background-size: 200px 200px;
-	background-position: center;
-	
-}
-#modulo3:hover {
-	background-image: url('../images/modulo3.png');
-	background-repeat: no-repeat;
-	background-size: 200px 200px;
-	background-position: center;
-}
-#modulo4{
-	background-image: url('../images/graduado.png');
-	background-repeat: no-repeat;
-	background-size: 200px 200px;
-	background-position: center;
-	
-}
-#modulo4:hover {
-	background-image: url('../images/modulo4.png');
-	background-repeat: no-repeat;
-	background-size: 200px 200px;
-	background-position: center;
-}
-
-
-
-
-
-@media screen and (max-width: 1500px){
-	#modulo1{
-	background-image: url('../images/libro-abierto.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center;
-	}
-	#modulo1:hover {
-	
-	background-image: url('../images/modulo1.png');
-	background-repeat: no-repeat;
-	background-size: 200px 200px;
-	background-position: center;
-	
-}
-#modulo2{
-	background-image: url('../images/libro.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center;
-	
-}
-#modulo2:hover {
-	background-image: url('../images/modulo2.png');
-	background-repeat: no-repeat;
-	background-size: 200px 200px;
-	background-position: center;
-}
-#modulo3{
-	background-image: url('../images/gorra.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center;
-	
-}
-#modulo3:hover {
-	background-image: url('../images/modulo3.png');
-	background-repeat: no-repeat;
-	background-size: 200px 200px;
-	background-position: center;
-}
-#modulo4{
-	background-image: url('../images/graduado.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center;
-	
-}
-#modulo4:hover {
-	background-image: url('../images/modulo4.png');
-	background-repeat: no-repeat;
-	background-size: 200px 200px;
-	background-position: center;
-}
-.imagen-unidad{
-	width: 180%;
-}
-	
-
-  
-}
-@media screen and (max-width: 1625px){
-	#modulo1{
-	background-image: url('../images/libro-abierto.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center;
-	}
-	#modulo1:hover {
-	
-	background-image: url('../images/modulo1.png');
-	background-repeat: no-repeat;
-	background-size: 350px 200px;
-	background-position: center;
-	
-}
-#modulo2{
-	background-image: url('../images/libro.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center;
-	
-}
-#modulo2:hover {
-	background-image: url('../images/modulo2.png');
-	background-repeat: no-repeat;
-	background-size: 350px 200px;
-	background-position: center;
-}
-#modulo3{
-	background-image: url('../images/gorra.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center;
-	
-}
-#modulo3:hover {
-	background-image: url('../images/modulo3.png');
-	background-repeat: no-repeat;
-	background-size: 350px 200px;
-	background-position: center;
-}
-#modulo4{
-	background-image: url('../images/graduado.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center;
-	
-}
-#modulo4:hover {
-	background-image: url('../images/modulo4.png');
-	background-repeat: no-repeat;
-	background-size: 350px 200px;
-	background-position: center;
-}
-.imagen-unidad{
-	width: 100%;
-}
-}
-
-
-
-@media screen and (max-width: 1750px){
-	#modulo1{
-	background-image: url('../images/libro-abierto.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center;
-	}
-	#modulo1:hover {
-	
-	background-image: url('../images/modulo1.png');
-	background-repeat: no-repeat;
-	background-size: 300px 200px;
-	background-position: center;
-	
-}
-#modulo2{
-	background-image: url('../images/libro.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center;
-	
-}
-#modulo2:hover {
-	background-image: url('../images/modulo2.png');
-	background-repeat: no-repeat;
-	background-size: 300px 200px;
-	background-position: center;
-}
-#modulo3{
-	background-image: url('../images/gorra.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center;
-	
-}
-#modulo3:hover {
-	background-image: url('../images/modulo3.png');
-	background-repeat: no-repeat;
-	background-size: 300px 200px;
-	background-position: center;
-}
-#modulo4{
-	background-image: url('../images/graduado.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center;
-	
-}
-#modulo4:hover {
-	background-image: url('../images/modulo4.png');
-	background-repeat: no-repeat;
-	background-size: 300px 200px;
-	background-position: center;
-}
-.imagen-unidad{
-	width: 100%;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 2000px){
-	#modulo1{
-	background-image: url('../images/libro-abierto.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center;
-	}
-	#modulo1:hover {
-	
-	background-image: url('../images/modulo1.png');
-	background-repeat: no-repeat;
-	background-size: 400px 200px;
-	background-position: center;
-	
-}
-#modulo2{
-	background-image: url('../images/libro.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center;
-	
-}
-#modulo2:hover {
-	background-image: url('../images/modulo2.png');
-	background-repeat: no-repeat;
-	background-size: 400px 200px;
-	background-position: center;
-}
-#modulo3{
-	background-image: url('../images/gorra.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center;
-	
-}
-#modulo3:hover {
-	background-image: url('../images/modulo3.png');
-	background-repeat: no-repeat;
-	background-size: 400px 200px;
-	background-position: center;
-}
-#modulo4{
-	background-image: url('../images/graduado.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center;
-	
-}
-#modulo4:hover {
-	background-image: url('../images/modulo4.png');
-	background-repeat: no-repeat;
-	background-size: 400px 200px;
-	background-position: center;
-}
-.imagen-unidad{
-	width: 100%;
-}
-	
-
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -553,6 +219,9 @@ q {font-style: italic;}
 
 
 #overlay {
+	border-style: solid;
+  border-color: #355CA7;
+  border-width: 15px;
   position: absolute;
   display: block;
   top: 0;
@@ -563,3 +232,106 @@ q {font-style: italic;}
 background: linear-gradient(90deg, rgba(108,189,180,0.5) 0%, rgba(76,91,252,0.5) 50%, rgba(53,92,167,0.5) 100%);
   z-index: 2;
 }
+
+.fondo-verde{
+	background-color: #3cadb8;
+}
+.fondo-azul-claro{
+	background-color: #4c5bfc;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.disclaimer{
+	font-size: small;
+	margin-left:15.65pt;
+	text-indent:-15.65pt;
+	margin:0.3em;
+ color: black;
+}
+
+
+@media(min-width: 1300px){/*computadora casa*/
+	.container-xl,.container-lg,.container-md,.container-sm,.container{
+		max-width:920px
+	}
+	#imagenPresentacion{
+		width: 90%:
+	}
+	#textoPresentacion{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#br1{
+		display: block;
+	}
+	#br2{
+		display: block;
+	}
+	#textoUnidad{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#imagenUnidad{
+		width: 100%;
+	}
+	.apartadoModulo {
+		height: 200px;
+		line-height: 100px;
+		background-repeat: no-repeat;
+		background-size: 100px 100px;
+		background-position: center;
+	}
+	.apartadoModulo:hover {
+		background-repeat: no-repeat;
+		background-size: 270px 200px;
+		background-position: center;
+	}
+	#modulo1{
+		background-image: url('../images/modulo1.png');
+	}
+	#modulo1:hover {
+		background-image: url('../images/modulo1-hover.png');
+	}
+	#modulo2{
+		background-image: url('../images/modulo2.png');
+	}
+	#modulo2:hover {
+		background-image: url('../images/modulo2-hover.png');
+	}
+	#modulo3{
+		background-image: url('../images/modulo3.png');
+	}
+	#modulo3:hover {
+		background-image: url('../images/modulo3-hover.png');
+	}
+	#modulo4{
+		background-image: url('../images/modulo4.png');
+	}
+	#modulo4:hover {
+		background-image: url('../images/modulo4-hover.png');
+	}
+	#apartadoEvaluacion {
+		background-image: url('../images/cuaderno.png');
+		height: auto;
+		line-height: 100px;
+		background-repeat: no-repeat;
+		background-size: 250px 250px;
+		background-position: center;
+	}
+	#apartadoEvaluacion:hover {
+		background-image: url('../images/eval-hover.png');
+	}
+	
+	.imagen-unidad{
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
