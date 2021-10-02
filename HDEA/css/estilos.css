@@ -256,12 +256,14 @@ table, th, td {
 }
 
 @media(min-width: 1100px){/*zoom +*/
-	
+	.h4{
+		font-size: 95%;
+	}
 	.container-xl,.container-lg,.container-md,.container-sm,.container{
-		max-width:750px
+		max-width:800px
 	}
 	.filaModulo{
-		width: 835px;
+		width: 755px;
 		padding: none;
 	}
 	.col-sm-3half, .col-sm-8half {
@@ -276,10 +278,10 @@ table, th, td {
 		background-color: #dbdbdb;
     }
 	#imagenPresentacion{
-		width: 10%:
+		width: 90%:
 	}
 	#textoPresentacion{
-		font-size: 100%;
+		font-size: 90%;
 		text-align: justify;
 	}
 	#br1{
@@ -294,16 +296,16 @@ table, th, td {
 	}
 	.apartadoModulo {
 		position:relative;
-		height: 200px;
+		height: 150px;
 		line-height: 100px;
 		background-repeat: no-repeat;
-		background-size: 175px 175px;
+		background-size: 120px 120px;
 		background-position: center;
 	}
 
 	.apartadoModulo:hover {
 		background-repeat: no-repeat;
-		background-size: 410px 200px;
+		background-size: 390px 150px;
 		background-position: center;
 	}
 	#modulo1{
@@ -346,10 +348,10 @@ table, th, td {
 		width: 90%;
 	}
 	#compensacionUnidad{
-		height: 100px;
+		height: 80px;
 	}
 	#compensacionUnidad2{
-		height: 115px;
+		height: 80px;
 	}
 	
 	#compensacionTextoUnidad{
@@ -365,6 +367,9 @@ table, th, td {
 
 
 @media(min-width: 1300px){/*computadora casa*/
+	.h4{
+		font-size: 100%;
+	}
 	.container-xl,.container-lg,.container-md,.container-sm,.container{
 		max-width:920px
 	}
