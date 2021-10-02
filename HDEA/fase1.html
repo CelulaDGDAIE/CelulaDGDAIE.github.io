@@ -222,27 +222,13 @@
 	  </div>
 
 	  <div class="mySlides1">
+	  <div class="row fondo_azul" id="compensacionProposito1"></div>
 		<div class="row">
 			<div class="col fondo_azul">
-				
-				<br id="br3">
-				<br id="br4">
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
+				<div id="compensacionProposito2"></div>
 				<h3 class="font-weight-bold"><i class="fas fa-book-reader"></i> Propósito</h3>
-				<br>
+				
 				<p id="textoProposito">Identificar los usos de las plataformas digitales para la enseñanza y el aprendizaje en la educación formal.</p>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-
 			</div>
 			  <div class="col d-flex align-items-center fondo_azul">
 				<figure class="figure">
@@ -258,69 +244,51 @@
 				</figure>
 			  </div>
 			</div>
+			<div class="row fondo_azul" id="compensacionProposito3"></div>
 	  </div>
 	  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
 	  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 	</div>
-
-    </section>
-    <!--/Presentación-->
-    <br>
-	
-	
-<!--contenido-->
-    <section class=" text-white">
+	<br>
+	<div class="tab">
+		<div class="row">
+			<div class="col"></div>
+			<div class="col-3"><button class="tablinks tabTema" onclick="abrirPestana(event, 'plataforma', 'tabTema1')" id="defaultOpen">1.1 Tipos de plataformas digitales de aprendizaje</button></div>
+			<div class="col"></div>
+			<div class="col-3"><button class="tablinks tabTema" onclick="abrirPestana(event, 'uso', 'tabTema1')">¿Cómo saber qué plataforma le conviene usar?</button></div>
+			<div class="col"></div>
+		</div>
+	</div>
+	<div id="plataforma" class="tabcontent tabTema1" style="color: white; background-color: #6CBDB4; border-radius: 20px;">
+		<p>Una plataforma de aprendizaje digital es un programa inform&aacute;tico o <em>software</em> dise&ntilde;ado espec&iacute;ficamente para ayudar en la creaci&oacute;n, gesti&oacute;n y distribuci&oacute;n de actividades docentes. Est&aacute;n estrechamente relacionadas con el desarrollo del <em>e-</em><em>learning</em>, que es una modalidad de ense&ntilde;anza combinada con herramientas digitales, y la educaci&oacute;n a distancia, que es una de sus principales &aacute;reas de aplicaci&oacute;n.</p>
+	</div>
+	<div id="uso" class="tabcontent tabTema1" style="color: white; background-color: #6CBDB4; border-radius: 20px;">
+		<p>Si está pensando en utilizar alguna plataforma digital para trabajar su experiencia educativa o capacitación, éstos son algunos puntos que debe considerar al elegirla: </p>
+		<ol>
+			<li>Que brinde herramientas de gestión que le faciliten su uso para que pueda concentrarse en el proceso de aprendizaje y no en la tecnología. </li>
+			<li>Que esté siempre disponible. Es conveniente que su plataforma esté en línea y bajo demanda, así la podrá usar en donde sea y cuando la necesite. </li>
+			<li>Que sea ligera, con las herramientas y características justo como las requiera. Que sea flexible y se acople al modelo de enseñanza que usted elija. </li>
+			<li>Recuerde que la tecnología debe ayudarle y no convertirse en un obstáculo.</li>
+		</ol>
+	</div>
 	<div class="container contenedor-seccion">
-      <div class="tab" style="background-color: #4C5BFC">
-			<div class="row">
-				<div class="col"></div>
-				<div class="col"><button class="tablinks tabTema"  onclick="abrirFuente(event, 'plataforma')" id="defaultOpen">1.1 Tipos de plataformas digitales de aprendizaje</button></div>
-				<div class="col"></div>
-				<div class="col"><button class="tablinks tabTema" onclick="abrirFuente(event, 'uso')">¿Cómo saber qué plataforma le conviene usar?</button></div>
-				<div class="col"></div>
-			</div>
+		<div class="row">
+			  <div class="col">
+				<p style="color: black;">Las plataformas digitales comparten características entre sí, sin embargo, cada una es diferente. A continuación, puede consultar los cuatro tipos que existen actualmente:</p>
+				<figure class="figure">
+				  <img
+					src="images/fase1/Tabla_Herramientas_Digitales.png"
+					alt="Infografía pendiente"
+					class="img-fluid"
+				  />
+				  <figcaption class="figure-caption text-right text-black">
+					<span class="font-weight-bold">Elaboración propia</span>
+				  </figcaption>
+				</figure>
+			  </div>
 		</div>
-		<div id="plataforma" class="tabcontent" style="color: white; background-color: #6CBDB4; border-radius: 20px;">
-			<p>Una plataforma de aprendizaje digital es un programa inform&aacute;tico o <em>software</em> dise&ntilde;ado espec&iacute;ficamente para ayudar en la creaci&oacute;n, gesti&oacute;n y distribuci&oacute;n de actividades docentes. Est&aacute;n estrechamente relacionadas con el desarrollo del <em>e-</em><em>learning</em>, que es una modalidad de ense&ntilde;anza combinada con herramientas digitales, y la educaci&oacute;n a distancia, que es una de sus principales &aacute;reas de aplicaci&oacute;n.</p>
-		</div>
-
-		<div id="uso" class="tabcontent" style="color: white; background-color: #6CBDB4; border-radius: 20px;">
-			<p>Si está pensando en utilizar alguna plataforma digital para trabajar su experiencia educativa o capacitación, éstos son algunos puntos que debe considerar al elegirla: </p>
-					<ol>
-						<li>Que brinde herramientas de gestión que le faciliten su uso para que pueda concentrarse en el proceso de aprendizaje y no en la tecnología. </li>
-						<li>Que esté siempre disponible. Es conveniente que su plataforma esté en línea y bajo demanda, así la podrá usar en donde sea y cuando la necesite. </li>
-						<li>Que sea ligera, con las herramientas y características justo como las requiera. Que sea flexible y se acople al modelo de enseñanza que usted elija. </li>
-						<li>Recuerde que la tecnología debe ayudarle y no convertirse en un obstáculo.</li>
-					</ol>
-		</div>
-		
-		
-		</div>
-        
-
-		<div class="container contenedor-seccion">
-
-        <div class="row">
-          <div class="col">
-			<p style="color: black;">Las plataformas digitales comparten características entre sí, sin embargo, cada una es diferente. A continuación, puede consultar los cuatro tipos que existen actualmente:</p>
-			<figure class="figure">
-              <img
-                src="images/fase1/Tabla_Herramientas_Digitales.png"
-                alt="Infografía pendiente"
-                class="img-fluid"
-              />
-              <figcaption class="figure-caption text-right text-black">
-                <span class="font-weight-bold">Elaboración propia</span>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-       
-      </div>
-	  <div class="slideshow-container">
-		  <div class="mySlides2">
-			<div class="row">
-				<div class="col d-flex align-items-center fondo_azul" >
+		<div class="row" >
+			  <div class="col fondo_azul" style="text-align: center;">
 					<figure class="figure">
 					  <img
 						src="images/fase1/1 - teacher-doing-her-english-lessons-online.jpg"
@@ -332,22 +300,8 @@
 						[3]
 					  </figcaption>
 					</figure>
-				</div>
-				<div class="col fondo_azul" >
-					<h3 class="font-weight-bold">Tema 1.2: Plataformas para la enseñanza y para el aprendizaje</h3>
-					<div id="textoTema2">
-					<p>Las plataformas digitales se han convertido en un medio de comunicación importante en la actualidad, ya que nos posibilita estar presentes a pesar de la distancia.</p>
-					<p>En el ámbito educativo, se han convertido en un recurso indispensable para la continuidad y seguimiento del proceso de enseñanza-aprendizaje, pues son ahora una herramienta de trabajo para los docentes en sus diferentes niveles para acompañar a los alumnos. </p>
-					<p>El uso de plataformas virtuales ofrece una serie de ventajas en la enseñanza, entre ellas el acceso a la información, mantiene canales de comunicación permanentemente abiertos de manera asincrónica y, en otras, sincrónica. Además, permiten administrar y gestionar contenidos, ofrecen llevar un seguimiento puntual del alumno, así como la oportunidad de consultar el material relacionado con el curso en cualquier momento y en cualquier lugar. </p>
-					<p>La finalidad del uso de estas herramientas es la de mejorar el proceso de enseñanza-aprendizaje, sin embargo, a la par de las ventajas que éstas presentan, también existen algunas desventajas que pueden presentar retos en el proceso educativo.</p>
-					</div>
-				</div>
-			</div>
-		  </div>
-
-		  <div class="mySlides2">
-			<div class="row">
-				<div class="col-4 d-flex align-items-center fondo_verde" >
+			  </div>
+			  <div class="col fondo_verde" style="text-align: center;">
 					<figure class="figure">
 					  <img
 						src="images/fase1/1.2 pngwing.com (2).png"
@@ -359,99 +313,65 @@
 						[4]
 					  </figcaption>
 					</figure>
-				</div>
-				<div class="col-8 fondo_verde">
-					<div id="textoTema22">
-						<p>Llevar un curso bajo esta modalidad requiere de mayor esfuerzo y tiempo de dedicación por parte del facilitador, así como de contar con la motivación de los alumnos y su participación, para que se involucren en el proceso y la experiencia educativa. </p>
-						<p>Es importante recordar que para el uso de las plataformas virtuales como un recurso de apoyo, se requiere que el alumno y el facilitador dispongan de acceso permanente a los medios informáticos, pues es un aspecto absolutamente esencial. </p>
-						<p>En la Universidad Veracruzana contamos con una plataforma institucional: Eminus, que es una herramienta de apoyo que pretende flexibilizar el proceso de enseñanza-aprendizaje, favorece la importación y reutilización de recursos educativos, además de ofrecer actividades individuales y grupales para el logro de competencias académicas, permitiendo un seguimiento detallado acerca de la actividad escolar de los alumnos. </p>
-					</div>
-				</div>
-			</div>
-		  </div>
-
-
-		  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-		  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-	</div>
-	<br>
-	<div class="container contenedor-seccion">
-
-        <div class="row">
+			  </div>
+		</div>
+		<div class="row" style="color: black;">
+			  <div class="col fondo_azul text-white">
+					<h3 class="font-weight-bold">Tema 1.2: Plataformas para la enseñanza y para el aprendizaje</h3>
+					<p>Las plataformas digitales se han convertido en un medio de comunicación importante en la actualidad, ya que nos posibilita estar presentes a pesar de la distancia.</p>
+					<p>En el ámbito educativo, se han convertido en un recurso indispensable para la continuidad y seguimiento del proceso de enseñanza-aprendizaje, pues son ahora una herramienta de trabajo para los docentes en sus diferentes niveles para acompañar a los alumnos. </p>
+					<p>El uso de plataformas virtuales ofrece una serie de ventajas en la enseñanza, entre ellas el acceso a la información, mantiene canales de comunicación permanentemente abiertos de manera asincrónica y, en otras, sincrónica. Además, permiten administrar y gestionar contenidos, ofrecen llevar un seguimiento puntual del alumno, así como la oportunidad de consultar el material relacionado con el curso en cualquier momento y en cualquier lugar. </p>
+					<p>La finalidad del uso de estas herramientas es la de mejorar el proceso de enseñanza-aprendizaje, sin embargo, a la par de las ventajas que éstas presentan, también existen algunas desventajas que pueden presentar retos en el proceso educativo.</p>
+			  </div>
+			  <div class="col fondo_verde text-white">
+					<p>Llevar un curso bajo esta modalidad requiere de mayor esfuerzo y tiempo de dedicación por parte del facilitador, así como de contar con la motivación de los alumnos y su participación, para que se involucren en el proceso y la experiencia educativa. </p>
+					<p>Es importante recordar que para el uso de las plataformas virtuales como un recurso de apoyo, se requiere que el alumno y el facilitador dispongan de acceso permanente a los medios informáticos, pues es un aspecto absolutamente esencial. </p>
+					<p>En la Universidad Veracruzana contamos con una plataforma institucional: Eminus, que es una herramienta de apoyo que pretende flexibilizar el proceso de enseñanza-aprendizaje, favorece la importación y reutilización de recursos educativos, además de ofrecer actividades individuales y grupales para el logro de competencias académicas, permitiendo un seguimiento detallado acerca de la actividad escolar de los alumnos. </p>
+			  </div>
+		</div>
+		<br>
+		<div class="row">
           <div class="col">
 			<p style="color: black;">Ahora que tuvo la oportunidad de reflexionar acerca del uso de las plataformas, le invito a explorar algunas de ellas en la siguiente infografía y conocer más de cerca sus características y a qué parte del proceso se inclinan, al de enseñanza o al de aprendizaje: </p>
 			<div style="width: 100%;"><div style="position: relative; padding-bottom: 50%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1600px" height="800px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/60e7b8a7504f0f0d6e9260ab" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
           </div>
         </div>
-       
-      </div>
-	<br>
-		
-		
-		
-      
-    </section>
-    <!--/contenido-->
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-    
-	<!--actividades-->
-    <section class="text-black">
-      <div class="container contenedor-seccion" style="text-align: center;">
-        <div class="row mb-4">
-          <div class="col">
-            <h3>Evidencias de desempeño</em></h3>
-          </div>
-        </div>
-		<div class="row mb-4">
-		<div class="col-3"></div>
-		
+		<br>
+		<div class="row" style="text-align: center; color: black;">
+		  <div class="col">
+			<h3>Evidencias de desempeño</h3>
+		  </div>
+		</div>
+		<div class="row">
+		<div class="col-3"></div>	
 		<div class="col" style="text-align: center;" >
 		
 		<a href="#" data-toggle="modal" data-target="#modal-actividad">
-		<div id="actividad"></div>
-			<!--<div id="actividad"></div>
-			</a>
-		  <img src="images/fase1/actividad.png" alt="pendiente" id="actividad">-->
+			<div id="actividad"></div>
 		</a>
 		</div>
-		<div class="col-3"></div>
+			<div class="col-3"></div>
 		</div>
-      </div>
-    </section>
-    <!--/actividades 1-->
-	<!--Fuentes de Información-->
-    <section class="text-white">
-      <div class="container contenedor-seccion">
-        <div class="row mb-4">
-          <div class="col">
-            <h3 style="color: black"><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
-          </div>
-        </div>
+		<br>
+		<div class="row">
+		  <div class="col">
+			<h3 style="color: black"><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
+		  </div>
+		</div>
+		
+	</div>
+
 		<div class="tab">
 			<div class="row">
 				<div class="col"></div>
-				<div class="col"><button class="tablinks" onclick="abrirFuente(event, 'basicas')">Básicas</button></div>
+				<div class="col"><button class="tablinks" onclick="abrirPestana(event, 'basicas', 'tabFuentes')">Básicas</button></div>
 				<div class="col"></div>
-				<div class="col"><button class="tablinks" onclick="abrirFuente(event, 'complementarias')">Complementarias</button></div>
+				<div class="col"><button class="tablinks" onclick="abrirPestana(event, 'complementarias', 'tabFuentes')">Complementarias</button></div>
 				<div class="col"></div>
 			</div>
 		</div>
 
-		<div id="basicas" class="tabcontent" style="color: black; background-color: white;">
+		<div id="basicas" class="tabcontent tabFuentes" style="color: black; background-color: white;">
 			<p class="fuente">CENGAGE. (2021, 30 abril). <i>27 Plataformas virtuales educativas gratuitas</i>. <a href="https://latam.cengage.com/27-plataformas-virtuales-educativas-gratuitas/" target="_blank" rel="noopener">https://latam.cengage.com/27-plataformas-virtuales-educativas-gratuitas/</a></p>
 
 			<p class="fuente">Brown, A., &amp; Green, T. D. (2016). <i>The essentials of instructional design: Connecting fundamental principles with process and practice.</i> Third Edition. <a href="https://ikhsanaira.files.wordpress.com/2016/05/the-essential-of-instructional-design.pdf" target="_blank" rel="noopener">https://ikhsanaira.files.wordpress.com/2016/05/the-essential-of-instructional-design.pdf</a></p>
@@ -469,26 +389,16 @@
 			<p class="fuente">Riestra, E. (s. f.). <i>Las plataformas </i>e-learning para la enseñanza y el aprendizaje. Yeira E-learning. Recuperado 13 de julio de 2021 de: <a href="https://www.yeira.training/blog/plataformas-digitales-de-aprendizaje" target="_blank" rel="noopener">https://www.yeira.training/blog/plataformas-digitales-de-aprendizaje</a></p>
 		</div>
 
-		<div id="complementarias" class="tabcontent" style="color: black; background-color: white;">
+		<div id="complementarias" class="tabcontent tabFuentes" style="color: black; background-color: white;">
 			<p class="fuente">GoConqr en Español. (2015, mayo 6). <i>Cómo Crear Mapas Mentales con </i><i>GoConqr</i> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=-fHmt6Bcel0" target="_blank" rel="noopener">https://</a><a href="https://www.youtube.com/watch?v=-fHmt6Bcel0">www.youtube.com</a><a href="https://www.youtube.com/watch?v=-fHmt6Bcel0">/</a><a href="https://www.youtube.com/watch?v=-fHmt6Bcel0">watch?v</a><a href="https://www.youtube.com/watch?v=-fHmt6Bcel0">=-fHmt6Bcel0</a></p>
 			<p class="fuente">GoConqr - Transforma la forma en la que aprendes. (s. f.). GoConqr. Recuperado 2 de julio de 2021, de <u><a href="https://www.goconqr.com/es-ES" target="_blank" rel="noopener">https://</a></u><u><a href="https://www.goconqr.com/es-ES">www.goconqr.com/es-ES</a></u></p>
 		</div>
-
-        
+		
+		
+		
       </div>
     </section>
-    <!--/Fuentes de Información-->
-	
-	
-	
-	
-	
-	
-	
-	
-	
-    
-   
+	<br>
     <!--Disclaimer-->
     <section class="fondo_azul">
       <div class="container contenedor-menu-contenido">
@@ -583,7 +493,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body" style="background-color: #dbdbdb;">
+          <div class="modal-body actividad-modal">
             <p><u>Descripci&oacute;n:</u></p>
 			<ol>
 			<li>Despu&eacute;s de revisar la informaci&oacute;n de esta fase y explorar de manera general los tipos de plataformas digitales para la ense&ntilde;anza y el aprendizaje, elabore un mapa mental que incluya las principales caracter&iacute;sticas de &eacute;stas, as&iacute; como las diferencias en cada una de ellas. Para lo anterior, considere utilizar algunas de las siguientes herramientas:
@@ -681,9 +591,9 @@
 	  }
 	  x[slideIndex[no]-1].style.display = "block";  
 	}
-	function abrirFuente(evt, fuente) {
+	function abrirPestana(evt, fuente, tipo) {
 	  var i, tabcontent, tablinks;
-	  tabcontent = document.getElementsByClassName("tabcontent");
+	  tabcontent = document.getElementsByClassName(tipo);
 	  for (i = 0; i < tabcontent.length; i++) {
 		tabcontent[i].style.display = "none";
 	  }
@@ -694,6 +604,7 @@
 	  document.getElementById(fuente).style.display = "block";
 	  evt.currentTarget.className += " active";
 	}
+
 
 	
 	</script>

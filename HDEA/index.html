@@ -176,36 +176,33 @@
 
 
     </div>
-	<section>
-		<div class="container contenedor-seccion">
-			<div class="row">
-			
-				<div class="col">
-					
-					<div id="overlay"> 
-
-					
-					</div>
-						<video
-					style="max-width: 100%; height:auto;"
-					class="embed-responsive-item"
-					playsinline="playsinline"
-					autoplay="autoplay"
-					muted="muted"
-					loop="loop"
-				  >
-						  <source src="Videos/inter.mp4" type="video/mp4" />
-						</video>
-					
-			  </div>
-			</div>
-		</div>
-	</section>
+	<!--Video-->
+    <section id="video">
+      <div class="overlay"></div>
+      <video
+        class="embed-responsive-item"
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
+        <source src="Videos/inter.mp4" type="video/mp4" />
+      </video>
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white"></div>
+        </div>
+      </div>
+    </section>
+    <!--/Video-->
 
 		
     <section class="text-white" id="presentacion">
 	<div class="container contenedor-seccion">
-		<h3 style="color: #355CA7"><span class="font-weight-bold">Información general</span></h3>
+	<div class="row">
+					<h3 style="color: #355CA7"><span class="font-weight-bold">Información general</span></h3>
+            </div>
+		
 		<div class="row">
 			
 			<div class="col">
@@ -233,25 +230,14 @@
 						</div>
 					</div>
 					<div class="mySlides">
+					<div class="row fondo-azul-claro" id="compensacionUnidad"></div>
 						<div class="row fondo-azul-claro">
 							<div class="col">
 								
-								<br id="br1">
-								<br id="br2">
-								<br>
-								<br>
-								<br>
-								<br>
+								<div id="compensacionTextoUnidad"></div>
 								<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Unidad de competencia</h3>
 								<p id="textoUnidad">El participante incorpora las herramientas digitales como apoyo permanente dentro de su quehacer académico para propiciar en el estudiante aprendizajes significativos, en un ambiente de apertura, creatividad, tolerancia y colaboración.</p>
-								<br>
-								<br>
-								<br>
-								<br>
-								<br>
-								<br>
-								<br>
-								<br>
+								<div id="compensacionUnidad2"></div>
 
 							</div>
 							<div class="col d-flex align-items-center">
@@ -265,6 +251,7 @@
 								</figure>
 							</div>
 						</div>
+						<div class="row fondo-azul-claro" id="compensacionUnidad2"></div>
 					</div>
 				</div>
 				<a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -277,39 +264,35 @@
     <!--Contenido-->
     <section id="contenido">
         <div class="container contenedor-seccion text-white">
-            <div class="row mb-4">
-                <div class="col-6">
-					<h3 style="color: #355CA7"><span class="font-weight-bold">Desarrollo de la experiencia educativa</span></h3>
-                </div>
-				<div class="col-1"></div>
-				<div class="col-5">
-					<h3 style="color: #42b2b2"><span class="font-weight-bold">Evaluación de desempeño</span></h3>
-                </div>
-            </div>
             <div class="row">
-				<div class="col-1"></div>
-				<div class="col-8">
-				  <div class="row" >
-					<a href="fase1.html" class="col-5 apartadoModulo" id="modulo1" style="text-align: center;"></a>
-					<div class="col-1"></div>
-					<a href="fase2.html" class="col-5 apartadoModulo" id="modulo2" style="text-align: center;"></a>
+					<h4 style="color: #355CA7"><span class="font-weight-bold">Desarrollo de la experiencia educativa</span></h4>
+            </div>
+
+			
+            <div class="row">
+			<div class="col-margen"></div>
+				<div class="col" >
+				  <div class="row filaModulo">
+					<a href="fase1.html" class="col apartadoModulo" id="modulo1"></a>
+					<div id="separacionModulos"></div>
+					<a href="fase2.html" class="col apartadoModulo" id="modulo2"></a>
 				  </div>
-				  <br>
-				  <div class="row">
-					<a href="fase3.html" class="col-5 apartadoModulo" id="modulo3" style="text-align: center;"></a>
-					<div class="col-1"></div>
-					<a href="fase4.html" class="col-5 apartadoModulo" id="modulo4" style="text-align: center;"></a>
+				  <div id="separacionVerticalModulos"></div>
+				  <div class="row filaModulo">
+					<a href="fase3.html" class="col apartadoModulo" id="modulo3"></a>
+					<div id="separacionModulos"></div>
+					<a href="fase4.html" class="col apartadoModulo" id="modulo4"></a>
 				  </div>
 				</div>
-				<div class="col-1"></div>
-				<a class="col-2 d-flex align-items-center"
+				
+
+				<a class="col-3 d-flex align-items-center"
 					id="apartadoEvaluacion" 
 					style="background-color: #4c5bfc; text-align: center;"
 					href="#"
 					data-toggle="modal"
 					data-target="#modal-eval">
 					
-				  <!--<h2><i class="fas fa-tasks"></i> Evaluación de desempeño</h2>-->
 				</a>
 			</div>
         </div>
