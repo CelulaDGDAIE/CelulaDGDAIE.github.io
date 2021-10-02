@@ -37,7 +37,8 @@
 				<span class="sm-view h2 font-weight-bold"></span>
 
                 <p class=" lg-view p-0 m-0 font-weight-bold">
-                  Fase 1. Resultados deseados
+                  Fase 1: Resultados deseados
+
                 </p>
 				<p class=" sm-view p-0 m-0 font-weight-bold modulolargo">
 				
@@ -155,7 +156,7 @@
         href="#"
         data-toggle="tooltip"
         data-html="true"
-        title="Resultados  deseados"
+        title="Herramientas digitales para el aprendizaje formal"
       >
         <span class="font-weight-bold lead">1</span>
       </a>
@@ -164,7 +165,7 @@
         href="fase2.html"
         data-toggle="tooltip"
         data-html="true"
-        title="Pruebas aceptables."
+        title="Herramientas digitales para el aprendizaje informal"
       >
         <span class="font-weight-bold lead">2</span>
       </a>
@@ -173,52 +174,69 @@
         href="fase3.html"
         data-toggle="tooltip"
         data-html="true"
-        title="Experiencias de aprendizaje."
+        title="Herramientas digitales para crear contenido"
       >
         <span class="font-weight-bold lead">3</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu"
+        href="fase4.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="Herramientas digitales de colaboración y video conferencia"
+      >
+        <span class="font-weight-bold lead">4</span>
       </a>
 
     </div>
     <!--/Menú Izquierdo-->
 	<br>
+	<br class="brInicio">
     <!--Presentación-->
     <section class="text-white" id="presentacion">
 	<div class="slideshow-container">
 	  <div class="mySlides1">
 		<div class="row">
-			<div class="col-4 d-flex align-items-center fondo_verde" >
-				<figure class="figure" style="width: 50%; margin: auto; display: block;">
+			<div class="col d-flex align-items-center" style="background-color:#355ca7; text-align: right;">
+				<figure class="figure">
 				  <img
 					src="images/fase1/Proposito.jpg"
 					alt="imagen pendiente"
 					class="img-fluid"
+					id="imagenIntroduccion"
 				  />
-				  <figcaption class="figure-caption text-right text-white">
+				  <figcaption class="figure-caption text-white">
 					[1]
 				  </figcaption>
 				</figure>
 			</div>
-			<div class="col-8 fondo_verde" >
+			<div class="col" style="background-color:#355ca7;">
 				<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Introducción</h3>
-				<p>Educar al futuro profesionista va más allá de la transferencia de conocimientos, es necesario asegurarnos de cuáles habilidades y conocimientos va a adquirir en la experiencia educativa y cómo esperamos que los transfiera a las problemáticas de su vida laboral. </p>
+				<div id="textoIntroduccion">
+					<p>Con el avance de la ciencia y la tecnología, la práctica de la enseñanza también debería avanzar. Las necesidades de los estudiantes universitarios en el siglo XXI demandan diferentes estrategias de aprendizaje basadas en sus hábitos diarios, como el uso de herramientas digitales y aplicaciones. Ante esta situación, es importante comenzar a adoptar diferentes estrategias en el aula para apoyar el uso de tales instrumentos para desarrollar habilidades analíticas y de razonamiento.</p>
+					<p>En este sentido, revisaremos las herramientas digitales que favorecen la enseñanza y el aprendizaje, ya que como docentes necesitamos utilizarlas eficientemente en los procesos formativos y de capacitación. Además de conocer cuáles son, sus usos, y las utilidades que ofrecen, lo cual permitirá incluir las más adecuadas en nuestro quehacer académico.</p>
+				</div>
 			</div>
 					  
 		</div>
 	  </div>
 
 	  <div class="mySlides1">
+	  <div class="row fondo_azul" id="compensacionProposito1"></div>
 		<div class="row">
-			<div class="col-4 fondo_azul" >
+			<div class="col fondo_azul">
+				<div id="compensacionProposito2"></div>
 				<h3 class="font-weight-bold"><i class="fas fa-book-reader"></i> Propósito</h3>
-				<p>El académico identificará las competencias que planea desarrollar en los estudiantes a lo largo de una de las experiencias educativas a su cargo. </p>
 				
+				<p id="textoProposito">Identificar los usos de las plataformas digitales para la enseñanza y el aprendizaje en la educación formal.</p>
 			</div>
-			  <div class="col-8 d-flex align-items-center fondo_azul">
-				<figure class="figure" style="width: 100%; margin: auto; display: block;">
+			  <div class="col d-flex align-items-center fondo_azul">
+				<figure class="figure">
 				  <img
 					src="images/fase1/Introduccion.jpg"
 					alt="imagen pendiente"
 					class="img-fluid"
+					id="imagenProposito"
 				  />
 				  <figcaption class="figure-caption text-right text-white">
 					[2]
@@ -226,181 +244,161 @@
 				</figure>
 			  </div>
 			</div>
+			<div class="row fondo_azul" id="compensacionProposito3"></div>
 	  </div>
 	  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
 	  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 	</div>
-	
-	<div class="row">
-		<div class="col">
-			<div class="accordion" id="accordionTema1">
-			  <div class="card" style="background-color: #6ec493">
-				<div class="card-header" id="headingTema1">
-				  <h2 class="mb-0">
-					Tema 1.1. Los profesores somos diseñadores
-				  </h2>
-				</div>
-
-				<div
-				  id="collapseTema1"
-				  class="collapse"
-				  aria-labelledby="headingTema1"
-				  data-parent="#accordionTema1"
-				>
-				  <div class="card-body" style="background-color: white; color:black;">
-						<p>En la actualidad, y con la realidad a la que nos enfrentamos mundialmente, nos vemos envueltos en la necesidad de re-pensar el proceso de ense&ntilde;anza&nbsp; y aprendizaje, de manera que, como docentes, nos enfrentamos a diversos retos que implican, adem&aacute;s de seguirnos formando, pensar en el alumno y en la mejor manera de acompa&ntilde;arlo en el logro de los saberes y competencias a desarrollar.</p>
-						<p><strong>Sin embargo, desde </strong>hace mucho, y como parte de las actividades a ejercer como docente, nos hemos enfrentado al reto de dise&ntilde;ar diversas estrategias y experiencias enfocadas al aprendizaje de los alumnos, adapt&aacute;ndonos a las diversas exigencias y necesidades que la realidad nos plantea.</p>
-						<p>En este sentido, cada uno desarrolla su propia forma de dise&ntilde;ar y adopta las formas que mejor considera para este proceso creativo. No obstante, en esta experiencia educativa, el alumno podr&aacute; conocer e identificar el dise&ntilde;o invertido, mismo que se caracteriza por organizar el curso a partir de los objetivos finales de sus experiencias educativas.</p>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			<br>
-			<div class="accordion" id="accordionTema2">
-			  <div class="card" style="background-color: #6ec493">
-				<div class="card-header" id="headingTema2">
-				  <h2 class="mb-0">
-					Tema 1.2. ¿Qué es la planeación inversa? 
-				  </h2>
-				</div>
-
-				<div
-				  id="collapseTema2"
-				  class="collapse"
-				  aria-labelledby="headingTema2"
-				  data-parent="#accordionTema2"
-				>
-				  <div class="card-body" style="background-color: white; color:black;">
-						<p>Es com&uacute;n que se planifique el a&ntilde;o escolar a partir de lo que se pretende ense&ntilde;ar, asumiendo que es justamente eso lo que los alumnos necesitan aprender. Sin embargo, planificar a la inversa le ayudar&aacute; a centrarse en el aprendizaje (meta) en lugar de en la ense&ntilde;anza (proceso). Esta manera de planificar asegura que los alumnos adquieran los conocimientos, habilidades y contenidos que necesitan para tener &eacute;xito en su vida escolar, continuar sus estudios e incorporarse luego en la sociedad.</p>
-						<p>Al planear la experiencia educativa en torno a los objetivos finales, se organiza una progresi&oacute;n de objetivos coherentes y secuenciados que establecen una ruta clara de aprendizajes que se ir&aacute;n adquiriendo lecci&oacute;n a lecci&oacute;n. Empezar por el final es la mejor manera de asegurar que se lograr&aacute;n los objetivos propuestos. Planificar a la inversa requiere mirar hacia adelante.</p>
-						<p>Ense&ntilde;ar es m&aacute;s que s&oacute;lo entregar contenidos, se trata de que los alumnos entiendan ideas complejas y desarrollen su capacidad de pensar. Aunque al principio puede parecer contraintuitivo, planificar a la inversa es una manera efectiva de ayudar a los alumnos a manejar contenidos desafiantes, pues usted estar&aacute; constantemente pensando en qu&eacute; quiere que ellos aprendan y c&oacute;mo lo van a demostrar en cada lecci&oacute;n. As&iacute;, la evaluaci&oacute;n no ser&aacute; el punto final de la ense&ntilde;anza, sino el punto de partida.</p>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			<div style="color: black;">
-				<p>Para conocer más acerca del tema, revise lo siguiente: </p>
-				<p><span style="color: #ff0000;"><strong>Aqu&iacute; debe ir audio: Aprendizaje inverso</strong></span></p>
-				<p><strong>&iquest;C&oacute;mo hacer la planeaci&oacute;n inversa?</strong></p>
-				<p>Existen tres pasos b&aacute;sicos a considerar cuando se realiza una planificaci&oacute;n inversa:</p>
-				<p>a.&iquest;El objetivo de aprendizaje es claro?</p>
-				<p>Para identificar los objetivos de aprendizaje, es necesario enfocarse en aquello que esperamos que nuestros alumnos puedan hacer al finalizar su experiencia de aprendizaje. &iquest;Cu&aacute;les ser&aacute;n los conocimientos y experiencias claves que propiciar&aacute;n y/o potenciar&aacute;n el desarrollo de las competencias deseadas en el futuro profesional?</p>
-				<p>b.&iquest;C&oacute;mo se sabr&aacute; que se logr&oacute; el objetivo?</p>
-				<p>Una vez que tenemos claro qu&eacute; deber&iacute;an aprender y cu&aacute;l ser&aacute; el grado de dominio deseado, es momento de establecer los criterios de evaluaci&oacute;n de esta habilidad. &iquest;Trabajar&aacute;n un proyecto final, un portafolio de evidencias, un cuaderno de ejercicios, estudios de caso, ex&aacute;menes finales/modulares? &iquest;Qu&eacute; es lo que se revisar&aacute;, de qu&eacute; manera?</p>
-				<p>c.&iquest;Las actividades planificadas ayudan a cumplir el objetivo?</p>
-				<p>Ahora que ya tiene en mente el producto final y las herramientas de evaluaci&oacute;n, es momento de crear tanto los materiales did&aacute;cticos, as&iacute; como las interacciones y din&aacute;micas de trabajo que podr&aacute;n detonar las competencias buscadas en la experiencia educativa. Es decir, se requiere un cambio de enfoque del papel de profesor al de facilitador del aprendizaje, asegurando que todos y cada uno de nuestros estudiantes tengan los recursos y aprendizajes necesarios para tener &eacute;xito acad&eacute;mico y profesional.</p>
-				<p>&nbsp;</p>
-				<p><span style="color: #ff0000;"><strong>Esquema</strong></span></p>
-				
-			</div>
-			
-			
+	<br>
+	<div class="tab">
+		<div class="row">
+			<div class="col"></div>
+			<div class="col-3"><button class="tablinks tabTema" onclick="abrirPestana(event, 'plataforma', 'tabTema1')" id="defaultOpen">1.1 Tipos de plataformas digitales de aprendizaje</button></div>
+			<div class="col"></div>
+			<div class="col-3"><button class="tablinks tabTema" onclick="abrirPestana(event, 'uso', 'tabTema1')">¿Cómo saber qué plataforma le conviene usar?</button></div>
+			<div class="col"></div>
 		</div>
 	</div>
-	
-
-    </section>
-    <!--/Presentación-->
-    <br>
-	
-	
-<!--contenido-->
-    <section class=" text-white">
-	<div class="container contenedor-seccion">
-
+	<div id="plataforma" class="tabcontent tabTema1">
+		<p>Una plataforma de aprendizaje digital es un programa inform&aacute;tico o <em>software</em> dise&ntilde;ado espec&iacute;ficamente para ayudar en la creaci&oacute;n, gesti&oacute;n y distribuci&oacute;n de actividades docentes. Est&aacute;n estrechamente relacionadas con el desarrollo del <em>e-</em><em>learning</em>, que es una modalidad de ense&ntilde;anza combinada con herramientas digitales, y la educaci&oacute;n a distancia, que es una de sus principales &aacute;reas de aplicaci&oacute;n.</p>
 	</div>
-
-    </section>
-    <!--/contenido-->
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-    
-	<!--actividades-->
-    <section class="text-black">
-      <div class="container contenedor-seccion" style="text-align: center;">
-        <div class="row mb-4">
+	<div id="uso" class="tabcontent tabTema1">
+		<p>Si está pensando en utilizar alguna plataforma digital para trabajar su experiencia educativa o capacitación, éstos son algunos puntos que debe considerar al elegirla: </p>
+		<ol>
+			<li>Que brinde herramientas de gestión que le faciliten su uso para que pueda concentrarse en el proceso de aprendizaje y no en la tecnología. </li>
+			<li>Que esté siempre disponible. Es conveniente que su plataforma esté en línea y bajo demanda, así la podrá usar en donde sea y cuando la necesite. </li>
+			<li>Que sea ligera, con las herramientas y características justo como las requiera. Que sea flexible y se acople al modelo de enseñanza que usted elija. </li>
+			<li>Recuerde que la tecnología debe ayudarle y no convertirse en un obstáculo.</li>
+		</ol>
+	</div>
+	<div class="container contenedor-seccion">
+		<div class="row">
+			  <div class="col">
+				<p style="color: black;">Las plataformas digitales comparten características entre sí, sin embargo, cada una es diferente. A continuación, puede consultar los cuatro tipos que existen actualmente:</p>
+				<figure class="figure">
+				  <img
+					src="images/fase1/Tabla_Herramientas_Digitales.png"
+					alt="Infografía pendiente"
+					class="img-fluid"
+				  />
+				  <figcaption class="figure-caption text-right text-black">
+					<span class="font-weight-bold">Elaboración propia</span>
+				  </figcaption>
+				</figure>
+			  </div>
+		</div>
+		<div class="row" >
+			  <div class="col fondo_azul" style="text-align: center;">
+					<figure class="figure">
+					  <img
+						src="images/fase1/1 - teacher-doing-her-english-lessons-online.jpg"
+						alt="imagen pendiente"
+						class="img-fluid"
+						id="img3"
+					  />
+					  <figcaption class="figure-caption text-right text-white">
+						[3]
+					  </figcaption>
+					</figure>
+			  </div>
+			  <div class="col fondo_verde" style="text-align: center;">
+					<figure class="figure">
+					  <img
+						src="images/fase1/1.2 pngwing.com (2).png"
+						alt="imagen pendiente"
+						class="img-fluid"
+						id="img4"
+					  />
+					  <figcaption class="figure-caption text-right text-white">
+						[4]
+					  </figcaption>
+					</figure>
+			  </div>
+		</div>
+		<div class="row" style="color: black;">
+			  <div class="col fondo_azul text-white">
+					<h3 class="font-weight-bold">Tema 1.2: Plataformas para la enseñanza y para el aprendizaje</h3>
+					<p>Las plataformas digitales se han convertido en un medio de comunicación importante en la actualidad, ya que nos posibilita estar presentes a pesar de la distancia.</p>
+					<p>En el ámbito educativo, se han convertido en un recurso indispensable para la continuidad y seguimiento del proceso de enseñanza-aprendizaje, pues son ahora una herramienta de trabajo para los docentes en sus diferentes niveles para acompañar a los alumnos. </p>
+					<p>El uso de plataformas virtuales ofrece una serie de ventajas en la enseñanza, entre ellas el acceso a la información, mantiene canales de comunicación permanentemente abiertos de manera asincrónica y, en otras, sincrónica. Además, permiten administrar y gestionar contenidos, ofrecen llevar un seguimiento puntual del alumno, así como la oportunidad de consultar el material relacionado con el curso en cualquier momento y en cualquier lugar. </p>
+					<p>La finalidad del uso de estas herramientas es la de mejorar el proceso de enseñanza-aprendizaje, sin embargo, a la par de las ventajas que éstas presentan, también existen algunas desventajas que pueden presentar retos en el proceso educativo.</p>
+			  </div>
+			  <div class="col fondo_verde text-white">
+					<p>Llevar un curso bajo esta modalidad requiere de mayor esfuerzo y tiempo de dedicación por parte del facilitador, así como de contar con la motivación de los alumnos y su participación, para que se involucren en el proceso y la experiencia educativa. </p>
+					<p>Es importante recordar que para el uso de las plataformas virtuales como un recurso de apoyo, se requiere que el alumno y el facilitador dispongan de acceso permanente a los medios informáticos, pues es un aspecto absolutamente esencial. </p>
+					<p>En la Universidad Veracruzana contamos con una plataforma institucional: Eminus, que es una herramienta de apoyo que pretende flexibilizar el proceso de enseñanza-aprendizaje, favorece la importación y reutilización de recursos educativos, además de ofrecer actividades individuales y grupales para el logro de competencias académicas, permitiendo un seguimiento detallado acerca de la actividad escolar de los alumnos. </p>
+			  </div>
+		</div>
+		<br>
+		<div class="row">
           <div class="col">
-            <h3>Evidencias de desempeño</em></h3>
+			<p style="color: black;">Ahora que tuvo la oportunidad de reflexionar acerca del uso de las plataformas, le invito a explorar algunas de ellas en la siguiente infografía y conocer más de cerca sus características y a qué parte del proceso se inclinan, al de enseñanza o al de aprendizaje: </p>
+			<div style="width: 100%;"><div style="position: relative; padding-bottom: 50%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1600px" height="800px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/60e7b8a7504f0f0d6e9260ab" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
           </div>
         </div>
-		<div class="row mb-4">
-		<div class="col-3"></div>
-		
+		<br>
+		<div class="row" style="text-align: center; color: black;">
+		  <div class="col">
+			<h3>Evidencias de desempeño</h3>
+		  </div>
+		</div>
+		<div class="row">
+		<div class="col-3"></div>	
 		<div class="col" style="text-align: center;" >
 		
 		<a href="#" data-toggle="modal" data-target="#modal-actividad">
-		<div id="actividad"></div>
-			<!--<div id="actividad"></div>
-			</a>
-		  <img src="images/fase1/actividad.png" alt="pendiente" id="actividad">-->
+			<div id="actividad"></div>
 		</a>
 		</div>
-		<div class="col-3"></div>
+			<div class="col-3"></div>
 		</div>
-      </div>
-    </section>
-    <!--/actividades 1-->
-	<!--Fuentes de Información-->
-    <section class="text-white">
-      <div class="container contenedor-seccion">
-        <div class="row mb-4">
-          <div class="col">
-            <h3 style="color: black"><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
-          </div>
-        </div>
+		<br>
+		<div class="row">
+		  <div class="col">
+			<h3 style="color: black"><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
+		  </div>
+		</div>
+		
+	</div>
+
 		<div class="tab">
 			<div class="row">
 				<div class="col"></div>
-				<div class="col"><button class="tablinks" onclick="abrirFuente(event, 'basicas')">Básicas</button></div>
+				<div class="col"><button class="tablinks" onclick="abrirPestana(event, 'basicas', 'tabFuentes')">Básicas</button></div>
 				<div class="col"></div>
-				<div class="col"><button class="tablinks" onclick="abrirFuente(event, 'complementarias')">Complementarias</button></div>
+				<div class="col"><button class="tablinks" onclick="abrirPestana(event, 'complementarias', 'tabFuentes')">Complementarias</button></div>
 				<div class="col"></div>
 			</div>
 		</div>
 
-		<div id="basicas" class="tabcontent" style="color: black; background-color: white;">
-			<p class="fuente">Avenues: The World School. (2013, 28 febrero). <em>Grant Wiggins-Understanding by Design (1 of 2)</em> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=4isSHf3SBuQ&amp;feature=youtu.be">https://www.youtube.com/watch?v=4isSHf3SBuQ&amp;feature=youtu.be</a></p>
-			<p class="fuente">Avenues: The World School. (2013b, marzo 7). <em>Grant Wiggins-Understanding by Design (2 of 2)</em> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=vgNODvvsgxM&amp;feature=youtu.be">https://www.youtube.com/watch?v=vgNODvvsgxM&amp;feature=youtu.be</a></p>
-			<p class="fuente">Busso, M., Bassi, M., Urz&uacute;a, S. &amp; Vargas, J. (2012). <em>Desconectados: Habilidades, educaci&oacute;n y empleo en Am&eacute;rica Latina</em>. Banco Interamericano de Desarrollo. Educaci&oacute;n. <a href="https://publications.iadb.org/es/desconectados-habilidades-educacion-y-empleo-en-america-latina">https://publications.iadb.org/es/desconectados-habilidades-educacion-y-empleo-en-america-latina</a></p>
-			<p class="fuente">Tuning Am&eacute;rica Latina. (s. f.). <em>Competencias Gen&eacute;ricas de Am&eacute;rica Latina</em>. Tuningal.org. Recuperado 27 de julio de 2021, de <a href="http://www.tuningal.org/index.php?option=com_content&amp;view=article&amp;id=211&amp;Itemid=222">http://www.tuningal.org/index.php?option=com_content&amp;view=article&amp;id=211&amp;Itemid=222</a></p>
-			<p class="fuente">Garcia Cuevas Pablo (2021, julio 26). <em>Producto integrador. </em>[Video]. Stream. <a href="https://web.microsoftstream.com/video/ef7ee407-3c7a-42dc-9881-4f37f6f575a4">https://web.microsoftstream.com/video/ef7ee407-3c7a-42dc-9881-4f37f6f575a4</a>&nbsp;&nbsp;</p>
-			<p class="fuente">Carlos Zarzar. (2017, 24 noviembre). <em>&iquest;Qu&eacute; son las competencias? Carlos Zarzar.</em> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=cyMqEhIkWFc&amp;feature=youtu.be">https://www.youtube.com/watch?v=cyMqEhIkWFc&amp;feature=youtu.be</a></p>
+		<div id="basicas" class="tabcontent tabFuentes">
+			<p class="fuente">CENGAGE. (2021, 30 abril). <i>27 Plataformas virtuales educativas gratuitas</i>. <a href="https://latam.cengage.com/27-plataformas-virtuales-educativas-gratuitas/" target="_blank" rel="noopener">https://latam.cengage.com/27-plataformas-virtuales-educativas-gratuitas/</a></p>
+
+			<p class="fuente">Brown, A., &amp; Green, T. D. (2016). <i>The essentials of instructional design: Connecting fundamental principles with process and practice.</i> Third Edition. <a href="https://ikhsanaira.files.wordpress.com/2016/05/the-essential-of-instructional-design.pdf" target="_blank" rel="noopener">https://ikhsanaira.files.wordpress.com/2016/05/the-essential-of-instructional-design.pdf</a></p>
+
+			<p class="fuente">Chauhan, A. (2021, 12 mayo). <i>11 Digital </i><i>Education</i><i> Tools </i><i>For</i> <i>Teachers</i><i> And </i><i>Students</i><i>. </i>ELearning Industry. <a href="https://elearningindustry.com/digital-education-tools-teachers-students" target="_blank" rel="noopener">https://elearningindustry.com/digital-education-tools-teachers-students</a>.</p>
+
+			<p class="fuente">Contreras, W. (2017). Evolución de las aulas virtuales en las universidades tradicionales chilenas: el caso de la Universidad del Bío-Bío. <i>Horizontes Educacionales</i>, 12(1), 49-58. <a href="https://www.redalyc.org/articulo.oa?id=97916199006" target="_blank" rel="noopener">https://www.redalyc.org/articulo.oa?id=97916199006</a>.</p>
+
+			<p class="fuente">Fernández-Pampillón, A. M. (2009). Las plataformas e-learning para la enseñanza y el aprendizaje universitario en Internet. En <i>Las plataformas de aprendizaje. Del mito a la realidad</i> (pp. 45-73). Biblioteca Nueva. <a href="https://eprints.ucm.es/id/eprint/10682/" target="_blank" rel="noopener">https://eprints.ucm.es/id/eprint/10682</a><a href="https://eprints.ucm.es/id/eprint/10682/">/</a></p>
+
+			<p class="fuente">Segureskola. (2021, 25 junio). <i>Las 5 mejores plataformas educativas digitales para usar en clase</i>. Blog Educación y Bienestar digital. <a href="https://gaptain.com/blog/las-5-mejores-plataformas-educativas-para-usar-en-clase" target="_blank" rel="noopener">https://</a><a href="https://gaptain.com/blog/las-5-mejores-plataformas-educativas-para-usar-en-clase">gaptain.com/blog/las-5-mejores-plataformas-educativas-para-usar-en-clase</a></p>
+
+			<p class="fuente">Galvis, Á. H. &amp; Pedraza, L. d. C. (2016). <i>Desafíos del elearning y del blearning en educación </i><i>superior. An</i><i>álisis</i><i> de buenas prácticas en instituciones líderes. </i>Universidad de los Andes/Conecta-te. Centro de Innovación en Tecnología y Educación. <a href="https://conectate.uniandes.edu.co/images/pdf/desafios_conectate.pdf" target="_blank" rel="noopener">https://conectate.uniandes.edu.co/images/pdf/desafios_conectate.pdf</a>.</p>
+
+			<p class="fuente">Riestra, E. (s. f.). <i>Las plataformas </i>e-learning para la enseñanza y el aprendizaje. Yeira E-learning. Recuperado 13 de julio de 2021 de: <a href="https://www.yeira.training/blog/plataformas-digitales-de-aprendizaje" target="_blank" rel="noopener">https://www.yeira.training/blog/plataformas-digitales-de-aprendizaje</a></p>
 		</div>
 
-		<div id="complementarias" class="tabcontent" style="color: black; background-color: white;">
-			<p class="fuente">McTighe, J. &amp; Wiggins, G. (2004). <em>Understanding by Design. Professional development workbook. </em>ASCD. <a href="https://www.ascd.org/books/the-understanding-by-design-professional-development-workbook?variant=103056">https://www.ascd.org/books/the-understanding-by-design-professional-development-workbook?variant=103056</a></p>
-			<p class="fuente">Wiggins, G. &amp; McTighe, J. (2005). <em>Understanding by Design, expanded </em>(2a. ed.). ASCD. <a href="https://www.ascd.org/books/understanding-by-design-expanded-2nd-edition">https://www.ascd.org/books/understanding-by-design-expanded-2nd-edition</a></p>
-			<p class="fuente">Wiggins, G., McTighe, J. &amp; ASCD, T. (2013). <em>The Understanding by Design. Guide to creating high-quality units. </em>Pearson. <a href="https://www.ascd.org/books/the-understanding-by-design-guide-to-creating-high-quality-units">https://www.ascd.org/books/the-understanding-by-design-guide-to-creating-high-quality-units</a></p>
+		<div id="complementarias" class="tabcontent tabFuentes">
+			<p class="fuente">GoConqr en Español. (2015, mayo 6). <i>Cómo Crear Mapas Mentales con </i><i>GoConqr</i> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=-fHmt6Bcel0" target="_blank" rel="noopener">https://</a><a href="https://www.youtube.com/watch?v=-fHmt6Bcel0">www.youtube.com</a><a href="https://www.youtube.com/watch?v=-fHmt6Bcel0">/</a><a href="https://www.youtube.com/watch?v=-fHmt6Bcel0">watch?v</a><a href="https://www.youtube.com/watch?v=-fHmt6Bcel0">=-fHmt6Bcel0</a></p>
+			<p class="fuente">GoConqr - Transforma la forma en la que aprendes. (s. f.). GoConqr. Recuperado 2 de julio de 2021, de <u><a href="https://www.goconqr.com/es-ES" target="_blank" rel="noopener">https://</a></u><u><a href="https://www.goconqr.com/es-ES">www.goconqr.com/es-ES</a></u></p>
 		</div>
-
-        
+		
+		
+		
       </div>
     </section>
-    <!--/Fuentes de Información-->
-	
-	
-	
-	
-	
-	
-	
-	
-	
-    
-   
+	<br>
     <!--Disclaimer-->
     <section class="fondo_azul">
       <div class="container contenedor-menu-contenido">
@@ -435,6 +433,10 @@
                           ><sup style="font-size:60%;">1</sup> ijeab (2017). Usiness people meeting to discuss the situation on the marketing. Free Photo. [Imagen]. Freepik. https://www.freepik.com/free-photo/usiness-people-meeting-discuss-situation-marketing_1236194.htm</p>
 						<p class="text-black" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
                           ><sup style="font-size:60%;">2</sup> rawpixel.com (2019). Business people using internet Free Photo. [Imagen]. Freepik. https://www.freepik.com/free-photo/business-people-using-internet_4246721.htm</p>
+						  <p class="text-black" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%;">3</sup> Freepik (2021). Teacher doing her english lessons online Free Photo. [Imagen]. Freepik. https://www.freepik.com/free-photo/teacher-doing-her-english-lessons-online_15184791.htm</p>
+						  <p class="text-black" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em;"
+                          ><sup style="font-size:60%;">4</sup> PNGWING (2021). free-png-vptse. [Imagen]. PNGWING. https://www.pngwing.com/es/free-png-vptse</p>
                   </div>
                 </div>
               </div>
@@ -468,7 +470,6 @@
 	
 	<!--Ventanas Modales-->
     <!-- Modal -->
-    <!-- Modal -->
     <div
       class="modal fade"
       id="modal-actividad"
@@ -481,7 +482,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">
-              Actividades 
+              Actividad 1: Mapa mental.
             </h5>
             <button
               type="button"
@@ -492,280 +493,38 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body" style="background-color: #dbdbdb;">
-            <div class="slideshow-container">
-			  <div class="mySlides2">
-					<p><strong>Actividad 1: </strong>Hoja de trabajo.</p>
-					<p><strong>Descripci&oacute;n:</strong></p>
-					<ol>
-					<li>Despu&eacute;s de revisar los temas abordados durante esta primera fase, elabore la hoja de trabajo siguiendo los aspectos que se encuentran en el documento descargable.</li>
-					</ol>
-					<p><strong>&nbsp; Incluir aqu&iacute; nuevamente la Hoja de trabajo para descarga en Word. </strong></p>
-					<p>a)Si no tuvo la oportunidad de integrar los elementos necesarios en cada uno de los aspectos se&ntilde;alados en la hoja de trabajo, dentro de cada recuadro podr&aacute; localizar los temas de consulta que le servir&aacute;n como gu&iacute;a.</p>
-					<p>b)Una vez integrados los elementos en la hoja de trabajo, revise que cumpla con lo siguiente.</p>
-					<p><strong>Criterios de desempe&ntilde;o:</strong></p>
-					<table width="1620">
-					<tbody>
-					<tr>
-					<td width="259">
-					<p><strong>Criterio</strong></p>
-					</td>
-					<td width="551">
-					<p><strong>Suficiente</strong></p>
-					</td>
-					<td width="405">
-					<p><strong>Regular </strong></p>
-					</td>
-					<td width="405">
-					<p><strong>Insuficiente</strong></p>
-					</td>
-					</tr>
-					<tr>
-					<td width="259">
-					<p><strong>Presentaci&oacute;n</strong></p>
-					</td>
-					<td width="551">
-					<p>Su portada incluye nombre del curso, del alumno y de la asignatura.</p>
-					<p>El documento cumple con los criterios de presentaci&oacute;n de la APA.</p>
-					</td>
-					<td width="405">
-					<p>Cumple parcialmente con los criterios de entrega.</p>
-					</td>
-					<td width="405">
-					<p>Su documento no incluye una portada.</p>
-					</td>
-					</tr>
-					<tr>
-					<td width="259">
-					<p><strong>Introducci&oacute;n y conclusi&oacute;n</strong></p>
-					</td>
-					<td width="551">
-					<p>Presenta una introducci&oacute;n de su trabajo y una conclusi&oacute;n en la que comenta los aprendizajes logrados.</p>
-					</td>
-					<td width="405">
-					<p>Cumple parcialmente con los criterios de entrega.</p>
-					</td>
-					<td width="405">
-					<p>Su documento no incluye introducci&oacute;n ni conclusi&oacute;n.</p>
-					</td>
-					</tr>
-					<tr>
-					<td width="259">
-					<p><strong>Saber</strong></p>
-					</td>
-					<td width="551">
-					<p>Identifica con claridad las metas de aprendizaje para la vida a alcanzar en su experiencia educativa.</p>
-					</td>
-					<td width="405">
-					<p>Cumple parcialmente con los criterios de entrega.</p>
-					</td>
-					<td width="405">
-					<p>No cumple con los requisitos planteados.</p>
-					</td>
-					</tr>
-					<tr>
-					<td width="259">
-					<p><strong>Saber hacer</strong></p>
-					</td>
-					<td width="551">
-					<p>Identifica con claridad aquellos aprendizajes y habilidades esenciales a desarrollar en el curso.</p>
-					</td>
-					<td width="405">
-					<p>Cumple parcialmente con los criterios de entrega.</p>
-					</td>
-					<td width="405">
-					<p>No cumple con los requisitos planteados.</p>
-					</td>
-					</tr>
-					<tr>
-					<td width="259">
-					<p><strong>Saber ser</strong></p>
-					</td>
-					<td width="551">
-					<p>Genera preguntas esenciales y de comprensi&oacute;n para que su curso tenga significado y profundidad para sus alumnos.</p>
-					</td>
-					<td width="405">
-					<p>Cumple parcialmente con los criterios de entrega.</p>
-					</td>
-					<td width="405">
-					<p>No cumple con los requisitos planteados.</p>
-					</td>
-					</tr>
-					</tbody>
-					</table>
-					<p><strong>&nbsp;</strong></p>
-					<p><strong>Lineamientos de entrega:</strong></p>
-					<p>1.Titule el archivo con la siguiente nomenclatura: ActIn1_PrimerApellidoyPrimerNombre.&nbsp;Por ejemplo: Act1_VillanuevaMariaTeresa.</p>
-					<p>2.Env&iacute;e su archivo en formato PDF, a trav&eacute;s del apartado <strong>Actividad 1 </strong>de la plataforma <strong>EMINUS 4, </strong>a m&aacute;s tardar en la fecha establecida en el <strong>Calendario</strong> de entregas.</p>
-			  </div>
-
-			  <div class="mySlides2">
-					<p><strong>Actividad 2: </strong>Reflexi&oacute;n.</p>
-					<p><strong>Descripci&oacute;n:</strong></p>
-					<p>1.Despu&eacute;s de consultar los recursos de esta primera fase, seleccione el o los productos integradores que considera pertinentes incluir en el desarrollo de su experiencia educativa.</p>
-					<p>2.En un documento de <em>Word</em>, explique c&oacute;mo ese o esos productos lo ayudar&aacute;n a alcanzar las competencias que busca desarrollar en los alumnos.</p>
-					<p>3.Elija y mencione, al menos, seis competencias (busque que sea una combinaci&oacute;n de competencias espec&iacute;ficas, gen&eacute;ricas y b&aacute;sicas), explique por qu&eacute; las eligi&oacute; y a qu&eacute; nivel busca desarrollar cada una de las competencias. Puede revisar el video <em>Qu&eacute; son las competencias?</em> Que se localiza en el&nbsp; tema 1.7. De las adquisiciones del aprendizaje.</p>
-					<p><strong>Criterios de desempe&ntilde;o:</strong></p>
-					<table width="1731">
-					<tbody>
-					<tr>
-					<td width="277">
-					<p><strong>Criterio</strong></p>
-					</td>
-					<td width="589">
-					<p><strong>Regular </strong></p>
-					</td>
-					<td width="433">
-					<p><strong>Regular </strong></p>
-					</td>
-					<td width="433">
-					<p><strong>Insuficiente</strong></p>
-					</td>
-					</tr>
-					<tr>
-					<td width="277">
-					<p><strong>Presentaci&oacute;n</strong></p>
-					</td>
-					<td width="589">
-					<p>Su portada incluye nombre del curso, del alumno y de la asignatura.</p>
-					<p>El documento cumple con los criterios de presentaci&oacute;n de la APA.</p>
-					</td>
-					<td width="433">
-					<p>Cumple parcialmente con los criterios de entrega.</p>
-					</td>
-					<td width="433">
-					<p>Su documento no incluye una portada.</p>
-					</td>
-					</tr>
-					<tr>
-					<td width="277">
-					<p><strong>Introducci&oacute;n y conclusi&oacute;n</strong></p>
-					</td>
-					<td width="589">
-					<p>Presenta una introducci&oacute;n de su trabajo y una conclusi&oacute;n en la que comenta los aprendizajes logrados.</p>
-					</td>
-					<td width="433">
-					<p>Cumple parcialmente con los criterios de entrega.</p>
-					</td>
-					<td width="433">
-					<p>Su documento no incluye introducci&oacute;n ni conclusi&oacute;n.</p>
-					</td>
-					</tr>
-					<tr>
-					<td width="277">
-					<p><strong>Saber</strong></p>
-					</td>
-					<td width="589">
-					<p>Menciona las competencias a lograr durante el curso y la relevancia que tienen para el estudiante a lo largo de su vida profesional o personal.</p>
-					</td>
-					<td width="433">
-					<p>Cumple parcialmente con los criterios de entrega.</p>
-					</td>
-					<td width="433">
-					<p>No cumple con los requisitos planteados.</p>
-					</td>
-					</tr>
-					<tr>
-					<td width="277">
-					<p><strong>Saber hacer</strong></p>
-					</td>
-					<td width="589">
-					<p>Selecciona el o los productos integradores de la experiencia educativa que le permitir&aacute;n al alumno demostrar las competencias buscadas en la experiencia educativa.</p>
-					</td>
-					<td width="433">
-					<p>Cumple parcialmente con los criterios de entrega.</p>
-					</td>
-					<td width="433">
-					<p>No cumple con los requisitos planteados.</p>
-					</td>
-					</tr>
-					<tr>
-					<td width="277">
-					<p><strong>Saber ser</strong></p>
-					<p><strong>(2 puntos)</strong></p>
-					</td>
-					<td width="589">
-					<p>Se&ntilde;ala y explica con claridad los niveles de competencia a desarrollar tomando como referencia el mapa curricular de la carrera del estudiante.</p>
-					</td>
-					<td width="433">
-					<p>Cumple parcialmente con los criterios de entrega.</p>
-					</td>
-					<td width="433">
-					<p>No cumple con los requisitos planteados.</p>
-					</td>
-					</tr>
-					</tbody>
-					</table>
-					<p><strong>Lineamientos de entrega:</strong></p>
-					<ol>
-					<li>Titule el archivo de la siguiente forma: ActIn2_PrimerApellidoyPrimerNombre.&nbsp;Por ejemplo: Act2_VillanuevaMariaTeresa.</li>
-					<li>Env&iacute;e su archivo en formato PDF, a trav&eacute;s del apartado <strong>Actividad 2</strong> de la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario</strong> de entregas.</li>
-					</ol>
-			  </div>
-			  
-			   <div class="mySlides2">
-					<p><strong>Actividad 3. </strong>Foro colaborativo: Las grandes ideas de mi experiencia educativa.</p>
-					<p><strong>Descripci&oacute;n:</strong></p>
-					<p>1.Despu&eacute;s de consultar todo lo referente a esta primera fase y retomar los temas 1.4 Transferencias y 1.5: Entendimientos, elabore un comentario incluyendo lo siguiente:</p>
-					<p>a.A lo largo de la experiencia educativa, deber&aacute; panificar un curso, explique brevemente de qu&eacute; se trata.</p>
-					<p>b.Comente c&oacute;mo su <strong>gran idea</strong> le dar&aacute; cohesi&oacute;n y sentido de descubrimiento a su experiencia educativa.</p>
-					<p>c.&iquest;Qu&eacute; busca que sus alumnos comprendan y sean capaces de transferir al final de su experiencia educativa?</p>
-					<p><strong>Criterios de desempe&ntilde;o:</strong></p>
-					<table width="1410">
-					<tbody>
-					<tr>
-					<td width="226">
-					<p><strong>Criterio</strong></p>
-					</td>
-					<td width="479">
-					<p><strong>Suficiente</strong></p>
-					</td>
-					<td width="352">
-					<p><strong>Regular </strong></p>
-					</td>
-					<td width="352">
-					<p><strong>Insuficiente</strong></p>
-					</td>
-					</tr>
-					<tr>
-					<td width="226">
-					<p><strong>Presentaci&oacute;n</strong></p>
-					</td>
-					<td width="479">
-					<p>Participa en el Foro respondiendo las tres preguntas gu&iacute;a.</p>
-					</td>
-					<td width="352">
-					<p>Cumple parcialmente con los criterios de entrega.</p>
-					</td>
-					<td width="352">
-					<p>No responde las preguntas gu&iacute;a en su participaci&oacute;n.</p>
-					</td>
-					</tr>
-					<tr>
-					<td width="226">
-					<p><strong>Interacci&oacute;n con sus compa&ntilde;eros</strong></p>
-					</td>
-					<td width="479">
-					<p>Responde de forma reflexiva y propositiva a dos de sus compa&ntilde;eros.</p>
-					</td>
-					<td width="352">
-					<p>Cumple parcialmente con los criterios de entrega.</p>
-					</td>
-					<td width="352">
-					<p>No comenta las participaciones de sus compa&ntilde;eros.</p>
-					</td>
-					</tr>
-					</tbody>
-					</table>
-					<p><strong>Lineamientos de entrega:</strong></p>
-					<p>1. Integre su participaci&oacute;n en el <strong><em>Foro 1, </em></strong>en la plataforma <strong>EMINUS 4</strong>, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario</strong> de entregas</p>
-			  </div>
-
-			  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-			  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-			</div>
-	
-	
+          <div class="modal-body actividad-modal">
+            <p><u>Descripci&oacute;n:</u></p>
+			<ol>
+			<li>Despu&eacute;s de revisar la informaci&oacute;n de esta fase y explorar de manera general los tipos de plataformas digitales para la ense&ntilde;anza y el aprendizaje, elabore un mapa mental que incluya las principales caracter&iacute;sticas de &eacute;stas, as&iacute; como las diferencias en cada una de ellas. Para lo anterior, considere utilizar algunas de las siguientes herramientas:
+				<ol type="a">
+					<li>Observe el video <em>&iquest;C</em><em>&oacute;</em><em>mo</em><em> crear un Mapa Mental con </em><em>GoConqr</em><em>?, </em>localizado en el siguiente enlace: <a href="https://www.youtube.com/watch?v=-fHmt6Bcel0">https://www.youtube.com/watch?v=-fHmt6Bcel0</a>, tome nota de los pasos a seguir para crear un mapa mental y la forma de registrarse.</li>
+					<li>Realice la lectura del <em>Tutorial </em><em>Mindmeister</em>, localizado en el siguiente enlace: <a href="https://www.mindmeister.com/generic_files/get_file/755480?filetype=attachment_file">https://www.mindmeister.com/generic_files/get_file/755480?filetype=attachment_file</a>. Revise cu&aacute;les son los pasos a seguir para crear un mapa mental y la forma de registrarse.</li>
+					<li>Para elaborar su mapa mental, tambi&eacute;n puede usar las siguientes herramientas:
+						<ul>
+							<li>Draw.io (s. f.). <em>Diagrams.net-free </em><em>flowchart</em> <em>maker</em><em> and </em><em>diagrams</em><em> online. </em>Recuperado 13 de julio de 2021 de: <a href="https://app.diagrams.net/">https://app.diagrams.net/</a>, es una herramienta gratuita y sirve para realizar varios tipos de diagramas.</li>
+							<li>XMind Ltd. (s. f.). XMind - Full-featured mind mapping and brainstorming tool. XMind. Recuperado 13 de julio de 2021 de: <a href="https://www.xmind.net/">https://www.xmind.net/</a>. Es una herramienta que posee una versi&oacute;n gratuita y otra de pago, la versi&oacute;n gratuita no permite el uso de im&aacute;genes.</li>
+							<li>Coggle. (s. f.). Coggle-Simple Collaborative Mind Maps. Coggle.it. Recuperado 13 de julio de 2021 de: <a href="https://coggle.it/">https://coggle.it/</a>. Permite el uso de im&aacute;genes y posee la opci&oacute;n de trabajo colaborativo.</li>
+						</ul>
+					</li>
+				</ol>
+			</li>
+			</ol>
+			<ol start="2">
+			<li>La citaci&oacute;n y la escritura de referencias deber&aacute; ser con base en el&nbsp;<em>Manual de Publicaciones de la </em><em>APA,7a. </em><em>ed.,</em> para ello consulte la siguiente p&aacute;gina: S&aacute;nchez, C. (2020, 24 noviembre).&nbsp;Normas APA. 7a. edici&oacute;n. Normas-apa.org. Blog.&nbsp;<a href="https://normas-apa.org/">https://normas-apa.org/</a>. Tambi&eacute;n puede descargar el manual en formato PDF directamente desde:&nbsp;<a href="https://normas-apa.org/wp-content/uploads/Guia-Normas-APA-7ma-edicion.pdf">https://normas-apa.org/wp-content/uploads/Guia-Normas-APA-7ma-edicion.pdf</a>o bien, consultar el video acerca del uso del modo de gestor de referencias bibliogr&aacute;ficas en: Juan Pablo Garc&iacute;a Cuevas. (2020, 16 diciembre).&nbsp;Uso de Scribbr&nbsp;[Video]. YouTube, en:&nbsp;<a href="https://youtu.be/p8Dq48YsZvY">https://youtu.be/p8Dq48YsZvY</a></li>
+			</ol>
+			<p><strong>Criterios de desempe&ntilde;o:</strong></p>
+			<ul>
+			<li>Congruencia entre el contenido y las im&aacute;genes usadas.</li>
+			<li>Identificaci&oacute;n de elementos clave.</li>
+			<li>Organizaci&oacute;n de ideas.</li>
+			<li>Redacci&oacute;n y ortograf&iacute;a adecuadas.</li>
+			</ul>
+			<p><strong>Lineamientos de entrega:</strong></p>
+			<ul>
+			<li>Titule el archivo de la siguiente forma: <em>ActIn1_PrimerApellidoyPrimerNombre</em>.&nbsp;Ejemplo: <em>Act1_VillanuevaMariaTeresa.</em></li>
+			<li>Env&iacute;e su archivo, en formato PNG, a trav&eacute;s del apartado <strong><em>Actividad 1</em></strong> de la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario</strong> de entregas.</li>
+			</ul>
           </div>
           <div class="modal-footer">
             <button
@@ -779,7 +538,6 @@
         </div>
       </div>
     </div>
-	
     <!--/Ventanas Modales-->
 	
 	
@@ -812,7 +570,7 @@
     <script src="js/inicializacion.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script>
-	
+	document.getElementById("defaultOpen").click();
 	var slideIndex = [1, 1, 1];
 	var slideId = ["mySlides1", "mySlides2", "mySlides3"]
 	showSlides(1, 0);
@@ -833,9 +591,9 @@
 	  }
 	  x[slideIndex[no]-1].style.display = "block";  
 	}
-	function abrirFuente(evt, fuente) {
+	function abrirPestana(evt, fuente, tipo) {
 	  var i, tabcontent, tablinks;
-	  tabcontent = document.getElementsByClassName("tabcontent");
+	  tabcontent = document.getElementsByClassName(tipo);
 	  for (i = 0; i < tabcontent.length; i++) {
 		tabcontent[i].style.display = "none";
 	  }
@@ -846,6 +604,7 @@
 	  document.getElementById(fuente).style.display = "block";
 	  evt.currentTarget.className += " active";
 	}
+
 
 	
 	</script>

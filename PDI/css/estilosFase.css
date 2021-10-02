@@ -1,16 +1,11 @@
-/*Extra small devices (portrait phones, less than 576px)*/
-/* No media query for `xs` since this is the default in Bootstrap*/
-
 #imagen-introduccion{
     width:75%;
     height:75%;
 }
 
-
 #modulo1-imagen-introduccion {
     width: 40%;
 }
-
 #modulo1-imagen-proposito{
     width:40%;
 }
@@ -31,34 +26,6 @@
     width: 40%;
 }
 
-
-
-/*#imagen-tema-1 {
-    width: 45%;    
-}
-
-#imagen-tema-2 {
-    width: 45%;
-}
-
-#imagen-tema-4 {
-    width: 45%;
-}
-*/
-
-
-
-/* Small devices (landscape phones, 576px and up)*/
-/*@media (min-width: 576px) {
-
-}
-*/
-/* Medium devices (tablets, 768px and up)*/
-/*@media (min-width: 768px) {
-    
-}*/
-
-/* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
     #imagen-introduccion {
         width: 65%;
@@ -90,7 +57,7 @@ img {vertical-align: middle;}
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev, .next, .prevGeni, .nextGeni, .prevModal, .nextModal {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -105,6 +72,7 @@ img {vertical-align: middle;}
   user-select: none;
 }
 
+
 .prev {
   left: -9%;
   border-radius: 3px 0 0 3px;
@@ -117,6 +85,21 @@ img {vertical-align: middle;}
 
 /* On hover, add a grey background color */
 .prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+.prevModal {
+  left: -9%;
+  border-radius: 3px 0 0 3px;
+}
+/* Position the "next button" to the right */
+.nextModal {
+  right: -9%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prevModal:hover, .nextModal:hover {
   background-color: #f1f1f1;
   color: black;
 }
@@ -219,12 +202,16 @@ img {vertical-align: middle;}
 .tab {
   overflow: hidden;
   border-radius: 20px;
-  background-color: #6377A9;
+  background-color: #4C5BFC;
+  
+  max-width: 1100px;
+	  position: relative;
+	  margin: auto;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: #6377A9;
+  background-color: #4C5BFC;
   color: white;
   float: left;
   border: none;
@@ -235,7 +222,7 @@ img {vertical-align: middle;}
   font-size: 17px;
 }
 .tab .tabTema{
-  background-color: #355ca7;
+  background-color: #4C5BFC;
   color: white;
   float: left;
   border: none;
@@ -253,8 +240,8 @@ img {vertical-align: middle;}
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: white;
-  color: black;
+  background-color: #6CBDB4;
+  color: white;
 }
 
 /* Style the tab content */
@@ -263,6 +250,7 @@ img {vertical-align: middle;}
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+
 }
 
 .fuente{
@@ -275,27 +263,744 @@ img {vertical-align: middle;}
 .fondo_azul{
 	background-color: #4c5bfc;
 }
+.disclaimer{
+	font-size: small;
+	margin-left:15.65pt;
+	text-indent:-15.65pt;
+	margin:0.3em;
+	color: black;
+}
 
-@media screen and (max-width: 1500px){
-	/* Slideshow container */
+p, li{
+	text-align: justify;
+}
+
+.titulo{
+	color: #355CA7;
+}
+.tabcontent{
+	color: white;
+	background-color: #6CBDB4;
+	border-radius: 20px;
+}
+
+
+.slideshow-container {
+	position: relative;
+	margin: auto;
+}
+
+
+
+
+@media(min-width: 900px){
+	.h4{
+		font-size: 80%;
+	}
+	.container-xl,.container-lg,.container-md,.container-sm,.container{
+		max-width:660px
+	}
+	p, li{
+		font-size: 90%
+	}
 	.slideshow-container {
-	  max-width: 1000px;
-	  position: relative;
-	  margin: auto;
+	  max-width: 670px;
 	}
 	.prev {
+	  left: -10%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.next {
+	  right: -10%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.prevModal {
 	  left: 0%;
 	  border-radius: 3px 0 0 3px;
 	}
-	/* Position the "next button" to the right */
-	.next {
+
+	.nextModal {
 	  right: 0%;
 	  border-radius: 3px 0 0 3px;
+	}
+	.prevGeni {
+	  left: 20%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.nextGeni {
+	  right: 20%;
+	  border-radius: 3px 0 0 3px;
+	}
+	#imagenIntroduccion{
+		width: 100%;
+	}
+	#textoIntroduccion{
+		font-size: 90%;
+		text-align: justify;
+	}
+	#imagenProposito{
+		width: 100%;
+	}
+	#textoProposito{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#br3{
+		display: block;
+	}
+	#br4{
+		display: block;
+	}
+	#brInicio{
+		display: block;
+	}
+	#textoTema2{
+		font-size: 90%;
+		text-align: justify;
+	}
+	#img3{
+		width: 70%;
+	}
+	#img4{
+		width: 55%;
+	}
+	#textoTema22{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#textoIntroFase2{
+		font-size: 90%;
+		text-align: justify;
+	}
+	#textoPropFase2{
+		font-size: 180%;
+		text-align: justify;
+	}
+	.imagenLogo{
+		width: 35%;
+	}
+	.geniallyFrame{
+		width: 40%;
+	}
+	#compensacionProposito1{
+		height: 90px;
+	}
+	#compensacionProposito2{
+		height: 80px;
+	}
+	#compensacionProposito3{
+		height: 65px;
+	}
+	/* Style the tab */
+	.tab {
+	  overflow: hidden;
+	  border-radius: 20px;
+	  background-color: #4C5BFC;
+	  max-width: 870px;
+	  position: relative;
+	  margin: auto;
+	}
+
+	/* Style the buttons inside the tab */
+	.tab button {
+	  background-color: #4C5BFC;
+	  color: white;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  transition: 0.3s;
+	  font-size: 17px;
+	}
+	.tab .tabTema{
+	  background-color: #4C5BFC;
+	  color: white;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  transition: 0.3s;
+	  font-size: 17px;
+	}
+	.tab button:hover {
+	  background-color: #97abdb;
+	}
+	.tab button.active {
+	  background-color: #6CBDB4;
+	  color: white;
+	}
+	.tabcontent {
+		max-width: 870px;
+		display: none;
+		padding: 6px 12px;
+		border: 1px solid #ccc;
+		border-top: none;
+		position: relative;
+	  margin: auto;
+
+	}
+	.actividad-modal{
+		background-image: url('../images/cuaderno-azul.png');
+		position:relative;
+		background-color: white;
+		color: black;
+		background-repeat: no-repeat;
+		background-size: 600px 600px;
+		background-position: center;
+	}
+	.recursoModal {
+	text-align:center;
+	color: white;
+	background-color: #355ca7; 
+	height: 190px;
+	}
+	.recursoModal:hover {
+		background-color: #183d82; 
+		cursos: pointer;
 	}
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 1100px){/*computadora casa*/
+	.container-xl,.container-lg,.container-md,.container-sm,.container{
+		max-width:840px
+	}
+	p, li{
+		font-size: 90%
+	}
+	.slideshow-container {
+	  max-width: 800px;
+	}
+	.prev {
+	  left: -10%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.next {
+	  right: -10%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.prevModal {
+	  left: 0%;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	.nextModal {
+	  right: 0%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.prevGeni {
+	  left: 20%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.nextGeni {
+	  right: 20%;
+	  border-radius: 3px 0 0 3px;
+	}
+	#imagenIntroduccion{
+		width: 100%;
+	}
+	#textoIntroduccion{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#imagenProposito{
+		width: 100%;
+	}
+	#textoProposito{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#br3{
+		display: block;
+	}
+	#br4{
+		display: block;
+	}
+	#brInicio{
+		display: block;
+	}
+	#textoTema2{
+		font-size: 90%;
+		text-align: justify;
+	}
+	#img3{
+		width: 70%;
+	}
+	#img4{
+		width: 55%;
+	}
+	#textoTema22{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#textoIntroFase2{
+		font-size: 90%;
+		text-align: justify;
+	}
+	#textoPropFase2{
+		font-size: 180%;
+		text-align: justify;
+	}
+	.imagenLogo{
+		width: 35%;
+	}
+	.geniallyFrame{
+		width: 40%;
+	}
+	#compensacionProposito1{
+		height: 90px;
+	}
+	#compensacionProposito2{
+		height: 80px;
+	}
+	#compensacionProposito3{
+		height: 65px;
+	}
+	/* Style the tab */
+	.tab {
+	  overflow: hidden;
+	  border-radius: 20px;
+	  background-color: #4C5BFC;
+	  max-width: 1000px;
+	  position: relative;
+	  margin: auto;
+	}
+
+	/* Style the buttons inside the tab */
+	.tab button {
+	  background-color: #4C5BFC;
+	  color: white;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  transition: 0.3s;
+	  font-size: 17px;
+	}
+	.tab .tabTema{
+	  background-color: #4C5BFC;
+	  color: white;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  transition: 0.3s;
+	  font-size: 17px;
+	}
+	.tab button:hover {
+	  background-color: #97abdb;
+	}
+	.tab button.active {
+	  background-color: #6CBDB4;
+	  color: white;
+	}
+	.tabcontent {
+		max-width: 1000px;
+		display: none;
+		padding: 6px 12px;
+		border: 1px solid #ccc;
+		border-top: none;
+		position: relative;
+	  margin: auto;
+
+	}
+	.actividad-modal{
+		background-image: url('../images/cuaderno-azul.png');
+		position:relative;
+		background-color: white;
+		color: black;
+		background-repeat: no-repeat;
+		background-size: 600px 600px;
+		background-position: center;
+	}
+	.recursoModal {
+	text-align:center;
+	color: white;
+	background-color: #355ca7; 
+	height: 190px;
+	}
+	.recursoModal:hover {
+		background-color: #183d82; 
+		cursos: pointer;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 1300px){/*computadora casa*/
+	.container-xl,.container-lg,.container-md,.container-sm,.container{
+		max-width:920px
+	}
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 900px;
+	  position: relative;
+	  margin: auto;
+	}
+	.prev {
+	  left: -10%;
+	  border-radius: 3px 0 0 3px;
+	}
+	/* Position the "next button" to the right */
+	.next {
+	  right: -10%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.prevModal {
+	  left: 0%;
+	  border-radius: 3px 0 0 3px;
+	}
+	/* Position the "next button" to the right */
+	.nextModal {
+	  right: 0%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.prevGeni {
+	  left: 20%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.nextGeni {
+	  right: 20%;
+	  border-radius: 3px 0 0 3px;
+	}
+	#imagenIntroduccion{
+		width: 100%;
+	}
+	#textoIntroduccion{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#imagenProposito{
+		width: 100%;
+	}
+	#textoProposito{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#br3{
+		display: block;
+	}
+	#br4{
+		display: block;
+	}
+	#brInicio{
+		display: block;
+	}
+	#textoTema2{
+		font-size: 90%;
+		text-align: justify;
+	}
+	#img3{
+		width: 70%;
+	}
+	#img4{
+		width: 55%;
+	}
+	#textoTema22{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#textoIntroFase2{
+		font-size: 90%;
+		text-align: justify;
+	}
+	#textoPropFase2{
+		font-size: 180%;
+		text-align: justify;
+	}
+	.imagenLogo{
+		width: 40%;
+	}
+	.geniallyFrame{
+		width: 40%;
+	}
+	#compensacionProposito1{
+		height: 100px;
+	}
+	#compensacionProposito2{
+		height: 90px;
+	}
+	#compensacionProposito3{
+		height: 70px;
+	}
+	.tab {
+	  overflow: hidden;
+	  border-radius: 20px;
+	  background-color: #4C5BFC;
+	  max-width: 1100px;
+	  position: relative;
+	  margin: auto;
+	}
+	.tab button {
+	  background-color: #4C5BFC;
+	  color: white;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  transition: 0.3s;
+	  font-size: 17px;
+	}
+	.tab .tabTema{
+	  background-color: #4C5BFC;
+	  color: white;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  transition: 0.3s;
+	  font-size: 17px;
+	}
+	.tab button:hover {
+	  background-color: #97abdb;
+	}
+	.tab button.active {
+	  background-color: #6CBDB4;
+	  color: white;
+	}
+	.tabcontent {
+		max-width: 1100px;
+		display: none;
+		padding: 6px 12px;
+		border: 1px solid #ccc;
+		border-top: none;
+		position: relative;
+	  margin: auto;
+
+	}
+	.actividad-modal{
+		background-image: url('../images/cuaderno-azul.png');
+		position:relative;
+		background-color: white;
+		color: black;
+		background-repeat: no-repeat;
+		background-size: 600px 600px;
+		background-position: center;
+	}
+	.recursoModal {
+	text-align:center;
+	color: white;
+	background-color: #355ca7; 
+	height: 250px;
+	}
+	.recursoModal:hover {
+		background-color: #183d82; 
+		cursos: pointer;
+	}
+}
+
+
+@media(min-width: 1500px){
+	.h4{
+		font-size: 120%;
+	}
+	.container-xl,.container-lg,.container-md,.container-sm,.container{
+		max-width:1240px
+	}
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 1250px;
+	  position: relative;
+	  margin: auto;
+	}
+	.prev {
+	  left: -5%;
+	  border-radius: 3px 0 0 3px;
+	}
+	/* Position the "next button" to the right */
+	.next {
+	  right: -5%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.prevModal {
+	  left: 0%;
+	  border-radius: 3px 0 0 3px;
+	}
+	/* Position the "next button" to the right */
+	.nextModal {
+	  right: 0%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.prevGeni {
+	  left: 20%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.nextGeni {
+	  right: 20%;
+	  border-radius: 3px 0 0 3px;
+	}
+	#imagenIntroduccion{
+		width: 100%;
+	}
+	#textoIntroduccion{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#imagenProposito{
+		width: 100%;
+	}
+	#textoProposito{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#br3{
+		display: block;
+	}
+	#br4{
+		display: block;
+	}
+	#brInicio{
+		display: block;
+	}
+	#textoTema2{
+		font-size: 90%;
+		text-align: justify;
+	}
+	#img3{
+		width: 70%;
+	}
+	#img4{
+		width: 55%;
+	}
+	#textoTema22{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#textoIntroFase2{
+		font-size: 90%;
+		text-align: justify;
+	}
+	#textoPropFase2{
+		font-size: 180%;
+		text-align: justify;
+	}
+	.imagenLogo{
+		width: 40%;
+	}
+	.geniallyFrame{
+		width: 40%;
+	}
+	#compensacionProposito1{
+		height: 0px;
+	}
+	#compensacionProposito2{
+		height: 140px;
+	}
+	#compensacionProposito3{
+		height: 0px;
+	}
+	.tab {
+	  overflow: hidden;
+	  border-radius: 20px;
+	  background-color: #4C5BFC;
+	  max-width: 1450px;
+	  position: relative;
+	  margin: auto;
+	}
+	.tab button {
+	  background-color: #4C5BFC;
+	  color: white;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  transition: 0.3s;
+	  font-size: 17px;
+	}
+	.tab .tabTema{
+	  background-color: #4C5BFC;
+	  color: white;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  transition: 0.3s;
+	  font-size: 17px;
+	}
+	.tab button:hover {
+	  background-color: #97abdb;
+	}
+	.tab button.active {
+	  background-color: #6CBDB4;
+	  color: white;
+	}
+	.tabcontent {
+		max-width: 1450px;
+		display: none;
+		padding: 6px 12px;
+		border: 1px solid #ccc;
+		border-top: none;
+		position: relative;
+	  margin: auto;
+
+	}
+	.actividad-modal{
+		background-image: url('../images/cuaderno-azul.png');
+		position:relative;
+		background-color: white;
+		color: black;
+		background-repeat: no-repeat;
+		background-size: 600px 600px;
+		background-position: center;
+	}
+	.recursoModal {
+	text-align:center;
+	color: white;
+	background-color: #355ca7; 
+	height: 250px;
+	}
+	.recursoModal:hover {
+		background-color: #183d82; 
+		cursos: pointer;
+	}
+}
 
 
 

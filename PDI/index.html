@@ -31,7 +31,7 @@
               <div
                 class="col text-secondary d-flex flex-column justify-content-center"
               >
-                <span class="h3 font-weight-bold">Planeación didáctica inversa </span>
+                <span class="h4 font-weight-bold">Planeación didáctica inversa </span>
               </div>
             </div>
           </div>
@@ -167,171 +167,122 @@
 
 
     </div>
-	<section>
-		<div class="container contenedor-seccion">
-			<div class="row">
-			
-				<div class="col">
-					
-					<div id="overlay"> 
+	<!--Video-->
+    <section id="video">
+      <div class="overlay"></div>
+      <video
+        class="embed-responsive-item"
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
+        <source src="Videos/inter.mp4" type="video/mp4" />
+      </video>
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white"></div>
+        </div>
+      </div>
+    </section>
+    <!--/Video-->
 
-					
-						</div>
-						<video
-					style="max-width: 100%; height:auto;"
-					class="embed-responsive-item"
-					playsinline="playsinline"
-					autoplay="autoplay"
-					muted="muted"
-					loop="loop"
-				  >
-						  <source src="Videos/inter.mp4" type="video/mp4" />
-						</video>
-					
-			  </div>
-			</div>
-		</div>
-	</section>
-
-	
-	
-	<div class="container">
-	<h3 style="color: #42b2b2"><span class="font-weight-bold">Información general</span></h3>
-	</div>
-	
-	
+		
     <section class="text-white" id="presentacion">
 	<div class="container contenedor-seccion">
-			<div class="row">
-				<div class="col">
-					<div class="slideshow-container">
-			<div class="mySlides">
-				<div class="row">
-					<div class="col-4 d-flex align-items-center" style="background-color: #6cbdb4;">
-						<figure class="figure" style="width: 70%; margin: auto; display: block;">
-						  <img
-							src="images/Presentacion.jpg"
-							alt="imagen pendiente"
-							class="img-fluid"
-						  />
-						  <figcaption class="figure-caption text-right text-white">
-							[1]
-						  </figcaption>
-						</figure>
-					  </div>
-					<div class="col-8" style="background-color: #6cbdb4;">
-						<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Presentación</h3>
-						<p>La experiencia educativa Planeaci&oacute;n did&aacute;ctica inversa se concibe como un curso-taller orientado al desarrollo de estrategias de trabajo enfocadas al aprendizaje en lugar de los procesos de ense&ntilde;anza. La experiencia educativa se centra en la aplicaci&oacute;n de los tres pasos de la planificaci&oacute;n inversa: resultados deseados; pruebas aceptables y experiencias de aprendizaje.</p>
-						<p>Los participantes desarrollar&aacute;n una propuesta de planificaci&oacute;n did&aacute;ctica que asegure la adquisici&oacute;n de las competencias se&ntilde;aladas en un programa de trabajo de las experiencias educativas a su cargo.</p>
-						<p>Esta experiencia educativa tiene una duraci&oacute;n de 20 horas, distribuidas en 10 horas presenciales y 10 horas extraclase.</p>
+	<div class="row">
+					<h3 style="color: #355CA7"><span class="font-weight-bold">Información general</span></h3>
+            </div>
+		
+		<div class="row">
+			
+			<div class="col">
+				<div class="slideshow-container">
+					<div class="mySlides">
+						<div class="row fondo-verde">
+							<div class="col d-flex align-items-center">
+								<figure class="figure">
+									<img
+										src="images/Presentacion.jpg"
+										alt="imagen pendiente"
+										class="img-fluid"
+										id="imagenPresentacion"
+									/>
+									<figcaption class="figure-caption text-right text-white">[1]</figcaption>
+								</figure>
+							</div>
+							<div class="col">
+								<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Presentación</h3>
+								<div id="textoPresentacion" style="color: white;">
+									<p>La experiencia educativa Planeaci&oacute;n did&aacute;ctica inversa se concibe como un curso-taller orientado al desarrollo de estrategias de trabajo enfocadas al aprendizaje en lugar de los procesos de ense&ntilde;anza. La experiencia educativa se centra en la aplicaci&oacute;n de los tres pasos de la planificaci&oacute;n inversa: resultados deseados; pruebas aceptables y experiencias de aprendizaje.</p>
+									<p>Los participantes desarrollar&aacute;n una propuesta de planificaci&oacute;n did&aacute;ctica que asegure la adquisici&oacute;n de las competencias se&ntilde;aladas en un programa de trabajo de las experiencias educativas a su cargo.</p>
+									<p>Esta experiencia educativa tiene una duraci&oacute;n de 20 horas, distribuidas en 10 horas presenciales y 10 horas extraclase.</p>
+								</div>
+							</div>
+						</div>
 					</div>
-					  
+					<div class="mySlides">
+					<div class="row fondo-azul-claro" id="compensacionUnidad"></div>
+						<div class="row fondo-azul-claro">
+							<div class="col">
+								
+								<div id="compensacionTextoUnidad"></div>
+								<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Unidad de competencia</h3>
+								<p id="textoUnidad">El participante desarrollará una actitud proactiva con la finalidad de ajustar sus estrategias de trabajo docente al desarrollo de las competencias requeridas en sus estudiantes. Se busca que sea capaz de identificar los aprendizajes clave y las rutas de trabajo necesarios para que sus alumnos los alcancen exitosamente.</p>
+								<div id="compensacionUnidad2"></div>
+
+							</div>
+							<div class="col d-flex align-items-center">
+								<figure class="figure" >
+									<img
+										src="images/unidad.jpg"
+										alt="imagen pendiente"
+										class="img-fluid"
+										id="imagenUnidad"
+									/>
+								</figure>
+							</div>
+						</div>
+						<div class="row fondo-azul-claro" id="compensacionUnidad2"></div>
 					</div>
-			
-			  <!---->
-			</div>
-
-			<div class="mySlides">
-			<div class="row">
-			
-				
-				<div class="col-6" style="background-color: #4c5bfc">
-
-				<h3 class="font-weight-bold"><i class="fas fa-book-reader"></i> Unidad de competencia</h3>
-				<p>El participante desarrollará una actitud proactiva con la finalidad de ajustar sus estrategias de trabajo docente al desarrollo de las competencias requeridas en sus estudiantes. Se busca que sea capaz de identificar los aprendizajes clave y las rutas de trabajo necesarios para que sus alumnos los alcancen exitosamente.</p>
-				</p>
-			</div>
-			  <div class="col-6 d-flex align-items-center" style="background-color: #4c5bfc">
-			  <br>
-				<figure class="figure" class="imagen-unidad">
-				  <img
-					src="images/unidad.jpg"
-					alt="imagen pendiente"
-					class="img-fluid"
-				  />
-				  <figcaption class="figure-caption text-right text-white">
-					[2]
-				  </figcaption>
-				</figure>
-			  </div>
-			</div>
-			
-			</div>
-
-
-			<a class="prev" onclick="plusSlides(-1)">❮</a>
-			<a class="next" onclick="plusSlides(1)">❯</a>
-
-			</div>
-					
-			  </div>
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
 			</div>
 		</div>
-      
-        
-
-			<!--<div class="dot-container">
-			  <span class="dot" onclick="currentSlide(1)"></span> 
-			  <span class="dot" onclick="currentSlide(2)"></span> 
-			</div>-->
-      
+	</div>
     </section>
     <!--/Presentación-->
     <!--Contenido-->
     <section id="contenido">
-
         <div class="container contenedor-seccion text-white">
-            <div class="row mb-4">
-                <div class="col">
-				<h3 style="color: #42b2b2"><span class="font-weight-bold">Contenido</span></h3>
-                </div>
-				<div class="col">
-					<h3 style="color: #42b2b2"><span class="font-weight-bold">Evaluación de desempeño</span></h3>
-                </div>
+            <div class="row">
+					<h4 class="titulo"><span class="font-weight-bold">Desarrollo de la experiencia educativa</span></h4>
             </div>
-             <div class="row">
-				<div class="col">
-				  <div class="row" >
-					<a href="fase1.html" class="col-5 apartadoModulo" id="modulo1" style="text-align: center;">
-					<!--<img src="images/cuaderno.png" alt="Cuaderno"  class="imagenNormal">-->
-					
-					</a>
-					<div class="col-1"></div>
-					<a href="fase2.html" class="col-5 apartadoModulo" id="modulo2" style="text-align: center;">
-						<!--<img src="images/libro.png" alt="Libro" class="imagenNormal">-->
-					</a>
-				  </div>
-				  <br>
-				  <div class="row">
-					<a href="fase3.html" class="col-5 apartadoModulo" id="modulo3" style="text-align: center;">
-					<!--<img src="images/gorra.png" alt="Gorra"  class="imagenNormal">-->
-					</a>
-					<div class="col-1"></div>
-					<a href="" class="col-5 apartadoModulo" id="modulo4" style="text-align: center;">
-					<!--<img src="images/graduado.png" alt="Graduado"  class="imagenNormal">-->
-					</a>
+
+			
+            <div class="row">
+			<div class="col-margen"></div>
+				<div class="col" >
+				  <div class="row filaModulo">
+					<a href="fase1.html" class="col apartadoModulo" id="modulo1"></a>
+					<div id="separacionModulos"></div>
+					<a href="fase2.html" class="col apartadoModulo" id="modulo2"></a>
+					<div id="separacionModulos"></div>
+					<a href="fase3.html" class="col apartadoModulo" id="modulo3"></a>
 				  </div>
 				</div>
-				<div class="col-1"></div>
-			
-			<!--<div class="col">
-			  <div class="row">
-				<a class="col apartadoModulo" id="modulo1">1</a>
-				<a class="col apartadoModulo" id="modulo2">2</a>
-			  </div>
-			  <div class="row">
-				<a class="col apartadoModulo" id="modulo3">3</a>
-				<a class="col apartadoModulo" id="modulo4">4</a>
-			  </div>
-			</div>-->
+				
 
-			<a class="col d-flex align-items-center" style="background-color: #4c5bfc; text-align: center;">
-			  <h2><i class="fas fa-tasks"></i> Evaluación de desempeño</h2>
-			</a>
-			
-		  </div>
-			
-			
+				<a class="col-3 d-flex align-items-center"
+					id="apartadoEvaluacion" 
+					style="background-color: #4c5bfc; text-align: center;"
+					href="#"
+					data-toggle="modal"
+					data-target="#modal-eval">
+					
+				</a>
+			</div>
         </div>
     </section>
     <!--/Contenido-->
@@ -402,7 +353,7 @@
                 >
                   <div class="card-body" style="background-color: white;">
                       <p class="text-black" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em; color: black;"><sup style="font-size:60%;">1</sup> Jcomp (2019). E-learning class and e-book digital technology in education concept with pc computer Free Photo. [Imagen]. Freepik. https://www.freepik.com/free-photo/e-learning-class-e-book-digital-technology-education-concept-with-pc-computer_4351412.htm </p>
-					  <p class="text-black" style="font-size: small; margin-left:15.65pt;text-indent:-15.65pt; margin:0.3em; color: black;"><sup style="font-size:60%;">2</sup> Marymarkevich (2020). Funny happy excited young pretty woman sitting at table in black shirt working on laptop in co-working office, wearing glasses Free Photo. [Imagen]. https://www.freepik.com/free-photo/funny-happy-excited-young-pretty-woman-sitting-table-black-shirt-working-laptop-co-working-office-wearing-glasses_9405610.htm </p>
+
                   </div>
                 </div>
               </div>
@@ -448,7 +399,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">
-              Autor de la experiencia educativa: 
+              
             </h5>
             <button
               type="button"
@@ -460,14 +411,173 @@
             </button>
           </div>
           <div class="modal-body">
-            <p><strong>Estudios:</strong></p>
+			<div style="text-align: center">
+				<img
+					src="images/experto.png"
+					alt="imagen pendiente"
+					class="img-fluid"
+					style="width: 20%;"
+				/>
+			</div>
+            <p><span class="font-weight-bold">Autor de la experiencia educativa: </span></p>
+			<p><span class="font-weight-bold">Estudios:</span></p>
 			<p>Hace falta informaci&oacute;n acerca de su licenciatura</p>
 			<p>Doctor en Educaci&oacute;n Relacional y Bio-Aprendizaje por la Universidad Popular Aut&oacute;noma Veracruzana.</p>
-			<p><strong>Trabajo actual:</strong></p>
+			<p><span class="font-weight-bold">Trabajo actual:</span></p>
 			<p>Profesor Universitario y miembro del Cuerpo Acad&eacute;mico del Programa para el Desarrollo Profesional Docente (PRODEP), adscrito a la Facultad de Contadur&iacute;a y Administraci&oacute;n de la Universidad Veracruzana.</p>
 			<p>Es Facilitador y Dise&ntilde;ador de cursos de capacitaci&oacute;n a catedr&aacute;ticos en la Universidad Veracruzana, adscrito a la Direcci&oacute;n General de Desarrollo Acad&eacute;mico e Innovaci&oacute;n Educativa.</p>
 			<p>Director y Asesor Solidario en el Doctorado en Educaci&oacute;n en la Universidad Popular Aut&oacute;noma Veracruzana.</p>
 			<p>Miembro del Consejo Editorial de la revista <em>Letras superiores</em>.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary waves-effect"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+	<!--/modal-->
+	<div
+      class="modal fade"
+      id="modal-eval"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-eval"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Evaluación de desempeño
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+				<table width="689">
+				<tbody>
+				<tr>
+				<td width="163">
+				<p><span class="font-weight-bold">Fase</span></p>
+				</td>
+				<td width="412">
+				<p><span class="font-weight-bold">Evidencia (s) de desempe&ntilde;o</span></p>
+				</td>
+				<td width="115">
+				<p><span class="font-weight-bold">Porcentaje</span></p>
+				</td>
+				</tr>
+				<tr>
+				<td rowspan="3" width="163">
+				<p><span class="font-weight-bold">1.</span><span class="font-weight-bold">Resultados deseados. </span></p>
+				</td>
+				<td width="412">
+				<p>Actividad 1. Hoja de trabajo. Resultados esperados</p>
+				</td>
+				<td width="115">
+				<p>10%</p>
+				</td>
+				</tr>
+				<tr>
+				<td width="412">
+				<p>Actividad 2. Productos Integradores.</p>
+				</td>
+				<td width="115">
+				<p>10%</p>
+				</td>
+				</tr>
+				<tr>
+				<td width="412">
+				<p>Foro 1. Las grandes ideas de mi experiencia educativa.</p>
+				</td>
+				<td width="115">
+				<p>5%</p>
+				</td>
+				</tr>
+				<tr>
+				<td rowspan="3" width="163">
+				<p><span class="font-weight-bold">2.</span><span class="font-weight-bold">Pruebas aceptables. </span></p>
+				</td>
+				<td width="412">
+				<p>Actividad 3. Hoja de trabajo. Evidencias de aprendizaje.</p>
+				</td>
+				<td width="115">
+				<p>10%</p>
+				</td>
+				</tr>
+				<tr>
+				<td width="412">
+				<p>Actividad 4. R&uacute;bricas de evaluaci&oacute;n del producto integrador.</p>
+				</td>
+				<td width="115">
+				<p>10%</p>
+				</td>
+				</tr>
+				<tr>
+				<td width="412">
+				<p>Foro 2. Evaluando los aprendizajes para la vida.</p>
+				</td>
+				<td width="115">
+				<p>5%</p>
+				</td>
+				</tr>
+				<tr>
+				<td rowspan="4" width="163">
+				<p><span class="font-weight-bold">3.</span><span class="font-weight-bold">Experiencias de aprendizaje.</span></p>
+				</td>
+				<td width="412">
+				<p>Actividad 5. Hoja de trabajo. El plan de aprendizaje.</p>
+				</td>
+				<td width="115">
+				<p>10%</p>
+				</td>
+				</tr>
+				<tr>
+				<td width="412">
+				<p>Actividad 6. Creaci&oacute;n de la estructura de aprendizaje de la experiencia educativa.</p>
+				</td>
+				<td width="115">
+				<p>10%</p>
+				</td>
+				</tr>
+				<tr>
+				<td width="412">
+				<p>Foro 3. Mi estructura de aprendizaje.</p>
+				</td>
+				<td width="115">
+				<p>5%</p>
+				</td>
+				</tr>
+				<tr>
+				<td width="412">
+				<p>Actividad 7. Presentaci&oacute;n de una de las secuencias did&aacute;cticas de su Experiencia Educativa.</p>
+				</td>
+				<td width="115">
+				<p>25%</p>
+				</td>
+				</tr>
+				<tr>
+				<td colspan="2" width="574">
+				<p><span class="font-weight-bold">Total</span></p>
+				</td>
+				<td width="115">
+				<p>100 %</p>
+				</td>
+				</tr>
+				</tbody>
+				</table>
           </div>
           <div class="modal-footer">
             <button
