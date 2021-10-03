@@ -2,7 +2,10 @@
     width:75%;
     height:75%;
 }
-
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
 #modulo1-imagen-introduccion {
     width: 40%;
 }
@@ -758,13 +761,13 @@ p, li{
 		width: 40%;
 	}
 	#compensacionProposito1{
-		height: 100px;
+		height: 0px;
 	}
 	#compensacionProposito2{
-		height: 90px;
+		height: 0px;
 	}
 	#compensacionProposito3{
-		height: 70px;
+		height: 0px;
 	}
 	.tab {
 	  overflow: hidden;
@@ -831,6 +834,11 @@ p, li{
 	.recursoModal:hover {
 		background-color: #183d82; 
 		cursos: pointer;
+	}
+	
+	#imagenAudio{
+		width: 100px;
+		
 	}
 }
 
