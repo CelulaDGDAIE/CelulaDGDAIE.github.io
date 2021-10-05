@@ -1008,6 +1008,181 @@ p, li{
 		background-color: #183d82; 
 		cursos: pointer;
 	}
+	#imagenAudio{
+		width: 100px;
+		
+	}
+}
+
+@media(min-width: 1800px){
+	.h4{
+		font-size: 120%;
+	}
+	.container-xl,.container-lg,.container-md,.container-sm,.container{
+		max-width:1450px
+	}
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 1450px;
+	  position: relative;
+	  margin: auto;
+	}
+	.prev {
+	  left: -5%;
+	  border-radius: 3px 0 0 3px;
+	}
+	/* Position the "next button" to the right */
+	.next {
+	  right: -5%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.prevModal {
+	  left: 0%;
+	  border-radius: 3px 0 0 3px;
+	}
+	/* Position the "next button" to the right */
+	.nextModal {
+	  right: 0%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.prevGeni {
+	  left: 20%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.nextGeni {
+	  right: 20%;
+	  border-radius: 3px 0 0 3px;
+	}
+	#imagenIntroduccion{
+		width: 100%;
+	}
+	#textoIntroduccion{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#imagenProposito{
+		width: 100%;
+	}
+	#textoProposito{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#br3{
+		display: block;
+	}
+	#br4{
+		display: block;
+	}
+	#brInicio{
+		display: block;
+	}
+	#textoTema2{
+		font-size: 90%;
+		text-align: justify;
+	}
+	#img3{
+		width: 70%;
+	}
+	#img4{
+		width: 55%;
+	}
+	#textoTema22{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#textoIntroFase2{
+		font-size: 90%;
+		text-align: justify;
+	}
+	#textoPropFase2{
+		font-size: 180%;
+		text-align: justify;
+	}
+	.imagenLogo{
+		width: 30%;
+	}
+	.geniallyFrame{
+		width: 40%;
+	}
+	#compensacionProposito1{
+		height: 0px;
+	}
+	#compensacionProposito2{
+		height: 140px;
+	}
+	#compensacionProposito3{
+		height: 0px;
+	}
+	.tab {
+	  overflow: hidden;
+	  border-radius: 20px;
+	  background-color: #4C5BFC;
+	  max-width: 1650px;
+	  position: relative;
+	  margin: auto;
+	}
+	.tab button {
+	  background-color: #4C5BFC;
+	  color: white;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  transition: 0.3s;
+	  font-size: 17px;
+	}
+	.tab .tabTema{
+	  background-color: #4C5BFC;
+	  color: white;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  transition: 0.3s;
+	  font-size: 17px;
+	}
+	.tab button:hover {
+	  background-color: #97abdb;
+	}
+	.tab button.active {
+	  background-color: #6CBDB4;
+	  color: white;
+	}
+	.tabcontent {
+		max-width: 1650px;
+		display: none;
+		padding: 6px 12px;
+		border: 1px solid #ccc;
+		border-top: none;
+		position: relative;
+	  margin: auto;
+
+	}
+	.actividad-modal{
+		background-image: url('../images/cuaderno-azul.png');
+		position:relative;
+		background-color: white;
+		color: black;
+		background-repeat: no-repeat;
+		background-size: 600px 600px;
+		background-position: center;
+	}
+	.recursoModal {
+	text-align:center;
+	color: white;
+	background-color: #355ca7; 
+	height: 250px;
+	}
+	.recursoModal:hover {
+		background-color: #183d82; 
+		cursos: pointer;
+	}
+	#imagenAudio{
+		width: 100px;
+		
+	}
 }
 
 

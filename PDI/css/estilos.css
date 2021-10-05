@@ -606,6 +606,10 @@ table, th, td {
 	#separacionVerticalModulos{
 		height: 10px;
 	}
+	#imagenAudio{
+		width: 100px;
+		
+	}
 }
 
 @media(min-width: 1500px){
@@ -614,6 +618,331 @@ table, th, td {
 	}
 	.container-xl,.container-lg,.container-md,.container-sm,.container{
 		max-width:1250px
+	}
+	.filaModulo{
+		width: 1060px;
+		padding: none;
+	}
+	.col-sm-3half, .col-sm-8half {
+        float: left;
+    }
+    .col-mini {
+        width: 1%;
+		background-color: #dbdbdb;/
+    }
+	.col-margen {
+        width: 7%;
+		background-color: #dbdbdb;
+    }
+
+	#textoPresentacion{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#br1{
+		display: block;
+	}
+	#br2{
+		display: block;
+	}
+	#textoUnidad{
+		font-size: 100%;
+		text-align: justify;
+	}
+	.apartadoModulo {
+		position:relative;
+		height: 200px;
+		line-height: 100px;
+		background-repeat: no-repeat;
+		background-size: 175px 175px;
+		background-position: center;
+	}
+
+	.apartadoModulo:hover {
+		background-repeat: no-repeat;
+		background-size: 525px 200px;
+		background-position: center;
+	}
+	#modulo1{
+		background-image: url('../images/modulo1.png');
+	}
+	#modulo1:hover {
+		background-image: url('../images/modulo1-hover.png');
+	}
+	#modulo2{
+		background-image: url('../images/modulo2.png');
+	}
+	#modulo2:hover {
+		background-image: url('../images/modulo2-hover.png');
+	}
+	#modulo3{
+		background-image: url('../images/modulo3.png');
+	}
+	#modulo3:hover {
+		background-image: url('../images/modulo3-hover.png');
+	}
+	#modulo4{
+		background-image: url('../images/modulo4.png');
+	}
+	#modulo4:hover {
+		background-image: url('../images/modulo4-hover.png');
+	}
+	#apartadoEvaluacion {
+		background-image: url('../images/cuaderno.png');
+		height: auto;
+		line-height: 100px;
+		background-repeat: no-repeat;
+		background-size: 250px 250px;
+		background-position: center;
+	}
+	#apartadoEvaluacion:hover {
+		background-image: url('../images/eval-hover.png');
+	}
+	
+	#imagenUnidad{
+		width: 90%;
+	}
+	#compensacionUnidad{
+		height: 0px;
+	}
+	#compensacionUnidad2{
+		height: 20px;
+	}
+	
+	#compensacionTextoUnidad{
+		height: 140px;
+	}
+	#separacionModulos{
+		width: 10px;
+	}
+	#separacionVerticalModulos{
+		height: 10px;
+	}
+}
+@media(min-width: 1700px){
+	.h4{
+		font-size: 120%;
+	}
+	.container-xl,.container-lg,.container-md,.container-sm,.container{
+		max-width:1350px
+	}
+	.filaModulo{
+		width: 1130px;
+		padding: none;
+	}
+	.col-sm-3half, .col-sm-8half {
+        float: left;
+    }
+    .col-mini {
+        width: 1%;
+		background-color: #dbdbdb;/
+    }
+	.col-margen {
+        width: 7%;
+		background-color: #dbdbdb;
+    }
+
+	#textoPresentacion{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#br1{
+		display: block;
+	}
+	#br2{
+		display: block;
+	}
+	#textoUnidad{
+		font-size: 100%;
+		text-align: justify;
+	}
+	.apartadoModulo {
+		position:relative;
+		height: 200px;
+		line-height: 100px;
+		background-repeat: no-repeat;
+		background-size: 175px 175px;
+		background-position: center;
+	}
+
+	.apartadoModulo:hover {
+		background-repeat: no-repeat;
+		background-size: 595px 200px;
+		background-position: center;
+	}
+	#modulo1{
+		background-image: url('../images/modulo1.png');
+	}
+	#modulo1:hover {
+		background-image: url('../images/modulo1-hover.png');
+	}
+	#modulo2{
+		background-image: url('../images/modulo2.png');
+	}
+	#modulo2:hover {
+		background-image: url('../images/modulo2-hover.png');
+	}
+	#modulo3{
+		background-image: url('../images/modulo3.png');
+	}
+	#modulo3:hover {
+		background-image: url('../images/modulo3-hover.png');
+	}
+	#modulo4{
+		background-image: url('../images/modulo4.png');
+	}
+	#modulo4:hover {
+		background-image: url('../images/modulo4-hover.png');
+	}
+	#apartadoEvaluacion {
+		background-image: url('../images/cuaderno.png');
+		height: auto;
+		line-height: 100px;
+		background-repeat: no-repeat;
+		background-size: 250px 250px;
+		background-position: center;
+	}
+	#apartadoEvaluacion:hover {
+		background-image: url('../images/eval-hover.png');
+	}
+	
+	#imagenUnidad{
+		width: 90%;
+	}
+	#compensacionUnidad{
+		height: 0px;
+	}
+	#compensacionUnidad2{
+		height: 20px;
+	}
+	
+	#compensacionTextoUnidad{
+		height: 140px;
+	}
+	#separacionModulos{
+		width: 10px;
+	}
+	#separacionVerticalModulos{
+		height: 10px;
+	}
+}
+
+
+@media(min-width: 1800px){
+	.h4{
+		font-size: 120%;
+	}
+	.container-xl,.container-lg,.container-md,.container-sm,.container{
+		max-width:1450px
+	}
+	.filaModulo{
+		width: 1190px;
+		padding: none;
+	}
+	.col-sm-3half, .col-sm-8half {
+        float: left;
+    }
+    .col-mini {
+        width: 1%;
+		background-color: #dbdbdb;/
+    }
+	.col-margen {
+        width: 7%;
+		background-color: #dbdbdb;
+    }
+
+	#textoPresentacion{
+		font-size: 100%;
+		text-align: justify;
+	}
+	#br1{
+		display: block;
+	}
+	#br2{
+		display: block;
+	}
+	#textoUnidad{
+		font-size: 100%;
+		text-align: justify;
+	}
+	.apartadoModulo {
+		position:relative;
+		height: 200px;
+		line-height: 100px;
+		background-repeat: no-repeat;
+		background-size: 175px 175px;
+		background-position: center;
+	}
+
+	.apartadoModulo:hover {
+		background-repeat: no-repeat;
+		background-size: 595px 200px;
+		background-position: center;
+	}
+	#modulo1{
+		background-image: url('../images/modulo1.png');
+	}
+	#modulo1:hover {
+		background-image: url('../images/modulo1-hover.png');
+	}
+	#modulo2{
+		background-image: url('../images/modulo2.png');
+	}
+	#modulo2:hover {
+		background-image: url('../images/modulo2-hover.png');
+	}
+	#modulo3{
+		background-image: url('../images/modulo3.png');
+	}
+	#modulo3:hover {
+		background-image: url('../images/modulo3-hover.png');
+	}
+	#modulo4{
+		background-image: url('../images/modulo4.png');
+	}
+	#modulo4:hover {
+		background-image: url('../images/modulo4-hover.png');
+	}
+	#apartadoEvaluacion {
+		background-image: url('../images/cuaderno.png');
+		height: auto;
+		line-height: 100px;
+		background-repeat: no-repeat;
+		background-size: 250px 250px;
+		background-position: center;
+	}
+	#apartadoEvaluacion:hover {
+		background-image: url('../images/eval-hover.png');
+	}
+	
+	#imagenUnidad{
+		width: 90%;
+	}
+	#compensacionUnidad{
+		height: 0px;
+	}
+	#compensacionUnidad2{
+		height: 20px;
+	}
+	
+	#compensacionTextoUnidad{
+		height: 140px;
+	}
+	#separacionModulos{
+		width: 10px;
+	}
+	#separacionVerticalModulos{
+		height: 10px;
+	}
+}
+
+
+@media(min-width: 1900px){
+	.h4{
+		font-size: 120%;
+	}
+	.container-xl,.container-lg,.container-md,.container-sm,.container{
+		max-width:1550px
 	}
 	.filaModulo{
 		width: 1060px;
