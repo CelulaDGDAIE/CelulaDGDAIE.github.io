@@ -256,6 +256,8 @@ img {vertical-align: middle;}
 .fuente{
 	margin-left:15.65pt;
 	text-indent:-15.65pt;
+	text-align: left;
+	
 }
 .fondo_verde{
 	background-color: #6cbdb4;
@@ -269,6 +271,7 @@ img {vertical-align: middle;}
 	text-indent:-15.65pt;
 	margin:0.3em;
 	color: black;
+	text-align: left;
 }
 
 p, li{
@@ -277,6 +280,7 @@ p, li{
 
 .titulo{
 	color: #355CA7;
+	font-weight: bold;
 }
 .tabcontent{
 	color: white;
@@ -758,13 +762,13 @@ p, li{
 		width: 40%;
 	}
 	#compensacionProposito1{
-		height: 100px;
+		height: 30px;
 	}
 	#compensacionProposito2{
 		height: 90px;
 	}
 	#compensacionProposito3{
-		height: 70px;
+		height: 30px;
 	}
 	.tab {
 	  overflow: hidden;
