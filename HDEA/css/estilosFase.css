@@ -752,7 +752,7 @@ p, li{
 		text-align: justify;
 	}
 	#textoPropFase2{
-		font-size: 180%;
+		font-size: 100%;
 		text-align: justify;
 	}
 	.imagenLogo{
@@ -835,6 +835,15 @@ p, li{
 	.recursoModal:hover {
 		background-color: #183d82; 
 		cursos: pointer;
+	}
+	#imagenIntroduccionFase2{
+		width: 70%;
+	}
+	#imagenPropositoFase2{
+		width: 50%;
+	}
+	#compPropTextFase2{
+		height:60px;
 	}
 }
 

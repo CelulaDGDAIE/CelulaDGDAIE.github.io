@@ -606,6 +606,7 @@ table, th, td {
 	#separacionVerticalModulos{
 		height: 10px;
 	}
+	
 }
 
 @media(min-width: 1500px){
