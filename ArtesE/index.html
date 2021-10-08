@@ -285,7 +285,11 @@
 					<a href="modulo2.html" class="col apartadoModulo" id="modulo2" style="text-align: center;"></a>
 					<a href="modulo3.html" class="col apartadoModulo" id="modulo3" style="text-align: center;"></a>
 					<div class="col-3"></div>
-					<a class="col d-flex align-items-center" style="background-color: #8983c3; text-align: center;">
+					<a class="col d-flex align-items-center" 
+            href="#"
+            data-toggle="modal"
+            data-target="#modal-eval"
+            style="background-color: #8983c3; text-align: center; color: white;">
 					  <h5><i class="fas fa-tasks"></i> Evaluación de desempeño</h5>
 					</a>
 					<div class="col-2"></div>
@@ -393,6 +397,155 @@
     </div>
     <!--Ventanas Modales-->
     <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal-eval"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-eval"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Evaluación de desempeño
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table style="border: 1px solid black; border-color: black; border-collapse: collapse;" width="100%">
+              <tbody>
+                <tr>
+                  <td style="border: 1px solid black;">
+                    <p>M&oacute;dulo</p>
+                  </td>
+                  <td style="border: 1px solid black;">
+                    <p>Evidencia (s) de desempe&ntilde;o</p>
+                  </td>
+                  <td style="border: 1px solid black;">
+                    <p>Porcentaje</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid black;" rowspan="3">
+                    <p>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; La m&uacute;sica</p>
+                  </td>
+                  <td style="border: 1px solid black;">
+                    <p>Actividad 1. Mapa mental</p>
+                  </td>
+                  <td style="border: 1px solid black;">
+                    <p>10%</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid black;">
+                    <p>Actividad 2. Reporte de lectura</p>
+                  </td>
+                  <td style="border: 1px solid black;">
+                    <p>10%</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid black;">
+                    <p>Actividad 3. Mapa mental</p>
+                  </td>
+                  <td style="border: 1px solid black;">
+                    <p>10%</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid black;" rowspan="3">
+                    <p>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; La danza</p>
+                  </td>
+                  <td style="border: 1px solid black;">
+                    <p>Actividad 4. Reporte de lectura y videos</p>
+                  </td>
+                  <td style="border: 1px solid black;">
+                    <p>10%</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid black;">
+                    <p>Actividad 5. Mapa conceptual</p>
+                  </td>
+                  <td style="border: 1px solid black;">
+                    <p>10%</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid black;">
+                    <p>Actividad 6. Bit&aacute;cora</p>
+                  </td>
+                  <td style="border: 1px solid black;">
+                    <p>10%</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid black;" rowspan="4">
+                    <p>3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; El teatro</p>
+                  </td>
+                  <td style="border: 1px solid black;">
+                    <p>Actividad 7. Reporte</p>
+                  </td>
+                  <td style="border: 1px solid black;">
+                    <p>10%</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid black;">
+                    <p>Actividad 8. Ensayo</p>
+                  </td>
+                  <td style="border: 1px solid black;">
+                    <p>10%</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid black;">
+                    <p>Actividad 9. Mapa mental</p>
+                  </td>
+                  <td style="border: 1px solid black;">
+                    <p>10%</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid black;">
+                    <p>Actividad 10. Bit&aacute;cora</p>
+                  </td>
+                  <td style="border: 1px solid black;">
+                    <p>10%</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 1px solid black; text-align: right;" colspan="2">
+                    <p>Total</p>
+                  </td>
+                  <td style="border: 1px solid black;">
+                    <p>100 %</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary waves-effect"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div
       class="modal fade"
       id="modal-instructor-uno"
