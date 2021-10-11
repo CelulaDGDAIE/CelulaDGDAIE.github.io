@@ -202,6 +202,10 @@ texto-negro{
 	height: 20px;
 }	
 
+.aireCentrado{
+	height: 50px;
+}
+
 
 .actividad-modal{
 		background-image: url('../images/cuaderno-azul.png');
