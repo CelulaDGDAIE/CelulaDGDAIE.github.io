@@ -99,4 +99,33 @@
         width: 7%;
 		background-color: #dbdbdb;
     }
+	
+	
+	
+	.actividad-modal{
+		background-image: url('../images/cuaderno-azul.png');
+		position:relative;
+		background-color: white;
+		color: black;
+		background-repeat: no-repeat;
+		background-size: 600px 600px;
+		background-position: center;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
