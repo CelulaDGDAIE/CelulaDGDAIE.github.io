@@ -24,7 +24,7 @@
             <div class="row no-gutters mb-1">
               <div class="col">
                 <img
-                  src="images/logo-afel.png"
+                  src="images/logo-profa.png"
                   class="logo d-inline mr-"
                   alt="mdb logo"
                 />
@@ -156,7 +156,7 @@
         href="#"
         data-toggle="tooltip"
         data-html="true"
-        title="Herramientas digitales para el aprendizaje formal"
+        title="Resultados  deseados."
       >
         <span class="font-weight-bold lead">1</span>
       </a>
@@ -165,7 +165,7 @@
         href="fase2.html"
         data-toggle="tooltip"
         data-html="true"
-        title="Herramientas digitales para el aprendizaje informal"
+        title="Pruebas aceptables."
       >
         <span class="font-weight-bold lead">2</span>
       </a>
@@ -174,7 +174,7 @@
         href="fase3.html"
         data-toggle="tooltip"
         data-html="true"
-        title="Herramientas digitales para crear contenido"
+        title="Experiencias de aprendizaje."
       >
         <span class="font-weight-bold lead">3</span>
       </a>
@@ -187,11 +187,12 @@
     <section class="text-white" id="presentacion">
 	<div class="slideshow-container">
 	  <div class="mySlides1">
+	  <div class="row fondo-azul-marino" id="aireSuperiorIntroduccion"></div>
 		<div class="row">
 			<div class="col d-flex align-items-center" style="background-color:#355ca7; text-align: right;">
 				<figure class="figure">
 				  <img
-					src="images/fase1/Proposito.jpg"
+					src="images/fase1/Introduccion.jpg"
 					alt="imagen pendiente"
 					class="img-fluid"
 					id="imagenIntroduccion"
@@ -213,19 +214,19 @@
 	  </div>
 
 	  <div class="mySlides1">
-	  <div class="row fondo_azul" id="compensacionProposito1"></div>
+	  <div class="row fondo-azul-claro" id="aireSuperiorProposito"></div>
 		<div class="row">
-		<div class="col-1 fondo_azul"></div>
-			<div class="col fondo_azul">
-				<div id="compensacionProposito2"></div>
+		<div class="col-1 fondo-azul-claro"></div>
+			<div class="col fondo-azul-claro">
+				<div id="aireTextoProposito"></div>
 				<h3 class="font-weight-bold"><i class="fas fa-book-reader"></i> Propósito</h3>
 				
-				<p id="textoProposito">El académico identificará las competencias que planea desarrollar en los estudiantes a lo largo de una de las experiencias educativas a su cargo. </p>
+				<p>El académico identificará las competencias que planea desarrollar en los estudiantes a lo largo de una de las experiencias educativas a su cargo. </p>
 			</div>
-			  <div class="col d-flex align-items-center fondo_azul">
+			  <div class="col d-flex align-items-center fondo-azul-claro">
 				<figure class="figure">
 				  <img
-					src="images/fase1/Introduccion.jpg"
+					src="images/fase1/Proposito.jpg"
 					alt="imagen pendiente"
 					class="img-fluid"
 					id="imagenProposito"
@@ -236,7 +237,6 @@
 				</figure>
 			  </div>
 			</div>
-			<div class="row fondo_azul" id="compensacionProposito3"></div>
 	  </div>
 	  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
 	  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
@@ -246,28 +246,25 @@
 		
 		<div class="row" style="color: black;">
 			  <div class="col">
-				<h3 class="titulo"><span class="font-weight-bold">1.1. Los profesores somos diseñadores</span></h3>
+				<h3 class="titulo">1.1 Los profesores somos diseñadores</h3>
 			  </div>
 		</div>
 		<div class="row" style="color: black;">
 			<div class="col-1">
 			  </div>
 			  <div class="col">
-				<p><i class="fas fa-hand-point-right" style="color: #355CA7; font-size: 180%;"></i> De click en la pestaña para leer la información</p>
+				<p><i class="fas fa-hand-point-right indicacion" ></i> Para consultar la siguiente inforoctubremación haga clic en cada recuadro.</p>
 			  </div>
 		</div>
 		
 	</div>
-	<div class="tab" >
-		<div class="row" >
-			<div class="col-5"></div>
-			<div class="col"><button class="tablinks tabTema" onclick="abrirPestana(event, 'tema1', 'tabTema1')" ><i class="fas fa-eye" style="font-size: 140%;"></i></button></div>
-		</div>
+	<div class="tab">
+		<button class="tablinks tabTema" onclick="abrirPestana(event, 'tema1', 'tabTema1')" ><i class="fas fa-eye" id="ojotema1"></i></button>
 	</div>
 	<div id="tema1" class="tabcontent tabTema1">
 		<p>En la actualidad, y con la realidad a la que nos enfrentamos mundialmente, nos vemos envueltos en la necesidad de re-pensar el proceso de ense&ntilde;anza&nbsp; y aprendizaje, de manera que, como docentes, nos enfrentamos a diversos retos que implican, adem&aacute;s de seguirnos formando, pensar en el alumno y en la mejor manera de acompa&ntilde;arlo en el logro de los saberes y competencias a desarrollar.</p>
 		<p><strong>Sin embargo, desde </strong>hace mucho, y como parte de las actividades a ejercer como docente, nos hemos enfrentado al reto de dise&ntilde;ar diversas estrategias y experiencias enfocadas al aprendizaje de los alumnos, adapt&aacute;ndonos a las diversas exigencias y necesidades que la realidad nos plantea.</p>
-		<p>En este sentido, cada uno desarrolla su propia forma de dise&ntilde;ar y adopta las formas que mejor considera para este proceso creativo. No obstante, en esta experiencia educativa, el alumno podr&aacute; conocer e identificar el dise&ntilde;o invertido, mismo que se caracteriza por organizar el curso a partir de los objetivos finales de sus experiencias educativas.</p>
+		<p>En este sentido, cada uno desarrolla su propia forma de diseñar y adopta las formas que mejor considera para este proceso creativo. No obstante, en esta experiencia educativa, el alumno podrá conocer e identificar el diseño invertido, mismo que se caracteriza por organizar el curso a partir de los objetivos finales de las experiencias educativas.</p>
 		
 	</div>
 	<br>
@@ -281,20 +278,17 @@
 			<div class="col-1">
 			  </div>
 			  <div class="col">
-				<p><i class="fas fa-hand-point-right" style="color: #355CA7; font-size: 180%;"></i> De click en la pestaña para leer la información</p>
+				<p><i class="fas fa-hand-point-right indicacion"></i> De click en la pestaña para leer la información</p>
 			  </div>
 		</div>
 	</div>
 	<div class="tab">
-		<div class="row">
-			<div class="col-5"></div>
-			<div class="col"><button class="tablinks tabTema" onclick="abrirPestana(event, 'tema2', 'tabTema2')" ><i class="fas fa-eye" style="font-size: 140%;"></i> </button></div>
-		</div>
+		<button class="tablinks tabTema" onclick="abrirPestana(event, 'tema2', 'tabTema2')" ><i class="fas fa-eye" id="ojotema2"></i> </button>
 	</div>
 	<div id="tema2" class="tabcontent tabTema2">
-		<p>Es com&uacute;n que se planifique el a&ntilde;o escolar a partir de lo que se pretende ense&ntilde;ar, asumiendo que es justamente eso lo que los alumnos necesitan aprender. Sin embargo, planificar a la inversa le ayudar&aacute; a centrarse en el aprendizaje (meta) en lugar de en la ense&ntilde;anza (proceso). Esta manera de planificar asegura que los alumnos adquieran los conocimientos, habilidades y contenidos que necesitan para tener &eacute;xito en su vida escolar, continuar sus estudios e incorporarse luego en la sociedad.</p>
+		<p>Es común que se planifique el año escolar a partir de lo que se pretende enseñar, asumiendo que es justamente eso lo que los alumnos necesitan aprender. Sin embargo, planificar a la inversa le ayudará a centrarse en el aprendizaje (meta) en lugar de en la enseñanza (proceso). Esta manera de planificar asegura que los alumnos adquieran los conocimientos, habilidades y contenidos que necesitan para tener éxito en su vida escolar, continuar sus estudios e incorporarse, posteriormente, en la sociedad. </p>
 		<p>Al planear la experiencia educativa en torno a los objetivos finales, se organiza una progresi&oacute;n de objetivos coherentes y secuenciados que establecen una ruta clara de aprendizajes que se ir&aacute;n adquiriendo lecci&oacute;n a lecci&oacute;n. Empezar por el final es la mejor manera de asegurar que se lograr&aacute;n los objetivos propuestos. Planificar a la inversa requiere mirar hacia adelante.</p>
-		<p>Ense&ntilde;ar es m&aacute;s que s&oacute;lo entregar contenidos, se trata de que los alumnos entiendan ideas complejas y desarrollen su capacidad de pensar. Aunque al principio puede parecer contraintuitivo, planificar a la inversa es una manera efectiva de ayudar a los alumnos a manejar contenidos desafiantes, pues usted estar&aacute; constantemente pensando en qu&eacute; quiere que ellos aprendan y c&oacute;mo lo van a demostrar en cada lecci&oacute;n. As&iacute;, la evaluaci&oacute;n no ser&aacute; el punto final de la ense&ntilde;anza, sino el punto de partida.</p>
+		<p>Enseñar es más que sólo entregar contenidos, se trata de que los alumnos entiendan ideas complejas y desarrollen su capacidad de pensar. Aunque al principio puede parecer contraintuitivo, planificar a la inversa es una manera efectiva de ayudar a los estudiantes a manejar contenidos desafiantes, ya que usted estará constantemente pensando en qué quiere que ellos aprendan y cómo lo van a demostrar en cada lección. Así, la evaluación no será el punto final de la enseñanza, sino el punto de partida. </p>
 	
 	</div>
 
@@ -302,7 +296,7 @@
 		<div class="row">
 				<div class="col-1"></div>
 				<div class="col">
-					<p style="color: black;"><i class="fas fa-hand-point-right" style="color: #355CA7; font-size: 180%;"></i>Para conocer más acerca del tema, revise lo siguiente: </p>
+					<p style="color: black;"><i class="fas fa-hand-point-right indicacion"></i>Para conocer más acerca de este tema, revise lo siguiente:  </p>
 				</div>
 				
 
@@ -310,7 +304,7 @@
 		<div class="row">
 			<div class="col" style="text-align: center;">
 				<a href="audio/.mp3" target="_blank">
-					<img src="images/fase1/1.2 - Icono sonido 1.png" id="imagenAudio" />
+					<img src="images/fase1/1.2 - Icono sonido 1.png" id="icono" />
 				</a>
 			</div>	
 		</div>
@@ -331,7 +325,7 @@
 				</li>
 				<li>
 				<p>&iquest;Las actividades planificadas ayudan a cumplir el objetivo?</p>
-				<p>Ahora que ya tiene en mente el producto final y las herramientas de evaluaci&oacute;n, es momento de crear tanto los materiales did&aacute;cticos, as&iacute; como las interacciones y din&aacute;micas de trabajo que podr&aacute;n detonar las competencias buscadas en la experiencia educativa. Es decir, se requiere un cambio de enfoque del papel de profesor al de facilitador del aprendizaje, asegurando que todos y cada uno de nuestros estudiantes tengan los recursos y aprendizajes necesarios para tener &eacute;xito acad&eacute;mico y profesional.</p>
+				<p>Ahora que ya tiene en mente el producto final y las herramientas de evaluación, es momento de crear tanto los materiales didácticos, como las interacciones y dinámicas de trabajo que podrán detonar las competencias buscadas en la experiencia educativa. Es decir, se requiere un cambio de enfoque del papel de profesor al de facilitador del aprendizaje, asegurando que todos y cada uno de nuestros estudiantes cuenten con los recursos y aprendizajes necesarios para alcanzar el éxito académico y profesional. </p>
 				</li>
 				</ol>
 				<figure class="figure">
@@ -341,163 +335,197 @@
 					class="img-fluid"
 				  />
 				  <figcaption class="figure-caption text-right text-black">
-					<span class="font-weight-bold">Elaboración propia</span>
+					<span class="font-weight-bold">Fuente: Elaboración propia [4].</span>
 				  </figcaption>
 				</figure>
-				<p>Para profundizar el conocimiento acerca del modelo de trabajo de la comprensión por diseño-Undestandig by Design (UbD), por sus siglas en inglés, se propone que revise la exposición de Grant Wiggins: </p>
-				<ol style="list-style-type: lower-alpha;">
-				<li >Avenues: The World School. (2013, 28 febrero). <em>Grant Wiggins-Understanding by Design (1 of 2)</em> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=4isSHf3SBuQ">https://www.youtube.com/watch?v=4isSHf3SBuQ</a></li>
-				<li >Avenues: The World School. (2013b, marzo 7). <em>Grant Wiggins-Understanding by Design (2 of 2)</em> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=vgNODvvsgxM">https://www.youtube.com/watch?v=vgNODvvsgxM</a></li>
-				</ol>
+				<p>Para profundizar el conocimiento acerca del modelo de trabajo de la comprensión por diseño Undestandig by Design (UbD), por sus siglas en inglés, se propone que revise la exposición de Grant Wiggins: </p>
 				</div>
 		</div>
+		<br>
+		<div class="row">
+			<div class="col">
+				<div class="tab">
+					<div class="row">
+						<div class="col"></div>
+						<div class="col"><button class="tablinks tabTema"  onclick="abrirPestanaVideos(event, 'video1', 'tabTema1')" id="defaultOpen"><em>Grant Wiggins-Understanding by Design (1 of 2)</em></button></div>
+						<div class="col"></div>
+						<div class="col"><button class="tablinks tabTema" onclick="abrirPestanaVideos(event, 'video2', 'tabTema1')"><em>Grant Wiggins-Understanding by Design (2 of 2)</em></button></div>
+						<div class="col"></div>
+					</div>
+				</div>
+				<div id="video1" class="tabcontent tabTema1" style="text-align: center;">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/4isSHf3SBuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+
+				<div id="video2" class="tabcontent tabTema1" style="text-align: center;">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/vgNODvvsgxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		
 		<div class="row" style="color: black;">
 			<div class="col" style="text-align: center; ">
 				
 				<br>
 				<p>A continuación, descargue  la hoja de trabajo correspondiente. Es recomendable que conforme avance en los contenidos de aprendizaje, vaya llenando su hoja, para facilitar las actividades que se presentan al final de esta fase.  </p>
-				
+				<p><i class="fas fa-hand-point-right indicacion"></i> Descargue los siguientes documentos:</p>
 			</div>	
 		</div>
 		<div class="row" style="color: black;">
 			<div class="col-3" style="text-align: center; "></div>
 			<div class="col" style="text-align: center; ">
 				<a href="documentos/Hoja de trabajo.docx" target="_blank">
-					<img src="images/fase1/1.2 icono descarga3.png" id="imagenAudio" />
+					<img src="images/fase1/1.2 icono descarga3.png" id="icono" />
 				</a>
+				<p>Hoja de trabajo.docx</p>
 			</div>
 			<div class="col" style="text-align: center; ">
 				
 				<a href="documentos/Tabla Resultados deseados.docx" target="_blank">
-					<img src="images/fase1/1.2 icono descarga2.png" id="imagenAudio" />
+					<img src="images/fase1/1.2 icono descarga2.png" id="icono" />
 				</a>
+				<p style="text-align:center">Tabla Resultados deseados.docx</p>
 			</div>
+			
 			<div class="col-3" style="text-align: center; "></div>
 			
 		</div>
 		<br>
 		<div class="row" style="color: black;">
 		  <div class="col">
-			<h3 class="titulo"><span class="font-weight-bold">Tema 1.3. Metas deseadas</span></h3>
+			<h3 class="titulo"><span class="font-weight-bold">1.3. Metas deseadas</span></h3>
 		  </div>
-	</div>
+		  
+		  <div class="col-1"></div>
+		</div>
+		<div class="row" style="color: black;">
+			<div class="col-1"></div>
+		  <div class="col">
+			<p><i class="fas fa-hand-point-right indicacion"></i> Para leer la información completa haga clic en la flecha.</p>
+		  </div>
+		  
+		  
+		</div>
 	<div class="slideshow-container">
 	  <div class="mySlides2">
+		<div class="row aireCarrusel fondo-azul-marino"></div>
 		<div class="row">
-			<div class="col d-flex align-items-center" style="background-color:#355ca7; text-align: right;">
+			
+			<div class="col d-flex align-items-center fondo-azul-marino">
 				<figure class="figure">
 				  <img
-					src="images/fase1/.jpg"
+					src="images/fase1/7.jpg"
 					alt="imagen pendiente"
 					class="img-fluid"
 				  />
 				  <figcaption class="figure-caption text-white">
-					[1]
+					[7]
 				  </figcaption>
 				</figure>
 			</div>
-			<div class="col" style="background-color:#355ca7;">
-				<div id="">
-					<p>La meta o finalidad &uacute;ltima es que los estudiantes usen efectivamente sus conocimientos y habilidades adquiridas a lo largo de la experiencia educativa en diferentes situaciones de su vida laboral. Es importante que tanto la meta como la ruta de aprendizaje sean claras para el estudiante, pues de esta manera identificar&aacute; el sentido de las actividades y tareas requeridas a lo largo de su curso.</p>
+			<div class="col fondo-azul-marino" >
+					<p>La meta o finalidad última es que los estudiantes usen efectivamente sus conocimientos y habilidades adquiridas a lo largo de la experiencia educativa en diferentes situaciones de su vida laboral. Es importante que tanto las metas como la ruta de aprendizaje sean claras para él, pues de esta manera identificará el sentido de las actividades y tareas requeridas a lo largo de su curso. </p>
 					<p>El resultado de todas estas experiencias se ver&aacute; reflejado en uno o varios productos finales que integrar&aacute;n los aprendizajes y competencias esperados. Estos productos que deber&aacute;n entregar los alumnos, se convertir&aacute;n en la br&uacute;jula que orientar&aacute; el dise&ntilde;o de las evaluaciones, los materiales y las actividades a desarrollar.</p>
-				</div>
 			</div>
+			<div class="col-1 fondo-azul-marino"></div>
 					  
 		</div>
 	  </div>
 
 	  <div class="mySlides2">
-	  <div class="row fondo_azul" id=""></div>
+	  <div class="row aireCarrusel fondo-azul-claro"></div>
+	  <div class="row fondo-azul-claro" id=""></div>
 		<div class="row">
-			<div class="col fondo_azul">
-				<div id="">
+		<div class="col-1 fondo-azul-claro"></div>
+			<div class="col fondo-azul-claro">
 					<p>Actualmente, el desaf&iacute;o de la educaci&oacute;n es abarcar la integralidad de la persona, es decir, al ser humano en sus diferentes dimensiones. En este sentido, es importante brindar las herramientas y los espacios para facilitar el aprendizaje tanto de habilidades cognitivas como sociales que, a su vez, complementen las aptitudes y destrezas adquiridas a lo largo de su vida universitaria, aplic&aacute;ndolas a sus necesidades profesionales futuras.</p>
-				</div>
+
 				
 				
 			</div>
-			  <div class="col d-flex align-items-center fondo_azul">
+			  <div class="col d-flex align-items-center fondo-azul-claro">
 				<figure class="figure">
 				  <img
-					src="images/fase1/.jpg"
+					src="images/fase1/8.jpg"
 					alt="imagen pendiente"
 					class="img-fluid"
 				  />
 				  <figcaption class="figure-caption text-right text-white">
-					[2]
+					[8]
 				  </figcaption>
 				</figure>
 			  </div>
 			</div>
-			<div class="row fondo_azul" id=""></div>
 	  </div>
+	  
 	  <div class="mySlides2">
+		<div class="row aireCarrusel fondo-azul-marino"></div>
 		<div class="row">
-			<div class="col d-flex align-items-center" style="background-color:#355ca7; text-align: right;">
+			<div class="col d-flex align-items-center fondo-azul-marino">
 				<figure class="figure">
 				  <img
-					src="images/fase1/.jpg"
+					src="images/fase1/9.jpg"
 					alt="imagen pendiente"
 					class="img-fluid"
 				  />
 				  <figcaption class="figure-caption text-white">
-					[3]
+					[9]
 				  </figcaption>
 				</figure>
 			</div>
-			<div class="col" style="background-color:#355ca7;">
-				<div id="">
+			<div class="col fondo-azul-marino">
 					<p>A nivel internacional ya se aplican estrategias que responden a la necesidad de desarrollar las habilidades sociales, al igual que las habilidades cognitivas, por ejemplo, la Organizaci&oacute;n de Estados Iberoamericanos para la Educaci&oacute;n, la Ciencia y la Cultura (2012) destaca experiencias en las que el trabajo colaborativo permite integrar la teor&iacute;a y la pr&aacute;ctica; potenciar las habilidades intelectuales y superar la capacidad de memorizaci&oacute;n; promover la responsabilidad personal y de equipo al establecer metas propias; as&iacute; como fomentar el pensamiento autocr&iacute;tico y evaluativo. El trabajo en grupos permite lograr aprendizajes significativos, el desarrollo de habilidades cognitivas, como el razonamiento, la observaci&oacute;n, el an&aacute;lisis y el juicio cr&iacute;tico, entre otras, al tiempo que se promueve la socializaci&oacute;n, se mejora la autoestima y la aceptaci&oacute;n de las comunidades en las que se trabaja.</p>
-				</div>
 			</div>
+			<div class="col-1 fondo-azul-marino"></div>
 					  
 		</div>
 	  </div>
 
 	  <div class="mySlides2">
-	  <div class="row fondo_azul" id=""></div>
+	  <div class="row aireCarrusel fondo-azul-claro"></div>
+	  <div class="row fondo-azul-claro"></div>
 		<div class="row">
-			<div class="col fondo_azul">
-				<div id="">
-					<p>Seg&uacute;n investigaciones realizadas por el Banco Interamericano de Desarrollo, se detecta una brecha entre las habilidades que los j&oacute;venes latinoamericanos adquieren en la instituci&oacute;n educativa y aquellas que demandan las empresas. Uno de los resultados del an&aacute;lisis es que las habilidades cognitivas y aquellas de car&aacute;cter socioemocional est&aacute;n poco correlacionadas entre s&iacute; (Bassi y Busso, 2012), esto demuestra que la escuela no entrega las herramientas necesarias para uno de los &aacute;mbitos de la vida, que es el laboral.</p>
-				</div>
+			<div class="col-1 fondo-azul-claro"></div>
+			<div class="col fondo-azul-claro">
+					<p>Según investigaciones realizadas por el Banco Interamericano de Desarrollo, se detecta una brecha entre las habilidades que los jóvenes latinoamericanos adquieren en la institución educativa y aquellas que demandan las empresas. Uno de los resultados del análisis es que las habilidades cognitivas y aquellas de carácter socioemocional están poco correlacionadas entre sí (Bassi y Busso, 2012), esto demuestra que la escuela no entrega las herramientas necesarias para uno de los ámbitos importantes de la vida, que es el laboral.</p>
 				
 				
 			</div>
-			  <div class="col d-flex align-items-center fondo_azul">
+			  <div class="col d-flex align-items-center fondo-azul-claro">
 				<figure class="figure">
 				  <img
-					src="images/fase1/.jpg"
+					src="images/fase1/10.jpg"
 					alt="imagen pendiente"
 					class="img-fluid"
 				  />
 				  <figcaption class="figure-caption text-right text-white">
-					[4]
+					[10]
 				  </figcaption>
 				</figure>
 			  </div>
 			</div>
-			<div class="row fondo_azul" id=""></div>
 	  </div>
 	  <div class="mySlides2">
+	  <div class="row aireCarrusel fondo-azul-marino"></div>
 		<div class="row">
-			<div class="col d-flex align-items-center" style="background-color:#355ca7; text-align: right;">
+			<div class="col d-flex align-items-center fondo-azul-marino">
 				<figure class="figure">
 				  <img
-					src="images/fase1/.jpg"
+					src="images/fase1/11.jpg"
 					alt="imagen pendiente"
 					class="img-fluid"
 				  />
 				  <figcaption class="figure-caption text-white">
-					[5]
+					[11]
 				  </figcaption>
 				</figure>
 			</div>
-			<div class="col" style="background-color:#355ca7;">
+			<div class="col fondo-azul-marino">
 				<div id="">
-					<p>Las habilidades cognitivas pueden traducirse en &eacute;xitos acad&eacute;micos. As&iacute; como las habilidades socioemocionales estimulan el aprendizaje y pueden reforzar el desarrollo de las habilidades cognitivas. De esta forma, la interacci&oacute;n que se produce entre ambos componentes permite el desarrollo de los estudiantes dentro de una educaci&oacute;n y formaci&oacute;n integral centrada en valores, colaboraci&oacute;n, emprendimiento y creatividad.</p>
+					<p>Las habilidades cognitivas pueden traducirse en éxitos académicos. Asímismo, las habilidades socioemocionales estimulan el aprendizaje y pueden reforzar el desarrollo de las habilidades cognitivas. De esta forma, la interacción que se produce entre ambos componentes permite el desarrollo de los estudiantes dentro de una educación y formación integral centrada en valores, colaboración, emprendimiento y creatividad.</p>
 				</div>
 			</div>
+			<div class="col-1 fondo-azul-marino"></div>
 					  
 		</div>
 	  </div>
@@ -505,37 +533,133 @@
 	  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
 	</div>
 	<br>
-		<div class="row" style="text-align: center; color: black;">
+	<div class="row" style="text-align: center; color: black;">
 		  <div class="col">
 			<p>Dependiendo del contenido de la experiencia educativa, el producto integrador puede tomar alguna de estas formas:</p>
-			<p class="font-weight-bold">Para consultar la información haz clic sobre el ícono</p>
-			<figure class="figure">
-				  <img
-					src="images/fase1/Tabla 1.3 Metas sin icono.png"
-					alt="Infografía pendiente"
-					class="img-fluid"
-				  />
-				  <figcaption class="figure-caption text-right text-black">
-					<span class="font-weight-bold">Elaboración propia</span>
-				  </figcaption>
-				</figure>
+			<table style="border-collapse: collapse; width: 100%;" border="1">
+				<tbody>
+				<tr  >
+				<td style=" text-align: center;">Tipo de producto/saberes</td>
+				<td style=" text-align: center;">Teórico</td>
+				<td style=" text-align: center;">Heurístico</td>
+				<td style=" text-align: center;">Axiológico</td>
+				<td style=" text-align: center;">Audio</td>
+				</tr>
+				<tr  >
+				<td  >Portafolio de evidencias</td>
+				<td style=" text-align: center;"><strong>X</strong></td>
+				<td style=" text-align: center;"><strong>X</strong></td>
+				<td style=" text-align: center;"></td>
+				<td>
+				<a href="audio/Portafolio de Evidencias.mp3" target="_blank">
+					<img src="images/fase1/1.2 - Icono sonido 1.png" id="iconoAudio" />
+				</a>
+				</td>
+				</tr>
+				<tr  >
+				<td  >Proyecto final</td>
+				<td style=" text-align: center;"></td>
+				<td style=" text-align: center;"><strong>X</strong></td>
+				<td style=" text-align: center;"><strong>X</strong></td>
+				<td>
+				<a href="audio/Proyectos Escolares.mp3" target="_blank">
+					<img src="images/fase1/1.2 - Icono sonido 2.png" id="iconoAudio" />
+				</a>
+				</td>
+				</tr>
+				<tr  >
+				<td  >Estudio de caso</td>
+				<td style=" text-align: center;"><strong>X</strong></td>
+				<td style=" text-align: center;"></td>
+				<td style=" text-align: center;"><strong>X</strong></td>
+				<td>
+				<a href="audio/Estudio de caso.mp3" target="_blank">
+					<img src="images/fase1/1.2 - Icono sonido 1.png" id="iconoAudio" />
+				</a>
+				</td>
+				</tr>
+				<tr  >
+				<td  >Cuaderno de trabajo</td>
+				<td style=" text-align: center;"></td>
+				<td style=" text-align: center;"><strong>X</strong></td>
+				<td style=" text-align: center;"></td>
+				<td>
+				<a href="audio/Cuaderno de trabajo.mp3" target="_blank">
+					<img src="images/fase1/1.2 - Icono sonido 2.png" id="iconoAudio" />
+				</a>
+				</td>
+				</tr>
+				<tr  >
+				<td  >Exposición escolar</td>
+				<td style=" text-align: center;"><strong>X</strong></td>
+				<td style=" text-align: center;"></td>
+				<td style=" text-align: center;"><strong>X</strong></td>
+				<td>
+				<a href="audio/Exposicion escolar.mp3" target="_blank">
+					<img src="images/fase1/1.2 - Icono sonido 1.png" id="iconoAudio" />
+				</a>
+				</td>
+				</tr>
+				<tr  >
+				<td  >Banco de preguntas/examen</td>
+				<td style=" text-align: center;"><strong>X</strong></td>
+				<td style=" text-align: center;"><strong>X</strong></td>
+				<td style=" text-align: center;"></td>
+				<td>
+				<a href="audio/Banco de Preguntas.mp3" target="_blank">
+					<img src="images/fase1/1.2 - Icono sonido 2.png" id="iconoAudio" />
+				</a>
+				</td>
+				</tr>
+				<tr  >
+				<td  >Diario de aprendizaje</td>
+				<td style=" text-align: center;"><strong>X</strong></td>
+				<td style=" text-align: center;"></td>
+				<td style=" text-align: center;"><strong>X</strong></td>
+				<td>
+				<a href="audio/Diario de Aprendizaje.mp3" target="_blank">
+					<img src="images/fase1/1.2 - Icono sonido 1.png" id="iconoAudio" />
+				</a>
+				</td>
+				</tr>
+				<tr  >
+				<td  >Simulación/dramatización</td>
+				<td style=" text-align: center;"></td>
+				<td style=" text-align: center;"><strong>X</strong></td>
+				<td style=" text-align: center;"><strong>X</strong></td>
+				<td>
+				<a href="audio/Dramatizacion.mp3" target="_blank">
+					<img src="images/fase1/1.2 - Icono sonido 2.png" id="iconoAudio" />
+				</a>
+				</td>
+				</tr>
+				</tbody>
+				</table>
 				
-			<br>
 		  </div>
+		</div>
+		
+		
+	</div>
+	<div class="container contenedor-seccion" style="color: black;">
+		<div class="row" >
+			<div class="col">
+				<p class="titulo">1.4. Transferencias</p>
+				<p class="texto-negro"><i class="fas fa-hand-point-right indicacion" ></i> Para consultar la siguiente inforoctubremación haga clic en cada recuadro.</p>
+			</div>
 		</div>
 		
 	</div>
 	
-	
 	<div class="tab" >
 		<div class="row" >
 			<div class="col"></div>
-			<div class="col"><button class="tablinks tabTema" onclick="abrirPestana(event, 'tema3', 'tabTema3')" >Tema 1.4. Transferencias</button></div>
+			<div class="col"><button class="tablinks tabTema" onclick="abrirPestana(event, 'tema3', 'tabTema3')" ><i class="fas fa-eye" id="ojotema3"></i></button></div>
 			<div class="col"></div>
 		</div>
 	</div>
 	<div id="tema3" class="tabcontent tabTema3" style="background-color: #355CA7;">
-		<p>Se ha alcanzado una transferencia efectiva del aprendizaje cuando los estudiantes son capaces de: explicar, interpretar, aplicar, cambiar la perspectiva, empatizar, autoevaluar y co<em>-</em>evaluar, el modelo UbD. En resumen, los estudiantes ser&aacute;n h&aacute;biles para usar independientemente sus aprendizajes en diversos contextos aplicables a su vida futura como profesionales.</p>
+		<p>Se ha alcanzado una transferencia efectiva del aprendizaje cuando los estudiantes son capaces de: explicar, interpretar, aplicar, cambiar la perspectiva, empatizar, autoevaluar y co-evaluar el modelo UbD. En resumen, los estudiantes serán hábiles para usar independientemente sus aprendizajes en diversos contextos aplicables a su vida futura como profesionales.</p>
 		<p>Aqu&iacute; se busca un entendimiento duradero, aquellos valores que se recuerdan cuando se olvida el resto de la clase:</p>
 		<div style="text-align: center;" >
 			
@@ -544,19 +668,28 @@
 					src="images/fase1/Fase1-Tabla1.4.png"
 					alt="Infografía pendiente"
 					class="img-fluid"
+					id="tabla4"
 				  />
 				  <figcaption class="figure-caption text-right text-black">
-					<span class="font-weight-bold">Elaboración propia</span>
+					<span class="font-weight-bold text-white">Elaboración propia</span>
 				  </figcaption>
 				</figure>
 			
 		</div>
 	</div>
 	<br>
+	<div class="container contenedor-seccion" style="color: black;">
+		<div class="row" >
+			<div class="col">
+				<p class="titulo">1.5. Entendimientos</p>
+				<p><i class="fas fa-hand-point-right indicacion" ></i> Para consultar la siguiente inforoctubremación haga clic en cada recuadro.</p>
+			</div>
+		</div>
+	</div>
 	<div class="tab" >
 		<div class="row" >
 			<div class="col"></div>
-			<div class="col"><button class="tablinks tabTema" onclick="abrirPestana(event, 'tema4', 'tabTema4')" >Tema 1.5. Entendimientos</button></div>
+			<div class="col"><button class="tablinks tabTema" onclick="abrirPestana(event, 'tema4', 'tabTema4')" ><i class="fas fa-eye" id="ojotema4"></i></button></div>
 			<div class="col"></div>
 		</div>
 	</div>
@@ -581,13 +714,13 @@
 				class="img-fluid"
 			  />
 			  <figcaption class="figure-caption text-right text-white">
-				<span class="font-weight-bold">Elaboración propia</span>
+				<span class="font-weight-bold">Fuente: Elaboración propia.</span>
 			  </figcaption>
 			</figure>
 		</div>
-		<p>Una confusi&oacute;n com&uacute;n al momento de crear nuestras preguntas detonadoras de comprensi&oacute;n en el alumnado, es usar algo similar a la siguiente frase: &ldquo;&hellip;el estudiante comprender&aacute;/entender&aacute; c&oacute;mo (hacer tal cosa)&rdquo;. Con frecuencia usamos comprensi&oacute;n como sin&oacute;nimo de aprendizajes de un conjunto de habilidades que requieren esfuerzo y atenci&oacute;n. Sin embargo, la comprensi&oacute;n va mucho m&aacute;s all&aacute;: engloba estas habilidades dando un marco referencial en donde se organizan y adquieren significado todos esos aprendizajes.</p>
-		<p>&iquest;Qu&eacute; le impulsa a hacer lo que hace como profesor, investigador, acad&eacute;mico? &iquest;Cu&aacute;les son sus creencias fundamentales sobre lo que estudia? Estas son sus grandes ideas, los impulsores de lo que hace. Presentar estas <strong>grandes ideas </strong>para su comprensi&oacute;n, es raz&oacute;n suficiente para transmitirlas a sus estudiantes. Esta es su oportunidad de dar forma a c&oacute;mo se hacen las conexiones entre las muchas partes m&oacute;viles de su disciplina, as&iacute; como entre su disciplina y el mundo cotidiano. &iexcl;Qu&eacute; gran oportunidad!</p>
-		<p>As&iacute; como las grandes ideas estimulan el estudio activo, tambi&eacute;n pueden impulsar su pedagog&iacute;a. De hecho, cuando las grandes ideas promueven las decisiones que toma como profesor, su curso desarrolla una cohesi&oacute;n que permite a los estudiantes encontrar significado y conexi&oacute;n entre sus muchas piezas. Piense en sus grandes ideas como declaraciones de tesis que enmarcan y organizan el contenido del curso d&aacute;ndole sentido y profundidad.</p>
+		<p>Una confusi&oacute;n com&uacute;n al momento de crear nuestras preguntas detonadoras de comprensi&oacute;n en el alumnado, es usar algo similar a la siguiente frase: &ldquo;&hellip;el estudiante comprender&aacute;/entender&aacute; c&oacute;mo (hacer tal cosa)&rdquo;. Con frecuencia, usamos comprensi&oacute;n como sin&oacute;nimo de aprendizaje de un conjunto de habilidades que requieren esfuerzo y atenci&oacute;n. Sin embargo, la comprensi&oacute;n va mucho m&aacute;s all&aacute;: engloba estas habilidades dando un marco referencial en donde se organizan y adquieren significado todos esos aprendizajes.</p>
+		<p>&iquest;Qu&eacute; le motiva a hacer lo que hace como profesor, investigador, acad&eacute;mico? &iquest;Cu&aacute;les son sus creencias fundamentales sobre lo que estudia? &Eacute;stas son sus grandes ideas, las impulsoras de lo que hace. Presentar estas <strong>grandes ideas </strong>para su comprensi&oacute;n, es raz&oacute;n suficiente para transmitirlas a sus estudiantes. Esta es su oportunidad de dar forma a c&oacute;mo se hacen las conexiones entre las muchas partes m&oacute;viles de su disciplina, as&iacute; como entre su disciplina y el mundo cotidiano. &iexcl;Qu&eacute; gran oportunidad!</p>
+		<p>As&iacute; como las grandes ideas estimulan el estudio activo, tambi&eacute;n pueden impulsar su pedagog&iacute;a; de hecho, cuando &eacute;stas promueven las decisiones que toma como profesor, su curso desarrolla una cohesi&oacute;n que permite a los estudiantes encontrar significado y conexi&oacute;n entre sus muchas piezas. Piense en sus grandes ideas como declaraciones de tesis que enmarcan y organizan el contenido del curso d&aacute;ndole sentido y profundidad.</p>
 		<p>El t&eacute;rmino "grandes ideas" proviene del m&eacute;todo <em>Understanding</em> <em>By</em> <em>Design</em>, que enumera cinco cualidades principales de las grandes ideas:</p>
 		<div style="text-align: center;" >
 			<figure class="figure">
@@ -598,43 +731,54 @@
 				style="width: 70%;"
 			  />
 			  <figcaption class="figure-caption text-right text-white">
-				<span class="font-weight-bold">Elaboración propia</span>
+				<span class="font-weight-bold">Fuente: Elaboración propia [17].</span>
 			  </figcaption>
 			</figure>
 		</div>
-		<p>El desaf&iacute;o para usted como maestro (tambi&eacute;n conocido como dise&ntilde;ador del aprendizaje de sus estudiantes) es elegir algunas grandes ideas y permitir que este enfoque lo ayude a tomar decisiones sobre qu&eacute; priorizar a medida que construye su curso. Es probable que tenga grandes ideas tanto sobre el contenido de su curso como sobre la pedagog&iacute;a; ambos pueden y deben guiarlo a medida que construye su curso. Recuerde que las grandes ideas se refieren tanto a lo que omite como a lo que incluye. Elegir los que son m&aacute;s importantes para usted es su forma de establecer prioridades de aprendizaje y <em>no tratar de ense&ntilde;ar todo el campo de una sola vez</em>.</p>
+		<p>El desaf&iacute;o para usted como maestro (tambi&eacute;n conocido como dise&ntilde;ador del aprendizaje de sus estudiantes) es elegir algunas grandes ideas y permitir que este enfoque lo ayude a tomar decisiones sobre qu&eacute; priorizar a medida que construye su curso. Es probable que tenga grandes ideas tanto acerca del contenido de su curso como sobre la pedagog&iacute;a; ambos pueden y deben guiarlo a medida que construye su curso. Recuerde que las grandes ideas se refieren tanto a lo que omite como a lo que incluye. Elegir los que son m&aacute;s importantes para usted es su forma de establecer prioridades de aprendizaje y <em>no tratar de ense&ntilde;ar todo el campo de una sola vez</em>.</p>
 		<p>Tenga en cuenta que sus grandes ideas son suyas y que los estudiantes pueden aportar sus propias grandes ideas cuando ingresan a su clase, especialmente en los cursos de nivel superior. Los estudiantes tendr&aacute;n sus propios marcos para comprender y priorizar el contenido, sus propios enfoques del material y las formas de integrarlo en lo que ya saben y valoran. Su gran idea lo ha conectado todo, invite a los alumnos a hacer sus propias conexiones. Luego integre esas grandes ideas a su clase para exponer la multiplicidad y riqueza del tema. &iexcl;Hay muchas grandes ideas que podr&iacute;amos aplicar al mismo material!</p>
-		<p>Una gran idea de <em>Understanding</em> <em>By</em> <em>Design</em> es saber que conocer a d&oacute;nde se dirige le ayuda a llegar all&iacute;: Dise&ntilde;o al rev&eacute;s. Este enfoque es particularmente popular y efectivo para el aprendizaje en l&iacute;nea, que generalmente requiere que un maestro haga m&aacute;s trabajo de dise&ntilde;o antes del semestre que una clase presencial.</p>
-		<p>A algunos se les dificulta este enfoque porque es dif&iacute;cil saber a d&oacute;nde va antes de saber qui&eacute;nes son sus estudiantes y qu&eacute; quieren hacer (sus grandes ideas). &Eacute;stas son preocupaciones v&aacute;lidas. Empiece con sus grandes ideas, pero d&eacute;jelas ser flexibles. Las grandes ideas deben ser flexibles y deben cambiar con el tiempo. Cree espacio en su curso para este cambio y para que los estudiantes aporten sus grandes ideas.</p>
-		<p>Puede que sea alguien que no comienza con una gran idea. Quiz&aacute; tuvo una tarea que funcion&oacute; muy bien la &uacute;ltima vez que ense&ntilde;&oacute; su curso y ha decidido que le gustar&iacute;a desarrollarla. &iexcl;Genial! Con toda probabilidad, esta tarea tiene una gran idea (o muchas), y las descubrir&aacute; a medida que la vaya construyendo. No es necesario que comience con la gran o no la descarte demasiado r&aacute;pido. Los estudiantes comprender&aacute;n mejor si hay algo que los ayude a conectar los materiales entre s&iacute; y con el contexto que los rodea.</p>
+		<p>Una gran idea de <em>Understanding</em> <em>By</em> <em>Design</em> es saber que conocer a d&oacute;nde se dirige le ayuda a llegar all&iacute;: Dise&ntilde;o al rev&eacute;s. Este enfoque es particularmente popular y efectivo para el aprendizaje en l&iacute;nea, que generalmente requiere que un maestro haga m&aacute;s trabajo de dise&ntilde;o antes del semestre que en una clase presencial.</p>
+		<p>A algunos se les dificulta este enfoque porque es dif&iacute;cil saber a d&oacute;nde va antes de saber qui&eacute;nes son sus estudiantes y qu&eacute; quieren hacer (sus grandes ideas). &Eacute;stas son preocupaciones v&aacute;lidas. Empiece con sus grandes ideas, pero d&eacute;jelas ser flexibles. Las grandes ideas deben ser adaptables y deben cambiar con el tiempo. Cree espacio en su curso para este cambio y para que los estudiantes aporten sus grandes ideas.</p>
+		<p>Puede que usted sea alguien que no comienza con una gran idea. Quiz&aacute; tuvo una tarea que funcion&oacute; muy bien la &uacute;ltima vez que ense&ntilde;&oacute; su curso y ha decidido que le gustar&iacute;a desarrollarla. &iexcl;Genial! Con toda probabilidad, esta tarea tiene una gran idea (o muchas), y las descubrir&aacute; a medida que la vaya construyendo. Los estudiantes comprender&aacute;n mejor si hay algo que los ayude a conectar los materiales entre s&iacute; y con el contexto que los rodea.</p>
 	
 	</div>
 	<div class="container contenedor-seccion" style="color: black;">
 		<div class="row">
-			<p>Para conocer más acerca del tema, revise lo siguiente: </p>
+			<p>Para conocer más acerca de este tema, revise la siguiente presentación: </p>
 			<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6144f7f0cfa6390dabe1ebf7" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
 		</div>
 		<br>
 		<!--Tema 1.7: De las adquisiciones del aprendizaje.  
 -->
 		<div class="row">
-			<div class="col-3 fondo_azul">
+			<div class="col">
+				<p class="titulo">1.7 De las adquisiciones del aprendizaje  </p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-3 fondo-azul-marino">
 				<figure class="figure">
 				  <img
-					src="images/fase1/"
+					src="images/fase1/18.jpg"
 					alt="Imagen pendiente"
 					class="img-fluid"
 				  />
 				  <figcaption class="figure-caption text-right text-white">
-					<span class="font-weight-bold">[]</span>
+					<span class="font-weight-bold">[18]</span>
 				  </figcaption>
 				</figure>
 			
 			</div>
-			<div class="col fondo_azul" style="color: white;">El conocimiento y las habilidades son las bases para alcanzar la posterior transferencia de significados a contextos complejos y dinámicos. El desarrollo de estos conocimientos, destrezas y habilidades serán la guía para evaluar si los estudiantes alcanzaron las competencias específicas de la experiencia educativa. Es necesario tener en cuenta que las competencias deseadas deben encajar naturalmente con las buscadas en la experiencia educativa.  </div>
+			<div class="col fondo-azul-marino" style="color: white;"><p>El conocimiento y las habilidades son las bases para alcanzar la posterior transferencia de significados a contextos complejos y dinámicos. El desarrollo de estos conocimientos, destrezas y habilidades serán la guía para evaluar si los estudiantes alcanzaron las competencias específicas de la experiencia educativa. Es necesario tener en cuenta que las competencias deseadas deben encajar naturalmente con las buscadas en la experiencia educativa.</p>  </div>
 		</div>
 		<br>
-		<p>Para conocer más acerca del tema, revise lo siguiente: </p>
+		<div class="row">
+			<div class="col">
+				<p>Para conocer más acerca de este tema, revise la siguiente presentación: </p>
+			</div>
+			</div>
+		
 		<br>
 		<div class="row">
 			<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6144ea72c9257b0d12dd1dca" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
@@ -642,10 +786,19 @@
 		<br>
 		<div class="row">
 		<div class="col">
-		<p>Veamos qu&eacute; nos dice el ilustre profesor Carlos Zarzar acerca de las competencias:</p>
-		<p class="fuente">Carlos Zarzar. (2017, 24 noviembre). <em>&iquest;Qu&eacute; son las competencias? Carlos </em><em>Zarzar</em><em>.</em> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=cyMqEhIkWFc">https://www.youtube.com/watch?v=cyMqEhIkWFc</a></p>
-		<p><span style="color: #ff0000;">Aqu&iacute; debe ir recurso digital sobre las 27 competencias.</span></p>
-		<p>Adicionalmente, y hablando en términos más generales, la SEP en la reforma de nivel secundaria en 2006, identificó cinco competencias para la vida, las cuales se deben desarrollar en niveles más abstractos conforme los estudiantes van avanzando de grado.  </p>
+		<p>A continuación, veamos qué nos dice el ilustre profesor Carlos Zarzar acerca de las competencias</p>
+			<div style="text-align:center;">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/cyMqEhIkWFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		
+		</div>
+		</div>
+		
+		<div class="row">
+		<div class="col">
+		<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/615f3592218d8b0dab0dbb55" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+		<br>
+		<p>Adicionalmente, y hablando en términos más generales, la Secretaría de Educación Pública, en la reforma de nivel secundaria en 2006, identificó cinco competencias para la vida, las cuales se deben desarrollar en niveles más abstractos, conforme los estudiantes van avanzando de grado. Tales competencias se describen a continuación:</p>
 		<figure class="figure">
 			<img
 				src="images/fase1/Fase1-Tabla1.7.png"
@@ -653,10 +806,10 @@
 				class="img-fluid"
 			/>
 			<figcaption class="figure-caption text-right text-black">
-				<span class="font-weight-bold">Elaboración propia</span>
+				<span class="font-weight-bold">Fuente: Elaboración propia.</span>
 			</figcaption>
 		</figure>
-		<p>Después de identificar cuáles serás las competencias específicas, genéricas y básicas a desarrollar en las experiencias educativas, será momento de elegir el producto integrador y los niveles de competencia a desarrollar durante su curso: </p>
+		<p>Después de identificar las competencias específicas, genéricas y básicas a desarrollar en las experiencias educativas, será momento de elegir el producto integrador y los niveles de competencia a desarrollar durante su curso:</p>
 		<p><span style="color: #ff0000;">Aqu&iacute; debe ir el video: Garcia Cuevas Pablo (2021, julio 26). Producto integrador</span></p>
 		</div>
 		</div>
@@ -685,9 +838,9 @@
 		<div class="tab">
 			<div class="row">
 				<div class="col"></div>
-				<div class="col"><button class="tablinks" onclick="abrirPestana(event, 'basicas', 'tabFuentes')">Básicas</button></div>
+				<div class="col"><button class="tablinks" onclick="abrirPestanaFuentes(event, 'basicas', 'tabFuentes')">Básicas</button></div>
 				<div class="col"></div>
-				<div class="col"><button class="tablinks" onclick="abrirPestana(event, 'complementarias', 'tabFuentes')">Complementarias</button></div>
+				<div class="col"><button class="tablinks" onclick="abrirPestanaFuentes(event, 'complementarias', 'tabFuentes')">Complementarias</button></div>
 				<div class="col"></div>
 			</div>
 		</div>
@@ -716,13 +869,13 @@
     </section>
 	<br>
     <!--Disclaimer-->
-    <section class="fondo_azul">
+    <section class="fondo-azul-claro">
       <div class="container contenedor-menu-contenido">
         <!--Disclaimer-->
         <div class="row">
           <div class="col">
             <div class="accordion" id="accordionExample">
-              <div class="card fondo_verde">
+              <div class="card fondo-verde">
                 <div class="card-header" id="headingOne">
                   <h2 class="mb-0">
                     <button
@@ -808,105 +961,105 @@
 								<p><strong>Actividad 1: </strong>Hoja de trabajo.</p>
 								<p><strong>Descripci&oacute;n:</strong></p>
 								<ol>
-								<li>Despu&eacute;s de revisar los temas abordados durante esta primera fase, elabore la hoja de trabajo siguiendo los aspectos que se encuentran en el documento descargable.</li>
+								<li>Después de revisar los temas abordados durante esta primera fase, elabore la hoja de trabajo, siguiendo los aspectos que se encuentran en el documento descargable, para ello haga clic en la flecha del siguiente icono:</li>
 								</ol>
 								
 								
 								<div style="text-align: center;">
 									<a href="documentos/Hoja de trabajo.docx" target="_blank">
-										<img src="images/fase1/1.2 icono descarga3.png" id="imagenAudio" />
+										<img src="images/fase1/1.2 icono descarga3.png" id="icono" />
 									</a>
 								</div>
 								<ol style="list-style-type: lower-alpha;">
 								<li>Si no tuvo la oportunidad de integrar los elementos necesarios en cada uno de los aspectos se&ntilde;alados en la hoja de trabajo, dentro de cada recuadro podr&aacute; localizar los temas de consulta que le servir&aacute;n como gu&iacute;a.</li>
-								<li>Una vez integrados los elementos en la hoja de trabajo, revise que cumpla con lo siguiente.</li>
+								<li>Una vez integrados los elementos en la hoja de trabajo, revise que cumplan con lo siguiente. </li>
 								</ol>
 								<p><strong>Criterios de desempe&ntilde;o:</strong></p>
 								<table >
 								<tbody>
 								<tr>
 								<td >
-								<p><strong>Criterio</strong></p>
+								<strong>Criterio</strong>
 								</td>
 								<td >
-								<p><strong>Suficiente</strong></p>
+								<strong>Suficiente</strong>
 								</td>
 								<td >
-								<p><strong>Regular </strong></p>
+								<strong>Regular </strong>
 								</td>
 								<td >
-								<p><strong>Insuficiente</strong></p>
+								<strong>Insuficiente</strong>
 								</td>
 								</tr>
 								<tr>
 								<td>
-								<p><strong>Presentaci&oacute;n</strong></p>
+								<strong>Presentaci&oacute;n</strong>
 								</td>
 								<td>
-								<p>Su portada incluye nombre del curso, del alumno y de la asignatura.</p>
-								<p>El documento cumple con los criterios de presentaci&oacute;n de la APA.</p>
+								Su portada incluye nombre del curso, del alumno y de la asignatura.
+								El documento cumple con los criterios de presentaci&oacute;n de la APA.
 								</td>
 								<td>
-								<p>Cumple parcialmente con los criterios de entrega.</p>
+								Cumple parcialmente con los criterios de entrega.
 								</td>
 								<td>
-								<p>Su documento no incluye una portada.</p>
+								Su documento no incluye una portada.
 								</td>
 								</tr>
 								<tr>
 								<td>
-								<p><strong>Introducci&oacute;n y conclusi&oacute;n</strong></p>
+								<strong>Introducci&oacute;n y conclusi&oacute;n</strong>
 								</td>
 								<td>
-								<p>Presenta una introducci&oacute;n de su trabajo y una conclusi&oacute;n en la que comenta los aprendizajes logrados.</p>
+								Presenta una introducci&oacute;n de su trabajo y una conclusi&oacute;n en la que comenta los aprendizajes logrados.
 								</td>
 								<td>
-								<p>Cumple parcialmente con los criterios de entrega.</p>
+								Cumple parcialmente con los criterios de entrega.
 								</td>
 								<td >
-								<p>Su documento no incluye introducci&oacute;n ni conclusi&oacute;n.</p>
+								Su documento no incluye introducci&oacute;n ni conclusi&oacute;n.
 								</td>
 								</tr>
 								<tr>
 								<td>
-								<p><strong>Saber</strong></p>
+								<strong>Saber</strong>
 								</td>
 								<td>
-								<p>Identifica con claridad las metas de aprendizaje para la vida a alcanzar en su experiencia educativa.</p>
+								Identifica con claridad las metas de aprendizaje para la vida a alcanzar en su experiencia educativa.
 								</td>
 								<td >
-								<p>Cumple parcialmente con los criterios de entrega.</p>
+								Cumple parcialmente con los criterios de entrega.
 								</td>
 								<td>
-								<p>No cumple con los requisitos planteados.</p>
-								</td>
-								</tr>
-								<tr>
-								<td>
-								<p><strong>Saber hacer</strong></p>
-								</td>
-								<td>
-								<p>Identifica con claridad aquellos aprendizajes y habilidades esenciales a desarrollar en el curso.</p>
-								</td>
-								<td>
-								<p>Cumple parcialmente con los criterios de entrega.</p>
-								</td>
-								<td>
-								<p>No cumple con los requisitos planteados.</p>
+								No cumple con los requisitos planteados.
 								</td>
 								</tr>
 								<tr>
 								<td>
-								<p><strong>Saber ser</strong></p>
+								<strong>Saber hacer</strong>
 								</td>
 								<td>
-								<p>Genera preguntas esenciales y de comprensi&oacute;n para que su curso tenga significado y profundidad para sus alumnos.</p>
+								Identifica con claridad aquellos aprendizajes y habilidades esenciales a desarrollar en el curso.
 								</td>
 								<td>
-								<p>Cumple parcialmente con los criterios de entrega.</p>
+								Cumple parcialmente con los criterios de entrega.
 								</td>
 								<td>
-								<p>No cumple con los requisitos planteados.</p>
+								No cumple con los requisitos planteados.
+								</td>
+								</tr>
+								<tr>
+								<td>
+								<strong>Saber ser</strong>
+								</td>
+								<td>
+								Genera preguntas esenciales y de comprensi&oacute;n para que su curso tenga significado y profundidad para sus alumnos.
+								</td>
+								<td>
+								Cumple parcialmente con los criterios de entrega.
+								</td>
+								<td>
+								No cumple con los requisitos planteados.
 								</td>
 								</tr>
 								</tbody>
@@ -925,95 +1078,95 @@
 								<ol>
 								<li>Despu&eacute;s de consultar los recursos de esta primera fase, seleccione el o los productos integradores que considera pertinentes incluir en el desarrollo de su experiencia educativa.</li>
 								<li>En un documento de <em>Word</em>, explique c&oacute;mo ese o esos productos lo ayudar&aacute;n a alcanzar las competencias que busca desarrollar en los alumnos.</li>
-								<li>Elija y mencione, al menos, seis competencias (busque que sea una combinaci&oacute;n de competencias espec&iacute;ficas, gen&eacute;ricas y b&aacute;sicas), explique por qu&eacute; las eligi&oacute; y a qu&eacute; nivel busca desarrollar cada una de las competencias. Puede revisar el video <em>Qu&eacute; son las competencias?</em> Que se localiza en el&nbsp; tema 1.7. De las adquisiciones del aprendizaje.</li>
+								<li><p>1.Elija y mencione, al menos, seis competencias (busque que sea una combinaci&oacute;n de competencias espec&iacute;ficas, gen&eacute;ricas y b&aacute;sicas), explique por qu&eacute; las eligi&oacute; y a qu&eacute; nivel busca desarrollar cada una de las competencias. Puede revisar el video: <em>Qu&eacute; son las </em><em>competencias?</em>, que se localiza en el&nbsp; tema 1.7: De las adquisiciones del aprendizaje.</p></li>
 								</ol>
 								<p><strong>Criterios de desempe&ntilde;o:</strong></p>
 								<table>
 								<tbody>
 								<tr>
 								<td>
-								<p><strong>Criterio</strong></p>
+								<strong>Criterio</strong>
 								</td>
 								<td>
-								<p><strong>Regular </strong></p>
+								<strong>Regular </strong>
 								</td>
 								<td>
-								<p><strong>Regular </strong></p>
+								<strong>Regular </strong>
 								</td>
 								<td>
-								<p><strong>Insuficiente</strong></p>
-								</td>
-								</tr>
-								<tr>
-								<td>
-								<p><strong>Presentaci&oacute;n</strong></p>
-								</td>
-								<td>
-								<p>Su portada incluye nombre del curso, del alumno y de la asignatura.</p>
-								<p>El documento cumple con los criterios de presentaci&oacute;n de la APA.</p>
-								</td>
-								<td>
-								<p>Cumple parcialmente con los criterios de entrega.</p>
-								</td>
-								<td>
-								<p>Su documento no incluye una portada.</p>
+								<strong>Insuficiente</strong>
 								</td>
 								</tr>
 								<tr>
 								<td>
-								<p><strong>Introducci&oacute;n y conclusi&oacute;n</strong></p>
+								<strong>Presentaci&oacute;n</strong>
 								</td>
 								<td>
-								<p>Presenta una introducci&oacute;n de su trabajo y una conclusi&oacute;n en la que comenta los aprendizajes logrados.</p>
+								Su portada incluye nombre del curso, del alumno y de la asignatura.
+								El documento cumple con los criterios de presentaci&oacute;n de la APA.
 								</td>
 								<td>
-								<p>Cumple parcialmente con los criterios de entrega.</p>
+								Cumple parcialmente con los criterios de entrega.
 								</td>
 								<td>
-								<p>Su documento no incluye introducci&oacute;n ni conclusi&oacute;n.</p>
-								</td>
-								</tr>
-								<tr>
-								<td>
-								<p><strong>Saber</strong></p>
-								</td>
-								<td>
-								<p>Menciona las competencias a lograr durante el curso y la relevancia que tienen para el estudiante a lo largo de su vida profesional o personal.</p>
-								</td>
-								<td>
-								<p>Cumple parcialmente con los criterios de entrega.</p>
-								</td>
-								<td>
-								<p>No cumple con los requisitos planteados.</p>
+								Su documento no incluye una portada.
 								</td>
 								</tr>
 								<tr>
 								<td>
-								<p><strong>Saber hacer</strong></p>
+								<strong>Introducci&oacute;n y conclusi&oacute;n</strong>
 								</td>
 								<td>
-								<p>Selecciona el o los productos integradores de la experiencia educativa que le permitir&aacute;n al alumno demostrar las competencias buscadas en la experiencia educativa.</p>
+								Presenta una introducci&oacute;n de su trabajo y una conclusi&oacute;n en la que comenta los aprendizajes logrados.
 								</td>
 								<td>
-								<p>Cumple parcialmente con los criterios de entrega.</p>
+								Cumple parcialmente con los criterios de entrega.
 								</td>
 								<td>
-								<p>No cumple con los requisitos planteados.</p>
+								Su documento no incluye introducci&oacute;n ni conclusi&oacute;n.
 								</td>
 								</tr>
 								<tr>
 								<td>
-								<p><strong>Saber ser</strong></p>
-								<p><strong>(2 puntos)</strong></p>
+								<strong>Saber</strong>
 								</td>
 								<td>
-								<p>Se&ntilde;ala y explica con claridad los niveles de competencia a desarrollar tomando como referencia el mapa curricular de la carrera del estudiante.</p>
+								Menciona las competencias a lograr durante el curso y la relevancia que tienen para el estudiante a lo largo de su vida profesional o personal.
 								</td>
 								<td>
-								<p>Cumple parcialmente con los criterios de entrega.</p>
+								Cumple parcialmente con los criterios de entrega.
 								</td>
 								<td>
-								<p>No cumple con los requisitos planteados.</p>
+								No cumple con los requisitos planteados.
+								</td>
+								</tr>
+								<tr>
+								<td>
+								<strong>Saber hacer</strong>
+								</td>
+								<td>
+								Selecciona el o los productos integradores de la experiencia educativa que le permitir&aacute;n al alumno demostrar las competencias buscadas en la experiencia educativa.
+								</td>
+								<td>
+								Cumple parcialmente con los criterios de entrega.
+								</td>
+								<td>
+								No cumple con los requisitos planteados.
+								</td>
+								</tr>
+								<tr>
+								<td>
+								<strong>Saber ser</strong>
+								<strong>(2 puntos)</strong>
+								</td>
+								<td>
+								Se&ntilde;ala y explica con claridad los niveles de competencia a desarrollar tomando como referencia el mapa curricular de la carrera del estudiante.
+								</td>
+								<td>
+								Cumple parcialmente con los criterios de entrega.
+								</td>
+								<td>
+								No cumple con los requisitos planteados.
 								</td>
 								</tr>
 								</tbody>
@@ -1028,55 +1181,59 @@
 						  <div class="mySlides3">
 							<p><strong>Actividad 3. </strong>Foro colaborativo: Las grandes ideas de mi experiencia educativa.</p>
 							<p><strong>Descripci&oacute;n:</strong></p>
-							<p>1.Despu&eacute;s de consultar todo lo referente a esta primera fase y retomar los temas 1.4 Transferencias y 1.5: Entendimientos, elabore un comentario incluyendo lo siguiente:</p>
+							<ol>
+							<li>Despu&eacute;s de consultar todo lo referente a esta primera fase y retomar los temas 1.4 Transferencias y 1.5: Entendimientos, elabore un comentario incluyendo lo siguiente:
 							<ol style="list-style-type: lower-alpha;">
-							<li>A lo largo de la experiencia educativa, deber&aacute; panificar un curso, explique brevemente de qu&eacute; se trata.</li>
+							<li>A lo largo de la experiencia educativa deberá panificar un curso, explique brevemente de qué se trata. </li>
 							<li>Comente c&oacute;mo su <strong>gran idea</strong> le dar&aacute; cohesi&oacute;n y sentido de descubrimiento a su experiencia educativa.</li>
 							<li>&iquest;Qu&eacute; busca que sus alumnos comprendan y sean capaces de transferir al final de su experiencia educativa?</li>
+							</ol>
+							</li>
+							<li>Su intervención deberá apegarse estrictamente a las consideraciones descritas  en las Reglas para participar en los foros de discusión.</li>
 							</ol>
 							<p>&nbsp;<strong>Criterios de desempe&ntilde;o:</strong></p>
 							<table>
 							<tbody>
 							<tr>
 							<td>
-							<p><strong>Criterio</strong></p>
+							<strong>Criterio</strong>
 							</td>
 							<td>
-							<p><strong>Suficiente</strong></p>
+							<strong>Suficiente</strong>
 							</td>
 							<td>
-							<p><strong>Regular </strong></p>
+							<strong>Regular </strong>
 							</td>
 							<td>
-							<p><strong>Insuficiente</strong></p>
-							</td>
-							</tr>
-							<tr>
-							<td>
-							<p><strong>Presentaci&oacute;n</strong></p>
-							</td>
-							<td>
-							<p>Participa en el Foro respondiendo las tres preguntas gu&iacute;a.</p>
-							</td>
-							<td>
-							<p>Cumple parcialmente con los criterios de entrega.</p>
-							</td>
-							<td>
-							<p>No responde las preguntas gu&iacute;a en su participaci&oacute;n.</p>
+							<strong>Insuficiente</strong>
 							</td>
 							</tr>
 							<tr>
 							<td>
-							<p><strong>Interacci&oacute;n con sus compa&ntilde;eros</strong></p>
+							<strong>Presentaci&oacute;n</strong>
 							</td>
 							<td>
-							<p>Responde de forma reflexiva y propositiva a dos de sus compa&ntilde;eros.</p>
+							Participa en el Foro respondiendo las tres preguntas gu&iacute;a.
 							</td>
 							<td>
-							<p>Cumple parcialmente con los criterios de entrega.</p>
+							Cumple parcialmente con los criterios de entrega.
 							</td>
 							<td>
-							<p>No comenta las participaciones de sus compa&ntilde;eros.</p>
+							No responde las preguntas gu&iacute;a en su participaci&oacute;n.
+							</td>
+							</tr>
+							<tr>
+							<td>
+							<strong>Interacci&oacute;n con sus compa&ntilde;eros</strong>
+							</td>
+							<td>
+							Responde de forma reflexiva y propositiva a dos de sus compa&ntilde;eros.
+							</td>
+							<td>
+							Cumple parcialmente con los criterios de entrega.
+							</td>
+							<td>
+							No comenta las participaciones de sus compa&ntilde;eros.
 							</td>
 							</tr>
 							</tbody>
@@ -1136,6 +1293,7 @@
     <script src="js/inicializacion.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script>
+	document.getElementById("defaultOpen").click();
 	var slideIndex = [1, 1, 1];
 	var slideId = ["mySlides1", "mySlides2", "mySlides3"]
 	showSlides(1, 0);
@@ -1156,7 +1314,38 @@
 	  }
 	  x[slideIndex[no]-1].style.display = "block";  
 	}
+	
+	
+	
 	function abrirPestana(evt, fuente, tipo) {
+		
+	  var i, tabcontent, tablinks, abierto;
+	  tabcontent = document.getElementsByClassName(tipo);
+	  if(document.getElementById(fuente).style.display == "block"){
+		abierto=1;
+	  }else{
+		abierto=0;
+	  }
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  
+	  
+	  if(abierto === 0){
+		document.getElementById("ojo"+fuente).className = "fas fa-eye-slash";
+		document.getElementById(fuente).style.display = "block";
+		evt.currentTarget.className += " active";
+	  }else{
+		document.getElementById("ojo"+fuente).className = "fas fa-eye";
+	  }
+		
+	}
+	function abrirPestanaVideos (evt, fuente, tipo) {
+		
 	  var i, tabcontent, tablinks;
 	  tabcontent = document.getElementsByClassName(tipo);
 	  for (i = 0; i < tabcontent.length; i++) {
@@ -1166,8 +1355,30 @@
 	  for (i = 0; i < tablinks.length; i++) {
 		tablinks[i].className = tablinks[i].className.replace(" active", "");
 	  }
+	  
+	  
 		document.getElementById(fuente).style.display = "block";
 		evt.currentTarget.className += " active";
+
+		
+	}
+	function abrirPestanaFuentes (evt, fuente, tipo) {
+		
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName(tipo);
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  
+	  
+		document.getElementById(fuente).style.display = "block";
+		evt.currentTarget.className += " active";
+
+		
 	}
 
 
