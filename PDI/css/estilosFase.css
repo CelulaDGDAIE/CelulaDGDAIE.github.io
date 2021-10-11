@@ -1,4 +1,13 @@
+@import "responsividad/fase1000.css" screen and (min-width: 1000px);
+@import "responsividad/fase1100.css" screen and (min-width: 1100px);
+@import "responsividad/fase1200.css" screen and (min-width: 1200px);
 @import "responsividad/fase1300.css" screen and (min-width: 1300px);
+@import "responsividad/fase1400.css" screen and (min-width: 1400px);
+@import "responsividad/fase1500.css" screen and (min-width: 1500px);
+@import "responsividad/fase1600.css" screen and (min-width: 1600px);
+@import "responsividad/fase1700.css" screen and (min-width: 1700px);
+@import "responsividad/fase1800.css" screen and (min-width: 1800px);
+@import "responsividad/fase1900.css" screen and (min-width: 1900px);
 * {box-sizing: border-box}
 
 
@@ -27,13 +36,14 @@ table, th, td {
 }
 /*Tabla*/
 /*Texto*/
+
 .titulo{
 	color: #355CA7;
 	font-weight: bold;
 }
-.fuente{
-	margin-left:15.65pt;
-	text-indent:-15.65pt;
+
+p, li{
+	text-align: justify;
 }
 .disclaimer{
 	font-size: small;
@@ -41,10 +51,15 @@ table, th, td {
 	text-indent:-15.65pt;
 	margin:0.3em;
 	color: black;
+	text-align: left;
 }
-
-p, li{
-	text-align: justify;
+sup{
+	font-size: 60%;
+}
+.fuente{
+	margin-left:15.65pt;
+	text-indent:-15.65pt;
+	text-align: left;
 }
 texto-negro{
 	color: black;
@@ -176,4 +191,9 @@ texto-negro{
 
 #tabla4{
 	width: 50%;
+}
+
+.icono{
+	width: 80px;
+	
 }

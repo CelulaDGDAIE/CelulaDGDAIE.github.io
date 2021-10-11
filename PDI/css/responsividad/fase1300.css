@@ -1,4 +1,4 @@
-@media(min-width: 1300px){
+
 /*Aires*/
 #aireSuperiorIntroduccion{
 	height: 20px;
@@ -31,15 +31,7 @@
 }
 
 /*Pestaña*/
-
-
-
-
-
-	.container-xl,.container-lg,.container-md,.container-sm,.container{
-		max-width:920px
-	}
-	/* Slideshow container */
+/*Carrusel*/
 	.slideshow-container {
 	  max-width: 900px;
 	}
@@ -47,7 +39,6 @@
 	  left: -10%;
 	  border-radius: 3px 0 0 3px;
 	}
-	/* Position the "next button" to the right */
 	.next {
 	  right: -10%;
 	  border-radius: 3px 0 0 3px;
@@ -56,7 +47,6 @@
 	  left: 0%;
 	  border-radius: 3px 0 0 3px;
 	}
-	/* Position the "next button" to the right */
 	.nextModal {
 	  right: 0%;
 	  border-radius: 3px 0 0 3px;
@@ -69,65 +59,22 @@
 	  right: 20%;
 	  border-radius: 3px 0 0 3px;
 	}
-	#imagenIntroduccion{
-		width: 100%;
+	/*Carrusel*/
+
+
+
+
+	.container-xl,.container-lg,.container-md,.container-sm,.container{
+		max-width:920px
 	}
-	#textoIntroduccion{
-		font-size: 100%;
-		text-align: justify;
-	}
-	#imagenProposito{
-		width: 100%;
-	}
-	#textoProposito{
-		font-size: 100%;
-		text-align: justify;
-	}
-	#br3{
-		display: block;
-	}
-	#br4{
-		display: block;
-	}
-	#brInicio{
-		display: block;
-	}
-	#textoTema2{
-		font-size: 90%;
-		text-align: justify;
-	}
-	#img3{
-		width: 70%;
-	}
-	#img4{
-		width: 55%;
-	}
-	#textoTema22{
-		font-size: 100%;
-		text-align: justify;
-	}
-	#textoIntroFase2{
-		font-size: 90%;
-		text-align: justify;
-	}
-	#textoPropFase2{
-		font-size: 180%;
-		text-align: justify;
-	}
+	
+
+	
 	.imagenLogo{
 		width: 40%;
 	}
 	.geniallyFrame{
 		width: 40%;
-	}
-	#compensacionProposito1{
-		height: 0px;
-	}
-	#compensacionProposito2{
-		height: 0px;
-	}
-	#compensacionProposito3{
-		height: 0px;
 	}
 	
 	.actividad-modal{
@@ -150,8 +97,8 @@
 		cursos: pointer;
 	}
 	
-	#icono{
-		width: 100px;
+	.icono{
+		width: 80px;
 		
 	}
 	#iconoAudio{
@@ -160,4 +107,3 @@
 	}
 	
 	
-}
