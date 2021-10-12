@@ -212,3 +212,10 @@ texto-negro{
 		background-size: 600px 600px;
 		background-position: center;
 	}
+	
+.recursoModal {
+	text-align: center;
+	color: white;
+	background-color: #355ca7; 
+	height: 50px;
+}
