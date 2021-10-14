@@ -186,19 +186,58 @@
       </div>
     </section>
     <!--/Video-->
+	<section id="informacionMovil">
 
+			<div class="row fondo-teal aireCarrusel" ></div>
+				<div class="row fondo-teal" >
+					<div class="col d-flex align-items-center">
+						<figure class="figure">
+							<img
+								src="images/Presentacion.png"
+								alt="imagen pendiente"
+								class="img-fluid"
+							/>
+							<figcaption class="figure-caption text-right text-white">[1]</figcaption>
+						</figure>
+					</div>
+					<div class="col align-self-center" >
+						<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Presentación</h3>
+							<p>La experiencia educativa Planeación didáctica inversa se concibe como un curso-taller orientado al desarrollo de estrategias de trabajo enfocadas al aprendizaje en lugar de los procesos de enseñanza. La experiencia educativa se centra en la aplicación de los tres pasos de la planificación inversa: resultados deseados, pruebas aceptables y experiencias de aprendizaje.</p>
+							<p>Los participantes desarrollar&aacute;n una propuesta de planificaci&oacute;n did&aacute;ctica que asegure la adquisici&oacute;n de las competencias se&ntilde;aladas en un programa de trabajo de las experiencias educativas a su cargo.</p>
+							<p>Esta experiencia educativa tiene una duración de 20 horas, distribuidas en 10 presenciales y 10 extraclase. </p>
+					</div>
+				</div>
+				<div class="row fondo-azul-claro aireCarrusel" ></div>
+				<div class="row align-self-center fondo-azul-claro">
+							<div class="col">
+								<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Unidad de competencia</h3>
+								<p>El participante desarrollará una actitud proactiva con la finalidad de ajustar sus estrategias de trabajo docente al desarrollo de las competencias requeridas en sus estudiantes. Se busca que sea capaz de identificar tanto los aprendizajes clave, como las rutas de trabajo necesarias, para que sus alumnos alcancen dichas competencias exitosamente.</p>
+
+							</div>
+							<div class="col d-flex align-items-center">
+								<figure class="figure" >
+									<img
+										src="images/Unidad.png"
+										alt="imagen pendiente"
+										class="img-fluid"
+									/>
+									<figcaption class="figure-caption text-white">[2]</figcaption>
+								</figure>
+							</div>
+				</div>
 		
+	</section>
     <section class="text-white" id="presentacion">
 	<div class="container contenedor-seccion">
 		<div class="row">
 			<h3 class="titulo">Información general</h3>
         </div>
-		<div class="row">
+		<div class="row" id="carruselInformacion">
 			<div class="col">
 				<div class="slideshow-container">
-					<div class="mySlides">
-						<div class="row fondo-teal" id="aireSuperiorPresentacion"></div>
-						<div class="row fondo-teal">
+					<div class="mySlides" id="slidePresentacion">
+						<div class="row fondo-teal aireCarrusel" ></div>
+						<div class="row fondo-teal" >
 							<div class="col d-flex align-items-center">
 								<figure class="figure">
 									<img
@@ -210,26 +249,21 @@
 									<figcaption class="figure-caption text-right text-white">[1]</figcaption>
 								</figure>
 							</div>
-							<div class="col">
+							<div class="col align-self-center" >
 								<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Presentación</h3>
-								<div id="textoPresentacion">
 									<p>La experiencia educativa Planeación didáctica inversa se concibe como un curso-taller orientado al desarrollo de estrategias de trabajo enfocadas al aprendizaje en lugar de los procesos de enseñanza. La experiencia educativa se centra en la aplicación de los tres pasos de la planificación inversa: resultados deseados, pruebas aceptables y experiencias de aprendizaje.</p>
 									<p>Los participantes desarrollar&aacute;n una propuesta de planificaci&oacute;n did&aacute;ctica que asegure la adquisici&oacute;n de las competencias se&ntilde;aladas en un programa de trabajo de las experiencias educativas a su cargo.</p>
 									<p>Esta experiencia educativa tiene una duración de 20 horas, distribuidas en 10 presenciales y 10 extraclase. </p>
-								</div>
 							</div>
 							<div class="col-1"></div>
 						</div>
 					</div>
-					<div class="mySlides">
-						<div class="row fondo-azul-claro" id="aireSuperiorUnidad"></div>
-						<div class="row fondo-azul-claro">
-							<div class="col">
-								
-								<div id="aireTextoUnidad"></div>
+					<div class="mySlides" >
+						<div class="row fondo-azul-claro" id="slideUnidad">
+							<div class="col-1"></div>
+							<div class="col align-self-center">
 								<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Unidad de competencia</h3>
-								<p id="textoUnidad">El participante desarrollará una actitud proactiva con la finalidad de ajustar sus estrategias de trabajo docente al desarrollo de las competencias requeridas en sus estudiantes. Se busca que sea capaz de identificar tanto los aprendizajes clave, como las rutas de trabajo necesarias, para que sus alumnos alcancen dichas competencias exitosamente.</p>
-								<div id="compensacionUnidad2"></div>
+								<p>El participante desarrollará una actitud proactiva con la finalidad de ajustar sus estrategias de trabajo docente al desarrollo de las competencias requeridas en sus estudiantes. Se busca que sea capaz de identificar tanto los aprendizajes clave, como las rutas de trabajo necesarias, para que sus alumnos alcancen dichas competencias exitosamente.</p>
 
 							</div>
 							<div class="col d-flex align-items-center">
@@ -238,13 +272,11 @@
 										src="images/Unidad.png"
 										alt="imagen pendiente"
 										class="img-fluid"
-										id="imagenUnidad"
 									/>
 									<figcaption class="figure-caption text-white">[2]</figcaption>
 								</figure>
 							</div>
 						</div>
-						<div class="row fondo-azul-claro" id="aireInferiorUnidad"></div>
 					</div>
 				</div>
 				<a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -254,6 +286,45 @@
 	</div>
     </section>
     <!--/Presentación-->
+	
+	<section id="contenidoMovil">
+        <div class="container contenedor-seccion text-white">
+            <div class="row">
+					<h4 class="titulo"><span class="font-weight-bold">Desarrollo de la experiencia educativa</span></h4>
+            </div>
+
+			
+            <div class="row fondo-azul-marino">
+			<div class="col">
+				<a href="fase1.html"><img style="width: 100%;" src="images/modulo1-hover.png"/></a>
+			</div>
+			</div>
+			<br>
+			 <div class="row fondo-azul-marino">
+			<div class="col">
+				<a href="fase2.html"><img style="width: 100%;" src="images/modulo2-hover.png"/></a>
+			</div>
+			</div>
+			<br>
+			 <div class="row fondo-azul-marino">
+			<div class="col">
+				<a href="fase3.html"><img style="width: 100%;" src="images/modulo3-hover.png"/></a>
+			</div>
+			</div>
+			 <div class="row fondo-azul-marino">
+			<div class="col">
+				<a href="fase3.html"><img style="width: 100%;" src="images/modulo3-hover.png"/></a>
+			</div>
+			</div>
+			
+			
+			
+		
+    </section>
+	
+	
+	
+	
     <!--Contenido-->
     <section id="contenido">
         <div class="container contenedor-seccion text-white">
@@ -628,11 +699,27 @@
     <script src="js/app.js"></script>
     <script src="js/inicializacion.js"></script>
 	<script>
+	
 	var slideIndex = 1;
 	showSlides(slideIndex);
-
+	var carruselRecorrido=0;
+	
+	
+	
+	
 	function plusSlides(n) {
-	  showSlides(slideIndex += n);
+		
+		if(carruselRecorrido>0){
+			showSlides(slideIndex += n);
+		}else{
+			carruselRecorrido++;
+			var alturaPresentacion = document.getElementById('slidePresentacion').clientHeight;
+			showSlides(slideIndex += n);
+			document.getElementById("slideUnidad").style.height = alturaPresentacion+"px";
+			document.getElementById("slideUnidad").style.backgroundColor = "#4c5bfc";
+			
+		}
+		
 	}
 
 	function currentSlide(n) {
@@ -642,18 +729,16 @@
 	function showSlides(n) {
 	  var i;
 	  var slides = document.getElementsByClassName("mySlides");
-	  var dots = document.getElementsByClassName("dot");
 	  if (n > slides.length) {slideIndex = 1}    
 	  if (n < 1) {slideIndex = slides.length}
 	  for (i = 0; i < slides.length; i++) {
 		  slides[i].style.display = "none";  
 	  }
-	  for (i = 0; i < dots.length; i++) {
-		  dots[i].className = dots[i].className.replace(" active", "");
-	  }
 	  slides[slideIndex-1].style.display = "block";  
-	  dots[slideIndex-1].className += " active";
 	}
+	
+	
+	
 	</script>
   </body>
 </html>
