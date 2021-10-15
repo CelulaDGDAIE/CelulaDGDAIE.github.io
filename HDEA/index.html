@@ -196,20 +196,22 @@
     </section>
     <!--/Video-->
 
-		
-    <section class="text-white" id="presentacion">
+	
+	
+	
+	
+	
+	<section class="text-white" id="presentacion">
 	<div class="container contenedor-seccion">
-	<div class="row">
-					<h3 style="color: #355CA7"><span class="font-weight-bold">Información general</span></h3>
-            </div>
-		
 		<div class="row">
-			
+			<h3 class="titulo">Información general</h3>
+        </div>
+		<div class="row" id="carruselInformacion">
 			<div class="col">
 				<div class="slideshow-container">
-					<div class="mySlides">
-						<div class="row fondo-teal" id="aireSuperiorPresentacion"></div>
-						<div class="row fondo-teal">
+					<div class="mySlides" id="slidePresentacion">
+						<div class="row fondo-teal aireCarrusel" ></div>
+						<div class="row fondo-teal" >
 							<div class="col d-flex align-items-center">
 								<figure class="figure">
 									<img
@@ -221,26 +223,20 @@
 									<figcaption class="figure-caption text-right text-white">[1]</figcaption>
 								</figure>
 							</div>
-							<div class="col-7">
+							<div class="col align-self-center" >
 								<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Presentación</h3>
-								<div id="textoPresentacion" style="color: white;">
 									<p>Este curso-taller forma parte del Programa de Formación de Académicos y consta de 35 horas, distribuidas en 15 teóricas y 20 prácticas, con un valor de 3 créditos. Su propósito es dar a conocer al académico el uso de herramientas digitales para la enseñanza y el aprendizaje.</p>
 									<p>La estrategia metodológica consiste en el desarrollo de actividades en línea, a través de plataformas virtuales, en las que se permitirá la revisión de literatura pertinente, la organización de grupos de discusión, el análisis y la construcción de propuestas; a través de un proceso de apertura, tolerancia, respeto, aportación, confianza, creatividad, disposición y autonomía. Esta Experiencia Educativa (EE) se evaluará con la elaboración de un mapa mental, con la participación y retroalimentación en el foro virtual, con la creación de una presentación y de un espacio de colaboración.</p>
-								</div>
 							</div>
 							<div class="col-1"></div>
 						</div>
 					</div>
-					<div class="mySlides">
-					<div class="row fondo-azul-claro" id="aireSuperiorUnidad"></div>
-					<div class="row fondo-azul-claro" id="compensacionUnidad"></div>
-						<div class="row fondo-azul-claro">
-							<div class="col">
-								
-								<div id="compensacionTextoUnidad"></div>
+					<div class="mySlides" >
+						<div class="row fondo-azul-claro" id="slideUnidad">
+							<div class="col-1"></div>
+							<div class="col align-self-center">
 								<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Unidad de competencia</h3>
-								<p id="textoUnidad">El participante incorpora las herramientas digitales como apoyo permanente dentro de su quehacer académico para propiciar en el estudiante aprendizajes significativos, en un ambiente de apertura, creatividad, tolerancia y colaboración.</p>
-								<div id="compensacionUnidad2"></div>
+								<p>El participante incorpora las herramientas digitales como apoyo permanente dentro de su quehacer académico para propiciar en el estudiante aprendizajes significativos, en un ambiente de apertura, creatividad, tolerancia y colaboración.</p>
 
 							</div>
 							<div class="col d-flex align-items-center">
@@ -249,13 +245,11 @@
 										src="images/unidad.jpg"
 										alt="imagen pendiente"
 										class="img-fluid"
-										id="imagenUnidad"
 									/>
+									<figcaption class="figure-caption text-white">[2]</figcaption>
 								</figure>
 							</div>
-							<div class="col-1"></div>
 						</div>
-						<div class="row fondo-azul-claro" id="compensacionUnidad2"></div>
 					</div>
 				</div>
 				<a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -264,6 +258,23 @@
 		</div>
 	</div>
     </section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
     <!--/Presentación-->
     <!--Contenido-->
     <section id="contenido">
@@ -319,6 +330,16 @@
 				  
 				  <span class="mr-3">Autor(es) de la EE</span>
 				  <i class="fas fa-users fa-2x"></i>
+				</a>
+			</div>
+			<div class="col">
+				<a
+				class="btn btn-lg btn-outline-primary"
+				target="_blank"
+				href="documentos/Precisiones_generales_ee_profa.pdf">
+				  
+				  <span class="mr-3">Precisiones</span>
+				  <i class="fas fa-clipboard-list fa-2x"></i>
 				</a>
 			</div>
 			<div class="col">
@@ -501,33 +522,38 @@
 				<table>
 					<tbody>
 					<tr>
-						<td><span class="font-weight-bold">Fase</span></td>
-						<td><span class="font-weight-bold">Evidencia (s) de desempeño</span></td>
-						<td><span class="font-weight-bold">Porcentaje</span></td>
+						<td style="text-align: center;"><span class="font-weight-bold">Fase</span></td>
+						<td style="text-align: center;"><span class="font-weight-bold">Evidencia (s) de desempeño</span></td>
+						<td style="text-align: center;"><span class="font-weight-bold">Porcentaje</span></td>
 					</tr>
 					<tr>
-						<td>1. Herramientas digitales para el aprendizaje formal.</td>
+						<td>
+						<ol><li>Herramientas digitales para el aprendizaje formal.</li></ol></td>
 						<td>Actividad 1. Mapa mental.</td>
-						<td><span class="font-weight-bold">20%</span></td>
+						<td class="porcentaje"><span class="font-weight-bold">20%</span></td>
 					</tr>
 					<tr>
-						<td>2. Herramientas digitales para el aprendizaje informal.</td>
+						<td>
+						<ol start="2"><li>Herramientas digitales para el aprendizaje informal.</li></ol>
+						</td>
 						<td>Actividad 2. Foro Herramientas digitales para el aprendizaje informal.</td>
-						<td><span class="font-weight-bold">20%</span></td>
+						<td class="porcentaje"><span class="font-weight-bold">20%</span></td>
 					</tr>
 					<tr>
-						<td>3. Herramientas digitales para crear contenido.</td>
+						
+						<td><ol start="3"><li>Herramientas digitales para crear contenido.</li></ol></td>
 						<td>Actividad 3. Foro Herramientas digitales para la elaboración de contenido digital.</td>
-						<td><span class="font-weight-bold">30%</span></td>
+						<td class="porcentaje"><span class="font-weight-bold">30%</span></td>
 					</tr>
 					<tr>
-						<td>4. Herramientas digitales de colaboración y videoconferencia.</td>
+						
+						<td><ol start="4"><li>Herramientas digitales de colaboración y videoconferencia.</li></ol></td>
 						<td >Actividad 4. Práctica.</td>
-						<td><span class="font-weight-bold">30%</span></td>
+						<td class="porcentaje"><span class="font-weight-bold">30%</span></td>
 					</tr>
 					<tr>
 						<td colspan="2" style="text-align: right;"><span class="font-weight-bold">Total:</span></td>
-						<td><span class="font-weight-bold">100 %</span></td>
+						<td class="porcentaje"><span class="font-weight-bold">100 %</span></td>
 					</tr>
 					</tbody>
 				</table>
@@ -569,9 +595,20 @@
 	<script>
 	var slideIndex = 1;
 	showSlides(slideIndex);
-
+	var carruselRecorrido=0;
 	function plusSlides(n) {
-	  showSlides(slideIndex += n);
+		
+		if(carruselRecorrido>0){
+			showSlides(slideIndex += n);
+		}else{
+			carruselRecorrido++;
+			var alturaPresentacion = document.getElementById('slidePresentacion').clientHeight;
+			showSlides(slideIndex += n);
+			document.getElementById("slideUnidad").style.height = alturaPresentacion+"px";
+			document.getElementById("slideUnidad").style.backgroundColor = "#4c5bfc";
+			
+		}
+		
 	}
 
 	function currentSlide(n) {
@@ -581,18 +618,14 @@
 	function showSlides(n) {
 	  var i;
 	  var slides = document.getElementsByClassName("mySlides");
-	  var dots = document.getElementsByClassName("dot");
 	  if (n > slides.length) {slideIndex = 1}    
 	  if (n < 1) {slideIndex = slides.length}
 	  for (i = 0; i < slides.length; i++) {
 		  slides[i].style.display = "none";  
 	  }
-	  for (i = 0; i < dots.length; i++) {
-		  dots[i].className = dots[i].className.replace(" active", "");
-	  }
 	  slides[slideIndex-1].style.display = "block";  
-	  dots[slideIndex-1].className += " active";
 	}
+	
 	</script>
   </body>
 </html>

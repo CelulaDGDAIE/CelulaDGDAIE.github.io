@@ -1,5 +1,9 @@
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
+.aireCarrusel{
+	height: 20px;
+}
+
 #overlay {
 	position: absolute;
 	display: block;
@@ -152,6 +156,56 @@ table, th, td {
 		background-image: url('../images/eval-hover.png');
 	}
 /*/Evaluación*/	
+
+@media screen and (max-width: 999px) {
+	#carruselInformacion{
+		display: none;
+	}
+	#informacionMovil{
+		display: block;
+	}
+	#contenido{
+		display: none;
+	}
+	#contenidoMovil{
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	#carruselInformacion{
+		display: block;
+	}
+	#informacionMovil{
+		display: none;
+	}
+	#contenido{
+		display: block;
+	}
+	#contenidoMovil{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1099px) {
+	#contenido{
+		display: none;
+	}
+	#contenidoMovil{
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	#contenido{
+		display: block;
+	}
+	#contenidoMovil{
+		display: none;
+	}
+	
+}
+
 
 
 

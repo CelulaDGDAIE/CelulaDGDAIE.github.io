@@ -3,8 +3,12 @@
 #aireSuperiorIntroduccion{
 	height: 20px;
 }	
+
 #aireSuperiorProposito{
-	height: 20px;
+	height: 40px;
+}
+#aireTextoIntroduccion{
+	height: 60px;
 }
 #aireTextoProposito{
 	height: 60px;
@@ -90,7 +94,7 @@
 	text-align:center;
 	color: white;
 	background-color: #355ca7; 
-	height: 150px;
+	height: 250px;
 	}
 	.recursoModal:hover {
 		background-color: #183d82; 
