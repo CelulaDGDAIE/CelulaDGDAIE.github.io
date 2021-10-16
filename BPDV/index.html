@@ -197,19 +197,17 @@
     <!--/Video-->
 
 		
-    <section class="text-white" id="presentacion">
+    	<section class="text-white" id="presentacion">
 	<div class="container contenedor-seccion">
-	<div class="row">
-					<h3 style="color: #355CA7"><span class="font-weight-bold">Información general</span></h3>
-            </div>
-		
 		<div class="row">
-			
+			<h3 class="titulo">Información general</h3>
+        </div>
+		<div class="row" id="carruselInformacion">
 			<div class="col">
 				<div class="slideshow-container">
-					<div class="mySlides">
-					<div class="row fondo-verde" id="aireSuperiorPresentacion"></div>
-						<div class="row fondo-verde">
+					<div class="mySlides" id="slidePresentacion">
+						<div class="row fondo-teal aireCarrusel" ></div>
+						<div class="row fondo-teal" >
 							<div class="col d-flex align-items-center">
 								<figure class="figure">
 									<img
@@ -221,24 +219,20 @@
 									<figcaption class="figure-caption text-right text-white">[1]</figcaption>
 								</figure>
 							</div>
-							<div class="col">
+							<div class="col align-self-center" >
 								<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Presentación</h3>
-								<div id="textoPresentacion" style="color: white;">
 									<p>Este curso-taller está dirigido a los facilitadores de la Universidad Veracruzana, responsables del proceso de enseñanza y aprendizaje virtual de los alumnos. Es una experiencia educativa con 15 horas teóricas y 15 horas prácticas, en su modalidad de curso-taller, con un total de 3 créditos. </p>
 									<p>El prop&oacute;sito del curso-taller es que el facilitador virtual aplique, de forma eficiente, herramientas educativas y medios de comunicaci&oacute;n en l&iacute;nea para que el alumno adquiera las competencias de ingreso y egreso, adem&aacute;s de evidenciar mediante la realizaci&oacute;n de diversas actividades y evaluaciones, a trav&eacute;s de los saberes te&oacute;ricos, axiol&oacute;gicos, heur&iacute;sticos, digitales y sustentables, la implementaci&oacute;n de las buenas pr&aacute;cticas en la docencia virtual. &Eacute;stas ser&aacute;n evaluadas mediante instrumentos que den cuenta de las competencias que el alumno ser&aacute; capaz de realizar a trav&eacute;s de una formaci&oacute;n universitaria integral con interculturalidad, inclusi&oacute;n, sustentabilidad, creatividad, internacionalizaci&oacute;n, integraci&oacute;n e inducci&oacute;n y perspectiva de g&eacute;nero en todas las &aacute;reas del conocimiento desde la perspectiva de esta disciplina. El aprendizaje, as&iacute; como la capacidad comunicativa y la toma de decisiones, son algunos de los elementos fundamentales que se trabajan en este curso-taller.</p>
-								</div>
 							</div>
+							<div class="col-1"></div>
 						</div>
 					</div>
-					<div class="mySlides">
-					<div class="row fondo-verde" id="aireSuperiorUnidad"></div>
-						<div class="row fondo-azul-claro">
-							<div class="col">
-								
-								<div id="compensacionTextoUnidad"></div>
+					<div class="mySlides" >
+						<div class="row fondo-azul-claro" id="slideUnidad">
+							<div class="col-1"></div>
+							<div class="col align-self-center">
 								<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Unidad de competencia</h3>
-								<p id="textoUnidad">El participante identificará las buenas prácticas en la docencia virtual, a través de la reflexión de situaciones actuales concretas y adquirirá herramientas y técnicas para fortalecer y articular su práctica docente virtual (disciplinar/docente) desde un enfoque inclusivo, sustentable y humanístico, en un ambiente de colaboración, respeto y apertura, con el fin de ampliar su visión con ética y responsabilidad transversal.</p>
-								<div id="compensacionUnidad2"></div>
+								<p>El participante identificará las buenas prácticas en la docencia virtual, a través de la reflexión de situaciones actuales concretas y adquirirá herramientas y técnicas para fortalecer y articular su práctica docente virtual (disciplinar/docente) desde un enfoque inclusivo, sustentable y humanístico, en un ambiente de colaboración, respeto y apertura, con el fin de ampliar su visión con ética y responsabilidad transversal.</p>
 
 							</div>
 							<div class="col d-flex align-items-center">
@@ -247,12 +241,11 @@
 										src="images/unidad.jpg"
 										alt="imagen pendiente"
 										class="img-fluid"
-										id="imagenUnidad"
 									/>
+									<figcaption class="figure-caption text-white">[2]</figcaption>
 								</figure>
 							</div>
 						</div>
-						<div class="row fondo-azul-claro" id="compensacionUnidad2"></div>
 					</div>
 				</div>
 				<a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -316,6 +309,16 @@
 				  
 				  <span class="mr-3">Autor(as) de la EE</span>
 				  <i class="fas fa-users fa-2x"></i>
+				</a>
+			</div>
+			<div class="col">
+				<a
+				class="btn btn-lg btn-outline-primary"
+				target="_blank"
+				href="documentos/Precisiones_generales_ee_profa.pdf">
+				  
+				  <span class="mr-3">Precisiones</span>
+				  <i class="fas fa-clipboard-list fa-2x"></i>
 				</a>
 			</div>
 			<div class="col">
@@ -413,8 +416,8 @@
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">
             <span class="font-weight-bold">Autoras de la experiencia educativa:</span>
-			Mtra. María Rossana Cuellar Gutierrez.
-			Dra. Rosa María Cuellar Gutierrez
+			<p>Mtra. María Rossana Cuéllar Gutiérrez</p>
+			<p>Dra. Rosa María Cuéllar Gutiérrez</p>
             </h5>
             <button
               type="button"
@@ -589,7 +592,7 @@
 				</td>
 				</tr>
 				<tr>
-				<td colspan="2">
+				<td colspan="2" style="text-align: right;">
 				Total:
 				</td>
 				<td>
@@ -636,9 +639,20 @@
 	<script>
 	var slideIndex = 1;
 	showSlides(slideIndex);
-
+	var carruselRecorrido=0;
 	function plusSlides(n) {
-	  showSlides(slideIndex += n);
+		
+		if(carruselRecorrido>0){
+			showSlides(slideIndex += n);
+		}else{
+			carruselRecorrido++;
+			var alturaPresentacion = document.getElementById('slidePresentacion').clientHeight;
+			showSlides(slideIndex += n);
+			document.getElementById("slideUnidad").style.height = alturaPresentacion+"px";
+			document.getElementById("slideUnidad").style.backgroundColor = "#4c5bfc";
+			
+		}
+		
 	}
 
 	function currentSlide(n) {
@@ -648,18 +662,14 @@
 	function showSlides(n) {
 	  var i;
 	  var slides = document.getElementsByClassName("mySlides");
-	  var dots = document.getElementsByClassName("dot");
 	  if (n > slides.length) {slideIndex = 1}    
 	  if (n < 1) {slideIndex = slides.length}
 	  for (i = 0; i < slides.length; i++) {
 		  slides[i].style.display = "none";  
 	  }
-	  for (i = 0; i < dots.length; i++) {
-		  dots[i].className = dots[i].className.replace(" active", "");
-	  }
 	  slides[slideIndex-1].style.display = "block";  
-	  dots[slideIndex-1].className += " active";
 	}
+	
 	</script>
   </body>
 </html>
