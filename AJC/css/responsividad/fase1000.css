@@ -1,0 +1,109 @@
+
+/*Aires*/
+#aireSuperiorIntroduccion{
+	height: 20px;
+}	
+#aireSuperiorProposito{
+	height: 20px;
+}
+#aireTextoProposito{
+	height: 60px;
+}
+.aireCarrusel{
+	height: 20px;
+}		
+/*Aires*/
+
+/*Pestaña*/
+.tab {
+  max-width: 800px;
+}
+
+.tab button {
+  font-size: 100%;
+}
+.fa-eye{
+	font-size: 120%;
+}
+
+.tabcontent{
+	max-width: 800px;
+}
+
+/*Pestaña*/
+/*Carrusel*/
+	.slideshow-container {
+	  max-width: 620px;
+	}
+	.prev {
+	  left: -10%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.next {
+	  right: -10%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.prevModal {
+	  left: 0%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.nextModal {
+	  right: 0%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.prevGeni {
+	  left: 20%;
+	  border-radius: 3px 0 0 3px;
+	}
+	.nextGeni {
+	  right: 20%;
+	  border-radius: 3px 0 0 3px;
+	}
+	/*Carrusel*/
+
+
+
+
+	.container-xl,.container-lg,.container-md,.container-sm,.container{
+		max-width:620px
+	}
+	
+
+	
+	.imagenLogo{
+		width: 40%;
+	}
+	.geniallyFrame{
+		width: 40%;
+	}
+	
+	.actividad-modal{
+		background-image: url('../images/cuaderno-azul.png');
+		position:relative;
+		background-color: white;
+		color: black;
+		background-repeat: no-repeat;
+		background-size: 600px 600px;
+		background-position: center;
+	}
+	.recursoModal {
+	text-align:center;
+	color: white;
+	background-color: #355ca7; 
+	height: 250px;
+	}
+	.recursoModal:hover {
+		background-color: #183d82; 
+		cursos: pointer;
+	}
+	
+	#icono{
+		width: 100px;
+		
+	}
+	#iconoAudio{
+		width: 30px;
+		
+	}
+	
+	
