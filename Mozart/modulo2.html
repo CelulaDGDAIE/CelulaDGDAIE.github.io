@@ -183,49 +183,54 @@
 	<br>
     <!--Presentación-->
     <section class="text-white" id="presentacion">
-	<div class="slideshow-container" style="top:30px; width:75%;">
-	  <div class="mySlides1">
-		<div class="row">
-		<div class="col-8 fondo_azul" >
-				<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Introducción</h3>
-				<p style="text-align: justify;">Bienvenidos al segundo m&oacute;dulo del programa <span class="font-weight-bold lead">La m&uacute;sica de Mozart en el desarrollo humano</span>. La m&uacute;sica es un recurso muy valioso para apreciar, analizar y utilizar como estrategia en el desarrollo de nuestra instrucci&oacute;n musical y educativa. Para poder identificar y reconocer su potencial es necesario, primero, vivir la experiencia, como cuando tuvimos cuatro o cinco a&ntilde;os. Aqu&iacute; encontraremos una investigaci&oacute;n que demuestra el efecto de la m&uacute;sica en los ni&ntilde;os de los tres a los seis a&ntilde;os, el proceso al que se sugiere apegarse para volver nuestro mundo m&aacute;s creativo y exponerlo a una mejor experiencia hacia el desarrollo de habilidades, utilizando a la m&uacute;sica como recurso ideal en este proceso.</p>
-			</div>
-			<div class="col-4 d-flex align-items-center fondo_azul" >
-				<figure class="figure" style="width: 50%; margin: auto; display: block;">
+	<div class="slideshow-container">
+	  <div class="mySlides1" id="slideIntroduccion">
+	  <div class="row aireCarrusel fondo-azul-marino" ></div>
+		<div class="row fondo-azul-marino"  >
+			<div class="col d-flex align-items-center fondo-azul-marino" style="text-align: right;">
+				
+				<figure class="figure">
 				  <img
-					src="images/modulo2/introduccion.jpg"
+					src="images/modulo2/Introduccion.jpg"
 					alt="imagen pendiente"
 					class="img-fluid"
 				  />
-				  <figcaption class="figure-caption text-right text-white">
+				  <figcaption class="figure-caption text-white">
 					[1]
 				  </figcaption>
 				</figure>
 			</div>
-			
+			<div class="col align-self-center fondo-azul-marino" >
+				<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Introducción</h3>
+					<p>Bienvenidos al segundo m&oacute;dulo del programa <span class="font-weight-bold lead">La m&uacute;sica de Mozart en el desarrollo humano</span>. La m&uacute;sica es un recurso muy valioso para apreciar, analizar y utilizar como estrategia en el desarrollo de nuestra instrucci&oacute;n musical y educativa. Para poder identificar y reconocer su potencial es necesario, primero, vivir la experiencia, como cuando tuvimos cuatro o cinco a&ntilde;os. Aqu&iacute; encontraremos una investigaci&oacute;n que demuestra el efecto de la m&uacute;sica en los ni&ntilde;os de los tres a los seis a&ntilde;os, el proceso al que se sugiere apegarse para volver nuestro mundo m&aacute;s creativo y exponerlo a una mejor experiencia hacia el desarrollo de habilidades, utilizando a la m&uacute;sica como recurso ideal en este proceso.</p>
+			</div>
+			<div class="col-1 fondo-azul-marino"></div>
 					  
 		</div>
+		
 	  </div>
 
-	  <div class="mySlides1">
-		<div class="row">
-		<div class="col-4 d-flex align-items-center fondo_morado">
-				<figure class="figure" style="width: 100%; margin: auto; display: block;">
+	  <div class="mySlides1 fondo-morado" >
+		<div class="row fondo-morado" id="slideProposito">
+		<div class="col-1 fondo-morado"></div>
+			<div class="col fondo-morado align-self-center">
+				<h3 class="font-weight-bold"><i class="fas fa-book-reader"></i> Propósito</h3>
+				<p>El estudiante identifica la m&uacute;sica y sus elementos r&iacute;tmicos y mel&oacute;dicos como principal promotora del desarrollo de los ni&ntilde;os, estimulando su inter&eacute;s por escucharla y ejecutarla. La importancia de la instrucci&oacute;n musical en la edad temprana y c&oacute;mo puede acompa&ntilde;ar el proceso educativo y el desarrollo de competencias hacia un camino evolutivo m&aacute;s armonioso.</p>
+			</div>
+			  <div class="col d-flex align-items-center fondo-morado">
+				<figure class="figure">
 				  <img
-					src="images/modulo2/proposito.jpg"
+					src="images/modulo2/Proposito.jpg"
 					alt="imagen pendiente"
 					class="img-fluid"
+					style="height: 310px"
+					
 				  />
 				  <figcaption class="figure-caption text-right text-white">
 					[2]
 				  </figcaption>
 				</figure>
 			  </div>
-			<div class="col-8 fondo_morado" >
-				<h3 class="font-weight-bold"><i class="fas fa-book-reader"></i> Propósito</h3>
-				<p style="text-align: justify;">El estudiante identifica la m&uacute;sica y sus elementos r&iacute;tmicos y mel&oacute;dicos como principal promotora del desarrollo de los ni&ntilde;os, estimulando su inter&eacute;s por escucharla y ejecutarla. La importancia de la instrucci&oacute;n musical en la edad temprana y c&oacute;mo puede acompa&ntilde;ar el proceso educativo y el desarrollo de competencias hacia un camino evolutivo m&aacute;s armonioso.</p>
-			</div>
-			  
 			</div>
 	  </div>
 	  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
@@ -280,7 +285,7 @@
   		<div class="container">
   		  <div class="panel-group" id="accordion">
   		    <div class="panel panel-default">
-  		      <div class="panel-heading fondo_azul">
+  		      <div class="panel-heading fondo-azul-marino">
   		        <h4 class="panel-title">
   		          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="color: white;"><p><span class="font-weight-bold lead">N&uacute;meros y conceptos aritm&eacute;ticos: Los ritmos del pensamiento</span></p></a>
   		        </h4>
@@ -294,7 +299,7 @@
   		      </div>
   		    </div>
   		    <div class="panel panel-default">
-  		      <div class="panel-heading fondo_azul">
+  		      <div class="panel-heading fondo-azul-marino">
   		        <h4 class="panel-title">
   		          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="color: white;"><p><span class="font-weight-bold lead">Para la salud del ni&ntilde;o. L&iacute;mite de la velocidad s&oacute;nica</span></p></a>
   		        </h4>
@@ -307,7 +312,7 @@
   		      </div>
   		    </div>
   		    <div class="panel panel-default">
-  		      <div class="panel-heading fondo_azul">
+  		      <div class="panel-heading fondo-azul-marino">
   		        <h4 class="panel-title">
   		          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="color: white;"><p><span class="font-weight-bold lead">Instrumentos para tocar</span></p></a>
   		        </h4>
@@ -320,7 +325,7 @@
   		      </div>
   		    </div>
   		    <div class="panel panel-default">
-  		      <div class="panel-heading fondo_azul">
+  		      <div class="panel-heading fondo-azul-marino">
   		        <h4 class="panel-title">
   		          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="color: white;"><p><span class="font-weight-bold lead">La visi&oacute;n del especialista </span><span class="font-weight-bold lead">Shinichi</span><span class="font-weight-bold lead"> Suzuki</span></p></a>
   		        </h4>
@@ -472,7 +477,7 @@
     
    
     <!--Disclaimer-->
-    <section class="fondo_azul">
+    <section class="fondo-azul-marino">
       <div class="container contenedor-menu-contenido">
         <!--Disclaimer-->
         <div class="row">
@@ -559,7 +564,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body" style="background-color: #dbdbdb;">
+          <div class="modal-body actividad-modal">
             <div class="slideshow-container">
 			  <div class="mySlides2">
 					<p><span class="font-weight-bold lead">Actividad 5. Bit&aacute;cora.</span></p>
@@ -727,13 +732,30 @@
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script>
 	var slideIndex = [1, 1, 1];
-	var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+	var carruselRecorrido = 0;
+	var slideId = ["mySlides1", "mySlides2", "mySlides3"];
 	showSlides(1, 0);
 	showSlides(1, 1);
 	showSlides(1, 2);
 
 	function plusSlides(n, no) {
-	  showSlides(slideIndex[no] += n, no);
+		
+		if(no==0){
+			if(carruselRecorrido > 0){
+		
+			showSlides(slideIndex[no] += n, no);
+			}else{
+				carruselRecorrido++;
+				var alturaPresentacion = document.getElementById('slideIntroduccion').clientHeight;
+				showSlides(slideIndex[no] += n, no);
+				document.getElementById("slideProposito").style.height = alturaPresentacion+"px";
+				document.getElementById("slideProposito").style.backgroundColor = "#8983c3";
+				
+			}
+		}else{
+			showSlides(slideIndex[no] += n, no);
+		}
+		
 	}
 
 	function showSlides(n, no) {

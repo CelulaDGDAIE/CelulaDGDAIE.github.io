@@ -183,54 +183,61 @@
 	<br>
     <!--Presentación-->
     <section class="text-white" id="presentacion">
-	<div class="slideshow-container" style="top:30px; width:75%;">
-	  <div class="mySlides1">
-		<div class="row">
-		<div class="col-8 fondo_azul" >
-				<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Introducción</h3>
-				<p style="text-align: justify;">Bienvenido al tercer m&oacute;dulo del programa &ldquo;La m&uacute;sica de Mozart en el&nbsp; desarrollo humano&rdquo;. La m&uacute;sica est&aacute; integrada por varios elementos que se mezclan conjuntamente para crear un producto art&iacute;stico de alta calidad est&eacute;tica. El percibir los sonidos y reconocer algunas melod&iacute;as se torna parte de nuestra cotidianeidad, pero volverlo consciente y reconocer las propiedades f&iacute;sicas del sonido, las formas de producirlo y conocer la variedad de instrumentos que permiten emitir estas vibraciones, se vuelve una actividad fascinante.</p>
-			</div>
-			<div class="col-4 d-flex align-items-center fondo_azul" >
-				<figure class="figure" style="width: 50%; margin: auto; display: block;">
+	<div class="slideshow-container">
+	  <div class="mySlides1" id="slideIntroduccion">
+	  <div class="row aireCarrusel fondo-azul-marino" ></div>
+		<div class="row fondo-azul-marino"  >
+			<div class="col d-flex align-items-center fondo-azul-marino" style="text-align: right;">
+				
+				<figure class="figure">
 				  <img
-					src="images/modulo3/introduccion.jpg"
+					src="images/modulo3/Introduccion.jpg"
 					alt="imagen pendiente"
 					class="img-fluid"
 				  />
-				  <figcaption class="figure-caption text-right text-white">
+				  <figcaption class="figure-caption text-white">
 					[1]
 				  </figcaption>
 				</figure>
-			</div>  
+			</div>
+			<div class="col align-self-center fondo-azul-marino" >
+				<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Introducción</h3>
+					<p style="text-align: justify;">Bienvenido al tercer m&oacute;dulo del programa &ldquo;La m&uacute;sica de Mozart en el&nbsp; desarrollo humano&rdquo;. La m&uacute;sica est&aacute; integrada por varios elementos que se mezclan conjuntamente para crear un producto art&iacute;stico de alta calidad est&eacute;tica. El percibir los sonidos y reconocer algunas melod&iacute;as se torna parte de nuestra cotidianeidad, pero volverlo consciente y reconocer las propiedades f&iacute;sicas del sonido, las formas de producirlo y conocer la variedad de instrumentos que permiten emitir estas vibraciones, se vuelve una actividad fascinante.</p>
+			</div>
+			<div class="col-1 fondo-azul-marino"></div>
+					  
 		</div>
+		
 	  </div>
 
-	  <div class="mySlides1">
-		<div class="row">
-		<div class="col-4 d-flex align-items-center fondo_morado">
-				<figure class="figure" style="width: 100%; margin: auto; display: block;">
+	  <div class="mySlides1 fondo-morado" >
+		<div class="row fondo-morado" id="slideProposito">
+		<div class="col-1 fondo-morado"></div>
+			<div class="col fondo-morado align-self-center">
+				<h3 class="font-weight-bold"><i class="fas fa-book-reader"></i> Propósito</h3>
+				<p>En este m&oacute;dulo aprenderemos las caracter&iacute;sticas del sonido, como elemento principal de la m&uacute;sica, redescubriendo los elementos fundamentales para crear una obra art&iacute;stica y c&oacute;mo act&uacute;an los ejecutantes art&iacute;sticos en conjunto para producir grandes obras musicales</p>
+			</div>
+			  <div class="col d-flex align-items-center fondo-morado">
+				<figure class="figure">
 				  <img
-					src="images/modulo3/proposito.jpg"
+					src="images/modulo3/Proposito.jpg"
 					alt="imagen pendiente"
 					class="img-fluid"
+					style="height: 310px"
+					
 				  />
 				  <figcaption class="figure-caption text-right text-white">
 					[2]
 				  </figcaption>
 				</figure>
 			  </div>
-			<div class="col-8 fondo_morado" >
-				<h3 class="font-weight-bold"><i class="fas fa-book-reader"></i> Propósito</h3>
-				<p>En este m&oacute;dulo aprenderemos las caracter&iacute;sticas del sonido, como elemento principal de la m&uacute;sica, redescubriendo los elementos fundamentales para crear una obra art&iacute;stica y c&oacute;mo act&uacute;an los ejecutantes art&iacute;sticos en conjunto para producir grandes obras musicales</p>
-			</div>
-			  
 			</div>
 	  </div>
 	  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
 	  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 	</div>
 
-  </section>
+    </section>
     <!--/Presentación-->
     <br>
     <br>
@@ -265,7 +272,7 @@
         <div class="panel-group" id="accordion">
           <div class="panel panel-default row">
             <div class="col-2"></div>
-            <div class="panel-heading fondo_azul col-2">
+            <div class="panel-heading fondo-azul-marino col-2">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="color: white;"><p><span class="font-weight-bold lead">&Iacute;cono y audio</span></p></a>
               </h4>
@@ -280,7 +287,7 @@
           </div>
           <div class="panel panel-default row">
             <div class="col-2"></div>
-            <div class="panel-heading fondo_azul col-2">
+            <div class="panel-heading fondo-azul-marino col-2">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="color: white;"><p><span class="font-weight-bold lead">&Iacute;cono y audio</span></p></a>
               </h4>
@@ -295,7 +302,7 @@
           </div>
           <div class="panel panel-default row">
             <div class="col-2"></div>
-            <div class="panel-heading fondo_azul col-2">
+            <div class="panel-heading fondo-azul-marino col-2">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="color: white;"><p><span class="font-weight-bold lead">&Iacute;cono y audio</span></p></a>
               </h4>
@@ -310,7 +317,7 @@
           </div>
           <div class="panel panel-default row">
             <div class="col-2"></div>
-            <div class="panel-heading fondo_azul col-2">
+            <div class="panel-heading fondo-azul-marino col-2">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="color: white;"><p><span class="font-weight-bold lead">&Iacute;cono y audio</span></p></a>
               </h4>
@@ -325,7 +332,7 @@
           </div>
           <div class="panel panel-default row">
             <div class="col-2"></div>
-            <div class="panel-heading fondo_azul col-2">
+            <div class="panel-heading fondo-azul-marino col-2">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="color: white;"><p><span class="font-weight-bold lead">&Iacute;cono y audio</span></p></a>
               </h4>
@@ -469,7 +476,7 @@
       <div class="container">
         <div class="panel-group" id="accordion">
           <div class="panel panel-default">
-            <div class="panel-heading fondo_azul">
+            <div class="panel-heading fondo-azul-marino">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="color: white;"><p><span class="font-weight-bold lead">Ensambles</span></p></a>
               </h4>
@@ -481,7 +488,7 @@
             </div>
           </div>
           <div class="panel panel-default">
-            <div class="panel-heading fondo_azul">
+            <div class="panel-heading fondo-azul-marino">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="color: white;"><p><span class="font-weight-bold lead">Solista o concertista</span></p></a>
               </h4>
@@ -493,7 +500,7 @@
             </div>
           </div>
           <div class="panel panel-default">
-            <div class="panel-heading fondo_azul">
+            <div class="panel-heading fondo-azul-marino">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="color: white;"><p><span class="font-weight-bold lead">D&uacute;os</span></p></a>
               </h4>
@@ -505,7 +512,7 @@
             </div>
           </div>
           <div class="panel panel-default">
-            <div class="panel-heading fondo_azul">
+            <div class="panel-heading fondo-azul-marino">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="color: white;"><p><span class="font-weight-bold lead">Tr&iacute;os</span></p></a>
               </h4>
@@ -517,7 +524,7 @@
             </div>
           </div>
           <div class="panel panel-default">
-            <div class="panel-heading fondo_azul">
+            <div class="panel-heading fondo-azul-marino">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="color: white;"><p><span class="font-weight-bold lead">Cuartetos</span></p></a>
               </h4>
@@ -529,7 +536,7 @@
             </div>
           </div>
           <div class="panel panel-default">
-            <div class="panel-heading fondo_azul">
+            <div class="panel-heading fondo-azul-marino">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" style="color: white;"><p><span class="font-weight-bold lead">Orquesta de c&aacute;mara</span></p></a>
               </h4>
@@ -541,7 +548,7 @@
             </div>
           </div>
           <div class="panel panel-default">
-            <div class="panel-heading fondo_azul">
+            <div class="panel-heading fondo-azul-marino">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse7" style="color: white;"><p><span class="font-weight-bold lead">Orquesta sinf&oacute;nica y filarm&oacute;nica</span></p></a>
               </h4>
@@ -626,7 +633,7 @@
     
    
     <!--Disclaimer-->
-    <section class="fondo_azul">
+    <section class="fondo-azul-marino">
       <div class="container contenedor-menu-contenido">
         <!--Disclaimer-->
         <div class="row">
@@ -933,7 +940,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body" style="background-color: #dbdbdb;">
+          <div class="modal-body actividad-modal" >
             <div class="slideshow-container">
 			  <div class="mySlides2">
 					<p><span class="font-weight-bold lead">Actividad 8. Mapa Mental.</span></p>
@@ -1109,13 +1116,27 @@
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script>
 	var slideIndex = [1, 1, 1];
-	var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+	var carruselRecorrido = 0;
+	var slideId = ["mySlides1", "mySlides2", "mySlides3"];
 	showSlides(1, 0);
 	showSlides(1, 1);
 	showSlides(1, 2);
 
 	function plusSlides(n, no) {
-	  showSlides(slideIndex[no] += n, no);
+		if(no==0){
+			if(carruselRecorrido > 0){
+		
+			showSlides(slideIndex[no] += n, no);
+			}else{
+				carruselRecorrido++;
+				var alturaPresentacion = document.getElementById('slideIntroduccion').clientHeight;
+				showSlides(slideIndex[no] += n, no);
+				document.getElementById("slideProposito").style.height = alturaPresentacion+"px";
+				document.getElementById("slideProposito").style.backgroundColor = "#8983c3";
+			}
+		}else{
+			showSlides(slideIndex[no] += n, no);
+		}
 	}
 
 	function showSlides(n, no) {
