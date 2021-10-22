@@ -269,9 +269,9 @@
     <div class="row">
     	<div class="col-3"></div>
 	    <div class="col-7">
-	      <div class="btn-group-block" role="group" style="width: 100%; display: block; justify-content: center;">
-	        <a href="#" data-toggle="modal" data-target="#modal-1_1" type="button" class="btn fondo-azul-marino col-5" style="width: 50%; font-size: 120%;">1.1 ¿Qué es la música?</a>
-	        <a href="#" data-toggle="modal" data-target="#modal-1_2" type="button" class="btn fondo-morado col-5" style="width: 50%; font-size: 120%;">1.2 El efecto Mozart: La música y el cerebro</a>
+	      <div class="btn-group-block" id="grupo" role="group" style="width: 100%; display: block; justify-content: center;">
+	        <a href="#" data-toggle="modal" data-target="#modal-1_1" type="button" class="btn fondo-azul-marino col-5" style="width: 50%; font-size: 120%; text-transform:initial;">1.1 ¿Qué es la música?</a>
+	        <a href="#" data-toggle="modal" data-target="#modal-1_2" type="button" class="btn fondo-morado col-5" style="width: 50%; font-size: 120%; text-transform:initial;">1.2 El efecto Mozart: La música y el cerebro</a>
 	      </div>
 	    </div>
     	<div class="col-3"></div>
@@ -1124,6 +1124,7 @@
 	var slideIndex = [1, 1, 1];
 	var carruselRecorrido = 0;
 	var slideId = ["mySlides1", "mySlides2", "mySlides3"];
+
 	showSlides(1, 0);
 	showSlides(1, 1);
 	showSlides(1, 2);

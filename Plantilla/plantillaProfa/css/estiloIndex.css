@@ -110,51 +110,103 @@ table, th, td {
 /*Modulos de contenido*/
 	
 	.apartadoModulo {
+		-webkit-transition: all 400ms ease-in-out;
+		-moz-transition: all 400ms ease-in-out;
+		-ms-transition: all 400ms ease-in-out;
+		-o-transition: all 400ms ease-in-out;
+		transition: all 400ms ease-in-out;
 		height: 200px;
 		width: 600px;
-		
+		position: relative;
 		display: inline-block;
+		background-image: url('../images/modulo1.png');
+		background-repeat: no-repeat;
+		background-position: center;
 	}
-	.apartadoModulo .rectangulo{
+	.apartadoHover{
+		display: none;
 		height: 200px;
-		width: 150px;
-		background-color: green;
+		width: 600px;
+		position: relative;
+		/*display: inline-block;*/
+		display: none;
 	}
-	.apartadoModulo .triangulo{
+	.apartadoHover .rectangulo{
+		height: 200px;
+		width: 100px;
+		background-color: #3CA7B8;
+		opacity: 90%;
+
+		position: absolute;
+	}
+	.apartadoHover .recuadroNumero{
+		height: 50px;
+		width: 50px;
+		z-index: 10;
+		background-color: #4C5BFC;
+
+		position: absolute;
+	}
+	
+
+	.apartadoHover .triangulo{
 		display: inline-block;
 		width: 0; 
 		height: 0; 
+		left: 100px;
 		border-top: 200px solid transparent;
-		border-bottom: 1px solid red;
-		border-left: 600px solid red;
+		border-bottom: 0px solid #3CA7B8;
+		border-left: 500px solid #3CA7B8;
+		opacity: 90%;
 		text-align: center;
+		position: absolute;
+	}
+	.texto{
+		width: 300px; 
+		
+		top: 80px;
+		position: absolute;
+		color: white;
+		z-index: 10;
+	}
+	.texto h3{
+		font-weight: bold;
+	}
+	
+	.numeroModulo{
+		width: 100px; 
+		
+		top: -30px;
+		position: absolute;
+		color: white;
+		z-index: 10;
+	}
+	.numeroModulo p{
+		font-weight: bold;
+		font-size: 110%; 
 	}
 	
 	.separacion{
-		width: 50px;
+		
+		width: 55px;
 		display: inline-block;
 	}
 	
-	.apartadoModulo h3 {
-	  /*text-align: center;
-	  top: -100px;
-	  left: -580px;
-	  position: relative;
-	  width: 320px;
-	  height: 93px;
-	  margin: 0px;
-	  color: white;
-	  font-weight: bold;*/
+	/*.apartadoModulo:hover{
+		background-size: 200px 210px;
+	}*/
+	
+	.apartadoModulo:hover .apartadoHover {
+		opacity: 1.0;
+		background-size: 100px 100px;
+		display: inline-block;
+		
 	}
-	.apartadoModulo:hover, .rectangulo:hover {
-		/*display: block;
-		width: 0; 
-		height: 0; 
-		border-top: 200px solid transparent;
-		border-bottom: 1px solid green;
-		border-left: 600px solid green;
-		text-align: center;*/
+	.apartadoModulo:hover {
+		background-size: 190px 190px;
+		
 	}
+
 
 	#modulo2{
 		background-image: url('../images/modulo2.png');
