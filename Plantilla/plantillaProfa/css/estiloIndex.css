@@ -161,16 +161,22 @@ table, th, td {
 		text-align: center;
 		position: absolute;
 	}
-	.texto{
+	.tituloModulo{
 		width: 300px; 
-		
 		top: 80px;
 		position: absolute;
 		color: white;
 		z-index: 10;
 	}
-	.texto h3{
+	.tituloModulo h3{
 		font-weight: bold;
+	}
+	.texto{
+		width: 300px; 
+		top: 80px;
+		position: absolute;
+		color: white;
+		z-index: 10;
 	}
 	
 	.numeroModulo{

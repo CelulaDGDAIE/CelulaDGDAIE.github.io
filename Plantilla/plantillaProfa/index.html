@@ -31,7 +31,7 @@
               <div
                 class="col text-secondary d-flex flex-column justify-content-center"
               >
-                <span class="h4 font-weight-bold">$@titulo EE</span>
+                <span class="h4 font-weight-bold">$@tituloEE</span>
               </div>
             </div>
           </div>
@@ -300,12 +300,25 @@
 						<div class="recuadroNumero"></div>
 						<div class="rectangulo"></div>
 						<div class="triangulo"></div>
-						<div class="texto"><h3>Módulo 1: Prueba de dibujos en CSS.</h3></div>
+						<div class="tituloModulo"><h3>Módulo 1:</h3></div>
+						<div class="texto">Prueba de dibujo CSS.</div>
 						<div class="numeroModulo"><p>01</p></div>
 					</div>
 				</div>
 			</a>
 			<div class="separacion"></div>
+			<a href="#">
+				<div class="apartadoModulo fondo-azul-marino">
+					<div class="apartadoHover" >
+						<div class="recuadroNumero"></div>
+						<div class="rectangulo"></div>
+						<div class="triangulo"></div>
+						<div class="tituloModulo"><h3>Módulo 2:</h3></div>
+						<div class="texto">Prueba de tamaño de texto.</div>
+						<div class="numeroModulo"><p>02</p></div>
+					</div>
+				</div>
+			</a>
 
 		
 
@@ -684,6 +697,20 @@
 	  slides[slideIndex-1].style.display = "block";  
 	}
 	
+	
+
+	window.addEventListener('resize', function(event){
+		largoVentana=screen.height;
+		anchoVentana=screen.width;
+		ajustarTamano(largoVentana, anchoVentana);
+	});
+	
+	function ajustarTamano(largo, ancho){
+		if(ancho<1000){
+			alert("vista pequeña");
+		
+		}
+	}
 	
 	
 	</script>
