@@ -15,8 +15,8 @@
 /*--------------/Aires--------------*/
 /*--------------Carrusel--------------*/
 	.mySlides {
-	  padding-right: 80px;
-	  padding-left: 80px;
+	  padding-right: 50px;
+	  padding-left: 50px;
 	}
 	.prev, .next {
 	  top: 50%;
@@ -82,7 +82,7 @@
 
 	
 	.container-xl,.container-lg,.container-md,.container-sm,.container{
-		max-width:1590px;
+		max-width:1490px;
 	}
 	.filaModulo{
 		width: 1254px;

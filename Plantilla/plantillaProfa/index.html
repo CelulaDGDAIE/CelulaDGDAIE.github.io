@@ -314,7 +314,7 @@
 						<div class="rectangulo"></div>
 						<div class="triangulo"></div>
 						<div class="tituloModulo"><h3>Módulo 2:</h3></div>
-						<div class="texto">Prueba de tamaño de texto.</div>
+						<div class="texto">Prueba de tamaño de textos innovadores para la eduación de los jovénes universitarios durante la pandemia COVID-19 en el estado de veracruz con asistencia de inteligencia artificial administrada por NFTs y realidades alternativas</div>
 						<div class="numeroModulo"><p>02</p></div>
 					</div>
 				</div>
@@ -659,7 +659,7 @@
     <script src="js/app.js"></script>
     <script src="js/inicializacion.js"></script>
 	<script>
-	
+	ajustarTamano(screen.width, screen.height);
 	var slideIndex = 1;
 	showSlides(slideIndex);
 	var carruselRecorrido=0;
@@ -706,9 +706,10 @@
 	});
 	
 	function ajustarTamano(largo, ancho){
-		if(ancho<1000){
-			alert("vista pequeña");
-		
+		var rectangulos = document.getElementsByClassName("rectangulo");
+		var i;
+		for (i = 0; i < rectangulos.length; i++) {
+			rectangulos[i].style.width = "100px";
 		}
 	}
 	
