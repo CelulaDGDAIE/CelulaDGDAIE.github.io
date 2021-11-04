@@ -301,7 +301,7 @@
 						<div class="rectangulo"></div>
 						<div class="triangulo"></div>
 						<div class="tituloModulo"><h3>Módulo 1:</h3></div>
-						<div class="texto">Prueba de dibujo CSS.</div>
+						<div class="texto">P.</div>
 						<div class="numeroModulo"><p>01</p></div>
 					</div>
 				</div>
@@ -707,10 +707,39 @@
 	
 	function ajustarTamano(largo, ancho){
 		var rectangulos = document.getElementsByClassName("rectangulo");
+		var apartadosModulo = document.getElementsByClassName("apartadoModulo");
+		var textosModulos = document.getElementsByClassName("texto");
+		var textoAjustar;
+		var tamanoBase;
 		var i;
+		for (i = 0; i < apartadosModulo.length; i++) {
+			apartadosModulo[i].style.height = "200px";
+		}
+		
 		for (i = 0; i < rectangulos.length; i++) {
 			rectangulos[i].style.width = "100px";
+			rectangulos[i].style.height = "200px";
 		}
+		for (i = 0; i < textosModulos.length; i++) {
+			textosModulos[i].style.width = "400px";
+			textoAjustar=textosModulos[i].innerHTML;
+			//alert(textoAjustar.length);
+			tamanoBase = 90;
+			textosModulos[i].style.fontSize = "15px";
+			//textosModulos[i].style.fontSize = textoAjustar.length+"px";
+			//textosModulos[i].style.fontSize = "35px";
+			
+			/*textoAjustar=textosModulos[i].innerHTML;
+			if(textoAjustar.length > 10);{
+				textosModulos[i].style.fontSize = "10px";
+			}else{
+				textosModulos[i].style.fontSize = "35px";
+			}*/
+			
+			//textosModulos[i].innerHTML = "cfg";
+		}
+		
+		
 	}
 	
 	

@@ -46,7 +46,7 @@
 
 /*--------------Modulos de contenido--------------*/
 	.apartadoModulo {
-		height: 200px;
+		/*height: 200px;*/
 		line-height: 100px;
 		background-size: 150px 150px;
 		margin: 5px;
