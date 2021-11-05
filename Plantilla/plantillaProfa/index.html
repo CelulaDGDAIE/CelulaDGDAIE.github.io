@@ -301,7 +301,7 @@
 						<div class="rectangulo"></div>
 						<div class="triangulo"></div>
 						<div class="tituloModulo"><h3>Módulo 1:</h3></div>
-						<div class="texto">P.</div>
+						<div class="texto">Nuevas vanguardias educativas en Veracruz.</div>
 						<div class="numeroModulo"><p>01</p></div>
 					</div>
 				</div>
@@ -314,7 +314,7 @@
 						<div class="rectangulo"></div>
 						<div class="triangulo"></div>
 						<div class="tituloModulo"><h3>Módulo 2:</h3></div>
-						<div class="texto">Prueba de tamaño de textos innovadores para la eduación de los jovénes universitarios durante la pandemia COVID-19 en el estado de veracruz con asistencia de inteligencia artificial administrada por NFTs y realidades alternativas</div>
+						<div class="texto">Recomendaciones internacionales sobre alimentación infantil y definiciones de lactancia materna y amamantamiento.</div>
 						<div class="numeroModulo"><p>02</p></div>
 					</div>
 				</div>
@@ -654,12 +654,13 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+	
     <script src="js/mdb.min.js"></script>
     <script src="js/easyScrollDots.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/inicializacion.js"></script>
 	<script>
-	ajustarTamano(screen.width, screen.height);
+	
 	var slideIndex = 1;
 	showSlides(slideIndex);
 	var carruselRecorrido=0;
@@ -699,50 +700,11 @@
 	
 	
 
-	window.addEventListener('resize', function(event){
-		largoVentana=screen.height;
-		anchoVentana=screen.width;
-		ajustarTamano(largoVentana, anchoVentana);
-	});
 	
-	function ajustarTamano(largo, ancho){
-		var rectangulos = document.getElementsByClassName("rectangulo");
-		var apartadosModulo = document.getElementsByClassName("apartadoModulo");
-		var textosModulos = document.getElementsByClassName("texto");
-		var textoAjustar;
-		var tamanoBase;
-		var i;
-		for (i = 0; i < apartadosModulo.length; i++) {
-			apartadosModulo[i].style.height = "200px";
-		}
-		
-		for (i = 0; i < rectangulos.length; i++) {
-			rectangulos[i].style.width = "100px";
-			rectangulos[i].style.height = "200px";
-		}
-		for (i = 0; i < textosModulos.length; i++) {
-			textosModulos[i].style.width = "400px";
-			textoAjustar=textosModulos[i].innerHTML;
-			//alert(textoAjustar.length);
-			tamanoBase = 90;
-			textosModulos[i].style.fontSize = "15px";
-			//textosModulos[i].style.fontSize = textoAjustar.length+"px";
-			//textosModulos[i].style.fontSize = "35px";
-			
-			/*textoAjustar=textosModulos[i].innerHTML;
-			if(textoAjustar.length > 10);{
-				textosModulos[i].style.fontSize = "10px";
-			}else{
-				textosModulos[i].style.fontSize = "35px";
-			}*/
-			
-			//textosModulos[i].innerHTML = "cfg";
-		}
-		
-		
-	}
 	
 	
 	</script>
+	<script src="js/responsividadDinamica.js"></script>
+	
   </body>
 </html>
