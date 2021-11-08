@@ -126,7 +126,7 @@ table, th, td {
 	.apartadoHover{
 		display: none;
 		height: 200px;
-		width: 600px;
+		/*width: 270px;*/
 		position: relative;
 		/*display: inline-block;*/
 		display: none;
