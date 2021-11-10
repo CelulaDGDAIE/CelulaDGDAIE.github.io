@@ -1,0 +1,281 @@
+[class^="viga-"],
+[class*=" viga-"] {
+    font-family: 'Viga', sans-serif;
+}
+
+[class^="poppins-"],
+[class*=" poppins-"] {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*mediano / 1.3*/
+[class$="-60"],
+[class*="-60 "] {
+    font-size: 30px;
+}
+
+[class$="-55"],
+[class*="-55 "] {
+    font-size: 27px;
+}
+
+[class$="-50"],
+[class*="-50 "] {
+    font-size: 25px;
+}
+
+[class$="-40"],
+[class*="-40 "] {
+    font-size: 20px;
+}
+
+[class$="-35"],
+[class*="-35 "] {
+    font-size: 20px;
+}
+
+[class$="-28"],
+[class*="-28 "] {
+    font-size: 15px;
+}
+
+[class$="-25"],
+[class*="-25 "] {
+    font-size: 14px;
+}
+
+[class$="-24"],
+[class*="-24 "] {
+    font-size: 14px;
+}
+
+[class$="-22"],
+[class*="-22 "] {
+    font-size: 12px;
+}
+
+[class$="-19"],
+[class*="-19 "] {
+    font-size: 12px;
+}
+
+[class$="-18"],
+[class*="-18 "] {
+    font-size: 12px;
+}
+
+[class$="-16"],
+[class*="-16 "] {
+    font-size: 12px;
+}
+
+[class$="-14"],
+[class*="-14 "] {
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+
+    /*base / 1.5*/
+    [class$="-60"],
+    [class*="-60 "] {
+        font-size: 40px;
+    }
+
+    [class$="-55"],
+    [class*="-55 "] {
+        font-size: 36px;
+    }
+
+    [class$="-50"],
+    [class*="-50 "] {
+        font-size: 33px;
+    }
+
+    [class$="-40"],
+    [class*="-40 "] {
+        font-size: 26px;
+    }
+
+    [class$="-35"],
+    [class*="-35 "] {
+        font-size: 23px;
+    }
+
+    [class$="-28"],
+    [class*="-28 "] {
+        font-size: 18px;
+    }
+
+    [class$="-25"],
+    [class*="-25 "] {
+        font-size: 16px;
+    }
+
+    [class$="-24"],
+    [class*="-24 "] {
+        font-size: 16px;
+    }
+
+    [class$="-22"],
+    [class*="-22 "] {
+        font-size: 14px;
+    }
+
+    [class$="-19"],
+    [class*="-19 "] {
+        font-size: 12px;
+    }
+
+    [class$="-18"],
+    [class*="-18 "] {
+        font-size: 12px;
+    }
+
+    [class$="-16"],
+    [class*="-16 "] {
+        font-size: 10px;
+    }
+
+    [class$="-14"],
+    [class*="-14 "] {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    /*base / 1.2*/
+    [class$="-60"],
+    [class*="-60 "] {
+        font-size: 50px;
+    }
+
+    [class$="-55"],
+    [class*="-55 "] {
+        font-size: 45px;
+    }
+
+    [class$="-50"],
+    [class*="-50 "] {
+        font-size: 41px;
+    }
+
+    [class$="-40"],
+    [class*="-40 "] {
+        font-size: 33px;
+    }
+
+    [class$="-35"],
+    [class*="-35 "] {
+        font-size: 29px;
+    }
+
+    [class$="-28"],
+    [class*="-28 "] {
+        font-size: 23px;
+    }
+
+    [class$="-25"],
+    [class*="-25 "] {
+        font-size: 21px;
+    }
+
+    [class$="-24"],
+    [class*="-24 "] {
+        font-size: 20px;
+    }
+
+    [class$="-22"],
+    [class*="-22 "] {
+        font-size: 18px;
+    }
+
+    [class$="-19"],
+    [class*="-19 "] {
+        font-size: 16px;
+    }
+
+    [class$="-18"],
+    [class*="-18 "] {
+        font-size: 15px;
+    }
+
+    [class$="-16"],
+    [class*="-16 "] {
+        font-size: 13px;
+    }
+
+    [class$="-14"],
+    [class*="-14 "] {
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    [class$="-60"],
+    [class*="-60 "] {
+        font-size: 60px;
+    }
+
+    [class$="-55"],
+    [class*="-55 "] {
+        font-size: 55px;
+    }
+
+    [class$="-50"],
+    [class*="-50 "] {
+        font-size: 50px;
+    }
+
+    [class$="-40"],
+    [class*="-40 "] {
+        font-size: 40px;
+    }
+
+    [class$="-35"],
+    [class*="-35 "] {
+        font-size: 35px;
+    }
+
+    [class$="-28"],
+    [class*="-28 "] {
+        font-size: 28px;
+    }
+
+    [class$="-25"],
+    [class*="-25 "] {
+        font-size: 25px;
+    }
+
+    [class$="-24"],
+    [class*="-24 "] {
+        font-size: 24px;
+    }
+
+    [class$="-22"],
+    [class*="-22 "] {
+        font-size: 22px;
+    }
+
+    [class$="-19"],
+    [class*="-19 "] {
+        font-size: 19px;
+    }
+
+    [class$="-18"],
+    [class*="-18 "] {
+        font-size: 18px;
+    }
+
+    [class$="-16"],
+    [class*="-16 "] {
+        font-size: 16px;
+    }
+
+    [class$="-14"],
+    [class*="-14 "] {
+        font-size: 14px;
+    }
+}
