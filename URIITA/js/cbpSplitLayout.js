@@ -1,4 +1,5 @@
 /**
+* Lou, M. (2013). Split Layout - cbpSplitLayout.js (Nº de versión 1.0.0). Windows. Codrops. Obtenido de: https://tympanus.net/codrops/2013/10/25/split-layout/
  * cbpSplitLayout.js v1.0.0
  * http://www.codrops.com
  *

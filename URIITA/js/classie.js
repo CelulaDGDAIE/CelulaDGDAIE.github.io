@@ -1,4 +1,5 @@
 /*!
+ * DeSandro, D. (2016). classie.js (Nº de versión 1.0.1). Windows. Alexandria: Classie. Repositorio de GitHub: https://github.com/desandro/classie
  * classie - class helper functions
  * from bonzo https://github.com/ded/bonzo
  * 

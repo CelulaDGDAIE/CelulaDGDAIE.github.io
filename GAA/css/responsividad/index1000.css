@@ -1,0 +1,102 @@
+@media(min-width: 1000px){
+/*--------------Aires--------------*/
+	#aireSuperiorPresentacion{
+		height: 20px;
+	}
+	#aireSuperiorUnidad{
+		height: 53px;
+	}
+	#aireTextoUnidad{
+		height: 0px;
+	}
+	#aireInferiorUnidad{
+		height: 43px;
+	}
+/*--------------/Aires--------------*/
+/*--------------Carrusel--------------*/
+	.mySlides {
+	  padding-right: 80px;
+	  padding-left: 80px;
+	}
+	.prev, .next {
+	  top: 50%;
+	  margin-top: -30px;
+	  padding: 16px;
+	  font-size: 20px;
+	  border-radius: 0 3px 3px 0;
+	}
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+/*--------------/Carrusel--------------*/
+
+/*--------------Texto--------------*/
+	.h4{
+		font-size: 100%;
+	}
+	#textoPresentacion{
+		font-size: 70%;
+	}
+	#textoUnidad{
+		font-size: 80%;
+	}
+	/*/Texto*/
+
+/*--------------Modulos de contenido--------------*/
+	.apartadoModulo {
+		height: 200px;
+		line-height: 100px;
+		background-size: 110px 110px;
+		margin: 5px;
+	}
+
+	.apartadoModulo:hover {
+		background-size: 310px 200px;
+	}
+	#separacionModulos{
+		width: 10px;
+	}
+	#separacionVerticalModulos{
+		height: 10px;
+	}
+/*--------------/Modulos de contenido--------------*/
+
+/*--------------Imagenes--------------*/
+#imagenUnidad{
+		
+}
+#imagenPresentacion{
+	
+}
+/*--------------/Imagenes--------------*/
+
+/*--------------Evaluación--------------*/
+	#apartadoEvaluacion {
+		line-height: 100px;
+		background-size: 200px 200px;
+	}
+/*--------------/Evaluación--------------*/
+
+
+	
+	.container-xl,.container-lg,.container-md,.container-sm,.container{
+		max-width:680px;
+	}
+	.filaModulo{
+		width: 635px;
+		padding: none;
+	}
+	.col-sm-3half, .col-sm-8half {
+        float: left;
+    }
+    .col-mini {
+        width: 1%;
+		background-color: #dbdbdb;/
+    }
+	.col-margen {
+        width: 12%;
+		background-color: #dbdbdb;
+    }
+}

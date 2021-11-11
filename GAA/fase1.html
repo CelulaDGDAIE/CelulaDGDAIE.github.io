@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/easyScrollDots.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/estilosFase.css" />
+	<link rel="stylesheet" href="css/component.css"> <!--Se necesita-->
+
+    <title></title>
+  </head>
+  <body style="background-color: #dbdbdb;">
+    <!--Encabezado-->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
+        <div class="container">
+          <div class="navbar-brand pb-0">
+            <div class="row no-gutters mb-1">
+              <div class="col">
+                <img
+                  src="images/logo-profa.png"
+                  class="logo d-inline mr-"
+                  alt="mdb logo"
+                />
+              </div>
+			  
+			  <div
+                class="col text-secondary d-flex flex-column justify-content-center"
+              >
+			  <span class="lg-view h4 font-weight-bold responsivo">Gamificación para el aprendizaje autónomo</span>
+				<span class="sm-view h2 font-weight-bold"></span>
+
+                <p class=" lg-view p-0 m-0 font-weight-bold">
+                  Fase 1. Exploración y familiarización de los temas nuevos.
+                </p>
+				<p class=" sm-view p-0 m-0 font-weight-bold modulolargo">
+				
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="dropdown"
+            data-target="#menu-indice"
+            aria-controls="menu-indice"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <i class="fas fa-align-justify text-dark"></i>
+          </button>
+          <!--Menú en dispositivos móviles-->
+          <div class="dropdown-menu dropdown-menu-right" id="menu-indice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-secondary text-center p-1">
+                <a
+                  class="text-white"
+                  href="https://www.uv.mx/"
+                  target="_blank"
+                  alt="Ir a Universidad Veracruzana"
+                >
+                  Universidad Veracruzana
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#" class="indice">
+                  <i class="fas fa-home text-primary"></i> Inicio:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-proposito" class="ml-3 indice">
+                  <i class="icon-icono_proposito text-secondary"></i> Propósito:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-introduccion" class="ml-3 indice">
+                  <i class="icon-icono_introduccion text-secondary"></i>
+                  Introducci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-contenido" class="ml-3 indice">
+                  <i class="fas fa-copy text-secondary"></i> Contenido
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-fuentes" class="ml-3 indice">
+                  <i class="icon-icono_fuentes text-secondary"></i> Fuentes de
+                  Informaci&oacute;n
+                </a>
+              </li>
+			 <li class="list-group-item p-1">
+                <a href="index.html">
+                  <i class="fas fa-book text-primary"></i> Módulos:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="modulo1.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> I. 
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo2.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> II. 
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo3.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> III. 
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#">
+                  <i class="fas fa-book text-primary"></i> Temas:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-1" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.1. 
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-2" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.2 
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Menú en dispositivos móviles-->
+        </div>
+      </nav>
+    </header>
+    <!--/Encabezado-->
+    <!--Menú Izquierdo-->
+	<div id="sticky-menu" class="d-none d-lg-block d-lg-flex flex-column">
+      <a
+		class="btn btn-lg btn-light btn-menu d-block"
+        
+        href="index.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="Inicio"
+      >
+        <i class="fas fa-home fa-2x"></i>
+      </a>
+
+      <a
+        class="btn btn-lg btn-primary btn-menu"
+        href="fase1.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="Exploración y familiarización de los temas nuevos."
+      >
+        <span class="font-weight-bold lead">1</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="fase2.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="Creación de cuartos de escape."
+      >
+        <span class="font-weight-bold lead">2</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="fase3.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="Interacción social con estudios de caso."
+      >
+        <span class="font-weight-bold lead">3</span>
+      </a>
+
+
+    </div>
+    <!--/Menú Izquierdo-->
+	<br>
+	<br class="brInicio">
+    <!--Presentación-->
+    <section class="text-white" id="presentacion">
+	<div class="container contenedor-seccion">
+			<div class="row" style="color: black;">
+				<div class="col-1">
+				  </div>
+				  <div class="col">
+					<p><i class="fas fa-hand-point-right indicacion"></i> Para conocer toda la información, haga clic en la flecha de la derecha.</p>
+				  </div>
+			</div>
+		</div>
+	<div class="slideshow-container">
+	  <div class="mySlides1">
+	  <div class="row fondo-azul-marino" id="aireSuperiorIntroduccion"></div>
+		<div class="row" style="background-color:#355ca7;">
+			<div class="col d-flex align-items-center" style="background-color:#355ca7; text-align: right;">
+				
+				<figure class="figure">
+				  <img
+					src="images/fase1/Introduccion.png"
+					alt="imagen pendiente"
+					class="img-fluid"
+					style="height: 310px"
+				  />
+				  <figcaption class="figure-caption text-white">
+					[1]
+				  </figcaption>
+				</figure>
+			</div>
+			<div class="col align-self-center" style="background-color:#355ca7;">
+				<!--<div id="aireTextoIntroduccion"></div>-->
+				<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Introducción</h3>
+					<p>La educaci&oacute;n a distancia es una modalidad de trabajo con grandes ventajas en cuanto a la automatizaci&oacute;n de interacciones que facilitan el aprendizaje aut&oacute;nomo, sin embargo, requiere de un conjunto de habilidades t&eacute;cnicas y did&aacute;cticas para crear los materiales con estas caracter&iacute;sticas.</p>
+					<p>En esta primera fase nos enfocaremos en la etapa de apertura de una sesi&oacute;n did&aacute;ctica, utilizando recursos tecnol&oacute;gicos para establecer un diagn&oacute;stico y un primer acercamiento a las tem&aacute;ticas de la experiencia educativa.</p>
+			</div>
+			<div class="col-1" style="background-color:#355ca7;"></div>
+					  
+		</div>
+		
+	  </div>
+
+	  <div class="mySlides1">
+	  <div class="row fondo-azul-claro aireCarrusel"></div>
+		<div class="row fondo-azul-claro">
+		<div class="col-1 fondo-azul-claro"></div>
+			<div class="col fondo-azul-claro align-self-center">
+				<h3 class="font-weight-bold"><i class="fas fa-book-reader"></i> Propósito</h3>
+				
+				<p>Generar materiales interactivos de diagnóstico, aproximación y apropiación de nuevos contenidos para promover el aprendizaje autónomo y colaborativo.</p>
+			</div>
+			  <div class="col d-flex align-items-center fondo-azul-claro">
+				<figure class="figure">
+				  <img
+					src="images/fase1/Proposito.png"
+					alt="imagen pendiente"
+					class="img-fluid"
+					style="height: 310px"
+					
+				  />
+				  <figcaption class="figure-caption text-right text-white">
+					[2]
+				  </figcaption>
+				</figure>
+			  </div>
+			</div>
+	  </div>
+	  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+	</div>
+	<br>
+	<div class="container contenedor-seccion">
+		
+		
+		
+		
+		
+		
+		<div class="row" style="color: black;">
+			  <div class="col">
+				<h3 class="titulo">1.1 Diagnóstico y exploración con <em>Pollie</em> </h3>
+				<p>Al momento de iniciar una sesi&oacute;n did&aacute;ctica es necesario hacer un diagn&oacute;stico acerca de los conocimientos previos, habilidades, posturas y actitudes con respecto al tema que vamos a explorar.</p>
+				<p>En la modalidad presencial esto se hace por medio de la participaci&oacute;n voluntaria, apoy&aacute;ndose en la lista de asistencia o invitando a participar a aquellos alumnos que detectamos que tienen dudas o se muestran inc&oacute;modos con el tema a explorar. Estrategias que son intercambiables, dependiendo del tipo de situaci&oacute;n que se vive en el aula.</p>
+				<p>Sin embargo, en la modalidad virtual cada alumno est&aacute; inmerso en un contexto distinto, por lo que no contamos con ese ambiente de aprendizaje en com&uacute;n que nos brinda el aula presencial. Habr&aacute; alumnos que cuenten con las condiciones t&eacute;cnicas y ambientales &oacute;ptimas para participar en una reuni&oacute;n virtual, sin embargo, habr&aacute; otros que no tengan una conexi&oacute;n estable o el ambiente de estudio &oacute;ptimo para encender su c&aacute;mara o su micr&oacute;fono.</p>
+				<p>Si a este contexto le sumamos que algunas experiencias educativas son muy extensas, resulta muy f&aacute;cil que varios de nuestros estudiantes no participen en las sesiones, o que s&oacute;lo se conecten a la reuni&oacute;n sin poner atenci&oacute;n a la clase. Ante estas situaciones, es preciso contar con un sistema de participaci&oacute;n automatizado que permita que todos y cada uno de los estudiantes tengan la oportunidad de participar y hacerse escuchar en las clases.</p>
+				<p>Existe una amplia variedad de aplicaciones de encuestas en l&iacute;nea y en tiempo real, una de las aplicaciones m&aacute;s aceptadas es <u><em><a href="https://pollie.app/">Pollie</a></em></u>, pues se puede usar de forma independiente por medio del link que genera en cualquier red social o directamente en las plataformas de videoconferencias m&aacute;s conocidas como <em>Zoom</em> o <em>Teams</em>. Iniciemos revisando la <u><a href="https://pollie.app/frequently_asked_questions">documentaci&oacute;n del </a></u><u><em><a href="https://pollie.app/frequently_asked_questions">software</a></em></u>.</p>
+
+			  </div>
+		</div>
+		
+		<div class="row">
+			  <div class="col fondo-azul-marino" style="text-align: center;" >
+				
+				  <img
+					src="images/fase1/iconoexplo.png"
+					alt="imagen pendiente"
+					class="img-fluid"
+					style="width: 50%"
+
+				  />
+				
+			  </div>
+			  <div class="col fondo-verde" style="text-align: center;">
+				
+				  <img
+					src="images/fase1/iconoencuesta.png"
+					alt="imagen pendiente"
+					class="img-fluid"
+					style="width: 50%"
+
+				  />
+				
+			  </div>
+		</div>
+		<div class="row" style="color: black;">
+			<div class="col fondo-azul-marino aireCarrusel" ></div>
+			<div class="col fondo-verde aireCarrusel" ></div>
+		</div>
+		<div class="row" style="color: black;">
+			<div class="col fondo-azul-marino" >
+				<p>Al momento de iniciar una sesi&oacute;n did&aacute;ctica es necesario hacer un diagn&oacute;stico acerca de los conocimientos previos, habilidades, posturas y actitudes con respecto al tema que vamos a explorar.</p>
+				<p>En la modalidad presencial esto se hace por medio de la participaci&oacute;n voluntaria, apoy&aacute;ndose en la lista de asistencia o invitando a participar a aquellos alumnos que detectamos que tienen dudas o se muestran inc&oacute;modos con el tema a explorar. Estrategias que son intercambiables dependiendo del tipo de situaci&oacute;n que se vive en el aula.</p>
+				<p>Sin embargo, en la modalidad virtual cada alumno est&aacute; inmerso en un contexto distinto, por lo que no contamos con ese ambiente de aprendizaje en com&uacute;n que nos brinda el aula presencial. Habr&aacute; alumnos que cuenten con las condiciones t&eacute;cnicas y ambientales &oacute;ptimas para participar en una reuni&oacute;n virtual, sin embargo, habr&aacute; otros que no tengan una conexi&oacute;n estable o el ambiente de estudio &oacute;ptimo para encender su c&aacute;mara o su micr&oacute;fono.</p>
+			</div>
+			<div class="col fondo-verde" >
+				<p>Si a este contexto le sumamos que algunas experiencias educativas son muy extensas, resulta muy f&aacute;cil que varios de nuestros estudiantes no participen en las sesiones, o que s&oacute;lo se conecten a la reuni&oacute;n sin poner atenci&oacute;n a la clase. Ante estas situaciones, es preciso contar con un sistema de participaci&oacute;n automatizado y que permita que todos y cada uno de los estudiantes tengan la oportunidad de participar y hacerse escuchar en las clases.</p>
+				<p>Existe una amplia variedad de aplicaciones de encuestas en l&iacute;nea y en tiempo real, una de las aplicaciones m&aacute;s aceptadas es <u><em><a href="https://pollie.app/">Pollie</a></em></u>, pues se puede usar de forma independiente por medio del <em>link</em> que genera en cualquier red social o directamente en las plataformas de videoconferencias m&aacute;s conocidas como <em>Zoom</em> o <em>Teams</em>. Iniciemos revisando la <u><a href="https://pollie.app/frequently_asked_questions">documentaci&oacute;n del </a></u><u><em><a href="https://pollie.app/frequently_asked_questions">software</a></em></u>.</p>
+			</div>
+		</div>
+		<br>
+		
+		
+		
+		<div class="row" style="color: black;">
+			  <div class="col">
+				<h4 class="titulo"> 1.1.1 Consideraciones previas para diseñar una encuesta</h4>
+				<p>La encuesta es una t&eacute;cnica que se usa&nbsp;para la recopilaci&oacute;n de datos mediante la aplicaci&oacute;n de un cuestionario a un determinado grupo de personas. Por lo tanto, &eacute;ste debe elaborarse pensando en lo que se desea saber a trav&eacute;s de su aplicaci&oacute;n.</p>
+				<p>Por lo tanto, al momento de preparar una encuesta es importante&nbsp;tener claro cu&aacute;l es el objetivo que se desea alcanzar. Para ello, debe considerar lo siguiente:</p>
+				<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/618c0f8d84bd160d73f17088" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+				<br>
+				<h4 class="titulo"> 1.1.2 Consideraciones al momento de crear la encuesta</h4>
+				<p>Las encuestas son útiles para comprobar, identificar o interpretar aspectos que pueden llevar a descubrir soluciones sobre algún asunto previamente detectado. Por lo tanto, una característica de esta técnica es que puede usarse para una variedad de propósitos. </p>
+				<p>Sin embargo, existen consideraciones previas al diseñar una encuesta:</p>
+				<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/618c1ac962ccf80d8cab7c83" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+				<br>
+				<h4 class="titulo"> 1.1.3 <em>Polly</em> desde <em>Zoom</em></h4>
+				<p>Para poder aplicar una encuesta, actualmente existen diferentes herramientas digitales que permiten tanto el diseño de las mismas y posterior a ello, la aplicación. Esto permite que la persona que desea recabar la información sobre el tema deseado, tenga la facilidad de crear, diseñar y aplicar, para después recibir y valorar la información recabada. <em>Polly</em> es un ejemplo de ello.</p>
+				<p>Considerando lo anterior, en el siguiente video encontrará la explicación sobre cómo utilizar <em>Polly</em> durante una reunión en <em>Zoom</em>. </p>
+				
+				<div class="embed-responsive embed-responsive-16by9">
+				  <video class="embed-responsive-item" controls>
+				  <source src="Videos/pollyzoom.webm" type="video/webm">
+				Tu navegador no permite reproducción de video.
+				</video>
+				</div>
+				<br>
+				<p>Si lo considera necesario, puede practicar en alguna reunión vía <em>Zoom</em>. </p>
+				<br>
+				<h4 class="titulo"> 1.1.4 <em>Polly</em> desde <em>Teams</em></h4>
+				<p><em>Polly</em>&nbsp;es una aplicaci&oacute;n que entre sus m&uacute;ltiples funciones tiene la de crear encuestas utilizando inteligencia artificial para crear, medir y tomar decisiones.&nbsp;</p>
+				<p>Sin embargo, es importante mencionar que, as&iacute; como esta aplicaci&oacute;n, existen muchas otras que tienen funciones similares y que permiten que, al igual que <em>Polly</em>, el flujo de trabajo sea m&aacute;s f&aacute;cil para quien le da uso.&nbsp;</p>
+				<p>Con la intenci&oacute;n de mostrar m&aacute;s sobre el uso de esta aplicaci&oacute;n, a continuaci&oacute;n haga clic en cada pesta&ntilde;a y revise los siguientes videos que explican el uso de <em>Polly</em> en <em>Teams</em>.&nbsp;</p>
+			  </div>
+		</div>
+
+		<div class="row">
+				<div class="col-1"></div>
+				<div class="col">
+					<p style="color: black;"><i class="fas fa-hand-point-right indicacion"></i> Ahora, haga clic en cada pestaña para leer la información completa.</p>
+				</div>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+				<div class="tab">
+					<div class="row">
+						<div class="col"></div>
+						<div class="col"><button class="tablinks tabTema"  onclick="abrirPestanaVideos(event, 'tema1', 'tabTema1')" id="defaultOpen">1</button></div>
+						<div class="col"></div>
+						<div class="col"><button class="tablinks tabTema" onclick="abrirPestanaVideos(event, 'tema2', 'tabTema1')">2</button></div>
+						<div class="col"></div>
+					</div>
+				</div>
+				<div id="tema1" class="tabcontent tabTema1" style="text-align: center;">
+					<video width="100%"  controls>
+					  <source src="PollyTeams1.webm" type="video/webm">
+					Your browser does not support the video tag.
+					</video>
+				</div>
+
+				<div id="tema2" class="tabcontent tabTema1" style="text-align: center;">
+					<video width="100%"  controls>
+					  <source src="PollyTeams2.webm" type="video/webm">
+					Your browser does not support the video tag.
+					</video>
+				</div>
+
+			</div>
+		</div>
+		<br>
+		<div class="row">
+				<div class="col">
+					<h3 class="titulo">1.2 Ejercicios de repaso teórico con  <em>Quizlet</em> </h3>
+				</div>
+		</div>
+		
+		<div class="row">
+				<div class="col fondo-verde">
+					<img
+					src="images/fase1/.png"
+					alt="imagen pendiente"
+					class="img-fluid"
+					style="width: 80%"
+
+				  />
+				</div>
+				<div class="col fondo-azul-claro">
+				<br>
+					<p>Una vez que los estudiantes han revisado el nuevo material de estudio, es necesario crear actividades para que se familiaricen con los nuevos t&eacute;rminos. <em>Quizlet</em> es una aplicaci&oacute;n m&oacute;vil educativa, creada por Andrew Sutherland, destinada a facilitar el aprendizaje de los estudiantes mediante tarjetas de aprendizaje y varios juegos y pruebas con puntajes. Puede revisar la p&aacute;gina del sitio para familiarizarse con la aplicaci&oacute;n.</p>
+					<p><em>Microsoft </em><em>Teams</em> tiene la flexibilidad para integrarse con una serie de herramientas educativas para reforzar las actividades de aprendizaje aut&oacute;nomo. Una de las m&aacute;s f&aacute;ciles y vers&aacute;tiles de aplicar es la herramienta <em>Quizlet</em>, la cual permite interactuar con conceptos y definiciones por medio de varios juegos de autoevaluaci&oacute;n.&nbsp;</p>
+					<p>Lo mejor es que estas actividades se pueden integrar f&aacute;cilmente en los canales del equipo, haciendo m&aacute;s entretenida la actividad formativa y de aprendizaje para el alumnado.</p>
+				<br>
+				</div>
+		</div>
+		<br>
+		<div class="row">
+				<div class="col">
+					<p style="color: black">Ahora, para conocer&nbsp;c&oacute;mo trabajar&nbsp;<em>Quizlet</em>, revise el siguiente video:</p>
+					<div class="embed-responsive embed-responsive-16by9">
+					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x9Ex_JAsJfM" allowfullscreen></iframe>
+					</div>
+				</div>
+		</div>
+		<br>
+		<br>
+		
+
+		<div style="text-align: center; color: black">
+			<h3>Evidencias de desempeño</h3>
+		</div>
+		<div class="row">
+		<div class="col-3"></div>	
+		<div class="col" style="text-align: center;" >
+		
+		<a href="#" data-toggle="modal" data-target="#modal-actividad">
+			<div id="actividad"></div>
+		</a>
+		</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+		  <div class="col">
+			<h3 style="color: black"><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
+		  </div>
+		</div>
+
+		<div class="tab">
+			<div class="row">
+				<div class="col"></div>
+				<div class="col"><button class="tablinks" onclick="abrirPestanaFuentes(event, 'basicas', 'tabFuentes')">Básicas</button></div>
+				<div class="col"></div>
+				<div class="col"><button class="tablinks" onclick="abrirPestanaFuentes(event, 'complementarias', 'tabFuentes')">Complementarias</button></div>
+				<div class="col"></div>
+			</div>
+		</div>
+
+		<div id="basicas" class="tabcontent tabFuentes">
+			<p class="fuente">Juan Pablo Garc&iacute;a Cuevas (15 de octubre, 2021). <em>Tutorial </em><em>Quizlet</em><em> 2021. </em>[Video]. YouTube. <a href="https://youtu.be/x9Ex_JAsJfM">https://</a><a href="https://youtu.be/x9Ex_JAsJfM">youtu.be/x9Ex_JAsJfM</a></p>
+		</div>
+
+		<div id="complementarias" class="tabcontent tabFuentes">
+			<p class="fuente">Alvarado, M. A. (2014). <em>Retroalimentaci&oacute;n en educaci&oacute;n en l&iacute;nea: una estrategia para la construcci&oacute;n del conocimiento.</em> RIED. Revista Iberoamericana de Educaci&oacute;n a Distancia, 17(2), 59-73. <a href="https://www.redalyc.org/articulo.oa?id=331431248004">https</a><a href="https://www.redalyc.org/articulo.oa?id=331431248004">://www.redalyc.org/articulo.oa?id=331431248004</a>&nbsp;</p>
+			<p class="fuente">Garc&iacute;a-Jim&eacute;nez, E. (2015). La evaluaci&oacute;n del aprendizaje: de la retroalimentaci&oacute;n a la autorregulaci&oacute;n. El papel de las tecnolog&iacute;as. RELIEVE. <em>Revista Electr&oacute;nica de Investigaci&oacute;n y Evaluaci&oacute;n Educativa, </em>21(2), 1-24. <a href="https://www.redalyc.org/articulo.oa?id=91643847005">https://www.redalyc.org/articulo.oa?id=91643847005</a>&nbsp;</p>
+			<p class="fuente">Lozano, F. G. &amp; Tamez, L. A. (2014). Retroalimentaci&oacute;n formativa para estudiantes de educaci&oacute;n a distancia. RIED. <em>Revista Iberoamericana de Educaci&oacute;n a Distancia, </em>17(2), 197-221. <a href="https://www.redalyc.org/articulo.oa?id=331431248010">https</a><a href="https://www.redalyc.org/articulo.oa?id=331431248010">://www.redalyc.org/articulo.oa?id=331431248010</a>&nbsp;</p>
+			<p class="fuente">Medina, N. I. (2010). La comunicaci&oacute;n educativa y su aplicaci&oacute;n en l&iacute;nea. <em>Apertura</em>, 2(2).&nbsp;<a href="https://www.redalyc.org/articulo.oa?id=68820827004">https</a><a href="https://www.redalyc.org/articulo.oa?id=68820827004">://www.redalyc.org/articulo.oa?id=68820827004</a>&nbsp;</p>
+		</div>
+		
+		
+		
+      </div>
+    </section>
+	
+	
+	
+	
+	
+	
+	
+	<br>
+    <!--Disclaimer-->
+    <section class="fondo-azul-claro">
+      <div class="container contenedor-menu-contenido">
+        <!--Disclaimer-->
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card fondo-verde">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i>Disclaimer</i>
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body" style="background-color: white;">
+                        <p class="disclaimer"><sup>1 </sup></p>
+						
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/Disclaimer-->
+      </div>
+    </section>
+    <!--Disclaimer-->
+    <!--Logo Universidad Veracruzana-->
+    <section id="pie-pagina" class="p-1">
+      <div class="container">
+        <div class="row">
+          <div class="w-100">
+            <div class="row d-flex justify-content-center">
+              <div class="col-3 col-md-2">
+                <img src="images/logo-uv-texto.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Logo Universidad Veracruzana-->
+    <div class="fixed-bottom-right" id="button-up">
+      <a class="btn btn-success indice btn-sm p-3" href="#seccion-proposito">
+        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+      </a>
+    </div>
+	
+	<!--Ventanas Modales-->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal-actividad"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-actividad"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Actividades
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body actividad-modal">
+					  <div class="slideshow-container">
+						  <div class="mySlides2">
+								<p><strong>Actividad 1.&nbsp;Encuestas en tiempo real con </strong><strong><em>Polly</em></strong></p>
+								<p><strong>Descripci&oacute;n:&nbsp;</strong></p>
+								<ol>
+								<li>Haga una reuni&oacute;n con sus alumnos y aplique un par de preguntas con <em>Polly</em>, posteriormente presente evidencias de su trabajo con capturas de pantalla en un documento de <em>Word</em>.</li>
+								<li>En ese mismo documento, integre una breve reflexi&oacute;n en la que exponga su experiencia durante la ejecuci&oacute;n de la encuesta.</li>
+								<li>Formato: fuente Arial de 12 pts con interlineado de 1.5.&nbsp;</li>
+								</ol>
+								<p><strong>Criterios </strong><strong>de desempe&ntilde;o</strong></p>
+								<table>
+								<tbody>
+								<tr>
+								<td>
+								<p><strong>Criterios</strong>&nbsp;</p>
+								</td>
+								<td>
+								<p><strong>Competente</strong>&nbsp;</p>
+								</td>
+								<td>
+								<p><strong>En </strong><strong>desarrollo</strong></p>
+								</td>
+								<td>
+								<p><strong>Principiante</strong></p>
+								</td>
+								</tr>
+								<tr>
+								<td>
+								<p>Hace una reuni&oacute;n virtual en <em>Zoom</em> o <em>Teams.</em></p>
+								</td>
+								<td>
+								<p>Crea la reuni&oacute;n con alumnos.</p>
+								</td>
+								<td>
+								<p>Crea la reuni&oacute;n sin alumnos.&nbsp;</p>
+								</td>
+								<td>
+								<p>No hace reuni&oacute;n.&nbsp;</p>
+								</td>
+								</tr>
+								<tr>
+								<td>
+								<p>Aplica al menos un par de preguntas con <em>Polly.</em></p>
+								</td>
+								<td>
+								<p>Aplica un par de preguntas usando <em>Polly.</em></p>
+								</td>
+								<td>
+								<p>Hace las preguntas sin usar la aplicaci&oacute;n de <em>Polly</em></p>
+								</td>
+								<td>
+								<p>No hace cuestionamientos al alumnado.&nbsp;</p>
+								</td>
+								</tr>
+								<tr>
+								<td>
+								<p>Presenta capturas de pantalla en un documento <em>Word</em>.</p>
+								</td>
+								<td>
+								<p>Presenta evidencias de toda la actividad.</p>
+								</td>
+								<td>
+								<p>Presenta evidencias de algunos aspectos de la actividad.</p>
+								</td>
+								<td>
+								<p>No presenta evidencias de la actividad.</p>
+								</td>
+								</tr>
+								<tr>
+								<td>
+								<p>Su trabajo cuenta con una portada y una conclusi&oacute;n de la actividad.&nbsp;</p>
+								</td>
+								<td>
+								<p>Cuenta con ambas secciones.&nbsp;</p>
+								</td>
+								<td>
+								<p>S&oacute;lo cuenta con una de las secciones indicadas.</p>
+								</td>
+								<td>
+								<p>No presenta ninguna de las secciones indicadas.</p>
+								</td>
+								</tr>
+								</tbody>
+								</table>
+								<p><strong>Lineamientos de entrega:&nbsp;</strong></p>
+								<ol>
+								<li>Titule el archivo bajo la siguiente nomenclatura: &nbsp;Act1_PrimerApellidoyPrimerNombre. Por ejemplo:&nbsp;Act1_VillanuevaTeresa.</li>
+								<li>Suba su evidencia en formato PDF, al apartado <strong>Actividad 1</strong> en la plataforma <strong>EMINUS 4, </strong>a m&aacute;s tardar en la fecha establecida&nbsp;en el Calendario de entregas.&nbsp;</li>
+								</ol>
+						  </div>
+						  <div class="mySlides2">
+								<p><strong>Foro 1. Ejercicio </strong><strong>pr&aacute;ctico.</strong></p>
+								<p><strong>Descripci&oacute;n&nbsp;</strong></p>
+								<ol>
+								<li>Despu&eacute;s de haber revisado los videos de exposici&oacute;n sobre c&oacute;mo trabajar en <em>Quizlet</em>, seleccione uno de los contenidos de la experiencia educativa que imparte.&nbsp;</li>
+								<li>Ahora, elabore un conjunto de <em>Flash </em><em>cards</em> del contenido seleccionado.&nbsp;</li>
+								<li>Comparta las <em>Flash cards </em>con sus estudiantes, a trav&eacute;s de la plataforma educativa o red social que utiliza para contactarlos, para que ellos puedan repasar el contenido y as&iacute; facilitar su aprendizaje.</li>
+								<li>Comparta las impresiones de sus alumnos en el foro de participaci&oacute;n, mencionando los posibles usos que planea darle y los beneficios que obtendr&aacute;n sus estudiantes.</li>
+								<li>Su intervenci&oacute;n deber&aacute; apegarse estrictamente a las consideraciones descritas en las <u>Reglas para participar en foros de discusi&oacute;n</u>.</li>
+								</ol>
+								<p><strong>Criterios de desempe&ntilde;o:</strong></p>
+								<table>
+								<tbody>
+								<tr>
+								<td>
+								<strong>Criterios</strong>&nbsp;
+								</td>
+								<td>
+								<strong>Competente</strong>&nbsp;
+								</td>
+								<td>
+								<strong>En </strong><strong>desarrollo</strong>
+								</td>
+								<td>
+								<strong>Principiante&nbsp;</strong>
+								</td>
+								</tr>
+								<tr>
+								<td>
+								Virtualiza una lecci&oacute;n en <em>Quizlet</em>.
+								</td>
+								<td>
+								Crea al menos cinco Flash cards.
+								</td>
+								<td>
+								Crea al menos tres Flash cards.
+								</td>
+								<td>
+								No crea Flash cards.
+								</td>
+								</tr>
+								<tr>
+								<td >
+								Comparte su lecci&oacute;n de <em>Quizlet</em> con sus alumnos.
+								</td>
+								<td>
+								Comparte su ejercicio con el alumnado y deja el link del ejercicio en su comentario del foro.
+								</td>
+								<td>
+								Cumple parcialmente con la actividad.
+								</td>
+								<td>
+								No comparte el ejercicio con nadie.
+								</td>
+								</tr>
+								<tr>
+								<td>
+								Comenta las impresiones de sus alumnos con esta herramienta de estudio.
+								</td>
+								<td>
+								Recabe las opiniones de sus alumnos y las comenta en el foro.
+								</td>
+								<td>
+								Comenta su impresi&oacute;n acerca de la herramienta, pero no la de sus alumnos.
+								</td>
+								<td>
+								No hace comentarios acerca de su experiencia con este programa.
+								</td>
+								</tr>
+								<tr>
+								<td>
+								Comenta las aportaciones de dos de sus compa&ntilde;eros de este curso.
+								</td>
+								<td>
+								Comenta y motiva a sus compa&ntilde;eros de curso en el uso de la herramienta.
+								</td>
+								<td>
+								Cumple parcialmente con la actividad.
+								</td>
+								<td>
+								No hace comentarios a las participaciones de sus compa&ntilde;eros.
+								</td>
+								</tr>
+								</tbody>
+								</table>
+								<strong>Lineamientos de </strong><strong>entrega:</strong>
+								<ol>
+								<li>Integre su participaci&oacute;n en el&nbsp;<strong>Foro 1: Ejercicio pr&aacute;ctico </strong>en la plataforma&nbsp;EMINUS 4, a m&aacute;s tardar en la fecha establecida en&nbsp;el Calendario de entregas.</li>
+								</ol>
+						  </div>
+						  <a class="prevModal" onclick="plusSlides(-1, 1)">&#10094;</a>
+						  <a class="nextModal" onclick="plusSlides(1, 1)">&#10095;</a>
+					</div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary waves-effect"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Ventanas Modales-->
+	
+
+	
+	
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+	<script src="js/modernizr.custom.js"></script><!--Se necesita-->
+    <script src="js/classie.js"></script><!--Se necesita-->
+    <script src="js/cbpSplitLayout.js"></script><!--Se necesita-->
+    <script src="js/mdb.min.js"></script>
+    <script src="js/easyScrollDots.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/inicializacion.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script>
+	document.getElementById("defaultOpen").click();
+	var slideIndex = [1, 1, 1];
+	var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+	showSlides(1, 0);
+	showSlides(1, 1);
+	showSlides(1, 2);
+
+	function plusSlides(n, no) {
+	  showSlides(slideIndex[no] += n, no);
+	}
+
+	function showSlides(n, no) {
+	  var i;
+	  var x = document.getElementsByClassName(slideId[no]);
+	  if (n > x.length) {slideIndex[no] = 1}    
+	  if (n < 1) {slideIndex[no] = x.length}
+	  for (i = 0; i < x.length; i++) {
+		 x[i].style.display = "none";  
+	  }
+	  x[slideIndex[no]-1].style.display = "block";  
+	}
+	
+	
+	
+	function abrirPestana(evt, fuente, tipo) {
+		
+	  var i, tabcontent, tablinks, abierto;
+	  tabcontent = document.getElementsByClassName(tipo);
+	  if(document.getElementById(fuente).style.display == "block"){
+		abierto=1;
+	  }else{
+		abierto=0;
+	  }
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  
+	  
+	  if(abierto === 0){
+		document.getElementById("ojo"+fuente).className = "fas fa-eye-slash";
+		document.getElementById(fuente).style.display = "block";
+		evt.currentTarget.className += " active";
+	  }else{
+		document.getElementById("ojo"+fuente).className = "fas fa-eye";
+	  }
+		
+	}
+	function abrirPestanaVideos (evt, fuente, tipo) {
+		
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName(tipo);
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  
+	  
+		document.getElementById(fuente).style.display = "block";
+		evt.currentTarget.className += " active";
+
+		
+	}
+	function abrirPestanaFuentes (evt, fuente, tipo) {
+		
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName(tipo);
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  
+	  
+		document.getElementById(fuente).style.display = "block";
+		evt.currentTarget.className += " active";
+
+		
+	}
+	
+	
+	
+
+
+	
+	</script>
+  </body>
+</html>
