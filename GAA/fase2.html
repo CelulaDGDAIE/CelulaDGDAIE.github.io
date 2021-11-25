@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/easyScrollDots.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/estilosFase.css" />
+	<link rel="stylesheet" href="css/component.css"> <!--Se necesita-->
+
+    <title></title>
+  </head>
+  <body style="background-color: #dbdbdb;">
+    <!--Encabezado-->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
+        <div class="container">
+          <div class="navbar-brand pb-0">
+            <div class="row no-gutters mb-1">
+              <div class="col">
+                <img
+                  src="images/logo-profa.png"
+                  class="logo d-inline mr-"
+                  alt="mdb logo"
+                />
+              </div>
+			  
+			  <div
+                class="col text-secondary d-flex flex-column justify-content-center"
+              >
+			  <span class="lg-view h4 font-weight-bold responsivo">Gamificación para el aprendizaje autónomo</span>
+				<span class="sm-view h2 font-weight-bold"></span>
+
+                <p class=" lg-view p-0 m-0 font-weight-bold">
+                  Fase 2. Creación de cuartos de escape.
+                </p>
+				<p class=" sm-view p-0 m-0 font-weight-bold modulolargo">
+				
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="dropdown"
+            data-target="#menu-indice"
+            aria-controls="menu-indice"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <i class="fas fa-align-justify text-dark"></i>
+          </button>
+          <!--Menú en dispositivos móviles-->
+          <div class="dropdown-menu dropdown-menu-right" id="menu-indice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-secondary text-center p-1">
+                <a
+                  class="text-white"
+                  href="https://www.uv.mx/"
+                  target="_blank"
+                  alt="Ir a Universidad Veracruzana"
+                >
+                  Universidad Veracruzana
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#" class="indice">
+                  <i class="fas fa-home text-primary"></i> Inicio:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-proposito" class="ml-3 indice">
+                  <i class="icon-icono_proposito text-secondary"></i> Propósito:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-introduccion" class="ml-3 indice">
+                  <i class="icon-icono_introduccion text-secondary"></i>
+                  Introducci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-contenido" class="ml-3 indice">
+                  <i class="fas fa-copy text-secondary"></i> Contenido
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-fuentes" class="ml-3 indice">
+                  <i class="icon-icono_fuentes text-secondary"></i> Fuentes de
+                  Informaci&oacute;n
+                </a>
+              </li>
+			 <li class="list-group-item p-1">
+                <a href="index.html">
+                  <i class="fas fa-book text-primary"></i> Módulos:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="modulo1.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> I. 
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo2.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> II. 
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo3.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> III. 
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#">
+                  <i class="fas fa-book text-primary"></i> Temas:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-1" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.1. 
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-2" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.2 
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Menú en dispositivos móviles-->
+        </div>
+      </nav>
+    </header>
+    <!--/Encabezado-->
+    <!--Menú Izquierdo-->
+	<div id="sticky-menu" class="d-none d-lg-block d-lg-flex flex-column">
+      <a
+		class="btn btn-lg btn-light btn-menu d-block"
+        
+        href="index.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="Inicio"
+      >
+        <i class="fas fa-home fa-2x"></i>
+      </a>
+
+      <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="fase1.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="Exploración y familiarización de los temas nuevos."
+      >
+        <span class="font-weight-bold lead">1</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-primary btn-menu"
+        href="#"
+        data-toggle="tooltip"
+        data-html="true"
+        title="Creación de cuartos de escape."
+      >
+        <span class="font-weight-bold lead">2</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu d-block"
+        href="fase3.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="Interacción social con estudios de caso."
+      >
+        <span class="font-weight-bold lead">3</span>
+      </a>
+
+
+    </div>
+    <!--/Menú Izquierdo-->
+	<br>
+	<br class="brInicio">
+    <!--Presentación-->
+    <section class="text-white" id="presentacion">
+	<div class="container contenedor-seccion">
+			<div class="row" style="color: black;">
+				<div class="col-1">
+				  </div>
+				  <div class="col">
+					<p><i class="fas fa-hand-point-right indicacion"></i> Para conocer toda la información, haga clic en la flecha de la derecha.</p>
+				  </div>
+			</div>
+		</div>
+	<div class="slideshow-container">
+	  <div class="mySlides1">
+	  <div class="row fondo-azul-marino" id="aireSuperiorIntroduccion"></div>
+		<div class="row" style="background-color:#355ca7;">
+			<div class="col d-flex align-items-center" style="background-color:#355ca7; text-align: right;">
+				
+				<figure class="figure">
+				  <img
+					src="images/fase2/Introduccion.jpg"
+					alt="imagen pendiente"
+					class="img-fluid"
+					style="height: 310px"
+				  />
+				  <figcaption class="figure-caption text-white">
+					[1]
+				  </figcaption>
+				</figure>
+			</div>
+			<div class="col align-self-center" style="background-color:#355ca7;">
+				<!--<div id="aireTextoIntroduccion"></div>-->
+				<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Introducción</h3>
+					<p>En la segunda fase del curso nos enfocaremos en crear materiales de aprendizaje organizados en una ruta de aprendizaje que implique tanto un reto como un incentivo de aprendizaje para el alumno. </p>
+			</div>
+			<div class="col-1" style="background-color:#355ca7;"></div>
+					  
+		</div>
+		
+	  </div>
+
+	  <div class="mySlides1">
+	  <div class="row fondo-azul-claro aireCarrusel"></div>
+		<div class="row fondo-azul-claro">
+		<div class="col-1 fondo-azul-claro"></div>
+			<div class="col fondo-azul-claro align-self-center">
+				<h3 class="font-weight-bold"><i class="fas fa-book-reader"></i> Propósito</h3>
+				
+				<p>Generar materiales interactivos que sirvan para guiar al alumnado de forma atractiva a través de sus procesos de aprendizaje.</p>
+			</div>
+			  <div class="col d-flex align-items-center fondo-azul-claro">
+				<figure class="figure">
+				  <img
+					src="images/fase2/Proposito.jpg"
+					alt="imagen pendiente"
+					class="img-fluid"
+					style="height: 310px"
+					
+				  />
+				  <figcaption class="figure-caption text-right text-white">
+					[2]
+				  </figcaption>
+				</figure>
+			  </div>
+			</div>
+	  </div>
+	  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+	</div>
+	<br>
+	<div class="container contenedor-seccion">
+		
+		
+		
+		
+		
+		
+		<div class="row" style="color: black;">
+			  <div class="col">
+				<h3 class="titulo">2.1 Gamificación y aprendizaje </h3>
+			  </div>
+		</div>
+		
+		<div class="row" style="color: black;">
+			<div class="col fondo-verde aireCarrusel" ></div>
+			<div class="col fondo-azul-marino aireCarrusel" ></div>
+		</div>
+		<div class="row">
+			<div class="col fondo-verde" style="color: black;">
+				<p>La gamificaci&oacute;n (tambi&eacute;n conocida como ludificaci&oacute;n) es el uso de t&eacute;cnicas, elementos y din&aacute;micas propias de los juegos y el ocio en actividades recreativas con el fin de potenciar la motivaci&oacute;n, as&iacute; como de reforzar la conducta para solucionar un problema, mejorar la productividad, obtener un objetivo, activar el aprendizaje y evaluar a individuos concretos.</p>
+				<p>Esta tendencia pretende aplicar el pensamiento y la mec&aacute;nica de los juegos en &aacute;mbitos espec&iacute;ficos de la vida cotidiana, en los que se propone facilitar la consecuci&oacute;n de ciertos objetivos relacionados con la formaci&oacute;n, fidelizaci&oacute;n, cohesi&oacute;n social, creatividad, etc&eacute;tera.</p>
+			</div>
+			<div class="col fondo-azul-marino" style="color: white;">
+				<p>Por ejemplo, la inclusi&oacute;n de juegos en una red social incrementa, de forma considerable, la motivaci&oacute;n y la participaci&oacute;n de sus usuarios.</p>
+				<p>Los juegos han demostrado tener un gran poder motivador. Esto se debe a la capacidad de los elementos constituyentes de los juegos (puntos, medallas, tablas clasificatorias, marcos narrativos de la actividad, trabajo en grupos), para atender las necesidades b&aacute;sicas que impulsan la acci&oacute;n del ser humano: competencia, autonom&iacute;a y pertenencia al grupo. En este sentido, los juegos son capaces de potenciar los resultados en el aprendizaje por varias razones:</p>
+			</div>
+		</div>
+		<br>
+		
+		
+		
+		<div class="row" style="color: black;">
+			  <div class="col">
+				<p style="color: red">imagen con razones por las que los juegos son capaces de potenciar los resultados en el aprendizaje</p>
+				
+			  </div>
+		</div>
+
+		<div class="row">
+				<div class="col-1"></div>
+				<div class="col">
+					<p style="color: black;"><i class="fas fa-hand-point-right indicacion"></i> Para consultar la información de cada subtema, seleccione la pestaña correspondiente</p>
+				</div>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+				<div class="tab">
+					<div style="font-size: 90%">
+						<button class="tablinks tabTema" onclick="abrirPestanaVideos(event, 'tema1', 'tabTema1')" id="defaultOpen">2.1.1 Definición </button>
+						<button class="tablinks tabTema" onclick="abrirPestanaVideos(event, 'tema2', 'tabTema1')">2.1.2 Aplicación Educativa</button>
+						<button class="tablinks tabTema" onclick="abrirPestanaVideos(event, 'tema2', 'tabTema1')">2.1.3 Gamificación y TIC’s</button>
+						<button class="tablinks tabTema" onclick="abrirPestanaVideos(event, 'tema3', 'tabTema1')">2.1.4 Ventajas e Inconvenientes </button>
+						<button class="tablinks tabTema" onclick="abrirPestanaVideos(event, 'tema4', 'tabTema1')">2.1.5 Mecánicas del Juego</button>
+						<button class="tablinks tabTema" onclick="abrirPestanaVideos(event, 'tema5', 'tabTema1')">2.1.6 Sugerencias para la gamificación educativa</button>
+
+
+					</div>
+				</div>
+				<div id="tema1" class="tabcontent tabTema1" style="text-align: center;">
+					<h4 class="titulo">2.1.1 Definición </h4>
+					<p>El diccionario <em>Oxford</em> define la palabra <em>gamification</em> como &laquo;la aplicaci&oacute;n de elementos t&iacute;picos del juego (por ejemplo, calificaci&oacute;n por puntos, competici&oacute;n con los dem&aacute;s, reglas de juego) a otras &aacute;reas de actividad&raquo;.</p>
+					<p>Con la intenci&oacute;n de conocer m&aacute;s a detalle sobre la gamificaci&oacute;n y sus caracter&iacute;sticas, revise a siguiente infograf&iacute;a.</p>
+					<p style="color: red"> Infografia</p>
+				</div>
+				<div id="tema2" class="tabcontent tabTema1" style="text-align: center;">
+					<h4 class="titulo">2.1.2 Aplicación educativa </h4>
+					<p>El enfoque l&uacute;dico de algunas propuestas de trabajo se lleva haciendo desde hace tiempo como una forma de adaptaci&oacute;n curricular. Sin embargo, la gamificaci&oacute;n supone algo m&aacute;s, en la actualidad el an&aacute;lisis detallado de los factores que condicionan el &eacute;xito de los videojuegos aporta m&uacute;ltiples sugerencias de c&oacute;mo plantear tareas con las TIC&acute;s. A menudo, como docentes conocemos a alumnos/as que invierten por iniciativa propia un mont&oacute;n de tiempo y esfuerzo en avanzar por escenarios virtuales recolectando puntos, niveles, medallas&hellip; &iquest;Y si fuera factible encauzar todo ese potencial hacia la adquisici&oacute;n de contenidos m&aacute;s acad&eacute;micos? &iquest;Esto se puede conseguir? &iquest;Es algo que resulta interesante y deseable?</p>
+					<p>El &eacute;xito de los videojuegos se basa en ciertos par&aacute;metros que determinan su auge. Dejando a un lado la est&eacute;tica audiovisual, se propone centrar el an&aacute;lisis en los aspectos cognitivos que despiertan en los usuarios porque resultan m&aacute;s determinantes.</p>
+					<p style="color: black;"><i class="fas fa-hand-point-right indicacion"></i> A continuación, haga clic en cada ventana para leer la información completa.</p>
+					<p style="color: red"> Recurso con ventanas emergentes</p>
+				</div>
+				<div id="tema3" class="tabcontent tabTema1" style="text-align: center;">
+					<h4 class="titulo">2.1.3 Gamificación y TIC’s</h4>
+					<table style="border: none;">
+						<tr style="border: none;">
+						<td style="border: none;"></td>
+							<td style="border: none;" class="fondo-teal"><p>Lógicamente es posible gamificar sin utilizar videojuegos ni TIC. No se trata de un fenómeno novedoso. Basta recordar juegos clásicos como la «lotería» para incentivar la observación y la escucha atenta en clase o bien la cuchara que simula ser un avión aterrizando en la boca del niño/a para comer su papilla. Sin embargo, el análisis de las claves del éxito de los videojuegos y el uso de las nuevas tecnologías incorpora herramientas, factores y matices más potentes, ricos y variados al proceso.</p></td>
+							<td style="border: none;">&nbsp; </td>
+							<td style="border: none;">&nbsp; </td>
+							<td class="fondo-azul-marino"><p style="color: white;">El uso de los llamados «juegos serios», es decir, los videojuegos con propósito educativo no agotan el espacio de la gamificación educativa. A la luz de los factores expuestos que justifican su éxito se podrían deducir algunas pautas a tener en cuenta a la hora de diseñar propuestas de trabajo con las TIC para el alumnado. Se trataría de dotar a las tareas de ciertas dosis de jugabilidad. Para ello habría que integrar ingredientes como la imaginación, simulación, ficción, avatares fantásticos, niveles, insignias, puntuaciones, toma de decisiones, flexibilidad, resolución de problemas, exploración, ensayo y error, retroalimentación adecuada, graduación de la dificultad, seguridad, jergas, enfoque social, etc. La mayoría de las tareas escolares admiten algunas de estas adaptaciones por medio de las TIC’s y a ese proceso se le denomina gamificación educativa. Existen múltiples sitios web que usan la gamificación como estrategia educativa para mejorar la calidad del aprendizaje.</p></td>
+						</tr>
+					</table>
+				</div>
+				<div id="tema4" class="tabcontent tabTema1" style="text-align: center;">
+					<h4 class="titulo">2.1.4 Ventajas e inconvenientes</h4>
+					<p>No cabe duda de que los videojuegos y sus aplicaciones no son la panacea en el entorno educativo. Existe una clara controversia entre quienes defienden los principios de la gamificación en educación y sus detractores. </p>
+				|	<p style="color: black;"><i class="fas fa-hand-point-right indicacion"></i> A continuación, haga clic en la flecha correspondiente para leer la información de cada elemento.</p>
+				</div>
+				<div id="tema5" class="tabcontent tabTema1" style="text-align: center;">
+					
+				</div>
+				<div id="tema6" class="tabcontent tabTema1" style="text-align: center;">
+					
+				</div>
+
+
+
+			</div>
+		</div>
+		<br>
+
+		
+
+
+		<br>
+		<br>
+		
+
+		<div style="text-align: center; color: black">
+			<h3>Evidencias de desempeño</h3>
+		</div>
+		<div class="row">
+		<div class="col-3"></div>	
+		<div class="col" style="text-align: center;" >
+		
+		<a href="#" data-toggle="modal" data-target="#modal-actividad">
+			<div id="actividad"></div>
+		</a>
+		</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+		  <div class="col">
+			<h3 style="color: black"><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
+		  </div>
+		</div>
+
+		<div class="tab">
+			<div class="row">
+				<div class="col"></div>
+				<div class="col"><button class="tablinks" onclick="abrirPestanaFuentes(event, 'basicas', 'tabFuentes')">Básicas</button></div>
+				<div class="col"></div>
+				<div class="col"><button class="tablinks" onclick="abrirPestanaFuentes(event, 'complementarias', 'tabFuentes')">Complementarias</button></div>
+				<div class="col"></div>
+			</div>
+		</div>
+
+		<div id="basicas" class="tabcontent tabFuentes">
+			<p class="fuente">Roxana Falasco (2018, agosto 21). Crear test interactivo con Genially. [Video]. YouTube. <u><a href="https://youtu.be/8iItuwt-Sog">https://youtu.be/8iItuwt-Sog</a></u></p>
+		</div>
+
+		<div id="complementarias" class="tabcontent tabFuentes">
+			<p class="fuente">G&oacute;mez, J. L. (2020). Gamificaci&oacute;n en contextos educativos: An&aacute;lisis de aplicaci&oacute;n en un programa de contadur&iacute;a p&uacute;blica a distancia. <em>Revista Universidad y Empresa</em>, <em>22</em>(38), 8. <u><a href="https://doi.org/10.12804/revistas.urosario.edu.co/empresa/a.6939">https://</a></u><u><a href="https://doi.org/10.12804/revistas.urosario.edu.co/empresa/a.6939">doi.org/10.12804/revistas.urosario.edu.co/empresa/a.6939</a></u></p>
+			<p class="fuente">Londo&ntilde;o, L. M., &amp; Rojas L&oacute;pez, M. D. (2020). De los juegos a la gamificaci&oacute;n: propuesta de un modelo integrado. <em>Educaci&oacute;n y Educadores</em>, <em>23</em>(3), 493-512. <u><a href="https://doi.org/10.5294/edu.2020.23.3.7">https://</a></u><u><a href="https://doi.org/10.5294/edu.2020.23.3.7">doi.org/10.5294/edu.2020.23.3.7</a></u></p>
+			<p class="fuente">Ortiz-Col&oacute;n, A. M., Jord&aacute;n, J., &amp; Agredal, M. (2018). Gamificaci&oacute;n en educaci&oacute;n: Una panor&aacute;mica sobre el estado de la cuesti&oacute;n. <em>Educa&ccedil;&atilde;o</em><em> e Pesquisa</em>, <em>44</em>(0). <u><a href="https://doi.org/10.1590/s1678-4634201844173773">https://</a></u><u><a href="https://doi.org/10.1590/s1678-4634201844173773">doi.org/10.1590/s1678-4634201844173773</a></u></p>
+			<p class="fuente">Parra-Gonz&aacute;lez, M. E., Segura-Robles, A., Cano, E. V., &amp; L&oacute;pez-Meneses, E. (2020). Gamificaci&oacute;n para fomentar la activaci&oacute;n del alumnado en su aprendizage. <em>Texto </em><em>Livre</em><em>: </em><em>Linguagem</em><em> e </em><em>Tecnologia</em>, <em>13</em>(3), 278-293. <u><a href="https://doi.org/10.35699/1983-3652.2020.25846">https://</a></u><u><a href="https://doi.org/10.35699/1983-3652.2020.25846">doi.org/10.35699/1983-3652.2020.25846</a></u></p>
+			<p class="fuente">Reyes Cabrera, W. R., &amp; Qui&ntilde;onez Pech, S. H. (2020). Gamification in distance education: Experiences in a university educational model. <em>Apertura</em>, <em>12</em>(2), 6-19. <u><a href="https://doi.org/10.32870/ap.v12n2.1849">https://</a></u><u><a href="https://doi.org/10.32870/ap.v12n2.1849">doi.org/10.32870/ap.v12n2.1849</a></u></p>
+			<p class="fuente">Torres-Barreto, M. L., &Aacute;lvarez-Melgarejo, M., &amp; Plata-G&oacute;mez, K. R. (2021). Competencias transversales en Ingenier&iacute;as. <em>Panorama</em>, <em>15</em>(28), 124-142. <u><a href="https://doi.org/10.15765/pnrm.v15i28.1820">https://doi.org/10.15765/pnrm.v15i28.1820</a></u></p>
+			<p class="fuente">Zepeda Hern&aacute;ndez, S., Abascal Mena, R., &amp; L&oacute;pez Ornelas, E. (2016). Integraci&oacute;n de gamificaci&oacute;n y aprendizaje activo en el aula. <em>Ra </em><em>Ximhai</em>, 315&ndash;326. <u><a href="https://doi.org/10.35197/rx.12.01.e3.2016.21.sz">https://doi.org/10.35197/rx.12.01.e3.2016.21.sz</a></u></p>
+		</div>
+		
+		
+		
+      </div>
+    </section>
+	
+	
+	
+	
+	
+	
+	
+	<br>
+    <!--Disclaimer-->
+    <section class="fondo-azul-claro">
+      <div class="container contenedor-menu-contenido">
+        <!--Disclaimer-->
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card fondo-verde">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i>Disclaimer</i>
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body" style="background-color: white;">
+                        <p class="disclaimer"><sup>1 </sup></p>
+						
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/Disclaimer-->
+      </div>
+    </section>
+    <!--Disclaimer-->
+    <!--Logo Universidad Veracruzana-->
+    <section id="pie-pagina" class="p-1">
+      <div class="container">
+        <div class="row">
+          <div class="w-100">
+            <div class="row d-flex justify-content-center">
+              <div class="col-3 col-md-2">
+                <img src="images/logo-uv-texto.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Logo Universidad Veracruzana-->
+    <div class="fixed-bottom-right" id="button-up">
+      <a class="btn btn-success indice btn-sm p-3" href="#seccion-proposito">
+        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+      </a>
+    </div>
+	
+	<!--Ventanas Modales-->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal-actividad"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-actividad"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Actividades
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body actividad-modal">
+					  <div class="slideshow-container">
+						  <div class="mySlides2">
+							<p><strong>Actividad </strong><strong>2. Mis </strong><strong>avances en </strong><strong><em>Genially</em></strong><strong>.</strong></p>
+								<p><strong>Descripci&oacute;n: </strong></p>
+								<ol>
+								<li>Despu&eacute;s de haber explorado los espacios digitales del tema 2.2, presente sus certificados de los cursos:
+								  <ol type="a">
+									<li>Primeros pasos en Genially: Curso de iniciación.</li>
+									<li>Embeber contenido externo.</li>
+								 
+								  </ol></li>
+								<li>Tomando como gu&iacute;a las instrucciones del apartado 2.3, dise&ntilde;e y comparta la liga de su propio juego de b&uacute;squeda del tesoro. Incluya un par de comentarios personales acerca de la utilidad que le encuentra a <em>Genially</em> en sus experiencias educativas.</li>
+								<li>Revise el video tutorial acerca de c&oacute;mo incrustar los contenidos solicitados en su respuesta dentro de la plataforma Eminus.</li>
+								</ol>
+								<p style="color: red;">Incluir video realizado por el experto aquí. </p>
+								<p><strong>Criterios de </strong><strong>evaluaci&oacute;n</strong><strong>:</strong></p>
+								<table >
+								<tbody>
+								<tr>
+								<td >
+								<p><strong>Criterios</strong></p>
+								</td>
+								<td >
+								<p><strong>Competente </strong></p>
+								</td>
+								<td >
+								<p><strong>En </strong><strong>desarrollo </strong></p>
+								</td>
+								<td >
+								<p><strong>Principiante </strong></p>
+								</td>
+								</tr>
+								<tr>
+								<td >
+								<p><strong>Certificado del curso &ldquo;Primeros Pasos en </strong><strong>Genially</strong><strong>: Curso de iniciaci&oacute;n&rdquo;. </strong></p>
+								</td>
+								<td >
+								<p>Presenta la imagen respectiva debidamente incrustada en la respuesta de Eminus.</p>
+								</td>
+								<td >
+								<p>Anexa la imagen o archivo como documento anexo.</p>
+								</td>
+								<td >
+								<p>No presenta el certificado solicitado.</p>
+								</td>
+								</tr>
+								<tr>
+								<td >
+								<p><strong>Certificado del curso &ldquo;Embeber contenido externo&rdquo;. </strong></p>
+								<p><strong>&nbsp;</strong></p>
+								</td>
+								<td >
+								<p>Presenta la imagen respectiva debidamente incrustada en la respuesta de Eminus.</p>
+								</td>
+								<td >
+								<p>Anexa la imagen o archivo como documento anexo.</p>
+								</td>
+								<td >
+								<p>No presenta el certificado solicitado.</p>
+								</td>
+								</tr>
+								<tr>
+								<td >
+								<p><strong>Incrusta el contenido de </strong><strong>Genially</strong><strong> en </strong><strong>Eminus</strong><strong>.</strong></p>
+								<p><strong>&nbsp;</strong></p>
+								</td>
+								<td >
+								<p>Su creaci&oacute;n en Genially consta de tem&aacute;tica, retos y un premio final.</p>
+								<p>Est&aacute; debidamente incrustada en Eminus.</p>
+								</td>
+								<td >
+								<p>Su creaci&oacute;n est&aacute; parcialmente completada o no est&aacute; debidamente incrustada en Eminus.</p>
+								</td>
+								<td >
+								<p>No presenta su creaci&oacute;n en Genially.</p>
+								</td>
+								</tr>
+								<tr>
+								<td >
+								<p><strong>Reflexiones Personales. </strong></p>
+								<p><strong>&nbsp;</strong></p>
+								</td>
+								<td >
+								<p>Incluye un par de comentarios personales acerca de c&oacute;mo planea utilizar la herramienta en un futuro.</p>
+								<p>&nbsp;</p>
+								</td>
+								<td >
+								<p>Incluye al menos un comentario personal acerca de c&oacute;mo planea utilizar la herramienta en un futuro.</p>
+								<p>&nbsp;</p>
+								</td>
+								<td >
+								<p>No incluye comentarios personales acerca de c&oacute;mo planea utilizar la herramienta en un futuro.</p>
+								</td>
+								</tr>
+								</tbody>
+								</table>
+								<p><strong>Lineamientos </strong><strong>de entrega:</strong></p>
+								<ol>
+								<li>Las im&aacute;genes insertadas deben ser legibles.</li>
+								<li>La liga al cuarto de escape que dise&ntilde;&oacute; debe estar vigente y conducir a un recurso digital.</li>
+								<li>Los comentarios deben redactarse en texto a tama&ntilde;o medio.</li>
+								<li>Deber&aacute; incrustar sus comentarios y capturas de pantalla al apartado de <strong>Actividad </strong><strong>2. </strong><strong>Mis avances en </strong><strong><em>Genially</em></strong>, en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el Calendario de entregas.</li>
+								</ol>
+						  </div>
+						  <div class="mySlides2">
+								<p><strong>Foro 2: </strong><strong>Mi creaci&oacute;n en </strong><strong><em>Genially.</em></strong></p>
+							<p><strong>Descripci&oacute;n: </strong></p>
+							<ol>
+							<li>Con lo trabajado a lo largo de esta segunda fase, comparta en el foro el link de su creaci&oacute;n en <em>Genially</em>.</li>
+							<li>Mencione la finalidad de su juego y las estrategias de aprendizaje y motivaci&oacute;n que implement&oacute; al momento de construirlo.</li>
+							<li>Su intervenci&oacute;n deber&aacute; apegarse estrictamente a las consideraciones descritas en las <a target="_blank" href="documentos/Reglas Foros de discusion.pdf">Reglas para participar en foros de discusi&oacute;n</a>.</li>
+							</ol>
+							<p><strong>Criterios de </strong><strong>evaluaci&oacute;n</strong><strong>:</strong></p>
+							<ol>
+							<li>Apego a las instrucciones para la elaboraci&oacute;n de la actividad.</li>
+							<li>Redacci&oacute;n y ortograf&iacute;a adecuadas.</li>
+							<li>Coherencia y organizaci&oacute;n de ideas principales.</li>
+							<li>Responda a las participaciones de al menos un par de sus compa&ntilde;eros de curso.</li>
+							</ol>
+							<p><strong>Lineamientos </strong><strong>de entrega:</strong></p>
+							<ol>
+							<li>Integre su participaci&oacute;n en el&nbsp;<strong>Foro 2</strong>:<strong>Mi creaci&oacute;n en </strong><strong><em>Genially</em></strong><strong>,</strong>&nbsp;en la plataforma&nbsp;<strong>EMINUS 4</strong>, a m&aacute;s tardar en la fecha establecida en&nbsp;el Calendario de entregas.</li>
+							</ol>
+						  </div>
+						  <a class="prevModal" onclick="plusSlides(-1, 1)">&#10094;</a>
+						  <a class="nextModal" onclick="plusSlides(1, 1)">&#10095;</a>
+					</div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary waves-effect"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Ventanas Modales-->
+	
+
+	
+	
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+	<script src="js/modernizr.custom.js"></script><!--Se necesita-->
+    <script src="js/classie.js"></script><!--Se necesita-->
+    <script src="js/cbpSplitLayout.js"></script><!--Se necesita-->
+    <script src="js/mdb.min.js"></script>
+    <script src="js/easyScrollDots.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/inicializacion.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script>
+	document.getElementById("defaultOpen").click();
+	var slideIndex = [1, 1, 1];
+	var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+	showSlides(1, 0);
+	showSlides(1, 1);
+	showSlides(1, 2);
+
+	function plusSlides(n, no) {
+	  showSlides(slideIndex[no] += n, no);
+	}
+
+	function showSlides(n, no) {
+	  var i;
+	  var x = document.getElementsByClassName(slideId[no]);
+	  if (n > x.length) {slideIndex[no] = 1}    
+	  if (n < 1) {slideIndex[no] = x.length}
+	  for (i = 0; i < x.length; i++) {
+		 x[i].style.display = "none";  
+	  }
+	  x[slideIndex[no]-1].style.display = "block";  
+	}
+	
+	
+	
+	function abrirPestana(evt, fuente, tipo) {
+		
+	  var i, tabcontent, tablinks, abierto;
+	  tabcontent = document.getElementsByClassName(tipo);
+	  if(document.getElementById(fuente).style.display == "block"){
+		abierto=1;
+	  }else{
+		abierto=0;
+	  }
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  
+	  
+	  if(abierto === 0){
+		document.getElementById("ojo"+fuente).className = "fas fa-eye-slash";
+		document.getElementById(fuente).style.display = "block";
+		evt.currentTarget.className += " active";
+	  }else{
+		document.getElementById("ojo"+fuente).className = "fas fa-eye";
+	  }
+		
+	}
+	function abrirPestanaVideos (evt, fuente, tipo) {
+		
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName(tipo);
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  
+	  
+		document.getElementById(fuente).style.display = "block";
+		evt.currentTarget.className += " active";
+
+		
+	}
+	function abrirPestanaFuentes (evt, fuente, tipo) {
+		
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName(tipo);
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  
+	  
+		document.getElementById(fuente).style.display = "block";
+		evt.currentTarget.className += " active";
+
+		
+	}
+	
+	
+	
+
+
+	
+	</script>
+  </body>
+</html>
