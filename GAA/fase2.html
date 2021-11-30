@@ -726,10 +726,41 @@
 					<p>Veamos cómo queda el mapa de navegación de la búsqueda del tesoro que estamos usando de ejemplo: </p>
 					<p style="color: red;">Recurso recreado</p>
 					
+					
+					<table style="border: none; table-layout: fixed;" class="fondo-azul-marino">
+						<tr style="border: none;">
+						<td style="border: none;"></td>
+							<td style="border: none;">&nbsp; </td>
+							<td style="border: none;">&nbsp; </td>
+							<td style="border: none; width: 50%;">
+								<img alt="captura de pantalla" src="fase2/.png">
+							</td>
+							<td style="border: none;">&nbsp; </td>
+							<td style="border: none;">&nbsp; </td>
+							<td style="border: none; width: 50%;">
+								<p>Como se puede constatar visualmente, debemos tener habilitados siete cuartos principales (est&aacute;n representados en la l&iacute;nea de cuadros azules en la parte superior) y adem&aacute;s habr&aacute; que crear cuatro cuartos que faciliten la navegaci&oacute;n en cada una de las tres misiones, es decir, 12 cuartos adicionales para hacer funcional el reto. Lo que nos arroja un total de 19 cuartos a configurar para crear una sensaci&oacute;n de inmersi&oacute;n en la historia.</p>
+								<p>Tener este esquema tambi&eacute;n nos permite identificar que necesitamos tres materiales de estudio a localizar y compartir, as&iacute; como tres cuestionarios a crear de acuerdo con los contenidos expuestos y que deben conceder al final alguna pista para resolver el acertijo del siguiente cuarto.</p>
+							<td style="border: none;">&nbsp; </td>
+							<td style="border: none;">&nbsp; </td>
+						</tr>
+					</table>
+					<br>
+					<p>Ahora, comparto el link del producto final de este material por si lo quiere probar usted mismo.</p>
+					<a target="_blank" href="https://view.genial.ly/618ab13dd590d20d6c0848f5/interactive-content-reto-fundamentos-didactica">https://view.genial.ly/618ab13dd590d20d6c0848f5/interactive-content-reto-fundamentos-didactica</a>
+					
 				</div>
 				<div id="tema3-7" class="tabcontent tabTema3" style="text-align: center; background-color: #b7b7b7;">
 					<h4 class="titulo">2.3.7 Premio final</h4>
-					
+					<p style="color: black;"><i class="fas fa-hand-point-right indicacion"></i> Seleccione el apartado que correspondapara consultar la información de los subtemas:  </p>
+					<table style="border: none;">
+						<tr>
+							<td class="fondo-azul-marino" width=700><button onclick="typeWriter(1)">Botón con icono para premio</button></td>
+							<td class="fondo-azul-claro" width=700 rowspan="0"><div id="textoMostrar"><p id="parrafo1"></p><p id="parrafo2"></p><p id="parrafo3"></p></div></td>
+						</tr>
+						<tr>
+							<td class="fondo-verde"><button onclick="typeWriter(2)">Botón con icono para insignia</button></td>
+						</tr>
+					</table>
 				</div>
 
 
@@ -1156,6 +1187,95 @@
 
 		
 	}
+	
+	var i = 0;
+	var enEjecucion=false;
+	var parrafo1Texto1 = 'Como se puede constatar con lo revisado hasta ahora, crear contenidos interactivos no es una tarea fácil, requiere de grandes cantidades de tiempo, dedicación y trabajo planificado. Sin embargo, la recompensa es amplia, pues sus alumnos se mantendrán enganchados y motivados a lo largo del proceso de aprendizaje. ';
+	var parrafo2Texto1 = 'Se recomienda utilizar estos materiales de aprendizajes basados en juegos como preparación para llevar un modelo de trabajo al estilo de aula invertida: los estudiantes revisan estos materiales en casa y tienen como misión llegar al aula con los premios y conocimientos ganados. De esta manera, podrán participar de forma más dinámica en otras actividades de socialización y reforzamiento actitudinal derivado de los contenidos revisados. ';
+	var parrafo3Texto1 = 'Si a estas actividades de socialización y reforzamiento actitudinal también las puntuamos e incluimos en un sistema clasificatorio donde les demos títulos, avatares o misiones especiales, estaremos concentrando a los alumnos en grupos de desempeño que nos permitirán distribuirlos de forma uniforme para misiones y juegos posteriores. Se pueden crear misiones en las que sea necesario que participen en brigadas mixtas de acuerdo con sus avatares ganados, así podríamos crear brigadas que necesariamente tengan un mago, un espadachín y un arquero, los cuales están agrupados así por el sistema de insignias que se van ganando en relación con los juegos de socialización en el aula. ';
+	var parrafo1Texto2 = 'Por poner un ejemplo, los magos pueden ser aquellos que más insignias ganan en los juegos de conocimiento, mientras que los espadachines pueden ser los que destacan en la socialización, y los arqueros por su capacidad de observación y rapidez de ver el punto central del problema. Los alumnos están jugando y socializando, mientras nosotros los vamos asociando de acuerdo con sus competencias sociales y profesionales. ';
+	var parrafo2Texto2 = 'La gamificación en el aula puede adquirir niveles sorprendentes de profundidad, el límite es su imaginación y la apertura que tenga para escuchar a sus alumnos, sus colegas y las experiencias que éstos han tenido con este tipo de trabajo. Claro está que algo así no se construye de la noche a la mañana, debe ser un proceso progresivo en el que poco a poco vaya modelando una ruta de aprendizaje rica en experiencias y emociones para su alumnado. Quizás al cabo de tres o cuatro años de trabajo y experimentación pueda tener ya una propuesta de curso lo bastante robusta como para considerarla un producto terminado que sólo necesite revisiones y ajustes mínimos a lo largo del tiempo. ';
+	var parrafo3Texto2 = 'La recomendación es empezar con algunas actividades que considere puede resolver con estos materiales interactivos, que vaya conectándolas con las dinámicas que hace en el aula para que el reforzamiento vaya fluyendo de forma natural. Una vez que logre ligar el material interactivo con las dinámicas en el aula, identifique cómo se agrupan sus alumnos en función a su desempeño y estilos de aprendizaje y comience a otorgar insignias que le permitan identificarlos con facilidad y comience a proponer aventuras colaborativas donde las medallas y premios de la interacción social impacten en los juegos virtuales y viceversa. ¡Tanto usted como sus alumnos se van a divertir muchísimo!';
+	
+	var speed = 1;
+
+	function typeWriter(texto){
+		if(!enEjecucion){
+			document.getElementById("parrafo1").innerHTML="";
+			document.getElementById("parrafo2").innerHTML="";
+			document.getElementById("parrafo3").innerHTML="";
+			i = 0;
+			enEjecucion=true;
+			if(texto===1){
+				escribeParrafo11();
+			}else{
+				escribeParrafo21();
+			}
+		}
+		
+	}
+	function escribeParrafo11() {
+	  if (i < parrafo1Texto1.length) {
+		document.getElementById("parrafo1").innerHTML += parrafo1Texto1.charAt(i);
+		i++;
+		setTimeout(escribeParrafo11, speed);
+	  }else{
+		i=0;
+		escribeParrafo12();
+	  }
+	}
+	function escribeParrafo12() {
+	  if (i < parrafo2Texto1.length) {
+		document.getElementById("parrafo2").innerHTML += parrafo2Texto1.charAt(i);
+		i++;
+		setTimeout(escribeParrafo12, speed);
+	  }else{
+		i=0;
+		escribeParrafo13();
+	  }
+	}
+	function escribeParrafo13() {
+	  if (i < parrafo3Texto1.length) {
+		document.getElementById("parrafo3").innerHTML += parrafo3Texto1.charAt(i);
+		i++;
+		setTimeout(escribeParrafo13, speed);
+	  }else{
+		enEjecucion=false;
+	  }
+	}
+	
+	function escribeParrafo21() {
+	  if (i < parrafo1Texto2.length) {
+		document.getElementById("parrafo1").innerHTML += parrafo1Texto2.charAt(i);
+		i++;
+		setTimeout(escribeParrafo21, speed);
+	  }else{
+		i=0;
+		escribeParrafo22();
+	  }
+	}
+	function escribeParrafo22() {
+	  if (i < parrafo2Texto2.length) {
+		document.getElementById("parrafo2").innerHTML += parrafo2Texto2.charAt(i);
+		i++;
+		setTimeout(escribeParrafo22, speed);
+	  }else{
+		i=0;
+		escribeParrafo23();
+	  }
+	}
+	function escribeParrafo23() {
+	  if (i < parrafo3Texto2.length) {
+		document.getElementById("parrafo3").innerHTML += parrafo3Texto2.charAt(i);
+		i++;
+		setTimeout(escribeParrafo23, speed);
+	  }else{
+		enEjecucion=false;
+	  }
+	}
+	
+	
+	
 	
 	
 	
