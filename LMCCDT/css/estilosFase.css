@@ -19,13 +19,13 @@ img {
 		background-color: #3cadb8;
 	}
 	.fondo-verde{
-		background-color: #6EC493;
+		background-color: #6cbdb4;
 	}
 	.fondo-azul-marino{
-		background-color: #436894;
+		background-color: #355CA7;
 	}
-	.fondo-morado{
-		background-color: #8983c3;
+	.fondo-azul-claro{
+		background-color: #4c5bfc;
 	}
 /*/Colores*/
 /*Tabla*/
@@ -38,7 +38,7 @@ table, th, td {
 /*Texto*/
 
 .titulo{
-	color: #42b2b2;
+	color: #355CA7;
 	font-weight: bold;
 }
 
@@ -141,14 +141,14 @@ texto-negro{
 .tab {
   overflow: hidden;
   border-radius: 20px;
-  background-color: #355ca7;
+  background-color: #4C5BFC;
   position: relative;
   margin: auto;
   text-align: center;
 }
 
 .tab button {
-  background-color: #355ca7;
+  background-color: #4C5BFC;
   color: white;
   border: none;
   outline: none;

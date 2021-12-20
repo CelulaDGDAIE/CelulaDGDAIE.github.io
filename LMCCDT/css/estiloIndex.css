@@ -52,13 +52,13 @@ sup{
 		background-color: #3cadb8;
 	}
 	.fondo-verde{
-		background-color: #6EC493;
+		background-color: #6cbdb4;;
 	}
 	.fondo-azul-marino{
-		background-color: #436894;
+		background-color: #355CA7;
 	}
-	.fondo-morado{
-		background-color: #8983c3;
+	.fondo-azul-claro{
+		background-color: #4c5bfc;
 	}
 /*/Colores*/
 
@@ -109,7 +109,7 @@ table, th, td {
 
 /*Modulos de contenido*/
 	.apartadoModulo {
-		background-color: #6ec493;
+		background-color: #355ca7;
 		position:relative;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -150,7 +150,7 @@ table, th, td {
 		height: auto;
 		background-repeat: no-repeat;
 		background-position: center;
-		background-color: #8983C3;
+		background-color: #4c5bfc;
 	}
 	#apartadoEvaluacion:hover {
 		background-image: url('../images/eval-hover.png');
