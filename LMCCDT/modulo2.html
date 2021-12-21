@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/easyScrollDots.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/estilosFase.css" />
+	<link rel="stylesheet" href="css/component.css"> <!--Se necesita-->
+
+    <title>La música clásica cerca de ti </title>
+  </head>
+  <body style="background-color: #dbdbdb;">
+    <!--Encabezado-->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
+        <div class="container">
+          <div class="navbar-brand pb-0">
+            <div class="row no-gutters mb-1">
+              <div class="col">
+                <img
+                  src="images/logo-taa.png"
+                  class="logo d-inline mr-"
+                  alt="mdb logo"
+                />
+              </div>
+			  
+			  <div
+                class="col text-secondary d-flex flex-column justify-content-center"
+              >
+			  <span class="lg-view h4 font-weight-bold responsivo" style="font-size: 90%;">La música clásica cerca de ti </span>
+				<span class="sm-view h2 font-weight-bold"></span>
+
+                <p class=" lg-view p-0 m-0 font-weight-bold">
+                  Módulo 2. Música de 1750 a la época impresionista
+                </p>
+				<p class=" sm-view p-0 m-0 font-weight-bold modulolargo">
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="dropdown"
+            data-target="#menu-indice"
+            aria-controls="menu-indice"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <i class="fas fa-align-justify text-dark"></i>
+          </button>
+          <!--Menú en dispositivos móviles-->
+          <div class="dropdown-menu dropdown-menu-right" id="menu-indice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-secondary text-center p-1">
+                <a
+                  class="text-white"
+                  href="https://www.uv.mx/"
+                  target="_blank"
+                  alt="Ir a Universidad Veracruzana"
+                >
+                  Universidad Veracruzana
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#" class="indice">
+                  <i class="fas fa-home text-primary"></i> Inicio:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-proposito" class="ml-3 indice">
+                  <i class="icon-icono_proposito text-secondary"></i> Propósito:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-introduccion" class="ml-3 indice">
+                  <i class="icon-icono_introduccion text-secondary"></i>
+                  Introducci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-contenido" class="ml-3 indice">
+                  <i class="fas fa-copy text-secondary"></i> Contenido
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-fuentes" class="ml-3 indice">
+                  <i class="icon-icono_fuentes text-secondary"></i> Fuentes de
+                  Informaci&oacute;n
+                </a>
+              </li>
+			 <li class="list-group-item p-1">
+                <a href="index.html">
+                  <i class="fas fa-book text-primary"></i> Módulos:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="modulo1.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> I. 
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo2.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> II. 
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo3.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> III. 
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#">
+                  <i class="fas fa-book text-primary"></i> Temas:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-1" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.1. 
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-2" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.2 
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Menú en dispositivos móviles-->
+        </div>
+      </nav>
+    </header>
+    <!--/Encabezado-->
+    <!--Menú Izquierdo-->
+	<div id="sticky-menu" class="d-none d-lg-block d-lg-flex flex-column">
+		<a
+        class="btn btn-lg btn-light btn-menu"
+        href="index.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="Inicio"
+      >
+        <i class="fas fa-home fa-2x"></i>
+      </a>
+
+      <a
+        class="btn btn-lg btn-light btn-menu"
+        href="modulo1.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="La música y el cerebro."
+      >
+        <span class="font-weight-bold ">1</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-primary btn-menu d-block"
+        href="#"
+        data-toggle="tooltip"
+        data-html="true"
+        title="Sonido: conciencia y percepción."
+      >
+        <span class="font-weight-bold ">2</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu"
+        href="modulo3.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="Elementos de la música."
+      >
+        <span class="font-weight-bold ">3</span>
+      </a>
+
+    </div>
+    <!--/Menú Izquierdo-->
+	<br>
+    <!--Presentación-->
+   <section class="text-white" id="presentacion">
+   <div class="container contenedor-seccion">
+			<div class="row" style="color: black;">
+				<div class="col-1">
+				  </div>
+				  <div class="col">
+					<p><i class="fas fa-hand-point-right indicacion"></i> Para conocer toda la información, haga clic en la flecha de la derecha.</p>
+				  </div>
+			</div>
+		</div>
+	<div class="slideshow-container">
+	  <div class="mySlides1" id="slideIntroduccion">
+	  <div class="row aireCarrusel fondo-azul-marino" ></div>
+		<div class="row fondo-azul-marino"  >
+			<div class="col align-self-center fondo-azul-marino" style="text-align: center;">
+				
+				<figure class="figure">
+				  <img
+					src="images/modulo2/introduccion.jpg"
+					alt="imagen pendiente"
+					class="img-fluid"
+					style="height: 310px"
+				  />
+				  <figcaption class="figure-caption text-white">
+					[1]
+				  </figcaption>
+				</figure>
+			</div>
+			<div class="col align-self-center fondo-azul-marino" >
+				<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Introducción</h3>
+					<p>En este m&oacute;dulo se muestran ejemplos musicales de quienes fueron los principales compositores del clasicismo, con obras como la <em>Peque&ntilde;a serenata </em><em>nocturna, </em>de Mozart, o la magnifica Novena Sinfon&iacute;a, de Beethoven. Tambi&eacute;n conoceremos el origen de algunos ejemplos de m&uacute;sica del romanticismo, como la <em>Marcha Nupcial, </em>de Felix Mendelssohn, o la <em>Canci&oacute;n de </em><em>cuna, </em>de Johannes Brahms. As&iacute; mismo, abordaremos algunas de las obras m&aacute;s representativas del periodo impresionista, tales como el <em>Bolero</em>, de Maurice Ravel, o el <em>Claro de </em><em>Luna</em>, de Claude Debussy.</p>
+			</div>
+			<div class="col-1 fondo-azul-marino"></div>
+					  
+		</div>
+		
+	  </div>
+
+	  <div class="mySlides1 fondo-morado" >
+		<div class="row fondo-morado" id="slideProposito">
+		<div class="col-1 fondo-morado"></div>
+			<div class="col fondo-morado align-self-center">
+				<h3 class="font-weight-bold"><i class="fas fa-book-reader"></i> Propósito</h3>
+				<p>Observar la evoluci&oacute;n del estilo musical en la &eacute;poca del clasicismo, as&iacute; como la maravillosa genialidad de sus compositores, quienes crearon m&uacute;sica que trascendi&oacute; el tiempo; identificar el periodo musical al que pertenecen cada una de estas obras que escuchamos frecuentemente, adem&aacute;s de conocer algunas de sus car&aacute;cter&iacute;sticas.</p>
+			</div>
+			  <div class="col align-self-center fondo-morado">
+				<figure class="figure">
+				  <img
+					src="images/modulo2/proposito.jpg"
+					alt="imagen pendiente"
+					class="img-fluid"
+					style="height: 310px"
+					
+				  />
+				  <figcaption class="figure-caption text-right text-white">
+					[2]
+				  </figcaption>
+				</figure>
+			  </div>
+			</div>
+	  </div>
+	  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+	</div>
+
+    </section>
+    <!--/Presentación-->
+    <br>
+    <br>
+
+		<div></div>
+
+    <!--Cuadro modales grandes-->
+
+    <!--Contenido 1.1-->
+    <section class=" text-white">
+		<div class="container contenedor-seccion">
+			<div class="row" style="color: black;">
+				<div class="col">
+				<p>Esta tutoría es una oportunidad de conocer la música en sus diferentes épocas. Para iniciar este segundo módulo, se propone la lectura del tema La trivialización de la música (páginas 4 y 5), del siguiente texto:</p>
+				</div>
+			</div>
+			<div class="row" style="color: red;">
+				<div class="col">
+					<p>La apreciación de la música clásica común.</p>
+				</div>
+			</div>
+			<div class="row" style="color: black;">
+				<div class="col">
+					<h3 class="titulo">2.1 Música clásica o del periodo musical clásico, 1750-1820</h3>
+				</div>
+			</div>
+			<div class="row" style="color: black;">
+				<div class="col">
+					<p>En este módulo podrá diferenciar la práctica de los compositores del periodo barroco, de la práctica de los compositores del periodo clásico;  además de identificar a los principales compositores, tales como Mozart y Beethoven, así como el contexto en que se desarrollaron los nuevos estilos y géneros de composición.</p>
+				</div>
+			</div>
+			<br>
+			<div class="row aireCarrusel" style="color: black; background-color: rgb(125, 125, 255);"></div>
+			<div class="row" style="color: black; background-color: rgb(125, 125, 255);">
+				<div class="col align-self-center">
+					<p>En la m&uacute;sica del periodo cl&aacute;sico se pueden encontrar diversos g&eacute;neros interpretados por una orquesta completa, tales como: &oacute;peras, conciertos, sinfon&iacute;as, cantatas, misas. As&iacute; tambi&eacute;n para un solo instrumento o grupos peque&ntilde;os llamados de c&aacute;mara (habitaci&oacute;n) como sonatas, piezas, cuartetos, serenatas, etc&eacute;tera.</p>
+					<p>Entre los compositores m&aacute;s famosos de esta &eacute;poca se encuentran Wolfgang Amadeus Mozart (1756-1791) y Ludwig Van Beethoven (1770-1827).</p>
+				</div>
+				<div class="col align-self-center" style="text-align: center;">
+				<figure class="figure">
+				  <img
+					src="images/modulo2/3.jpg"
+					alt="imagen pendiente"
+					class="img-fluid"
+					style="height: 310px"
+					
+				  />
+				  <figcaption class="figure-caption text-right text-white">
+					[3]
+				  </figcaption>
+				</figure>
+			  </div>
+			</div>
+			<div class="row aireCarrusel" style="color: black; background-color: rgb(0, 204, 153);"></div>
+			<div class="row" style="color: black; background-color: rgb(0, 204, 153);">
+				<div class="col align-self-center" style="text-align: center;">
+				<figure class="figure">
+				  <img
+					src="images/modulo2/4.jpg"
+					alt="imagen pendiente"
+					class="img-fluid"
+					style="height: 310px"
+					
+				  />
+				  <figcaption class="figure-caption text-right text-white">
+					[4]
+				  </figcaption>
+				</figure>
+			  </div>
+				<div class="col align-self-center">
+					<p>Detalle de la base de la estatua de Mozart.</p>
+				</div>
+				
+			</div>
+			<br>
+			<div class="row" style="color: black;">
+				<div class="col">
+					<p>Para conocer más acerca de esta época, revise la siguiente presentación que corresponde a la música del periodo clásico.</p>
+				</div>
+			</div>
+			<div class="row" style="color: red;">
+				<div class="col">
+					<p>Aquí deben ir diapositivas del periodo clásico.</p>
+				</div>
+			</div>
+			<div class="row" style="color: black;">
+				<div class="col">
+					<p>Ahora, le invito a conocer y apreciar la música del periodo clásico a través de un acercamiento práctico auditivo e histórico, mismo que, además, le impulsará a distinguir los rasgos estilísticos de la música de los compositores de esa época y su entorno.  </p>
+					<p>Para escuchar estas canciones, debe ingresar a la biblioteca digital Naxos Music Library. Para ello, consulte las instrucciones en el siguiente documento. <a href="#" target="_blank">AQUÍ DEBE IR NOMBRE DEL DOCUMENTO CON HIPERVÍCULO</a></p>
+				</div>
+			</div>
+			<div class="row" style="color: red;">
+				<div class="col">
+					<p>Aquí debe ir catálogo canciones de la época clásica.</p>
+				</div>
+			</div>
+			<br>
+			<div class="row" style="color: black;">
+				<div class="col">
+					<h3 class="titulo">2.2 Música del romanticismo o del periodo romántico, 1820-1900</h3>
+				</div>
+			</div>
+			<div class="row" style="color: black;">
+				<div class="col-1"></div>
+				  <div class="col">
+					<p><i class="fas fa-hand-point-right indicacion"></i> Para conocer toda la información, haga clic en las flechas</p>
+				</div>
+			</div>
+			
+			
+			
+			<section class="container seccion">
+				<section class="row">
+					<section class="col-12">
+						<div class="contenedor-splitlayout-tema-2-es">
+							<div class="container-splitlayout">
+								<div id="splitlayout" class="splitlayout close-right reset-layout">
+									<div class="intro">
+										<div class="side side-left splitlayout-img-filemaker-es">
+											<div class="intro-content">
+												<div ><img src="images/modulo2/verdi.jpg" style="width: 70%" alt="Foto">
+												<figcaption class="figure-caption text-center text-white">Giuseppi Verdi <br>Compositor de la época del romanticismo</figcaption>
+												</div>
+												<h1 class="poppins-24" style="margin-top: 20px;"><b class="poppins-24"></b></h1>
+											</div>
+											<div class="overlay"></div>
+										</div>
+										<div class="side side-right splitlayout-img-access-es">
+											<div class="intro-content">
+												<div><img src="images/modulo2/brahms.jpg" style="width: 70%" alt="Foto">
+												<figcaption class="figure-caption text-center text-white">Johannes Brahms <br> Compositor de la época del romanticismo</figcaption>
+												</div>
+												<h1 class="poppins-24" style="margin-top: 20px;"><b class="poppins-24"></b></h1>
+											</div>
+											<div class="overlay"></div>
+										</div>
+									</div><!-- /intro -->
+									<div class="page page-right">
+										<div class="page-inner splitlayout-access-es">
+											<section class="poppins-18">			
+												<p>El periodo del romanticismo se caracterizó por el surgimiento de compositores como Tchaikovski, Brahms o Verdi, así como del desarrollo de nuevos estilos de composición. </p>
+												<p>Ahora bien, conocer la música de esta época le ayudará a diferenciarla de la que corresponde al periodo clásico y a distinguir algunos rasgos estilísticos de la música de los compositores románticos y su entorno. Por ello es importante mantener una actitud receptiva, crítica, participativa y de socialización, como parte de su formación integral como miembro profesional en la sociedad.</p>
+										   </section>
+										</div><!-- /page-inner -->
+									</div><!-- /page-right -->
+									<div class="page page-left">
+										<div class="page-inner splitlayout-filemaker-es">
+											<section class="poppins-18">
+											   <p>En este periodo se diversifican los estilos musicales y de composición. Algunos compositores plasman en sus obras un poco de la mentalidad filosófica de la época. Otros conservan su carácter puramente musical. La mayoría de los compositores románticos tienen obras de muchos géneros musicales. Pero las que más destacaron en popularidad en este periodo fueron las óperas. Más adelante dedicamos un espacio para este género.</p>
+											</section>
+										</div><!-- /page-inner -->
+									</div><!-- /page-left -->
+									<span class="back back-right" title="back to intro" style="cursor:pointer;">
+										←
+										<!--<i class="icono icono-flecha-izq"></i>-->
+									</span>
+									<span class="back back-left" title="back to intro" style="cursor:pointer;">
+										→
+										<!--<i class="icono icono-flecha-der"></i>-->
+									</span>
+								</div><!-- /splitlayout -->
+							</div><!-- /container -->
+						</div>
+					</section>
+				</section>
+			</section>	
+
+
+			
+			<div class="row" style="color: black;">
+				<div class="col">
+					<p>A continuación, analice la siguiente presentación que trata acerca del periodo de romanticismo. </p>
+				</div>
+			</div>
+			<div class="row" style="color: red;">
+				<div class="col">
+					<p>Aquí deben ir diapositivas del periodo romántico.</p>
+				</div>
+			</div>
+			<div class="row" style="color: black;">
+				<div class="col">
+					<p>Para escuchar estas canciones, debe ingresar a la biblioteca digital Naxos Music Library. Para ello, consulte las instrucciones en el siguiente documento. <a target="_blank" href="#">AQUÍ DEBE IR NOMBRE DEL DOCUMENTO CON HIPERVÍCULO</a></p>
+				</div>
+			</div>
+			<div class="row" style="color: red;">
+				<div class="col">
+					<p>Aquí debe ir catálogo de canciones del romanticismo.</p>
+				</div>
+			</div>
+			<br>
+			<div class="row" style="color: black;">
+				<div class="col">
+					<h3 class="titulo">2.3 Música del impresionismo o estilo impresionista</h3>
+				</div>
+			</div>
+			<!--Elemento especial-->
+			<div class="row" style="color: black;">
+				<div class="col">
+				<div style="text-align: center;">
+				<figure class="figure">
+					  <img
+						src="images/modulo2/comb.png"
+						alt="imagen pendiente"
+						class="img-fluid"
+						width="50%"
+						
+					  />
+					  <figcaption class="figure-caption text-right text-black">
+						[7]
+					  </figcaption>
+					</figure>
+					</div>
+
+				  
+					<p>En esta segunda fase de la Tutoría para la apreciación artística, ha tenido la oportunidad de conocer la música de dos grandes épocas, mismas que abarcan el periodo clásico y el romanticismo.</p>
+					<p>Ahora, tendrá la oportunidad de diferenciar la práctica de los compositores de estas dos épocas de la de los compositores del periodo impresionista y de la corriente llamada modernismo. Así mismo, podrá identificar a los principales compositores de dicha época, tales como Debussy, Ravel, De Falla, Stravinski, Shostakovich o Copland, así como el contexto en que se desarrollaron los nuevos estilos de composición.</p>
+					<p>A continuación, podrá apreciar ejemplos de música del periodo impresionista de finales del siglo XIX y principios del siglo XX.</p>
+					<p>Hay que señalar que desde las tres últimas décadas del siglo XIX, se diversificaron los estilos composicionales y algunos continuaron con el estilo romántico y otros comenzaron a experimentar con el estilo impresionista. Por lo que las fechas dejan de indicar un estilo musical específico, y se vuelven una referencia cronológica. </p>
+				</div>
+			</div>
+			<!--Elemento especial-->
+
+			<div class="row" style="color: red;">
+				<div class="col">
+					<p>Aquí deben ir diapositivas del periodo clásico.</p>
+				</div>
+			</div>
+			<div class="row" style="color: black;">
+				<div class="col">
+					<p>Para escuchar estas canciones, debe ingresar a la biblioteca digital Naxos Music Library. Para ello, consulte las instrucciones en el siguiente documento. <a target="_blank" href="#">AQUÍ DEBE IR NOMBRE DEL DOCUMENTO CON HIPERVÍCULO</a></p>
+				</div>
+			</div>
+			<div class="row" style="color: red;">
+				<div class="col">
+					<p>Aquí debe ir catálogo de canciones del impresionismo</p>
+				</div>
+			</div>
+		</div>
+    </section>
+
+    <section class="text-black">
+      <div class="container contenedor-seccion" style="text-align: center;">
+        <div class="row mb-4">
+          <div class="col">
+            <h3 style="color: black">Evidencias de desempeño</em></h3>
+          </div>
+        </div>
+		<div class="row mb-4">
+		<div class="col-3"></div>
+		
+		<div class="col" style="text-align: center;" >
+		
+		<a href="#" data-toggle="modal" data-target="#modal-actividad">
+		<div id="actividad"></div>
+			<!--<div id="actividad"></div>
+			</a>
+		  <img src="images/fase1/actividad.png" alt="pendiente" id="actividad">-->
+		</a>
+		</div>
+		<div class="col-3"></div>
+		</div>
+      </div>
+    </section>
+    <!--/actividades 1-->
+	<!--Fuentes de Información-->
+    <section class="text-white">
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3 style="color: black"><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
+          </div>
+        </div>
+		<div class="tab">
+			<div class="row">
+				<div class="col"></div>
+				<div class="col"><button class="tablinks" onclick="abrirFuente(event, 'basicas')">Básicas</button></div>
+				<div class="col"></div>
+				<div class="col"><button class="tablinks" onclick="abrirFuente(event, 'complementarias')">Complementarias</button></div>
+				<div class="col"></div>
+			</div>
+		</div>
+
+		<div id="basicas" class="tabcontent" style="color: black; background-color: white;">
+			<p class="fuente">Mozart, W. A. (2003). Concerto for Flute and Harp in C Major, K. 299, II. Andantino [obra grabada por Gallois, P., Pierre, F., Shaw, R., y Swedish Chamber Orchestra] En <em>Mozart: </em><em>Flute</em> <em>concertos</em><em> nos. 1 and 2 / Concerto for Flute and Harp.</em> Naxos (obra original publicada en 1778)&nbsp; Track: 5. N&uacute;mero de cat&aacute;logo:&nbsp;8.557011.</p>
+			<p class="fuente">Beethoven, L. V. (2015) Violin Sonata No. 5 in F Major, Op. 24, "Spring": I. Allegro [obra grabada por Park, J. H. y Lepper, S.] En <em>Beethoven, Schubert, Brahms, Violin sonatas. </em>Decca (obra original publicada en 1781) Track: 1. N&uacute;mero de cat&aacute;logo: 00028948117093.</p>
+			<p class="fuente">Beethoven, L. V. (2019). Symphony No. 6 in F Major, Op. 68, "Pastoral&rdquo; [obra grabada por West German Radio Symphony Orchestra y Janowski, M.] En <em>Beethoven Sympphonies 5 &amp; 6.</em> Pentatone (obra original publicada en 1808)&nbsp; Tracks:&nbsp;5, 6, 7, 8 y 9. N&uacute;mero de cat&aacute;logo:&nbsp;PTC5186809.</p>
+			<p class="fuente">Beethoven, L. V. (2019). IV, Finale: Presto - Allegro assai [obra grabada por Resnik, R., S&ouml;derstr&ouml;m, E., Vickers, J., Ward, D., The Bach Choir, London Symphony Orchestra, y Monteux, P.] En <em>Beethoven </em><em>Symphony</em><em> No. 9 "</em><em>Choral</em><em>". </em>Deutsche Grammophon (obra original publicada en 1824)&nbsp; Track: 4. N&uacute;mero de cat&aacute;logo:&nbsp;00028947121626.</p>
+			<p class="fuente">Mozart, W. A. (1988). Serenade no. 13 (peque&ntilde;a serenata nocturna) [obra grabada por Capella Istropolitana y Sobotka, W.] En <em>Mozart Eine kleine Nachtmusik. </em>Naxos (obra original publicada en 1787)&nbsp; Tracks:&nbsp;1, 2, 3 y 4. N&uacute;mero de cat&aacute;logo:&nbsp;8.550026.</p>
+			<p class="fuente">Beethoven, L. V. (2020). Marcia alla turca [obra grabada por Turku Philharmonic Orchestra y Segerstam, L.] En <em>Die Ruinen von </em><em>Athen</em><em> (</em><em>The</em> <em>Ruins</em><em> of Athens) </em><em>Op</em><em>. 113. </em>Naxos (obra original publicada en 1811)&nbsp; Track: 12. N&uacute;mero de cat&aacute;logo:&nbsp;8.574076.</p>
+			<p class="fuente">Mozart. W. A. (2014). Lacrimosa dies illa (Chorus) [obra grabada por Accentus Chamber Choir, Insula Orchestra, y Equilbey, L.] En <em>Mozart Requiem. </em>Naive (obra original publicada en 1791) Track: 8. N&uacute;mero de cat&aacute;logo:&nbsp;V5370.</p>
+			<p class="fuente">Mendelssohn, F. (1998). Wedding March, Op. 61, n&uacute;m. 4 [obra grabada por Slovak Philharmonic Orchestra y Bramall, A.] En <em>Mendelssohn A Midsummer Night's Dream. </em>Naxos (obra original publicada en 1842)&nbsp; Track: 5. N&uacute;mero de cat&aacute;logo: 8.554433</p>
+			<p class="fuente">Saint-Sa&euml;ns, C. (2015). Danse Macabre, Op. 40 [obra grabada por Malm&ouml; Symphony Orchestra, y Soustrot, M.] En <em>SAINT-SA&Euml;NS </em><em>Symphonies</em><em>, Vol. 3. </em>Naxos (obra original publicada en 1874)&nbsp; Track: 6. N&uacute;mero de cat&aacute;logo: 8.573140.</p>
+			<p class="fuente">Saint-Sa&euml;ns, C. (2020). Le Carnaval des animaux (el carnaval de los animales) [obra grabada por Lortie, L., Mercier, H., J&auml;rvi, N., y Bergen Philharmonic Orchestra] En <em>SAINT-SA&Euml;NS: Cello </em><em>Concertos</em><em> Nos. 1 and 2, Le carnaval des animaux, Wedding Cake, Africa. </em>Chandos (obra original publicada en 1886). N&uacute;mero de cat&aacute;logo: CHSA5162. Tracks 6 a 19.</p>
+			<p class="fuente">Brahms, J. (2001). Wiegenlied, Op. 49: No. 4 (canci&oacute;n de cuna) [obra grabada por Banse, J. y Deutsch, H.]. En <em>Johannes Brahms: Lieder, Complete Edition</em>, vol. 4. CPO (Classic Produktion Osnabr&uuml;ck) (obra original publicada en 1868)&nbsp; Track: 16. N&uacute;mero de cat&aacute;logo: 999444-2.</p>
+			<p class="fuente">Strauss, J. (1988). Fr&uuml;hlingsstimmen, op. 410 (Vals &ldquo;voces de primavera&rdquo;) [obra grabada por Strauss Festival Orchestra, y Len&aacute;rd, O.]. En <em>Johann Strauss Jr.: Most Famous Waltzes. </em>Naxos (obra original publicada en 1882)&nbsp; Track: 2. N&uacute;mero de cat&aacute;logo: 8.550152.</p>
+			<p class="fuente">Brahms, J. (1993). Piano Trio No. 1 in B Major, Op. 8, 1 Allegro con brio [obra grabada por Viena Piano Trio]. En <em>Brahms Piano Tr&iacute;os. </em>Naxos (obra original publicada en 1854)&nbsp; Track: 1. N&uacute;mero de cat&aacute;logo:&nbsp;8.550746.</p>
+			<p class="fuente">Grieg, E. (1994). Morgenstemning (La ma&ntilde;ana, Suite No. 1, Op. 46) [obra grabada por la BBC Scottish Symphony Orchestra y Maksymiuk, J.]. En <em>Grieg: Peer Gynt, Suites 1 and 2. </em>Naxos (obra original publicada en 1886)&nbsp; Track: 1. N&uacute;mero de Cat&aacute;logo: 8.550864.</p>
+			<p class="fuente">Ravel, M. (1997). Bolero, [obra grabada por la Slovak Radio Symphony Orchestra, y Jean, K.]. En <em>Ravel: Bolero, Daphnis et Chloe, Piano Concerto, Ma mere l'oye.</em> Naxos (obra original publicada en 1928) Track: 11. N&uacute;mero de cat&aacute;logo:&nbsp;8.553276.</p>
+			<p class="fuente">Dukas, P. (2014). L'apprenti sorcier (El aprendiz de brujo) [obra grabada por Ireland RT&Eacute; (Raidi&oacute; Teilif&iacute;s &Eacute;ireann) National Symphony Orchestra, y Tingaud, J. L.]. En <em>Dukas</em><em> Symphony in C Major / The sorcerer&rsquo;s apprentice, La </em><em>Peri</em><em>. </em>Naxos (obra original publicada en 1897) Track: 1. N&uacute;mero de cat&aacute;logo:&nbsp;8.573296.</p>
+			<p class="fuente">Satie, E. (2009). 3 Gymnop&eacute;dies: No. 1. Lent et douloureux [obra grabada por Pascal Rog&eacute;]. En <em>Crystal Dream: Erik Satie and Takashi </em><em>Yoshimatsu</em><em> piano work</em>. Triton (obra original publicada en 1888) Track: 3. N&uacute;mero de cat&aacute;logo: OVCT-00052.</p>
+			<p class="fuente">Holst, G., y Strauss, R. (2017). <em>Holst: The Planets and Strauss: Also </em><em>sprach</em><em> Zarathustra</em> [&Aacute;lbum grabado por National Youth Orchestra of Great Britain, y Gardner, E.]. Chandos (obras originales publicadas en 1916 y 1896) Tracks: 1 a 9. N&uacute;mero de cat&aacute;logo: CHSA5179.</p>
+		</div>
+
+		<div id="complementarias" class="tabcontent" style="color: black; background-color: white;">
+			<p class="fuente">Cervantes, L. B. (2018). Los instrumentos de cuerda frotada en el siglo XVIII.&nbsp;AV Notas: <em>Revista de Investigaci&oacute;n Musical</em>, (5), 64-81. <a href="https://dialnet.unirioja.es/descarga/articulo/7600318.pdf">https</a><a href="https://dialnet.unirioja.es/descarga/articulo/7600318.pdf">://dialnet.unirioja.es/descarga/articulo/7600318.pdf</a>&nbsp;</p>
+			<p class="fuente">Cisneros-Chico, J. E. (2012). Mozart, the genius and the music.&nbsp;<em>Revista Mexicana de Comunicaci&oacute;n, Audiolog&iacute;a, Otoneurolog&iacute;a y Foniatr&iacute;a,</em>&nbsp;1(3), 199-206. <a href="https://www.medigraphic.com/pdfs/audiologia/fon-2012/fon123h.pdf">https</a><a href="https://www.medigraphic.com/pdfs/audiologia/fon-2012/fon123h.pdf">://www.medigraphic.com/pdfs/audiologia/fon-2012/fon123h.pdf</a>&nbsp;</p>
+			<p class="fuente">Dahn, I. (2010). Mozart. Sociolog&iacute;a de un genio.&nbsp;<em>Mir&iacute;ada: Investigaci&oacute;n en Ciencias Sociales,</em>&nbsp;3(5), 155-158. <a href="https://dialnet.unirioja.es/descarga/articulo/5024403.pdf">https</a><a href="https://dialnet.unirioja.es/descarga/articulo/5024403.pdf">://dialnet.unirioja.es/descarga/articulo/5024403.pdf</a>&nbsp;</p>
+			<p class="fuente">Del &Aacute;guila, B. J. (2020). Las nueve sinfon&iacute;as de Beethoven: la evoluci&oacute;n del genio a partir de su discurso orquestal Vela, M. Las nueve sinfon&iacute;as de Beethoven. <em>Revista </em><em>de investigaci&oacute;n musical, </em>(10), 92-96. <a href="http://publicaciones.csmjaen.es/index.php/pruebas/article/viewFile/320/231">http</a><a href="http://publicaciones.csmjaen.es/index.php/pruebas/article/viewFile/320/231">://publicaciones.csmjaen.es/index.php/pruebas/article/viewFile/320/231</a>&nbsp;</p>
+			<p class="fuente">Gallegos, E. (1913). <em>El Requiem de Mozart poema; un soneto por el mismo autor. </em>La Reforma. <a href="http://repositorio.casadelacultura.gob.ec/handle/34000/117">http</a><a href="http://repositorio.casadelacultura.gob.ec/handle/34000/117">://</a><a href="http://repositorio.casadelacultura.gob.ec/handle/34000/117">repositorio.casadelacultura.gob.ec/handle/34000/117</a></p>
+			<p class="fuente">Garc&iacute;a, A. (2017). &ldquo;Carta a un tal bar&oacute;n von..." de W. A. Mozart sobre el proceso creativo. &nbsp;<em>Anales del Instituto de Investigaciones </em><em>Est&eacute;ticas</em>, 39(110), 9-48. <a href="http://www.scielo.org.mx/scielo.php?pid=S0185-12762017000100009&amp;script=sci_arttext">http</a><a href="http://www.scielo.org.mx/scielo.php?pid=S0185-12762017000100009&amp;script=sci_arttext">://</a><a href="http://www.scielo.org.mx/scielo.php?pid=S0185-12762017000100009&amp;script=sci_arttext">www.scielo.org.mx/scielo.php?pid=S0185-12762017000100009&amp;script=sci_arttext</a></p>
+			<p class="fuente">Henao, S. A. (2020). La deuda del cine con Beethoven y la m&uacute;sica.&nbsp;Udea.edu. <a href="https://revistas.udea.edu.co/index.php/almamater/article/view/344327/20804040">https</a><a href="https://revistas.udea.edu.co/index.php/almamater/article/view/344327/20804040">://</a><a href="https://revistas.udea.edu.co/index.php/almamater/article/view/344327/20804040">revistas.udea.edu.co/index.php/almamater/article/view/344327/20804040</a></p>
+			<p class="fuente">Hern&aacute;ndez, M., &amp; Serrano, E. (2017) M&uacute;sica en la Corte Real espa&ntilde;ola del siglo XVIII (Tesis). Universidad Zaragoza. <a href="https://zaguan.unizar.es/record/62682/files/TAZ-TFG-2017-2007.pdf">https</a><a href="https://zaguan.unizar.es/record/62682/files/TAZ-TFG-2017-2007.pdf">://zaguan.unizar.es/record/62682/files/TAZ-TFG-2017-2007.pdf</a>&nbsp;</p>
+			<p class="fuente">Herranz, G. J. (2006). El la&uacute;d de Dios, Mozart.&nbsp;<em>Revista de espiritualidad, </em>(261), 607-643. <a href="http://www.revistadeespiritualidad.com/upload/pdf/1812articulo.pdf">http</a><a href="http://www.revistadeespiritualidad.com/upload/pdf/1812articulo.pdf">://www.revistadeespiritualidad.com/upload/pdf/1812articulo.pdf</a>&nbsp;</p>
+			<p class="fuente">Mej&iacute;a, O. (2013). La historia cl&iacute;nica de Wolfang Amadeus Mozart. <em>Acta M&eacute;dica Colombiana, </em>38(4), 244-254. <a href="https://www.redalyc.org/pdf/1631/163129779011.pdf">https</a><a href="https://www.redalyc.org/pdf/1631/163129779011.pdf">://www.redalyc.org/pdf/1631/163129779011.pdf</a></p>
+			<p class="fuente">Mendiz, A. (1992). La M&uacute;sica de Mozart en el Cine.&nbsp;<em>Filmhistoria online, </em>13-30. <a href="http://repositori.uic.es/bitstream/handle/20.500.12328/2442/Mendiz%20Noguero,%20Alfonso_Musica%20Mozart%20Cine_1992.pdf?sequence=1&amp;isAllowed=y">http</a><a href="http://repositori.uic.es/bitstream/handle/20.500.12328/2442/Mendiz%20Noguero,%20Alfonso_Musica%20Mozart%20Cine_1992.pdf?sequence=1&amp;isAllowed=y">://repositori.uic.es/bitstream/handle/20.500.12328/2442/Mendiz%20Noguero%2C%20Alfonso_Musica%20Mozart%20Cine_1992.pdf?sequence=1&amp;isAllowed=y</a>&nbsp;</p>
+			<p class="fuente">Merino-Montero, L. (2021). Las nueve sinfon&iacute;as de Beethoven. La evoluci&oacute;n del genio a partir de su discurso orquestal.&nbsp;<em>Revista musical chilena,</em>&nbsp;75(235), 235-240. <a href="https://scielo.conicyt.cl/scielo.php?pid=S0716-27902021000100235&amp;script=sci_arttext">https</a><a href="https://scielo.conicyt.cl/scielo.php?pid=S0716-27902021000100235&amp;script=sci_arttext">://scielo.conicyt.cl/scielo.php?pid=S0716-27902021000100235&amp;script=sci_arttext</a></p>
+			<p class="fuente">Miranda, M. (2018). Ludwig van Beethoven, el genio de Bonn atormentado por sus enfermedades: su historia m&eacute;dica.&nbsp;<em>Revista m&eacute;dica de Chile,</em>&nbsp;146(1), 91-95. <a href="https://scielo.conicyt.cl/scielo.php?pid=S0034-98872018000100091&amp;script=sci_arttext&amp;tlng=en">https</a><a href="https://scielo.conicyt.cl/scielo.php?pid=S0034-98872018000100091&amp;script=sci_arttext&amp;tlng=en">://scielo.conicyt.cl/scielo.php?pid=S0034-98872018000100091&amp;script=sci_arttext&amp;tlng=en</a></p>
+			<p class="fuente">Ortega, F. (2006). Mozart, amado de Dios.&nbsp;<em>Teolog&iacute;a: revista de la Facultad de Teolog&iacute;a de la Pontificia Universidad Cat&oacute;lica Argentina, </em>(90), 343-358. <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=2070711">https</a><a href="https://dialnet.unirioja.es/servlet/articulo?codigo=2070711">://dialnet.unirioja.es/servlet/articulo?codigo=2070711</a>&nbsp;</p>
+			<p class="fuente">Pastor, J. J. (2020). Beethoven como instrumento narrativo en la novela de la primera mitad del siglo XX.&nbsp;<em>Cuadernos </em><em>de </em><em>Investigaci&oacute;n Musical,</em> (11), 195-215. <a href="https://doi.org/10.18239/invesmusic.2020.11.10">https</a><a href="https://doi.org/10.18239/invesmusic.2020.11.10">://doi.org/10.18239/invesmusic.2020.11.10</a>&nbsp;</p>
+			<p class="fuente">Quir&oacute;s-Rodr&iacute;guez, M. A. (2014). Texto literario y musical del Requiem de Mozart (y de otros). <em>Acta Acad&eacute;mica</em>, 54, 61-94. <a href="http://revista.uaca.ac.cr/index.php/actas/article/view/95/76">http</a><a href="http://revista.uaca.ac.cr/index.php/actas/article/view/95/76">://</a><a href="http://revista.uaca.ac.cr/index.php/actas/article/view/95/76">revista.uaca.ac.cr/index.php/actas/article/view/95/76</a></p>
+			<p class="fuente">Ramada, V. A. B. (2009). Mozart y el clasicismo musical.&nbsp;<em>Al-Basit: Revista de estudios albacetenses, </em>(53), 155-180. <a href="https://dialnet.unirioja.es/descarga/articulo/3060627.pdf">https</a><a href="https://dialnet.unirioja.es/descarga/articulo/3060627.pdf">://dialnet.unirioja.es/descarga/articulo/3060627.pdf</a>&nbsp;</p>
+			<p class="fuente">Ramos, P. R. (2013). La influencia italiana en los conciertos para viol&iacute;n y orquesta de W. A. Mozart. <em>El Artista, </em>(10), 44-63. <a href="https://www.redalyc.org/pdf/874/87429022004.pdf">https</a><a href="https://www.redalyc.org/pdf/874/87429022004.pdf">://www.redalyc.org/pdf/874/87429022004.pdf</a>&nbsp;</p>
+			<p class="fuente">Santacecilia, D. (2020). <em>Louis Spohr visto como eslab&oacute;n perdido entre el clasicismo vien&eacute;s y el romanticismo germ&aacute;nico: el lenguaje arm&oacute;nico de Spohr y su relaci&oacute;n con el acorde de Trist&aacute;n</em>. Universidad de Alcal&aacute;. <a href="https://ebuah.uah.es/xmlui/bitstream/handle/10017/47156/louis_santacecilia_QB_2020.pdf?sequence=1&amp;isAllowed=y">https</a><a href="https://ebuah.uah.es/xmlui/bitstream/handle/10017/47156/louis_santacecilia_QB_2020.pdf?sequence=1&amp;isAllowed=y">://ebuah.uah.es/xmlui/bitstream/handle/10017/47156/louis_santacecilia_QB_2020.pdf?sequence=1&amp;isAllowed=y</a>&nbsp;</p>
+			<p class="fuente">Presas, A. &amp; Salmer&oacute;n, M. (2019). Estudios Musicales del Clasicismo.&nbsp;Mat&egrave;ria. Arpegio. <a href="https://revistes.ub.edu/index.php/materia/article/download/32228/35199">https</a><a href="https://revistes.ub.edu/index.php/materia/article/download/32228/35199">://revistes.ub.edu/index.php/materia/article/download/32228/35199</a>&nbsp;</p>
+			<p class="fuente">Terrel, C. R. (2019). <em>Clasicismo: Biograf&iacute;a de Ludwig van Beethoven y sus principales obras.</em> Une.edu. <a href="https://repositorio.une.edu.pe/handle/UNE/3442">https</a><a href="https://repositorio.une.edu.pe/handle/UNE/3442">://repositorio.une.edu.pe/handle/UNE/3442</a>&nbsp;</p>
+			<p class="fuente">Romanticismo. (2021, 15 de octubre). En <em>Wikipedia</em>. <a href="https://es.wikipedia.org/w/index.php?title=Romanticismo&amp;oldid=139065240">https</a><a href="https://es.wikipedia.org/w/index.php?title=Romanticismo&amp;oldid=139065240">://es.wikipedia.org/w/index.php?title=Romanticismo&amp;oldid=139065240</a>.&nbsp;</p>
+			<p class="fuente">M&uacute;sica del Romanticismo. (2021, 20 de octubre). En <em>Wikipedia</em>. <a href="https://es.wikipedia.org/w/index.php?title=M%C3%BAsica_del_Romanticismo&amp;oldid=139177415">https</a><a href="https://es.wikipedia.org/w/index.php?title=M%C3%BAsica_del_Romanticismo&amp;oldid=139177415">://es.wikipedia.org/w/index.php?title=M%C3%BAsica_del_Romanticismo&amp;oldid=139177415</a>.</p>
+			<p class="fuente">Neom&uacute;sica. (2021). Los 13 m&uacute;sicos del romanticismo m&aacute;s influyentes. Neom&uacute;sica.es. <a href="https://neomusica.es/blog/musicos-del-romanticismo/">https</a><a href="https://neomusica.es/blog/musicos-del-romanticismo/">://neomusica.es/blog/musicos-del-romanticismo/</a>&nbsp;</p>
+			<p class="fuente">Significados (2021). Romancismo. Significados.com. <a href="https://www.significados.com/romanticismo/">https</a><a href="https://www.significados.com/romanticismo/">://www.significados.com/romanticismo/</a>&nbsp;</p>
+			<p class="fuente">Aceves, G. M. (2019). Orquesta Sinf&oacute;nica de Xalapa. Discograf&iacute;a.&nbsp;<em>La Palabra y el </em><em>Hombre</em>. Universidad Veracruzana, (49-50), 178-184. <a href="https://lapalabrayelhombre.uv.mx/index.php/palabrahombre/article/viewFile/3029/4964">https</a><a href="https://lapalabrayelhombre.uv.mx/index.php/palabrahombre/article/viewFile/3029/4964">://lapalabrayelhombre.uv.mx/index.php/palabrahombre/article/viewFile/3029/4964</a>&nbsp;</p>
+			<p class="fuente">G&oacute;mez, R. D. M. (2019). Sinfonismo en el cine.&nbsp;<em>La Palabra y el </em><em>Hombre</em>. Universidad Veracruzana, (49-50), 110-112. <a href="https://lapalabrayelhombre.uv.mx/index.php/palabrahombre/article/view/3061/4948">https</a><a href="https://lapalabrayelhombre.uv.mx/index.php/palabrahombre/article/view/3061/4948">://</a><a href="https://lapalabrayelhombre.uv.mx/index.php/palabrahombre/article/view/3061/4948">lapalabrayelhombre.uv.mx/index.php/palabrahombre/article/view/3061/4948</a></p>
+			<p class="fuente">Mart&oacute;n, D. &Aacute;. V. (2021). La forma sonata, Beethoven y el Romanticismo: una aproximaci&oacute;n desde la Teor&iacute;a de Estratos de Nicolai Hartmann.&nbsp;<em>Eikasia: revista de filosof&iacute;a, </em>(98), 275-303. <a href="https://www.revistadefilosofia.org/98-11.pdf">https</a><a href="https://www.revistadefilosofia.org/98-11.pdf">://www.revistadefilosofia.org/98-11.pdf</a>&nbsp;</p>
+			<p class="fuente">Impresionismo musical. (2021, 24 de septiembre). En <em>Wikipedia</em>. <a href="https://es.wikipedia.org/w/index.php?title=Impresionismo_musical&amp;oldid=138560810">https</a><a href="https://es.wikipedia.org/w/index.php?title=Impresionismo_musical&amp;oldid=138560810">://es.wikipedia.org/w/index.php?title=Impresionismo_musical&amp;oldid=138560810</a>.&nbsp;</p>
+			<p class="fuente">Impresionismo. (2021, 23 de septiembre). En <em>Wikipedia</em>. <a href="https://es.wikipedia.org/w/index.php?title=Impresionismo&amp;oldid=138534118">https</a><a href="https://es.wikipedia.org/w/index.php?title=Impresionismo&amp;oldid=138534118">://es.wikipedia.org/w/index.php?title=Impresionismo&amp;oldid=138534118</a>.</p>
+			<p class="fuente">Alegre, M. &Aacute;. (2008). <em>La m&uacute;sica francesa entre los siglos XIX y XX. El Impresionismo. Especial referencia al repertorio pian&iacute;stico</em>. Universidad Internacional de Andaluc&iacute;a. <a href="https://buleria.unileon.es/bitstream/handle/10612/493/CURSO%20BAEZA%20MAAM%20IMPRESIONISMO.pdf?sequence=1">https</a><a href="https://buleria.unileon.es/bitstream/handle/10612/493/CURSO%20BAEZA%20MAAM%20IMPRESIONISMO.pdf?sequence=1">://buleria.unileon.es/bitstream/handle/10612/493/CURSO%20BAEZA%20MAAM%20IMPRESIONISMO.pdf?sequence=1</a>&nbsp;</p>
+			<p class="fuente">Cavia, V. (2005). El Joven Garc&iacute;a Lorca: Un paisaje musical de sus textos a trav&eacute;s del mundo sonoro de Verlaine y Debussy.&nbsp;<em>Cuadernos de M&uacute;sica, Artes Visuales y Artes Esc&eacute;nicas</em>,&nbsp;1(2), 148-188. <a href="https://www.redalyc.org/pdf/2970/297023446001.pdf">https</a><a href="https://www.redalyc.org/pdf/2970/297023446001.pdf">://www.redalyc.org/pdf/2970/297023446001.pdf</a>&nbsp;</p>
+			<p class="fuente">Cotello, B. (2017). Motivos de la Antig&uuml;edad cl&aacute;sica en el Impresionismo musical.&nbsp;<em>Circe de cl&aacute;sicos y modernos,&nbsp;</em>21(1). <a href="https://cerac.unlpam.edu.ar/index.php/circe/article/view/2009">https</a><a href="https://cerac.unlpam.edu.ar/index.php/circe/article/view/2009">://cerac.unlpam.edu.ar/index.php/circe/article/view/2009</a>&nbsp;</p>
+			<p class="fuente">G&oacute;mez, P. V. (2008). Menos es m&aacute;s en m&uacute;sica.&nbsp;<em>Agenda Cultural Alma M&aacute;ter</em>, 143 . <a href="https://revistas.udea.edu.co/index.php/almamater/article/view/13524">https</a><a href="https://revistas.udea.edu.co/index.php/almamater/article/view/13524">://</a><a href="https://revistas.udea.edu.co/index.php/almamater/article/view/13524">revistas.udea.edu.co/index.php/almamater/article/view/13524</a></p>
+			<p class="fuente">Heine, C. (1997). El impresionismo musical en tres obras para piano de compositores espa&ntilde;oles: Vicente Arregui (1902), Salvador Bacarisse (1922) y Joaqu&iacute;n Turina (1930). <em>Anuario Musical</em>, (52), 173-200. <a href="https://anuariomusical.revistas.csic.es/index.php/anuariomusical/article/view/294">https</a><a href="https://anuariomusical.revistas.csic.es/index.php/anuariomusical/article/view/294">://anuariomusical.revistas.csic.es/index.php/anuariomusical/article/view/294</a>&nbsp;</p>
+			<p class="fuente">Orringer, N. R. (2019). La estancia de Maurice Ravel en la comunidad musical de Valencia.&nbsp;<em>Diagonal: An Ibero-American Music Review</em>,&nbsp;4(2). <a href="https://escholarship.org/content/qt49c6961k/qt49c6961k.pdf">https</a><a href="https://escholarship.org/content/qt49c6961k/qt49c6961k.pdf">://escholarship.org/content/qt49c6961k/qt49c6961k.pdf</a>&nbsp;</p>
+			<p class="fuente">P&eacute;rez, I. M. (2013). La est&eacute;tica musical de los Nocturnos de Chopin.&nbsp;<em>Sinfon&iacute;a Virtual: Revista de M&uacute;sica Cl&aacute;sica y Reflexi&oacute;n Musical, </em>(24), 6. <a href="http://www.sinfoniavirtual.com/revista/024/estetica_nocturnos_chopin.pdf">http</a><a href="http://www.sinfoniavirtual.com/revista/024/estetica_nocturnos_chopin.pdf">://www.sinfoniavirtual.com/revista/024/estetica_nocturnos_chopin.pdf</a>&nbsp;</p>
+			<p class="fuente">Ram&iacute;rez, A. (2010). Debussy: otro camino al atonalismo.&nbsp;<em>M&uacute;sica, cultura y pensamiento,</em>&nbsp;2(2), 113123. <a href="https://www.academia.edu/30284847/Debussy_otro_camino_al_atonalismo_No2">https</a><a href="https://www.academia.edu/30284847/Debussy_otro_camino_al_atonalismo_No2">://www.academia.edu/30284847/Debussy_otro_camino_al_atonalismo_No2</a></p>
+			<p class="fuente">Neder Kalil Faure, J. (2021). <em>&ldquo;Le </em><em>Tombeau</em><em> de </em><em>Couperin</em><em>&rdquo; de Maurice Ravel: Desde la obra para piano hasta la obra para orquesta. </em>Universidad Nacional de Colombia. &nbsp;<a href="https://repositorio.unal.edu.co/handle/unal/79388">https://repositorio.unal.edu.co/handle/unal/79388</a>&nbsp;</p>
+			<p class="fuente">Revoredo, M. S. M. (2019). Paralelismo conceptual entre el Impresionismo pict&oacute;rico y la composici&oacute;n musical de Claude Debussy.&nbsp;<em>Antec: Revista Peruana de Investigaci&oacute;n Musical</em>,&nbsp;1(2), 43-58. <a href="http://revistas.unm.edu.pe/index.php/Antec/article/view/15/11">http</a><a href="http://revistas.unm.edu.pe/index.php/Antec/article/view/15/11">://</a><a href="http://revistas.unm.edu.pe/index.php/Antec/article/view/15/11">revistas.unm.edu.pe/index.php/Antec/article/view/15/11</a></p>
+			<p class="fuente">Rodr&iacute;guez, R. (2010). La catedral sumergida de Bebussy: una visi&oacute;n innovadora.&nbsp;ESCENA. <em>Revista de las artes</em>,&nbsp;66(1). <a href="https://revistas.ucr.ac.cr/index.php/escena/article/download/8328/7882">https</a><a href="https://revistas.ucr.ac.cr/index.php/escena/article/download/8328/7882">://revistas.ucr.ac.cr/index.php/escena/article/download/8328/7882</a>&nbsp;</p>
+			<p class="fuente">S&aacute;nchez, S. A. (2013). <em>El impresionismo musical y su relaci&oacute;n con los aspectos del lenguaje arm&oacute;nico y mel&oacute;dico en la obra de Guillermo Uribe Holgu&iacute;n</em> (Tesis Doctoral). Universidad EAFIT. <a href="https://repository.eafit.edu.co/bitstream/handle/10784/2892/SergioAndres_SanchezSuarez_2014.pdf?sequence=1">https</a><a href="https://repository.eafit.edu.co/bitstream/handle/10784/2892/SergioAndres_SanchezSuarez_2014.pdf?sequence=1">://repository.eafit.edu.co/bitstream/handle/10784/2892/SergioAndres_SanchezSuarez_2014.pdf?sequence=1</a>&nbsp;</p>
+			<p class="fuente">Serrano, P. (2020). <em>La influencia silenciada: Paul Dukas y la m&uacute;sica espa&ntilde;ola de la Edad de Plata. </em>Universidad Complutense de Madrid. <a href="https://eprints.ucm.es/id/eprint/59361/">https</a><a href="https://eprints.ucm.es/id/eprint/59361/">://eprints.ucm.es/id/eprint/59361/</a>&nbsp;</p>
+			<p class="fuente">Valdebenito, L. (2019). La subversi&oacute;n musical de Erik Satie por medio del pensamiento c&iacute;nico.&nbsp;<em>Revista musical chilena</em>,&nbsp;73(231), 98-119. <a href="https://scielo.conicyt.cl/scielo.php?pid=S0716-27902019000100098&amp;script=sci_arttext">https</a><a href="https://scielo.conicyt.cl/scielo.php?pid=S0716-27902019000100098&amp;script=sci_arttext">://scielo.conicyt.cl/scielo.php?pid=S0716-27902019000100098&amp;script=sci_arttext</a>&nbsp;</p>
+			<p class="fuente">Venegas, M. M. (2005). La &ldquo;fantas&iacute;a ba&eacute;tica" de Manuel de Falla: Nacionalismo musical espa&ntilde;ol y universalismo en el siglo XX.&nbsp;<em>K&aacute;&ntilde;ina</em><em>, Revista Artes y Letras,</em>&nbsp;29(2). <a href="https://revistas.ucr.ac.cr/index.php/kanina/article/download/4677/4491/">https</a><a href="https://revistas.ucr.ac.cr/index.php/kanina/article/download/4677/4491/">://revistas.ucr.ac.cr/index.php/kanina/article/download/4677/4491/</a>&nbsp;</p>		</div>
+      </div>
+    </section>
+    <!--/Fuentes de Información-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    
+   
+    <!--Disclaimer-->
+    <section class="fondo-azul-marino">
+      <div class="container contenedor-menu-contenido">
+        <!--Disclaimer-->
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card" style="background-color: #6ec493">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i>Disclaimer</i>
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body" style="background-color: white;">
+                        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/Disclaimer-->
+      </div>
+    </section>
+    <!--Disclaimer-->
+    <!--Logo Universidad Veracruzana-->
+    <section id="pie-pagina" class="p-1">
+      <div class="container">
+        <div class="row">
+          <div class="w-100">
+            <div class="row d-flex justify-content-center">
+              <div class="col-3 col-md-2">
+                <img src="images/logo-uv-texto.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Logo Universidad Veracruzana-->
+    <div class="fixed-bottom-right" id="button-up">
+      <a class="btn btn-success indice btn-sm p-3" href="#seccion-proposito">
+        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+      </a>
+    </div>
+	
+	<!--Ventanas Modales-->
+		<!--Modal 1.1-->
+<div
+      class="modal fade"
+      id="modal-1_1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-1_1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              &iquest;Qu&eacute; es la m&uacute;sica? 
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="color: black; background-color: #dbdbdb;">
+            <div class="slideshow-container">
+			  <div>
+					<p style="text-align: justify;">Bienvenido al primer m&oacute;dulo de esta tutor&iacute;a.&nbsp;</p>
+					<p style="text-align: justify;">&nbsp;</p>
+					<p style="text-align: justify;">La m&uacute;sica es el arte de combinar sonidos, respetando los&nbsp;principios fundamentales de la melod&iacute;a, la armon&iacute;a y el ritmo para&nbsp;producirlos con instrumentos musicales, misma que ha&nbsp;potencializado habilidades en las personas, en su desarrollo y que&nbsp;ha facilitado la expresi&oacute;n de las propias emociones.&nbsp;</p>
+					<p style="text-align: justify;">&nbsp;</p>
+					<p style="text-align: justify;">Recuerda que estas actividades son necesarias para poder continuar con tu desempe&ntilde;o.</p>
+			  </div>
+			</div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary waves-effect"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+		<!--/Modal 1.1-->
+		<!--Modal 1.2-->
+		<div
+      class="modal fade"
+      id="modal-1_2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-1_2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              El efecto Mozart: La m&uacute;sica y el cerebro 
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="color: black; background-color: #dbdbdb;">
+            <div class="slideshow-container">
+			  <div>
+			  	<p style="text-align: right;line-height: 50%; font-size: 90%">&ldquo;Ni un elevado grado de inteligencia, ni la imaginaci&oacute;n,</p>
+					<p style="text-align: right;line-height: 50%; font-size: 90%">ni ambas cosas unidas van a crear un genio.</p>
+					<p style="text-align: right;line-height: 50%; font-size: 90%">Amor, amor, amor, esa es el alma del genio&rdquo;.</p>
+					<p style="text-align: right;line-height: 50%; font-size: 90%"><em>Wolfgang Amadeus Mozart</em></p>
+					<p>&nbsp;</p>
+					<p style="text-align: justify;">La m&uacute;sica es una combinaci&oacute;n de sonidos que puede provocar sensaciones, emociones o experiencias en las personas que la escuchan, sin importar la edad que &eacute;stas tengan.</p>
+					<p style="text-align: justify;">Durante la revisi&oacute;n del siguiente material, valoraremos el proceso de gestaci&oacute;n de un ni&ntilde;o con las primeras melod&iacute;as de la vida.</p>
+					
+			  </div>
+			</div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary waves-effect"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+		<!--/Modal 1.2-->
+    <!-- Modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal-actividad"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-actividad"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" style="color: black">
+              <strong>Foro 2. Música de 1750 a la época impresionista.</strong>
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body actividad-modal" >
+            <p><strong>Descripci&oacute;n: </strong></p>
+			<ol>
+			<li>Despu&eacute;s de haber consultado la informaci&oacute;n de este segundo m&oacute;dulo y escuchado las composiciones musicales de las &eacute;pocas cl&aacute;sica, rom&aacute;ntica e impresionista,&nbsp; responda las siguientes preguntas gu&iacute;a. Recuerde que no hay respuestas equivocadas, s&oacute;lo se trata de reflexiones.
+			<ol style="list-style-type: lower-alpha;">
+			<li>
+			<p>&iquest;Qu&eacute; obras musicales le han llamado m&aacute;s la atenci&oacute;n y por qu&eacute;? Mencione tambi&eacute;n a los compositores.</p>
+			</li>
+			<li>
+			<p>En su opini&oacute;n, &iquest;cree que la m&uacute;sica de estos periodos se deber&iacute;a dar a conocer en la escuela, primaria, secundaria, preparatoria?</p>
+			</li>
+			<li>
+			<p>&iquest;Sab&iacute;a que el tema musical del programa de televisi&oacute;n &ldquo;El chavo del ocho&rdquo; es en realidad una pieza llamada &ldquo;Marcha a la turca&rdquo; de Beethoven?</p>
+			</li>
+			<li>
+			<p>&iquest;Qu&eacute; piensa de la obra <em>El carnaval de los animales</em> del romanticismo?</p>
+			</li>
+			<li>
+			<p>&iquest;Ya sab&iacute;a que la <em>Marcha nupcial, </em>que se escucha en las bodas, fue escrita por Mendelssohn como m&uacute;sica para acompa&ntilde;ar la obra de teatro <em>Sue&ntilde;o </em><em>de una noche de </em><em>verano</em>, de Shakespeare?</p>
+			</li>
+			<li>
+			<p>&iquest;Hab&iacute;a escuchado antes hablar de la m&uacute;sica impresionista?</p>
+			</li>
+			<li>
+			<p>&iquest;Hab&iacute;a escuchado antes alguno de los ejemplos de estas tres &eacute;pocas en medios de comunicaci&oacute;n como el cine, la televisi&oacute;n, el internet?</p>
+			</li>
+			<li>
+			<p>&iquest;Cu&aacute;l ha sido su periodo favorito y por qu&eacute;?</p>
+			</li>
+			<li>
+			<p>De acuerdo con su respuesta anterior, &iquest;qu&eacute; le ha hecho sentir escuchar estas composiciones musicales?</p>
+			</li>
+			</ol>
+			</li>
+			<li>Participe en el foro 2 exponiendo su respuesta a las preguntas antes se&ntilde;aladas.</li>
+			<li>Su intervenci&oacute;n deber&aacute; apegarse estrictamente a las consideraciones descritas en las <a href="documentos/Reglas Foros de discusion.pdf" target="_blank">Reglas para participar en foros de discusi&oacute;n</a>.</li>
+			</ol>
+			<p><strong>Criterios de </strong><strong>evaluaci&oacute;n</strong><strong>:</strong></p>
+			<ol>
+			<li>Apego a las instrucciones para la elaboraci&oacute;n de la actividad.</li>
+			<li>Redacci&oacute;n y ortograf&iacute;a adecuadas.</li>
+			<li>Coherencia y organizaci&oacute;n de ideas.</li>
+			</ol>
+			<p><strong>Lineamientos </strong><strong>de entrega:</strong></p>
+			<ol>
+			<li>Integre su participaci&oacute;n al Foro:<strong> M&uacute;sica de 1750 a la &eacute;poca impresionista, </strong>&nbsp;en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario</strong> de entregas.</li>
+			</ol>
+			
+	
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary waves-effect"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+    <!--/Ventanas Modales-->
+	
+	
+	
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/modernizr.custom.js"></script><!--Se necesita-->
+    <script src="js/classie.js"></script><!--Se necesita-->
+    <script src="js/cbpSplitLayout.js"></script><!--Se necesita-->
+    <script src="js/mdb.min.js"></script>
+    <script src="js/easyScrollDots.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/inicializacion.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script>
+	var slideIndex = [1, 1, 1];
+	var carruselRecorrido = 0;
+	var slideId = ["mySlides1", "mySlides2", "mySlides3"];
+
+	showSlides(1, 0);
+	showSlides(1, 1);
+	showSlides(1, 2);
+
+	function plusSlides(n, no) {
+		
+		if(no==0){
+			if(carruselRecorrido > 0){
+		
+			showSlides(slideIndex[no] += n, no);
+			}else{
+				carruselRecorrido++;
+				var alturaPresentacion = document.getElementById('slideIntroduccion').clientHeight;
+				showSlides(slideIndex[no] += n, no);
+				document.getElementById("slideProposito").style.height = alturaPresentacion+"px";
+				document.getElementById("slideProposito").style.backgroundColor = "#8983c3";
+				
+			}
+		}else{
+			showSlides(slideIndex[no] += n, no);
+		}
+		
+	}
+
+	function showSlides(n, no) {
+	  var i;
+	  var x = document.getElementsByClassName(slideId[no]);
+	  if (n > x.length) {slideIndex[no] = 1}    
+	  if (n < 1) {slideIndex[no] = x.length}
+	  for (i = 0; i < x.length; i++) {
+		 x[i].style.display = "none";  
+	  }
+	  x[slideIndex[no]-1].style.display = "block";  
+	}
+	function abrirFuente(evt, fuente) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(fuente).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+	</script>
+  </body>
+</html>
