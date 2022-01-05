@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/easyScrollDots.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/estilosFase.css" />
+	<link rel="stylesheet" href="css/component.css"> <!--Se necesita-->
+
+    <title>El violín y la música orquestal</title>
+  </head>
+  <body style="background-color: #dbdbdb;">
+    <!--Encabezado-->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
+        <div class="container">
+          <div class="navbar-brand pb-0">
+            <div class="row no-gutters mb-1">
+              <div class="col">
+                <img
+                  src="images/logo-taa.png"
+                  class="logo d-inline mr-"
+                  alt="mdb logo"
+                />
+              </div>
+			  
+			  <div
+                class="col text-secondary d-flex flex-column justify-content-center"
+              >
+			  <span class="lg-view h4 font-weight-bold responsivo" style="font-size: 90%;">El violín y la música orquestal</span>
+				<span class="sm-view h2 font-weight-bold"></span>
+
+                <p class=" lg-view p-0 m-0 font-weight-bold">
+                  Módulo 2. El Barroco en la música 
+                </p>
+				<p class=" sm-view p-0 m-0 font-weight-bold modulolargo">
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="dropdown"
+            data-target="#menu-indice"
+            aria-controls="menu-indice"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <i class="fas fa-align-justify text-dark"></i>
+          </button>
+          <!--Menú en dispositivos móviles-->
+          <div class="dropdown-menu dropdown-menu-right" id="menu-indice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-secondary text-center p-1">
+                <a
+                  class="text-white"
+                  href="https://www.uv.mx/"
+                  target="_blank"
+                  alt="Ir a Universidad Veracruzana"
+                >
+                  Universidad Veracruzana
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#" class="indice">
+                  <i class="fas fa-home text-primary"></i> Inicio:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-proposito" class="ml-3 indice">
+                  <i class="icon-icono_proposito text-secondary"></i> Propósito:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-introduccion" class="ml-3 indice">
+                  <i class="icon-icono_introduccion text-secondary"></i>
+                  Introducci&oacute;n
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-contenido" class="ml-3 indice">
+                  <i class="fas fa-copy text-secondary"></i> Contenido
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-fuentes" class="ml-3 indice">
+                  <i class="icon-icono_fuentes text-secondary"></i> Fuentes de
+                  Informaci&oacute;n
+                </a>
+              </li>
+			 <li class="list-group-item p-1">
+                <a href="index.html">
+                  <i class="fas fa-book text-primary"></i> Módulos:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="modulo1.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> I. 
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo2.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> II. 
+                </a>
+              </li>
+			  <li class="list-group-item p-1">
+                <a href="modulo3.html" class="ml-3">
+                  <i class="fas fa-bookmark text-secondary"></i> III. 
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#">
+                  <i class="fas fa-book text-primary"></i> Temas:
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-1" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.1. 
+                </a>
+              </li>
+              <li class="list-group-item p-1">
+                <a href="#seccion-tema-2" class="ml-3 indice">
+                  <i class="fas fa-bookmark text-secondary"></i> 1.2 
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Menú en dispositivos móviles-->
+        </div>
+      </nav>
+    </header>
+    <!--/Encabezado-->
+    <!--Menú Izquierdo-->
+	<div id="sticky-menu" class="d-none d-lg-block d-lg-flex flex-column">
+		<a
+        class="btn btn-lg btn-light btn-menu"
+        href="index.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="Inicio"
+      >
+        <i class="fas fa-home fa-2x"></i>
+      </a>
+
+      <a
+        class="btn btn-lg btn-light btn-menu"
+        href="modulo1.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="La música y el cerebro."
+      >
+        <span class="font-weight-bold ">1</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-primary btn-menu d-block"
+        href="#"
+        data-toggle="tooltip"
+        data-html="true"
+        title="El Barroco en la música."
+      >
+        <span class="font-weight-bold ">2</span>
+      </a>
+	  <a
+        class="btn btn-lg btn-light btn-menu"
+        href="modulo3.html"
+        data-toggle="tooltip"
+        data-html="true"
+        title="Elementos de la música."
+      >
+        <span class="font-weight-bold ">3</span>
+      </a>
+
+    </div>
+    <!--/Menú Izquierdo-->
+	<br>
+    <!--Presentación-->
+   <section class="text-white" id="presentacion">
+   <div class="container contenedor-seccion">
+			<div class="row" style="color: black;">
+				<div class="col-1">
+				  </div>
+				  <div class="col">
+					<p><i class="fas fa-hand-point-right indicacion"></i> Para conocer toda la información, haga clic en la flecha de la derecha.</p>
+				  </div>
+			</div>
+		</div>
+	<div class="slideshow-container">
+	  <div class="mySlides1" id="slideIntroduccion">
+	  <div class="row aireCarrusel fondo-azul-marino" ></div>
+		<div class="row fondo-azul-marino"  >
+			<div class="col d-flex align-items-center fondo-azul-marino" style="text-align: right;">
+				
+				<figure class="figure">
+				  <img
+					src="images/modulo1/Introduccion.jpg"
+					alt="imagen pendiente"
+					class="img-fluid"
+					style="height: 310px"
+				  />
+				  <figcaption class="figure-caption text-white">
+					[1]
+				  </figcaption>
+				</figure>
+			</div>
+			<div class="col align-self-center fondo-azul-marino" >
+				<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Introducción</h3>
+					<p>El Barroco es un periodo en donde se produjo un gran movimiento de gran desarrollo musical e instrumental.</p> <p>En este segundo módulo exploraremos los cambios que se dieron en la música durante dicho periodo, en el desarrollo de los instrumentos musicales, especialmente en los de cuerda frotada, así como la aparición de nuevas formas musicales vocales e instrumentales y el predominio en las composiciones instrumentales. </p>
+			</div>
+			<div class="col-1 fondo-azul-marino"></div>
+					  
+		</div>
+		
+	  </div>
+
+	  <div class="mySlides1 fondo-morado" >
+		<div class="row fondo-morado" id="slideProposito">
+		<div class="col-1 fondo-morado"></div>
+			<div class="col fondo-morado align-self-center">
+				<h3 class="font-weight-bold"><i class="fas fa-book-reader"></i> Propósito</h3>
+				<p>El participante conocerá algunas de las características musicales del periodo Barroco, fomentando el desarrollo de su capacidad auditiva y sensorial. Podrá apreciar cómo la música instrumental se impone sobre la música vocal, se genera un desarrollo instrumental sentando las bases de la orquesta y nacen muevas formas musicales. Además, observará cómo la música del Barroco está presente en la actualidad.</p>
+			</div>
+			  <div class="col d-flex align-items-center fondo-morado">
+				<figure class="figure">
+				  <img
+					src="images/modulo1/Proposito.jpg"
+					alt="imagen pendiente"
+					class="img-fluid"
+					style="height: 310px"
+					
+				  />
+				  <figcaption class="figure-caption text-right text-white">
+					[2]
+				  </figcaption>
+				</figure>
+			  </div>
+			</div>
+	  </div>
+	  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+	</div>
+
+    </section>
+    <!--/Presentación-->
+    <br>
+    <br>
+
+		<div></div>
+
+    <!--Cuadro modales grandes-->
+	<!--/Contenido 1.1-->
+
+<!--contenido 1.2.1-->
+    <section class=" text-white">
+	<div class="container contenedor-seccion">
+	<div class="row">
+	<h3 style="color: #42b2b2" class="titulo"><span class="font-weight-bold">2.1 El barroco</span></h3>
+	</div>
+	
+	<div class="row aireCarrusel fondo-verde"></div>
+	<div class="row">
+		<div class="col-8 fondo-verde" >
+			<p>El término Barroco proviene de portugués, y significa “perla irregular”. Se utilizaba en un principio en la arquitectura para referirse de manera peyorativa al arte extravagante y recargado. Tuvo sus inicios en Italia, expandiéndose a Europa y América, y pertenece a los estilos de música clásica o culta europea, como se les suele llamar.</p>
+			<p>Es un periodo histórico europeo de gran desarrollo artístico y cultural, se puede apreciar una abundante ornamentación en el arte, la música, la literatura y la arquitectura durante los siglos XVII y XVIII. En la música, el final del periodo Barroco se marca con la muerte de Johann Sebastian Bach, en 1750. </p>
+		</div>
+		<div class="col-4 d-flex align-items-center fondo-verde" >
+			<figure class="figure" style="width: 50%; margin: auto; display: block;">
+			  <img
+				src="images/modulo2/3.jpg"
+				alt="foto violin"
+				class="img-fluid"
+			  />
+			  <figcaption class="figure-caption text-right text-white">
+				[]
+			  </figcaption>
+			</figure>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<p style="color: black">El Barroco se divide en tres periodos:</p>
+			<p style="color: red">imagenes periodos</p>
+			<p style="color: black">A este periodo histórico, le antecede la música del Renacimiento y le sigue la música del clasicismo. Estas características puede revisarlas en la siguiente presentación. </p>
+			<p style="color: red">Aquí debe ir presentación sobre la música del barroco. </p>
+		</div>
+		
+	</div>
+	<br>
+	<div class="row">
+	<h3 style="color: #42b2b2" class="titulo"><span class="font-weight-bold">1.2 Características del Barroco </span></h3>
+	</div>
+	<div class="row">
+		<div class="col-1" ></div>
+				<div class="col" >
+			<p style="color:black;"><i class="fas fa-hand-point-right indicacion"></i>Para conocer las características de la época del Barroco, haga clic en la flecha correspondiente.</p>
+	</div></div>
+	
+	<section class="container seccion">
+				<section class="row">
+					<section class="col-12">
+						<div class="contenedor-splitlayout-tema-2-es">
+							<div class="container-splitlayout">
+								<div id="splitlayout" class="splitlayout close-right reset-layout">
+									<div class="intro">
+										<div class="side side-left splitlayout-img-filemaker-es">
+											<div class="intro-content">
+												<div ><img src="images/modulo2/personitas.png" style="width: 70%" alt="Foto">
+												</div>
+												<h1 class="poppins-24" style="margin-top: 20px;"><b class="poppins-24"></b></h1>
+											</div>
+											<div class="overlay"></div>
+										</div>
+										<div class="side side-right splitlayout-img-access-es">
+											<div class="intro-content">
+												<div><img src="images/modulo2/personitas.png" style="width: 70%" alt="Foto">
+												</div>
+												<h1 class="poppins-24" style="margin-top: 20px;"><b class="poppins-24"></b></h1>
+											</div>
+											<div class="overlay"></div>
+										</div>
+									</div><!-- /intro -->
+									<div class="page page-right">
+										<div class="page-inner splitlayout-access-es">
+											<section class="poppins-18">			
+												<p>Tambi&eacute;n surge el bajo continuo, el cual es una codificaci&oacute;n de la armon&iacute;a y funciona de acompa&ntilde;amiento instrumental en una composici&oacute;n.</p>
+												<p>En el Barroco se da un significativo desarrollo instrumental, se genera un predominio de los instrumentos de cuerda frotada como el viol&iacute;n, la viola, el violonchelo y el contrabajo. Surgen las orquestas, lo que favorece a que la m&uacute;sica instrumental se imponga sobre la m&uacute;sica vocal.</p>
+												<p>En el Barroco surgieron aportaciones muy significativas tanto vocales como instrumentales:&nbsp;</p>
+												<p>Vocales: la &oacute;pera, el oratorio y la cantata.</p>
+												<p>Instrumentales: el concierto, la sonata y la suite.</p>
+										   </section>
+										</div><!-- /page-inner -->
+									</div><!-- /page-right -->
+									<div class="page page-left">
+										<div class="page-inner splitlayout-filemaker-es">
+											<section class="poppins-18">
+												<p>En este apartado conocer&aacute; las caracter&iacute;sticas m&aacute;s representativas de la m&uacute;sica barroca.</p>
+												<p>En el periodo Barroco la atenci&oacute;n del hombre no se limita en buscar la belleza, ahora su pensamiento se enfoca en la raz&oacute;n y el sentimiento. Con la raz&oacute;n busca la l&oacute;gica de las cosas y el lado cient&iacute;fico de todo. Por otra parte, el sentimiento de los individuos se hace evidente en cualquier campo, en la m&uacute;sica la &oacute;pera es un claro ejemplo.</p>
+												<p>Las composiciones barrocas eran elaboradas con una gran cantidad de adornos en las melod&iacute;as, as&iacute; como fuertes contrastes sonoros.</p>
+												<p>En la m&uacute;sica se busca codificar los par&aacute;metros musicales, aparece la tonalidad. La tonalidad es la que dicta las reglas que se deben seguir en relaci&oacute;n con el ordenamiento jer&aacute;rquico de las diferentes alturas sonoras con respecto al centro tonal o t&oacute;nica, siendo una nota, acorde o escala.</p>
+											</section>
+										</div><!-- /page-inner -->
+									</div><!-- /page-left -->
+									<span class="back back-right" title="back to intro" style="cursor:pointer;">
+										←
+										<!--<i class="icono icono-flecha-izq"></i>-->
+									</span>
+									<span class="back back-left" title="back to intro" style="cursor:pointer;">
+										→
+										<!--<i class="icono icono-flecha-der"></i>-->
+									</span>
+								</div><!-- /splitlayout -->
+							</div><!-- /container -->
+						</div>
+					</section>
+				</section>
+			</section>	
+			
+			<br>
+			<div class="row">
+				<div class="col">
+					<p style="color: black">Ahora, consulte el siguiente artículo que define más particularidades acerca de la música del Barroco. </p>
+					<p style="color: red">Recurso para presentar textos de otra autoría</p>
+				</div>
+			</div>
+			
+			<br>
+			<div class="row">
+			<h3 style="color: #42b2b2" class="titulo"><span class="font-weight-bold">1.3. Formas instrumentales del Barroco </span></h3>
+			</div>
+			<div class="row fondo-verde" style="color: black;">
+				<div class="col">
+					<p>En el Barroco surgieron el concierto, la sonata, la fuga y la suite.</p>
+					<p>El concierto, es una forma de composici&oacute;n musical compuesta para uno o varios instrumentos con el acompa&ntilde;amiento de una orquesta.</p>
+					<p>Surge el <em>Concerto </em><em>grosso</em><em>,</em> en el que participan de manera alternada dos grupos instrumentales:</p>
+				</div>
+				
+			</div>
+			<br>
+			<div class="row">
+		<div class="col-1" ></div>
+				<div class="col" >
+			<p style="color:black;"><i class="fas fa-hand-point-right indicacion"></i>A continuación, seleccione el grupo correspondiente para leer la información.</p>
+	</div></div>
+	 <div class="row">
+    	<div class="col-3"></div>
+	    <div class="col-7">
+	      <div class="btn-group-block" id="grupo" role="group" style="width: 100%; display: block; justify-content: center;">
+	        <a href="#" data-toggle="modal" data-target="#modal-1_1" type="button" class="btn fondo-azul-marino col-5" style="width: 50%; font-size: 120%; text-transform:initial;">Concertino</a>
+	        <a href="#" data-toggle="modal" data-target="#modal-1_2" type="button" class="btn fondo-morado col-5" style="width: 50%; font-size: 120%; text-transform:initial;"><em>Ripieno</em></a>
+	      </div>
+	    </div>
+    	<div class="col-3"></div>
+	  </div>
+	  <br>
+	  <div class="row" style="color: black;">
+		<div class="col">
+		<p>También surge el concierto solista, que es una composición en la cual uno o varios instrumentos solistas se alternan con la orquesta, maximizando el contraste sonoro en la música. </p>
+		<p>El concierto solista, generalmente, está escrito en tres movimientos, el primero rápido, el segundo lento y el tercero rápido.</p>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-1" ></div>
+				<div class="col" >
+				<p style="color:black;"><i class="fas fa-hand-point-right indicacion"></i>Ahora, revisa la siguiente infografía concerniente a los géneros musicales.</p>
+	</div></div>
+	
+	 <div class="row" style="color: red;">
+		<div class="col">
+			<p>Falta infografia</p>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+	<h3 style="color: #42b2b2" class="titulo"><span class="font-weight-bold">1.4 La orquesta barroca  </span></h3>
+	</div>
+	
+	<div class="row aireCarrusel">
+				<div class="col" style=" background-color: rgb(47, 85, 151);"></div>
+				<div class="col" style=" background-color: rgb(204, 204, 255);"></div>
+			</div>
+			<div class="row">
+				<div class="col" style="color: white; background-color: rgb(47, 85, 151);">
+					<p>La orquesta nace en el periodo Barroco, antes de este periodo musical se le daba mayor importancia a la música vocal, restándole valor a la música instrumental. La llegada de la ópera, en el siglo XVI, ayudó a fomentar la instrumentación y fomentó la necesidad de utilizar un número mayor de instrumentos de cuerda, para equilibrar el sonido con los instrumentos de viento y percusión, que por su naturaliza producen un sonido de mayor volumen. </p>
+				</div>
+				<div class="col" style="color: black; background-color: rgb(204, 204, 255);">
+					<p>En la orquesta barroca predominan los instrumentos de cuerda frotada: violín, viola, chelo y contrabajo. En menor cantidad, los instrumentos de viento madera y los de cobre o metal. En este periodo aparece el clavecín antecesor del piano. La orquesta barroca se forma con pocos instrumentos. Cabe mencionar que en el Barroco todavía no aparece la figura de director de orquesta, como se conoce en la actualidad. </p>
+				</div>
+			</div>
+		<div class="row aireCarrusel">
+				<div class="col" style="color: black; background-color: rgb(47, 85, 151);"></div>
+				<div class="col" style="color: black; background-color: rgb(204, 204, 255);"></div>
+			</div>
+			
+			<br>
+	
+	<div class="row">
+	<h3 style="color: #42b2b2" class="titulo"><span class="font-weight-bold">1.5 Compositores del Barroco </span></h3>
+	</div>
+	
+	<div class="row" style="color: black;">
+		<div class="col">
+		<p>Una gran cantidad de música compuesta por diversos autores de esta época se toca en la actualidad en conciertos por casi todo el mundo, además, por su aceptación y genialidad la utilizan en tanto en películas como en series actuales para la televisión.</p>
+		<p>Ahora, le invito a conocer a los músicos representativos del Barroco. </p>
+		<p style="color: red;">Collage compositores</p>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+	<h3 style="color: #42b2b2" class="titulo"><span class="font-weight-bold">1.6 Sonidos del Barroco  </span></h3>
+	</div>
+	<div class="row" style="color: black;">
+		<div class="col fondo-morado">
+			<p>Los dos compositores m&aacute;s representativos del Barroco son Antonio Vivaldi y Johan Sebastian Bach.</p>
+			<p>La obra m&aacute;s representativa de Vivaldi son <em>Las </em><em>cuatro estaciones</em>, en la que una orquesta acompa&ntilde;a a un viol&iacute;n a lo largo de cuatro piezas inspiradas en cada estaci&oacute;n del a&ntilde;o.</p>
+			<p>Ahora, revise los siguientes videos de <em>Las cuatro estaciones, </em>de Vivaldi. En el primero, interpretado por la Orquesta Sinf&oacute;nica de Xalapa, ponga atenci&oacute;n en los sonidos, en la repetici&oacute;n de las notas y en los contrastes de sonido entre el instrumento solista y el acompa&ntilde;amiento de la orquesta. En el segundo, observe la explicaci&oacute;n de la misma obra musical y mantenga su enfoque en los sonidos y en c&oacute;mo se relacionan con el texto.</p>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-1" ></div>
+				<div class="col" >
+				<p style="color:black;"><i class="fas fa-hand-point-right indicacion"></i>A continuación, seleccione la pestaña correspondiente para revisar los videos sobre <em>Las cuatro estaciones</em>, de Vivaldi.</p>
+	</div></div>
+	
+		
+	</div>
+	</section>
+		<div class="tab">
+			<div class="row">
+				<div class="col"><button class="tablinks" onclick="abrirFuente(event, 'tema1')">1</button></div>
+				<div class="col"><button class="tablinks" onclick="abrirFuente(event, 'tema2')">2</button></div>
+
+			</div>
+		</div>
+
+		<div id="tema1" class="tabcontent" style="color: black; background-color: white; text-align: center;">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/s7l_l4F-Irg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<figcaption class="figure-caption text-black text-right">Orquesta Sinf&oacute;nica de Xalapa. (2020, marzo 25). <em>Las </em><em>cuatro </em><em>e</em><em>staciones</em>. <a href="https://www.youtube.com/watch?v=s7l_l4F-Irg">https://www.youtube.com/watch?v=s7l_l4F-Irg</a></figcaption>
+			
+		</div>
+		<div id="tema2" class="tabcontent" style="color: black; background-color: white; text-align: center;">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/W739T4653Y8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<figcaption class="figure-caption text-black text-right">Director y Solista Mtro. Miguel Bernal Matus <a href="https://www.youtube.com/watch?v=W739T4653Y8&amp;t=37s">https://www.youtube.com/watch?v=W739T4653Y8&amp;t=37s</a></figcaption>
+		</div>
+		
+
+
+    <!--/contenido-->
+	<!--actividades-->
+    <section class="text-black">
+      <div class="container contenedor-seccion" style="text-align: center;">
+        <div class="row mb-4">
+          <div class="col">
+            <h3 style="color: black">Evidencias de desempeño</em></h3>
+          </div>
+        </div>
+		<div class="row mb-4">
+		<div class="col-3"></div>
+		
+		<div class="col" style="text-align: center;" >
+		
+		<a href="#" data-toggle="modal" data-target="#modal-actividad">
+		<div id="actividad"></div>
+			<!--<div id="actividad"></div>
+			</a>
+		  <img src="images/fase1/actividad.png" alt="pendiente" id="actividad">-->
+		</a>
+		</div>
+		<div class="col-3"></div>
+		</div>
+      </div>
+    </section>
+    <!--/actividades 1-->
+	<!--Fuentes de Información-->
+    <section class="text-white">
+      <div class="container contenedor-seccion">
+        <div class="row mb-4">
+          <div class="col">
+            <h3 style="color: black"><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
+          </div>
+        </div>
+		<div class="tab">
+			<div class="row">
+				<div class="col"></div>
+				<div class="col"><button class="tablinks" onclick="abrirFuente(event, 'basicas')">Básicas</button></div>
+				<div class="col"></div>
+				<div class="col"><button class="tablinks" onclick="abrirFuente(event, 'complementarias')">Complementarias</button></div>
+				<div class="col"></div>
+			</div>
+		</div>
+
+		<div id="basicas" class="tabcontent" style="color: black; background-color: white;">
+			<p class="fuente">Orquesta Sinf&oacute;nica de Xalapa. (2020, marzo 25). <em>Las </em><em>cuatro </em><em>e</em><em>staciones</em><em>. </em>[Video]. YouTube. <a href="https://youtu.be/s7l_l4F-Irg">https://youtu.be/s7l_l4F-Irg</a></p>
+			<p class="fuente">Orquesta 1000 (2014, marzo 7). <em>Las </em><em>cuatro estaciones </em><em>con explicaci&oacute;n de Antonio Vivaldi. </em>[Video]. YouTube. <a href="https://youtu.be/W739T4653Y8">https://youtu.be/W739T4653Y8</a>&nbsp;</p>
+			<p class="fuente">Sag Legr&aacute;n, L. (2009). Detr&aacute;s de la m&uacute;sica del Barroco. <em>Revista Digital Innovaci&oacute;n y Experiencias Educativas</em>, 25. <a href="https://archivos.csif.es/archivos/andalucia/ensenanza/revistas/csicsif/revista/pdf/Numero_25/LYDIA_SAG_LEGRAN01.pdf">https://archivos.csif.es/archivos/andalucia/ensenanza/revistas/csicsif/revista/pdf/Numero_25/LYDIA_SAG_LEGRAN01.pdf</a></p>
+		</div>
+
+		<div id="complementarias" class="tabcontent" style="color: black; background-color: white;">
+			<p class="fuente">Borrero, F. D. (2008). La m&uacute;sica en el Barroco. <em>Innovaci&oacute;n y experiencias </em><em>educativas</em>. <a href="https://archivos.csif.es/archivos/andalucia/ensenanza/revistas/csicsif/revista/pdf/Numero_12/FRANCISCO_D_BORRERO_2.pdf">https://archivos.csif.es/archivos/andalucia/ensenanza/revistas/csicsif/revista/pdf/Numero_12/FRANCISCO_D_BORRERO_2.pdf</a></p>
+			<p class="fuente">Fuga. (2021). En <em>Wikipedia</em>. <a href="https://es.wikipedia.org/w/index.php?title=Fuga&amp;oldid=139022725">https://es.wikipedia.org/w/index.php?title=Fuga&amp;oldid=139022725</a></p>
+			<p class="fuente">Isaac Jos&eacute; Collado Navarro. (2017, noviembre 3). <em>Caracter&iacute;sticas generales del Barroco instrumental</em>. [Video]. YouTube. <a href="https://www.youtube.com/watch?v=u8sf2S4yw8s">https://www.youtube.com/watch?v=u8sf2S4yw8s</a></p>
+			<p class="fuente">M&uacute;sica del Barroco. (2021, octubre 26). En <em>Wikipedia</em>. <a href="https://es.wikipedia.org/w/index.php?title=M%C3%BAsica_del_Barroco&amp;oldid=139302617">https://es.wikipedia.org/w/index.php?title=M%C3%BAsica_del_Barroco&amp;oldid=139302617</a></p>
+			<p class="fuente">Sag Legr&aacute;n, L. (2008). Detr&aacute;s de la m&uacute;sica del Barroco. Innovaci&oacute;n y experiencias educativas.&nbsp; <a href="https://archivos.csif.es/archivos/andalucia/ensenanza/revistas/csicsif/revista/pdf/Numero_25/LYDIA_SAG_LEGRAN01.pdf">https://archivos.csif.es/archivos/andalucia/ensenanza/revistas/csicsif/revista/pdf/Numero_25/LYDIA_SAG_LEGRAN01.pdf</a></p>
+		</div>
+
+        
+      </div>
+    </section>
+    <!--/Fuentes de Información-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    
+   
+    <!--Disclaimer-->
+    <section class="fondo-azul-marino">
+      <div class="container contenedor-menu-contenido">
+        <!--Disclaimer-->
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card" style="background-color: #6ec493">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-white"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i>Disclaimer</i>
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body" style="background-color: white;">
+                        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/Disclaimer-->
+      </div>
+    </section>
+    <!--Disclaimer-->
+    <!--Logo Universidad Veracruzana-->
+    <section id="pie-pagina" class="p-1">
+      <div class="container">
+        <div class="row">
+          <div class="w-100">
+            <div class="row d-flex justify-content-center">
+              <div class="col-3 col-md-2">
+                <img src="images/logo-uv-texto.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Logo Universidad Veracruzana-->
+    <div class="fixed-bottom-right" id="button-up">
+      <a class="btn btn-success indice btn-sm p-3" href="#seccion-proposito">
+        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+      </a>
+    </div>
+	
+	<!--Ventanas Modales-->
+		<!--Modal 1.1-->
+<div
+      class="modal fade"
+      id="modal-1_1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-1_1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Concertino
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="color: black; background-color: #dbdbdb;">
+            <div class="slideshow-container">
+			  <div>
+					<p style="text-align: justify;">Concertino, un conjunto pequeño, un grupo de solistas, siendo común contar con dos violines y un violonchelo, aunque se podía variar en el tipo y número de instrumentos. </p>
+					
+			  </div>
+			</div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary waves-effect"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+		<!--/Modal 1.1-->
+		<!--Modal 1.2-->
+		<div
+      class="modal fade"
+      id="modal-1_2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-1_2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              <em>Ripieno</em>
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="color: black; background-color: #dbdbdb;">
+            <div class="slideshow-container">
+			  <div>
+			  	<p><em>Ripieno</em> un conjunto relleno; <em>concert&oacute; grosso, </em>un conjunto grande; y <em>tutti</em><em>, </em>que se refiere a todos. Estas tres maneras son como se conoce a la orquesta que alterna con el concertino.</p>
+					
+			  </div>
+			</div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary waves-effect"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+		<!--/Modal 1.2-->
+    <!-- Modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal-actividad"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-actividad"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" style="color: black">
+              <strong>Actividad 1: Reporte. </strong>
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body actividad-modal" >
+            
+				<p><strong>Descripci&oacute;n: </strong></p>
+				<ol>
+				<li>Despu&eacute;s de haber consultado la informaci&oacute;n de este segundo m&oacute;dulo, elabore un reporte escrito acerca de las caracter&iacute;sticas m&aacute;s representativas del periodo Barroco.</li>
+				<li>Incluya sus percepciones sobre <em>Las cuatro estaciones, </em>de Vivaldi: &iquest;Qu&eacute; sinti&oacute;? &iquest;De qu&eacute; se dio cuenta?</li>
+				<li>Si lo considera necesario, puede enriquecer su evidencia con fotos, haciendo uso de las siguientes herramientas:
+					<ol style="list-style-type: lower-alpha;">
+					<li>Unsplash Photos for everyone. (s. f.).&nbsp;<em>Beautiful</em><em> Free </em><em>Images</em><em> &amp; </em><em>Pictures</em><em>. </em><em>Unsplash</em>.&nbsp;<u><a href="https://unsplash.com/">https://unsplash.com/</a></u></li>
+					<li>Creative commons. (s. f.).&nbsp;<em>CC </em><em>Search</em>. cc Search.&nbsp;<u><a href="https://search.creativecommons.org/">https://search.creativecommons.org/</a></u></li>
+					<li>Flickr. (s. f.).&nbsp;Flickr.com.&nbsp;<u><a href="https://www.flickr.com/">https://www.flickr.com/</a></u></li>
+					<li>Pexels. (s. f.).&nbsp;Pexels.com. &nbsp;<u><a href="https://www.pexels.com/es-es/">https://www.pexels.com/es-es/</a></u></li>
+					<li>Pixabay. (s. f.). Pixabay.com.&nbsp;<u><a href="https://pixabay.com/es/">https://pixabay.com/es/</a></u></li>
+					<li>Freepik. (2021, 21 julio).&nbsp;<em>Graphic</em> <em>resources</em> <em>for</em> <em>everyone</em>.&nbsp;<u><a href="https://www.freepik.com/">https://www.freepik.com/</a></u></li>
+					<li>Contributors to Wikimedia projects. (2021, 14 julio).&nbsp;<em>Main</em><em> Page</em>. Wikimedia Commons.&nbsp;<u><a href="https://commons.wikimedia.org/wiki/Main_Page">https://commons.wikimedia.org/wiki/Main_Page</a></u></li>
+					</ol>
+				</li>
+				</ol>
+				<p><strong>Criterios de </strong><strong>evaluaci&oacute;n</strong><strong>:</strong></p>
+				<ol>
+				<li>Apego a las instrucciones para la elaboraci&oacute;n de la actividad.</li>
+				<li>Redacci&oacute;n y ortograf&iacute;a adecuadas.</li>
+				<li>Coherencia y organizaci&oacute;n de ideas principales.</li>
+				</ol>
+				<p><strong>Lineamientos </strong><strong>de entrega:</strong></p>
+				<ol>
+				<li>Titule el archivo bajo la siguiente nomenclatura: &nbsp;Actx_PrimerApellidoyPrimerNombre. Por ejemplo:&nbsp;Act1_VillanuevaTeresa.&nbsp;</li>
+				<li>Suba su evidencia en formato PDF, al apartado Actividad 1, en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el Calendario de entregas.</li>
+				</ol>
+	
+	
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary waves-effect"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+    <!--/Ventanas Modales-->
+	
+	
+	
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/modernizr.custom.js"></script><!--Se necesita-->
+    <script src="js/classie.js"></script><!--Se necesita-->
+    <script src="js/cbpSplitLayout.js"></script><!--Se necesita-->
+    <script src="js/mdb.min.js"></script>
+    <script src="js/easyScrollDots.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/inicializacion.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script>
+	var slideIndex = [1, 1, 1];
+	var carruselRecorrido = 0;
+	var slideId = ["mySlides1", "mySlides2", "mySlides3"];
+
+	showSlides(1, 0);
+	showSlides(1, 1);
+	showSlides(1, 2);
+
+	function plusSlides(n, no) {
+		
+		if(no==0){
+			if(carruselRecorrido > 0){
+		
+			showSlides(slideIndex[no] += n, no);
+			}else{
+				carruselRecorrido++;
+				var alturaPresentacion = document.getElementById('slideIntroduccion').clientHeight;
+				showSlides(slideIndex[no] += n, no);
+				document.getElementById("slideProposito").style.height = alturaPresentacion+"px";
+				document.getElementById("slideProposito").style.backgroundColor = "#8983c3";
+				
+			}
+		}else{
+			showSlides(slideIndex[no] += n, no);
+		}
+		
+	}
+
+	function showSlides(n, no) {
+	  var i;
+	  var x = document.getElementsByClassName(slideId[no]);
+	  if (n > x.length) {slideIndex[no] = 1}    
+	  if (n < 1) {slideIndex[no] = x.length}
+	  for (i = 0; i < x.length; i++) {
+		 x[i].style.display = "none";  
+	  }
+	  x[slideIndex[no]-1].style.display = "block";  
+	}
+	function abrirFuente(evt, fuente) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(fuente).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+	</script>
+  </body>
+</html>
