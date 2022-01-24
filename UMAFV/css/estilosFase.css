@@ -79,7 +79,7 @@ texto-negro{
   position: relative;
   margin: auto;
 }
-.prev, .next, .prevGeni, .nextGeni, .prevModal, .nextModal {
+.prev, .next, .prevGeni, .nextGeni, .prevModal, .nextModal, .prevEspecial, .nextEspecial {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -98,6 +98,18 @@ texto-negro{
   border-radius: 3px 0 0 3px;
 }
 .next {
+  right: -9%;
+  border-radius: 3px 0 0 3px;
+}
+.prevEspecial {
+	top: 10%;
+	background-color: white;
+  left: -9%;
+  border-radius: 3px 0 0 3px;
+}
+.nextEspecial {
+	top: 10%;
+	background-color: white;
   right: -9%;
   border-radius: 3px 0 0 3px;
 }
