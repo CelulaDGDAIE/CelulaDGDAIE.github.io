@@ -133,7 +133,6 @@ table, th, td {
 	}
 	.apartadoHover .rectangulo{
 		height: 200px;
-		/*width: 100px;*/
 		background-color: #3CA7B8;
 		opacity: 90%;
 
@@ -153,10 +152,8 @@ table, th, td {
 		display: inline-block;
 		width: 0; 
 		height: 0; 
-		/*left: 96px;*/
 		border-top: 200px solid transparent;
 		border-bottom: 0px solid #3CA7B8;
-		/*border-left: solid #3CA7B8;*/
 		opacity: 90%;
 		text-align: center;
 		position: absolute;
@@ -173,7 +170,7 @@ table, th, td {
 	}
 	.texto{
 		/*width: 400px; */
-		line-height: 90%;
+		line-height: 100%;
 		top: 120px;
 		/*font-size: 70%;*/
 		position: absolute;
