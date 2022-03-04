@@ -54,10 +54,10 @@ function ajustarTextoModulo(largo, ancho, anchoApartado){
 	//alert(textoModulos[0].lenght);
 	for (i = 0; i < textosModulos.length; i++) {
 		textosModulos[i].style.width = tamanoCampo+"px";
-		alert(tamanoCampo);
+		//alert(tamanoCampo);
 		nuevoTamanoTexto=18;
 		caracteresTexto=textosModulos[i].innerText.length;
-		alert(caracteresTexto);
+		//alert(caracteresTexto);
 		textosModulos[i].style.fontSize = nuevoTamanoTexto+"px";
 	}
 }
