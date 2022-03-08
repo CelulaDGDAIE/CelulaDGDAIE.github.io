@@ -62,3 +62,44 @@ body{
 	color: white;
 	font-weight: bold;
 }
+.circuloModulo{
+	border-radius: 50%;
+	width: 75px;
+    height: 75px;
+    background: #355CA7;
+    border: 3px solid #000;
+}
+.campoModulo{
+	background-color: #6CBDB4;
+	border-radius: 25px;
+}
+#cicrculoModulo1{
+	background-image: url('../imagenes/modulo1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+}
+#cicrculoModulo2{
+	background-image: url('../imagenes/modulo2.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+}
+#cicrculoModulo3{
+	background-image: url('../imagenes/modulo3.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+}
+#cicrculoModulo4{
+	background-image: url('../imagenes/modulo4.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+}
+.textoModulo{
+	margin-left: 20px;
+	color: white;
+	font-weight: bold;
+	//*height: 75px;*/
+}
