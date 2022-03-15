@@ -16,7 +16,7 @@
 			<div class="row">
 				<div class="col-6 align-self-center centrado">
 					<img id="imagenLogo" src="imagenes/logo.png" class="img-fluid" alt="logo">
-					<p id="tituloPresentacion">Arpa Jarocha ¡Conocela!</p>
+					<p id="tituloPresentacion">$@tituloPresentacion</p>
 				</div>
 				<div class="col-6 align-self-center centrado">
 					<img src="imagenes/portada.jpg" class="img-fluid" id="imagenPortada" alt="portada">
@@ -38,8 +38,8 @@
 					<div class="col align-self-center" style="text-align: center;">
 						<img id="imagenLogoScroll" src="imagenes/logo.png" class="img-fluid" alt="logo">
 					</div>
-					<div class="col-7 align-self-center">
-						Arpa Jarocha ¡Conocela!
+					<div class="col-7 align-self-center" id="tituloPresentacionScroll">
+						$@tituloPresentacionScroll
 					</div>
 				</div>
 			</div>
@@ -73,9 +73,8 @@
 						</button>
 					</h2>
 					<div id="collapsePresentacion" class="accordion-collapse collapse" aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
-						<div class="accordion-body">
-							<p>El curso-taller Uso de recursos de información de internet para el trabajo académico es una Experiencia Educativa que forma parte del Programa de Formación de Académicos (ProFa), con un valor de tres créditos. Tiene como finalidad ofrecer a los catedráticos las directrices y herramientas necesarias para la búsqueda, selección y uso de recursos de información de internet a partir del respeto a los derechos de autor, la responsabilidad docente y la innovación pedagógica.</p>
-							<p>Su estrategia metodológica se basa en el análisis de legalidades y artículos referentes a los derechos de autor en internet, la identificación y clasificación de dichos recursos según sus licencias de uso, así como la discusión e intercambio de ideas en torno a la relación entre respeto a las legalidades y el desempeño pedagógico. Tales evidencias se estructurarán en reportes de lectura, participación en foros electrónicos, y un ejercicio de búsqueda y selección de recursos de internet de código libre que serán integrados en una propuesta pedagógica llamada clase muestra.</p>
+						<div class="accordion-body" id="textoPresentacion">
+							$@textoPresentacion
 						</div>
 					</div>
 				</div>
@@ -86,8 +85,8 @@
 						</button>
 					</h2>
 					<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad" data-bs-parent="#acordeonInformacion">
-						<div class="accordion-body">
-							<p>El académico identifica las categorías de recursos de información en internet y las reglas de utilización que conllevan, a partir de la revisión de legalidades internacionales en materia de derechos de autor en internet, considerando una actitud responsable, crítica e innovadora, con el fin de lograr una selección eficaz y eficiente de los recursos de información para su desempeño docente.</p>
+						<div class="accordion-body" id="textoUnidad">
+							$@textoUnidad
 						</div>
 					</div>
 				</div>
@@ -101,7 +100,7 @@
 					<div class="circuloModulo" id="cicrculoModulo1"></div>
 				</div>
 				<div class="col align-self-center">
-					<div class="contenidoModulo"><p class="textoModulo">Módulo 1: Enseñanza de las artes visuales en Veracruz</p></div>
+					<div class="contenidoModulo"><p class="textoModulo">$@tituloModulo1</p></div>
 				</div>
 			</div>
 			<br>
@@ -110,7 +109,7 @@
 					<div class="circuloModulo" id="cicrculoModulo2"></div>
 				</div>
 				<div class="col align-self-center">
-					<div class="contenidoModulo"><p class="textoModulo">Módulo 2: Apreciación de la música clásica</p></div>
+					<div class="contenidoModulo"><p class="textoModulo">$@tituloModulo2</p></div>
 				</div>
 			</div>
 			<br>
@@ -119,7 +118,7 @@
 					<div class="circuloModulo" id="cicrculoModulo3"></div>
 				</div>
 				<div class="col align-self-center">
-					<p class="textoModulo">Módulo 3: Arte y cultura china</p>
+					<p class="textoModulo">$@tituloModulo3</p>
 				</div>
 			</div>
 			<br>
@@ -194,6 +193,7 @@
 			</div>
 		</div>
 		<!---------------------- /Pie de página ---------------------->
+		<script src="js/contenidoIndex.js"></script>
 		<script src="js/scriptIndex.js"></script>
 	</body>
 </html>

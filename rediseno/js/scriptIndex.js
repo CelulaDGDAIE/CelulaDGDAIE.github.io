@@ -1,3 +1,4 @@
+cargarContenido();
 window.onscroll = function() {scrollFunction()};
 function scrollFunction(){
 	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -14,4 +15,11 @@ function abrir_menu_lateral() {
 
 function cerrar_menu_lateral() {
   document.getElementById("menuLateral").style.display = "none";
+}
+function cargarContenido(){
+	const contenidoIndex = JSON.parse(contenido);
+	document.getElementById("tituloPresentacion").innerHTML = contenidoIndex.tituloPresentacion;
+	document.getElementById("tituloPresentacionScroll").innerHTML = contenidoIndex.tituloPresentacion;
+	document.getElementById("textoPresentacion").innerHTML = contenidoIndex.textoPresentacion;
+	document.getElementById("textoUnidad").innerHTML = contenidoIndex.textoUnidad;
 }
