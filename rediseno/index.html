@@ -38,7 +38,7 @@
 					<div class="col align-self-center" style="text-align: center;">
 						<img id="imagenLogoScroll" src="imagenes/logo.png" class="img-fluid" alt="logo">
 					</div>
-					<div class="col-7">
+					<div class="col-7 align-self-center">
 						Arpa Jarocha ¡Conocela!
 					</div>
 				</div>
@@ -141,28 +141,45 @@
 		<!---------------------- Contenido ---------------------->
 		<br>
 		<!---------------------- Sobre la EE ---------------------->
-		<div class="container">
-			<div class="row" style="background-color: #6CBDB4;">
-				<div class="col">
-					<button type="button" class="btn btn-secondary">Autoría de la EE</button>
+		<div class="container-fluid">
+			<div class="row aireSobreEE fondoVerde"></div>
+			<div class="row fondoVerde">
+				<div class="col-4 align-self-center">
+					<button type="button" class="btn botonSobreEE">Autoría de la EE <i class="bi bi-people-fill"></i> </button>
 				</div>
-				<div class="col">
-					<button type="button" class="btn btn-secondary">Presiciones</button>
+				<div class="col-4 align-self-center">
+					<button type="button" class="btn botonSobreEE">Presiciones <i class="bi bi-clipboard-check-fill"></i></button>
 				</div>
-				<div class="col">
-					<button type="button" class="btn btn-secondary">Programa de la EE</button>
+				<div class="col-4 align-self-center">
+					<button type="button" class="btn botonSobreEE">Programa de la EE <i class="bi bi-file-earmark-arrow-down-fill"></i></button>
 				</div>
 			</div>
+			<div class="row aireSobreEE fondoVerde"></div>
 		</div>
 		<!---------------------- /Sobre la EE ---------------------->
 		<!---------------------- Disclaimer ---------------------->
 		<div class="container">
-			<div class="row" style="background-color: #4C5BFC;">
-				<div class="col-1"></div>
+			<div class="row fondoAzul">
 				<div class="col">
-					<button type="button" class="btn btn-secondary"><em>Disclaimer</em></button>
+					<br>
+					<div class="accordion accordion-flush" id="acordeonDisclaimer">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="encabezadoDisclaimer" >
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contenidoDisclaimer" aria-expanded="false" aria-controls="flush-collapseOne" id="boton-disclaimer">
+									<em>Disclaimer</em>
+								</button>
+							</h2>
+							<div id="contenidoDisclaimer" class="accordion-collapse collapse" aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+								<div class="accordion-body">
+									<p class="referencia" >
+										<sup clas="contadorReferencia">1</sup> Lambtron. (2015). <em>Kinder Theory, a modern dance performed by Daria L.</em> [Imagen]. Recuperado de: <a href="https://www.youtube.com/watch?v=jAsOisASxmc">Enlace</a>.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
 				</div>
-				<div class="col-1"></div>
 			</div>
 		</div>
 		<!---------------------- /Disclaimer ---------------------->
