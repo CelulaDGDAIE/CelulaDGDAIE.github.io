@@ -2,6 +2,9 @@
 body{
 	background-color: #dbdbdb;
 }
+a{
+	text-decoration: none;
+}
 /******************Clases******************/
 .aireSobreEE{
 	height: 20px;
@@ -130,3 +133,16 @@ body{
 	font-size: 20pt;
 	font-weight: bold;
 }
+
+
+@media only screen and (min-width: 1000px) {
+	#cuadroPresentacion{
+		display: none;
+	}
+	#encabezadoScroll{
+		display: none;
+	}
+	#acordeonInformacion{
+		display: none;
+	}
+  }

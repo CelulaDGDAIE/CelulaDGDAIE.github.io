@@ -11,8 +11,11 @@
 		<script src="js/bootstrap.bundle.min.js"></script>
 	</head>
 	<body>
+
+
+
 		<!---------------------- Cuadro de presentacion ---------------------->
-		<div id="cuadroPresentacion" class="container">
+		<div id="cuadroPresentacion" class="container-fluid">
 			<div class="row">
 				<div class="col-6 align-self-center centrado">
 					<img id="imagenLogo" src="imagenes/logo.png" class="img-fluid" alt="logo">
@@ -62,7 +65,7 @@
 		
 		
 		<!---------------------- Contenido ---------------------->
-		<div class="container">
+		<div class="container-fluid">
 			<!-------------- Información general -------------->
 			<p class="textoSeccion">Información general</p>
 			<div class="accordion" id="acordeonInformacion">
@@ -95,42 +98,50 @@
 			<br>
 			<!-------------- Desarrollo de la EE -------------->
 			<p class="textoSeccion">Desarrollo de la experiencia educativa</p>
-			<div class="row campoModulo">
-				<div class="col-2">
-					<div class="circuloModulo" id="cicrculoModulo1"></div>
+			<a href="modulo1.html">
+				<div class="row campoModulo centrado">
+					<div class="col-2">
+						<div class="circuloModulo" id="cicrculoModulo1"></div>
+					</div>
+					<div class="col align-self-center">
+						<div class="contenidoModulo"><p class="textoModulo" id="tituloModulo1">$@tituloModulo1</p></div>
+					</div>
 				</div>
-				<div class="col align-self-center">
-					<div class="contenidoModulo"><p class="textoModulo">$@tituloModulo1</p></div>
-				</div>
-			</div>
+			</a>
 			<br>
-			<div class="row campoModulo">
-				<div class="col-2 align-self-center">
-					<div class="circuloModulo" id="cicrculoModulo2"></div>
+			<a href="modulo2.html">
+				<div class="row campoModulo centrado">
+					<div class="col-2 align-self-center">
+						<div class="circuloModulo" id="cicrculoModulo2"></div>
+					</div>
+					<div class="col align-self-center">
+						<div class="contenidoModulo"><p class="textoModulo" id="tituloModulo2">$@tituloModulo2</p></div>
+					</div>
 				</div>
-				<div class="col align-self-center">
-					<div class="contenidoModulo"><p class="textoModulo">$@tituloModulo2</p></div>
-				</div>
-			</div>
+			</a>
 			<br>
-			<div class="row campoModulo centrado">
-				<div class="col-2 align-self-center">
-					<div class="circuloModulo" id="cicrculoModulo3"></div>
+			<a href="modulo2.html">
+				<div class="row campoModulo centrado">
+					<div class="col-2 align-self-center">
+						<div class="circuloModulo" id="cicrculoModulo3"></div>
+					</div>
+					<div class="col align-self-center">
+						<div class="contenidoModulo"><p class="textoModulo" id="tituloModulo3">$@tituloModulo3</p></div>
+					</div>
 				</div>
-				<div class="col align-self-center">
-					<p class="textoModulo">$@tituloModulo3</p>
-				</div>
-			</div>
+			</a>
 			<br>
 			<div class="row">
 				<div class="col"></div>
 				<div class="col">
 					<div class="card" style="width: 12rem;">
-					  <img src="imagenes/evaluacion-color.png" class="card-img-top" alt="...">
-					  <div class="card-body">
-						<p class="card-text">Revisa la evaluación de desempeño</p>
-						
-					  </div>
+						<img src="imagenes/evaluacion-color.png" class="card-img-top" alt="...">
+					  	<div class="card-body">
+							<p class="card-text">Revisa la evaluación de desempeño</p>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEvaluacion">
+								Ver
+							</button>
+					  	</div>
 					</div>
 				</div>
 				<div class="col"></div>
@@ -142,14 +153,14 @@
 		<!---------------------- Sobre la EE ---------------------->
 		<div class="container-fluid">
 			<div class="row aireSobreEE fondoVerde"></div>
-			<div class="row fondoVerde">
-				<div class="col-4 align-self-center">
-					<button type="button" class="btn botonSobreEE">Autoría de la EE <i class="bi bi-people-fill"></i> </button>
+			<div class="row fondoVerde" style="text-align: center;">
+				<div class="col-sm-4 align-self-center">
+					<button type="button" class="btn botonSobreEE" data-bs-toggle="modal" data-bs-target="#modalAutoria">Autoría de la EE <i class="bi bi-people-fill"></i> </button>
 				</div>
-				<div class="col-4 align-self-center">
+				<div class="col-sm-4 align-self-center">
 					<button type="button" class="btn botonSobreEE">Presiciones <i class="bi bi-clipboard-check-fill"></i></button>
 				</div>
-				<div class="col-4 align-self-center">
+				<div class="col-sm-4 align-self-center">
 					<button type="button" class="btn botonSobreEE">Programa de la EE <i class="bi bi-file-earmark-arrow-down-fill"></i></button>
 				</div>
 			</div>
@@ -157,7 +168,7 @@
 		</div>
 		<!---------------------- /Sobre la EE ---------------------->
 		<!---------------------- Disclaimer ---------------------->
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row fondoAzul">
 				<div class="col">
 					<br>
@@ -170,8 +181,8 @@
 							</h2>
 							<div id="contenidoDisclaimer" class="accordion-collapse collapse" aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
 								<div class="accordion-body">
-									<p class="referencia" >
-										<sup clas="contadorReferencia">1</sup> Lambtron. (2015). <em>Kinder Theory, a modern dance performed by Daria L.</em> [Imagen]. Recuperado de: <a href="https://www.youtube.com/watch?v=jAsOisASxmc">Enlace</a>.
+									<p class="referencia" id="referencias">
+										<sup class="contadorReferencia">1</sup> Lambtron. (2015). <em>Kinder Theory, a modern dance performed by Daria L.</em> [Imagen]. Recuperado de: <a href="https://www.youtube.com/watch?v=jAsOisASxmc">Enlace</a>.
 									</p>
 								</div>
 							</div>
@@ -193,6 +204,52 @@
 			</div>
 		</div>
 		<!---------------------- /Pie de página ---------------------->
+
+
+
+		<!---------------------- Modales ---------------------->
+		<!---------------------- Modal Evaluacion ---------------------->
+		<div class="modal fade" id="modalEvaluacion" tabindex="-1" aria-labelledby="modalEvaluacion" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="modalEvaluacionEtiqueta">Evaluación de desempeño</h5>
+				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+				  $@evaluacion
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!---------------------- Modal Evaluacion ---------------------->
+		  <!---------------------- Modal Autoria ---------------------->
+		<div class="modal fade" id="modalAutoria" tabindex="-1" aria-labelledby="modalAutoria" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="modalAutoriaEtiqueta">Autoría de la EE</h5>
+				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+				  $@autoria
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!---------------------- Modal EvAutoria ---------------------->
+		<!---------------------- Modales ---------------------->
+
+
+
+
+
 		<script src="js/contenidoIndex.js"></script>
 		<script src="js/scriptIndex.js"></script>
 	</body>
