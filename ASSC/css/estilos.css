@@ -1,0 +1,11 @@
+
+@import "responsividad/index1100.css" screen and (min-width: 1100px);
+@import "responsividad/index1200.css" screen and (min-width: 1200px);
+@import "responsividad/index1300.css" screen and (min-width: 1300px);
+@import "responsividad/index1400.css" screen and (min-width: 1400px);
+@import "responsividad/index1500.css" screen and (min-width: 1500px);
+@import "responsividad/index1600.css" screen and (min-width: 1600px);
+@import "responsividad/index1700.css" screen and (min-width: 1700px);
+@import "responsividad/index1800.css" screen and (min-width: 1800px);
+@import "responsividad/index1900.css" screen and (min-width: 1900px);
+@import "estiloIndex.css";
