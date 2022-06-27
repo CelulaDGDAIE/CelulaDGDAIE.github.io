@@ -1,3 +1,5 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -11,14 +13,41 @@
 		<script src="js/bootstrap.bundle.min.js"></script>
 	</head>
 	<body>
-
-
-
-		<!---------------------- Cuadro de presentacion ---------------------->
+		<!-------------------------------------------- Encabezado Escritorio ---------------------->
+		<div class= "container-fluid sticky" id="encabezadoEscritorio">
+			<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+			<div class="row">
+				
+				<div class="col align-self-center centrado">
+					<p id="tituloEscritorio">$@tituloEscritorio</p>
+				</div>
+				<div class="col-1"></div>
+				<div class="col-1 align-self-center">
+					<a href="#" class="enlaceModulo"><strong>Inicio</strong></a>
+				</div>
+				<div class="col-1 align-self-center">
+					<a href="fase1.html" class="enlaceModulo enlaceActivo"><strong>Fase 1</strong></a>
+				</div>
+				<div class="col-1 align-self-center">
+					<a href="fase2.html" class="enlaceModulo enlaceActivo"><strong>Fase 2</strong></a>
+				</div>
+				<div class="col-1 align-self-center">
+					<a href="fase3.html" class="enlaceModulo enlaceActivo"><strong>Fase 3</strong></a>
+				</div>
+				<div class="col-3"></div>
+				
+			</div>
+		</div>
+		<div id = "compensacionEncabezadoEscritorio"></div>
+		<!-------------------------------------------- /Encabezado Escritorio---------------------->
+		
+		<!-------------------------------------------- Cuadro de presentacion ---------------------->
 		<div id="cuadroPresentacion" class="container-fluid">
 			<div class="row">
+				<h5 id="cintillo">Universidad Veracruzana</h5>
+			</div>
+			<div class="row">
 				<div class="col-6 align-self-center centrado">
-					<img id="imagenLogo" src="imagenes/logo.png" class="img-fluid" alt="logo">
 					<p id="tituloPresentacion">$@tituloPresentacion</p>
 				</div>
 				<div class="col-6 align-self-center centrado">
@@ -27,47 +56,56 @@
 			</div>
 			<div class="row" id="airePresentacion"></div>
 		</div>
-		<!---------------------- /Cuadro de presentacion ---------------------->
+		<!-------------------------------------------- /Cuadro de presentacion ---------------------->
 
-
-
-		<!---------------------- Encabezado en Scroll ---------------------->
+		<!-------------------------------------------- Encabezado en Scroll ---------------------->
 		<div id="encabezadoScroll">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="col align-self-center">
+					<span id="cintilloScroll">Universidad Veracruzana</span>
+				</div>
+				<div class="row">
+					<div class="col-2" >
 						<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i class="bi bi-list"></i></button>
 					</div>
-					<div class="col align-self-center" style="text-align: center;">
-						<img id="imagenLogoScroll" src="imagenes/logo.png" class="img-fluid" alt="logo">
-					</div>
-					<div class="col-7 align-self-center" id="tituloPresentacionScroll">
+					<div class="col" id="tituloPresentacionScroll">
 						$@tituloPresentacionScroll
 					</div>
 				</div>
 			</div>
 		</div>
-		<!---------------------- /Encabezado en Scroll ---------------------->
+		<!-------------------------------------------- /Encabezado en Scroll ---------------------->
 	
-	
-		<!---------------------- Menú lateral ---------------------->
+		<!-------------------------------------------- Menú lateral ---------------------->
 		<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
-		  <button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
-		  <a href="#" class="w3-bar-item w3-button" ><i class="bi bi-house-door"></i> Inicio</a>
-		  <a href="#" class="w3-bar-item w3-button">Modulo 1</a>
-		  <a href="#" class="w3-bar-item w3-button">Modulo 2</a>
-		  <a href="#" class="w3-bar-item w3-button">Modulo 3</a>
+			<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+			<a href="#" class="w3-bar-item w3-button" ><i class="bi bi-house-door"></i> Inicio</a>
+			<a href="#" class="w3-bar-item w3-button">Modulo 1</a>
+			<a href="#" class="w3-bar-item w3-button">Modulo 2</a>
+			<a href="#" class="w3-bar-item w3-button">Modulo 3</a>
 		</div>
-		<!----------------------/Menú lateral---------------------->
+		<!--------------------------------------------/Menú lateral---------------------->
 		
-		
+		<!-------------------------------------------- Banner ---------------------->
+		<div class="video-container" id="banner">
+			<div class="overlay"></div>
+			<video autoplay muted loop>
+				<source src="videos/banner.mp4" type="video/mp4" />
+			</video>
+		</div>
+		<!-------------------------------------------- /Banner ---------------------->
 		<br>
-		
-		
-		<!---------------------- Contenido ---------------------->
+
+
+
+		<!-------------------------------------------- Contenido ---------------------->
 		<div class="container-fluid">
 			<!-------------- Información general -------------->
 			<p class="textoSeccion">Información general</p>
+			
+			
+			
+			<!-------------- Información general Movil-------------->
 			<div class="accordion" id="acordeonInformacion">
 				<div class="accordion-item">
 					<h2 class="accordion-header" id="encabezadoPresentacion">
@@ -94,82 +132,222 @@
 					</div>
 				</div>
 			</div>
+			<!-------------- /Información general Movil-------------->
+			
+			
+			
+			<!-------------- /Información general Escritorio-------------->
+			<div id="diapositivasInformacion">
+				<div class="row aire fondoVerde">
+					<div class="col-2 vacio"></div>
+					<div class="col fondoVerde" id="aireSuperior"></div>
+					<div class="col-2 vacio"></div>
+				</div>
+				<div class="row fondoVerde" id="cuerpoCarrusel">
+					<div class="col-2 vacio"></div>
+					<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+						<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
+					</div>
+					<div class="col align-self-center centrado">
+						<img src="imagenes/presentacion.jpg" class="img-fluid" id="imagenDiapositivas" alt="presentacion">
+					</div>
+					<div class="col-4 align-self-center centrado">
+						<div id="tituloCarrusel">
+							<strong><i class="bi bi-info-circle-fill"></i> Presentacion</strong>
+						</div>
+						<div id="textoCarrusel">
+							$@textoPresentacion
+						</div>
+					</div>
+					<div class="col-1 col align-self-center centrado" id="columnaDerecha">
+						<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
+					</div>
+					<div class="col-2 vacio"></div>
+				</div>
+				<div class="row aire fondoVerde">
+					<div class="col-2 vacio"></div>
+					<div class="col fondoVerde" id="aireInferior"></div>
+					<div class="col-2 vacio"></div>
+				</div>
+			</div>
+			<!-------------- /Información general Escritorio-------------->
+
+			
 			<!-------------- /Información general -------------->
 			<br>
 			<!-------------- Desarrollo de la EE -------------->
+			
 			<p class="textoSeccion">Desarrollo de la experiencia educativa</p>
-			<a href="modulo1.html">
-				<div class="row campoModulo centrado">
-					<div class="col-2">
-						<div class="circuloModulo" id="cicrculoModulo1"></div>
+			<!-------------- Desarrollo de la EE Escritorio-------------->
+			<div id="desarrolloEscritorio" class="container-fluid">
+				<div class="row">
+					<div class="col-2"></div>
+					<div class="col">
+						<div class="row">
+							<div class="col moduloContenido" id="modulo1" onclick="location.href = 'fase1.html';">
+								<p class="textoModuloEscritorio" id="tituloModulo1Movil">$@tituloModulo1</p>
+							</div>
+							<div class="col-1"></div>
+							<div class="col moduloContenido" id="modulo2" onclick="location.href = 'fase2.html';">
+								<p class="textoModuloEscritorio" id="tituloModulo2Movil">$@tituloModulo2</p>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-2"></div>
+							<div class="col moduloContenido" id="modulo3" onclick="location.href = 'fase3.html';">
+								<p class="textoModuloEscritorio" id="tituloModulo3Movil">$@tituloModulo3</p>
+							</div>
+							<div class="col-2"></div>
+						</div>
 					</div>
-					<div class="col align-self-center">
-						<div class="contenidoModulo"><p class="textoModulo" id="tituloModulo1">$@tituloModulo1</p></div>
-					</div>
+					<div class="col-1"></div>
+					<div class="col-2 evaluacion" data-bs-toggle="modal" data-bs-target="#modalEvaluacion"></div>
+					<div class="col-2"></div>
 				</div>
-			</a>
-			<br>
-			<a href="modulo2.html">
-				<div class="row campoModulo centrado">
-					<div class="col-2 align-self-center">
-						<div class="circuloModulo" id="cicrculoModulo2"></div>
-					</div>
-					<div class="col align-self-center">
-						<div class="contenidoModulo"><p class="textoModulo" id="tituloModulo2">$@tituloModulo2</p></div>
-					</div>
-				</div>
-			</a>
-			<br>
-			<a href="modulo2.html">
-				<div class="row campoModulo centrado">
-					<div class="col-2 align-self-center">
-						<div class="circuloModulo" id="cicrculoModulo3"></div>
-					</div>
-					<div class="col align-self-center">
-						<div class="contenidoModulo"><p class="textoModulo" id="tituloModulo3">$@tituloModulo3</p></div>
-					</div>
-				</div>
-			</a>
-			<br>
-			<div class="row">
-				<div class="col"></div>
-				<div class="col">
-					<div class="card" style="width: 12rem;">
-						<img src="imagenes/evaluacion-color.png" class="card-img-top" alt="...">
-					  	<div class="card-body">
-							<p class="card-text">Revisa la evaluación de desempeño</p>
-							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEvaluacion">
-								Ver
-							</button>
-					  	</div>
-					</div>
-				</div>
-				<div class="col"></div>
 			</div>
+			<!-------------- /Desarrollo de la EE Escritorio-------------->
+			
+			<!-------------- Desarrollo de la EE Movil-------------->
+			<div id="desarrolloMovil">
+				<a href="modulo1.html">
+					<div class="row campoModulo centrado">
+						<div class="col-1">
+							<div class="circuloModulo" id="circuloModulo1"></div>
+						</div>
+						<div class="col align-self-center">
+							<div class="contenidoModulo"><p class="textoModulo" id="tituloModulo1">$@tituloModulo1</p></div>
+						</div>
+					</div>
+				</a>
+				<br>
+				<a href="modulo2.html">
+					<div class="row campoModulo centrado">
+						<div class="col-1 align-self-center">
+							<div class="circuloModulo" id="circuloModulo2"></div>
+						</div>
+						<div class="col align-self-center">
+							<div class="contenidoModulo"><p class="textoModulo" id="tituloModulo2">$@tituloModulo2</p></div>
+						</div>
+					</div>
+				</a>
+				<br>
+				<a href="modulo2.html">
+					<div class="row campoModulo centrado">
+						<div class="col-1 align-self-center">
+							<div class="circuloModulo" id="circuloModulo3"></div>
+						</div>
+						<div class="col align-self-center">
+							<div class="contenidoModulo"><p class="textoModulo" id="tituloModulo3">$@tituloModulo3</p></div>
+						</div>
+					</div>
+				</a>
+				<br>
+				<div class="row">
+					<div class="col"></div>
+					<div class="col">
+						<div class="card" style="width: 12rem;">
+							<img src="imagenes/evaluacion-color.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEvaluacion">
+									Ver
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col"></div>
+				</div>
+			</div>
+			<!-------------- /Desarrollo de la EE Movil-------------->
 			<!-------------- /Desarrollo de la EE -------------->
 		</div>
 		<!---------------------- Contenido ---------------------->
 		<br>
+		<p class="textoSeccion">Sobre la experiencia educativa</p>
 		<!---------------------- Sobre la EE ---------------------->
 		<div class="container-fluid">
-			<div class="row aireSobreEE fondoVerde"></div>
-			<div class="row fondoVerde" style="text-align: center;">
-				<div class="col-sm-4 align-self-center">
-					<button type="button" class="btn botonSobreEE" data-bs-toggle="modal" data-bs-target="#modalAutoria">Autoría de la EE <i class="bi bi-people-fill"></i> </button>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col">
+					<br>
+					<div class="accordion accordion-flush" id="acordeonCreditos">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="encabezadoCreditos" >
+								<button 
+									class="accordion-button collapsed fondoAcordeon letraBlanca"
+								 	type="button" 
+									data-bs-toggle="collapse" 
+									data-bs-target="#contenidoCreditos" 
+									aria-expanded="false" 
+									aria-controls="flush-collapseOne" 
+								>
+									<em>Creditos</em>
+								</button>
+							</h2>
+							<div id="contenidoCreditos" class="accordion-collapse collapse" aria-labelledby="encabezadoCreditos" data-bs-parent="#acordeonCreditos">
+								<div class="accordion-body" id="textoCreditos">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion accordion-flush" id="acordeonPresiciones">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="encabezadoPresiciones" >
+								<button 
+									class="accordion-button collapsed fondoAcordeon letraBlanca"
+								 	type="button" 
+									data-bs-toggle="collapse" 
+									data-bs-target="#contenidoPresiciones" 
+									aria-expanded="false" 
+									aria-controls="flush-collapseOne" 
+								>
+									<em>Presiciones</em>
+								</button>
+							</h2>
+							<div id="contenidoPresiciones" class="accordion-collapse collapse" aria-labelledby="encabezadoPresiciones" data-bs-parent="#acordeonPresiciones">
+								<div class="accordion-body">
+									<p class="referencia" id="referencias">
+										<sup class="contadorReferencia">1</sup>.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion accordion-flush" id="acordeonPrograma">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="encabezadoPrograma" >
+								<button 
+									class="accordion-button collapsed fondoAcordeon letraBlanca"
+								 	type="button" 
+									data-bs-toggle="collapse" 
+									data-bs-target="#contenidoPrograma" 
+									aria-expanded="false" 
+									aria-controls="flush-collapseOne" 
+								>
+									<em>Programa</em>
+								</button>
+							</h2>
+							<div id="contenidoPrograma" class="accordion-collapse collapse" aria-labelledby="encabezadoPrograma" data-bs-parent="#acordeonPrograma">
+								<div class="accordion-body">
+									<p class="referencia" id="referencias">
+										<sup class="contadorReferencia">1</sup>.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
 				</div>
-				<div class="col-sm-4 align-self-center">
-					<button type="button" class="btn botonSobreEE">Presiciones <i class="bi bi-clipboard-check-fill"></i></button>
-				</div>
-				<div class="col-sm-4 align-self-center">
-					<button type="button" class="btn botonSobreEE">Programa de la EE <i class="bi bi-file-earmark-arrow-down-fill"></i></button>
-				</div>
+				<div class="col-2"></div>
+
 			</div>
-			<div class="row aireSobreEE fondoVerde"></div>
 		</div>
 		<!---------------------- /Sobre la EE ---------------------->
 		<!---------------------- Disclaimer ---------------------->
 		<div class="container-fluid">
 			<div class="row fondoAzul">
+				<div class="col-2"></div>
 				<div class="col">
 					<br>
 					<div class="accordion accordion-flush" id="acordeonDisclaimer">
@@ -182,7 +360,7 @@
 							<div id="contenidoDisclaimer" class="accordion-collapse collapse" aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
 								<div class="accordion-body">
 									<p class="referencia" id="referencias">
-										<sup class="contadorReferencia">1</sup> Lambtron. (2015). <em>Kinder Theory, a modern dance performed by Daria L.</em> [Imagen]. Recuperado de: <a href="https://www.youtube.com/watch?v=jAsOisASxmc">Enlace</a>.
+										<sup class="contadorReferencia">1</sup> 
 									</p>
 								</div>
 							</div>
@@ -190,67 +368,53 @@
 					</div>
 					<br>
 				</div>
+				<div class="col-2"></div>
 			</div>
 		</div>
 		<!---------------------- /Disclaimer ---------------------->
 		<!---------------------- Pie de página ---------------------->
-		<div class="container" id="pie">
+		<div class="container">
 			<div class="row">
-				<div class="col-3"></div>
-				<div class="col">
-					<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv">
+				<div class="col centrado">
+					<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
 				</div>
-				<div class="col-3"></div>
 			</div>
+			<br>
+			<div class="row"  >
+				<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+			</div>
+		</div>
+		<div id="pieFijo">
+		  <span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
 		</div>
 		<!---------------------- /Pie de página ---------------------->
 
 
 
-		<!---------------------- Modales ---------------------->
-		<!---------------------- Modal Evaluacion ---------------------->
-		<div class="modal fade" id="modalEvaluacion" tabindex="-1" aria-labelledby="modalEvaluacion" aria-hidden="true">
-			<div class="modal-dialog">
-			  <div class="modal-content">
-				<div class="modal-header">
-				  <h5 class="modal-title" id="modalEvaluacionEtiqueta">Evaluación de desempeño</h5>
-				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		<!-------------------------------------------- Modales ---------------------->
+			<!---------------------- Modal Evaluacion ---------------------->
+			<div class="modal fade" id="modalEvaluacion" tabindex="-1" aria-labelledby="modalEvaluacion" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="modalEvaluacionEtiqueta">Evaluación de desempeño</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							$@evaluacion
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+						</div>
+					</div>
 				</div>
-				<div class="modal-body">
-				  $@evaluacion
-				</div>
-				<div class="modal-footer">
-				  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-				</div>
-			  </div>
 			</div>
-		  </div>
-		  <!---------------------- Modal Evaluacion ---------------------->
-		  <!---------------------- Modal Autoria ---------------------->
-		<div class="modal fade" id="modalAutoria" tabindex="-1" aria-labelledby="modalAutoria" aria-hidden="true">
-			<div class="modal-dialog">
-			  <div class="modal-content">
-				<div class="modal-header">
-				  <h5 class="modal-title" id="modalAutoriaEtiqueta">Autoría de la EE</h5>
-				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-				  $@autoria
-				</div>
-				<div class="modal-footer">
-				  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		  <!---------------------- Modal EvAutoria ---------------------->
-		<!---------------------- Modales ---------------------->
+			<!---------------------- Modal Evaluacion ---------------------->
+		<!-------------------------------------------- Modales ---------------------->
 
-
-
-
-
+		<!-------------------------------------------- Script ---------------------->
 		<script src="js/contenidoIndex.js"></script>
 		<script src="js/scriptIndex.js"></script>
+		<!-------------------------------------------- /Script ---------------------->
 	</body>
 </html>
