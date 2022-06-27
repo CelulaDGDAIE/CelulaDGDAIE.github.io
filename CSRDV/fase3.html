@@ -54,14 +54,15 @@
 	}
 	</style>
 	<script>
-		function mostrarMensaje(mensaje){
+		function mostrarMensajePredial(){
 			Swal.fire({
-				html: mensaje
-			}).then((result) => {
-				if (result.isConfirmed) {
-				  cerrarSesion();
-				} else if (result.isDenied) {
-				}
+				html: '<p style="font-size: 25px;">El <span style="color: blue;"><b>predial</b></span> es un impuesto que cobra un gobierno municipal al ciudadano due&ntilde;o de un inmueble registrado a su nombre en el Registro P&uacute;blico de la Propiedad de ese municipio. Un inmueble es una propiedad que no puede trasladarse, como un terreno, casa, departamento, edificio o f&aacute;brica. Los recursos obtenidos mediante el cobro del impuesto predial son utilizados por los gobiernos municipales para financiar obras de infraestructura que beneficien a los habitantes como calles, banquetas, alumbrado, parques p&uacute;blicos, etc&eacute;tera.</p>'
+			})
+		}
+		
+		function mostrarMensajeTenencia(){
+			Swal.fire({
+				html: '<p style="font-size: 25px;">La <span style="color: blue;"><b>tenencia vehicular</b></span> es un tipo de impuesto directo que se cobra al ciudadano por poseer un veh&iacute;culo automotor, independiente del uso que le d&eacute;.</p>'
 			})
 		}
 	</script>
@@ -345,7 +346,7 @@
 					<div style="border-radius: 5px;" class="collapse multi-collapse" id="impuestosDirectos">
 						<div class="card card-body">
 							<p>Los impuestos pueden ser <span class="font-weight-bold">directos</span> cuando gravan al ingreso, la riqueza, el capital o el patrimonio y que afectan en forma directa al sujeto del impuesto.</p>
-							<p>En M&eacute;xico, el principal impuesto directo es el <span class="font-weight-bold">Impuesto Sobre la Renta</span> (ISR) que se aplica a todas las personas que hayan obtenido ingresos (exceptuando donaciones y herencias). Otros impuestos directos son el pago <a href="javascript:mostrarMensaje('<p>El predial es un impuesto que cobra un gobierno municipal al ciudadano due&ntilde;o de un inmueble registrado a su nombre en el Registro P&uacute;blico de la Propiedad de ese municipio. Un inmueble es una propiedad que no puede trasladarse, como un terreno, casa, departamento, edificio o f&aacute;brica. Los recursos obtenidos mediante el cobro del impuesto predial son utilizados por los gobiernos municipales para financiar obras de infraestructura que beneficien a los habitantes como calles, banquetas, alumbrado, parques p&uacute;blicos, etc&eacute;tera.</p>')"><span class="font-weight-bold">predial</span></a> y la <a><span class="font-weight-bold">tenencia vehicular</span></a>, que gravan el patrimonio.</p>
+							<p>En M&eacute;xico, el principal impuesto directo es el <span class="font-weight-bold">Impuesto Sobre la Renta</span> (ISR) que se aplica a todas las personas que hayan obtenido ingresos (exceptuando donaciones y herencias). Otros impuestos directos son el pago <a href="javascript:mostrarMensajePredial()"><span class="font-weight-bold">predial</span></a> y la <a href="javascript:mostrarMensajeTenencia()"><span class="font-weight-bold">tenencia vehicular</span></a>, que gravan el patrimonio.</p>
 						</div>
 					</div>
 					<br>
@@ -357,6 +358,17 @@
 						</div>
 					</div>
 					<br>
+					<p>Para obtener m&aacute;s informaci&oacute;n puedes consultar los siguientes links:</p>
+					
+					<br>
+					<div class="row">
+						<div class="column col-md-6" style="text-align: center;">
+							<a href="https://www.bbva.mx/educacion-financiera/blog/que-es-la-tenencia-vehicular.html" target="_blank"><img src="images/fase2/2.3 icono descarga 2.png" style="width: 10%" alt="Foto"></a>
+						</div>
+						<div class="column col-md-6" style="text-align: center;">
+							<a href="https://www.crabi.com/blog/tramites-vehiculares-tenencia-vehicular" target="_blank"><img src="images/fase2/2.3 icono descarga 2.png" style="width: 10%" alt="Foto"></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
