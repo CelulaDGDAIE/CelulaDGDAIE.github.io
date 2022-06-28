@@ -13,33 +13,33 @@
 	 }
 	@media(min-width: 576px){
 		.container-sm,.container{
-			 max-width:540px
+			 max-width:800px
 		}
 	}@media(min-width: 768px){
 		.container-md,.container-sm,.container{
-			max-width:600px
+			max-width:800px
 		}
 	}
 	@media(min-width: 992px){
 		.container-lg,.container-md,.container-sm,.container{
-			max-width:700px
+			max-width:100px
 		}
 	}
 	@media(min-width: 1200px){
 		.container-xl,.container-lg,.container-md,.container-sm,.container{
-			max-width:800px
+			max-width:100px
 		}
 	}
 	
 	
 	@media(min-width: 1800px){/*computadora DAFIE*/
 		.container-xl,.container-lg,.container-md,.container-sm,.container{
-			max-width:1300px
+			max-width:100px
 		}
 	}
 	@media(min-width: 1900px){
 		.container-xl,.container-lg,.container-md,.container-sm,.container{
-			max-width:1300px
+			max-width:100px
 		}
 	}
 	
@@ -52,14 +52,14 @@
 	}*/
 	@media(min-width: 2000px){
 		.container-xl,.container-lg,.container-md,.container-sm,.container{
-			max-width:1390px
+			max-width:100px
 		}
 	}
 	.row{
 		display:flex;
 		flex-wrap:wrap;
-		margin-right:140px;
-		margin-left:140px;
+		margin-right:10px;
+		margin-left:10px;
 	}
 	@media(min-width: 1800px){/*computadora DAFIE*/
 		

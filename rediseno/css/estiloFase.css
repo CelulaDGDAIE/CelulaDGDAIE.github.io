@@ -6,31 +6,13 @@ a{
 	text-decoration: none;
 }
 /******************Clases******************/
-.aireSobreEE{
-	height: 20px;
-}
-.botonSobreEE{
-	background-color: #DBDBDB;
-	color: #0550FF;
-	border-color: #0550FF;
-}
-.campoModulo{
-	background-color: #18529D;
-	border-radius: 25px;
-}
 .centrado{
 		text-align: center;
 }
 .contadorReferencia{
 	font-size:60%;
 }
-.circuloModulo{
-	border-radius: 50%;
-	width: 75px;
-    height: 75px;
-    background: #355CA7;
-    border: 3px solid #000;
-}
+
 .fondoAcordeon{
 	background-color: #18529D;
 	border: 2px solid #6cbdb4;
@@ -51,24 +33,15 @@ a{
 	margin:0.3em;
 	color: black;
 }
-.textoModulo{
-	margin-left: 20px;
-	color: white;
-	font-weight: bold;
-}
 .textoSeccion{
 	color: #1e56aa;
 	font-size: 20pt;
 	font-weight: bold;
 }
-
 /******************IDs******************/
 #airePresentacion{
 	background-color: white;
 	height: 10px;
-}
-#banner{
-	display: none;
 }
 #boton-disclaimer{
 	background-color: #69B7AE;
@@ -94,30 +67,6 @@ a{
 	top: 0;
 	font-size: 10px; 
 	font-weight: none;
-}
-#circuloModulo1{
-	background-image: url('../imagenes/modulo1.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 50px 50px;
-}
-#circuloModulo2{
-	background-image: url('../imagenes/modulo2.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 50px 50px;
-}
-#circuloModulo3{
-	background-image: url('../imagenes/modulo3.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 50px 50px;
-}
-#circuloModulo4{
-	background-image: url('../imagenes/modulo4.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 50px 50px;
 }
 #compensacionEncabezadoEscritorio{
 	display:none;
@@ -150,7 +99,10 @@ a{
 	display: none;
 }
 #imagenPortada{
-	height: 250px;
+	max-height: 250px;
+}
+#logoUV{
+    max-height: 200px;
 }
 #pie{
 	background-color: #dbdbdb;
@@ -162,13 +114,32 @@ a{
    width: 100%;
    background-color: #0E47A1;
 }
+#subtituloPresentacionMovil{
+    color: #1e56aa;
+	font-size: 2em;
+	font-weight: bold;
+}
+#subtituloPresentacionScroll{
+    color: #1e56aa;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+#subtituloPresentacion{
+	color: #1e56aa;
+	font-size: 2em;
+	font-weight: bold;
+}
 #textoPresentacion, #textoUnidad{
 	text-align: justify;
 }
 #tituloPresentacion{
 	color: #1e56aa;
-	font-size: 20pt;
+	font-size: 1em;
 	font-weight: bold;
+}
+.tituloSeccion{
+	font-size: 4em;
+	color: white;
 }
 
 
@@ -204,18 +175,7 @@ a{
 		color: #2c5766;
 		text-decoration: underline;
 	}
-	.evaluacion{
-		background-color: #4c5bfc;
-		background-image: url("../imagenes/evaluacion.png");
-		background-repeat: no-repeat;
-		background-size: 200px 200px;
-		background-position: center;
-		transition: 0.6s ease;
-	}
-	.evaluacion:hover{
-		background-size: 230px 230px;
-		cursor: pointer;
-	}
+
 	
 	.flechaCarrusel{
 		background-color: black;
@@ -248,48 +208,7 @@ a{
 	.letraBlanca{
 		color: white;
 	}
-	.moduloContenido{
-		background-color: #18529D;
-		background-repeat: no-repeat;
-		background-size: 100px 100px;
-		background-position: center;
-		height: 10%;
-		text-align: center;
-		color: white;
-		font-weight: bold;
-		font-size: 2em;
-		transition: 0.6s ease;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.moduloContenido:hover{
-		background-size: 0px 0px;
-		cursor: pointer;
-		background-image: none;
-	}
-	.moduloContenido:hover .textoModuloEscritorio{
-		opacity:1; 
-		transition: opacity 0.2s ease-in-out;
-	}
-	#banner .overlay{
-		position:absolute;
-		top:0;
-		left:0;
-		height:100%;
-		width:100%;
-		background: rgb(108,189,180);
-		background: -moz-linear-gradient(90deg, rgba(108,189,180,1) 20%, rgba(76,91,252,1) 50%, rgba(53,92,167,1) 80%);
-		background: -webkit-linear-gradient(90deg, rgba(108,189,180,1) 20%, rgba(76,91,252,1) 50%, rgba(53,92,167,1) 80%);
-		background: linear-gradient(90deg, rgba(108,189,180,1) 20%, rgba(76,91,252,1) 50%, rgba(53,92,167,1) 80%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6cbdb4",endColorstr="#355ca7",GradientType=1);
-		opacity:0.6;
-		z-index:-5;
-		}
-	.textoModuloEscritorio{
-		opacity:0;
-		transition: opacity 0.5s ease-in-out;
-	}
+
 	.textoSeccion{
 		text-align: center;
 	}
@@ -305,23 +224,6 @@ a{
 	}
 	.vacio{
 		background-color: #f2f2f2;
-	}
-	.video-container {
-		height: 500px;
-		width: 100%;
-		position: relative;
-	}
-
-	.video-container video {
-	  width: 100%;
-	  height: 100%;
-	  position: absolute;
-	  object-fit: cover;
-	  z-index: -10;
-	}
-
-	#banner{
-		display: block;
 	}
 	#compensacionEncabezadoEscritorio{
 		display: block;
@@ -359,7 +261,7 @@ a{
 	}
 	#tituloEscritorio{
 		color: #1e56aa;
-		font-size: 20pt;
+		font-size: 1.2em;
 		font-weight: bold;
 	}
 	
