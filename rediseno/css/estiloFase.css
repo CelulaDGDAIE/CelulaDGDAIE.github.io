@@ -98,6 +98,38 @@ a{
 	transition: 0.2s;
 	display: none;
 }
+#fondo1{
+	background-image: url('imagenes/Fase1/fondo.png'); 
+	background-position: center; 
+	background-size: cover; 
+	border-radius: 50%; 
+	height: 300px; 
+	width: 300px;
+}
+#fondo1:hover {
+	background-image: url('imagenes/Fase1/video1.gif'); 
+	background-position: center; 
+	background-size: cover; 
+	border-radius: 50%; 
+	height: 300px; 
+	width: 300px;
+}
+#fondo2{
+	background-image: url('imagenes/Fase1/fondo2.png'); 
+	background-position: center; 
+	background-size: cover; 
+	border-radius: 50%; 
+	height: 300px; 
+	width: 300px;
+}
+#fondo2:hover {
+	background-image: url('imagenes/Fase1/video2.gif'); 
+	background-position: center; 
+	background-size: cover; 
+	border-radius: 50%; 
+	height: 300px; 
+	width: 300px;
+}
 #imagenPortada{
 	max-height: 250px;
 }
@@ -126,7 +158,7 @@ a{
 }
 #subtituloPresentacion{
 	color: #1e56aa;
-	font-size: 2em;
+	font-size: 1.3em;
 	font-weight: bold;
 }
 #textoPresentacion, #textoUnidad{
@@ -244,6 +276,7 @@ a{
 		position: fixed;
 		width: 100%;
 	}
+	
 	#logoUV{
 		max-height: 200px;
 	}
@@ -261,7 +294,7 @@ a{
 	}
 	#tituloEscritorio{
 		color: #1e56aa;
-		font-size: 1.2em;
+		font-size: 0.7em;
 		font-weight: bold;
 	}
 	
