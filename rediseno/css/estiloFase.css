@@ -57,6 +57,14 @@ a{
 	color: white;
 	font-weight: bold;
 }
+#botonEvidencias{
+	background-color: #355ca7; 
+	height: 250px;
+	background-image: url('../imagenes/actividad.png');
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center;
+}
 #cintillo{
 	background-color: #0E47A1;
 	color: white;
