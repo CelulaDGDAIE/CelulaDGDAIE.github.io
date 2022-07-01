@@ -536,7 +536,7 @@
 		<div class="row">
 			<div class="col-3"></div>
 			<div class="col align-self-center" >
-				<a href="https://www.uv.mx/" target="_blank">
+				<a href="https://www.uv.mx/" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
 					<div id="botonEvidencias">
 						
 					</div>
@@ -544,6 +544,9 @@
 			</div>
 			<div class="col-3"></div>
 		</div>
+
+		<br>
+		<br>
 
 
 
@@ -611,63 +614,72 @@
 	<!-------------------------------------------- Modales ---------------------->
 	<!--Ventanas Modales-->
 	<!-- Modal -->
-
-	<div class="modal fade" id="modalVideo1" tabindex="-1" role="dialog" aria-labelledby="modalVideo1"
-		aria-hidden="true">
-		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">
-						Parte 1
-					</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div style="text-align: center;">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/oNcxk-Gnc5s"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<div class="row">
+					  <div class="col-md-1 align-self-center"><a class="flechaCarrusel" onclick="cambiarEvidencia()">&#10094;</a></div>
+					  <div class="col">
+						<div id="evidencia1">
+							<p style="text-align: center;">&nbsp;<strong>Foro 1. Presentaci&oacute;n y expectativas (1/2)</strong></p>
+							<p><strong>Descripci&oacute;n:</strong></p>
+							<ol>
+							<li>Elabore un breve comentario en el que comparta cu&aacute;les son sus motivos para participar en este curso y qu&eacute; relaci&oacute;n tienen con lo expuesto en el video <em>Estilo de vida saludable</em>. No olvide mencionar su nombre, experiencia educativa que imparte y regi&oacute;n en la que labora.</li>
+							<li>Este foro no ser&aacute; considerado para la evaluaci&oacute;n del desempe&ntilde;o.</li>
+							<li>Su intervenci&oacute;n deber&aacute; apegarse estrictamente a las consideraciones descritas en las&nbsp;<a href="documentos/reglasForo.pdf" target="_blank">Reglas para participar en los foros de discusi&oacute;n</a>.</li>
+							</ol>
+							<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+							<ol>
+							<li>Apego a las instrucciones.</li>
+							<li>Redacci&oacute;n y ortograf&iacute;a adecuadas.</li>
+							<li>Retroalimentaci&oacute;n de la participaci&oacute;n de, al menos, dos compa&ntilde;eros.</li>
+							</ol>
+							<p><strong>Lineamientos de entrega:</strong></p>
+							<ol>
+							<li>Suba sus comentarios al apartado&nbsp;<strong>Foro 1. Presentaci&oacute;n y expectativas</strong>, en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el&nbsp;<strong>Calendario</strong>&nbsp;de entregas.</li>
+							</ol>
+						</div>
+						<div id="evidencia2">
+							<p style="text-align: center;"><strong>Foro 2. An&aacute;lisis del video </strong><strong><em>Comic: captura de los sistemas alimentarios</em> (2/2)</strong><strong>.</strong></p>
+							<p><strong>Descripci&oacute;n:</strong></p>
+							<ol>
+							<li>Observe el video <em>C&oacute;mic: la captura corporativa de los sistemas alimentarios</em>.</li>
+							<li>Reflexione acerca del efecto que tiene el consumo de alimentos en el medio ambiente y en la salud f&iacute;sica de las personas, respondiendo a las siguientes preguntas:
+							<ol type="a">
+							<li>&iquest;Hab&iacute;a pensado en los m&uacute;ltiples efectos que tiene sobre el medio ambiente nuestra forma de alimentarnos?</li>
+							<li>&iquest;Qu&eacute; puede hacer para disminuir las consecuencias negativas de su consumo de alimentos en el ambiente?</li>
+							<li>Desde su &aacute;rea de trabajo, &iquest;qu&eacute; puede hacer para promover el consumo de alimentos saludables y ser amigable con el planeta?</li>
+							<li>Con su familia y amistades, &iquest;c&oacute;mo puede promover el consumo de alimentos saludable y ser amigable con el planeta?</li>
+							</ol>
+							</li>
+							</ol>
+							<p><strong>Criterios de desempe&ntilde;o:</strong></p>
+							<ol>
+							<li>Congruencia entre los temas revisados</li>
+							<li>Participaci&oacute;n oportuna en el foro.</li>
+							</ol>
+							<p><strong>Lineamientos de entrega:</strong></p>
+							<ol>
+							<li>Suba su evidencia al apartado&nbsp;<strong>Foro 2. An&aacute;lisis del video </strong><strong><em>Comic: captura corporativa de los sistemas alimentarios</em></strong>, en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el&nbsp;<strong>Calendario</strong>&nbsp;de entregas.</li>
+							</ol>
+						</div>
+					  </div>
+					  <div class="col-md-1 align-self-center">
+						<a class="flechaCarrusel" onclick="cambiarEvidencia()">&#10095;</a>
+					  </div>
 					</div>
 				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-outline-secondary waves-effect" data-dismiss="modal">
-						Cerrar
-					</button>
-				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
 			</div>
 		</div>
-	</div>
-
-
-	<div class="modal fade" id="modalVideo2" tabindex="-1" role="dialog" aria-labelledby="modalVideo2"
-		aria-hidden="true">
-		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">
-						Parte 2
-					</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div style="text-align: center;">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/v9I99vRCLvw"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-outline-secondary waves-effect" data-dismiss="modal">
-						Cerrar
-					</button>
-				</div>
-			</div>
 		</div>
 	</div>
 

@@ -1,6 +1,7 @@
 cargarContenido();
 window.onscroll = function() {scrollFunction()};
 let carruselInformacionDiapositivaActual = "presentacion";
+let evidenciaActual = 1;
 let anchoPantalla = window.innerWidth;
 if (anchoPantalla>1000){
 	let alturaPantalla = window.innerHeight;
@@ -49,33 +50,15 @@ function cargarContenido(){
 	document.getElementById("textoCarrusel").innerHTML = contenidoFase.textoProposito;
 	document.getElementById("textoUnidad").innerHTML = contenidoFase.textoSituacion;
 }
-function cambiarDiapositiva(){
-	var aireSuperior = document.getElementById("aireSuperior");
-	var aireInferior = document.getElementById("aireInferior");
-	var cuerpoCarrusel = document.getElementById("cuerpoCarrusel");
-	const contenidoFase = JSON.parse(contenidoEE);
-	if(carruselInformacionDiapositivaActual == "presentacion"){
-		carruselInformacionDiapositivaActual = "unidad";
-        document.getElementById("columnaImagen").style.display = "none";
-		aireSuperior.classList.remove("fondoVerde");
-		aireInferior.classList.remove("fondoVerde");
-		cuerpoCarrusel.classList.remove("fondoVerde");
-		aireSuperior.classList.add("fondoAzul");
-		aireInferior.classList.add("fondoAzul");
-		cuerpoCarrusel.classList.add("fondoAzul");
-		document.getElementById("textoCarrusel").innerHTML = contenidoFase.textoSituacion;
-		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-intersect'></i> Situación problematizadora</strong>";
+function cambiarEvidencia(){
+	
+	if(evidenciaActual == 1){
+		evidenciaActual = 2;
+		document.getElementById("evidencia1").style.display = "none";
+		document.getElementById("evidencia2").style.display = "block";
 	}else{
-		carruselInformacionDiapositivaActual = "presentacion";
-		aireSuperior.classList.remove("fondoAzul");
-		aireInferior.classList.remove("fondoAzul");
-		cuerpoCarrusel.classList.remove("fondoAzul");
-		aireSuperior.classList.add("fondoVerde");
-		aireInferior.classList.add("fondoVerde");
-        document.getElementById("columnaImagen").style.display = "block";
-		cuerpoCarrusel.classList.add("fondoVerde");
-		document.getElementById("textoCarrusel").innerHTML = contenidoFase.textoProposito;
-		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Propósito</strong>";
-		document.getElementById("imagenDiapositivas").src="imagenes/Fase1/Proposito.jpg";
+		evidenciaActual = 1;
+		document.getElementById("evidencia2").style.display = "none";
+		document.getElementById("evidencia1").style.display = "block";
 	}
 }
