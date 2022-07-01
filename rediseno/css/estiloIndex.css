@@ -9,6 +9,9 @@ a{
 .aireSobreEE{
 	height: 20px;
 }
+.botonIcono{
+	border: none;
+}
 .botonSobreEE{
 	background-color: #DBDBDB;
 	color: #0550FF;
@@ -40,6 +43,9 @@ a{
 }
 .fondoVerde{
 	background-color: #6CBDB4;
+}
+.icono{
+	max-width: 5em;
 }
 .letraBlanca{
 	color: white;
@@ -200,9 +206,14 @@ a{
 		color: black;
 		transition: 0.6s ease;
 	}
+	.enlaceModulo:hover{
+		color: #777b8e;
+		cursor: default;
+	}
 	.enlaceActivo:hover{
 		color: #2c5766;
 		text-decoration: underline;
+		cursor: pointer;
 	}
 	.evaluacion{
 		background-color: #4c5bfc;
