@@ -1,0 +1,383 @@
+/******************Etiquetas******************/
+body{
+	background-color: #f2f2f2;
+}
+a{
+	text-decoration: none;
+}
+/******************Clases******************/
+.aireSobreEE{
+	height: 20px;
+}
+.botonIcono{
+	border: none;
+}
+.botonSobreEE{
+	background-color: #DBDBDB;
+	color: #0550FF;
+	border-color: #0550FF;
+}
+.campoModulo{
+	background-color: #18529D;
+	border-radius: 25px;
+}
+.centrado{
+		text-align: center;
+}
+.contadorReferencia{
+	font-size:60%;
+}
+.circuloModulo{
+	border-radius: 50%;
+	width: 75px;
+    height: 75px;
+    background: #355CA7;
+    border: 3px solid #000;
+}
+.fondoAcordeon{
+	background-color: #18529D;
+	border: 2px solid #6cbdb4;
+}
+.fondoAzul{
+	background-color: #4C5BFC;
+}
+.fondoVerde{
+	background-color: #6CBDB4;
+}
+.icono{
+	max-width: 5em;
+}
+.letraBlanca{
+	color: white;
+}
+.referencia{
+	font-size: small;
+	margin-left:15.65pt;
+	text-indent:-15.65pt;
+	margin:0.3em;
+	color: black;
+}
+.textoModulo{
+	margin-left: 20px;
+	color: white;
+	font-weight: bold;
+}
+.textoSeccion{
+	color: #1e56aa;
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+/******************IDs******************/
+#airePresentacion{
+	background-color: white;
+	height: 10px;
+}
+#banner{
+	display: none;
+}
+#boton-disclaimer{
+	background-color: #69B7AE;
+	color: white;
+}
+#botonPresentacion{
+	background-color: #3CADB8;
+	color: white;
+	font-weight: bold;
+}
+#botonUnidad{
+	background-color: #4C5BFC;
+	color: white;
+	font-weight: bold;
+}
+#cintillo{
+	background-color: #0E47A1;
+	color: white;
+}
+#cintilloScroll{
+	background-color: #0E47A1;
+	color: white;
+	top: 0;
+	font-size: 10px; 
+	font-weight: none;
+}
+#circuloModulo1{
+	background-image: url('../imagenes/modulo1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+}
+#circuloModulo2{
+	background-image: url('../imagenes/modulo2.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+}
+#circuloModulo3{
+	background-image: url('../imagenes/modulo3.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+}
+#circuloModulo4{
+	background-image: url('../imagenes/modulo4.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+}
+#compensacionEncabezadoEscritorio{
+	display:none;
+}
+#cuadroPresentacion{
+	background-color: white;
+	border-bottom: solid;
+	border-width: 1px;
+}
+#desarrolloEscritorio{
+	display: none;
+}
+#diapositivasInformacion{
+	display: none;
+}
+#encabezadoEscritorio{
+	display: none;
+}
+#encabezadoScroll{
+	background-color: white;
+	padding: 20px 10px; 
+	color: #1e56aa;
+	text-align: letf; 
+	font-size: 15px; 
+	font-weight: bold;
+	position: fixed; 
+	top: 0;
+	width: 100%; 
+	transition: 0.2s;
+	display: none;
+}
+#imagenPortada{
+	height: 250px;
+}
+#pie{
+	background-color: #dbdbdb;
+}
+#pieFijo {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #0E47A1;
+}
+#textoPresentacion, #textoUnidad{
+	text-align: justify;
+}
+#tituloPresentacion{
+	color: #1e56aa;
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+
+@media only screen and (min-width: 1000px) {
+	/*Desaparece elementos moviles*/
+	#cuadroPresentacion{
+		display: none;
+	}
+	#desarrolloMovil{
+		display: none;
+	}
+	#encabezadoScroll{
+		display: none;
+	}
+	#acordeonInformacion{
+		display: none;
+	}
+	/*/Desaparece elementos moviles*/
+	
+	/*Aparece elementos de escritorio*/
+	.aire{
+		height: 30px;
+	}
+	.enlaceModulo{
+		color: #777b8e;
+		z-index:100;
+	}
+	.enlaceActivo{
+		color: black;
+		transition: 0.6s ease;
+	}
+	.enlaceModulo:hover{
+		color: #777b8e;
+		cursor: default;
+	}
+	.enlaceActivo:hover{
+		color: #2c5766;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	.evaluacion{
+		background-color: #4c5bfc;
+		background-image: url("../imagenes/evaluacion.png");
+		background-repeat: no-repeat;
+		background-size: 200px 200px;
+		background-position: center;
+		transition: 0.6s ease;
+	}
+	.evaluacion:hover{
+		background-size: 230px 230px;
+		cursor: pointer;
+	}
+	
+	.flechaCarrusel{
+		background-color: black;
+		font-size: 2em;
+		cursor: pointer;
+		width: auto;
+		padding: 16px;
+		color: white;
+		background-color: black;
+		font-weight: bold;
+		font-size: 18px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+	}
+	.flechaCarrusel:hover {
+	  background-color: #757575;
+	  color: black;
+	}
+	.fondoAcordeon{
+		background-color: #18529D;
+		border: 2px solid #6cbdb4;
+	}
+	.fondoAzul{
+		background-color: #4c5bfc;
+	}
+	.fondoVerde{
+		background-color: #6cbdb4;
+	}
+	.letraBlanca{
+		color: white;
+	}
+	.moduloContenido{
+		background-color: #18529D;
+		background-repeat: no-repeat;
+		background-size: 100px 100px;
+		background-position: center;
+		height: 10%;
+		text-align: center;
+		color: white;
+		font-weight: bold;
+		font-size: 2em;
+		transition: 0.6s ease;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.moduloContenido:hover{
+		background-size: 0px 0px;
+		cursor: pointer;
+		background-image: none;
+	}
+	.moduloContenido:hover .textoModuloEscritorio{
+		opacity:1; 
+		transition: opacity 0.2s ease-in-out;
+	}
+	#banner .overlay{
+		position:absolute;
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+		background: rgb(108,189,180);
+		background: -moz-linear-gradient(90deg, rgba(108,189,180,1) 20%, rgba(76,91,252,1) 50%, rgba(53,92,167,1) 80%);
+		background: -webkit-linear-gradient(90deg, rgba(108,189,180,1) 20%, rgba(76,91,252,1) 50%, rgba(53,92,167,1) 80%);
+		background: linear-gradient(90deg, rgba(108,189,180,1) 20%, rgba(76,91,252,1) 50%, rgba(53,92,167,1) 80%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6cbdb4",endColorstr="#355ca7",GradientType=1);
+		opacity:0.6;
+		z-index:-5;
+		}
+	.textoModuloEscritorio{
+		opacity:0;
+		transition: opacity 0.5s ease-in-out;
+	}
+	.textoSeccion{
+		text-align: center;
+	}
+	.tituloModulo{
+		width: 300px; 
+		top: 80px;
+		position: absolute;
+		color: white;
+		z-index: 10;
+	}
+	.tituloModulo h3{
+		font-weight: bold;
+	}
+	.vacio{
+		background-color: #f2f2f2;
+	}
+	.video-container {
+		height: 500px;
+		width: 100%;
+		position: relative;
+	}
+
+	.video-container video {
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	  object-fit: cover;
+	  z-index: -10;
+	}
+
+	#banner{
+		display: block;
+	}
+	#compensacionEncabezadoEscritorio{
+		display: block;
+	}
+	#desarrolloEscritorio{
+		display: block;
+	}
+	#diapositivasInformacion{
+		display: block;
+		color: white;
+		font-size: 1.5em;
+	}
+	#encabezadoEscritorio{
+		padding: 10px 16px;
+		background: white;
+		color: black;
+		display: block;
+		position: fixed;
+		width: 100%;
+	}
+	#logoUV{
+		max-height: 200px;
+	}
+	#modulo1{
+		background-image: url("../imagenes/modulo1.png");
+	}
+	#modulo2{
+		background-image: url("../imagenes/modulo2.png");
+	}
+	#modulo3{
+		background-image: url("../imagenes/modulo3.png");
+	}
+	#textoCarrusel{
+		text-align: justify;
+	}
+	#tituloEscritorio{
+		color: #1e56aa;
+		font-size: 20pt;
+		font-weight: bold;
+	}
+	
+
+	
+		
+		
+	/*/Aparece elementos de escritorio*/
+	
+  }
