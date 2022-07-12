@@ -14,14 +14,19 @@ a{
 }
 
 .fondoAcordeon{
-	background-color: #18529D;
-	border: 2px solid #6cbdb4;
+	background-color: #3391fc;
+	border: 2px solid #63ccb6;
 }
 .fondoAzul{
-	background-color: #4C5BFC;
+	background-color: #3391fc;
 }
 .fondoVerde{
-	background-color: #6CBDB4;
+	background-color: #63ccb6;
+}
+.fuente{
+	margin-left:15.65pt;
+	text-indent:-15.65pt;
+	text-align: left;
 }
 .letraBlanca{
 	color: white;
@@ -120,6 +125,15 @@ a{
 	display:block;
 }
 #evidencia2{
+	display:none;
+}
+#evidencia3{
+	display:none;
+}
+#evidencia4{
+	display:none;
+}
+#evidencia5{
 	display:none;
 }
 #fondo1{
@@ -260,10 +274,10 @@ a{
 		border: 2px solid #6cbdb4;
 	}
 	.fondoAzul{
-		background-color: #4c5bfc;
+		background-color: #3391fc;
 	}
 	.fondoVerde{
-		background-color: #6cbdb4;
+		background-color: #63ccb6;
 	}
 	.letraBlanca{
 		color: white;

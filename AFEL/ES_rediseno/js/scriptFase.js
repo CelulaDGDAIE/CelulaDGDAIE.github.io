@@ -50,16 +50,68 @@ function cargarContenido(){
 	document.getElementById("textoCarrusel").innerHTML = contenidoFase.textoProposito;
 	document.getElementById("textoUnidad").innerHTML = contenidoFase.textoSituacion;
 }
-function cambiarEvidencia(){
+function siguienteEvidencia(){
+	switch (evidenciaActual) {
+		case 1:
+			evidenciaActual = 2;
+			document.getElementById("evidencia1").style.display = "none";
+			document.getElementById("evidencia2").style.display = "block";
+		break;
+		case 2:
+			evidenciaActual = 3;
+			document.getElementById("evidencia2").style.display = "none";
+			document.getElementById("evidencia3").style.display = "block";
+		break;
+		case 3:
+			evidenciaActual = 4;
+			document.getElementById("evidencia3").style.display = "none";
+			document.getElementById("evidencia4").style.display = "block";
+		break;
+		case 4:
+			evidenciaActual = 5;
+			document.getElementById("evidencia4").style.display = "none";
+			document.getElementById("evidencia5").style.display = "block";
+		break;
+		case 5:
+			evidenciaActual = 1;
+			document.getElementById("evidencia5").style.display = "none";
+			document.getElementById("evidencia1").style.display = "block";
+		break;
 	
-	if(evidenciaActual == 1){
-		evidenciaActual = 2;
-		document.getElementById("evidencia1").style.display = "none";
-		document.getElementById("evidencia2").style.display = "block";
-	}else{
-		evidenciaActual = 1;
-		document.getElementById("evidencia2").style.display = "none";
-		document.getElementById("evidencia1").style.display = "block";
+		default:
+			break;
+	}
+}
+function anteriorEvidencia(){
+	switch (evidenciaActual) {
+		case 1:
+			evidenciaActual = 5;
+			document.getElementById("evidencia1").style.display = "none";
+			document.getElementById("evidencia5").style.display = "block";
+		break;
+		case 2:
+			evidenciaActual = 1;
+			document.getElementById("evidencia2").style.display = "none";
+			document.getElementById("evidencia1").style.display = "block";
+		break;
+		case 3:
+			evidenciaActual = 2;
+			document.getElementById("evidencia3").style.display = "none";
+			document.getElementById("evidencia2").style.display = "block";
+		break;
+		case 4:
+			evidenciaActual = 3;
+			document.getElementById("evidencia4").style.display = "none";
+			document.getElementById("evidencia3").style.display = "block";
+		break;
+		case 5:
+			evidenciaActual = 4;
+			document.getElementById("evidencia5").style.display = "none";
+			document.getElementById("evidencia4").style.display = "block";
+		break;
+	
+		default:
+			break;
 	}
 }
 function cambiarDiapositiva(){
