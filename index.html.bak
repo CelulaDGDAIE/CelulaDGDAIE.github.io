@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  </head>
+  <body style="background: rgb(109,180,246);
+background: radial-gradient(circle, rgba(109,180,246,1) 0%, rgba(13,106,193,1) 26%, rgba(0,82,158,1) 59%);">
+	
+    <h1 style ="text-align: center; color: white;">
+	<img src="recursosIndex/flor-azul.jpg" alt="Logo UV" style="width: 5%;">
+	Virtualización de Experiencias Educativas</h1>
+	<h2 style ="text-align: center; color: white;">Experiencias educativas en desarrollo: </h2>
+    <br>
+  <div class="container">
+		
+	<div class="row">
+
+		
+		<div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+			<img src="recursosIndex/en-construccion.png" class="card-img-top" alt=" tarjeta">
+				<h5 class="card-title">Educación inclusiva. <span class="badge bg-warning text-black"><i class="bi bi-code-slash"></i></span></h5>
+				  <b>Progreso (16/06/2022)</b>
+				  <ul>
+					<li><strong>Index</strong>: <span style="color: purple;">Falta Banner, referencias, imagenes y programa <i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 1</strong>: <span style="color: purple;">Falta imagen proposito, video 1.2.1, imagen 1.2.3 <i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 2</strong>: <span style="color: purple;">Faltan imagen proposito, infografias 2.1.2 y 2.1.3, video 2.1.4, presentacion 2.2.1 <i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 3</strong>: <span style="color: #ffcc00;">En desarrollo <i class="bi bi-code-slash"></i></span></li>
+
+				  </ul>
+			  <a href="PROFA/EI_rediseno/index.html" class="btn btn-success">Ver EE</a>
+            </div>
+          </div>
+        </div>
+		<div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+			<img src="recursosIndex/en-construccion.png" class="card-img-top" alt=" tarjeta">
+				<h5 class="card-title">Equidad en salud <span class="badge bg-warning text-black"><i class="bi bi-code-slash"></i></span></h5>
+				  <b>Progreso (16/06/2022)</b>
+				  <ul>
+					<li><strong>Index</strong>: <span style="color: purple;">Falta Banner, referencias, imagenes y programa <i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 1</strong>: <span style="color: purple;">Faltan imagenes y presentaciones <i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 2</strong>: <span style="color: purple;">Faltan imagenes y presentación <i class="bi bi-card-checklist"></i></span></li>
+
+				  </ul>
+			  <a href="AFEL/ES_rediseno/index.html" class="btn btn-success">Ver EE</a>
+            </div>
+          </div>
+        </div>
+		<div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+			<img src="recursosIndex/CardASSC.png" class="card-img-top" alt=" tarjeta">
+				<h5 class="card-title">Alimentación sostenible para la salud colectiva. <span class="badge bg-warning text-black"><i class="bi bi-code-slash"></i></span></h5>
+				  <b>Progreso (16/06/2022)</b>
+				  <ul>
+					<li><strong>Index</strong>: <span style="color: purple;">Falta referencias y programa <i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 1</strong>: <span style="color: purple;">Falta disclaimer y referencias <i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 2</strong>: <span style="color: purple;">Faltan todos los recursos graficos <i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 3</strong>: <span style="color: #ffcc00;">En desarrollo <i class="bi bi-code-slash"></i></span></li>
+				  </ul>
+			  <a href="PROFA/ASSC_rediseno/index.html" class="btn btn-success">Ver EE</a>
+            </div>
+          </div>
+        </div>
+
+	</div>
+	<br>
+	<div class="row">
+
+		
+		<div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+			<img src="recursosIndex/cardPAAFP.png" class="card-img-top" alt=" tarjeta">
+				<h5 class="card-title">Producción de artículos académicos con fines de publicación <span class="badge bg-warning text-black"><i class="bi bi-code-slash"></i></span></h5>
+				  <b>Progreso (16/06/2022)</b>
+				  <ul>
+					<li><strong>Index</strong>: <span style="color: purple;">Faltan referencias, disclaimer, programa <i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 1</strong>: <span style="color: purple;">Faltan referencias, disclaimer <i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 2</strong>: <span style="color: purple;">Faltan imagenes e infografias <i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 3</strong>: <span style="color: #ffcc00;">En desarrollo <i class="bi bi-code-slash"></i></span></li>
+							
+
+				  </ul>
+			  <a href="EducacionContinua/PAAFP_rediseno/index.html" class="btn btn-success">Ver EE</a>
+            </div>
+          </div>
+        </div>
+		<div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+			<img src="recursosIndex/en-construccion.png" class="card-img-top" alt=" tarjeta">
+				<h5 class="card-title">Cómo ser responsable y disfrutar de la vida <span class="badge bg-warning text-black"><i class="bi bi-code-slash"></i></span></h5>
+				  <b>Progreso (16/06/2022)</b>
+				  <ul>
+					<li><strong>Index</strong>: <span style="color: purple;">Falta Banner, referencias, imagenes y programa <i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 1</strong>: <span style="color: purple;">Faltan imagenes y presentaciones <i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 2</strong>: <span style="color: #ffcc00;">En desarrollo <i class="bi bi-code-slash"></i></span></li>
+							
+
+				  </ul>
+			  <a href="AFEL/CSRDV_rediseno/index.html" class="btn btn-success">Ver EE</a>
+            </div>
+          </div>
+        </div>
+
+	</div>
+	<br>
+		
+		
+		<br>
+		<!--<div class="row">
+		
+		<div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+				<img src="recursosIndex/pruebas.png" class="card-img-top" alt=" tarjeta">
+				<h5 class="card-title">Pruebas y propuestas <span class="badge bg-warning text-dark"><i class="bi bi-code-slash"></i></span></h5>
+				  <ul>
+					<li><a href="pruebas/lineaTiempo.html">Linea Tiempo 1 (descartado)</a></li>
+					<li><a href="pruebas/lineaTiempo2.html">Linea Tiempo 2 (descartado)</a></li>
+					<li><a href="Plantilla/indexNuevo.html">Plantilla Nuevo Index (en desarrollo)</a></li>
+					<li><a href="OPCN/index.html">Orquesta del Propio Cuerpo (Articulate)</a></li>
+
+				  </ul>
+            </div>
+          </div>
+        </div>
+		</div>-->
+      
+    <br>
+
+    <br>
+	<h2 style ="text-align: center; color: white;">Experiencias educativas concluidas: </h2>
+	<br>
+	<div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="habitos/index.html">
+      <img src="recursosIndex/cardCSME.png" class="card-img-top" alt="CSME tarjeta">
+              <h5 class="card-title">¿Cómo ser mejor estudiante? <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="integracion/index.html">
+      <img src="recursosIndex/cardIEMEU.png" class="card-img-top" alt=" tarjeta">
+              <h5 class="card-title">Integración Económica México Estados Unidos <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="karate/index.html">
+      <img src="recursosIndex/cardKD.png" class="card-img-top" alt=" tarjeta">
+              <h5 class="card-title">Karate Do <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+      </div>
+	  <BR>
+	  <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="genero/index.html">
+      <img src="recursosIndex/cardPGV.png" class="card-img-top" alt=" tarjeta">
+              <h5 class="card-title">Perspectiva de Género para la vida <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="lectura/index.html">
+      <img src="recursosIndex/cardTPL.png" class="card-img-top" alt=" tarjeta">
+              <h5 class="card-title">Taller para promotores de lectura <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="discapacidad/index.html">
+      <img src="recursosIndex/cardTD.png" class="card-img-top" alt=" tarjeta">
+              <h5 class="card-title">Trascendiendo la discapacidad <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    <br>
+      <div class="row">
+        <div class="col-sm-4">
+          <a class="card"  style="color: black; text-decoration:none" href="OPC/index.html">
+            <div class="card-body">
+              <img src="recursosIndex/cardOPC.png" class="card-img-top" alt="OPC tarjeta">
+              <h5 class="card-title">Orquesta del propio cuerpo <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+
+      </div>
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <a class="card"  style="color: black; text-decoration:none" href="EFCS/index.html">
+        <img src="recursosIndex/cardEFCS.png" class="card-img-top" alt="EFCS tarjeta">
+              <h6 class="card-title">Ejercicio físico para el cuidado de la Salud <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h6>
+      </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="BFM/index.html">
+        <img src="recursosIndex/cardBFM.png" class="card-img-top" alt="BFM tarjeta">
+        <h5 class="card-title">Bienestar físico y mental <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="DPEMOA/index.html">
+      <img src="recursosIndex/cardDPEMOA.png" class="card-img-top" alt="DPEMOA tarjeta">
+              <h5 class="card-title">Diseño de proyectos educativos mediados por Objetos de Aprendizaje <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="EA/index.html">
+      <img src="recursosIndex/cardEA.png" class="card-img-top" alt="EA tarjeta">
+              <h5 class="card-title">Evaluaciones para los aprendizajes <span class="badge bg-success text-white"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <a class="card"  style="color: black; text-decoration:none" href="ASAU/index.html">
+      <img src="recursosIndex/cardASAU.png" class="card-img-top" alt="ASAU tarjeta">
+              <h5 class="card-title">El aprendizaje socioemocional del académico universitario <span class="badge bg-success text-white"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    <br>
+	<div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="BPTV/index.html">
+				<img src="recursosIndex/cardBPTV.png" class="card-img-top" alt=" tarjeta">
+				<h5 class="card-title">Buenas prácticas para la tutoría virtual <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="DGAPC/index.html">
+				<img src="recursosIndex/cardDGAPC.png" class="card-img-top" alt="Diplomado tarjeta">
+				<h5 class="card-title">Diplomado de Gestión y Administración de Proyectos Culturales <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+		<div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="EMDR/index.html">
+				<img src="recursosIndex/cardEMDR.png" class="card-img-top" alt="R tarjeta">
+              <h5 class="card-title">Curso de Estadística y manejo de datos con R  <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+	  <br>
+	  <div class="row">
+		<div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="HAN/index.html">
+			<img src="recursosIndex/cardHAN.png" class="card-img-top" alt="Hospital tarjeta">
+              <h5 class="card-title">Curso Iniciativa Hospital Amigo del Niño <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+		
+		<div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="HDEA/index.html">
+			<img src="recursosIndex/cardHDEA.png" class="card-img-top" alt="HDEA tarjeta">
+              <h5 class="card-title">Herramientas digitales para la enseñanza y el aprendizaje <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+		<div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="PDI/index.html">
+			<img src="recursosIndex/cardPDI.png" class="card-img-top" alt="PDI tarjeta">
+              <h5 class="card-title">Planeación didáctica inversa <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+      </div>
+	  <br>
+	  <div class="row">
+		<div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="BPDV/index.html">
+			<img src="recursosIndex/cardBPDV.png" class="card-img-top" alt="BPDV tarjeta">
+              <h5 class="card-title">Buenas prácticas en la docencia virtual <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+		<div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="Mozart/index.html">
+			<img src="recursosIndex/cardMozart.png" class="card-img-top" alt=" tarjeta">
+              <h5 class="card-title">La música de Mozart y su influencia en el desarrollo humano <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+		<div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="AJC/index.html">
+			<img src="recursosIndex/cardAJC.png" class="card-img-top" alt="AJC tarjeta">
+              <h5 class="card-title">Arpa jarocha ¡conócela! <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+      </div>
+	  <br>
+	  <div class="row">
+		<div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="ArtesE/index.html">
+			<img src="recursosIndex/cardArtes.png" class="card-img-top" alt="Artes tarjeta">
+              <h5 class="card-title">Artes en escena <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+		<div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="URIITA/index.html">
+			<img src="recursosIndex/cardURIITA.png" class="card-img-top" alt=" tarjeta">
+				<h5 class="card-title"> Uso de recursos de información de internet para el trabajo académico. <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+		<div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="GAA/index.html">
+			<img src="recursosIndex/cardGAA.png" class="card-img-top" alt=" tarjeta">
+				<h5 class="card-title">Gamificación para el aprendizaje autónomo. <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+      </div>
+	  <div class="row">
+		<div class="col-sm-4">
+          <div class="card">
+            <a class="card-body"  style="color: black; text-decoration:none" href="MABI/index.html">
+			<img src="recursosIndex/cardMABI.png" class="card-img-top" alt=" tarjeta">
+				<h5 class="card-title">Metodología para el aprendizaje basado en la investigación. <span class="badge bg-success"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+		<div class="col-sm-4">
+          <div class="card">
+            <a class="card-body" style="color: black; text-decoration:none"  href="LMCCDT/index.html">
+			<img src="recursosIndex/cardLMCCDT.png" class="card-img-top" alt=" tarjeta">
+				<h5 class="card-title">La música clásica cerca de ti. <span class="badge bg-success text-white"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+		<div class="col-sm-4">
+          <div class="card">
+            <a class="card-body" style="color: black; text-decoration:none"  href="UMAFV/index.html">
+			<img src="recursosIndex/cardUMAFV.png" class="card-img-top" alt=" tarjeta">
+				<h5 class="card-title">Una mirada al Folklore Veracruzano. <span class="badge bg-success text-white"><i class="bi bi-check-circle"></i></span></h5>
+            </a>
+          </div>
+        </div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-sm-4">
+          <div class="card">
+            <a class="card-body" style="color: black; text-decoration:none"  href="VMO/index.html">
+			<img src="recursosIndex/cardVMO.png" class="card-img-top" alt=" tarjeta">
+				<h5 class="card-title">El violín y la música orquestal. <span class="badge bg-success text-white"><i class="bi bi-check-circle"></i></span></h5>
+            </a
+          </div>
+        </div>
+	</div>
+	<br>
+	  
+	  <br>
+    </div>
+	<br>
+	<br>
+  </body>
+</html>
