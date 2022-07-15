@@ -1,0 +1,637 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">$@tituloEscritorio</p>
+				<p id="subtituloPresentacion">$@subtituloModulo1</p>
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="fase1.html" class="enlaceModulo enlaceActivo"><strong>Fase 1</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				
+				<a href="#" class="enlaceModulo"><strong>Fase 2</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="fase3.html" class="enlaceModulo enlaceActivo"><strong>Fase 3</strong></a>
+			</div>
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">$@tituloPresentacion</p>
+				<p id="subtituloPresentacionMovil">$@subtituloPresentacion</p>
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">$@tituloPresentacionScroll</p>
+					<p id="subtituloPresentacionScroll">$@subtituloPresentacion</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="#" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 2</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 3</a>
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenDiapositivas"
+						alt="presentacion">
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<div id="textoCarrusel">
+						$@textoPresentacion
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaDerecha">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de la Experiencia educativa</p>
+		<div class="row" style="color: white;">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold;" class="fondoVerde tituloSeccion">1. Biología
+				</h1>
+				<hr>
+			</div>
+			<div class="col-2"></div>
+		</div>
+
+
+
+		<div class="row" style="color: black;">
+			<div class="col-2"></div>
+			<div class="col">
+				<div style="float: left; margin-right: 15px;">
+					<img src="images/logoEminus.jpg" alt="Imagen pendiente" width="200" height="200"/>
+				</div>
+				<div>
+					<p>El conocimiento y comprensi&oacute;n de la biolog&iacute;a de todos los seres vivos nos ayuda a ser emp&aacute;ticos con la vida de otros organismos y con el medio ambiente. &iquest;Sabes qu&eacute; estudia la biolog&iacute;a?</p>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<br>
+		<div class="row" style="color: black;">
+			<div class="col-2"></div>
+			<div class="col">
+				<p>A continuaci&oacute;n, revisa la siguiente presentaci&oacute;n acerca de las ramas de la biolog&iacute;a:</p>
+				
+				<div style="text-align: center;">
+					<br>
+					<a href="https://prezi.com/euzhzssm4dvu/ramas-de-la-biologia/" target="_blank"><img src="images/fase2/2.3 icono descarga 2.png" style="width: 10%" alt="Foto"></a>
+				</div>
+				<br>
+				<p>Ahora, para reforzar la informaci&oacute;n antes presentada, revisa la siguiente tabla:</p>
+				
+				<p style="font-weight: bold; color: red; text-align: center;">Aquí va una tabla</p>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	  	<hr>
+		<br>
+		<br>
+		
+
+
+
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold; color: white;" class="fondoAzul tituloSeccion">2. Neurociencias</h1>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row" style="color: black;">
+			<div class="col-2"></div>
+			<div class="col">
+				<div style="float: left; margin-right: 15px;">
+					<img src="images/logoEminus.jpg" alt="Imagen pendiente" width="200" height="200"/>
+				</div>
+				<div>
+					<p>&iquest;Sabes cu&aacute;les son las funciones del sistema nervioso? Todo lo que somos y hacemos est&aacute; codificado en nuestro cerebro. Nuestras creencias, comportamientos, emociones y funciones b&aacute;sicas, tales como respirar, dormir y comer se originan y modulan en nuestro sistema nervioso. &iquest;Sabes c&oacute;mo son otros sistemas nerviosos?</p>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<br>
+		<div class="row" style="color: black;">
+			<div class="col-2"></div>
+			<div class="col">
+				<p>A continuaci&oacute;n revisa las siguientes lecturas para fortalecer tu conocimiento acerca de este tema:</p>
+				<p>&iquest;Por qu&eacute; estudiar c&oacute;mo funciona el cerebro? (p. 25):</p>
+				<div style="text-align: center;">
+					<br>
+					<a href="https://www.uv.mx/iice/files/2018/01/Diez-Anos-Celebrando-el-Cerebro-2.pdf" target="_blank"><img src="images/fase2/2.3 icono descarga 2.png" style="width: 10%" alt="Foto"></a>
+				</div>
+				<br>
+				<p>Brain Facts. Apuntes sobre el cerebro y el sistema nervioso:</p>
+				<div style="text-align: center;">
+					<br>
+					<a href="https://www.uv.mx/eneurobiologia/vols/2011/suplemento/BrainFacts.pdf" target="_blank"><img src="images/fase2/2.3 icono descarga 2.png" style="width: 10%" alt="Foto"></a>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+
+
+		
+		<hr>
+		<br>
+		<br>
+
+
+
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold; color: white;" class="fondoVerde tituloSeccion">3. Sexualidad</h1>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row" style="color: black;">
+			<div class="col-2"></div>
+			<div class="col">
+				<h4 class="titulo">2.3. Sexualidad.</h4>
+				<div style="float: left; margin-right: 15px;">
+					<img src="images/logoEminus.jpg" alt="Imagen pendiente" width="200" height="200"/>
+				</div>
+				<div>
+					<p>Conocer otras formas de pensamiento y analizar nuestras propias creencias nos ayuda a identificar el origen de los prejuicios. &iquest;Sabes la diferencia entre sexo y g&eacute;nero? &iquest;Piensas que la sexualidad es gen&eacute;tica o ambiental? &iquest;Qu&eacute; piensas del g&eacute;nero binario y no-binario? &iquest;Qu&eacute; piensas de la heterosexualidad, de la homosexualidad, de la transexualidad y de la bisexualidad?</p>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<br>
+		<div class="row" style="color: black;">
+			<div class="col-2"></div>
+			<div class="col">
+				<p>A continuaci&oacute;n, revisa los siguientes videos para comparar tus ideas y percepciones acerca de todas estas interrogantes: </p>
+				<br>
+				<div style="background-color: #fff"><!--Div por si se quiere editar el fondo de los tabs-->
+					<nav class="nav nav-pills flex-column flex-sm-row">
+					  <a class="flex-sm-fill text-sm-center nav-link active" data-bs-toggle="tab" data-bs-target="#ELCDG">Explainer: La Ciencia del Género</a>
+					  <a class="flex-sm-fill text-sm-center nav-link" data-bs-toggle="tab" data-bs-target="#CYEDPHGMEEDNS">Video faltante</a>
+					</nav>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="ELCDG" role="tabpanel" aria-labelledby="ELCDG-tab" style="text-align: center;">
+							<br>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/qhfYKTMchX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="tab-pane fade" id="CYEDPHGMEEDNS" role="tabpanel" aria-labelledby="CYEDPHGMEEDNS-tab" style="text-align: center;">
+							<br>
+							<a href="https://www.uv.mx/eneurobiologia/vols/2011/suplemento/BrainFacts.pdf" target="_blank"><img src="images/fase2/2.3 icono descarga 2.png" style="width: 10%" alt="Foto"></a>
+							
+							<p style="font-weight: bold; color: red; text-align: center;">Aquí debe ir un video pero en la maqueta está el enlace de un documento.</p>
+						</div>
+					</div>
+				</div><!--Termina el dive de fondo para tabs-->
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+
+
+
+		<div class="row" >
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold; color: white;" class="fondoAzul tituloSeccion">4. Idioma inglés
+				</h1>
+			</div>
+			<div class="col-2">
+
+			</div>
+		</div>
+
+		<div class="row" style="color: black;">
+			<div class="col-2"></div>
+			<div class="col">
+				<div style="float: right; margin-left: 15px;">
+					<img src="images/logoEminus.jpg" alt="Imagen pendiente" width="200" height="200"/>
+				</div>
+				<div>
+					<p>Estudiar y practicar otro idioma nos abre las puertas a una cultura diferente. Nos enteramos de otras costumbres y de otras formas de pensamiento. La ventaja de aprender ingl&eacute;s es que te puedes comunicar con personas de otros pa&iacute;ses, incluso con aquellos cuya lengua materna no es &eacute;sta. Es por ello que el ingl&eacute;s es un idioma considerado como universal. </p>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<br>
+		<div class="row" style="color: black;">
+			<div class="col-2"></div>
+			<div class="col">
+				<p>A continuaci&oacute;n, te propongo el siguiente ejercicio: revisa las siguientes dos ilustraciones de la Pir&aacute;mide de Maslow. Notar&aacute;s que una est&aacute; en espa&ntilde;ol y otra en ingl&eacute;s. Trata de identificar qu&eacute; palabra en ingl&eacute;s corresponde a cada palabra en espa&ntilde;ol.</p>
+				<p>El psic&oacute;logo estadounidense Abraham Harold Maslow es uno de los principales exponentes de la psicolog&iacute;a humanista. Dicha corriente postula la tendencia de los seres humanos hacia la salud mental, un ferviente deseo de fomentar su desarrollo individual de una manera continua y con el deseo pleno de su autorrealizaci&oacute;n.</p>
+				
+				<p style="font-weight: bold; color: red; text-align: center;">Aquí va la ilustración de la pirámide de Malsow</p>
+				
+				<p>Ahora, tambi&eacute;n en el siguiente texto realiza el mismo ejercicio, identifica qu&eacute; palabra en ingl&eacute;s corresponde a cada palabra en espa&ntilde;ol.</p>
+				
+				<p style="font-weight: bold; color: red; text-align: center;">Aquí va la una tabla</p>
+				
+				<br>
+				<p>&iquest;Te das cuenta? Al leer en ingl&eacute;s y en espa&ntilde;ol, al mismo tiempo, puedes asociar el significado de las palabras en ambos idiomas.</p>
+				<p>Ahora, consulta las siguientes lecturas para fortalecer tu conocimiento acerca de este tema:</p>
+				<p>Una lengua extranjera, &iquest;s&oacute;lo una herramienta para la comunicaci&oacute;n?</p>
+				<div style="text-align: center;">
+					<br>
+					<a href="https://www.redalyc.org/articulo.oa?id=87724141002" target="_blank"><img src="images/fase2/2.3 icono descarga 2.png" style="width: 10%" alt="Foto"></a>
+				</div>
+				<br>
+				<p>&iquest;Cu&aacute;l es la importancia de aprender otro idioma?</p>
+				<div style="text-align: center;">
+					<br>
+					<a href="https://www.compartirpalabramaestra.org/actualidad/blog/cual-es-la-importancia-de-aprender-otro-idioma" target="_blank"><img src="images/fase2/2.3 icono descarga 2.png" style="width: 10%" alt="Foto"></a>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+			<hr>
+			<br>
+			<br>
+
+
+			<div class="row" >
+				<div class="col-2"></div>
+				<div class="col">
+					<h1 style="text-align:center; font-weight: bold; color: white;" class="fondoVerde tituloSeccion">5. Medio ambiente y hábitos de consumo
+					</h1>
+				</div>
+				<div class="col-2">
+	
+				</div>
+			</div>
+
+			<div class="row" style="color: black;">
+				<div class="col-2"></div>
+				<div class="col">
+					<div style="float: left; margin-right: 15px;">
+						<img src="images/logoEminus.jpg" alt="Imagen pendiente" width="200" height="200"/>
+					</div>
+					<div>
+						<p>El cambio clim&aacute;tico es un problema que afecta a la humanidad entera. &iquest;C&oacute;mo tus h&aacute;bitos de consumo contribuyen al calentamiento global?</p>
+					</div>
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<br>
+			<div class="row" style="color: black;">
+				<div class="col-2"></div>
+				<div class="col">
+					<p>Actualmente contamos con una herramienta poderosa llamada internet. El internet hace posible que tengamos acceso a una cantidad casi ilimitada de informaci&oacute;n. Sin embargo, no todas las fuentes de informaci&oacute;n son confiables. &iquest;C&oacute;mo consumes informaci&oacute;n? &iquest;Cu&aacute;les son tus h&aacute;bitos como usuario de internet? </p>
+					<p>A continuaci&oacute;n, revisa el siguiente documental para ampliar tu percepci&oacute;n acerca de la Obsolescencia programada. Comprar, tirar, comprar:</p>
+					
+					<div style="text-align: center;">
+						<br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/24CM4g8V6w8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					
+					<br>
+					<p>Finalmente, en el siguiente video te percatar&aacute;s de c&oacute;mo la mercadotecnia utiliza la Pir&aacute;mide de Maslow para promover el consumismo:</p>
+					
+					<div style="text-align: center;">
+						<br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/YStiCdEAhjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-2"></div>
+			</div>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de Desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="https://www.uv.mx/" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p class="fuente">Belbury, L. (2021). <em>Maslow's</em> <em>Hierarchy</em><em> of Needs2. </em>[Imagen]. Wikimedia Commons. <u><a href="https://commons.wikimedia.org/wiki/File:Maslow's_Hierarchy_of_Needs2.svg">https://commons.wikimedia.org/wiki/File:Maslow%27s_Hierarchy_of_Needs2.svg</a></u></p>
+						<p class="fuente">Fern&aacute;ndez, L. (2022). <em>Qu&eacute; es la Pir&aacute;mide de </em><em>Maslow</em><em> y cu&aacute;l es su origen. </em>DEPSICOLOGIA.com. <u><a href="https://depsicologia.com/piramide-de-maslow/">https://depsicologia.com/piramide-de-maslow/</a></u></p>
+						<p class="fuente">Lauren DiCorleone (2012, 8 de noviembre). <em>Obsolescencia programada. Comprar</em><em>, tirar, comprar. </em>[Video]. YouTube. <u><a href="https://youtu.be/24CM4g8V6w8">https://youtu.be/24CM4g8V6w8</a></u></p>
+						<p class="fuente">La Tercera (2018, 19 de noviembre). <em>Explainer</em><em>: La Ciencia del G&eacute;nero. </em>[Video] YouTube. <u><a href="https://youtu.be/qhfYKTMchX4">https://youtu.be/qhfYKTMchX4</a></u></p>
+						<p class="fuente">Lerner, E. M. (2021). What are a few examples of self-actualization? Quora. <u><a href="https://qr.ae/pvYVkf">https://qr.ae/pvYVkf</a></u></p>
+						<p class="fuente">Jos&eacute; Navarro DAI (2019, 27 de marzo). <em>La Pir&aacute;mide de </em><em>Maslow</em><em>-el secreto del marketing. </em>[Video]. YouTube. <u><a href="https://youtu.be/YStiCdEAhjo">https://youtu.be/YStiCdEAhjo</a></u></p>
+						<p class="fuente">Moncada, A. (2022). <em>&iquest;Cu&aacute;l es la importancia de aprender otro idioma? </em>Palabra maestra. <u><a href="https://www.compartirpalabramaestra.org/actualidad/blog/cual-es-la-importancia-de-aprender-otro-idioma">https://www.compartirpalabramaestra.org/actualidad/blog/cual-es-la-importancia-de-aprender-otro-idioma</a></u></p>
+						<p class="fuente">Rodr&iacute;guez, M.,&nbsp; D'Andrea, M. &amp; Garr&eacute;, A. (2012). <em>Una lengua extranjera, &iquest;s&oacute;lo una herramienta para la comunicaci&oacute;n? </em>Invenio, 15(28),11-17. Redalyc.&nbsp; <u><a href="https://www.redalyc.org/articulo.oa?id=87724141002">https://www.redalyc.org/articulo.oa?id=87724141002</a></u></p>
+						<p class="fuente">Villanueva, A. (2017). <em>Creencias y estereotipos de prejuicio hacia grupos minoritarios entre estudiantes de nivel superior. </em>J&oacute;venes en la ciencia. <u><a href="https://www.jovenesenlaciencia.ugto.mx/index.php/jovenesenlaciencia/article/view/938">https://www.jovenesenlaciencia.ugto.mx/index.php/jovenesenlaciencia/article/view/938</a></u></p>
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+						<p class="fuente">Araujo, M. C. (2018). <em>&iquest;Los prejuicios afectan nuestras decisiones? </em>Primeros pasos. <u><a href="https://blogs.iadb.org/desarrollo-infantil/es/prejuicios-afectan-decisiones/">https://blogs.iadb.org/desarrollo-infantil/es/prejuicios-afectan-decisiones/</a></u></p>
+						<p class="fuente">Benavidez, V. &amp; Flores R. (2019). <em>La importancia de las emociones para la </em><em>neurodid&aacute;ctica</em>. Dialnet. <u><a href="https://dialnet.unirioja.es/servlet/articulo?codigo=6794283">https://</a></u><u><a href="https://dialnet.unirioja.es/servlet/articulo?codigo=6794283">dialnet.unirioja.es/servlet/articulo?codigo=6794283</a></u></p>
+						<p class="fuente">Garc&iacute;a, A. (2019). Neurociencia de las emociones. Dialnet. <u><a href="https://dialnet.unirioja.es/servlet/articulo?codigo=6921884">https://dialnet.unirioja.es/servlet/articulo?codigo=6921884</a></u></p>
+						<p class="fuente">Salas, A. (2013). <em>Ramas de la Biolog&iacute;a. </em>Prezi. <u><a href="https://prezi.com/euzhzssm4dvu/ramas-de-la-biologia/">https://prezi.com/euzhzssm4dvu/ramas-de-la-biologia/</a></u></p>
+						<p class="fuente">Ussery, S. (2021). <em>What</em> <em>is</em> <em>the</em> <em>difference</em> <em>between</em> <em>self-actualization</em><em> and </em><em>self-fulfillment</em><em>? </em>Quora. <u><a href="https://qr.ae/pvYVks">https://qr.ae/pvYVks</a></u></p>
+					</div>
+						
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+
+
+
+
+
+
+
+
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Disclaimer</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">1</sup>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<div class="row">
+					  <div class="col-md-1 align-self-center"><a class="flechaCarrusel" onclick="cambiarEvidencia()">&#10094;</a></div>
+					  <div class="col">
+						<div id="evidencia1">
+							<p><strong>Actividad 2. Pensamientos</strong><strong> y reflexiones</strong></p>
+							<p><strong>Descripci&oacute;n</strong><strong>:</strong></p>
+							<ol>
+							<li>Reflexiona acerca de los videos y lecturas presentadas en este m&oacute;dulo. Identifica qu&eacute; pensamientos vienen a tu mente y qu&eacute; emociones te provoca la informaci&oacute;n proporcionada.</li>
+							<li>Trata de reflexionar y darte cuenta de qu&eacute; piensas de cada tema. No juzgues los contenidos con adjetivos como "interesante" o "bonito". Utiliza frases como "yo pienso que", "me di cuenta de que".</li>
+							<li>El texto deber&aacute; ser de una extensi&oacute;n de 1 a 2 cuartillas, con letra Arial a 12 puntos.</li>
+							</ol>
+							<p><strong>Criterios de desempe&ntilde;o</strong><strong>:</strong></p>
+							<ol>
+							<li>Suficiencia y coherencia en la redacci&oacute;n del documento.</li>
+							<li>Claridad en el autoconocimiento adquirido sobre los aspectos revisados.</li>
+							<li>Argumentaci&oacute;n de ideas.</li>
+							</ol>
+							<p><strong>Lineamientos de entrega</strong><strong>:</strong></p>
+							<ol>
+							<li>Titula el archivo de la siguiente forma: Act2_PrimerApellidoyPrimerNombre. Por ejemplo: Act2_VillanuevaTeresa.</li>
+							<li>Env&iacute;a tu archivo en formato PDF, a trav&eacute;s del apartado de <strong>Actividades</strong> de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el calendario de entregas.</li>
+							</ol>
+						</div>
+						<div id="evidencia2">
+							<p><strong>Foro </strong><strong>2.</strong></p>
+							<p><strong>Conocimiento general.</strong></p>
+							<p><strong>Descripci&oacute;n</strong><strong>:</strong></p>
+							<ol>
+							<li>Despu&eacute;s de la revisi&oacute;n y comprensi&oacute;n del tema <strong>Sexualidad</strong>, redacta en media cuartilla lo que piensas de las ideas y conceptos de los videos, emplea un lenguaje respetuoso e interact&uacute;a con tus compa&ntilde;eros comentando sus ideas.</li>
+							<li>Acerca de los dem&aacute;s temas elige el de tu preferencia y redacta en media cuartilla tu opini&oacute;n acerca del mismo. Comp&aacute;rtelo con uno de tus compa&ntilde;eros y recibe retroalimentaci&oacute;n.</li>
+							<li>Tu intervenci&oacute;n deber&aacute; apegarse estrictamente a las consideraciones descritas en las&nbsp;<a href="https://celuladgdaie.github.io/AJC/documentos/Reglas%20Foros%20de%20discusion.pdf">Reglas para participar en los foros de </a><a href="https://celuladgdaie.github.io/AJC/documentos/Reglas%20Foros%20de%20discusion.pdf">discusi&oacute;n</a>.</li>
+							<li>Realiza al menos dos participaciones/retroalimentaciones en el foro.</li>
+							</ol>
+							<p><strong>Criterios </strong><strong>de </strong><strong>desempe&ntilde;o</strong><strong>:</strong></p>
+							<ol>
+							<li>Apego a las instrucciones.</li>
+							<li>Redacci&oacute;n y ortograf&iacute;a adecuadas.</li>
+							</ol>
+							<p><strong>Lineamientos de entrega</strong><strong>:</strong></p>
+							<ol>
+							<li>Sube tu evidencia al <strong>Foro 2. Conocimiento general, </strong>en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el&nbsp;<strong>Calendario</strong>de entregas</li>
+							</ol>
+						</div>
+					  </div>
+					  <div class="col-md-1 align-self-center">
+						<a class="flechaCarrusel" onclick="cambiarEvidencia()">&#10095;</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/contenidoFase2.js"></script>
+	<script src="js/scriptFase2.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>
