@@ -1,0 +1,498 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">$@tituloEscritorio</p>
+				<p id="subtituloPresentacion">$@subtituloModulo1</p>
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="fase1.html" class="enlaceModulo enlaceActivo"><strong>Fase 1</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+                <a href="#" class="enlaceModulo"><strong>Fase 2</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="fase3.html" class="enlaceModulo enlaceActivo"><strong>Fase 3</strong></a>
+			</div>
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">$@tituloPresentacion</p>
+				<p id="subtituloPresentacionMovil">$@subtituloPresentacion</p>
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">$@tituloPresentacionScroll</p>
+					<p id="subtituloPresentacionScroll">$@subtituloPresentacion</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="#" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 2</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 3</a>
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenDiapositivas"
+						alt="presentacion">
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<div id="textoCarrusel">
+						$@textoPresentacion
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaDerecha">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de la Experiencia educativa</p>
+		<div class="row" style="color: white;">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold;" class="fondoVerde tituloSeccion">1.  Las IES y la atención a la discapacidad: lineamientos para la inclusión de estudiantes con discapacidad en la UV 
+				</h1>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 class="subtitulo">2.1. La Convención sobre los derechos de las personas con discapacidad</h1>
+                <p>En 2006, la Asamblea General de la ONU aprob&oacute; la <em>Convenci&oacute;n sobre los derechos de las personas con discapacidad, </em>con el prop&oacute;sito de &laquo;promover, proteger y asegurar el goce pleno y en condiciones de igualdad de todos los derechos humanos y libertades fundamentales por todas las personas con discapacidad, y promover el respeto de su dignidad inherente<em>&raquo; </em>(Art. 1).</p>
+                <p>Declara, adem&aacute;s, que se reconocen como personas con discapacidad &laquo;(&hellip;) a aquellas que tengan deficiencias f&iacute;sicas, mentales, intelectuales o sensoriales a largo plazo que, al interactuar con diversas barreras, puedan impedir su participaci&oacute;n plena y efectiva en la sociedad, en igualdad de condiciones con las dem&aacute;s&raquo; (Art. 2).</p>
+                <p>Observe el siguiente video para conocer m&aacute;s acerca de los lineamientos considerados en este documento.</p>
+                <div class="centrado">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/t7Vj7ERLoIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>As&iacute; mismo, revise el texto oficial de la <em><a href="https://www.conapred.org.mx/documentos_cedoc/Convencion%20sobre%20los%20Derechos%20de%20las%20Personas%20con%20Discapacidad-Ax.pdf?msclkid=d5af8a66d09511eca6320bbc91d5d8e9">Convenci&oacute;n sobre los Derechos de las personas con Discapacidad</a></em><em>. </em>Para ello, haga clic sobre el t&iacute;tulo del documento para ir al sitio de consulta</p>
+			</div>
+			<div class="col-2"></div>
+		</div>
+        <div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 class="subtitulo">2.2. La Declaración de Yucatán sobre los derechos de las personas con discapacidad en las universidades</h1>
+                <p>En 2018, varias universidades mexicanas firmaron la <em>Declaraci&oacute;n de Yucat&aacute;n sobre los derechos de las personas con discapacidad en las universidades</em>. Esto, como parte de los acuerdos asumidos en la <em>Convenci&oacute;n sobre los derechos de las Personas con Discapacidad</em> (ONU, 2006).</p>
+                <p>En la siguiente infograf&iacute;a se presentan los puntos m&aacute;s relevantes de esta Declaraci&oacute;n:</p>
+                <p>Le invitamos a revisar el texto oficial de la <em><a href="https://www.uv.mx/piip/files/2013/10/Declaracion-de-Yucatan-sobre-los-derechos-de-las-personas-con-discapacidad-en-las-universidades.pdf?msclkid=65970d0bd08711ecbd973fae96bbba61">Declaraci&oacute;n de Yucat&aacute;n sobre los derechos de las personas con discapacidad en las universidades</a></em><em>. </em>Para ello, haga clic sobre el t&iacute;tulo del documento para ir al sitio de consulta.</p>
+			</div>
+			<div class="col-2"></div>
+		</div>
+        <div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 class="subtitulo">2.3. Reglamento para la inclusión de personas con discapacidad en la Universidad Veracruzana</h1>
+                <p>El 28 de mayo de 2021, el H. Consejo Universitario General de la Universidad Veracruzana aprob&oacute; el <em>Reglamento para la inclusi&oacute;n de personas con discapacidad</em>. En la siguiente infograf&iacute;a se presentan algunos de sus puntos m&aacute;s relevantes.</p>
+                <p>Le invitamos a revisar el texto oficial del <em><a href="https://www.uv.mx/legislacion/files/2021/06/Reglamento-Inclusion-Personas-Discapacidad.pdf?msclkid=e9f08505d0cf11ec806290154df2c4b4">Reglamento para la inclusi&oacute;n de personas con discapacidad</a></em><em>. </em>Para ello, haga clic sobre el t&iacute;tulo del documento para ir al sitio de consulta.</p>
+            </div>
+			<div class="col-2"></div>
+		</div>
+        <div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 class="subtitulo">2.4. Inclusión de personas con discapacidad en la UV: ¿dónde estamos?</h1>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		
+
+
+
+
+		<hr>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold; color: white;" class="fondoAzul tituloSeccion">2. Barreras para el aprendizaje y la participación
+				</h1>
+			</div>
+			<div class="col-2"></div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<p>Observe el cortometraje <em>Dale la </em><em>vuelta, </em>y reflexione: &iquest;en qu&eacute; situaciones ha convivido con personas con discapacidad?, &iquest;c&oacute;mo es la relaci&oacute;n con ellas en situaciones y espacios cotidianos?, &iquest;c&oacute;mo se involucra en la consolidaci&oacute;n de una cultura de inclusi&oacute;n en la universidad?</p>
+				<br>
+				<div class="centrado">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/LQaAIK1riwg"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+                <br>
+                <h1 class="subtitulo">2.1. Barreras para el aprendizaje y la participación: concepto y clasificación</h1>
+                <br>
+                <h1 class="subtitulo">2.2. Habilidades psicopedagógicas para detectar y atender las barreras para el aprendizaje y la participación</h1>
+                <p>&iquest;Qu&eacute; podemos hacer para que el paradigma de la inclusi&oacute;n se transforme en pr&aacute;cticas pedag&oacute;gicas que promuevan y generen espacios de aprendizaje inclusivos en la universidad?</p>
+                <p>Le invitamos a observar los siguientes videos que ilustran un ejemplo de elaboraci&oacute;n de recursos did&aacute;cticos para el aprendizaje inclusivo.</p>
+			</div>
+			<div class="col-2"></div>
+		</div>
+        <div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<p><em>El globo terr&aacute;queo accesible, una nueva forma de ense&ntilde;anza inclusiva para personas ciegas (ONCE, 2020):</em></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/da-YrfPDBEI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col">
+				<p><em>Globo terr&aacute;queo Magallanes Elcano (ONCE, 2021):</em></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MFxm4fCCSPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="col-2"></div>
+		</div>
+        <div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<p>&iquest;Qu&eacute; habilidades psicopedag&oacute;gicas es necesario desarrollar para que su pr&aacute;ctica docente promueva ambientes de aprendizaje inclusivos?</p>
+                <p>A continuaci&oacute;n, lea los siguientes art&iacute;culos que exponen algunas habilidades y estrategias psicopedag&oacute;gicas y did&aacute;cticas para la inclusi&oacute;n educativa en la universidad.</p>
+                <div class="centrado">
+                    <a target="_blank" href="https://www.redalyc.org/journal/6198/619867501014/html/ "><img src="imagenes/externo2.png" width="10%"></a>
+                    <p><em>La educación inclusiva en el marco de la educación superior (2020).</em></p>
+                    <br>
+                    <a target="_blank" href="http://www.scielo.org.mx/pdf/resu/v41n162/v41n162a1.pdf "><img src="imagenes/externo2.png" width="10%"></a>
+                    <p><em>Capacidades y competencias docentes para la inclusión del alumnado en la educación superior (2012).</em></p>
+                </div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de Desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="https://www.uv.mx/" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p class="fuente">Canal 44. (2020, 10 de diciembre). <em>Alumnos con discapacidad auditiva piden apoyo a la Rector&iacute;a General de la </em><em>UdeG. </em>[Video]. Youtube. <a href="https://www.youtube.com/watch?v=HnQO5LfkWa0">https://www.youtube.com/watch?v=HnQO5LfkWa0</a></p>
+                        <p class="fuente">CONAPRED. (2017). <em>Convenci&oacute;n sobre los derechos de las personas con discapacidad. Protocolo facultativo</em>. <a href="https://www.conapred.org.mx/documentos_cedoc/Convencion%20sobre%20los%20Derechos%20de%20las%20Personas%20con%20Discapacidad-Ax.pdf?msclkid=d5af8a66d09511eca6320bbc91d5d8e9">https://www.conapred.org.mx/documentos_cedoc/Convencion%20sobre%20los%20Derechos%20de%20las%20Personas%20con%20Discapacidad-Ax.pdf?msclkid=d5af8a66d09511eca6320bbc91d5d8e9</a></p>
+                        <p class="fuente">Covarrubias, P. (2019). Barreras para el aprendizaje y la participaci&oacute;n: una propuesta para su clasificaci&oacute;n. En J.A. Trujillo Holgu&iacute;n, A.C. R&iacute;os Castillo y J. L. Garc&iacute;a Leos (coords.), <em>Desarrollo Profesional Docente: reflexiones de maestros en servicio en el escenario de la Nueva Escuela Mexicana </em>(pp. 135-157), Escuela Normal Superior Profr. Jos&eacute; E. Medrano R. <a href="http://ensech.edu.mx/pdf/maestria/libro4/TP04-2-05-Covarrubias.pdf">http://ensech.edu.mx/pdf/maestria/libro4/TP04-2-05-Covarrubias.pdf</a></p>
+                        <p class="fuente"><em>Declaraci&oacute;n de Yucat&aacute;n sobre los derechos de las personas con discapacidad</em>. (2008). Universidad Nacional Aut&oacute;noma de M&eacute;xico. <a href="https://www.uv.mx/piip/files/2013/10/Declaracion-de-Yucatan-sobre-los-derechos-de-las-personas-con-discapacidad-en-las-universidades.pdf?msclkid=65970d0bd08711ecbd973fae96bbba61">https</a><a href="https://www.uv.mx/piip/files/2013/10/Declaracion-de-Yucatan-sobre-los-derechos-de-las-personas-con-discapacidad-en-las-universidades.pdf?msclkid=65970d0bd08711ecbd973fae96bbba61">://www.uv.mx/piip/files/2013/10/Declaracion-de-Yucatan-sobre-los-derechos-de-las-personas-con-discapacidad-en-las-universidades.pdf?msclkid=65970d0bd08711ecbd973fae96bbba61</a></p>
+                        <p class="fuente">Fern&aacute;ndez, J. M. (2012). Capacidades y competencias docentes para la inclusi&oacute;n del alumnado en la educaci&oacute;n superior. En <em>Revista de Educaci&oacute;n Superior, XLI</em>(2), 9-24. <a href="http://www.scielo.org.mx/pdf/resu/v41n162/v41n162a1.pdf">http://www.scielo.org.mx/pdf/resu/v41n162/v41n162a1.pdf</a></p>
+                        <p class="fuente">Indiscapacidad CDMX. (2021, 2 de septiembre). Video Conoce los Derechos de las Personas con Discapacidad. [Video]. Youtube. <a href="https://www.youtube.com/watch?v=t7Vj7ERLoIM">https://www.youtube.com/watch?v=t7Vj7ERLoIM</a></p>
+                        <p class="fuente">Landero, G. E. &amp; Miranda M. C. (2020). La educaci&oacute;n inclusiva en el marco de la educaci&oacute;n superior. En <em>Revista Ibero-Americana de Estudos em Educa&ccedil;&atilde;o, 15</em>(4), 2713-2726. <a href="https://www.redalyc.org/journal/6198/619867501014/html/">https://www.redalyc.org/journal/6198/619867501014/html/</a></p>
+                        <p class="fuente">Oacnudhguatemala. (2021, 22 de enero). <em>Dale la vuelta. Cortometraje sobre derechos de las personas con discapacidad.</em> [Video]. Youtube. <a href="https://www.youtube.com/watch?v=LQaAIK">https://www.youtube.com/watch?v=LQaAIK</a></p>
+                        <p class="fuente">ONCE. (2020, 7 de octubre). <em>El globo terr&aacute;queo accesible, una nueva forma de ense&ntilde;anza inclusiva para personas ciegas. </em>[Video]. Youtube. <a href="https://www.youtube.com/watch?v=da-YrfPDBEI">https://www.youtube.com/watch?v=da-YrfPDBEI</a></p>
+                        <p class="fuente">ONCE. (2021, 16 de marzo). <em>Accesibilidad. Globo terr&aacute;queo Magallanes Elcano.</em> [Video]. Youtube. <a href="https://www.youtube.com/watch?v=MFxm4fCCSPc">https://www.youtube.com/watch?v=MFxm4fCCSPc</a></p>
+                        <p class="fuente">Universidad Veracruzana. (2018). <em>Reglamento para la inclusi&oacute;n de personas con discapacidad</em>. <a href="https://www.uv.mx/legislacion/files/2021/06/Reglamento-Inclusion-Personas-Discapacidad.pdf?msclkid=e9f08505d0cf11ec806290154df2c4b4">https://www.uv.mx/legislacion/files/2021/06/Reglamento-Inclusion-Personas-Discapacidad.pdf?msclkid=e9f08505d0cf11ec806290154df2c4b4</a></p>
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <p class="fuente">UNESCO (2015). <em>Declaraci&oacute;n </em><em>de Incheon y Marco de acci&oacute;n para garantizar una educaci&oacute;n inclusiva y equitativa de calidad y promover oportunidades de aprendizaje permanente para </em><em>todos</em>. Foro Mundial sobre la Educaci&oacute;n.</p>
+                    </div>
+						
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+
+
+
+
+
+
+
+
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Disclaimer</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">1</sup>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<div class="row">
+					  <div class="col-md-1 align-self-center"><a class="flechaCarrusel" onclick="anteriorEvidencia()">&#10094;</a></div>
+					  <div class="col">
+						<div id="evidencia1">
+							<p><strong>Foro 3.</strong></p>
+                        <p><strong>Inclusi&oacute;n de estudiantes con discapacidad en la UV</strong></p>
+                        <p><strong>Descripci&oacute;n:</strong></p>
+                        <ol>
+                        <li>Con base en lo revisado en el tema 2.1. Las IES y la atenci&oacute;n a la discapacidad: lineamientos para la inclusi&oacute;n de estudiantes con discapacidad en la UV, responda la siguiente pregunta: <strong>&iquest;D&oacute;nde estamos en la UV en relaci&oacute;n con la inclusi&oacute;n de estudiantes con </strong><strong>discapacidad?</strong></li>
+                        <li>Redacte su respuesta en un documento de Word, con letra Aral, a 11 puntos.</li>
+                        <li>Su intervenci&oacute;n deber&aacute; apegarse estrictamente a las consideraciones descritas en las&nbsp;<a target="_blank" href="documentos/reglasForo.pdf">Reglas para participar en los foros de discusi&oacute;n</a>.</li>
+                        </ol>
+                        <p><strong>Criterios </strong><strong>de desempe&ntilde;o:</strong></p>
+                        <ol>
+                        <li>La reflexi&oacute;n debe incorporar elementos de an&aacute;lisis basados en el contenido tem&aacute;tico.</li>
+                        <li>Su aportaci&oacute;n debe ser con asertividad, respeto, objetividad y tolerancia.</li>
+                        <li>Realizar al menos tres participaciones/retroalimentaciones en el foro.</li>
+                        </ol>
+                        <p><strong>Lineamientos de entrega:</strong></p>
+                        <ol>
+                        <li>Suba su evidencia, en formato PDF, al <strong>Foro 3. Inclusi&oacute;n de estudiantes con discapacidad en la UV</strong>, en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el&nbsp;<strong>Calendario</strong>&nbsp;de entregas.</li>
+                        </ol>
+						</div>
+						<div id="evidencia2">
+							<p><strong>Foro 4.</strong></p>
+                            <p><strong>Barreras para el aprendizaje y&nbsp; la participaci&oacute;n en la UV</strong></p>
+                            <p><strong>Descripci&oacute;n:</strong></p>
+                            <ol>
+                            <li>Con base en lo revisado en el tema 2.2. Barreras para el aprendizaje y la participaci&oacute;n, responda la siguiente pregunta: <strong>&iquest;Cu&aacute;les son las barreras identificadas en su espacio laboral universitario</strong><strong>?</strong></li>
+                            <li>Redacte su respuesta en un documento de Word, con letra Aral, a 11 puntos.</li>
+                            <li>Su intervenci&oacute;n deber&aacute; apegarse estrictamente a las consideraciones descritas en las&nbsp;<u>Reglas para participar en los foros de discusi&oacute;n</u>.</li>
+                            </ol>
+                            <p><strong>Criterios </strong><strong>de desempe&ntilde;o:</strong></p>
+                            <ol>
+                            <li>La reflexi&oacute;n debe incorporar elementos de an&aacute;lisis basados en el contenido tem&aacute;tico.</li>
+                            <li>Su aportaci&oacute;n debe ser con asertividad, respeto, objetividad y tolerancia.</li>
+                            <li>Realizar, al menos, tres participaciones/retroalimentaciones en el foro.</li>
+                            </ol>
+                            <p><strong>Lineamientos </strong><strong>de entrega:</strong></p>
+                            <ol>
+                            <li>Suba su evidencia, en formato PDF, al <strong>Foro 3. Barreras para el aprendizaje y la participaci&oacute;n en la UV</strong>, en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el&nbsp;Calendario&nbsp;de entregas.</li>
+                            </ol>
+						</div>
+						
+					  </div>
+					  <div class="col-md-1 align-self-center">
+						<a class="flechaCarrusel" onclick="siguienteEvidencia()">&#10095;</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/contenidoFase2.js"></script>
+	<script src="js/scriptFase2.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>

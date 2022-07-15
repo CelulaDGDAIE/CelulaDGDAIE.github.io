@@ -23,6 +23,11 @@ a{
 .fondoVerde{
 	background-color: #6CBDB4;
 }
+.fuente{
+	margin-left:15.65pt;
+	text-indent:-15.65pt;
+	text-align: left;
+}
 .letraBlanca{
 	color: white;
 }
@@ -32,6 +37,11 @@ a{
 	text-indent:-15.65pt;
 	margin:0.3em;
 	color: black;
+}
+.subtitulo{
+	font-size: 1.5em;
+	color: #1e56aa;
+	font-weight: bold;
 }
 .textoSeccion{
 	color: #1e56aa;

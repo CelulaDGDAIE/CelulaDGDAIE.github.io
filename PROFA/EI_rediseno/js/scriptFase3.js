@@ -42,9 +42,9 @@ function cargarContenido(){
 	const contenidoFase = JSON.parse(contenidoEE);
 	document.getElementById("tituloPresentacion").innerHTML = contenidoFase.tituloPresentacion;
 	document.getElementById("tituloPresentacionScroll").innerHTML = contenidoFase.tituloPresentacion;
-    document.getElementById("subtituloPresentacion").innerHTML = contenidoFase.tituloModulo1;
-    document.getElementById("subtituloPresentacionMovil").innerHTML = contenidoFase.tituloModulo1;
-    document.getElementById("subtituloPresentacionScroll").innerHTML = contenidoFase.tituloModulo1;
+    document.getElementById("subtituloPresentacion").innerHTML = contenidoFase.tituloModulo3;
+    document.getElementById("subtituloPresentacionMovil").innerHTML = contenidoFase.tituloModulo3;
+    document.getElementById("subtituloPresentacionScroll").innerHTML = contenidoFase.tituloModulo3;
 	document.getElementById("tituloEscritorio").innerHTML = contenidoFase.tituloPresentacion;
 	document.getElementById("textoPresentacion").innerHTML = contenidoFase.textoProposito;
 	document.getElementById("textoCarrusel").innerHTML = contenidoFase.textoProposito;
@@ -58,13 +58,8 @@ function siguienteEvidencia(){
 			document.getElementById("evidencia2").style.display = "block";
 		break;
 		case 2:
-			evidenciaActual = 3;
-			document.getElementById("evidencia2").style.display = "none";
-			document.getElementById("evidencia3").style.display = "block";
-		break;
-		case 3:
 			evidenciaActual = 1;
-			document.getElementById("evidencia3").style.display = "none";
+			document.getElementById("evidencia2").style.display = "none";
 			document.getElementById("evidencia1").style.display = "block";
 		break;
 		default:
@@ -74,19 +69,14 @@ function siguienteEvidencia(){
 function anteriorEvidencia(){
 	switch (evidenciaActual) {
 		case 1:
-			evidenciaActual = 3;
+			evidenciaActual = 2;
 			document.getElementById("evidencia1").style.display = "none";
-			document.getElementById("evidencia3").style.display = "block";
+			document.getElementById("evidencia2").style.display = "block";
 		break;
 		case 2:
 			evidenciaActual = 1;
 			document.getElementById("evidencia2").style.display = "none";
 			document.getElementById("evidencia1").style.display = "block";
-		break;
-		case 3:
-			evidenciaActual = 2;
-			document.getElementById("evidencia3").style.display = "none";
-			document.getElementById("evidencia2").style.display = "block";
 		break;
 		default:
 			break;
