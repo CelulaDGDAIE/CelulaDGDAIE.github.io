@@ -9,11 +9,6 @@ if (anchoPantalla>1000){
 	encabezadoScroll.style.display = "none";
 	let alturaEncabezado = encabezado.clientHeight;;
 	document.getElementById("compensacionEncabezadoEscritorio").style.height = alturaEncabezado + "px";
-	let altoModulos = (.15 *alturaPantalla);
-	const modulos = document.getElementsByClassName("moduloContenido");
-	for (let i = 0; i < modulos.length; i++) {
-	  modulos[i].style.height = altoModulos + "px";
-	}
 }
 function mostrarDatos(){
 	const numerosModulos = document.getElementsByClassName("numeroModulo");

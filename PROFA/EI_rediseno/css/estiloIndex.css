@@ -264,7 +264,6 @@ a{
 		background-repeat: no-repeat;
 		background-size: 100px 100px;
 		background-position: center;
-		height: 10%;
 		text-align: center;
 		color: white;
 		font-weight: bold;
@@ -367,6 +366,10 @@ a{
 	}
 	#textoCarrusel{
 		text-align: justify;
+	}
+	#tablaEvaluacion, #tablaEvaluacion th, #tablaEvaluacion td{
+			border: 1px solid black;
+			border-collapse: collapse;
 	}
 	#tituloEscritorio{
 		color: #1e56aa;

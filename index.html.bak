@@ -27,14 +27,7 @@ background: radial-gradient(circle, rgba(109,180,246,1) 0%, rgba(13,106,193,1) 2
             <div class="card-body">
 			<img src="recursosIndex/en-construccion.png" class="card-img-top" alt=" tarjeta">
 				<h5 class="card-title">Educación inclusiva. <span class="badge bg-warning text-black"><i class="bi bi-code-slash"></i></span></h5>
-				  <b>Progreso (16/06/2022)</b>
-				  <ul>
-					<li><strong>Index</strong>: <span style="color: purple;">Falta Banner, referencias, imagenes y programa <i class="bi bi-card-checklist"></i></span></li>
-					<li><strong>Fase 1</strong>: <span style="color: purple;">Falta imagen proposito, video 1.2.1, imagen 1.2.3 <i class="bi bi-card-checklist"></i></span></li>
-					<li><strong>Fase 2</strong>: <span style="color: purple;">Faltan imagen proposito, infografias 2.1.2 y 2.1.3, video 2.1.4, presentacion 2.2.1 <i class="bi bi-card-checklist"></i></span></li>
-					<li><strong>Fase 3</strong>: <span style="color: #ffcc00;">En desarrollo <i class="bi bi-code-slash"></i></span></li>
-
-				  </ul>
+				  
 			  <a href="PROFA/EI_rediseno/index.html" class="btn btn-success">Ver EE</a>
             </div>
           </div>
@@ -60,12 +53,14 @@ background: radial-gradient(circle, rgba(109,180,246,1) 0%, rgba(13,106,193,1) 2
             <div class="card-body">
 			<img src="recursosIndex/CardASSC.png" class="card-img-top" alt=" tarjeta">
 				<h5 class="card-title">Alimentación sostenible para la salud colectiva. <span class="badge bg-warning text-black"><i class="bi bi-code-slash"></i></span></h5>
-				  <b>Progreso (16/06/2022)</b>
+				  <b>Progreso (16/07/2022)</b>
 				  <ul>
-					<li><strong>Index</strong>: <span style="color: purple;">Falta referencias y programa <i class="bi bi-card-checklist"></i></span></li>
-					<li><strong>Fase 1</strong>: <span style="color: purple;">Falta disclaimer y referencias <i class="bi bi-card-checklist"></i></span></li>
-					<li><strong>Fase 2</strong>: <span style="color: purple;">Faltan todos los recursos graficos <i class="bi bi-card-checklist"></i></span></li>
-					<li><strong>Fase 3</strong>: <span style="color: #ffcc00;">En desarrollo <i class="bi bi-code-slash"></i></span></li>
+					<li><strong>Index</strong>: <span style="color: purple;">Faltan precisiones, programa y disclaimer <i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 1</strong>: <span style="color: purple;">Falta disclaimer <i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 2</strong>: <span style="color: purple;">Falta videoquiz de apartado 3 alimentacion nutritiva, falta disclaimer<i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 3</strong>: <span style="color: purple;">Falta infografia de punto 1 Dietas desequilibradas y altamente procesadas, falta guia de comparación de etiquetas nutricionales, falta disclaimer<i class="bi bi-card-checklist"></i></span></li>
+
+
 				  </ul>
 			  <a href="PROFA/ASSC_rediseno/index.html" class="btn btn-success">Ver EE</a>
             </div>
@@ -88,6 +83,7 @@ background: radial-gradient(circle, rgba(109,180,246,1) 0%, rgba(13,106,193,1) 2
 					<li><strong>Fase 1</strong>: <span style="color: purple;">Faltan referencias, disclaimer <i class="bi bi-card-checklist"></i></span></li>
 					<li><strong>Fase 2</strong>: <span style="color: purple;">Faltan imagenes e infografias <i class="bi bi-card-checklist"></i></span></li>
 					<li><strong>Fase 3</strong>: <span style="color: #ffcc00;">En desarrollo <i class="bi bi-code-slash"></i></span></li>
+							
 							
 
 				  </ul>

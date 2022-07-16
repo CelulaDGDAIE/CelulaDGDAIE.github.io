@@ -264,7 +264,6 @@ a{
 		background-repeat: no-repeat;
 		background-size: 100px 100px;
 		background-position: center;
-		height: 10%;
 		text-align: center;
 		color: white;
 		font-weight: bold;
@@ -365,6 +364,9 @@ a{
 	#modulo3{
 		background-image: url("../imagenes/modulo3.png");
 	}
+	#tablaEvaluacion, #tablaEvaluacion th, #tablaEvaluacion td {
+		border: 1px solid black;
+	  }
 	#textoCarrusel{
 		text-align: justify;
 	}
