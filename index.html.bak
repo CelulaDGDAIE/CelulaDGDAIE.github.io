@@ -41,11 +41,10 @@ background: radial-gradient(circle, rgba(109,180,246,1) 0%, rgba(13,106,193,1) 2
 		<div class="col-sm-4">
           <div class="card">
             <div class="card-body">
-			<img src="recursosIndex/en-construccion.png" class="card-img-top" alt=" tarjeta">
 				<h5 class="card-title">Equidad en salud <span class="badge bg-warning text-black"><i class="bi bi-code-slash"></i></span></h5>
-				  <b>Progreso (16/06/2022)</b>
+				  <b>Progreso (29/06/2022)</b>
 				  <ul>
-					<li><strong>Index</strong>: <span style="color: purple;">Falta Banner, referencias, imagenes y programa <i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Index</strong>: <span style="color: purple;">Falta imagen presentacion, falta precisiones, falta programa y discliamer <i class="bi bi-card-checklist"></i></span></li>
 					<li><strong>Fase 1</strong>: <span style="color: purple;">Faltan imagenes y presentaciones <i class="bi bi-card-checklist"></i></span></li>
 					<li><strong>Fase 2</strong>: <span style="color: purple;">Faltan imagenes y presentación <i class="bi bi-card-checklist"></i></span></li>
 				  </ul>
@@ -57,12 +56,12 @@ background: radial-gradient(circle, rgba(109,180,246,1) 0%, rgba(13,106,193,1) 2
           <div class="card">
             <div class="card-body">
 				<h5 class="card-title">Alimentación sostenible para la salud colectiva. <span class="badge bg-warning text-black"><i class="bi bi-code-slash"></i></span></h5>
-				  <b>Progreso (16/07/2022)</b>
+				  <b>Progreso (29/07/2022)</b>
 				  <ul>
 					<li><strong>Index</strong>: <span style="color: purple;">Faltan precisiones, programa y disclaimer <i class="bi bi-card-checklist"></i></span></li>
 					<li><strong>Fase 1</strong>: <span style="color: purple;">Falta disclaimer <i class="bi bi-card-checklist"></i></span></li>
-					<li><strong>Fase 2</strong>: <span style="color: purple;">Falta videoquiz de apartado 3 alimentacion nutritiva, falta disclaimer<i class="bi bi-card-checklist"></i></span></li>
-					<li><strong>Fase 3</strong>: <span style="color: purple;">Falta guia de comparación de etiquetas nutricionales, falta disclaimer<i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 2</strong>: <span style="color: purple;">Falta disclaimer<i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Fase 3</strong>: <span style="color: purple;">Falta disclaimer<i class="bi bi-card-checklist"></i></span></li>
 				  </ul>
 			  <a href="PROFA/ASSC_rediseno/index.html" class="btn btn-success">Ver EE</a>
             </div>
@@ -99,9 +98,9 @@ background: radial-gradient(circle, rgba(109,180,246,1) 0%, rgba(13,106,193,1) 2
 				  <b>Progreso (16/06/2022)</b>
 				  <ul>
 					<li><strong>Index</strong>: <span style="color: purple;">Falta precisiones, programa y disclaimer <i class="bi bi-card-checklist"></i></span></li>
-					<li><strong>Fase 1</strong>: <span style="color: purple;">Falta disclaimer<i class="bi bi-card-checklist"></i></span></li>
-					<li><strong>Fase 2</strong>: <span style="color: purple;">Falta disclaimer<i class="bi bi-card-checklist"></i></span></li>
-					<li><strong>Fase 3</strong>: <span style="color: purple;">Falta disclaimer<i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Módulo 1</strong>: <span style="color: purple;">Falta disclaimer<i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Módulo 2</strong>: <span style="color: purple;">Falta disclaimer<i class="bi bi-card-checklist"></i></span></li>
+					<li><strong>Módulo 3</strong>: <span style="color: purple;">Falta disclaimer<i class="bi bi-card-checklist"></i></span></li>
 				  </ul>
 			  <a href="AFEL/CSRDV_rediseno/index.html" class="btn btn-success">Ver EE</a>
             </div>

@@ -168,6 +168,10 @@ a{
    width: 100%;
    background-color: #0E47A1;
 }
+#tablaEvidencias, #tablaEvidencias tr, #tablaEvidencias td {
+	border: 1px solid black;
+	border-collapse: collapse;
+  }
 #textoPresentacion, #textoUnidad{
 	text-align: justify;
 }
@@ -264,7 +268,6 @@ a{
 		background-repeat: no-repeat;
 		background-size: 100px 100px;
 		background-position: center;
-		height: 10%;
 		text-align: center;
 		color: white;
 		font-weight: bold;

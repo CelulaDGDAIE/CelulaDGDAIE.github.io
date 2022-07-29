@@ -14,14 +14,14 @@ a{
 }
 
 .fondoAcordeon{
-	background-color: #3391fc;
-	border: 2px solid #63ccb6;
+	background-color: #18529D;
+	border: 2px solid #6cbdb4;
 }
 .fondoAzul{
-	background-color: #3391fc;
+	background-color: #4C5BFC;
 }
 .fondoVerde{
-	background-color: #63ccb6;
+	background-color: #6CBDB4;
 }
 .fuente{
 	margin-left:15.65pt;
@@ -37,6 +37,11 @@ a{
 	text-indent:-15.65pt;
 	margin:0.3em;
 	color: black;
+}
+.subtitulo{
+	font-size: 1.5em;
+	color: #1e56aa;
+	font-weight: bold;
 }
 .textoSeccion{
 	color: #1e56aa;
@@ -125,15 +130,6 @@ a{
 	display:block;
 }
 #evidencia2{
-	display:none;
-}
-#evidencia3{
-	display:none;
-}
-#evidencia4{
-	display:none;
-}
-#evidencia5{
 	display:none;
 }
 #fondo1{
@@ -274,10 +270,10 @@ a{
 		border: 2px solid #6cbdb4;
 	}
 	.fondoAzul{
-		background-color: #3391fc;
+		background-color: #4c5bfc;
 	}
 	.fondoVerde{
-		background-color: #63ccb6;
+		background-color: #6cbdb4;
 	}
 	.letraBlanca{
 		color: white;
@@ -317,6 +313,7 @@ a{
 		display: block;
 		position: fixed;
 		width: 100%;
+		z-index: 10;
 	}
 	
 	#logoUV{
