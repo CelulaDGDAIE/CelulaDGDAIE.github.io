@@ -5,13 +5,14 @@ body{
 a{
 	text-decoration: none;
 }
+p{
+	text-align: justify;
+}
 /******************Clases******************/
 .centrado{
 		text-align: center;
 }
-.contadorReferencia{
-	font-size:60%;
-}
+
 
 .fondoAcordeon{
 	background-color: #18529D;
