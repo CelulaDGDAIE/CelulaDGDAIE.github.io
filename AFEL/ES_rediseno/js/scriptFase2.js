@@ -63,7 +63,7 @@ function siguienteEvidencia(){
 			document.getElementById("evidencia3").style.display = "block";
 		break;
 		case 3:
-			evidenciaActual = 4;
+			evidenciaActual = 1;
 			document.getElementById("evidencia3").style.display = "none";
 			document.getElementById("evidencia1").style.display = "block";
 		break;
@@ -75,7 +75,7 @@ function siguienteEvidencia(){
 function anteriorEvidencia(){
 	switch (evidenciaActual) {
 		case 1:
-			evidenciaActual = 5;
+			evidenciaActual = 3;
 			document.getElementById("evidencia1").style.display = "none";
 			document.getElementById("evidencia3").style.display = "block";
 		break;
@@ -121,6 +121,6 @@ function cambiarDiapositiva(){
 		cuerpoCarrusel.classList.add("fondoVerde");
 		document.getElementById("textoCarrusel").innerHTML = contenidoFase.textoProposito;
 		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Propósito</strong>";
-		document.getElementById("imagenDiapositivas").src="imagenes/Fase1/Proposito.jpg";
+		document.getElementById("imagenDiapositivas").src="imagenes/Fase2/Proposito.jpg";
 	}
 }
