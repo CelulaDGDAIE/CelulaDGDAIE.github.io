@@ -5,6 +5,9 @@ body{
 a{
 	text-decoration: none;
 }
+p{
+	text-align: justify;
+}
 /******************Clases******************/
 .centrado{
 		text-align: center;
