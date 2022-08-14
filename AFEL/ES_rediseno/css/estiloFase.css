@@ -179,6 +179,13 @@ p{
 	height: 300px; 
 	width: 300px;
 }
+
+.icon-flipped {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+}
 #imagenPortada{
 	max-height: 250px;
 }

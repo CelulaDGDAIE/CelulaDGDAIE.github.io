@@ -68,13 +68,8 @@ function siguienteEvidencia(){
 			document.getElementById("evidencia4").style.display = "block";
 		break;
 		case 4:
-			evidenciaActual = 5;
-			document.getElementById("evidencia4").style.display = "none";
-			document.getElementById("evidencia5").style.display = "block";
-		break;
-		case 5:
 			evidenciaActual = 1;
-			document.getElementById("evidencia5").style.display = "none";
+			document.getElementById("evidencia4").style.display = "none";
 			document.getElementById("evidencia1").style.display = "block";
 		break;
 	
@@ -85,9 +80,9 @@ function siguienteEvidencia(){
 function anteriorEvidencia(){
 	switch (evidenciaActual) {
 		case 1:
-			evidenciaActual = 5;
+			evidenciaActual = 4;
 			document.getElementById("evidencia1").style.display = "none";
-			document.getElementById("evidencia5").style.display = "block";
+			document.getElementById("evidencia4").style.display = "block";
 		break;
 		case 2:
 			evidenciaActual = 1;
@@ -103,11 +98,6 @@ function anteriorEvidencia(){
 			evidenciaActual = 3;
 			document.getElementById("evidencia4").style.display = "none";
 			document.getElementById("evidencia3").style.display = "block";
-		break;
-		case 5:
-			evidenciaActual = 4;
-			document.getElementById("evidencia5").style.display = "none";
-			document.getElementById("evidencia4").style.display = "block";
 		break;
 	
 		default:

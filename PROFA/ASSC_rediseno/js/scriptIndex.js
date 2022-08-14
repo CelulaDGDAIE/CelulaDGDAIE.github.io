@@ -67,6 +67,7 @@ function cambiarDiapositiva(){
 		document.getElementById("textoCarrusel").innerHTML = contenidoIndex.textoUnidad;
 		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-intersect'></i> Unidad de competencia</strong>";
 		document.getElementById("imagenDiapositivas").src="imagenes/unidad.jpg";
+		document.getElementById("numeral").innerHTML = "[2]";
 	}else{
 		carruselInformacionDiapositivaActual = "presentacion";
 		aireSuperior.classList.remove("fondoAzul");
@@ -78,5 +79,6 @@ function cambiarDiapositiva(){
 		document.getElementById("textoCarrusel").innerHTML = contenidoIndex.textoPresentacion;
 		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Presentacion</strong>";
 		document.getElementById("imagenDiapositivas").src="imagenes/presentacion.jpg";
+		document.getElementById("numeral").innerHTML = "[1]";
 	}
 }

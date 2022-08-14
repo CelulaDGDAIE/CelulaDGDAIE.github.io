@@ -5,6 +5,9 @@ body{
 a{
 	text-decoration: none;
 }
+p{
+	text-align: justify;
+}
 /******************Clases******************/
 .centrado{
 		text-align: center;
@@ -204,7 +207,7 @@ a{
 	font-weight: bold;
 }
 .tituloSeccion{
-	font-size: 4em;
+	font-size: 2.8em;
 	color: white;
 }
 

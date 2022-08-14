@@ -15,6 +15,11 @@ p{
 .contadorReferencia{
 	font-size:60%;
 }
+.ejercicio{
+	font-size: 1.3em;
+	color: #3db5ed;
+	font-weight: bold;
+}
 
 .fondoAcordeon{
 	background-color: #18529D;
@@ -231,6 +236,9 @@ p{
 	/*Aparece elementos de escritorio*/
 	.aire{
 		height: 30px;
+	}
+	.aireSuperior{
+		height: 40px;
 	}
 	.enlaceModulo{
 		color: #777b8e;
