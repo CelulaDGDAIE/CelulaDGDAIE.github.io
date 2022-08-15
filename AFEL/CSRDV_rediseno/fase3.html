@@ -12,6 +12,9 @@
 	<link href="css/estiloFase.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -155,11 +158,13 @@
 				<div class="col align-self-center centrado" id="columnaImagen">
 					<img src="imagenes/Fase3/Proposito.jpg" class="img-fluid" id="imagenDiapositivas"
 						alt="presentacion">
+						<p style="text-align: right;">[1]</p>
 				</div>
 				<div class="col align-self-center centrado">
 					<div id="tituloCarrusel">
 						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
 					</div>
+					<br>
 					<div id="textoCarrusel">
 						$@textoPresentacion
 					</div>
@@ -180,11 +185,11 @@
 
 		<!-------------- /Información general -------------->
 		<br>
-		<p class="textoSeccion">Desarrollo de la Experiencia educativa</p>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa.</p>
 		<div class="row" style="color: white;">
 			<div class="col-2"></div>
 			<div class="col">
-				<h1 style="text-align:center; font-weight: bold;" class="fondoVerde tituloSeccion">1. ¿Cómo distribuir el ingreso? ¿Qué es y cómo usar el crédito?
+				<h1 style="text-align:center; font-weight: bold;" class="fondoVerde tituloSeccion">3.1. ¿Cómo distribuir el ingreso? ¿Qué es y cómo usar el crédito?
 				</h1>
 				<hr>
 			</div>
@@ -204,13 +209,19 @@
 			</div>
 			<div class="col-3"></div>
 		</div>
+		<br>
 		<div class="row" style="color: black;">
 			<div class="col-2"></div>
 			<div class="col">
 				<p>Es muy probable que para cumplir tus metas necesites hacer uso del cr&eacute;dito, y para ello es importante tener un buen historial crediticio. El cr&eacute;dito es &uacute;til para adquirir bienes, pero mal empleado puede meterte en problemas econ&oacute;micos serios. &iquest;Entiendes c&oacute;mo funciona el cr&eacute;dito? </p>
 				<p>Reflexiona acerca del uso de las tarjetas de cr&eacute;dito y de sus ventajas.</p>
 				<p>Para poder afianzar tu conocimiento y responder las interrogantes planteadas anteriormente, revisa los siguientes videos acerca de c&oacute;mo gestionar mejor tu dinero y c&oacute;mo usar una tarjeta de cr&eacute;dito?</p>
-				
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg> Haz clic en la pestaña correspondiente para visualizar los dos videos.</p>
 				<div style="background-color: #fff"><!--Div por si se quiere editar el fondo de los tabs-->
 					<nav class="nav nav-pills flex-column flex-sm-row">
 					  <a class="flex-sm-fill text-sm-center nav-link active" data-bs-toggle="tab" data-bs-target="#AAGMTDCLR503020">Aprende a gestionar MEJOR tu dinero con LA REGLA 50/30/20</a>
@@ -240,7 +251,7 @@
 		<div class="row">
 			<div class="col-2"></div>
 			<div class="col">
-				<h1 style="text-align:center; font-weight: bold; color: white;" class="fondoAzul tituloSeccion">2. Responsabilidades de adulto: predial, impuestos, tenencia</h1>
+				<h1 style="text-align:center; font-weight: bold; color: white;" class="fondoAzul tituloSeccion">3.2. Responsabilidades de adulto: predial, impuestos, tenencia</h1>
 			</div>
 			<div class="col-2"></div>
 		</div>
@@ -249,8 +260,15 @@
 			<div class="col">
 				<p>Además de pagar el 16% de impuesto al valor agregado (IVA) en cada producto y servicio que obtienes, ¿qué otros impuestos identificas que tiene que pagar un adulto independiente?​</p>
 				<p>En el diccionario de la Real Academia Espa&ntilde;ola (RAE), impuesto es un "tributo que se exige en funci&oacute;n de la capacidad econ&oacute;mica de los obligados a su pago".</p>
+				<p>Así mismo, los impuestos pueden ser directos e indirectos.</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg> Haz clic en la pestaña correspondiente para visualizar las diferencias entre los impuestos directos e indirectos. </p>
 				<div>
-					<button style="border-radius: 5px;" class="btn btn-primary btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#impuestosDirectos" aria-expanded="false" aria-controls="impuestosDirectos">Impuestos directos</button>
+					<button style="border-radius: 5px; width: 20%;" class="btn btn-primary btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#impuestosDirectos" aria-expanded="false" aria-controls="impuestosDirectos">Impuestos directos</button>
 					
 					<div style="border-radius: 5px;" class="collapse multi-collapse" id="impuestosDirectos">
 						<div class="card card-body">
@@ -260,7 +278,7 @@
 					</div>
 					<br>
 					<br>
-					<button style="border-radius: 5px;" class="btn btn-primary btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#impuestosIndirectos" aria-expanded="false" aria-controls="impuestosIndirectos">Impuestos indirectos</button>
+					<button style="border-radius: 5px; width: 20%;" class="btn btn-primary btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#impuestosIndirectos" aria-expanded="false" aria-controls="impuestosIndirectos">Impuestos indirectos</button>
 					
 					<div style="border-radius: 5px;" class="collapse multi-collapse" id="impuestosIndirectos">
 						<div class="card card-body">
@@ -268,23 +286,17 @@
 						</div>
 					</div>
 					<br>
-					<p>Para obtener m&aacute;s informaci&oacute;n puedes consultar los siguientes links:</p>
-					
-					<br>
-					<div class="row">
-						<div class="column col-md-6" style="text-align: center;">
-							<a href="https://www.bbva.mx/educacion-financiera/blog/que-es-la-tenencia-vehicular.html" target="_blank"><img src="imagenes/descarga2.png" style="width: 10%" alt="Foto"></a>
-						</div>
-						<div class="column col-md-6" style="text-align: center;">
-							<a href="https://www.crabi.com/blog/tramites-vehiculares-tenencia-vehicular" target="_blank"><img src="imagenes/descarga2.png" style="width: 10%" alt="Foto"></a>
-						</div>
-					</div>
-					
 					<br>
 					<p>A continuaci&oacute;n, revisa la siguiente lectura acerca del concepto de impuestos y para qu&eacute; se utilizan:</p>
+					<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+						<path
+						d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+						id="path2"
+						style="fill:#0055d4" />
+					  </svg> Haz clic en el icono para acceder a la información. </p>
 					<div style="text-align: center;">
 						<br>
-						<a href="https://economipedia.com/definiciones/impuesto.html" target="_blank"><img src="imagenes/descarga2.png" style="width: 10%" alt="Foto"></a>
+						<a href="https://economipedia.com/definiciones/impuesto.html" target="_blank"><img src="imagenes/externo2.png" style="width: 10%" alt="Foto"></a>
 					</div>
 				</div>
 			</div>
@@ -301,7 +313,7 @@
 		<div class="row">
 			<div class="col-2"></div>
 			<div class="col">
-				<h1 style="text-align:center; font-weight: bold; color: white;" class="fondoVerde tituloSeccion">3. Tus derechos y obligaciones en la Constitución. Reglamento de tránsito: peatón y conductor</h1>
+				<h1 style="text-align:center; font-weight: bold; color: white;" class="fondoVerde tituloSeccion">3.3. Tus derechos y obligaciones en la Constitución. Reglamento de Tránsito: peatón y conductor</h1>
 			</div>
 			<div class="col-2"></div>
 		</div>
@@ -324,16 +336,16 @@
 			<div class="col-2"></div>
 			<div class="col-2 align-self-center">
 				<img src="imagenes/Fase3/constitucion.jpg" alt="Imagen pendiente" class="img-fluid"/>
+				<p style="text-align: right;">[4]</p>
 			</div>
 			<div class="col align-self-center">
 					<p>Un ciudadano no es s&oacute;lo un habitante de un pa&iacute;s. Un ciudadano es un habitante con derechos y obligaciones definidas en la Constituci&oacute;n Pol&iacute;tica de los Estados Unidos Mexicanos.</p>
 					<p>&iquest;Alguna vez has le&iacute;do dicha Constituci&oacute;n?&nbsp;</p>
-				<br>
 				
 				<p>Para que conozcas algunos de los derechos y obligaciones que la Constituci&oacute;n Mexicana te otorga, lee los Art&iacute;culos 1, 3, 4 y 27 del siguiente documento: </p>
 				<div style="text-align: center;">
 					<br>
-					<a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf" target="_blank"><img src="imagenes/descarga2.png" style="width: 10%" alt="Foto"></a>
+					<a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf" target="_blank"><img src="imagenes/externo2.png" style="width: 10%" alt="Foto"></a>
 				</div>
 			</div>
 			<div class="col-2"></div>
@@ -342,17 +354,18 @@
 		<div class="row" style="color: black;">
 			<div class="col-2"></div>
 			<div class="col align-self-center">
-				<h1 class="subtitulo">3.3.1 Reglamento de tr&aacute;nsito.</h1>
-					<p>Como ciudadanos, compartimos el espacio p&uacute;blico con otros individuos. &Eacute;ste incluye todo espacio abierto que no es privado, por ejemplo: los parques, las &aacute;reas deportivas, el transporte p&uacute;blico y la v&iacute;a p&uacute;blica que abarca las calles, banquetas, y carreteras. Para facilitar la convivencia pac&iacute;fica, los reglamentos de tr&aacute;nsito enlistan una serie de reglas pensadas para garantizar los derechos de los usuarios de la v&iacute;a p&uacute;blica y se&ntilde;alar sus obligaciones.</p>
+				<h1 class="subtitulo">3.3.1 Reglamento de Tr&aacute;nsito</h1>
+					<p>Como ciudadanos, compartimos el espacio público con otros individuos. Éste incluye todo espacio abierto, por ejemplo: los parques, las áreas deportivas, el transporte público y la vía pública que abarca las calles, banquetas y carreteras. Para facilitar la convivencia pacífica, los reglamentos de tránsito enlistan una serie de reglas pensadas para garantizar los derechos de los usuarios de la vía pública y señalar sus obligaciones.</p>
 					<p>&iquest;Hab&iacute;as le&iacute;do el Reglamento de Tr&aacute;nsito? &iquest;Sab&iacute;as las obligaciones de los conductores y de los peatones?</p>
 				<p>Ahora, revisa el Concentrado del Reglamento de la Ley de Tr&aacute;nsito y Seguridad vial para el Estado de Veracruz de Ignacio de la Llave. Presta especial atenci&oacute;n a los Art&iacute;culos 47, 104, 153, 272 y 274.</p>
 				<div style="text-align: center;">
 					<br>
-					<a href="http://www.veracruz.gob.mx/wp-content/uploads/sites/18/2015/07/Nuevo-Reglamento.pdf" target="_blank"><img src="imagenes/descarga2.png" style="width: 10%" alt="Foto"></a>
+					<a href="http://www.veracruz.gob.mx/wp-content/uploads/sites/18/2015/07/Nuevo-Reglamento.pdf" target="_blank"><img src="imagenes/externo2.png" style="width: 10%" alt="Foto"></a>
 				</div>
 			</div>
 			<div class="col-2 align-self-center">
 				<img src="imagenes/Fase3/reglamento.jpg" alt="Imagen pendiente" class="img-fluid"/>
+				<p style="text-align: right;">[5]</p>
 			</div>
 			<div class="col-2"></div>
 		</div>
@@ -365,7 +378,7 @@
 		<div class="row" >
 			<div class="col-2"></div>
 			<div class="col">
-				<h1 style="text-align:center; font-weight: bold; color: white;" class="fondoAzul tituloSeccion">4. ¿Cómo elegir pareja?
+				<h1 style="text-align:center; font-weight: bold; color: white;" class="fondoAzul tituloSeccion">3.4. ¿Cómo elegir pareja?
 				</h1>
 			</div>
 			<div class="col-2">
@@ -376,28 +389,22 @@
 			<div class="col-2"></div>
 			<div class="col-2 align-self-center">
 				<img src="imagenes/Fase3/pareja.jpg" class="img-fluid" />
+				<p style="text-align: right;">[6]</p>
 			</div>
 			<div class="col align-self-center">
 				<p>Ya eres un ciudadano adulto. En este curso has aprendido herramientas de desarrollo personal y responsabilidades que te ser&aacute;n &uacute;tiles a lo largo de tu vida.</p>
 				<p>Ahora, reflexiona acerca de la mayor responsabilidad que tienes, una que es contigo mismo. S&iacute;, tu mayor responsabilidad es tu vida, es vivir de una manera consciente, quererte y cuidarte. Actitudes y comportamientos como la empat&iacute;a, la amabilidad, la solidaridad, la honestidad, la compasi&oacute;n, etc., son valores que, si los ejercitas con los dem&aacute;s y contigo mismo, te ayudar&aacute;n a vivir mejor.</p>
-			</div>
-			<div class="col-2"></div>
-		</div>
-		<div class="row" style="color: black;">
-			<div class="col-2"></div>
-			<div class="col align-self-center">
 				<p>&iquest;Cu&aacute;les son tus valores? &iquest;En d&oacute;nde los aprendiste? &iquest;Cu&aacute;l es m&aacute;s importante para ti? &iquest;Crees que los podr&iacute;as cambiar?</p>
-				<p>&iquest;Cu&aacute;l es tu actitud acerca del dinero?, &iquest;te gusta ahorrar o te gusta gastar?</p>
-			</div>
-			<div class="col-2 align-self-center">
-				<img src="imagenes/Fase3/dinero.jpg" class="img-fluid" />
+
 			</div>
 			<div class="col-2"></div>
 		</div>
+
 		<div class="row" style="color: black;">
 			<div class="col-2"></div>
 			<div class="col-2 align-self-center">
 				<img src="imagenes/Fase3/escoger.jpg" class="img-fluid" />
+				<p style="text-align: right;">[7]</p>
 			</div>
 			<div class="col align-self-center">
 					<p>Ahora, &iquest;qu&eacute; puedes decir acerca de tu concepto de familia?, &iquest;te gustar&iacute;a casarte?, &iquest;tener hijos? Es importante que reflexiones acerca de estos temas para que te conozcas y, llegado el momento, te preguntes qu&eacute; te gustar&iacute;a encontrar en la persona con la que podr&iacute;as compartir tu vida.</p>
@@ -411,7 +418,7 @@
 			<div class="col-2"></div>
 			<div class="col">
 				<p>El amor es el v&iacute;nculo que nos conecta a todos, pero encontrar un(a) compa&ntilde;ero(a) de vida puede ser incre&iacute;blemente dif&iacute;cil. Llevar&aacute; tiempo, ser&aacute; dif&iacute;cil, pero cuando lo encuentres, ser&aacute; un momento impresionante con sentimientos inexplicables.</p>
-				<p>A continuaci&oacute;n revisa la siguiente presentaci&oacute;n en la que encontrar&aacute;s consejos pr&aacute;cticos para tener en cuenta al buscar a el/la indicado/a.</p>
+				<p>A continuación revisa la siguiente ilustración en la que encontrarás consejos prácticos para tener en cuenta al buscar a el/la indicado/a. </p>
 			</div>
 			<div class="col-2"></div>
 		</div>
@@ -422,14 +429,15 @@
 			</div>
 			<div class="col-3"></div>
 		</div>
+		<br>
 		<div class="row" style="color: black;">
 			<div class="col-2"></div>
 			<div class="col">
 
-				<p>A prop&oacute;sito de este tema, revisa la siguiente lectura: 7 claves para elegir pareja:</p>
+				<p>A prop&oacute;sito de este tema, revisa la siguiente lectura: <em>claves para elegir pareja</em>:</p>
 				<div style="text-align: center;">
 					<br>
-					<a href="https://www.elhorizonte.mx/estilo/7-claves-para-saber-elegir-a-tu-pareja/775862" target="_blank"><img src="imagenes/descarga2.png" style="width: 10%" alt="Foto"></a>
+					<a href="https://www.elhorizonte.mx/estilo/7-claves-para-saber-elegir-a-tu-pareja/775862" target="_blank"><img src="imagenes/externo2.png" style="width: 10%" alt="Foto"></a>
 				</div>
 			</div>
 			<div class="col-2"></div>
@@ -473,22 +481,22 @@
 				  </nav>
 				  <div class="tab-content" id="nav-tabContent">
 					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-						<p class="fuente">Aprendiz financiero. (2020, 13 de agosto). Aprende a gestionar mejor tu dinero con la Regla 50/30/20. [Video]. Youtube. <u><a href="https://www.youtube.com/watch?v=_bgUUswBttU">https://www.youtube.com/watch?v=_bgUUswBttU</a></u></p>
+						<p class="fuente">Aprendiz financiero. (2020, 13 de agosto). <em>Aprende a gestionar mejor tu dinero con la Regla 50/30/20.</em> [Video]. Youtube. <a href="https://www.youtube.com/watch?v=_bgUUswBttU">https://www.youtube.com/watch?v=_bgUUswBttU</a></p>
 						<p class="fuente">BBVA. (s. f). <em>&iquest;Qu&eacute; es la tenencia vehicular? </em>Bbva.mx. <a href="https://www.bbva.mx/educacion-financiera/blog/que-es-la-tenencia-vehicular.html">https://www.bbva.mx/educacion-financiera/blog/que-es-la-tenencia-vehicular.html</a></p>
 						<p class="fuente">C&aacute;mara de Diputados del H. Congreso de la Uni&oacute;n. &Uacute;ltima Reforma. (2021, 28 de mayo). <em>Constituci&oacute;n Pol&iacute;tica de los Estados Unidos Mexicanos</em>. Secretar&iacute;a Facturama. (2021). Diferencias entre los impuestos directos e indirectos [Blog]. Facturama.mx. <a href="https://facturama.mx/blog/diferencias-entre-los-impuestos-directos-e-indirectos/">https://facturama.mx/blog/diferencias-entre-los-impuestos-directos-e-indirectos/</a></p>
-						<p class="fuente">El Horizonte (2022). 7 claves para saber elegir a tu pareja. Elhorizontemx. <a href="https://www.elhorizonte.mx/estilo/7-claves-para-saber-elegir-a-tu-pareja/775862">https://www.elhorizonte.mx/estilo/7-claves-para-saber-elegir-a-tu-pareja/</a><a href="https://www.elhorizonte.mx/estilo/7-claves-para-saber-elegir-a-tu-pareja/775862">775862</a></p>
-						<p class="fuente">General. Diario Oficial de la Federaci&oacute;n.</p>
+						<p class="fuente">El Horizonte (2022). <em>7 claves para saber elegir a tu pareja.</em> Elhorizontemx. <a href="https://www.elhorizonte.mx/estilo/7-claves-para-saber-elegir-a-tu-pareja/775862">https://www.elhorizonte.mx/estilo/7-claves-para-saber-elegir-a-tu-pareja/775862</a></p>
+						<p class="fuente">General. <em>Diario Oficial de la Federaci&oacute;n. </em></p>
 						<p class="fuente">Giles, E . (2021)<em>. Pago de tenencia vehicular, todo lo que debes saber. </em>Crabi. <a href="https://www.crabi.com/blog/tramites-vehiculares-tenencia-vehicular">https://www.crabi.com/blog/tramites-vehiculares-tenencia-vehicular</a></p>
-						<p class="fuente">Gobierno del estado de Veracruz. (2015). Concentrado del Reglamento de la Ley de Tr&aacute;nsito y Seguridad Vial para el Estado de Veracruz de Ignacio de la Llave. Veracruz.gob.mx. <a href="http://www.veracruz.gob.mx/wp-content/uploads/sites/18/2015/07/Nuevo-Reglamento.pdf">http://www.veracruz.gob.mx/wp-content/uploads/sites/18/2015/07/Nuevo-Reglamento.pdf</a></p>
-						<p class="fuente">Paola Herrera. (2019, 9 de septiembre). C&oacute;mo usar correctamente una tarjeta de cr&eacute;dito. &iexcl;Aprov&eacute;chalas! [Video]. Youtube. <u><a href="https://www.youtube.com/watch?v=amJ9MvPtWvs&amp;t=750s">https://www.youtube.com/watch?v=amJ9MvPtWvs&amp;t=750s</a></u></p>
-						<p class="fuente">Rold&aacute;n, P. N. (s. f). <em>Impuesto</em>. Economipedia.com. <u><a href="https://economipedia.com/definiciones/impuesto.html">https://economipedia.com/definiciones/impuesto.html</a></u></p>
-						<p class="fuente">TNN. (2021). 7 ways to choose the right life partner. Etimes Entertainment. <a href="https://timesofindia.indiatimes.com/life-style/relationships/love-sex/7-ways-to-choose-the-right-life-partner/articleshow/24741632.cms">https://timesofindia.indiatimes.com/life-style/relationships/love-sex/7-ways-to-choose-the-right-life-partner/articleshow/24741632.</a><a href="https://timesofindia.indiatimes.com/life-style/relationships/love-sex/7-ways-to-choose-the-right-life-partner/articleshow/24741632.cms">cms</a></p>
+						<p class="fuente">Gobierno del estado de Veracruz. (2015). <em>Concentrado del Reglamento de la Ley de Tr&aacute;nsito y Seguridad Vial para el Estado de Veracruz de Ignacio de la Llave.</em> Veracruz.gob.mx. <a href="http://www.veracruz.gob.mx/wp-content/uploads/sites/18/2015/07/Nuevo-Reglamento.pdf">http://www.veracruz.gob.mx/wp-content/uploads/sites/18/2015/07/Nuevo-Reglamento.pdf</a></p>
+						<p class="fuente">Paola Herrera. (2019, 9 de septiembre). <em>C&oacute;mo usar correctamente una tarjeta de cr&eacute;dito. &iexcl;Aprov&eacute;chalas!</em> [Video]. Youtube. <a href="https://www.youtube.com/watch?v=amJ9MvPtWvs&amp;t=750s">https://www.youtube.com/watch?v=amJ9MvPtWvs&amp;t=750s</a></p>
+						<p class="fuente">Rold&aacute;n, P. N. (s. f). <em>Impuesto</em>. Economipedia.com. <a href="https://economipedia.com/definiciones/impuesto.html">https://economipedia.com/definiciones/impuesto.html</a></p>
+						<p class="fuente">TNN. (2021). <em>7 ways to choose the right life partner.</em> Etimes Entertainment. <a href="https://timesofindia.indiatimes.com/life-style/relationships/love-sex/7-ways-to-choose-the-right-life-partner/articleshow/24741632.cms">https://timesofindia.indiatimes.com/life-style/relationships/love-sex/7-ways-to-choose-the-right-life-partner/articleshow/24741632.cms</a></p>
 					</div>
 					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-						<p class="fuente">Araujo, M. C. (2018). <em>&iquest;Los prejuicios afectan nuestras decisiones?</em> Primeros pasos. <u><a href="https://blogs.iadb.org/desarrollo-infantil/es/prejuicios-afectan-decisiones/">https</a></u><u><a href="https://blogs.iadb.org/desarrollo-infantil/es/prejuicios-afectan-decisiones/">://blogs.iadb.org/desarrollo-infantil/es/prejuicios-afectan-decisiones/</a></u></p>
-						<p class="fuente">Benavidez, V. &amp; Flores R. (2019). La importancia de las emociones para la neurodid&aacute;ctica. Dialnet. <u><a href="https://dialnet.unirioja.es/servlet/articulo?codigo=6794283">https://dialnet.unirioja.es/servlet/articulo?codigo=6794283</a></u></p>
-						<p class="fuente">Garc&iacute;a, A. (2019). Neurociencia de las emociones. Dialnet. <u><a href="https://dialnet.unirioja.es/servlet/articulo?codigo=6921884">https://dialnet.unirioja.es/servlet/articulo?codigo=6921884</a></u></p>
-						<p class="fuente">Steven Ussery (2021). What is the difference between self-actualization and self-fulfillment?. Quora. <u><a href="https://qr.ae/pvYVks">https://qr.ae/pvYVks</a></u></p>
+						<p class="fuente">Araujo, M. C. (2018). <em>&iquest;Los prejuicios afectan nuestras decisiones?</em> Primeros pasos. <a href="https://blogs.iadb.org/desarrollo-infantil/es/prejuicios-afectan-decisiones/">https://blogs.iadb.org/desarrollo-infantil/es/prejuicios-afectan-decisiones/</a></p>
+						<p class="fuente">Benavidez, V. &amp; Flores R. (2019). <em>La importancia de las emociones para la neurodid&aacute;ctica. </em>Dialnet. <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=6794283">https://dialnet.unirioja.es/servlet/articulo?codigo=6794283</a></p>
+						<p class="fuente">Garc&iacute;a, A. (2019). <em>Neurociencia de las emociones.</em> Dialnet. <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=6921884">https://dialnet.unirioja.es/servlet/articulo?codigo=6921884</a></p>
+						<p class="fuente">Steven Ussery (2021). <em>What is the difference between self-actualization and self-fulfillment?.</em> Quora. <a href="https://qr.ae/pvYVks">https://qr.ae/pvYVks</a></p>
 					</div>
 						
 				  </div>
@@ -533,7 +541,46 @@
 							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
 							<div class="accordion-body">
 								<p class="referencia" id="referencias">
-									<sup class="contadorReferencia">1</sup>
+									<sup class="contadorReferencia">1</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">2</sup> Trabajo iconos creados por Eucalyp-Flaticon. <a target="_blank" href="https://www.flaticon.es/icono-gratis/equipo_1283187">https://www.flaticon.es/icono-gratis/equipo_1283187</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">3</sup> Igualdad iconos creados por Freepik-Flaticon.  <a target="_blank" href="https://www.flaticon.es/icono-gratis/feminismo_2865682">https://www.flaticon.es/icono-gratis/feminismo_2865682</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">4</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">5</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">6</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">7</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">8</sup> Hablar iconos creados por Freepik-Flaticon. <a target="_blank" href="https://www.flaticon.es/icono-gratis/conversacion_1000384">https://www.flaticon.es/icono-gratis/conversacion_1000384</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">9</sup> Interesar iconos creados por Freepik-Flaticon. <a target="_blank" href="https://www.flaticon.es/icono-gratis/intereses_3362087">https://www.flaticon.es/icono-gratis/intereses_3362087</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">10</sup> Conocimiento iconos creados por noomtah-Flaticon. <a target="_blank" href="https://www.flaticon.es/icono-premium/conocimiento_2419728">https://www.flaticon.es/icono-premium/conocimiento_2419728</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">11</sup> Familia iconos creados por Freepik - Flaticon. <a target="_blank" href="https://www.flaticon.es/icono-premium/familia_547490">https://www.flaticon.es/icono-premium/familia_547490</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">12</sup> El respeto iconos creados por Freepik-Flaticon. <a target="_blank" href="https://www.flaticon.es/icono-gratis/igualdad_3361892">https://www.flaticon.es/icono-gratis/igualdad_3361892</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">13</sup> Confianza iconos creados por Eucalyp-Flaticon. <a target="_blank" href="https://www.flaticon.es/icono-gratis/confiable_2845977">https://www.flaticon.es/icono-gratis/confiable_2845977</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">14</sup> Horario de trabajo iconos creados por Freepik-Flaticon. <a target="_blank" href="https://www.flaticon.es/icono-gratis/calendario_2802888">https://www.flaticon.es/icono-gratis/calendario_2802888</a>
 								</p>
 							</div>
 						</div>
