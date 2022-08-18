@@ -1,0 +1,874 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">$@tituloEscritorio</p>
+				<p id="subtituloPresentacion">$@subtituloModulo1</p>
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="#" class="enlaceModulo"><strong>Módulo 1</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="fase2.html" class="enlaceModulo enlaceActivo"><strong>Módulo 2</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="fase3.html" class="enlaceModulo enlaceActivo"><strong>Módulo 3</strong></a>
+			</div>
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">$@tituloPresentacion</p>
+				<p id="subtituloPresentacionMovil">$@subtituloPresentacion</p>
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">$@tituloPresentacionScroll</p>
+					<p id="subtituloPresentacionScroll">$@subtituloPresentacion</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="#" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Módulo 1</a>
+		<a href="#" class="w3-bar-item w3-button">Módulo 2</a>
+		<a href="#" class="w3-bar-item w3-button">Módulo 3</a>
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aireSuperior fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenDiapositivas"
+						alt="presentacion">
+						<p style="text-align: right;">[1]</p>
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						$@textoPresentacion
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaDerecha">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de saberes del curso</p>
+		<div class="row" style="color: white;">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold;" class="fondoVerde tituloSeccion">1.1. Características de una revista académica
+				</h1>
+				<hr>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row" style="color: black;">
+			<div class="col-2"></div>
+			<div class="col">
+				<p>&iquest;Es lo mismo una <strong>revista acad&eacute;mica especializada </strong>que una <strong>revista de divulgaci&oacute;n</strong>? L&oacute;pez Vera (2021) expone ciertas diferencias entre estos tipos de revistas y argumenta que, &laquo;en la evaluaci&oacute;n acad&eacute;mica de algunos medidores de productividad, las revistas especializadas son mejor puntuadas&raquo; (p. 12). En la siguiente infograf&iacute;a se exponen algunas de estas diferencias:</p>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row" style="color: black;">
+			<div class="col-2"></div>
+			<div class="col align-self-center">
+				<div style="width: 100%;"><div style="position: relative; padding-bottom: 91.66666666666666%; padding-top: 0; height: 0; z-index: -1;"><iframe frameborder="0" width="1200px" height="1100px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/628bddb73005a900116c7f07" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+			</div>
+			<div class="col align-self-center">
+				<div style="width: 100%;"><div style="position: relative; padding-bottom: 75%; padding-top: 0; height: 0; z-index: -1;"><iframe frameborder="0" width="1200px" height="900px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/628bf0d06c9c3b001826867d" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 class="subtitulo">1.1.1. El factor de impacto y los indicadores de producción científica</h1>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg> Haga clic en la pestaña correspondiente para ver su contenido. </p>
+				<div style="background-color: #fff"><!--Div por si se quiere editar el fondo de los tabs-->
+					<nav class="nav nav-pills flex-column flex-sm-row">
+					  <a class="flex-sm-fill text-sm-center nav-link active" data-bs-toggle="tab" data-bs-target="#factor">¿Qué es el factor de impacto?</a>
+					  <a class="flex-sm-fill text-sm-center nav-link" data-bs-toggle="tab" data-bs-target="#calcula">¿Cómo calcular el factor de impacto de una revista académica?</a>
+					  <a class="flex-sm-fill text-sm-center nav-link" data-bs-toggle="tab" data-bs-target="#indicador">¿Qué son los indicadores de producción académica?</a>
+					  <a class="flex-sm-fill text-sm-center nav-link" data-bs-toggle="tab" data-bs-target="#indicadores">¿Cuáles son los indicadores de producción académica?</a>
+
+					</nav>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="factor" role="tabpanel" aria-labelledby="factor-tab" style="text-align: center;">
+							<br>
+							<div style="width: 50%;"><div style="position: relative; padding-bottom: 75%; padding-top: 0; height: 0;"><iframe frameborder="0" width="900px" height="675px" style="position: absolute; top: 0; left: 50%; width: 100%; height: 100%;" src="https://view.genial.ly/628cf2fb68e5440011528e70" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+							<br>
+						</div>
+						<div class="tab-pane fade" id="calcula" role="tabpanel" aria-labelledby="calcula-tab" style="text-align: center;">
+							<br>
+							<p>El factor de impacto mide la frecuencia con que es citado el contenido de una revista en un año concreto. Se obtiene con la siguiente fórmula:</p>
+							<div style="width: 50%;"><div style="position: relative; padding-bottom: 97.22222222222221%; padding-top: 0; height: 0;"><iframe frameborder="0" width="900px" height="875px" style="position: absolute; top: 0; left: 50%; width: 100%; height: 100%;" src="https://view.genial.ly/628cfb1047db440018c0c1d6" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+							<br>
+
+						</div>
+						<div class="tab-pane fade" id="indicador" role="tabpanel" aria-labelledby="indicador-tab" style="text-align: center;">
+							<br>
+							<div style="width: 50%;"><div style="position: relative; padding-bottom: 86.11111111111111%; padding-top: 0; height: 0;"><iframe frameborder="0" width="900px" height="775px" style="position: absolute; top: 0; left: 50%; width: 100%; height: 100%;" src="https://view.genial.ly/628cfe3247db440018c0ccc9" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+							<br>
+						</div>
+						<div class="tab-pane fade" id="indicadores" role="tabpanel" aria-labelledby="indicadores-tab" style="text-align: center;">
+							<br>
+							<div style="width: 50%;"><div style="position: relative; padding-bottom: 170.90425531914894%; padding-top: 0; height: 0;"><iframe frameborder="0" width="746.031746031746px" height="1275px" style="position: absolute; top: 0; left: 50%; width: 100%; height: 100%;" src="https://view.genial.ly/628d00e1fc789100184ad607" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+							<br>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col align-self-center">
+				<h1 class="ejercicio">Ejercicio: Valorar el factor de impacto</h1>
+				<p>&iquest;En qu&eacute; revista acad&eacute;mica especializada le gustar&iacute;a publicar su art&iacute;culo?</p>
+				<p>Quiz&aacute; ya tiene una idea de la revista en que desea publicar. Es momento de comenzar a reunir datos que le ayuden a seleccionar la que m&aacute;s convenga a su inter&eacute;s profesional, considerando el factor de impacto y otros indicadores de producci&oacute;n acad&eacute;mica. Vamos por pasos:</p>
+				<ol>
+				<li>Visite los sitios web de los siguientes sistemas de indicadores de producci&oacute;n acad&eacute;mica. Observe c&oacute;mo est&aacute;n clasificadas las revistas y cu&aacute;les son sus indicadores de referencia.</li>
+				</ol>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col align-self-center">
+				<div class="centrado fondoAzul">
+					<br>
+					<a href="https://clarivate.com/webofsciencegroup/solutions/journal-citation-reports/" target="_blank" style="color: white; font-size: 1.5em;"><img src="imagenes/Fase1/ejercicio1.jpg" class="img-fluid" >
+					<p class="centrado"><strong>Journal Citation Reports (JCR)</strong></p></a>
+					<br>
+				</div>
+			</div>
+			<div class="col align-self-center">
+				<div class="centrado fondoVerde">
+					<br>
+					<a href="https://www.scimagojr.com/ " target="_blank" style="color: white; font-size: 1.5em;"><img src="imagenes/Fase1/ejercicio2.jpg" class="img-fluid" >
+					<p class="centrado"><strong>SCImago Journal & Country Rank (SJR)</strong> </p></a>
+					<br>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col align-self-center">
+				<ol start="2">
+					<li>Investigue cuál es el factor de impacto de tres revistas académicas de su elección en las que le interesa publicar su artículo, esta información será de utilidad para elaborar la evidencia de desempeño al final de este módulo.</li>
+				</ol>
+			</div>
+			<div class="col-2"></div>
+		</div>
+
+		<hr>
+		<br>
+		<br>
+
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 class="subtitulo">1.1.2 El aporte original del contenido</h1>
+				<p>En la siguiente infografía se exponen algunos criterios que López-Vera (2021) considera fundamentales para valorar la originalidad de un artículo académico. 
+				</p>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-4"></div>
+			<div class="col">
+				<div style="width: 100%;"><div style="position: relative; padding-bottom: 133.33333333333331%; padding-top: 0; height: 0; z-index: -1;"><iframe frameborder="0" width="900px" height="1200px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/628e7f61e24beb00180a77c4" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+			</div>
+			<div class="col-4"></div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<p><strong>Recuerde</strong>: es necesario revisar las normas para autores que establece cada revista.
+				</p>
+				<p>Visite el siguiente sitio <em>web</em> y observe cuáles son las normas para autores que se proponen en esta revista.
+				</p>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-4"></div>
+			<div class="col align-self-center">
+				<div class="centrado fondoAzul">
+					<br>
+					<a href="https://revistamedicasinergia.com/index.php/rms/about/submissions" target="_blank" style="color: white; font-size: 1.5em;"><img src="imagenes/Fase1/sinergia.jpg" class="img-fluid">
+					<p class="centrado"><strong>Revista Médica Sinergia</strong></p></a>
+					<br>
+				</div>
+				</p>
+			</div>
+			<div class="col-4"></div>
+		</div>
+
+		<div class="row" >
+			<div class="col-2"></div>
+			<div class="col">
+				<p>Investigue cuáles son las normas para autores en las tres revistas académicas seleccionadas previamente, en las que le interesa publicar su artículo, esta información será de utilidad para elaborar la evidencia de desempeño al final de este módulo.
+			</div>
+			<div class="col-2">
+
+			</div>
+		</div>
+		<br>
+
+		<div class="row" >
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 class="subtitulo">1.1.3. El proceso de arbitraje</h1>
+			
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg> Haga clic en la pestaña correspondiente para ver su contenido. </p>
+				<div style="background-color: #fff"><!--Div por si se quiere editar el fondo de los tabs-->
+					<nav class="nav nav-pills flex-column flex-sm-row">
+					  <a class="flex-sm-fill text-sm-center nav-link active" data-bs-toggle="tab" data-bs-target="#proceso">¿Qué es el proceso de arbitraje?</a>
+					  <a class="flex-sm-fill text-sm-center nav-link" data-bs-toggle="tab" data-bs-target="#participa">¿Quiénes participan en el proceso de arbitraje?</a>
+
+					</nav>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="proceso" role="tabpanel" aria-labelledby="proceso-tab" style="text-align: center;">
+							<br>
+							<div style="width: 50%;"><div style="position: relative; padding-bottom: 75%; padding-top: 0; height: 0;"><iframe frameborder="0" width="900px" height="675px" style="position: absolute; top: 0; left: 50%; width: 100%; height: 100%;" src="https://view.genial.ly/628e8e70680f280017b877ff" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+							<br>
+						</div>
+						<div class="tab-pane fade" id="participa" role="tabpanel" aria-labelledby="participa-tab" style="text-align: center;">
+							<br>
+							<div style="width: 50%;"><div style="position: relative; padding-bottom: 79.16666666666666%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="950px" style="position: absolute; top: 0; left: 50%; width: 100%; height: 100%;" src="https://view.genial.ly/628e8e7e3d1611001931ab55" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>				</div>
+							<br>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<br>
+		<div class="row" style="color: black;">
+			<div class="col-2"></div>
+			<div class="col align-self-center">
+				<p>En el siguiente texto, se exponen las nueve etapas del <em>El Proceso de arbitraje</em> que propone L&oacute;pez (2021). Cabe destacar que el n&uacute;mero de estas etapas pueden variar seg&uacute;n los lineamientos editoriales de cada revista.</p>
+				<p>Para conocer este proceso, lea detenidamente la <em>Gu&iacute;a para la producci&oacute;n de art&iacute;culos acad&eacute;micos con fines de publicaci&oacute;n </em><strong>(pp. 15-17)</strong>:</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg> Haga clic en el icono para acceder a la información. </p>
+				<div style="text-align: center;">
+					<a target="_blank" href="https://www.uv.mx/bdh/files/2021/09/Libro-Gui%CC%81a-para-la-produccion-de-arti%CC%81culos-acade%CC%81micos.pdf "><img src="imagenes/externo2.png" class="img-fluid" style="width: 10%;"></a>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+
+		<hr>
+		<br>
+		<br>
+		<div class="row" >
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 class="subtitulo">1.1.4 El perfil de la revista</h1>
+
+			</div>
+			<div class="col-2">
+
+			</div>
+		</div>
+		<br>
+		<div class="row" >
+			<div class="col-3"></div>
+			<div class="col">
+				<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0; z-index: -1;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/628fd06b305f300011ba35e3" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+			</div>
+			<div class="col-3">
+
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col align-self-center">
+				<h1 class="ejercicio">Ejercicio: Identificar el perfil de la revista</h1>
+				<ol>
+					<li>Visite los siguientes sitios web y observe la definici&oacute;n de su perfil editorial. <em>Doxa Comunicaci&oacute;n </em>es una revista de tipo miscel&aacute;nea; <em>T&oacute;picos. Revista de filosof&iacute;a </em>es especializada.</li>
+				</ol>
+			</div>
+			<div class="col-2"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col align-self-center">
+				<div class="centrado fondoAzul">
+					<br>
+					<a href="https://revistascientificas.uspceu.com/doxacomunicacion/about" target="_blank" style="color: white; font-size: 1.5em;"><img src="imagenes/Fase1/doxa.jpg" class="img-fluid" >
+					<p class="centrado"><strong>Doxa Comunicación</strong></p></a>
+					<br>
+				</div>
+			</div>
+			<div class="col align-self-center">
+				<div class="centrado fondoVerde">
+					<br>
+					<a href="https://revistas.up.edu.mx/topicos" target="_blank" style="color: white; font-size: 1.5em;"><img src="imagenes/Fase1/topicos.jpg" class="img-fluid" >
+					<p class="centrado"><strong>Tópicos. Revista de filosofía</strong> </p></a>
+					<br>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+
+
+
+
+
+
+		<br>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col align-self-center">
+				<ol start="2">
+					<li>
+						Investigue cuál es el perfil de las tres revistas académicas seleccionadas previamente, en las que le interesa publicar su artículo, esta información será de utilidad para elaborar la evidencia de desempeño al final de este módulo.
+					</li>
+				</ol>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<div class="row" >
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 class="subtitulo">1.1.5 DOI (<em>Digital Object Identifier</em>) </h1>
+			</div>
+			<div class="col-2">
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg> Haga clic en la pestaña correspondiente para ver su contenido. </p>
+				<div style="background-color: #fff"><!--Div por si se quiere editar el fondo de los tabs-->
+					<nav class="nav nav-pills flex-column flex-sm-row">
+					  <a class="flex-sm-fill text-sm-center nav-link active" data-bs-toggle="tab" data-bs-target="#doi">¿Qué es el DOI?</a>
+					  <a class="flex-sm-fill text-sm-center nav-link" data-bs-toggle="tab" data-bs-target="#sirve">¿Para qué sirve el DOI?</a>
+
+					</nav>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="doi" role="tabpanel" aria-labelledby="doi-tab" style="text-align: center;">
+							<br>
+							<div style="width: 50%;"><div style="position: relative; padding-bottom: 75%; padding-top: 0; height: 0;"><iframe frameborder="0" width="900px" height="675px" style="position: absolute; top: 0; left: 50%; width: 100%; height: 100%;" src="https://view.genial.ly/628fcda89d21860018cb43e8" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+							<br>
+						</div>
+						<div class="tab-pane fade" id="sirve" role="tabpanel" aria-labelledby="sirve-tab" style="text-align: center;">
+							<br>
+							<p>Observe el video <em>DOI. &iquest;Qu&eacute; es?&iquest;Para qu&eacute; sirve? </em>(Gi2V, 2020) en el que se explica qu&eacute; es, c&oacute;mo identificarlo en la publicaci&oacute;n y cu&aacute;l es su utilidad para fines de calidad de la producci&oacute;n acad&eacute;mica.</p>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Pu9uzDNxMhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<br>
+							<br>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-2"></div>
+	</div>
+		<br>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col align-self-center">
+				<h1 class="ejercicio">Ejercicio: Identificar el DOI</h1>
+				<p>Investigue cuál es el DOI de las tres revistas académicas seleccionadas previamente, en las que le interesa publicar su artículo, esta información será de utilidad para elaborar la evidencia de desempeño al final de este módulo.</p>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<div class="row" >
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 class="subtitulo">1.1.6 Periodicidad y vigencia </h1>
+			</div>
+			<div class="col-2">
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col" >
+				<div style="width: 100%;"><div style="position: relative; padding-bottom: 67.5%; padding-top: 0; height: 0; z-index: -1;"><iframe frameborder="0" width="1000px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/628fd4d99d21860018cb50c9" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de Desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="https://www.uv.mx/" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p class="fuente">Gitman, L. &amp; Chad, J. Z. (2021). <em>Principios de administraci&oacute;n financiera</em>, 14&ordf;. Ed. Pearson Education.</p>
+						<p class="fuente">Guajardo, G. (2020). <em>Contabilidad Financiera</em>. Mc Graw Hill.</p>
+						<p class="fuente">Ingenio Contable. (2021, 20 de enero). <em>Estado de Resultado Integral NIF B-3 | Conoce la estructura del Estado de Resultados </em>(video). Youtube. <a href="https://youtu.be/RgwlrV1a4KI">https://youtu.be/RgwlrV1a4KI</a></p>
+						<p class="fuente">Ourway Business. (2020, 01 de octubre). <em>Importancia del an&aacute;lisis financiero para las micro, peque&ntilde;as y medianas empresas </em>(Video). Youtube. <a href="https://youtu.be/vxp6jeVAEQE">https://youtu.be/vxp6jeVAEQE</a>&nbsp;</p>
+						<p class="fuente">Perdomo, A. (2021). <em>An&aacute;lisis e interpretaci&oacute;n de estados financieros</em>, 14&ordf;. Ed. Pema. &nbsp;</p>
+						<p class="fuente">San Mart&iacute;n, N. B. <em>Normas de Informaci&oacute;n Financiera.</em> (2021). Fondo Editorial del IMCP.</p>
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+						<p class="fuente">Besley, S. &amp; Brigham, E . (2009). <em>Fundamentos de administraci&oacute;n financiera</em>, 14&ordf;. Ed. Cengage Learning.&nbsp;</p>
+						<p class="fuente">Bravo, M de L. &amp; Lambret&oacute;n, V. (2019). <em>Introducci&oacute;n a las finanzas</em>. Pearson.</p>
+						<p class="fuente">C&oacute;rdoba, M. (2014). <em>An&aacute;lisis financiero</em>. Ecoe Ediciones.</p>
+						<p class="fuente">Kennedy, R, D. (1992). <em>Estados financieros: forma, an&aacute;lisis e interpretaci&oacute;n</em>, 2&ordf;. Ed. Limusa.</p>
+						<p class="fuente">Ochoa, G. (2020). <em>Administraci&oacute;n financiera correlacionada con las </em><em>NIF&rsquo;s</em>. Mc Graw Hill.&nbsp;</p>
+						<p class="fuente">Rocha, R. (2021). Estados financieros seg&uacute;n las NIF&rsquo;s. Fondo Editorial del IMCP.</p>
+					</div>
+						
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Disclaimer</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">1</sup>
+									Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">2</sup>
+									Pensar iconos creados por Smashicons-Flaticon. 
+									<a target="_blank" href="https://www.flaticon.es/icono-gratis/pensamiento_775497">https://www.flaticon.es/icono-gratis/pensamiento_775497</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">3</sup>
+									Alta calidad iconos creados por Uniconlabs-Flaticon. 
+									<a target="_blank" href="https://www.flaticon.es/icono-premium/alta-calidad_5733219">https://www.flaticon.es/icono-premium/alta-calidad_5733219</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">4</sup>
+									Gráfico iconos creados por Freepik-Flaticon. 
+									<a target="_blank" href="https://www.flaticon.es/icono-gratis/estadisticas_784712">https://www.flaticon.es/icono-gratis/estadisticas_784712</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">5</sup>
+									Puntuación iconos creados por Iconii-Flaticon. 
+									<a target="_blank" href="https://www.flaticon.es/icono-premium/clasificacion_5818970">https://www.flaticon.es/icono-premium/clasificacion_5818970</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">6</sup>
+									Conocimiento iconos creados por Smashicons-Flaticon. 
+									<a target="_blank" href="https://www.flaticon.es/icono-gratis/libro_2490419">https://www.flaticon.es/icono-gratis/libro_2490419</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">7</sup>
+									Revista iconos creados por wanicon-Flaticon. 
+									<a target="_blank" href="https://www.flaticon.es/icono-gratis/comunicaciones_1750090">https://www.flaticon.es/icono-gratis/comunicaciones_1750090</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">8</sup>
+									Ley iconos creados por Freepik-Flaticon. 
+									<a target="_blank" href="https://www.flaticon.es/icono-gratis/subasta_783196">https://www.flaticon.es/icono-gratis/subasta_783196</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">9</sup>
+									Vector de alcance creado por vectorjuice-www.freepik.es. 
+									<a target="_blank" href="https://www.freepik.es/vector-gratis/ilustracion-concepto-abstracto-documento-vision-alcance_12291092.htm">https://www.freepik.es/vector-gratis/ilustracion-concepto-abstracto-documento-vision-alcance_12291092.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">10</sup>
+									Vector de analisis medico creado por vector4stock-www.freepik.es. 
+									<a target="_blank" href="https://www.freepik.es/vector-gratis/servicio-o-plataforma-linea-genetista-tecnologia-medicina-ciencia-trabajo-cientifico-estructura-molecula-revista-linea-ilustracion-plana-vectorial_25968279.htm">https://www.freepik.es/vector-gratis/servicio-o-plataforma-linea-genetista-tecnologia-medicina-ciencia-trabajo-cientifico-estructura-molecula-revista-linea-ilustracion-plana-vectorial_25968279.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">11</sup>
+									Nice-template-for-text / 4424. 
+									<a target="_blank" href="https://www.freepik.es/vector-gratis/bonita-plantilla-texto_936619.htm">https://www.freepik.es/vector-gratis/bonita-plantilla-texto_936619.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">12</sup>
+									Vector de mercadeo creado por storyset-www.freepik.es. 
+									<a target="_blank" href="https://www.freepik.es/vector-gratis/ilustracion-concepto-newsletter_6193738.htm">https://www.freepik.es/vector-gratis/ilustracion-concepto-newsletter_6193738.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">13</sup>
+									Vector de grafica crecimiento creado por rawpixel.com-www.freepik.es. 
+									<a target="_blank" href="https://www.freepik.es/vector-gratis/ilustracion-control-calidad_2806721.htm">https://www.freepik.es/vector-gratis/ilustracion-control-calidad_2806721.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">14</sup>
+									Vector de analisis financiero creado por macrovector - www.freepik.es. 
+									<a target="_blank" href="https://www.freepik.es/vector-gratis/diagramas-analisis-datos-resultados-graficos-herramientas-analisis-presentacion-tecnicas-tecnicas-toma-decisiones-coleccion-iconos-planos-aislado_7497417.htm">https://www.freepik.es/vector-gratis/diagramas-analisis-datos-resultados-graficos-herramientas-analisis-presentacion-tecnicas-tecnicas-toma-decisiones-coleccion-iconos-planos-aislado_7497417.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">15</sup>
+									Vector de contar historias creado por vectorjuice-www.freepik.es. 
+									<a target="_blank" href="https://www.freepik.es/vector-gratis/entrenador-branding-identidad-curso-superacion-personal-reputacion-personalidad-aumento-autoestima-webinar-online-mentoria-sobre-posicionamiento-personal_11669628.htm">https://www.freepik.es/vector-gratis/entrenador-branding-identidad-curso-superacion-personal-reputacion-personalidad-aumento-autoestima-webinar-online-mentoria-sobre-posicionamiento-personal_11669628.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">16</sup>
+									Vector de objetivo creado por rawpixel.com-www.freepik.es. 
+									<a target="_blank" href="https://www.freepik.es/vector-gratis/ilustracion-icono-destino-negocios_2606563.htm">https://www.freepik.es/vector-gratis/ilustracion-icono-destino-negocios_2606563.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">17</sup>
+									Vector de analytics creado por vectorjuice-www.freepik.es. 
+									<a target="_blank" href="https://www.freepik.es/vector-gratis/analisis-estadistico-personaje-dibujos-animados-hombre-lupa-analizando-datos-diagrama-circular-segmentos-coloridos-estadisticas-auditoria-ilustracion-concepto-investigacion_11668491.htm">https://www.freepik.es/vector-gratis/analisis-estadistico-personaje-dibujos-animados-hombre-lupa-analizando-datos-diagrama-circular-segmentos-coloridos-estadisticas-auditoria-ilustracion-concepto-investigacion_11668491.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">18</sup>
+									Plagio iconos creados por deemakdaksina-Flaticon. 
+									<a target="_blank" href=""></a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">19</sup>
+									Iconos creados por Freepik-Flaticon. 
+									<a target="_blank" href="https://www.flaticon.es/icono-gratis/cotizacion_792097">https://www.flaticon.es/icono-gratis/cotizacion_792097</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">20</sup>
+									Original iconos creados por deemakdaksina-Flaticon. 
+									<a target="_blank" href="https://www.flaticon.es/icono-premium/original_1627325">https://www.flaticon.es/icono-premium/original_1627325</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">21</sup>
+									Desarrollo de software iconos creados por Freepik-Flaticon. 
+									<a target="_blank" href="https://www.flaticon.es/icono-gratis/desarrollador-de-software_4882466">https://www.flaticon.es/icono-gratis/desarrollador-de-software_4882466</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">22</sup>
+									Autor iconos creados por monkik-Flaticon. 
+									<a target="_blank" href="https://www.flaticon.es/icono-gratis/editor_1995572">https://www.flaticon.es/icono-gratis/editor_1995572</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">23</sup>
+									Vector de contar historias creado por vectorjuice-www.freepik.es. 
+									<a target="_blank" href="https://www.freepik.es/vector-gratis/concepto-abstracto-toma-decisiones_12084832.htm">https://www.freepik.es/vector-gratis/concepto-abstracto-toma-decisiones_12084832.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">24</sup>
+									Autor iconos creados por ultimatearm-Flaticon. 
+									<a target="_blank" href="https://www.flaticon.es/icono-gratis/autor_2421992">https://www.flaticon.es/icono-gratis/autor_2421992</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">25</sup>
+									Autor iconos creados por monkik-Flaticon. 
+									<a target="_blank" href="https://www.flaticon.es/icono-gratis/editor_1995572">https://www.flaticon.es/icono-gratis/editor_1995572</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">26</sup>
+									Evaluar iconos creados por Wahyu Adam-Flaticon. 
+									<a target="_blank" href="https://www.flaticon.es/icono-gratis/evaluacion_7331006">https://www.flaticon.es/icono-gratis/evaluacion_7331006</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">27</sup>
+									International DOI Foundation. (9 de diciembre, 2015). DOI logo. [Imagen]. Wikimedia Commons. 
+									<a target="_blank" href="https://commons.wikimedia.org/wiki/File:DOI_logo.svg">https://commons.wikimedia.org/wiki/File:DOI_logo.svg</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<div class="row">
+					  <div class="col">
+						<div id="evidencia1">
+							<p><strong>Actividad 1:</strong></p>
+							<p><strong>Cuadro de registro de tres opciones de revistas para publicar el art&iacute;culo.</strong></p>
+							<p><strong>Descripci&oacute;n:</strong></p>
+							<ol>
+							<li>Elabore un cuadro de registro de las tres opciones de revista para publicar su art&iacute;culo acad&eacute;mico.</li>
+							<li>Reg&iacute;strelas en orden de mayor a menor preferencia.</li>
+							<li>En el cuadro incluya: lugar de edici&oacute;n, periodicidad, factor de impacto, tiempo para el dictamen, otras observaciones.</li>
+							<li>Formato libre.</li>
+							</ol>
+							<p><strong>Criterios de desempe&ntilde;o:</strong></p>
+							<ol>
+							<li>Pertinencia.</li>
+							<li>Organizaci&oacute;n y claridad en el dise&ntilde;o del cuadro.</li>
+							<li>Entrega en formato editable <em>Word</em>.</li>
+							</ol>
+							<p><strong>Lineamientos de entrega:</strong></p>
+							<ol>
+							<li>Titule el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo: Act1_VillanuevaMariaTeresa</li>
+							<li>Env&iacute;e su archivo, en formato PDF, a trav&eacute;s del apartado <strong><em>Actividades</em></strong> de la plataforma Eminus 4, a m&aacute;s tardar en la fecha establecida en el&nbsp;<strong>Calendario</strong>&nbsp;de entregas.</li>
+							</ol>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/contenidoFase.js"></script>
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>

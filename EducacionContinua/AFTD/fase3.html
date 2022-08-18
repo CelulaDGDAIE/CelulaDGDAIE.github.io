@@ -1,0 +1,501 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">$@tituloEscritorio</p>
+				<p id="subtituloPresentacion">$@subtituloModulo1</p>
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="fase1.html" class="enlaceModulo enlaceActivo"><strong>Módulo 1</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="fase2.html" class="enlaceModulo enlaceActivo"><strong>Módulo 2</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+                <a href="#" class="enlaceModulo"><strong>Módulo 3</strong></a>
+			</div>
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">$@tituloPresentacion</p>
+				<p id="subtituloPresentacionMovil">$@subtituloPresentacion</p>
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">$@tituloPresentacionScroll</p>
+					<p id="subtituloPresentacionScroll">$@subtituloPresentacion</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="#" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Módulo 1</a>
+		<a href="#" class="w3-bar-item w3-button">Módulo 2</a>
+		<a href="#" class="w3-bar-item w3-button">Módulo 3</a>
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aireSuperior fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<img src="imagenes/Fase3/Proposito.jpg" class="img-fluid" id="imagenDiapositivas"
+						alt="presentacion">
+						<p style="text-align: right;">[1]</p>
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						$@textoPresentacion
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaDerecha">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de saberes del curso</p>
+		<div class="row" style="color: white;">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold;" class="fondoVerde tituloSeccion">3.1. Metodología y presentación de resultados
+				</h1>
+                <br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+        <div class="row" >
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 class="subtitulo">3.1.1. La propuesta metodológica</h1>
+                <p>En este módulo se ofrecen criterios básicos para la redacción de la metodología en el artículo académico. No se profundiza en los elementos formales de la metodología de investigación, sin embargo, a modo de introducción, le sugerimos observar el siguiente video en el que se exponen algunas generalidades al respecto:
+                </p>
+                <div style="text-align: center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uy037eAUajA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>Una adecuada redacci&oacute;n de la metodolog&iacute;a es muy importante, pues detalla el proceso que se sigui&oacute; en la investigaci&oacute;n, de manera que la comunidad acad&eacute;mica pueda replicar su proceso para validar sus resultados o, en caso contrario, hallar alguna deficiencia en &eacute;ste para corregirlo.</p>
+                <p>En la siguiente presentación se exponen algunas orientaciones generales para la redacción de este apartado. </p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg>A continuación, haga clic en la flecha de la derecha para revisar el contenido.</p>
+                
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row" >
+			<div class="col-3"></div>
+			<div class="col">
+				<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/62c5a9d6e4b7e30019683f7d" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+			</div>
+			<div class="col-3"></div>
+		</div>
+
+		<br>
+		<div class="row" >
+			<div class="col-2"></div>
+			<div class="col">
+                <p>Si desea profundizar m&aacute;s acerca de este tema, consulte la <em>Gu&iacute;a </em><em>para la producci&oacute;n de art&iacute;culos acad&eacute;micos con fines de publicaci&oacute;n</em>, pp. 40-42<em>.</em></p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg> Haga clic en el icono para ir al sitio de consulta. </p>
+                <div style="text-align: center;">
+                    <a target="_blank" href="https://www.uv.mx/bdh/files/2021/09/Libro-Gui%CC%81a-para-la-produccion-de-arti%CC%81culos-acade%CC%81micos.pdf "><img src="imagenes/externo2.png" style="width: 10%;"></a>
+                </div>
+                <br>
+                <h1 class="subtitulo">3.1.2. Opciones para la presentación de resultados</h1>
+                <p>Una vez definido el enfoque y la metodolog&iacute;a, se presentan los resultados. Es importante considerar que los datos obtenidos en la investigaci&oacute;n deben ser organizados l&oacute;gicamente para tener calidad argumentativa en el cuerpo del art&iacute;culo. Adem&aacute;s, la presentaci&oacute;n de los resultados debe apoyarse en elementos gr&aacute;ficos que permitan una lectura &aacute;gil y completa de los hallazgos.</p>
+                <p>Observe el siguiente video en el que se explica, con mayor detalle, cada uno de los elementos involucrados en la redacci&oacute;n de los resultados.</p>
+                <div style="text-align: center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wn0DW6BclUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+				<br>
+                <p>Si desea profundizar m&aacute;s al respecto de este tema, consulte la <em>Gu&iacute;a para la producci&oacute;n de art&iacute;culos acad&eacute;micos con fines de publicaci&oacute;n</em>, p. 42<em>.</em></p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg> Haga clic en el icono para ir al sitio de consulta.</p>
+                <div style="text-align: center;">
+                    <a target="_blank" href="https://www.uv.mx/bdh/files/2021/09/Libro-Gui%CC%81a-para-la-produccion-de-arti%CC%81culos-acade%CC%81micos.pdf"><img src="imagenes/externo2.png" style="width: 10%;"></a>
+                </div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold; color: white;" class="fondoAzul tituloSeccion">3.2. Discusión de resultados y conclusiones</h1>
+                <br>
+                <h1 class="subtitulo">3.2.1. Discusión de resultados</h1>
+                <p>Este es uno de los apartados m&aacute;s valorados en el proceso de dictaminaci&oacute;n para la publicaci&oacute;n de un art&iacute;culo, pues implica el ejercicio del sentido cr&iacute;tico sobre lo que se ha hecho, de manera que se examina argumentativamente la informaci&oacute;n hallada respecto del problema de investigaci&oacute;n.</p>
+                <p>En la siguiente infograf&iacute;a se exponen los tres procesos que plantea Alexander S&aacute;nchez para elaborar la discusi&oacute;n de resultados (Cfr. L&oacute;pez-Vera, 2021, p. 43):</p>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col">
+				<div style="width: 100%;"><div style="position: relative; padding-bottom: 69.0909090909091%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1100px" height="760px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/62d1f188cb67ae001144a78a" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+                <p>Si desea profundizar m&aacute;s acerca de este tema, consulte la <em>Gu&iacute;a para la producci&oacute;n de art&iacute;culos acad&eacute;micos con fines de publicaci&oacute;n, </em>pp. 43-44.</p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg> Haga clic en el icono para ir al sitio de consulta.</p>
+                <div style="text-align: center;">
+                    <a target="_blank" href="https://www.uv.mx/bdh/files/2021/09/Libro-Gui%CC%81a-para-la-produccion-de-arti%CC%81culos-acade%CC%81micos.pdf "><img src="imagenes/externo2.png" style="width: 10%;"></a>
+                </div>
+				<br>
+                <h1 class="subtitulo">3.2.2. Redacción de las conclusiones</h1>
+                <p>L&oacute;pez-Vera (2011), en su texto <em>Gu&iacute;a para la producci&oacute;n de art&iacute;culos acad&eacute;micos con fines de publicaci&oacute;n</em>, ofrece algunas orientaciones para la redacci&oacute;n de las conclusiones en un art&iacute;culo acad&eacute;mico:</p>
+                <ol>
+                <li>Las conclusiones no son un resumen del art&iacute;culo.</li>
+                <li>Este apartado debe dejar claro el aporte de la investigaci&oacute;n en el &aacute;rea de conocimiento: una idea novedosa, una revisi&oacute;n desde otra perspectiva, un enfoque diferente o una actualizaci&oacute;n de hallazgos previos.</li>
+                <li>Incluye una valoraci&oacute;n del proceso de investigaci&oacute;n: aciertos, debilidades, limitaciones.</li>
+                <li>Cierra con un argumento de prospectiva, aduciendo la continuidad del problema de investigaci&oacute;n en trabajos futuros.</li>
+                </ol>
+                <p>Refiere, adem&aacute;s, a la estructura conclusi&oacute;n-s&iacute;ntesis que propone Mar&iacute;a Teresa Serafini:</p>
+                <blockquote>
+                <p>&laquo;(&hellip;) subrayar las ideas centrales de cada p&aacute;rrafo y anotar los conceptos clave al margen. Al redactar la conclusi&oacute;n-s&iacute;ntesis, los conceptos clave se pueden agrupar y organizar en p&aacute;rrafos. La extensi&oacute;n sugerida para la conclusi&oacute;n es de dos a cuatro p&aacute;rrafos&raquo; (L&oacute;pez-Vera, 2011, p. 44).</p>
+                </blockquote>
+
+
+			</div>
+			<div class="col-2"></div>
+		</div>
+
+
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de Desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="https://www.uv.mx/" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p class="fuente">Escritura Acad&eacute;mica. (2014, 25 de julio). <em>C&oacute;mo redactar los </em><em>resultados. </em>[Video]. Youtube. <a href="https://www.youtube.com/watch?v=wn0DW6BclUA">https://www.youtube.com/watch?v=wn0DW6BclUA</a></p>
+                        <p class="fuente">L&oacute;pez-Vera, E.E. (2021). <em>Gu&iacute;a para la producci&oacute;n de art&iacute;culos acad&eacute;micos con fines de publicaci&oacute;n</em>. <a href="https://www.uv.mx/bdh/files/2021/09/Libro-Gui%CC%81a-para-la-produccion-de-arti%CC%81culos-acade%CC%81micos.pdf">https://www.uv.mx/bdh/files/2021/09/Libro-Gui%CC%81a-para-la-produccion-de-arti%CC%81culos-acade%CC%81micos.pdf</a></p>
+                        <p class="fuente">S&aacute;nchez-Upegui, A. A. (2011). <em>Manual de redacci&oacute;n acad&eacute;mica e investigativa: c&oacute;mo escribir, evaluar y publicar art&iacute;culos</em>. Cat&oacute;lica del Norte Fundaci&oacute;n Universitaria. <a href="https://cife.edu.mx/recursos/wp-content/uploads/2019/01/manual-de-redaccion-mayo-05-2011.pdf">https</a><a href="https://cife.edu.mx/recursos/wp-content/uploads/2019/01/manual-de-redaccion-mayo-05-2011.pdf">://cife.edu.mx/recursos/wp-content/uploads/2019/01/manual-de-redaccion-mayo-05-2011.pdf</a></p>
+                        <p class="fuente">William Michel Velez Candia. (2017, febrero 7). Diferencia entre los conceptos. Metodol&oacute;g&iacute;a, m&eacute;todo y t&eacute;cnica. [Video]. Youtube. <a href="https://youtu.be/uy037eAUajA">https://</a><a href="https://youtu.be/uy037eAUajA">youtu.be/uy037eAUajA</a></p>
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <p class="fuente">Pensamientos Inorg&aacute;nicos. (2020, 24 de marzo). <em>&iquest;Qu&eacute; son el m&eacute;todo y la metodolog&iacute;a? </em>[Video]. Youtube. <a href="https://www.youtube.com/watch?v=Xnw2502vUZ8">https://www.youtube.com/watch?v=Xnw2502vUZ8</a></p>					</div>
+						
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Disclaimer</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">1</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">2</sup> Internet iconos creados por Freepik-Flaticon. <a href="https://www.flaticon.es/icono-gratis/en-todo-el-mundo_870118" target="_blank">https://www.flaticon.es/icono-gratis/en-todo-el-mundo_870118</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">3</sup> Retroalimentación iconos creados por Eucalyp-Flaticon.  <a href="https://www.flaticon.es/icono-gratis/reforzamiento_1924424" target="_blank">https://www.flaticon.es/icono-gratis/reforzamiento_1924424</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">4</sup> Evaluación iconos creados por Freepik-Flaticon. <a href="https://www.flaticon.es/icono-gratis/lista-de-verificacion_1721929" target="_blank">https://www.flaticon.es/icono-gratis/lista-de-verificacion_1721929</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<div class="row">
+					  <div class="col">
+						<div id="evidencia1">
+							<p><strong>Actividad 4:</strong></p>
+                            <p><strong>B</strong><strong>orrador</strong><strong> de metodolog&iacute;a, presentaci&oacute;n y discusi&oacute;n de resultados.</strong></p>
+                            <p><strong>Descripci&oacute;n:</strong></p>
+                            <ol>
+                            <li>Con base en las orientaciones de redacci&oacute;n revisadas en este m&oacute;dulo, escriba el borrador de los siguientes apartados de su art&iacute;culo:
+                            <ol type="a">
+                            <li>Metodolog&iacute;a.</li>
+                            <li>Presentaci&oacute;n de resultados.</li>
+                            <li>Discusi&oacute;n de los resultados.</li>
+                            </ol>
+                            </li>
+                            </ol>
+                            <p><strong>Criterios de desempe&ntilde;o:</strong></p>
+                            <ol>
+                            <li>En los tres apartados se evaluar&aacute;:
+                            <ol type="a">
+                            <li>Capacidad de s&iacute;ntesis, pues el art&iacute;culo acad&eacute;mico no debe ser extenso ni exhaustivo.</li>
+                            <li>En la metodolog&iacute;a y la presentaci&oacute;n de resultados se prefiere un tono descriptivo; mientras que en la discusi&oacute;n, un tono argumentativo.</li>
+                            <li>La articulaci&oacute;n de estos tres apartados deben corresponderse en contenido; es decir, los indicadores de la metodolog&iacute;a deben atenderse en los apartados subsecuentes, sin dejar cabos sueltos.</li>
+                            </ol>
+                            </li>
+                            </ol>
+                            <p><strong>Lineamientos de entrega: </strong></p>
+                            <ol>
+                            <li>Titule el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo: Act4_VillanuevaMariaTeresa</li>
+                            <li>Env&iacute;e su archivo, en formato Word, a trav&eacute;s del apartado <strong>Actividades </strong>de la plataforma Eminus.</li>
+                            <li>Remita su archivo de acuerdo con la fecha establecida en el <strong>Calendario de entrega de actividades</strong>.</li>
+                            </ol>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/contenidoFase3.js"></script>
+	<script src="js/scriptFase3.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>

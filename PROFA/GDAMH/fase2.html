@@ -1,0 +1,796 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">$@tituloEscritorio</p>
+				<p id="subtituloPresentacion">$@subtituloModulo1</p>
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="fase1.html" class="enlaceModulo enlaceActivo"><strong>Fase 1</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="#" class="enlaceModulo"><strong>Fase 2</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="fase3.html" class="enlaceModulo enlaceActivo"><strong>Fase 3</strong></a>
+			</div>
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">$@tituloPresentacion</p>
+				<p id="subtituloPresentacionMovil">$@subtituloPresentacion</p>
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">$@tituloPresentacionScroll</p>
+					<p id="subtituloPresentacionScroll">$@subtituloPresentacion</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="fase1.html" class="w3-bar-item w3-button">Fase 1</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 2</a>
+		<a href="fase3.html" class="w3-bar-item w3-button">Fase 3</a>
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<img src="imagenes/Fase2/Proposito.png" class="img-fluid" id="imagenDiapositivas"
+						alt="presentacion">
+					<p style="text-align: right;">[1]</p>
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						$@textoPresentacion
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaDerecha">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
+		<div class="row" style="color: white;">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold;" class="fondoVerde tituloSeccion">2.1. Composición corporal
+				</h1>
+			</div>
+			<div class="col-2"></div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 class="subtitulo">2.1.1. ¿Qué es la composición corporal?</h1>
+				<p>A decir de Wang, Pierson y Heymsfield (Gonz&aacute;lez, 2012), la composici&oacute;n corporal se refiere &ldquo;a aquella rama de la biolog&iacute;a humana que se ocupa de la cuantificaci&oacute;n <em>in vivo </em>de los componentes corporales, las relaciones cuantitativas entre los componentes y los cambios cuantitativos en los mismos relacionados con factores influyentes&rdquo; (Gonz&aacute;lez, 2012, p. 69).</p>
+				<p>Realice el videoquiz <em>Composici&oacute;n corporal</em>, para comprender mejor este concepto:</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg>
+				   Haga clic en el botón <strong>Comenzar</strong>.</p>
+			</div>
+
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col align-self-center">
+				<iframe width="795" height="690" frameborder="0" src="https://es.educaplay.com/juego/12663956-la_funcion_de_la_nutricion.html"></iframe>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<br>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col">
+					<h1 class="subtitulo">2.1.2. Implicaciones de la composición corporal en la salud</h1>
+					<p>A continuación revise la siguiente ilustración que presenta las ventajas y desventajas de cuidar o descuidar el equilibrio de la composición corporal.</p>
+					<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+						<path
+						d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+						id="path2"
+						style="fill:#0055d4" />
+					  </svg>
+					   Haga clic en cada silueta para visualizar su contenido. </p>
+					
+					<div style="width: 100%;"><div style="position: relative; padding-bottom: 77.77777777777779%; padding-top: 0; height: 0; "><iframe frameborder="0" width="900px" height="700px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/62b47dcf832d860018688066" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+				</div>
+				<div class="col-2"></div>
+			</div>
+
+
+
+
+		</div>
+		<hr>
+		<br>
+		<br>
+		<div class="row" style="color: white;">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold;" class="fondoAzul tituloSeccion">2.2. Gasto energético
+				</h1>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 class="subtitulo">2.2.1. ¿Qué es el gasto energético? 
+				</h1>
+				<p>Se refiere a la cantidad de energía que gasta una persona para el correcto funcionamiento del organismo y asegurar sus funciones de base. (Villagómez, 2016).
+				</p>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col">
+				<div style="width: 100%;"><div style="position: relative; padding-bottom: 80%; padding-top: 0; height: 0; "><iframe frameborder="0" width="900px" height="720px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/62b486aff1e58d00124df1eb" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 class="subtitulo">2.2.2. Gasto energético basal</h1>
+				<p>El gasto energético basal o metabolismo basal se refiere a la energía necesaria para mantener el  funcionamiento de las células y los tejidos, la circulación sanguínea y  la respiración, es decir, lo mínimo indispensable para conservarnos vivos (Olvera, 2021). 
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg>
+				  Haga clic en el punto debajo de cada icono para revisar la información.  </p>
+				
+				<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0; "><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/62b48c3ac8a12a0018a04d1c" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col align-self-center">
+				<h1 class="subtitulo">2.2.3. Gasto energético total </h1>
+				<p>Corresponde a la suma de:</p>
+				<ol>
+				<li>Gasto energ&eacute;tico basal (GEB) o metabolismo basal (MB): consumo de energ&iacute;a necesario para las funciones vitales.</li>
+				<li>Gasto por actividad f&iacute;sica (AF): ejercicio y actividades f&iacute;sicas diarias.</li>
+				<li>Efecto termog&eacute;nico de los alimentos (ETA): energ&iacute;a que proviene de la combusti&oacute;n de los nutrientes energ&eacute;ticos como hidratos de carbono, l&iacute;pidos y prote&iacute;nas.</li>
+				</ol>
+			</div>
+			<div class="col">
+				<img src="imagenes/Fase2/gasto2.jpg" class="img-fluid" alt="">
+				<p style="text-align: right;">[15]</p>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 class="subtitulo" style="color: #3DB5ED;">Ejercicio: ¿Cuántas kilocalorías debo consumir?</h1>
+				<p>Consulte la siguiente presentaci&oacute;n en la que hallar&aacute; la descripci&oacute;n para calcular, paso a paso, cu&aacute;ntas kilocalor&iacute;as debe consumir para mantener su salud.</p>
+				<p>Realice cada c&aacute;lculo que se indica, pues el resultado ser&aacute; necesario para elaborar la evidencia de desempe&ntilde;o de esta fase del curso.</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg> Haga clic en la flecha de la derecha para revisar la información.</p>
+				<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0; "><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/62b49dde18f132001a51a1c1" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<div class="row" style="color: white;">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold;" class="fondoVerde tituloSeccion">2.3. Alimentación nutritiva
+				</h1>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<p>Observe y responda el siguiente videoquiz, en el que se expone contenido fundamental para comprender la importancia de tener h&aacute;bitos de alimentaci&oacute;n saludable, considerando criterios nutricionales.</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg> Haga clic en el botón <strong>Comenzar</strong>.</p>
+				  
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col align-self-center">
+				<iframe width="795" height="690" frameborder="0" src="https://es.educaplay.com/juego/12663956-la_funcion_de_la_nutricion.html"></iframe>
+			</div>
+			<div class="col-2"></div>
+		</div>
+
+		<hr>
+		<br>
+		<br>
+		<div class="row" style="color: white;">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold;" class="fondoAzul tituloSeccion">2.4. Grupos de alimentos
+				</h1>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 class="subtitulo">2.4.1. NOM 043: Grupos de alimentos
+				</h1>
+				<p>El 22 de enero de 2013 se public&oacute; la <em>NOM-043-SSA2-2012, Servicios b&aacute;sicos de salud. Promoci&oacute;n y educaci&oacute;n para la salud en materia alimentaria. Criterios para brindar orientaci&oacute;n</em>.</p>
+				<p>El prop&oacute;sito de esta norma es &ldquo;establecer los criterios generales que unifiquen y den congruencia a la orientaci&oacute;n alimentaria, dirigida a brindar a la poblaci&oacute;n opciones pr&aacute;cticas con respaldo cient&iacute;fico para la integraci&oacute;n de una alimentaci&oacute;n correcta que pueda adecuarse a sus necesidades y posibilidades&rdquo; (NOM-<em>043-SSA2-2012, </em>p. 3).</p>
+				<p>Consulte el Apéndice Normativo A: Grupos de alimentos, en el texto oficial de la Norma 043 (pp. 21-23). </p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg> Para ello, haga clic en el siguiente enlace: </p>
+				<p style="text-align: center;">Apéndice Normativo A: Grupos de alimentos (NOM 043).</p>
+				
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col" style="text-align: center;">
+				<a href="https://www.cndh.org.mx/DocTR/2016/JUR/A70/01/JUR-20170331-NOR37.pdf" target="_blank"><img src="imagenes/externo2.png" width="10%"></a>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<div class="row" style="color: white;">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold;" class="fondoVerde tituloSeccion">2.5. Raciones
+				</h1>
+			</div>
+			<div class="col-2"></div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col">
+					<br>
+					<div class="accordion accordion-flush" id="acordeonCreditos">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="encabezadoCreditos" >
+								<button 
+									class="accordion-button collapsed fondoAcordeon letraBlanca"
+								 	type="button" 
+									data-bs-toggle="collapse" 
+									data-bs-target="#contenidoCreditos" 
+									aria-expanded="false" 
+									aria-controls="flush-collapseOne" 
+								>
+								2.5.1. ¿Qué es una ración? Medidas caseras y equivalencias
+								</button>
+							</h2>
+							<div id="contenidoCreditos" class="accordion-collapse collapse" aria-labelledby="encabezadoCreditos" data-bs-parent="#acordeonCreditos">
+								<div class="accordion-body" id="textoCreditos">
+									<p><strong><em>Raci&oacute;n: </em></strong>medida estandarizada de un alimento en gramos, mililitros, piezas o medidas caseras.</p>
+									<p>Observe la siguiente tabla para conocer la equivalencia de raciones en medidas caseras.</p>
+									<div style="width: 100%;"><div style="position: relative; padding-bottom: 35%; padding-top: 0; height: 0; "><iframe frameborder="0" width="1000px" height="350px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/62b4c18a933c580011b8340f" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion accordion-flush" id="acordeonPresiciones">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="encabezadoPresiciones" >
+								<button 
+									class="accordion-button collapsed fondoAcordeon letraBlanca"
+								 	type="button" 
+									data-bs-toggle="collapse" 
+									data-bs-target="#contenidoPresiciones" 
+									aria-expanded="false" 
+									aria-controls="flush-collapseOne" 
+								>
+								2.5.2. Sistema Mexicano de Alimentos Equivalentes
+								</button>
+							</h2>
+							<div id="contenidoPresiciones" class="accordion-collapse collapse" aria-labelledby="encabezadoPresiciones" data-bs-parent="#acordeonPresiciones">
+								<div class="accordion-body centrado">
+								<p>¿Cómo saber cuántos nutrientes tiene cada alimento y qué tanto se debe consumir para ser una ingesta saludable? El Sistema Mexicano de Alimentos Equivalentes es un recurso para conocer y organizar una dieta correcta. Observe el siguiente video:
+								</p>
+								<div class="centrado">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/S4qHvJAkwSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									
+								</div>
+								<p>Consulte en la siguiente tabla el aporte de nutrientes que proporciona una ración de cada grupo de alimentos:
+								</p>
+								<div style="width: 100%;"><div style="position: relative; padding-bottom: 50%; padding-top: 0; height: 0; "><iframe frameborder="0" width="1000px" height="500px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/62b4c3bbfcebcb00110e4dfa" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion accordion-flush" id="acordeonPrograma">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="encabezadoPrograma" >
+								<button 
+									class="accordion-button collapsed fondoAcordeon letraBlanca"
+								 	type="button" 
+									data-bs-toggle="collapse" 
+									data-bs-target="#contenidoPrograma" 
+									aria-expanded="false" 
+									aria-controls="flush-collapseOne" 
+								>
+								2.5.3. Conteo de carbohidratos
+								</button>
+							</h2>
+							<div id="contenidoPrograma" class="accordion-collapse collapse" aria-labelledby="encabezadoPrograma" data-bs-parent="#acordeonPrograma">
+								<div class="accordion-body centrado">
+									<img src= "imagenes/Fase2/conteo.png" align="left" hspace="50" vpsace="50" style="width: 30%">
+>
+									<p>Los carbohidratos son nutrientes naturales que se encuentran en algunos alimentos como cereales, almidones, legumbres y productos l&aacute;cteos. Al consumir &eacute;stos, los carbohidratos se convierten en glucosa para alimentar las c&eacute;lulas del cuerpo, por lo que aumenta el nivel de az&uacute;car en la sangre.</p>
+						<p>La insulina ayuda a mantener los niveles de glucosa en condiciones &oacute;ptimas para mantener el correcto funcionamiento del organismo. Adem&aacute;s, una alimentaci&oacute;n saludable contribuye a mantener las concentraciones de glucosa en niveles adecuados favoreciendo la salud y el funcionamiento del organismo.</p>
+						<p>El conteo de carbohidratos es una herramienta para contar los gramos de carbohidratos en una comida para equilibrar los niveles de glucosa e insulina en el organismo (<em>American Diabetes </em><em>Association</em>, 2022).</p>
+						<p>En la siguiente infografía se exponen las reglas para el conteo de carbohidratos que debe considerar para la elaboración de un menú saludable. 
+							<div style="width: 100%;"><div style="position: relative; padding-bottom: 111.11111111111111%; padding-top: 0; height: 0; "><iframe frameborder="0" width="900px" height="1000px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/62b4c4b058a39e0019841c8b" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="col-2"></div>
+
+			</div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<div class="row" >
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold;" class="fondoAzul tituloSeccion">2.6. Dieta correcta: elaboración de Menú
+
+				</h1>
+				<p>Observe el video <em>La dieta correcta </em>(Instituto Nacional de Perinatolog&iacute;a, s. f.) para conocer los elementos y condiciones de una dieta adecuada para realizar su men&uacute;.</p>
+				<div class="centrado">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/KS9kA00t8RA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+				</div>
+				<p>En la siguiente presentación se exponen las características de una dieta correcta:
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg>  Haga clic en la flecha de la derecha para revisar la información.</p>
+				<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0; "><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/62b4d06c148c610012fc7e3b" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+				<br>
+				<p>Observe y lea atentamente la siguiente presentación en la que se describe, paso a paso, la elaboración de un menú saludable. Considere que usted deberá realizar su propio menú como evidencia de desempeño de esta fase del curso.
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg> Haga clic en la flecha de la derecha para revisar la información.</p>
+				<br>
+				<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0; "><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/62b4d06f148c610012fc7e46" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de Desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="https://www.uv.mx/" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p class="fuente"><em>American Diabetes Association. </em>(2022). El conteo de carbohidratos y la diabetes. <em>American Diabetes </em><em>Association</em><em>. </em><em>Connected</em> <em>for</em> <em>life</em>. <a href="https://www.diabetes.org/el-conteo-de-carbohidratos-y-la-diabetes">https://www.diabetes.org/el-conteo-de-carbohidratos-y-la-diabetes</a></p>
+						<p class="fuente">Gonz&aacute;lez, E. (2013). Composici&oacute;n corporal: estudio y utilidad cl&iacute;nica. <em>Endocrinolog&iacute;a y nutrici&oacute;n, 60</em>(2), 69-75 <a href="https://doi.org/10.1016/j.endonu.2012.04.003">https://doi.org/10.1016/j.endonu.2012.04.003</a></p>
+						<p class="fuente">Instituto Mexicano del Seguro Social. (2009). <em>Programa Institucional de Prevenci&oacute;n y Atenci&oacute;n al Paciente Diab&eacute;tico </em>(pp. 59 y 62). <em>DIABETIMSS</em>. <a href="https://segundoepifesz.files.wordpress.com/2014/01/programa-de-educacion-en-diabetes-diabetimss.pdf">https://segundoepifesz.files.wordpress.com/2014/01/programa-de-educacion-en-diabetes-diabetimss.pdf</a></p>
+						<p class="fuente">Molcajetemedios. (2008). <em>La dieta correcta.</em> (Video). Youtube. <a href="https://www.youtube.com/watch?v=KS9kA00t8RA">https://www.youtube.com/watch?v=KS9kA00t8RA</a></p>
+						<p class="fuente">Olvera, C. (2021, 13 de octubre). &iquest;Qu&eacute; es el gasto energ&eacute;tico basal?. <em>Nutralia</em>. <a href="https://nutraliaco.com/blog/f/%C2%BFqu%C3%A9-es-el-gasto-energ%C3%A9tico-basal">https://nutraliaco.com/blog/f/%C2%BFqu%C3%A9-es-el-gasto-energ%C3%A9tico-basal</a></p>
+						<p class="fuente">Salud, Nutrici&oacute;n y Deporte. (2017, 18&nbsp; de febrero). Gasto Energ&eacute;tico Total. <em>Salud, nutrici&oacute;n y deporte</em>. <a href="https://dieteticaynutricionweb.wordpress.com/2017/02/18/gasto-energetico-total-get/">https://dieteticaynutricionweb.wordpress.com/2017/02/18/gasto-energetico-total-get/</a></p>
+						<p class="fuente">Villag&oacute;mez, C.(2016, 11 de octubre). Gasto energ&eacute;tico-Definici&oacute;n. <em>CCM Salud</em>. <a href="https://salud.ccm.net/faq/21458-gasto-energetico-definicion">https://salud.ccm.net/faq/21458-gasto-energetico-definicion</a></p>
+						<p class="fuente">Suárez, W., Sánchez, A. & González, J. (2017). <em>Fisiopatología de la obesidad: Perspectiva actual. Revista Chilena de Nutrición</em>, 44(3), 226–233. https://doi.org/10.4067/S07177–5182017000300226</p>
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"></div>
+					
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+
+
+
+
+
+
+
+
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Disclaimer</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">1</sup> Fruits and vegetables photo created by freepik - www.freepik.com. <a href="https://www.freepik.com/free-photo/healthy-fruits-vegetables-dryfruits-bread-seeds-cheese-egg-oil-with-empty-plate-white-background_3681462.htm" target="_blank">https://www.freepik.com/free-photo/healthy-fruits-vegetables-dryfruits-bread-seeds-cheese-egg-oil-with-empty-plate-white-background_3681462.htm</a>
+								</p>
+								<p class="referencia" id="referencias" style="text-align: left;">
+									<sup class="contadorReferencia">2</sup>La Nota de Guadalajara. (13 de febrero, 2019). Cuerpo saludable vs cuerpo obeso. [Imagen]. <a href="https://www.facebook.com/lanotadeguadalajara/photos/a.1090403250978992/2358991690786802/" target="_blank">https://www.facebook.com/lanotadeguadalajara/photos/a.1090403250978992/2358991690786802/</a>
+								</p>
+								<p class="referencia" id="referencias" style="text-align: left;">
+									<sup class="contadorReferencia">3</sup>La Nota de Guadalajara. (13 de febrero, 2019). Cuerpo saludable vs cuerpo obeso. [Imagen]. <a href="https://www.facebook.com/lanotadeguadalajara/photos/a.1090403250978992/2358991690786802/" target="_blank">https://www.facebook.com/lanotadeguadalajara/photos/a.1090403250978992/2358991690786802/</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">4</sup>Género iconos creados por Freepik - Flaticon.  <a href="https://www.flaticon.es/icono-gratis/generos_142297" target="_blank">https://www.flaticon.es/icono-gratis/generos_142297</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">5</sup>Género iconos creados por Freepik - Flaticon. <a href="https://www.flaticon.es/icono-gratis/generos_142297" target="_blank">https://www.flaticon.es/icono-gratis/generos_142297</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">6</sup>Embarazada iconos creados por Smashicons - Flaticon. <a href="https://www.flaticon.es/icono-gratis/madre_2372387" target="_blank">https://www.flaticon.es/icono-gratis/madre_2372387</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">7</sup>Grasa iconos creados por Freepik - Flaticon.  <a href="https://www.flaticon.es/icono-gratis/grasas-trans_2400740" target="_blank">https://www.flaticon.es/icono-gratis/grasas-trans_2400740</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">8</sup>Píldora iconos creados por Eucalyp - Flaticon.  <a href="https://www.flaticon.es/icono-gratis/farmaco_2650500" target="_blank">https://www.flaticon.es/icono-gratis/farmaco_2650500</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">9</sup>Clima iconos creados por Good Ware - Flaticon. <a href="https://www.flaticon.es/icono-gratis/dom_861076" target="_blank">https://www.flaticon.es/icono-gratis/dom_861076</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">10</sup>Grupo de edad iconos creados por Freepik - Flaticon.  <a href="https://www.flaticon.es/icono-premium/grupo-de-edad_5025680" target="_blank">https://www.flaticon.es/icono-premium/grupo-de-edad_5025680</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">11</sup>Músculo iconos creados por Victoruler - Flaticon.  <a href="https://www.flaticon.es/icono-premium/musculo_3904608" target="_blank">https://www.flaticon.es/icono-premium/musculo_3904608</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">12</sup> Dieta iconos creados por Smashicons - Flaticon. <a href="https://www.flaticon.es/icono-gratis/dieta_1410534" target="_blank">https://www.flaticon.es/icono-gratis/dieta_1410534</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">13</sup>Bacterias iconos creados por Eucalyp - Flaticon. <a href="https://www.flaticon.es/icono-gratis/microscopio_948818" target="_blank">https://www.flaticon.es/icono-gratis/microscopio_948818</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">14</sup>Estrés iconos creados por juicy_fish - Flaticon.  <a href="https://www.flaticon.es/icono-premium/estres_4233596" target="_blank">https://www.flaticon.es/icono-premium/estres_4233596</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">15</sup> Cancer cell photo created by kjpargeter - www.freepik.com. <a href="https://www.freepik.com/free-photo/human-body-with-cells-blue-tones_929228.htm" target="_blank">https://www.freepik.com/free-photo/human-body-with-cells-blue-tones_929228.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">16</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">17</sup>Comida iconos creados por Freepik - Flaticon. <a href="https://www.flaticon.es/icono-gratis/dieta_706133" target="_blank">https://www.flaticon.es/icono-gratis/dieta_706133</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">18</sup>Frutas iconos creados por iconixar - Flaticon. <a href="https://www.flaticon.es/icono-gratis/frutas_3081887" target="_blank">https://www.flaticon.es/icono-gratis/frutas_3081887</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">19</sup>Fruta iconos creados por Freepik - Flaticon. <a href="https://www.flaticon.es/icono-gratis/comida-sana_1147883" target="_blank">https://www.flaticon.es/icono-gratis/comida-sana_1147883</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">20</sup>Trigo iconos creados por Freepik - Flaticon. <a href="https://www.flaticon.es/icono-gratis/trigo_3662349" target="_blank">https://www.flaticon.es/icono-gratis/trigo_3662349</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">21</sup>Balanza iconos creados por Good Ware - Flaticon. <a href="https://www.flaticon.es/icono-gratis/bascula_2929016" target="_blank">https://www.flaticon.es/icono-gratis/bascula_2929016</a>
+								</p>
+
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<div class="row">
+					  <div class="col-md-1 align-self-center"><a class="flechaCarrusel" onclick="cambiarEvidencia()">&#10094;</a></div>
+					  <div class="col">
+						<div id="evidencia1">
+							<p style="text-align: center;">&nbsp;<strong>Actividad 1. Cálculo de gasto energético (1/2)</strong></p>
+							<p><strong>Descripci&oacute;n:</strong></p>
+							<ol>
+							<li>Con base en el contenido y el ejercicio del tema 2.2, elabore el c&aacute;lculo de su gasto energ&eacute;tico basal, gasto energ&eacute;tico total e &iacute;ndice de masa corporal.</li>
+							<li>Redacte su c&aacute;lculo en un archivo word, con letra Arial a 12 puntos.</li>
+							</ol>
+							<p><strong>Criterios de desempe&ntilde;o:</strong></p>
+							<ol>
+							<li>C&aacute;lculo correcto del gasto energ&eacute;tico basal, gasto energ&eacute;tico total e &iacute;ndice de masa corporal.</li>
+							</ol>
+							<p><strong>Lineamientos de entrega:</strong></p>
+							<ol>
+							<li>Titule el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo: Act1_VillanuevaMariaTeresa</li>
+							<li>Entregue oportunamente su archivo en la plataforma eminus, de acuerdo con el Calendario de actividades.</li>
+							</ol>
+						</div>
+						<div id="evidencia2">
+							<p style="text-align: center;">&nbsp;<strong>Actividad 2. Elaboración de menú (1/2)</strong></p>
+							<p><strong>Descripci&oacute;n:</strong></p>
+							<ol>
+							<li>Con base en los temas revisados en las fases 1 y 2, elabore un men&uacute; que considere las caracter&iacute;sticas y porciones de la dieta correcta como factor protector de la salud y el medio ambiente.</li>
+							<li>Redacte su men&uacute; en un archivo word, con letra Arial a 12 puntos.</li>
+							</ol>
+							<p><strong>Criterios de desempe&ntilde;o:</strong></p>
+							<ol>
+							<li>El men&uacute; integra las leyes de la alimentaci&oacute;n, reglas de la estrategia conteo de carbohidratos.</li>
+							<li>En cada comida (desayuno, comida y cena) se incluye, por lo menos, 1 porci&oacute;n de verduras, 1 porci&oacute;n de cereales y 1 porci&oacute;n de alg&uacute;n alimento que aporte prote&iacute;nas (leguminosas, leche y sus derivados, queso o alimentos de origen animal).</li>
+							<li>Prioriza el consumo de frutas enteras o picadas, evita los jugos o zumos.</li>
+							<li>Considera los <strong>postulados del plato </strong>para comer saludable con el fin de garantizar que el consumo de alimentos sea amigable con el planeta: prioriza alimentos naturales, de temporada y que pueden adquirirse cerca de su vivienda o lugar de trabajo.</li>
+							<li>Evita alimentos ultraprocesados, cuya producci&oacute;n y consumo incrementa el deterioro del planeta.</li>
+							</ol>
+							<p><strong>Lineamientos de entrega:</strong></p>
+							<ol>
+							<li>Titule el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo: Act2_VillanuevaMariaTeresa</li>
+							<li>Entregue oportunamente en la plataforma eminus, de acuerdo con el Calendario de actividades.</li>
+							</ol>
+						</div>
+					  </div>
+					  <div class="col-md-1 align-self-center">
+						<a class="flechaCarrusel" onclick="cambiarEvidencia()">&#10095;</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/contenidoFase2.js"></script>
+	<script src="js/scriptFase2.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>
