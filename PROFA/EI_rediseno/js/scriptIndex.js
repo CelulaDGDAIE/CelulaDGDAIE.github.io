@@ -76,3 +76,4 @@ function cambiarDiapositiva(){
 		document.getElementById("textoCarrusel").innerHTML = contenidoIndex.textoPresentacion;
 		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Presentacion</strong>";	}
 }
+

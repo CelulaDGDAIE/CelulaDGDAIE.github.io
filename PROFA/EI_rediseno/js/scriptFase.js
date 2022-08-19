@@ -122,3 +122,23 @@ function cambiarDiapositiva(){
 		document.getElementById("imagenDiapositivas").src="imagenes/Fase1/Proposito.jpg";
 	}
 }
+var tag = document.createElement('script');
+  tag.src = 'https://www.youtube.com/iframe_api';
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
+  let player
+  
+  const onApiChange = _ => {   
+    if (typeof player.setOption === 'function') {
+      player.setOption('captions', 'track', {languageCode: 'es'})
+    }  
+  }
+  
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('existing-iframe', {events: {onApiChange}});
+	player = new YT.Player('existing-iframe2', {events: {onApiChange}});
+	player = new YT.Player('existing-iframe3', {events: {onApiChange}});
+	player = new YT.Player('existing-iframe4', {events: {onApiChange}});
+  }
+
