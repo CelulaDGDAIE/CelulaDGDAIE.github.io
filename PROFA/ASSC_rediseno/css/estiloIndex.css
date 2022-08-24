@@ -351,6 +351,7 @@ a{
 		display: block;
 		position: fixed;
 		width: 100%;
+		z-index: 10;
 	}
 	#logoUV{
 		max-height: 200px;
