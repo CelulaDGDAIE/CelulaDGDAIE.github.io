@@ -42,13 +42,14 @@ function cargarContenido(){
 	const contenidoFase = JSON.parse(contenidoEE);
 	document.getElementById("tituloPresentacion").innerHTML = contenidoFase.tituloPresentacion;
 	document.getElementById("tituloPresentacionScroll").innerHTML = contenidoFase.tituloPresentacion;
-    document.getElementById("subtituloPresentacion").innerHTML = contenidoFase.tituloModulo2;
-    document.getElementById("subtituloPresentacionMovil").innerHTML = contenidoFase.tituloModulo2;
-    document.getElementById("subtituloPresentacionScroll").innerHTML = contenidoFase.tituloModulo2;
+    document.getElementById("subtituloPresentacion").innerHTML = contenidoFase.tituloModulo1;
+    document.getElementById("subtituloPresentacionMovil").innerHTML = contenidoFase.tituloModulo1;
+    document.getElementById("subtituloPresentacionScroll").innerHTML = contenidoFase.tituloModulo1;
 	document.getElementById("tituloEscritorio").innerHTML = contenidoFase.tituloPresentacion;
 	document.getElementById("textoPresentacion").innerHTML = contenidoFase.textoProposito;
 	document.getElementById("textoCarrusel").innerHTML = contenidoFase.textoProposito;
 	document.getElementById("textoUnidad").innerHTML = contenidoFase.textoSituacion;
+	
 }
 function cambiarEvidencia(){
 	
@@ -60,35 +61,5 @@ function cambiarEvidencia(){
 		evidenciaActual = 1;
 		document.getElementById("evidencia2").style.display = "none";
 		document.getElementById("evidencia1").style.display = "block";
-	}
-}
-function cambiarDiapositiva(){
-	var aireSuperior = document.getElementById("aireSuperior");
-	var aireInferior = document.getElementById("aireInferior");
-	var cuerpoCarrusel = document.getElementById("cuerpoCarrusel");
-	const contenidoFase = JSON.parse(contenidoEE);
-	if(carruselInformacionDiapositivaActual == "presentacion"){
-		carruselInformacionDiapositivaActual = "unidad";
-        document.getElementById("columnaImagen").style.display = "none";
-		aireSuperior.classList.remove("fondoVerde");
-		aireInferior.classList.remove("fondoVerde");
-		cuerpoCarrusel.classList.remove("fondoVerde");
-		aireSuperior.classList.add("fondoAzul");
-		aireInferior.classList.add("fondoAzul");
-		cuerpoCarrusel.classList.add("fondoAzul");
-		document.getElementById("textoCarrusel").innerHTML = contenidoFase.textoSituacion;
-		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-intersect'></i> Situación problematizadora</strong>";
-	}else{
-		carruselInformacionDiapositivaActual = "presentacion";
-		aireSuperior.classList.remove("fondoAzul");
-		aireInferior.classList.remove("fondoAzul");
-		cuerpoCarrusel.classList.remove("fondoAzul");
-		aireSuperior.classList.add("fondoVerde");
-		aireInferior.classList.add("fondoVerde");
-        document.getElementById("columnaImagen").style.display = "block";
-		cuerpoCarrusel.classList.add("fondoVerde");
-		document.getElementById("textoCarrusel").innerHTML = contenidoFase.textoProposito;
-		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Propósito</strong>";
-		document.getElementById("imagenDiapositivas").src="imagenes/Fase2/Proposito.jpg";
 	}
 }
