@@ -210,9 +210,18 @@ p{
 	font-size: 2.8em;
 	color: white;
 }
+.youtube{
+	width: 560px;
+	height: 315px;
+}
+
 
 
 @media only screen and (min-width: 1000px) {
+	.youtube{
+		width: 288px;
+		height: 162px;
+	}
 	/*Desaparece elementos moviles*/
 	#cuadroPresentacion{
 		display: none;
