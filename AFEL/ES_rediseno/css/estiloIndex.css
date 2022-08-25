@@ -206,15 +206,15 @@ a{
 		height: 30px;
 	}
 	.enlaceModulo{
-		color: #777b8e;
+		color: black;
 		z-index:100;
 	}
 	.enlaceActivo{
-		color: black;
+		color: #777b8e;
 		transition: 0.6s ease;
 	}
 	.enlaceModulo:hover{
-		color: #777b8e;
+		color: black;
 		cursor: default;
 	}
 	.enlaceActivo:hover{
@@ -358,6 +358,7 @@ a{
 		display: block;
 		position: fixed;
 		width: 100%;
+		z-index: 10;
 	}
 	#logoUV{
 		max-height: 200px;
