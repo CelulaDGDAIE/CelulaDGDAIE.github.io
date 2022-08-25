@@ -211,17 +211,20 @@ p{
 	color: white;
 }
 .youtube{
-	width: 560px;
-	height: 315px;
+	width: 288px;
+	height: 162px;
 }
+
+
 
 
 
 @media only screen and (min-width: 1000px) {
 	.youtube{
-		width: 288px;
-		height: 162px;
+		width: 352px;
+		height: 198px;
 	}
+	
 	/*Desaparece elementos moviles*/
 	#cuadroPresentacion{
 		display: none;
@@ -356,3 +359,13 @@ p{
 	/*/Aparece elementos de escritorio*/
 	
   }
+
+  @media only screen and (min-width: 1300px) {
+	
+
+	.youtube{
+		width: 480px;
+		height: 270px;
+	}
+	
+}
