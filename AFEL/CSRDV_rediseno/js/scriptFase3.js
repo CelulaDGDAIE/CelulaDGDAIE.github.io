@@ -49,6 +49,7 @@ function cargarContenido(){
 	document.getElementById("textoPresentacion").innerHTML = contenidoFase.textoProposito;
 	document.getElementById("textoCarrusel").innerHTML = contenidoFase.textoProposito;
 	document.getElementById("textoUnidad").innerHTML = contenidoFase.textoSituacion;
+	document.getElementById("textoUnidadEscritorio").innerHTML = contenidoFase.textoSituacion;
 }
 function cambiarEvidencia(){
 	
@@ -62,36 +63,7 @@ function cambiarEvidencia(){
 		document.getElementById("evidencia1").style.display = "block";
 	}
 }
-function cambiarDiapositiva(){
-	var aireSuperior = document.getElementById("aireSuperior");
-	var aireInferior = document.getElementById("aireInferior");
-	var cuerpoCarrusel = document.getElementById("cuerpoCarrusel");
-	const contenidoFase = JSON.parse(contenidoEE);
-	if(carruselInformacionDiapositivaActual == "presentacion"){
-		carruselInformacionDiapositivaActual = "unidad";
-        document.getElementById("columnaImagen").style.display = "none";
-		aireSuperior.classList.remove("fondoVerde");
-		aireInferior.classList.remove("fondoVerde");
-		cuerpoCarrusel.classList.remove("fondoVerde");
-		aireSuperior.classList.add("fondoAzul");
-		aireInferior.classList.add("fondoAzul");
-		cuerpoCarrusel.classList.add("fondoAzul");
-		document.getElementById("textoCarrusel").innerHTML = contenidoFase.textoSituacion;
-		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-intersect'></i> Situación problematizadora</strong>";
-	}else{
-		carruselInformacionDiapositivaActual = "presentacion";
-		aireSuperior.classList.remove("fondoAzul");
-		aireInferior.classList.remove("fondoAzul");
-		cuerpoCarrusel.classList.remove("fondoAzul");
-		aireSuperior.classList.add("fondoVerde");
-		aireInferior.classList.add("fondoVerde");
-        document.getElementById("columnaImagen").style.display = "block";
-		cuerpoCarrusel.classList.add("fondoVerde");
-		document.getElementById("textoCarrusel").innerHTML = contenidoFase.textoProposito;
-		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Propósito</strong>";
-		document.getElementById("imagenDiapositivas").src="imagenes/Fase1/Proposito.jpg";
-	}
-}
+
 function mostrarMensajePredial(){
 	Swal.fire({
 		html: '<p style="font-size: 25px;">El <span style="color: blue;"><b>predial</b></span> es un impuesto que cobra un gobierno municipal al ciudadano due&ntilde;o de un inmueble registrado a su nombre en el Registro P&uacute;blico de la Propiedad de ese municipio. Un inmueble es una propiedad que no puede trasladarse, como un terreno, casa, departamento, edificio o f&aacute;brica. Los recursos obtenidos mediante el cobro del impuesto predial son utilizados por los gobiernos municipales para financiar obras de infraestructura que beneficien a los habitantes como calles, banquetas, alumbrado, parques p&uacute;blicos, etc&eacute;tera.</p>'
