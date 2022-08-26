@@ -42,9 +42,9 @@ function cargarContenido(){
 	const contenidoFase = JSON.parse(contenidoEE);
 	document.getElementById("tituloPresentacion").innerHTML = contenidoFase.tituloPresentacion;
 	document.getElementById("tituloPresentacionScroll").innerHTML = contenidoFase.tituloPresentacion;
-    document.getElementById("subtituloPresentacion").innerHTML = contenidoFase.tituloModulo1;
-    document.getElementById("subtituloPresentacionMovil").innerHTML = contenidoFase.tituloModulo1;
-    document.getElementById("subtituloPresentacionScroll").innerHTML = contenidoFase.tituloModulo1;
+    document.getElementById("subtituloPresentacion").innerHTML = contenidoFase.tituloModulo2;
+    document.getElementById("subtituloPresentacionMovil").innerHTML = contenidoFase.tituloModulo2;
+    document.getElementById("subtituloPresentacionScroll").innerHTML = contenidoFase.tituloModulo2;
 	document.getElementById("tituloEscritorio").innerHTML = contenidoFase.tituloPresentacion;
 	document.getElementById("textoPresentacion").innerHTML = contenidoFase.textoProposito;
 	document.getElementById("textoCarrusel").innerHTML = contenidoFase.textoProposito;
