@@ -16,13 +16,13 @@ p{
 
 .fondoAcordeon{
 	background-color: #18529D;
-	border: 2px solid #6cbdb4;
+	border: 2px solid #26544B;
 }
 .fondoAzul{
-	background-color: #4C5BFC;
+	background-color: #182BFB;
 }
 .fondoVerde{
-	background-color: #6CBDB4;
+	background-color: #26544B;
 }
 .fuente{
 	margin-left:15.65pt;
@@ -55,21 +55,21 @@ p{
 	height: 10px;
 }
 #boton-disclaimer{
-	background-color: #69B7AE;
+	background-color: #26544B;
 	color: white;
 }
 #botonPresentacion{
-	background-color: #3CADB8;
+	background-color: #26544B;
 	color: white;
 	font-weight: bold;
 }
 #botonUnidad{
-	background-color: #4C5BFC;
+	background-color: #182BFB;
 	color: white;
 	font-weight: bold;
 }
 #botonEvidencias{
-	background-color: #355ca7; 
+	background-color: #182BFB; 
 	height: 250px;
 	background-image: url('../imagenes/actividad.png');
 	background-repeat: no-repeat;
@@ -268,13 +268,13 @@ p{
 	}
 	.fondoAcordeon{
 		background-color: #18529D;
-		border: 2px solid #6cbdb4;
+		border: 2px solid #26544B;
 	}
 	.fondoAzul{
-		background-color: #4c5bfc;
+		background-color: #182BFB;
 	}
 	.fondoVerde{
-		background-color: #6cbdb4;
+		background-color: #26544B;
 	}
 	.letraBlanca{
 		color: white;
