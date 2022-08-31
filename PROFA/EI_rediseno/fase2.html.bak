@@ -148,7 +148,6 @@
 			<div class="row fondoVerde" id="cuerpoCarrusel">
 				<div class="col-2 vacio"></div>
 				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
-					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
 				</div>
 				<div class="col align-self-center centrado" id="columnaImagen">
 					<img src="imagenes/Fase2/Proposito.jpg" class="img-fluid" id="imagenDiapositivas"
@@ -165,13 +164,44 @@
 					</div>
 				</div>
 				<div class="col-1 col align-self-center centrado" id="columnaDerecha">
-					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
 				</div>
 				<div class="col-2 vacio"></div>
 			</div>
 			<div class="row aire fondoVerde">
 				<div class="col-2 vacio"></div>
 				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<br>
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoAzul" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado">
+					<div>
+						<strong><i class="bi bi-info-circle-fill"></i> Situacion problematizadora</strong>
+					</div>
+					<br>
+					<div id="textoUnidadEscritorio">
+						
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireInferior"></div>
 				<div class="col-2 vacio"></div>
 			</div>
 		</div>
@@ -193,15 +223,15 @@
 		<div class="row">
 			<div class="col-2"></div>
 			<div class="col">
-				<h1 class="subtitulo">2.1.1. La Convención sobre los derechos de las personas con discapacidad</h1>
-                <p>En 2006, la Asamblea General de la ONU aprob&oacute; la <em>Convenci&oacute;n sobre los derechos de las personas con discapacidad, </em>con el prop&oacute;sito de &laquo;promover, proteger y asegurar el goce pleno y en condiciones de igualdad de todos los derechos humanos y libertades fundamentales por todas las personas con discapacidad, y promover el respeto de su dignidad inherente<em>&raquo; </em>(Art. 1).</p>
+				<h1 class="subtitulo">2.1.1. <em>La Convención sobre los Derechos de las Personas con Discapacidad</em></h1>
+                <p>En 2006, la Asamblea General de la ONU aprob&oacute; la <em>Convenci&oacute;n sobre los Derechos de las Personas con Discapacidad, </em>con el prop&oacute;sito de &laquo;promover, proteger y asegurar el goce pleno y en condiciones de igualdad de todos los derechos humanos y libertades fundamentales por todas las personas con discapacidad, y promover el respeto de su dignidad inherente<em>&raquo; </em>(Art. 1).</p>
                 <p>Declara, adem&aacute;s, que se reconocen como personas con discapacidad &laquo;(&hellip;) a aquellas que tengan deficiencias f&iacute;sicas, mentales, intelectuales o sensoriales a largo plazo que, al interactuar con diversas barreras, puedan impedir su participaci&oacute;n plena y efectiva en la sociedad, en igualdad de condiciones con las dem&aacute;s&raquo; (Art. 2).</p>
                 <p>A continuación, observe el siguiente video para conocer más acerca de los lineamientos considerados en este documento.</p>
                 <div class="centrado">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/t7Vj7ERLoIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="existing-iframe" width="560" height="315" src="https://www.youtube.com/embed/t7Vj7ERLoIM?enablejsapi=1&cc_load_policy=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 				<br>
-                <p>As&iacute; mismo, revise el texto oficial de la <em><a href="https://www.conapred.org.mx/documentos_cedoc/Convencion%20sobre%20los%20Derechos%20de%20las%20Personas%20con%20Discapacidad-Ax.pdf?msclkid=d5af8a66d09511eca6320bbc91d5d8e9" target="_blank">Convenci&oacute;n sobre los Derechos de las personas con Discapacidad</a></em><em>. </em>Para ello, haga clic sobre el t&iacute;tulo del documento para ir al sitio de consulta</p>
+                <p>As&iacute; mismo, revise el texto oficial de la <em><a href="https://www.conapred.org.mx/documentos_cedoc/Convencion%20sobre%20los%20Derechos%20de%20las%20Personas%20con%20Discapacidad-Ax.pdf?msclkid=d5af8a66d09511eca6320bbc91d5d8e9" target="_blank">Convenci&oacute;n sobre los Derechos de las Personas con Discapacidad</a></em><em>. </em>Para ello, haga clic sobre el t&iacute;tulo del documento para ir al sitio de consulta.</p>
 			</div>
 			<div class="col-2"></div>
 		</div>
@@ -272,11 +302,18 @@
 				<p>Le invitamos a observar el siguiente video en el que se describen avances y retos de la Universidad Veracruzana en materia de inclusión educativa.
 				</p>
 				<br>
-				<div>
-					<iframe src="https://lumen.uv.mx/lumen/shared/embed/resource/7062" width="640" height="360" allowfullscreen></iframe>
+				<div style="text-align: center;">
+					<iframe src="https://lumen.uv.mx/lumen/shared/embed/resource/7138" width="640" height="360" allowfullscreen></iframe>
 				</div>
 			</div>
 			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-4"></div>
+			<div class="col">
+				<p style="text-align: right;">Fuente: Elaboraci&oacute;n de la C&eacute;lula de Desarrollo de Experiencias Educativas de la Direcci&oacute;n General de Desarrollo Acad&eacute;mico e Innovaci&oacute;n Educativa (DGDAIE). (2022). <em>Avances y retos de la Universidad Veracruzana en materia de inclusi&oacute;n educativa.</em> [Video]. Lumen. Repositorio Digital Universitario, UV.</p>
+			</div>
+			<div class="col-4"></div>
 		</div>
 		<hr>
 		<br>
@@ -297,7 +334,7 @@
 				<p>Observe el cortometraje <em>Dale la </em><em>vuelta, </em>y reflexione: &iquest;en qu&eacute; situaciones ha convivido con personas con discapacidad?, &iquest;c&oacute;mo es la relaci&oacute;n con ellas en situaciones y espacios cotidianos?, &iquest;c&oacute;mo se involucra en la consolidaci&oacute;n de una cultura de inclusi&oacute;n en la universidad?</p>
 				<br>
 				<div class="centrado">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/LQaAIK1riwg"
+					<iframe id="existing-iframe2" width="560" height="315" src="https://www.youtube.com/embed/LQaAIK1riwg?enablejsapi=1&cc_load_policy=1"
 						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
@@ -337,13 +374,13 @@
 			<div class="col align-self-center">
 				<p><em>El globo terr&aacute;queo accesible, una nueva forma de ense&ntilde;anza inclusiva para personas ciegas (ONCE, 2020):</em></p>
 				<div class="embed-responsive embed-responsive-16by9" style="text-align: center;">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/da-YrfPDBEI" allowfullscreen></iframe>
+					<iframe id="existing-iframe3" class="embed-responsive-item" src="https://www.youtube.com/embed/da-YrfPDBEI?enablejsapi=1&cc_load_policy=1" allowfullscreen></iframe>
 				  </div>
             </div>
             <div class="col align-self-center">
 				<p><em>Globo terr&aacute;queo Magallanes Elcano (ONCE, 2021):</em></p>
 				<div class="embed-responsive embed-responsive-16by9" style="text-align: center;">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MFxm4fCCSPc" allowfullscreen></iframe>
+					<iframe id="existing-iframe4" class="embed-responsive-item" src="https://www.youtube.com/embed/MFxm4fCCSPc?enablejsapi=1&cc_load_policy=1" allowfullscreen></iframe>
 				  </div>			
 			</div>
 			<div class="col-2"></div>
@@ -353,22 +390,20 @@
 			<div class="col">
 				<p>&iquest;Qu&eacute; habilidades psicopedag&oacute;gicas es necesario desarrollar para que su pr&aacute;ctica docente promueva ambientes de aprendizaje inclusivos?</p>
                 <p>A continuaci&oacute;n, lea los siguientes art&iacute;culos que exponen algunas habilidades y estrategias psicopedag&oacute;gicas y did&aacute;cticas para la inclusi&oacute;n educativa en la universidad.</p>
-                <p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
-					<path
-					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
-					id="path2"
-					style="fill:#0055d4" />
-				  </svg> Haga clic en los siguientes iconos para acceder a la información.</p>
 				<div class="centrado">
-                    <a target="_blank" href="https://www.redalyc.org/journal/6198/619867501014/html/ "><img src="imagenes/externo2.png" width="10%"></a>
+					<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+						<path
+						d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+						id="path2"
+						style="fill:#0055d4" />
+					  </svg> <a target="_blank" href="https://www.redalyc.org/journal/6198/619867501014/html/ "><em>La educación inclusiva en el marco de la educación superior (2020).</em></a></p>
                     <br>
-					<br>
-					<p><em>La educación inclusiva en el marco de la educación superior (2020).</em></p>
-                    <br>
-                    <a target="_blank" href="http://www.scielo.org.mx/pdf/resu/v41n162/v41n162a1.pdf "><img src="imagenes/externo2.png" width="10%"></a>
-                    <br>
-					<br>
-					<p><em>Capacidades y competencias docentes para la inclusión del alumnado en la educación superior (2012).</em></p>
+					<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+						<path
+						d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+						id="path2"
+						style="fill:#0055d4" />
+					  </svg> <a target="_blank" href="http://www.scielo.org.mx/pdf/resu/v41n162/v41n162a1.pdf "><em>Capacidades y competencias docentes para la inclusión del alumnado en la educación superior (2012).</em></a></p>
                 </div>
 			</div>
 			<div class="col-2"></div>
@@ -406,7 +441,8 @@
 				  <div class="tab-content" id="nav-tabContent">
 					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
 						<p class="fuente">Canal 44. (2020, 10 de diciembre). <em>Alumnos con discapacidad auditiva piden apoyo a la Rector&iacute;a General de la </em><em>UdeG. </em>[Video]. Youtube. <a href="https://www.youtube.com/watch?v=HnQO5LfkWa0">https://www.youtube.com/watch?v=HnQO5LfkWa0</a></p>
-                        <p class="fuente">CONAPRED. (2017). <em>Convenci&oacute;n sobre los derechos de las personas con discapacidad. Protocolo facultativo</em>. <a href="https://www.conapred.org.mx/documentos_cedoc/Convencion%20sobre%20los%20Derechos%20de%20las%20Personas%20con%20Discapacidad-Ax.pdf?msclkid=d5af8a66d09511eca6320bbc91d5d8e9">https://www.conapred.org.mx/documentos_cedoc/Convencion%20sobre%20los%20Derechos%20de%20las%20Personas%20con%20Discapacidad-Ax.pdf?msclkid=d5af8a66d09511eca6320bbc91d5d8e9</a></p>
+                        <p class="fuente">C&eacute;lula de Desarrollo de Experiencias Educativas de la Direcci&oacute;n General de Desarrollo Acad&eacute;mico e Innovaci&oacute;n Educativa (DGDAIE). (2022). <em>Avances y retos de la Universidad Veracruzana en materia de inclusi&oacute;n educativa.</em> [Video]. Lumen. Repositorio Digital Universitario, UV.</p>
+						<p class="fuente">CONAPRED. (2017). <em>Convenci&oacute;n sobre los derechos de las personas con discapacidad. Protocolo facultativo</em>. <a href="https://www.conapred.org.mx/documentos_cedoc/Convencion%20sobre%20los%20Derechos%20de%20las%20Personas%20con%20Discapacidad-Ax.pdf?msclkid=d5af8a66d09511eca6320bbc91d5d8e9">https://www.conapred.org.mx/documentos_cedoc/Convencion%20sobre%20los%20Derechos%20de%20las%20Personas%20con%20Discapacidad-Ax.pdf?msclkid=d5af8a66d09511eca6320bbc91d5d8e9</a></p>
                         <p class="fuente">Covarrubias, P. (2019). Barreras para el aprendizaje y la participaci&oacute;n: una propuesta para su clasificaci&oacute;n. En J.A. Trujillo Holgu&iacute;n, A.C. R&iacute;os Castillo y J. L. Garc&iacute;a Leos (coords.), <em>Desarrollo Profesional Docente: reflexiones de maestros en servicio en el escenario de la Nueva Escuela Mexicana </em>(pp. 135-157), Escuela Normal Superior Profr. Jos&eacute; E. Medrano R. <a href="http://ensech.edu.mx/pdf/maestria/libro4/TP04-2-05-Covarrubias.pdf">http://ensech.edu.mx/pdf/maestria/libro4/TP04-2-05-Covarrubias.pdf</a></p>
                         <p class="fuente"><em>Declaraci&oacute;n de Yucat&aacute;n sobre los derechos de las personas con discapacidad</em>. (2008). Universidad Nacional Aut&oacute;noma de M&eacute;xico. <a href="https://www.uv.mx/piip/files/2013/10/Declaracion-de-Yucatan-sobre-los-derechos-de-las-personas-con-discapacidad-en-las-universidades.pdf?msclkid=65970d0bd08711ecbd973fae96bbba61">https</a><a href="https://www.uv.mx/piip/files/2013/10/Declaracion-de-Yucatan-sobre-los-derechos-de-las-personas-con-discapacidad-en-las-universidades.pdf?msclkid=65970d0bd08711ecbd973fae96bbba61">://www.uv.mx/piip/files/2013/10/Declaracion-de-Yucatan-sobre-los-derechos-de-las-personas-con-discapacidad-en-las-universidades.pdf?msclkid=65970d0bd08711ecbd973fae96bbba61</a></p>
                         <p class="fuente">Fern&aacute;ndez, J. M. (2012). Capacidades y competencias docentes para la inclusi&oacute;n del alumnado en la educaci&oacute;n superior. En <em>Revista de Educaci&oacute;n Superior, XLI</em>(2), 9-24. <a href="http://www.scielo.org.mx/pdf/resu/v41n162/v41n162a1.pdf">http://www.scielo.org.mx/pdf/resu/v41n162/v41n162a1.pdf</a></p>
