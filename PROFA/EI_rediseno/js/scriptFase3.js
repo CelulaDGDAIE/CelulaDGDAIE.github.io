@@ -102,3 +102,19 @@ var tag = document.createElement('script');
   function onYouTubeIframeAPIReady() {
     player = new YT.Player('existing-iframe', {events: {onApiChange}})
   }
+
+  function reducirLetra(){
+	var fSize = document.getElementsByTagName('p');
+	for(let i = 0; i < fSize.length; i++) {
+		let currentSize = window.getComputedStyle(fSize[i], null).getPropertyValue('font-size');
+		fSize[i].style.fontSize = `${Number(currentSize.replace('px','')) - 1}px`
+	  }
+}
+
+function aumentarLetra(){
+	var fSize = document.getElementsByTagName('p');
+	for(let i = 0; i < fSize.length; i++) {
+		let currentSize = window.getComputedStyle(fSize[i], null).getPropertyValue('font-size');
+		fSize[i].style.fontSize = `${Number(currentSize.replace('px','')) + 1}px`
+	  }
+}
