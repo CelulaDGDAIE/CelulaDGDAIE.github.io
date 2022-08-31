@@ -120,6 +120,11 @@ function reducirLetra(){
 		let currentSize = window.getComputedStyle(fSize[i], null).getPropertyValue('font-size');
 		fSize[i].style.fontSize = `${Number(currentSize.replace('px','')) - 1}px`
 	  }
+	  var liSize = document.getElementsByTagName('li');
+	for(let i = 0; i < fSize.length; i++) {
+		let currentSize = window.getComputedStyle(liSize[i], null).getPropertyValue('font-size');
+		liSize[i].style.fontSize = `${Number(currentSize.replace('px','')) - 1}px`
+	  }
 }
 
 function aumentarLetra(){
@@ -127,5 +132,10 @@ function aumentarLetra(){
 	for(let i = 0; i < fSize.length; i++) {
 		let currentSize = window.getComputedStyle(fSize[i], null).getPropertyValue('font-size');
 		fSize[i].style.fontSize = `${Number(currentSize.replace('px','')) + 1}px`
+	  }
+	  var liSize = document.getElementsByTagName('li');
+	for(let i = 0; i < fSize.length; i++) {
+		let currentSize = window.getComputedStyle(liSize[i], null).getPropertyValue('font-size');
+		liSize[i].style.fontSize = `${Number(currentSize.replace('px','')) + 1}px`
 	  }
 }
