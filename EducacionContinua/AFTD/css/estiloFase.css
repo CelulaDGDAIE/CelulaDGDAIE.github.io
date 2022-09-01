@@ -8,6 +8,10 @@ a{
 p{
 	text-align: justify;
 }
+table, th, td {
+	border: 1px solid white;
+	text-align: center;
+  }
 /******************Clases******************/
 .centrado{
 		text-align: center;
@@ -46,16 +50,31 @@ p{
 	margin:0.3em;
 	color: black;
 }
+.sombreadoAzul{
+	background-color: rgb(68, 114, 196);
+	color: white;
+}
+.sombreadoAzulClaro{
+	background-color: rgb(233, 235, 245);
+	color: black;
+}
+.sombreadoAzulOscuro{
+	background-color: rgb(207, 213, 234);
+	color: black;
+}
+
 .subtitulo{
 	font-size: 1.5em;
 	color: #1e56aa;
 	font-weight: bold;
 }
+
 .textoSeccion{
 	color: #1e56aa;
 	font-size: 20pt;
 	font-weight: bold;
 }
+
 /******************IDs******************/
 #airePresentacion{
 	background-color: white;
