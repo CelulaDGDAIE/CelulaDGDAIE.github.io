@@ -19,7 +19,7 @@
 			<div class="row">
 				
 				<div class="col align-self-center centrado">
-					<p id="tituloEscritorio">$@tituloEscritorio</p>
+					<h1 id="tituloEscritorio">$@tituloEscritorio</h1>
 				</div>
 				<div class="col-1"></div>
 				<div class="col-1 align-self-center">
@@ -34,7 +34,14 @@
 				<div class="col-1 align-self-center">
 					<a href="fase3.html" class="enlaceModulo enlaceActivo"><strong>Fase 3</strong></a>
 				</div>
-				<div class="col-3"></div>
+				<div class="col-1 align-self-center">
+					<span><strong>Zoom: </strong><button style="height:40px;width:40px" onclick="reducirLetra()" type="button" style="text-align:center; font-size:small;">A-</button><button style="height:40px;width:40px" onclick="aumentarLetra()" type="button" style="text-align:center; font-size:large;">A+</button></span>
+				</div>
+				<div class="col-1 align-self-center">
+					
+				</div>
+	
+				<div class="col-1"></div>
 				
 			</div>
 		</div>
@@ -88,7 +95,6 @@
 		
 		<!-------------------------------------------- Banner ---------------------->
 		<div class="video-container" id="banner">
-			<div class="overlay"></div>
 			<video autoplay muted loop>
 				<source src="videos/banner.mp4" type="video/mp4" />
 			</video>
@@ -152,6 +158,7 @@
 						<div id="tituloCarrusel">
 							<strong><i class="bi bi-info-circle-fill"></i> Presentacion</strong>
 						</div>
+						<br>
 						<div id="textoCarrusel" style="font-size: 0.6em;">
 							$@textoPresentacion
 						</div>
@@ -207,7 +214,7 @@
 			
 			<!-------------- Desarrollo de la EE Movil-------------->
 			<div id="desarrolloMovil">
-				<a href="modulo1.html">
+				<a href="fase1.html">
 					<div class="row campoModulo centrado">
 						<div class="col-1">
 							<div class="circuloModulo" id="circuloModulo1"></div>
@@ -218,7 +225,7 @@
 					</div>
 				</a>
 				<br>
-				<a href="modulo2.html">
+				<a href="fase2.html">
 					<div class="row campoModulo centrado">
 						<div class="col-1 align-self-center">
 							<div class="circuloModulo" id="circuloModulo2"></div>
@@ -229,7 +236,7 @@
 					</div>
 				</a>
 				<br>
-				<a href="modulo2.html">
+				<a href="fase3.html">
 					<div class="row campoModulo centrado">
 						<div class="col-1 align-self-center">
 							<div class="circuloModulo" id="circuloModulo3"></div>
@@ -328,7 +335,7 @@
 							</h2>
 							<div id="contenidoPrograma" class="accordion-collapse collapse" aria-labelledby="encabezadoPrograma" data-bs-parent="#acordeonPrograma">
 								<div class="accordion-body centrado">
-									<a href="documentos/programa.pdf" target="_blank">
+									<a href="https://www.uv.mx/formacionacademica/files/2022/09/Programa-de-Experiencia-Educativa-Educacion-Superior-Inclusiva.pdf" target="_blank">
 										<img src="imagenes/descarga3.png" class="icono">
 									</a>
 									<p>Programa.pdf</p>
@@ -415,17 +422,6 @@
 								</td>
 								</tr>
 								<tr>
-								<td>
-								<p>Fase 0</p>
-								</td>
-								<td>
-								<p>Foro de presentaci&oacute;n. Discapacidad, una emergencia que nos involucra.</p>
-								</td>
-								<td>
-								<p>No aplica</p>
-								</td>
-								</tr>
-								<tr>
 								<td rowspan="2">
 								<p>Fase 1</p>
 								</td>
@@ -463,25 +459,7 @@
 								<p style="text-align: right;">10%</p>
 								</td>
 								</tr>
-								<tr>
-								<td>
-								<p>Fase 3</p>
-								</td>
-								<td>
-								<p>Foro 5. Estrategias pedag&oacute;gicas inclusivas para personas con discapacidad.</p>
-								</td>
-								<td>
-								<p style="text-align: right;">40%</p>
-								</td>
-								</tr>
-								<tr>
-								<td colspan="2">
-								<p>Participaci&oacute;n en reuniones sincr&oacute;nicas en l&iacute;nea.</p>
-								</td>
-								<td>
-								<p style="text-align: right;">20%</p>
-								</td>
-								</tr>
+
 								<tr>
 								<td>&nbsp;</td>
 								<td>
