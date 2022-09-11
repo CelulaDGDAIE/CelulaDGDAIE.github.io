@@ -77,7 +77,7 @@ function cambiarDiapositiva(){
 		aireInferior.classList.add("fondoVerde");
 		cuerpoCarrusel.classList.add("fondoVerde");
 		document.getElementById("textoCarrusel").innerHTML = contenidoIndex.textoPresentacion;
-		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Presentacion</strong>";
+		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Presentación</strong>";
 		document.getElementById("imagenDiapositivas").src="imagenes/presentacion.jpg";
 		document.getElementById("numeral").innerHTML = "[1]";
 	}

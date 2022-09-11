@@ -44,10 +44,8 @@ function cargarContenido(){
 	document.getElementById("textoUnidad").innerHTML = contenidoIndex.textoUnidad;
 	document.getElementById("tituloModulo1").innerHTML = contenidoIndex.tituloModulo1;
 	document.getElementById("tituloModulo2").innerHTML = contenidoIndex.tituloModulo2;
-	document.getElementById("tituloModulo3").innerHTML = contenidoIndex.tituloModulo3;
 	document.getElementById("tituloModulo1Movil").innerHTML = contenidoIndex.tituloModulo1;
 	document.getElementById("tituloModulo2Movil").innerHTML = contenidoIndex.tituloModulo2;
-	document.getElementById("tituloModulo3Movil").innerHTML = contenidoIndex.tituloModulo3;
 	document.getElementById("textoCreditos").innerHTML = contenidoIndex.textoCreditos;
 }
 function cambiarDiapositiva(){
@@ -76,7 +74,7 @@ function cambiarDiapositiva(){
 		aireInferior.classList.add("fondoVerde");
 		cuerpoCarrusel.classList.add("fondoVerde");
 		document.getElementById("textoCarrusel").innerHTML = contenidoIndex.textoPresentacion;
-		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Presentación</strong>";
+		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Presentacion</strong>";
 		document.getElementById("imagenDiapositivas").src="imagenes/presentacion.jpg";
 		document.getElementById("referenciaImagen").innerHTML= "[1]";
 	}

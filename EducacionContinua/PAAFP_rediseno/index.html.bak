@@ -155,7 +155,7 @@
 					</div>
 					<div class="col-3 align-self-center centrado">
 						<div id="tituloCarrusel">
-							<strong><i class="bi bi-info-circle-fill"></i> Presentación</strong>
+							<strong><i class="bi bi-info-circle-fill"></i> Presentacion</strong>
 						</div>
 						<div id="textoCarrusel">
 							$@textoPresentacion

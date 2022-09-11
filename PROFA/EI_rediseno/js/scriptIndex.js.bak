@@ -65,8 +65,6 @@ function cambiarDiapositiva(){
 		cuerpoCarrusel.classList.add("fondoAzul");
 		document.getElementById("textoCarrusel").innerHTML = contenidoIndex.textoUnidad;
 		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-intersect'></i> Unidad de competencia</strong>";
-		document.getElementById("imagenDiapositivas").src="imagenes/unidad.jpg";
-		document.getElementById("referenciaImagen").innerHTML= "[2]";
 	}else{
 		carruselInformacionDiapositivaActual = "presentacion";
 		aireSuperior.classList.remove("fondoAzul");
@@ -76,8 +74,31 @@ function cambiarDiapositiva(){
 		aireInferior.classList.add("fondoVerde");
 		cuerpoCarrusel.classList.add("fondoVerde");
 		document.getElementById("textoCarrusel").innerHTML = contenidoIndex.textoPresentacion;
-		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Presentación</strong>";
-		document.getElementById("imagenDiapositivas").src="imagenes/presentacion.jpg";
-		document.getElementById("referenciaImagen").innerHTML= "[1]";
-	}
+		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Presentacion</strong>";	}
+}
+
+function reducirLetra(){
+	var fSize = document.getElementsByTagName('p');
+	for(let i = 0; i < fSize.length; i++) {
+		let currentSize = window.getComputedStyle(fSize[i], null).getPropertyValue('font-size');
+		fSize[i].style.fontSize = `${Number(currentSize.replace('px','')) - 1}px`
+	  }
+	var liSize = document.getElementsByTagName('li');
+	for(let i = 0; i < fSize.length; i++) {
+		let currentSize = window.getComputedStyle(liSize[i], null).getPropertyValue('font-size');
+		liSize[i].style.fontSize = `${Number(currentSize.replace('px','')) - 1}px`
+	  }
+}
+
+function aumentarLetra(){
+	var fSize = document.getElementsByTagName('p');
+	for(let i = 0; i < fSize.length; i++) {
+		let currentSize = window.getComputedStyle(fSize[i], null).getPropertyValue('font-size');
+		fSize[i].style.fontSize = `${Number(currentSize.replace('px','')) + 1}px`
+	  }
+	var liSize = document.getElementsByTagName('li');
+	for(let i = 0; i < fSize.length; i++) {
+		let currentSize = window.getComputedStyle(liSize[i], null).getPropertyValue('font-size');
+		liSize[i].style.fontSize = `${Number(currentSize.replace('px','')) + 1}px`
+	  }
 }

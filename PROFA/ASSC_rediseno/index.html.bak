@@ -26,13 +26,13 @@
 					<a href="#" class="enlaceModulo"><strong>Inicio</strong></a>
 				</div>
 				<div class="col-1 align-self-center">
-					<a href="fase1.html" class="enlaceModulo enlaceActivo"><strong>Módulo 1</strong></a>
+					<a href="fase1.html" class="enlaceModulo enlaceActivo"><strong>Fase 1</strong></a>
 				</div>
 				<div class="col-1 align-self-center">
-					<a href="fase2.html" class="enlaceModulo enlaceActivo"><strong>Módulo 2</strong></a>
+					<a href="fase2.html" class="enlaceModulo enlaceActivo"><strong>Fase 2</strong></a>
 				</div>
 				<div class="col-1 align-self-center">
-					<a href="fase3.html" class="enlaceModulo enlaceActivo"><strong>Módulo 3</strong></a>
+					<a href="fase3.html" class="enlaceModulo enlaceActivo"><strong>Fase 3</strong></a>
 				</div>
 				<div class="col-3"></div>
 				
@@ -80,9 +80,9 @@
 		<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
 			<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
 			<a href="#" class="w3-bar-item w3-button" ><i class="bi bi-house-door"></i> Inicio</a>
-			<a href="#" class="w3-bar-item w3-button">Módulo 1</a>
-			<a href="#" class="w3-bar-item w3-button">Módulo 2</a>
-			<a href="#" class="w3-bar-item w3-button">Módulo 3</a>
+			<a href="#" class="w3-bar-item w3-button">Modulo 1</a>
+			<a href="#" class="w3-bar-item w3-button">Modulo 2</a>
+			<a href="#" class="w3-bar-item w3-button">Modulo 3</a>
 		</div>
 		<!--------------------------------------------/Menú lateral---------------------->
 		
@@ -138,7 +138,7 @@
 			
 			<!-------------- /Información general Escritorio-------------->
 			<div id="diapositivasInformacion">
-				<div class="row aire aire superior fondoVerde">
+				<div class="row aire fondoVerde">
 					<div class="col-2 vacio"></div>
 					<div class="col fondoVerde" id="aireSuperior"></div>
 					<div class="col-2 vacio"></div>
@@ -149,14 +149,14 @@
 						<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
 					</div>
 					<div class="col align-self-center centrado">
-						<br><br>
 						<img src="imagenes/presentacion.jpg" class="img-fluid" id="imagenDiapositivas" alt="presentacion">
-						<p class="derecha" id="referenciaImagen">[1]</p>
+						<p id="numeral" style="text-align: right;">[1]</p>
 					</div>
-					<div class="col-3 align-self-center centrado">
+					<div class="col-4 align-self-center centrado">
 						<div id="tituloCarrusel">
-							<strong><i class="bi bi-info-circle-fill"></i> Presentación</strong>
+							<strong><i class="bi bi-info-circle-fill"></i> Presentacion</strong>
 						</div>
+						<br>
 						<div id="textoCarrusel">
 							$@textoPresentacion
 						</div>
@@ -179,7 +179,7 @@
 			<br>
 			<!-------------- Desarrollo de la EE -------------->
 			
-			<p class="textoSeccion">Desarrollo de este curso</p>
+			<p class="textoSeccion">Desarrollo de la Experiencia Educativa</p>
 			<!-------------- Desarrollo de la EE Escritorio-------------->
 			<div id="desarrolloEscritorio" class="container-fluid">
 				<div class="row">
@@ -212,7 +212,7 @@
 			
 			<!-------------- Desarrollo de la EE Movil-------------->
 			<div id="desarrolloMovil">
-				<a href="modulo1.html">
+				<a href="fase1.html">
 					<div class="row campoModulo centrado">
 						<div class="col-1">
 							<div class="circuloModulo" id="circuloModulo1"></div>
@@ -223,7 +223,7 @@
 					</div>
 				</a>
 				<br>
-				<a href="modulo2.html">
+				<a href="fase2.html">
 					<div class="row campoModulo centrado">
 						<div class="col-1 align-self-center">
 							<div class="circuloModulo" id="circuloModulo2"></div>
@@ -234,7 +234,7 @@
 					</div>
 				</a>
 				<br>
-				<a href="modulo2.html">
+				<a href="fase2.html">
 					<div class="row campoModulo centrado">
 						<div class="col-1 align-self-center">
 							<div class="circuloModulo" id="circuloModulo3"></div>
@@ -265,7 +265,7 @@
 		</div>
 		<!---------------------- Contenido ---------------------->
 		<br>
-		<p class="textoSeccion">Sobre este curso</p>
+		<p class="textoSeccion">Sobre la Experiencia Educativa</p>
 		<!---------------------- Sobre la EE ---------------------->
 		<div class="container-fluid">
 			<div class="row">
@@ -304,15 +304,15 @@
 									aria-expanded="false" 
 									aria-controls="flush-collapseOne" 
 								>
-									<em>Lineamientos</em>
+									<em>Precisiones</em>
 								</button>
 							</h2>
 							<div id="contenidoPresiciones" class="accordion-collapse collapse" aria-labelledby="encabezadoPresiciones" data-bs-parent="#acordeonPresiciones">
 								<div class="accordion-body centrado">
-									<a href="documentos/lineamientos.pdf" target="_blank">
+									<a href="documentos/precisiones.pdf" target="_blank">
 										<img src="imagenes/descarga2.png" class="icono">
 									</a>
-									<p>Lineamientos.pdf</p>
+									<p>Precisiones.pdf</p>
 								</div>
 							</div>
 						</div>
@@ -328,15 +328,15 @@
 									aria-expanded="false" 
 									aria-controls="flush-collapseOne" 
 								>
-									<em>Formato del curso</em>
+									<em>Programa</em>
 								</button>
 							</h2>
 							<div id="contenidoPrograma" class="accordion-collapse collapse" aria-labelledby="encabezadoPrograma" data-bs-parent="#acordeonPrograma">
 								<div class="accordion-body centrado">
-									<a href="documentos/formato.pdf" target="_blank">
+									<a href="https://www.uv.mx/formacionacademica/files/2022/05/ProFA-Alimentacion-sostenible-para-la-salud-colectiva-Marzo-2022.pdf" target="_blank">
 										<img src="imagenes/descarga3.png" class="icono">
 									</a>
-									<p>Formato del curso.pdf</p>
+									<p>Programa.pdf</p>
 								</div>
 							</div>
 						</div>
@@ -363,6 +363,9 @@
 							</h2>
 							<div id="contenidoDisclaimer" class="accordion-collapse collapse" aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
 								<div class="accordion-body">
+									
+									<p class="referencia" id="referencias">*Fruits and vegetables photo created by freepik - www.freepik.com y su enlace: <a href="https://www.freepik.com/free-photo/healthy-fruits-vegetables-dryfruits-bread-seeds-cheese-egg-oil-with-empty-plate-white-background_3681462.htm">https://www.freepik.com/free-photo/healthy-fruits-vegetables-dryfruits-bread-seeds-cheese-egg-oil-with-empty-plate-white-background_3681462.htm</a> C&eacute;lula de Desarrollo de la Direcci&oacute;n General de Innovaci&oacute;n Educativa de la Universidad Veracruzana. Foto de Cuerpo y mente creado por jcomp - www.freepik.es y su enlace es: <a href="https://www.freepik.es/foto-gratis/mujer-concentrada-estirando-sus-brazos-cielo-fondo_931643.htm">https://www.freepik.es/foto-gratis/mujer-concentrada-estirando-sus-brazos-cielo-fondo_931643.htm</a> Foto de Persona con energ&iacute;a creado por user18526052 - www.freepik.es y su enlace es: <a href="https://www.freepik.es/foto-gratis/mujer-activa-llena-energia-salta-aire-usa-ropa-deportiva-prepara-competiciones-deportivas_8988402.htm">https://www.freepik.es/foto-gratis/mujer-activa-llena-energia-salta-aire-usa-ropa-deportiva-prepara-competiciones-deportivas_8988402.htm</a> Cancer cell photo created by kjpargeter - www.freepik.com y su enlace es: <a href="https://www.freepik.com/free-photo/human-body-with-cells-blue-tones_929228.htm">https://www.freepik.com/free-photo/human-body-with-cells-blue-tones_929228.htm</a> Foto de Frutas ex&oacute;ticas creado por freepik - www.freepik.es y su enlace es: https://www.freepik.es/foto-gratis/uvas-fresas-pina-kiwi-albaricoque-platano-pina-entera_3630863.htm</p>
+
 									<p class="referencia" id="referencias">
 										<sup class="contadorReferencia">1</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
 									</p>
@@ -408,11 +411,11 @@
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div class="modal-body">
-							<table id="tablaEvidencia">
+							<table id="tablaEvaluacion">
 								<tbody>
 								<tr>
-								<td style="width:20%">
-								<p><strong>M&oacute;dulo</strong></p>
+								<td style="width: 10%;">
+								<p><strong>Fases</strong></p>
 								</td>
 								<td>
 								<p><strong>Evidencias de desempe&ntilde;o</strong></p>
@@ -423,56 +426,65 @@
 								</tr>
 								<tr>
 								<td>
-								<p>M&oacute;dulo 1</p>
+								<p>Fase 1</p>
 								</td>
 								<td>
-								<p>Actividad 1. Cuadro de registro de tres opciones de revistas para publicar el art&iacute;culo.</p>
+								<p>Foro 1. Análisis del video <em>Comic: captura de los sistemas alimentarios</em>.</p>
 								</td>
 								<td>
-								<p>15%</p>
+								<p style="text-align: right;">20%</p>
 								</td>
 								</tr>
 								<tr>
 								<td rowspan="2">
-								<p>M&oacute;dulo 2</p>
+								<p>Fase 2</p>
 								</td>
 								<td>
-								<p>Actividad 2. Borrador del planteamiento del problema.</p>
+								<p> Actividad 1. Cálculo de gasto energético.</p>
 								</td>
 								<td>
-								<p>25%</p>
+								<p style="text-align: right;">20%</p>
 								</td>
 								</tr>
 								<tr>
 								<td>
-								<p>Actividad 3. Borrador del estado del arte.</p>
+								<p> Actividad 2. Elaboración de menú. </p>
 								</td>
 								<td>
-								<p>30%</p>
+								<p style="text-align: right;">20%</p>
+								</td>
+								</tr>
+								<tr>
+								<td rowspan="2">
+								<p>Fase 3</p>
+								</td>
+								<td>
+								<p> Actividad 3: Recetas saludables.</p>
+								</td>
+								<td>
+								<p style="text-align: right;">30%</p>
 								</td>
 								</tr>
 								<tr>
 								<td>
-								<p>M&oacute;dulo 3</p>
+								<p>Foro 2. Conclusiones.</p>
 								</td>
 								<td>
-								<p>Actividad 4. Borrador de metodología, presentación y discusión de resultados.</p>
-								</td>
-								<td>
-								<p>30%</p>
+								<p style="text-align: right;">10%</p>
 								</td>
 								</tr>
+
 								<tr>
 								<td>&nbsp;</td>
 								<td>
-								<p><strong>Total</strong></p>
+								<p style="text-align: right; margin-right: 2em;"><strong>Total</strong></p>
 								</td>
 								<td>
-								<p><strong>100 %</strong></p>
+								<p style="text-align: right;"><strong>100%</strong></p>
 								</td>
 								</tr>
 								</tbody>
-							</table>
+								</table>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
