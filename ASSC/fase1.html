@@ -1,999 +1,637 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/easyScrollDots.min.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="css/estilosFase.css" />
-	<link rel="stylesheet" href="css/component.css"> <!--Se necesita-->
 
-    <title></title>
-  </head>
-	<style>
-		#fondo1{
-		background-image: url('images/fase1/fondo.png'); 
-		background-position: center; 
-		background-size: cover; 
-		border-radius: 50%; 
-		height: 300px; 
-		width: 300px;
-	}
-	#fondo1:hover {
-		background-image: url('images/fase1/video1.gif'); 
-		background-position: center; 
-		background-size: cover; 
-		border-radius: 50%; 
-		height: 300px; 
-		width: 300px;
-	}
-	#fondo2{
-		background-image: url('images/fase1/fondo2.png'); 
-		background-position: center; 
-		background-size: cover; 
-		border-radius: 50%; 
-		height: 300px; 
-		width: 300px;
-	}
-	#fondo2:hover {
-		background-image: url('images/fase1/video2.gif'); 
-		background-position: center; 
-		background-size: cover; 
-		border-radius: 50%; 
-		height: 300px; 
-		width: 300px;
-	}
-	</style>
-  <body style="background-color: #dbdbdb;">
-    <!--Encabezado-->
-    <header>
-	 <nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
-			<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
-			<h4 style="color: #18529D; font-weight: bold;"><!--<a href="https://eminus.uv.mx/eminus4/page/course/content"><img src="images/logoEminusReflejo.png" width="3%" alt="pendiente"></a>-->&nbsp;&nbsp;Alimentación sostenible para la salud colectiva</h4>
-			<h5 style="color: #18529D; font-weight: bold;">&nbsp;&nbsp;Fase 1. Estilos de vida. </h5>
-	</nav>
-      <!--<nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
-        <div class="container">
-          <div class="navbar-brand pb-0">
-            <div class="row no-gutters mb-1">
-              <div class="col">
-                <img
-                  src="images/logo-profa.png"
-                  class="logo d-inline mr-"
-                  alt="mdb logo"
-                />
-              </div>
-			  
-			  <div
-                class="col text-secondary d-flex flex-column justify-content-center"
-              >
-			  <span class="lg-view h4 font-weight-bold responsivo">Alimentación sostenible para la salud colectiva </span>
-				<span class="sm-view h2 font-weight-bold"></span>
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
 
-                <p class=" lg-view p-0 m-0 font-weight-bold">
-                  Fase 1. Estilos de vida. 
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
 
-                </p>
-				<p class=" sm-view p-0 m-0 font-weight-bold modulolargo">
-				
-                </p>
-              </div>
-            </div>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="dropdown"
-            data-target="#menu-indice"
-            aria-controls="menu-indice"
-            aria-expanded="false"
-            aria-label="Dropdown"
-          >
-            <i class="fas fa-align-justify text-dark"></i>
-          </button>
-
-
-          <div class="dropdown-menu dropdown-menu-right" id="menu-indice">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item bg-secondary text-center p-1">
-                <a
-                  class="text-white"
-                  href="https://www.uv.mx/"
-                  target="_blank"
-                  alt="Ir a Universidad Veracruzana"
-                >
-                  Universidad Veracruzana
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="#" class="indice">
-                  <i class="fas fa-home text-primary"></i> Inicio:
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="#seccion-proposito" class="ml-3 indice">
-                  <i class="icon-icono_proposito text-secondary"></i> Propósito:
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="#seccion-introduccion" class="ml-3 indice">
-                  <i class="icon-icono_introduccion text-secondary"></i>
-                  Introducci&oacute;n
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="#seccion-contenido" class="ml-3 indice">
-                  <i class="fas fa-copy text-secondary"></i> Contenido
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="#seccion-fuentes" class="ml-3 indice">
-                  <i class="icon-icono_fuentes text-secondary"></i> Fuentes de
-                  Informaci&oacute;n
-                </a>
-              </li>
-			 <li class="list-group-item p-1">
-                <a href="index.html">
-                  <i class="fas fa-book text-primary"></i> Módulos:
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="modulo1.html" class="ml-3">
-                  <i class="fas fa-bookmark text-secondary"></i> I. 
-                </a>
-              </li>
-			  <li class="list-group-item p-1">
-                <a href="modulo2.html" class="ml-3">
-                  <i class="fas fa-bookmark text-secondary"></i> II. 
-                </a>
-              </li>
-			  <li class="list-group-item p-1">
-                <a href="modulo3.html" class="ml-3">
-                  <i class="fas fa-bookmark text-secondary"></i> III. 
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="#">
-                  <i class="fas fa-book text-primary"></i> Temas:
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="#seccion-tema-1" class="ml-3 indice">
-                  <i class="fas fa-bookmark text-secondary"></i> 1.1. 
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="#seccion-tema-2" class="ml-3 indice">
-                  <i class="fas fa-bookmark text-secondary"></i> 1.2 
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!--Menú en dispositivos móviles-->
-        </div>
-      </nav>
-    </header>
-    <!--/Encabezado-->
-    <!--Menú Izquierdo-->
-	<div id="sticky-menu" class="d-none d-lg-block d-lg-flex flex-column">
-      <a
-		class="btn btn-lg btn-light btn-menu d-block"
-        
-        href="index.html"
-        data-toggle="tooltip"
-        data-html="true"
-        title="Inicio"
-      >
-        <i class="fas fa-home fa-2x"></i>
-      </a>
-
-      <a
-        class="btn btn-lg btn-primary btn-menu"
-        href="fase1.html"
-        data-toggle="tooltip"
-        data-html="true"
-        title="Estilo de vida."
-      >
-        <span class="font-weight-bold lead">1</span>
-      </a>
-	  <a
-        class="btn btn-lg btn-light btn-menu d-block"
-        href="fase2.html"
-        data-toggle="tooltip"
-        data-html="true"
-        title="Alimentación correcta."
-      >
-        <span class="font-weight-bold lead">2</span>
-      </a>
-	  <a
-        class="btn btn-lg btn-light btn-menu d-block"
-        href="fase3.html"
-        data-toggle="tooltip"
-        data-html="true"
-        title="Alimentación y medio ambiente."
-      >
-        <span class="font-weight-bold lead">3</span>
-      </a>
-
-
-    </div>
-    <!--/Menú Izquierdo-->
-	<br>
-	<br class="brInicio">
-    <!--Presentación-->
-    <section class="text-white" id="presentacion">
-	<div class="container contenedor-seccion">
-			<div class="row" style="color: black;">
-				<div class="col-1">
-				  </div>
-				  <div class="col">
-					<p><i class="fas fa-hand-point-right indicacion"></i> Para conocer toda la información, haga clic en la flecha de la derecha.</p>
-				  </div>
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">$@tituloEscritorio</p>
+				<p id="subtituloPresentacion">$@subtituloModulo1</p>
 			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="#" class="enlaceModulo"><strong>Fase 1</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="fase2.html" class="enlaceModulo enlaceActivo"><strong>Fase 2</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="fase3.html" class="enlaceModulo enlaceActivo"><strong>Fase 3</strong></a>
+			</div>
+			<div class="col-3"></div>
+
 		</div>
-	<div class="slideshow-container">
-	  <div class="mySlides1">
-	  <div class="row fondo-azul-marino" id="aireSuperiorIntroduccion"></div>
-		<div class="row" style="background-color:#355ca7;">
-			<div class="col align-self-center" style="background-color:#355ca7; text-align: center;">
-				
-				<figure class="figure">
-				  <img
-					src="images/fase1/Proposito.jpg"
-					alt="imagen pendiente"
-					class="img-fluid"
-					style="height: 310px"
-				  />
-				  <figcaption class="figure-caption text-white">
-					[1]
-				  </figcaption>
-				</figure>
-			</div>
-			<div class="col align-self-center" style="background-color:#355ca7;">
-				<!--<div id="aireTextoIntroduccion"></div>-->
-				<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Propósito</h3>
-					<p>Analizar la relación entre los estilos de vida sostenibles y su vínculo con la salud individual, colectiva y del planeta. </p>
-					
-			</div>
-			<div class="col-1" style="background-color:#355ca7;"></div>
-					  
-		</div>
-		
-	  </div>
-
-	  <div class="mySlides1">
-	  <div class="row fondo-azul-claro aireCarrusel"></div>
-		<div class="row fondo-azul-claro">
-		<div class="col-1 fondo-azul-claro"></div>
-			<div class="col fondo-azul-claro align-self-center">
-				<h3 class="font-weight-bold"><i class="fas fa-book-reader"></i> Situación problematizadora</h3>
-				
-				<p>La alimentación es un tema multifactorial, no se limita sólo al hecho de la producción y consumo de alimentos, sino que involucra al ecosistema, al contexto sociocultural, a los sistemas económicos y a todo el entramado de determinantes sociales que influyen, de alguna manera, en la toma de decisiones de una persona y de la comunidad acerca de su estilo de vida.</p>
-				<p>A continuación, observe el video <em>Estilo de vida saludable</em> (Add Visual Works, 2019):</p>
-				<div style="text-align: center;">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/-DFyYMTtwFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-				<p>Para iniciar con este curso, ingrese al <strong>Foro. Presentaci&oacute;n y expectativas;</strong> comparta sus motivaciones para cursarlo y si &eacute;stas se relcionan con lo presentado en el video anterior.</p>
-				
-			</div>
-			<div class="col-1 fondo-azul-claro"></div>
-			</div>
-	  </div>
-	  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-	  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 	</div>
-	<br>
-	<div class="container contenedor-seccion">
-		<div class="row" style="color: black;">
-			  <div class="col">
-				<h4 class="titulo">1. Estilo de vida</h4>
-				<p>El <em>Modelo de determinantes en salud, </em>de Lalonde (1974), expone cuatro condiciones que influyen en la salud del individuo: biolog&iacute;a humana, medio ambiente, estilos de vida y servicios de salud. En la presente EE se dirige la atenci&oacute;n a dos de esos determinantes: estilos de vida y medio ambiente.</p>
-				<p>Observe el video: <em>C&oacute;mic: la captura corporativa de los sistemas alimentarios </em>(FIAN International, 2021) y reflexione acerca de la relaci&oacute;n que hay entre su estilo de vida y los factores contextuales.</p>
-				<div style="text-align: center;">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/50LoiHZ8L6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			  </div>
-		</div>
-		<br>
-		
-		<div class="row" style="color: black;">
-			  <div class="col-2">
-				
-			  </div>
-			  <div class="col">
-				<div style="width: 100%;"><div style="position: relative; padding-bottom: 45.83333333333333%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="550px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/62740b079fb03b0017e46d47" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
-			  </div>
-			  <div class="col-2">
-				
-			  </div>
-		</div>
-		
-		
-		
-		
-		
-		
-		
-		<br>
-		<section class="container seccion">
-				<section class="row">
-					<section class="col-12">
-						<div class="contenedor-splitlayout-tema-2-es">
-							<div class="container-splitlayout">
-								<div id="splitlayout" class="splitlayout close-right reset-layout">
-									<div class="intro">
-										<div class="side side-left splitlayout-img-filemaker-es">
-											<div class="intro-content">
-												<div ><img src="images/fase1/activo.png" style="width: 50%" alt="Foto">
-												<figcaption class="figure-caption text-center text-white">Estilo de vida saludable</figcaption>
-												</div>
-												<h1 class="poppins-24" style="margin-top: 20px;"><b class="poppins-24"></b></h1>
-											</div>
-											<div class="overlay"></div>
-										</div>
-										<div class="side side-right splitlayout-img-access-es">
-											<div class="intro-content">
-												<div><img src="images/fase1/sedentario.png" style="width: 50%" alt="Foto">
-												<figcaption class="figure-caption text-center text-white">Estilo de vida no saludable </figcaption>
-												</div>
-												<h1 class="poppins-24" style="margin-top: 20px;"><b class="poppins-24"></b></h1>
-											</div>
-											<div class="overlay"></div>
-										</div>
-									</div><!-- /intro -->
-									<div class="page page-right">
-										<div class="page-inner splitlayout-access-es">
-											<section class="poppins-18">			
-												<p>Un <strong>estilo de vida no saludable</strong> implica la presencia continua de conductas que deterioran la salud y predisponen el desarrollo de enfermedades cr&oacute;nicas no transmisibles (ECNT), por ejemplo: diabetes mellitus tipo 2, transtornos cardiovasculares, c&aacute;ncer y padecimientos renales (Su&aacute;rez, S&aacute;nchez y Gonz&aacute;lez, 2017). Algunas de estas conductas son:</p>
-												<div style="width: 80%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/62742614b6f6cf00130ac569" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
-										   </section>
-										</div><!-- /page-inner -->
-									</div><!-- /page-right -->
-									<div class="page page-left">
-										<div class="page-inner splitlayout-filemaker-es">
-											<section class="poppins-18">
-											   <p>Un <strong>estilo de vida saludable </strong>se refiere a la pr&aacute;ctica consciente de conductas que favorecen la salud y generan bienestar. Se identifican tres elementos caracter&iacute;sticos del estilo de vida saludable:</p>
-											   <div style="width: 80%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/627413a9dd457c001831988d" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
-											   
-											</section>
-										</div><!-- /page-inner -->
-									</div><!-- /page-left -->
-									<span class="back back-right" title="back to intro" style="cursor:pointer;">
-										←
-										<!--<i class="icono icono-flecha-izq"></i>-->
-									</span>
-									<span class="back back-left" title="back to intro" style="cursor:pointer;">
-										→
-										<!--<i class="icono icono-flecha-der"></i>-->
-									</span>
-								</div><!-- /splitlayout -->
-							</div><!-- /container -->
-						</div>
-					</section>
-				</section>
-			</section>	
-			<br>
-			<div class="row" style="color: black;">
-			  <div class="col">
-				<h4 class="titulo">2. Medio ambiente</h4>
-				<p>El medio ambiente es un concepto cient&iacute;fico, hist&oacute;rico y cultural, en su estudio confluyen diversas perspectivas con la finalidad de comprender, analizar y transformar la relaci&oacute;n naturaleza-hombre-sociedad. Por tal raz&oacute;n, no es posible determinar una formulaci&oacute;n un&iacute;voca del concepto medio ambiente, sin embargo, para efectos de esta EE se recupera la definici&oacute;n propuesta en el manual <em>M&oacute;dulo de sensibilizaci&oacute;n ambiental:</em></p>
-				<p>Del medio ambiente se obtienen los recursos necesarios para vivir: tierra, agua, aire, energ&iacute;a y alimentos, sin embargo, la sobreexplotaci&oacute;n de esos recursos ha deteriorado nuestro planeta, generando as&iacute; un impacto negativo en la salud individual y colectiva.</p>
-				<p>Observe el video <em>Deterioro del medio ambiente </em>(Ecolog&iacute;aVerde, 2019) para conocer m&aacute;s sobre esta problem&aacute;tica:</p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/sCDLzxPlt_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			  </div>
-			  <div class="col">
-				<div style="width: 100%;"><div style="position: relative; padding-bottom: 75%; padding-top: 0; height: 0;"><iframe frameborder="0" width="900px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6275538214dcc9001271cbc3" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
-			  </div>
-		</div>
-		<br>
-		<div class="row" style="color: black;">
-			  <div class="col">
-				<h4 class="titulo">3. Epidemiología y transición nutricional</h4>
-				<p>De forma paralela a la evolución humana, se han registrado cambios en los hábitos dietéticos, motivados por la disponibilidad y comercialización de alimentos así como por la modificación de estilos y ritmos de vida. </p>
-			  </div>
-		</div>
-		<div class="row" style="color: black;">
-			  <div class="col-2">
-				
-			  </div>
-			  <div class="col">
-				<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/62756075a67ac00019404756" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
-			  </div>
-			  <div class="col-2">
-				
-			  </div>
-		</div>
-		<br>
-		
-		<div class="row" style="color: black;">
-			  <div class="col align-self-center">
-				<p>La Organizaci&oacute;n Mundial de la Salud (2018) explica que al incrementar el consumo de alimentos ultra procesados,&nbsp; aumenta la posibilidad de padecer alguna enfermedad cr&oacute;nica no transmisible: obesidad, sobrepeso, hipertensi&oacute;n arterial, enfermedades cardiovasculares y desnutrici&oacute;n.</p>
-				<p>Adem&aacute;s, seg&uacute;n expone la Escuela de Salud P&uacute;blica de la Universidad de Harvard (2022), la excesiva demanda de comida r&aacute;pida es insostenible para el planeta, pues se sobreexplotan recursos finitos, como el agua y la tierra, para su producci&oacute;n. Adem&aacute;s, incrementa la generaci&oacute;n de desechos, intensific&aacute;ndose el problema del cambio clim&aacute;tico.</p>
-			  </div>
-			  <div class="col align-self-center" style="text-align: center;">
-				
-				<figure class="figure">
-				  <img
-					src="images/fase1/procesados.jpg"
-					alt="imagen pendiente"
-					class="img-fluid"
-					style="height: 310px"
-				  />
-				  <figcaption class="figure-caption text-white">
-					[1]
-				  </figcaption>
-				</figure>
-			</div>
-		</div>
-		<div class="row" style="color: black;">
-			<div class="col align-self-center" style="text-align: center;">
-				
-				<figure class="figure">
-				  <img
-					src="images/fase1/unesco.jpg"
-					alt="imagen pendiente"
-					class="img-fluid"
-					style="height: 310px"
-				  />
-				  <figcaption class="figure-caption text-white">
-					[1]
-				  </figcaption>
-				</figure>
-			</div>
-			  <div class="col align-self-center">
-				<p>En 2010, la UNESCO declaró la gastronomía mexicana como Patrimonio Cultural Inmaterial de la humanidad, basada en el consumo de maíz, frijol, chile, tomate, calabaza y aguacate. </p>
-				<p>Sin embargo, la sociedad mexicana también ha sufrido la transición alimentaria subsecuente con el proceso de globalización que afecta los mecanismos de producción y consumo de alimentos, dejando graves secuelas en la salud de la población y en el medio ambiente. </p>
-			  </div>
-			  
-		</div>
-		<div class="row" style="color: black;">
-			  <div class="col">
-				<p>Observe  el video <em>Hábitos de alimentación en México. Parte 1</em> (quiero tv 2022); si desea profundizar más acerca de este tema, observe la parte 2, para analizar el comportamiento de los mexicanos relacionado con la alimentación.</p>
-			  </div>
-		</div>
-		
-		<div class="row" style="color: black;">
-				<div class="col"></div>
-			  <div class="col">
-				<a href="#" data-toggle="modal" data-target="#modalVideo1">
-					<div id ="fondo1"></div>
-				</a>
-			  </div>
-			  <div class="col">
-				<a href="#" data-toggle="modal" data-target="#modalVideo2">
-					<div id ="fondo2"></div>
-				</a>			  </div>
-			  <div class="col"></div>
-			  
-		</div>
-		<br>
-		<br>
-		<div class="row" style="color: black;">
-			<div class="col">
-				<div style="width: 100%;"><div style="position: relative; padding-bottom: 90%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1000px" height="900px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/62757382b2633400185b140b" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
-			  </div>
-			  <div class="col align-self-center">
-				<p>Para reconocer formas saludables de organizar el consumo de alimentos, compare los siguientes materiales de lectura:</p>
-				<ol>
-				<li><em><a href="https://www.cndh.org.mx/DocTR/2016/JUR/A70/01/JUR-20170331-NOR37.pdf">Plato del bien comer</a></em> (NOM 043).</li>
-				<li><em>Plato para comer saludable.</em></li>
-				</ol>
-				<p>Reflexione y responda:</p>
-				<ol>
-				<li>&iquest;Qu&eacute; diferencias observa entre las gu&iacute;as alimentarias?</li>
-				<li>&iquest;Considera que son un apoyo para la adopci&oacute;n de una alimentaci&oacute;n saludable? &iquest;Por qu&eacute;?</li>
-				<li>&iquest;Cu&aacute;l estima que podr&iacute;a adaptar para una alimentaci&oacute;n saludable y sostenible?&nbsp;</li>
-				</ol>
-			  </div>
-			  
-		</div>
-		<br>
-		<br>
-		<div class="row" style="color: black;">
-			  <div class="col align-self-center">
-				<h4 class="titulo">4. Dieta saludable y sostenible, beneficios físicos y ambientales</h4>
-				<p>La alimentaci&oacute;n involucra diversos procesos y actores sociales, es un acto social configurado por las decisiones personales y colectivas que influye en el medio ambiente y en la salud y bienestar de las personas.</p>
-				<p>De acuerdo con datos del <em>Panel Intergubernamental para el Cambio Clim&aacute;tico</em> (IPCC, 2014, p, 10), un tercio de los Gases de Efecto Invernadero de origen antropog&eacute;nico provienen de la agricultura, silvicultura y otros usos del suelo, es decir, de actividades que sirven para obtener diveros productos alimenticios.</p>
-				<p>Reflexione sobre esto observando el video <em>Juntos podemos enfriar el planeta</em> (Grupo Semillas, 20159).</p>
-			  </div>
-			  <div class="col">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/5m1_WaYG6Ws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			  
-				</div>
-		</div>
-		<div class="row" style="color: black;">
-			<div class="col" style="text-align: center;">
-				<figure class="figure">
-				  <img
-					src="images/fase1/patron.jpg"
-					alt="imagen pendiente"
-					class="img-fluid"
-					style="height: 310px"
-				  />
-				  <figcaption class="figure-caption text-white">
-					[1]
-				  </figcaption>
-				</figure>
-				</div>
-			  <div class="col align-self-center">
-				<p>Los cambios en los patrones alimentarios han contribuido al incremento de la crisis ambiental, afectando de manera negativa la salud de las personas.</p>
-				<p>La adopci&oacute;n de dietas sostenibles representa una oportunidad para mitigar los efectos negativos del cambio clim&aacute;tico y coadyuvar a la formaci&oacute;n de comunidades saludables:</p>
-				<p>Una dieta sostenible es aquella &ldquo;con bajo impacto ambiental que contribuye a la seguridad alimentaria, nutricional y a la vida sana de las generaciones presentes y futuras. Las dietas sostenibles protegen y respetan la biodiversidad y los ecosistemas, son culturalmente aceptables, accesibles, econ&oacute;micamente justas, asequibles; nutricionalmente adecuadas" (FAO 2022).</p>
-			  </div>
-			  
-		</div>
-		<br>
-		<br>
-		<br>
-		
-		
-		
-		<!--<div class="row" style="color: black;">
-			<div class="col"></div>
-			  <div class="col">
-				<a href="#" data-toggle="modal" data-target="#modalVentajas">
-				<img src="images/fase1/video1.gif" width="70%">
-				</a>
-			  </div>
-			  <div class="col">
-				<a href="#" data-toggle="modal" data-target="#modalDesventajas">
-					<img src="images/fase3/circulo2.png" width="70%">
-				</a>
-			  </div>
-			  <div class="col"></div>
-		</div>-->
-		
-		
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
 
-
-		
-		
-		
-		
-		<br>
-		<div style="text-align: center; color: black">
-			<h3>Evidencias de desempeño</h3>
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
 		</div>
 		<div class="row">
-		<div class="col-3"></div>	
-		<div class="col" style="text-align: center;" >
-		
-		<a href="#" data-toggle="modal" data-target="#modal-actividad">
-			<div id="actividad"></div>
-		</a>
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">$@tituloPresentacion</p>
+				<p id="subtituloPresentacionMovil">$@subtituloPresentacion</p>
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
 		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">$@tituloPresentacionScroll</p>
+					<p id="subtituloPresentacionScroll">$@subtituloPresentacion</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+		<a href="fase2.html" class="w3-bar-item w3-button">Fase 2</a>
+		<a href="fase3.html" class="w3-bar-item w3-button">Fase 3</a>
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<br>
+					<br>
+					<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenDiapositivas"
+						alt="presentacion">
+						<p style="text-align: right;">[1]</p>
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						$@textoPresentacion
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<br>
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoAzul" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado">
+					<div>
+						<strong><i class="bi bi-info-circle-fill"></i> Situación problematizadora</strong>
+					</div>
+					<br>
+					<div id="textoUnidadEscritorio">
+						
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
+<div class='row' style='color: white;'>
+<div class='col-2'></div>
+<div class='col'>
+<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'> 3.1 Job interview
+
+</h1>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+<h1 class='subtitulo'>3.1.1. What is a job interview?
+</h1>
+<div class='col-2'></div>
+</div>
+<div class='row' >
+<div class='col-2'></div>
+<div class='col'>
+<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+<path
+d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+id='path2'
+style='fill:#0055d4' />
+</svg> Click the <strong>button </strong>on the right to see the presentation about what a job interview is and its structure.</p>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-3'></div>
+<div class='col'>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SJ9-aBUyr14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class='col-3'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+<h1 class='subtitulo'>3.1.2. Essential job interview tips & techniques
+</h1>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+<p>Watch the following video where you can find some tips for an appropriate job interview.&nbsp;</p>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-3'></div>
+<div class='col'>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AUfe9M572as" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class='col-3'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+<h1 class='subtitulo'>3.1.3. Activity: Some errors you have to avoid in a job interview. 
+</h1>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+Watch the video and identify the errors the applicant makes. 
+
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-3'></div>
+<div class='col'>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3AgfK3R8Pgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class='col-3'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+<p><strong>&nbsp;</strong>Instruction: According to the information from the video, do the following exercise</p>
+</div>
+<div class='col-2'></div>
+</div>
+<hr>
+<br>
+<br>
+<div class='row' style='color: white;'>
+<div class='col-2'></div>
+<div class='col'>
+<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'> 3.2. Meetings
+
+</h1>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+<h1 class='subtitulo'>3.2.1. Activity: Vocabulary activity about meetings 
+</h1>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+<p>In this module, you &nbsp;are going to learn&nbsp;about meetings, but first let's review some vocabulary related to this main topic. It's important to check meaning because a pair of them are false cognates. They don't have the meaning they seem to have, at least in this context. Guess what words are we talking about?</p>
+<p><strong>Vocabulary:</strong></p>
+<p>Meet.</p>
+<p>Meeting.</p>
+<p>Hold.</p>
+<p>Outcome.</p>
+<p>Agenda.</p>
+<p>Minute.</p>
+<p>Attendee.</p>
+<p><strong>Observe that the two words that are false cognates are:</strong></p>
+<p><strong>Agenda: </strong>In this context agenda means a list of topics to be discussed at a formal meeting.</p>
+<p><strong>Minutes: </strong>It means a summarized record of the topics discussed at a meeting.</p>
+</div>
+<div class='col-2'></div>
+</div>
+
+
+
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="https://www.uv.mx/" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
 			<div class="col-3"></div>
 		</div>
 		<br>
-		
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
 		<div class="row">
-		  <div class="col">
-			<h3 style="color: black"><i class="icon-icono_fuentes"></i> Fuentes de Información</h3>
-		  </div>
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p class="fuente">Add Visual Works. (2019, 22 de abril). <em>Estilo de vida saludable. </em>[Video]. Youtube. <a href="https://www.youtube.com/watch?v=-DFyYMTtwFk">https://www.youtube.com/watch?v=-DFyYMTtwFk</a></p>
+						<p class="fuente">Ecolog&iacute;aVerde. (2019, 29 de abril). <em>Deterioro del medio ambiente. </em>[Video]. Youtube. <a href="https://www.youtube.com/watch?v=sCDLzxPlt_s">https://www.youtube.com/watch?v=sCDLzxPlt_s</a></p>
+						<p class="fuente">Escuela de Salud P&uacute;blica de la Universidad de Harvard. (2022). <em>El Plato y el planeta</em>. <a href="https://www.hsph.harvard.edu/nutritionsource/sustainability/plate-and-planet/">https://www.hsph.harvard.edu/nutritionsource/sustainability/plate-and-planet/</a></p>
+						<p class="fuente">Escuela de Salud P&uacute;blica de la Universidad de Harvard. (2022). <em>El plato para comer saludable</em>. <a href="https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/translations/spanish/">https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/translations/spanish</a><a href="https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/translations/spanish/">/</a></p>
+						<p class="fuente">FIAN International. (2021, 1 de diciembre). <em>Comic: La Captura Corporativa de los Sistemas Alimentarios. </em>[Video]. Youtube. <a href="https://www.youtube.com/watch?v=50LoiHZ8L6k">https://www.youtube.com/watch?v=50LoiHZ8L6k</a></p>
+						<p class="fuente">Grupo Semillas. (2015, 16 de octubre). <em>&iexcl;Juntos podemos enfriar el planeta! </em>[Video]. Youtube. <a href="https://www.youtube.com/watch?v=5m1_WaYG6Ws">https://www.youtube.com/watch?v=5m1_WaYG6Ws</a></p>
+						<p class="fuente">Instituto Nacional de Empleo (2001). <em>Introducci&oacute;n al concepto de medio ambiente. Modulo de Sensibilizaci&oacute;n Ambiental</em>. Direcci&oacute;n General de Medio Ambiente del Gobierno de Navarra. <a href="https://www.miteco.gob.es/gl/calidad-y-evaluacion-ambiental/temas/red-de-autoridades-ambientales-raa-/ms_1_tcm37-166723.pdf">https://www.miteco.gob.es/gl/calidad-y-evaluacion-ambiental/temas/red-de-autoridades-ambientales-raa-/ms_1_tcm37-166723.pdf</a></p>
+						<!--<p class="fuente">Lalonde, M. (1974). <em>Nuevas perspectivas sobre la salud de los canadienses. Documento de trabajo. </em>Ministerio de abastecimiento y servicios de Canad&aacute;. <a href="https://www.gob.mx/cms/uploads/attachment/file/10204/informe-lalonde.pdf">https://www.gob.mx/cms/uploads/attachment/file/10204/informe-lalonde.pdf</a></p>
+						<p class="fuente">Masson, V., Hans, P., Skea, J, <em>et al. </em>(2020). <em>Las personas, la tierra y el clima bajo los efectos del calentamiento mundial en El cambio clim&aacute;tico y la tierra-Resumen para responsables de pol&iacute;ticas </em>(p. 10). IPCC. <a href="https://www.ipcc.ch/site/assets/uploads/sites/4/2020/06/SRCCL_SPM_es.pdf">https://www.ipcc.ch/site/assets/uploads/sites/4/2020/06/SRCCL_SPM_es.pdf</a></p>
+						<p class="fuente">Organizaci&oacute;n de las Naciones Unidas para la Alimentaci&oacute;n y la Agricultura (2022). <em>Gu&iacute;as alimentarias y sostenibilidad. </em>FAO. <a href="https://www.fao.org/nutrition/educacion-nutricional/food-dietary-guidelines/background/sustainable-dietary-guidelines/es/">https://www.fao.org/nutrition/educacion-nutricional/food-dietary-guidelines/background/sustainable-dietary-guidelines/es/</a></p>
+						<p class="fuente">Organizaci&oacute;n Mundial de la Salud. (2018, 31 de agosto). <em>Alimentaci&oacute;n sana</em>. <a href="https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet">https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet</a></p>
+						<p class="fuente">Quiero tv. (2022, 15 de febrero). <em>H&aacute;bitos de alimentaci&oacute;n en M&eacute;xico, parte 1. </em>[Video]. Youtube. <a href="https://www.youtube.com/watch?v=oNcxk-Gnc5s">https://www.youtube.com/watch?v=oNcxk-Gnc5s</a></p>
+						<p class="fuente">Quiero tv. (2022, 15 de febrero). <em>H&aacute;bitos de alimentaci&oacute;n en M&eacute;xico, parte 2. </em>[Video]. Youtube. <a href="https://www.youtube.com/watch?v=v9I99vRCLvw">https://</a><a href="https://www.youtube.com/watch?v=v9I99vRCLvw">www.youtube.com/watch?v=v9I99vRCLvw</a></p>
+						<p class="fuente">Secretar&iacute;a de Gobernaci&oacute;n. (2013, 22 de enero). <em>Norma Oficial Mexicana NOM-043-SSA2-2012, Servicios b&aacute;sicos de salud. Promoci&oacute;n y educaci&oacute;n para la salud en materia alimentaria. Criterios para brindar orientaci&oacute;n.</em> Diario Oficial de la Federaci&oacute;n. <a href="https://dof.gob.mx/nota_detalle.php?codigo=5285372&amp;fecha=22/01/2013">https://dof.gob.mx/nota_detalle.php?codigo=5285372&amp;fecha=22/01/2013</a></p>
+						<p class="fuente">Su&aacute;rez, W., S&aacute;nchez, A., &amp; Gonz&aacute;lez, J. (2017). Fisiopatolog&iacute;a de la obesidad: Perspectiva actual. <em>Revista Chilena de Nutrici&oacute;n</em>, <em>44</em>(3), 226-233. <a href="https://doi.org/10.4067/S0717-75182017000300226">https://doi.org/10.4067/S0717-75182017000300226</a></p>-->
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"></div>
+						<p class="fuente">Hamed, K., Fereydon, D., &amp; Parvaresh, A. (1993). Health- Enhancing anda Health-Compromising lifestyles. <em>Scientific Research an Academic Publisher</em>, 119-145.</p>
+						<p class="fuente">Health Education Unit. (1986). Life-styles and health. <em>Social Science &amp; Medicine</em>, <em>22</em>(2), 117-124. <a href="https://doi.org/10.1016/0277-9536(86)90060-2">https://doi.org/10.1016/0277-9536(86)90060-2</a></p>
+						<p class="fuente">Ibarra, L. S. (2016). Transici&oacute;n Alimentaria en M&eacute;xico. <em>Raz&oacute;n y Palabra</em>, 162-179. <a href="https://www.redalyc.org/articulo.oa?id=199547464012">https</a><a href="https://www.redalyc.org/articulo.oa?id=199547464012">://www.redalyc.org/articulo.oa?id=199547464012</a></p>
+						<p class="fuente">Instituto Nacional de Empleo. (2001). Introducci&oacute;n al concepto de medio ambiente. <em>Modulo de Sensibilizaci&oacute;n Ambiental</em>. Ministerio del Medio Ambiente. Fondo Social Europeo.</p>
+						<p class="fuente">Jonhs, T. &amp; Yzaguirre, P. E. (2002). <em>Nutrici&oacute;n y medio ambiente</em>. <a href="https://www.unscn.org/files/Publications/Briefs_on_Nutrition/Brief5_SP.pdf">https</a><a href="https://www.unscn.org/files/Publications/Briefs_on_Nutrition/Brief5_SP.pdf">://</a><a href="https://www.unscn.org/files/Publications/Briefs_on_Nutrition/Brief5_SP.pdf">www.unscn.org/files/Publications/Briefs_on_Nutrition/Brief5_SP.pdf</a></p>
+						<p class="fuente">Lalonde, H. M. (1972). <em>Nuevas perspectivas sobre la salud de los canadienses</em>. Ministro de Salud Nacional y Bienestar.</p>
+						<p class="fuente">Organizaci&oacute;n de las Naciones Unidas para la Educaci&oacute;n la Ciencia y la Cultura. (2018). <em>Intangible cultural heritage</em>. ONU.</p>
+						<p class="fuente">Secretar&iacute;a de Salud. (2014). <em>Gu&iacute;a de estilos de vida saludables en el &aacute;mbito laboral</em>. Organizaci&oacute;n Panamericana de la Salud.</p>
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
 		</div>
 
-		<div class="tab">
-			<div class="row">
-				<div class="col"></div>
-				<div class="col"><button class="tablinks" onclick="abrirPestanaFuentes(event, 'basicas', 'tabFuentes')">Básicas</button></div>
-				<div class="col"></div>
-				<div class="col"><button class="tablinks" onclick="abrirPestanaFuentes(event, 'complementarias', 'tabFuentes')">Complementarias</button></div>
-				<div class="col"></div>
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Disclaimer</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">1</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">2</sup>Vivienda social iconos creados por Smashicons - Flaticon.  <a href="https://www.flaticon.es/icono-gratis/vivienda-social_1973326" target="_blank">https://www.flaticon.es/icono-gratis/vivienda-social_1973326</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">3</sup>Familia iconos creados por Freepik - Flaticon.  <a href="https://www.flaticon.es/icono-gratis/familia_3021873" target="_blank">https://www.flaticon.es/icono-gratis/familia_3021873</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">4</sup>Ética iconos creados por Freepik - Flaticon.  <a href="https://www.flaticon.es/icono-premium/no-maleficencia_5267422" target="_blank">https://www.flaticon.es/icono-premium/no-maleficencia_5267422</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">5</sup>Sedentario iconos creados por designvector10 - Flaticon.  <a href=" https://www.flaticon.es/icono-premium/sofa_3449781" target="_blank">https://www.flaticon.es/icono-premium/sofa_3449781</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">6</sup>Dormir iconos creados por Flat Icons - Flaticon.  <a href="https://www.flaticon.es/icono-gratis/desorden-del-sueno_1488187" target="_blank">https://www.flaticon.es/icono-gratis/desorden-del-sueno_1488187</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">7</sup>Comida iconos creados por Freepik - Flaticon. <a href="https://www.flaticon.es/icono-premium/comida_566600" target="_blank">https://www.flaticon.es/icono-premium/comida_566600</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">8</sup>Estrés iconos creados por juicy_fish - Flaticon. <a href="https://www.flaticon.es/icono-premium/estres_4233596" target="_blank">https://www.flaticon.es/icono-premium/estres_4233596</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">9</sup>Vector de triste creado por storyset - www.freepik.es.  <a href="https://www.freepik.es/vector-gratis/ilustracion-concepto-sentirse-triste_7171666.htm" target="_blank">https://www.freepik.es/vector-gratis/ilustracion-concepto-sentirse-triste_7171666.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">10</sup>Vector de rutina de ejercicios creado por storyset - www.freepik.es.  <a href="https://www.freepik.es/vector-gratis/ilustracion-concepto-hacer-deporte_7069794.htm" target="_blank">https://www.freepik.es/vector-gratis/ilustracion-concepto-hacer-deporte_7069794.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">11</sup>Ojo iconos creados por Freepik - Flaticon. <a href="https://www.flaticon.es/icono-gratis/visibilidad_4264841" target="_blank">https://www.flaticon.es/icono-gratis/visibilidad_4264841</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">12</sup>Calendario iconos creados por srip - Flaticon. <a href="https://www.flaticon.es/icono-gratis/calendario_2693507" target="_blank">https://www.flaticon.es/icono-gratis/calendario_2693507</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">13</sup>Cardio iconos creados por Abdul-Aziz - Flaticon. <a href="https://www.flaticon.es/icono-gratis/cardio_7140473" target="_blank">https://www.flaticon.es/icono-gratis/cardio_7140473</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">14</sup>Vector de dia del medio ambiente creado por freepik - www.freepik.es.  <a href="https://www.freepik.es/vector-gratis/salva-concepto-planeta-personas-que-cuidan-tierra_7824979.htm" target="_blank">https://www.freepik.es/vector-gratis/salva-concepto-planeta-personas-que-cuidan-tierra_7824979.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">15</sup>Bad food vector created by redgreystock - www.freepik.com.  <a href=" https://www.freepik.com/free-vector/fat-woman-choosing-good-healthy-bad-unhealthy-food-junk-food-vs-balanced-menu-nutrition-comparison-concept-female-flat-character-thinking-about-diet-extra-calories-weight-loss_16503856.htm" target="_blank"> https://www.freepik.com/free-vector/fat-woman-choosing-good-healthy-bad-unhealthy-food-junk-food-vs-balanced-menu-nutrition-comparison-concept-female-flat-character-thinking-about-diet-extra-calories-weight-loss_16503856.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">16</sup>Bad food vector created by redgreystock - www.freepik.com.  <a href="https://www.freepik.com/free-vector/fat-woman-choosing-good-healthy-bad-unhealthy-food-junk-food-vs-balanced-menu-nutrition-comparison-concept-female-flat-character-thinking-about-diet-extra-calories-weight-loss_16503856.htm" target="_blank">https://www.freepik.com/free-vector/fat-woman-choosing-good-healthy-bad-unhealthy-food-junk-food-vs-balanced-menu-nutrition-comparison-concept-female-flat-character-thinking-about-diet-extra-calories-weight-loss_16503856.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">17</sup>Vector de engordar creado por rawpixel.com - www.freepik.es.  <a href="https://www.freepik.es/vector-gratis/adicto-comida-chatarra-aperitivos_3132814.htm" target="_blank">https://www.freepik.es/vector-gratis/adicto-comida-chatarra-aperitivos_3132814.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">18</sup>Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">19</sup>Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">20</sup>Bad food vector created by redgreystock - www.freepik.com.  <a href="https://www.freepik.com/free-vector/fat-woman-choosing-good-healthy-bad-unhealthy-food-junk-food-vs-balanced-menu-nutrition-comparison-concept-female-flat-character-thinking-about-diet-extra-calories-weight-loss_16503856.htm" target="_blank">https://www.freepik.com/free-vector/fat-woman-choosing-good-healthy-bad-unhealthy-food-junk-food-vs-balanced-menu-nutrition-comparison-concept-female-flat-character-thinking-about-diet-extra-calories-weight-loss_16503856.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">21</sup>Vector de vegetales creado por macrovector - www.freepik.es.  <a href="https://www.freepik.es/vector-gratis/conjunto-plano-iconos-colores-verduras_9386563.htm" target="_blank">https://www.freepik.es/vector-gratis/conjunto-plano-iconos-colores-verduras_9386563.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">22</sup>Vector de fondo frutas creado por macrovector - www.freepik.es.  <a href="https://www.freepik.es/vector-gratis/cartel-fondo-composicion-bayas-frutas_4385325.htm" target="_blank">https://www.freepik.es/vector-gratis/cartel-fondo-composicion-bayas-frutas_4385325.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">23</sup>Vector de vegetariano creado por macrovector - www.freepik.es.  <a href="https://www.freepik.es/vector-gratis/coleccion-realista-aceitunas-jarra-vidrio-aceite-oliva-ramita-arbol-aceitunas-verdes-frescas_6846632.htm" target="_blank">https://www.freepik.es/vector-gratis/coleccion-realista-aceitunas-jarra-vidrio-aceite-oliva-ramita-arbol-aceitunas-verdes-frescas_6846632.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">24</sup>Vector de actividades creado por freepik - www.freepik.es.  <a href="https://www.freepik.es/vector-gratis/ilustracion-pasos-fitness-baile-dibujado-mano-plana_12418444.htm" target="_blank">https://www.freepik.es/vector-gratis/ilustracion-pasos-fitness-baile-dibujado-mano-plana_12418444.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">25</sup>Vector de pan icono creado por macrovector - www.freepik.es.  <a href=" https://www.freepik.es/vector-gratis/conjunto-iconos-planos-pan-fresco_2871158.htm" target="_blank"> https://www.freepik.es/vector-gratis/conjunto-iconos-planos-pan-fresco_2871158.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">26</sup>Vector de icono carne creado por macrovector - www.freepik.es.  <a href=" https://www.freepik.es/vector-gratis/conjunto-tarjetas-concepto-alimentos-proteinas_3797733.htm" target="_blank"> https://www.freepik.es/vector-gratis/conjunto-tarjetas-concepto-alimentos-proteinas_3797733.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">27</sup>Vector de botella de agua creado por storyset - www.freepik.es.  <a href=" https://www.freepik.es/vector-gratis/ilustracion-concepto-botella-agua_8476696.htm" target="_blank"> https://www.freepik.es/vector-gratis/ilustracion-concepto-botella-agua_8476696.htm</a>
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">28</sup>Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
 			</div>
 		</div>
-
-		<div id="basicas" class="tabcontent tabFuentes">
-			<p class="fuente"></p>
-			<p class="fuente">Add Visual Works. (2019, 22 de abril). <em>Estilo</em><em> de </em><em>vida</em> <em>saludable</em> [video]. Youtube. <a href="https://www.youtube.com/watch?v=-DFyYMTtwFk">https://www.youtube.com/watch?v=-DFyYMTtwFk</a></p>
-			<p class="fuente">EcologiaVerde. (2019, 29 de abril). Deterioro del medio ambiente [video]. Youtube. <a href="https://www.youtube.com/watch?v=sCDLzxPlt_s">https://www.youtube.com/watch?v=sCDLzxPlt_s</a></p>
-			<p class="fuente">Escuela de Salud P&uacute;blica de la Universidad de Harvard. (2022). <em>El Plato y el planeta</em>. <a href="https://www.hsph.harvard.edu/nutritionsource/sustainability/plate-and-planet/">https://www.hsph.harvard.edu/nutritionsource/sustainability/plate-and-planet/</a></p>
-			<p class="fuente">Escuela de Salud P&uacute;blica de la Universidad de Harvard. (2022). <em>El plato para comer saludable</em>. <a href="https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/translations/spanish/">https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/translations/spanish/</a></p>
-			<p class="fuente">FIAN International. (2021, 1 de diciembre). <em>Comic: La Captura Corporativa de los Sistemas Alimentarios </em>[video]. Youtube. <a href="https://www.youtube.com/watch?v=50LoiHZ8L6k">https://www.youtube.com/watch?v=50LoiHZ8L6k</a></p>
-			<p class="fuente">Grupo Semillas. (2015, 16 de octubre). <em>&iexcl;Juntos podemos enfriar el planeta! </em>[video]. Youtube. <a href="https://www.youtube.com/watch?v=5m1_WaYG6Ws">https://www.youtube.com/watch?v=5m1_WaYG6Ws</a></p>
-			<p class="fuente"><em>Introducci&oacute;n al concepto de medio ambiente. Modulo de Sensibilizaci&oacute;n Ambiental</em>. <a href="https://www.miteco.gob.es/gl/calidad-y-evaluacion-ambiental/temas/red-de-autoridades-ambientales-raa-/ms_1_tcm37-166723.pdf">https://www.miteco.gob.es/gl/calidad-y-evaluacion-ambiental/temas/red-de-autoridades-ambientales-raa-/ms_1_tcm37-166723.pdf</a></p>
-			<p class="fuente">Lalonde, M. (1974). <em>Nuevas perspectivas sobre la salud de los canadienses. Documento de trabajo. </em>Ministerio de abastecimiento y servicios de Canad&aacute;. <a href="https://www.gob.mx/cms/uploads/attachment/file/10204/informe-lalonde.pdf">https://www.gob.mx/cms/uploads/attachment/file/10204/informe-lalonde.pdf</a></p>
-			<p class="fuente">Masson, V., Hans, P., Skea, J, <em>et al. </em>(2020). <em>Las personas, la tierra y el clima bajo los efectos del calentamiento mundial en El cambio clim&aacute;tico y la tierra-Resumen para responsables de pol&iacute;ticas </em>(p. 10). IPCC. <a href="https://www.ipcc.ch/site/assets/uploads/sites/4/2020/06/SRCCL_SPM_es.pdf">https://www.ipcc.ch/site/assets/uploads/sites/4/2020/06/SRCCL_SPM_es.pdf</a></p>
-			<p class="fuente">Organizaci&oacute;n de las Naciones Unidas para la Alimentaci&oacute;n y la Agricultura (2022). <em>Gu&iacute;as alimentarias y sostenibilidad. </em>FAO. <a href="https://www.fao.org/nutrition/educacion-nutricional/food-dietary-guidelines/background/sustainable-dietary-guidelines/es/">https://www.fao.org/nutrition/educacion-nutricional/food-dietary-guidelines/background/sustainable-dietary-guidelines/es/</a></p>
-			<p class="fuente">Organizaci&oacute;n Mundial de la Salud. (2018, 31 de agosto). <em>Alimentaci&oacute;n sana</em>. <a href="https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet">https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet</a></p>
-			<p class="fuente">Quiero tv. (2022, 15 de febrero). <em>H&aacute;bitos de alimentaci&oacute;n en M&eacute;xico, parte 1 </em>[video]. Youtube. <a href="https://www.youtube.com/watch?v=oNcxk-Gnc5s">https://www.youtube.com/watch?v=oNcxk-Gnc5s</a></p>
-			<p class="fuente">Quiero tv. (2022, 15 de febrero). <em>H&aacute;bitos de alimentaci&oacute;n en M&eacute;xico, parte 2 </em>[video]. Youtube. <a href="https://www.youtube.com/watch?v=v9I99vRCLvw">https://www.youtube.com/watch?v=v9I99vRCLvw</a></p>
-			<p class="fuente">Secretar&iacute;a de Gobernaci&oacute;n. (2013, 22 de enero). <em>Norma Oficial Mexicana NOM-043-SSA2-2012, Servicios b&aacute;sicos de salud. Promoci&oacute;n y educaci&oacute;n para la salud en materia alimentaria. Criterios para brindar orientaci&oacute;n.</em> Diario Oficial de la Federaci&oacute;n. <a href="https://dof.gob.mx/nota_detalle.php?codigo=5285372&amp;fecha=22/01/2013">https://dof.gob.mx/nota_detalle.php?codigo=5285372&amp;fecha=22/01/2013</a></p>
-			<p class="fuente">Su&aacute;rez, W., S&aacute;nchez, A., &amp; Gonz&aacute;lez, J. (2017). Fisiopatolog&iacute;a de la obesidad: Perspectiva actual. <em>Revista Chilena de Nutrici&oacute;n</em>, <em>44</em>(3), 226-233. <a href="https://doi.org/10.4067/S0717-75182017000300226">https://doi.org/10.4067/S0717-75182017000300226</a></p>
-			
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
 		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
 
-		<div id="complementarias" class="tabcontent tabFuentes">
-			<p class="fuente">Hamed, K., Fereydon, D., &amp; Parvaresh, A. (1993). Health- Enhancing anda Health-Compromising lifestyles. <em>Scientific Research an Academic Publisher</em>, 119-145.</p>
-			<p class="fuente">Health Education Unit. (1986). Life-styles and health. <em>Social </em><em>Science</em><em> &amp; Medicine</em>, <em>22</em>(2), 117&ndash;124. <a href="https://doi.org/10.1016/0277-9536(86)90060-2">https://doi.org/10.1016/0277-9536(86)90060-2</a></p>
-			<p class="fuente">Ibarra, L. S. (2016). Transici&oacute;n Alimentaria en M&eacute;xico. <em>Raz&oacute;n y Palabra</em>, 162-179. <a href="https://www.redalyc.org/articulo.oa?id=199547464012">https://www.redalyc.org/articulo.oa?id=199547464012</a></p>
-			<p class="fuente">Jonhs, T. &amp; Yzaguirre, P. E. (2002). <em>Nutrici&oacute;n y medio ambiente</em>. <a href="https://www.unscn.org/files/Publications/Briefs_on_Nutrition/Brief5_SP.pdf">https://www.unscn.org/files/Publications/Briefs_on_Nutrition/Brief5_SP.pdf</a></p>
-			<p class="fuente">Juan J, C. (2001). Introducci&oacute;n al concepto de medio ambiente. <em>Modulo de Sensibilizaci&oacute;n Ambiental</em>. Ministerio del Medio Ambiente. Fondo Social Europeo.</p>
-			<p class="fuente">Lalonde, H. M. (1972). <em>Nuevas perspectivas sobre la salud de los canadienses</em>. Ministro de Salud Nacional y Bienestar.</p>
-			<p class="fuente">Organizaci&oacute;n de las Naciones Unidas para la Educaci&oacute;n la Ciencia y la Cultura. (2018). Intangible cultural heritage. ONU.</p>
-			<p class="fuente">Secretar&iacute;a de Salud. (2014). <em>Gu&iacute;a de estilos de vida saludables en el &aacute;mbito laboral</em>. Ciudad de M&eacute;xico.</p>
-		</div>
-		
-		
-		
-      </div>
-    </section>
-	<br>
-    <!--Disclaimer-->
-    <section class="fondo-azul-claro">
-      <div class="container contenedor-menu-contenido">
-        <!--Disclaimer-->
-        <div class="row">
-          <div class="col">
-            <div class="accordion" id="accordionExample">
-              <div class="card fondo-verde">
-                <div class="card-header" id="headingOne">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left text-white"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      <i>Disclaimer</i>
-                    </button>
-                  </h2>
-                </div>
 
-                <div
-                  id="collapseOne"
-                  class="collapse"
-                  aria-labelledby="headingOne"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body" style="background-color: white;">
-						<p class="disclaimer"><sup>1</sup> </p>
-						
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--/Disclaimer-->
-      </div>
-    </section>
-    <!--Disclaimer-->
-    <!--Logo Universidad Veracruzana-->
-    <section id="pie-pagina" class="p-1">
-      <div class="container">
-        <div class="row">
-          <div class="w-100">
-            <div class="row d-flex justify-content-center">
-              <div class="col-3 col-md-2">
-                <img src="images/logo-uv-texto.png" class="img-fluid" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Logo Universidad Veracruzana-->
-	<div style="background-color: #0D47A1; color: white;">
-            © 2022 Universidad Veracruzana. Todos los derechos reservados.
-    </div>
-    <div class="fixed-bottom-right" id="button-up">
-      <a class="btn btn-success indice btn-sm p-3" href="#seccion-proposito">
-        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
-      </a>
-    </div>
-	
+
+	<!-------------------------------------------- Modales ---------------------->
 	<!--Ventanas Modales-->
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="modal-actividad"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modal-actividad"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Actividades
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body actividad-modal">
-					  <div class="slideshow-container">
-						  <div class="mySlides2">
-								<p><span class="font-weight-bold">Foro 1. Presentación y expectativas</span></p>
-								<p><strong>Descripci&oacute;n:</strong></p>
-								<ol>
-								<li>Elabore un breve comentario en el que comparta cu&aacute;les son sus motivos para participar en este curso y qu&eacute; relaci&oacute;n tienen con lo expuesto en el video <em>Estilo de vida saludable</em>. No olvide mencionar su nombre, experiencia educativa que imparte y regi&oacute;n en la que labora.</li>
-								<li>Este foro no ser&aacute; considerado para la evaluaci&oacute;n del desempe&ntilde;o.</li>
-								<li>Su intervenci&oacute;n deber&aacute; apegarse estrictamente a las consideraciones descritas en las&nbsp;<a href="#">Reglas para participar en los foros de discusi&oacute;n</a>.</li>
-								</ol>
-								<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
-								<ol>
-								<li>Apego a las instrucciones.</li>
-								<li>Redacci&oacute;n y ortograf&iacute;a adecuadas.</li>
-								<li>Retroalimentaci&oacute;n de la participaci&oacute;n de, al menos, dos compa&ntilde;eros.</li>
-								</ol>
-								<p><strong>Lineamientos de entrega:</strong></p>
-								<ol>
-								<li>Suba sus comentarios al apartado&nbsp;<strong>Foro 1. Presentaci&oacute;n y expectativas</strong>, en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el&nbsp;<strong>Calendario</strong>&nbsp;de entregas.</li>
-								</ol>
-						  </div>
-						  <div class="mySlides2">
-								<p><span class="font-weight-bold">Foro 2. Análisis del video Comic: <em>captura de los sistemas alimentarios</em>.</span></p>
-								<p><strong>Descripci&oacute;n:</strong></p>
-								<ol>
-								<li>Observe el video <em>C&oacute;mic: la captura corporativa de los sistemas alimentarios</em>.</li>
-								<li>Reflexione acerca del efecto que tiene el consumo de alimentos en el medio ambiente y en la salud f&iacute;sica de las personas, respondiendo a las siguientes preguntas:
-								<ol type="a">
-								<li>&iquest;Hab&iacute;a pensado en los m&uacute;ltiples efectos que tiene sobre el medio ambiente nuestra forma de alimentarnos?</li>
-								<li>&iquest;Qu&eacute; puede hacer para disminuir las consecuencias negativas de su consumo de alimentos en el ambiente?</li>
-								<li>Desde su &aacute;rea de trabajo, &iquest;qu&eacute; puede hacer para promover el consumo de alimentos saludables y ser amigable con el planeta?</li>
-								<li>Con su familia y amistades, &iquest;c&oacute;mo puede promover el consumo de alimentos saludable y ser amigable con el planeta?</li>
-								</ol>
-								</li>
-								</ol>
-								<p><strong>Criterios de desempe&ntilde;o:</strong></p>
-								<ol>
-								<li>Congruencia entre los temas revisados</li>
-								<li>Participaci&oacute;n oportuna en el foro.</li>
-								</ol>
-								<p><strong>Lineamientos de entrega:</strong></p>
-								<ol>
-								<li>Suba su evidencia al apartado&nbsp;<strong>Foro 2. An&aacute;lisis del video </strong><strong><em>Comic: captura corporativa de los sistemas alimentarios</em></strong>, en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el&nbsp;<strong>Calendario</strong>&nbsp;de entregas.</li>
-								</ol>
-
-						  </div>
-						  <a class="prevModal" onclick="plusSlides(-1, 1)">&#10094;</a>
-						  <a class="nextModal" onclick="plusSlides(1, 1)">&#10095;</a>
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<div class="row">
+					  <div class="col-md-1 align-self-center"><a class="flechaCarrusel" onclick="cambiarEvidencia()">&#10094;</a></div>
+					  <div class="col">
+						<div id="evidencia1">
+							<p style="text-align: center;">&nbsp;<strong>Foro de presentación y expectativas. </strong></p>
+							<p><strong>Descripci&oacute;n:</strong></p>
+							<ol>
+							<li>Elabore un breve comentario en el que comparta cu&aacute;les son sus motivos para participar en este curso y qu&eacute; relaci&oacute;n tienen con lo expuesto en el video <em>Estilo de vida saludable</em>. No olvide mencionar su nombre, experiencia educativa que imparte y regi&oacute;n en la que labora.</li>
+							<li>Este foro no ser&aacute; considerado para la evaluaci&oacute;n del desempe&ntilde;o.</li>
+							<li>Su intervenci&oacute;n deber&aacute; apegarse estrictamente a las consideraciones descritas en las&nbsp;<a href="documentos/reglasForo.pdf" target="_blank">Reglas para participar en los foros de discusi&oacute;n</a>.</li>
+							</ol>
+							<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+							<ol>
+							<li>Apego a las instrucciones.</li>
+							<li>Redacci&oacute;n y ortograf&iacute;a adecuadas.</li>
+							<li>Retroalimentaci&oacute;n de la participaci&oacute;n de, al menos, dos compa&ntilde;eros.</li>
+							</ol>
+							<p><strong>Lineamientos de entrega:</strong></p>
+							<ol>
+							<li>Suba sus comentarios al apartado&nbsp;<strong>Foro de presentación y expectativas</strong>, en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el&nbsp;<strong>Calendario</strong>&nbsp;de entregas.</li>
+							</ol>
+						</div>
+						<div id="evidencia2">
+							<p style="text-align: center;"><strong>Foro 1. An&aacute;lisis del video </strong><strong><em>Comic: captura de los sistemas alimentarios</em></strong><strong>.</strong></p>
+							<p><strong>Descripci&oacute;n:</strong></p>
+							<ol>
+							<li>Observe el video <em>C&oacute;mic: la captura corporativa de los sistemas alimentarios</em>.</li>
+							<li>Redacte una reflexión acerca del efecto que tiene el consumo de alimentos en el medio ambiente y en la salud f&iacute;sica de las personas, respondiendo a las siguientes preguntas:
+							<ol type="a">
+							<li>&iquest;Hab&iacute;a pensado en los m&uacute;ltiples efectos que tiene sobre el medio ambiente nuestra forma de alimentarnos?</li>
+							<li>&iquest;Qu&eacute; puede hacer para disminuir las consecuencias negativas de su consumo de alimentos en el ambiente?</li>
+							<li>Desde su &aacute;rea de trabajo, &iquest;qu&eacute; puede hacer para promover el consumo de alimentos saludables y ser amigable con el planeta?</li>
+							<li>Con su familia y amistades, &iquest;c&oacute;mo puede promover el consumo de alimentos saludable y ser amigable con el planeta?</li>
+							</ol>
+							</li>
+							<li>Su intervención deberá apegarse estrictamente a las consideraciones descritas en las Reglas para participar en los <a target="_blank" href="documentos/reglasForo.pdf">foros de discusión</a>.</li>
+							</ol>
+							<p><strong>Criterios de desempe&ntilde;o:</strong></p>
+							<ol>
+							<li>Congruencia entre los temas revisados.</li>
+							<li>Participaci&oacute;n oportuna en el foro.</li>
+							<li>Retroalimentación de la participación de, al menos, dos compañeros.</li>
+							</ol>
+							<p><strong>Lineamientos de entrega:</strong></p>
+							<ol>
+							<li>Suba su evidencia al apartado&nbsp;<strong>Foro 1. An&aacute;lisis del video </strong><strong><em>Comic: captura corporativa de los sistemas alimentarios</em></strong>, en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el&nbsp;<strong>Calendario</strong>&nbsp;de entregas.</li>
+							</ol>
+						</div>
+					  </div>
+					  <div class="col-md-1 align-self-center">
+						<a class="flechaCarrusel" onclick="cambiarEvidencia()">&#10095;</a>
+					  </div>
 					</div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-outline-secondary waves-effect"
-              data-dismiss="modal"
-            >
-              Cerrar
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-	
-	
-	
-	<div
-      class="modal fade"
-      id="modalVideo1"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modalVideo1"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Parte 1
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-			  <div style="text-align: center;">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/oNcxk-Gnc5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			  </div>
-		  </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-outline-secondary waves-effect"
-              data-dismiss="modal"
-            >
-              Cerrar
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-	
-	
-	<div
-      class="modal fade"
-      id="modalVideo2"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modalVideo2"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Parte 2
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-			  <div style="text-align: center;">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/v9I99vRCLvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			  </div>
-		  </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-outline-secondary waves-effect"
-              data-dismiss="modal"
-            >
-              Cerrar
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-	
-	
-	
-	
-    <!--/Ventanas Modales-->
-	
-
-	
-	
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
-      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-      crossorigin="anonymous"
-    ></script>
-	<script src="js/modernizr.custom.js"></script><!--Se necesita-->
-    <script src="js/classie.js"></script><!--Se necesita-->
-    <script src="js/cbpSplitLayout.js"></script><!--Se necesita-->
-    <script src="js/mdb.min.js"></script>
-    <script src="js/easyScrollDots.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/inicializacion.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script>
-	//document.getElementById("defaultOpen").click();
-	var slideIndex = [1, 1, 1];
-	var slideId = ["mySlides1", "mySlides2", "mySlides3"]
-	showSlides(1, 0);
-	showSlides(1, 1);
-	showSlides(1, 2);
-
-	function plusSlides(n, no) {
-	  showSlides(slideIndex[no] += n, no);
-	}
-
-	function showSlides(n, no) {
-	  var i;
-	  var x = document.getElementsByClassName(slideId[no]);
-	  if (n > x.length) {slideIndex[no] = 1}    
-	  if (n < 1) {slideIndex[no] = x.length}
-	  for (i = 0; i < x.length; i++) {
-		 x[i].style.display = "none";  
-	  }
-	  x[slideIndex[no]-1].style.display = "block";  
-	}
-	
-	
-	
-	function abrirPestana(evt, fuente, tipo) {
-		
-	  var i, tabcontent, tablinks, abierto;
-	  tabcontent = document.getElementsByClassName(tipo);
-	  if(document.getElementById(fuente).style.display == "block"){
-		abierto=1;
-	  }else{
-		abierto=0;
-	  }
-	  for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	  }
-	  tablinks = document.getElementsByClassName("tablinks");
-	  for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
-	  }
-	  
-	  
-	  if(abierto === 0){
-		document.getElementById("ojo"+fuente).className = "fas fa-eye-slash";
-		document.getElementById(fuente).style.display = "block";
-		evt.currentTarget.className += " active";
-	  }else{
-		document.getElementById("ojo"+fuente).className = "fas fa-eye";
-	  }
-		
-	}
-	function abrirPestanaVideos (evt, fuente, tipo) {
-		
-	  var i, tabcontent, tablinks;
-	  tabcontent = document.getElementsByClassName(tipo);
-	  for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	  }
-	  tablinks = document.getElementsByClassName("tablinks");
-	  for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
-	  }
-	  
-	  
-		document.getElementById(fuente).style.display = "block";
-		evt.currentTarget.className += " active";
-
-		
-	}
-	function abrirPestanaFuentes (evt, fuente, tipo) {
-		
-	  var i, tabcontent, tablinks;
-	  tabcontent = document.getElementsByClassName(tipo);
-	  for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	  }
-	  tablinks = document.getElementsByClassName("tablinks");
-	  for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
-	  }
-	  
-	  
-		document.getElementById(fuente).style.display = "block";
-		evt.currentTarget.className += " active";
-
-		
-	}
-	
-	
-	
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
 
 
-	
-	</script>
-  </body>
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/contenidoFase.js"></script>
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
 </html>

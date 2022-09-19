@@ -1,721 +1,503 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/easyScrollDots.min.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="css/estilos.css" />
-    <title></title>
-  </head>
-  <body style="background-color: #dbdbdb;">
-    <!--Encabezado-->
-    <header>
-      <nav class="navbar fixed-top navbar-expand-lg plantilla" id="encabezado">
+	<head>
+		<title>EE virtualizada</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/estiloIndex.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<!-------------------------------------------- Encabezado Escritorio ---------------------->
+		<div class= "container-fluid sticky" id="encabezadoEscritorio">
 			<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
-			<h3 style="color: #18529D; font-weight: bold;">Alimentación sostenible para la salud colectiva</h3>
-
-		
-		
-
-        <!--<div class="container">
-          <div class="navbar-brand pb-0">
-            <div class="row no-gutters mb-1">
-              
-              <div
-                class="col text-secondary d-flex flex-column justify-content-center"
-              >
-                <span class="h4 font-weight-bold">Alimentación sostenible para la salud colectiva</span>
-              </div>
-            </div>
-          </div>
-		  
-		  
-		  
-		  
-          <!--<button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="dropdown"
-            data-target="#menu-indice"
-            aria-controls="menu-indice"
-            aria-expanded="false"
-            aria-label="Dropdown"
-          >
-            <i class="fas fa-align-justify text-dark"></i>
-          </button>-->
-		  
-		  
-          <!--Menú en dispositivos móviles-->
-          <!--<div class="dropdown-menu dropdown-menu-right" id="menu-indice">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item bg-secondary text-center p-1">
-                <a
-                  class="text-white"
-                  href="https://www.uv.mx/"
-                  target="_blank"
-                  alt="Ir a Universidad Veracruzana"
-                >
-                  Universidad Veracruzana
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="#inicio" class="indice">
-                  <i class="fas fa-home text-primary"></i> Inicio:
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="#presentacion" class="ml-3 indice">
-                  <i class="fas fa-info-circle text-secondary"></i>
-                  Presentaci&oacute;n
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="#autores" class="ml-3 indice">
-                  <i class="fas fa-user-circle text-secondary"></i> Autora
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="#unidad-competencia" class="ml-3 indice">
-                  <i class="fas fa-book-reader text-secondary"></i> Unidad de <i class="fas fa-tasks"></i>
-                  Competencia
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="#contenido" class="ml-3 indice">
-                  <i class="fas fa-copy text-secondary"></i> Contenido
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="#evaluacion-desempeno" class="ml-3 indice">
-                  <i class="fas fa-pencil-alt text-secondary"></i> Evaluación
-                  de desempeño
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="#datos-contacto" class="ml-3 indice">
-                  <i class="fas fa-address-card text-secondary"></i> Datos de
-                  Contacto
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="index.html">
-                  <i class="fas fa-book text-primary"></i> :
-                </a>
-              </li>
-              <li class="list-group-item p-1">
-                <a href="1.html" class="ml-3">
-                  <i class="fas fa-bookmark text-secondary"></i> I. 
-                </a>
-              </li>
-			  <li class="list-group-item p-1">
-                <a href="2.html" class="ml-3">
-                  <i class="fas fa-bookmark text-secondary"></i> II. 
-                </a>
-              </li>
-			  <li class="list-group-item p-1">
-                <a href="3.html" class="ml-3">
-                  <i class="fas fa-bookmark text-secondary"></i> III. 
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!--Menú en dispositivos móviles
-        </div>-->
-      </nav>
-    </header>
-    <!--/Encabezado-->
-    <!--Menú Izquierdo-->
-    <div id="sticky-menu" class="d-none d-lg-block d-lg-flex flex-column">
-      <a
-        class="btn btn-lg btn-primary btn-menu"
-        href="#!"
-        data-toggle="tooltip"
-        data-html="true"
-        title="Inicio"
-      >
-        <i class="fas fa-home fa-2x"></i>
-      </a>
-
-      <a
-        class="btn btn-lg btn-light btn-menu d-block"
-        href="fase1.html"
-        data-toggle="tooltip"
-        data-html="true"
-        title="Estilo de vida."
-      >
-        <span class="font-weight-bold lead">1</span>
-      </a>
-	  <a
-        class="btn btn-lg btn-light btn-menu d-block"
-        href="fase2.html"
-        data-toggle="tooltip"
-        data-html="true"
-        title="Alimentación correcta."
-      >
-        <span class="font-weight-bold lead">2</span>
-      </a>
-	  <a
-        class="btn btn-lg btn-light btn-menu d-block"
-        href="fase3.html"
-        data-toggle="tooltip"
-        data-html="true"
-        title="Alimentación y medio ambiente."
-      >
-        <span class="font-weight-bold lead">3</span>
-      </a>
-
-
-    </div>
-	<!--Video-->
-    <section id="video">
-      <div class="overlay"></div>
-      <video
-        class="embed-responsive-item"
-        playsinline="playsinline"
-        autoplay="autoplay"
-        muted="muted"
-        loop="loop"
-      >
-        <source src="Videos/banner.mp4" type="video/mp4" />
-      </video>
-      <div class="container h-100">
-        <div class="d-flex h-100 text-center align-items-center">
-          <div class="w-100 text-white"></div>
-        </div>
-      </div>
-    </section>
-    <!--/Video-->
-	<section id="informacionMovil">
-
-			<div class="row fondo-teal aireCarrusel" ></div>
-				<div class="row fondo-teal" >
-					<div class="col d-flex align-items-center">
-						<figure class="figure">
-							<img
-								src="images/Presentacion.jpg"
-								alt="imagen pendiente"
-								class="img-fluid"
-							/>
-							<figcaption class="figure-caption text-right text-white">[1]</figcaption>
-						</figure>
-					</div>
-					<div class="col align-self-center" >
-						<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Presentación</h3>
-							<p><strong>Alimentaci&oacute;n sostenible para la salud colectiva </strong>es un curso-taller ofrecido por el Sistema de Atenci&oacute;n Integral a la Salud de la Universidad Veracruzana (SAISUV), para combatir la mala alimentaci&oacute;n derivada&nbsp; del consumo de productos industrializados que se caracterizan por su alta densidad energ&eacute;tica, ricos en grasas, az&uacute;cares y sodio, los cuales contribuyen al incremento de enfermedades cr&oacute;nicas no transmisibles y con el deterioro del medio ambiente.</p>
-					</div>
-				</div>
-				<div class="row fondo-azul-claro aireCarrusel" ></div>
-				<div class="row align-self-center fondo-azul-claro">
-							<div class="col">
-								<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Unidad de competencia</h3>
-								<p>El docente desarrolla conocimientos, habilidades y estrategias que le permiten proponer e implementar hábitos dietéticos saludables y sostenibles para beneficiar su salud individual y colectiva, así como el cuidado del medio ambiente.</p>
-
-							</div>
-							<div class="col d-flex align-items-center">
-								<figure class="figure" >
-									<img
-										src="images/Unidad.jpg"
-										alt="imagen pendiente"
-										class="img-fluid"
-									/>
-									<figcaption class="figure-caption text-white">[2]</figcaption>
-								</figure>
-							</div>
-				</div>
-		
-	</section>
-    <section class="text-white" id="presentacion">
-	<p style="color: black; text-align: right;">[]</p>
-	<div class="container contenedor-seccion">
-		<div class="row">
-			<h3 class="titulo">Información general</h3>
-        </div>
-		<div class="row" id="carruselInformacion">
-			<div class="col">
-				<div class="slideshow-container">
-					<div class="mySlides" id="slidePresentacion">
-						<div class="row fondo-teal aireCarrusel" ></div>
-						<div class="row fondo-teal" >
-							<div class="col d-flex align-items-center">
-								<figure class="figure">
-									<img
-										src="images/Presentacion.jpg"
-										alt="imagen pendiente"
-										class="img-fluid"
-										id="imagenPresentacion"
-									/>
-									<figcaption class="figure-caption text-right text-white">[7]</figcaption>
-								</figure>
-							</div>
-							<div class="col align-self-center" >
-								<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Presentación</h3>
-									<p><strong>Alimentaci&oacute;n sostenible para la salud colectiva </strong>es un curso-taller ofrecido por el Sistema de Atenci&oacute;n Integral a la Salud de la Universidad Veracruzana (SAISUV), para combatir la mala alimentaci&oacute;n derivada&nbsp; del consumo de productos industrializados que se caracterizan por su alta densidad energ&eacute;tica, ricos en grasas, az&uacute;cares y sodio, los cuales contribuyen al incremento de enfermedades cr&oacute;nicas no transmisibles y con el deterioro del medio ambiente.</p>
-							</div>
-							<div class="col-1"></div>
-						</div>
-					</div>
-					<div class="mySlides" >
-						<div class="row fondo-azul-claro" id="slideUnidad">
-							<div class="col-1"></div>
-							<div class="col align-self-center">
-								<h3 class="font-weight-bold"><i class="fas fa-info-circle"></i> Unidad de competencia</h3>
-								<p>El docente desarrolla conocimientos, habilidades y estrategias que le permiten proponer e implementar hábitos dietéticos saludables y sostenibles para beneficiar su salud individual y colectiva, así como el cuidado del medio ambiente.</p>
-
-							</div>
-							<div class="col d-flex align-items-center">
-								<figure class="figure" >
-									<img
-										src="images/Unidad.jpg"
-										alt="imagen pendiente"
-										class="img-fluid"
-									/>
-									<figcaption class="figure-caption text-white">[8]</figcaption>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>
-				<a class="prev" onclick="plusSlides(-1)">❮</a>
-				<a class="next" onclick="plusSlides(1)">❯</a>
-			</div>
-		</div>
-	</div>
-    </section>
-    <!--/Presentación-->
-	
-	<section id="contenidoMovil">
-        <div class="container contenedor-seccion text-white">
-            <div class="row">
-					<h4 class="titulo"><span class="font-weight-bold">Desarrollo de la experiencia educativa</span></h4>
-            </div>
-
-			
-            <div class="row fondo-azul-marino">
-			<div class="col">
-				<a href="fase1.html"><img style="width: 100%;" src="images/modulo1-hover.png"/></a>
-			</div>
-			</div>
-			<br>
-			 <div class="row fondo-azul-marino">
-			<div class="col">
-				<a href="fase2.html"><img style="width: 100%;" src="images/modulo2-hover.png"/></a>
-			</div>
-			</div>
-			<br>
-			 <div class="row fondo-azul-marino">
-			<div class="col">
-				<a href="fase3.html"><img style="width: 100%;" src="images/modulo3-hover.png"/></a>
-			</div>
-			</div>
-			 <div class="row fondo-azul-marino">
-			<div class="col">
-				<a href="fase3.html"><img style="width: 100%;" src="images/modulo3-hover.png"/></a>
-			</div>
-			</div>
-			
-			
-			
-		
-    </section>
-	
-	
-	
-	
-    <!--Contenido-->
-    <section id="contenido">
-        <div class="container contenedor-seccion text-white">
-            <div class="row">
-					<h4 class="titulo"><span class="font-weight-bold">Desarrollo de la experiencia educativa</span></h4>
-            </div>
-
-			
-            <div class="row">
-			<div class="col-margen"></div>
-				<div class="col" >
-				  <div class="row filaModulo">
-					<a href="fase1.html" class="col apartadoModulo" id="modulo1"></a>
-					<div id="separacionModulos"></div>
-					<a href="fase2.html" class="col apartadoModulo" id="modulo2"></a>
-
-				  </div>
-				  <div class="row filaModulo">
-						<div class="col-3" ></div>
-					<a href="fase3.html" class="col apartadoModulo" id="modulo3"></a>
-					<div class="col-3" ></div>
-				  </div>
-				</div>
+			<div class="row">
 				
-
-				<a class="col-3 d-flex align-items-center"
-					id="apartadoEvaluacion" 
-					href="#"
-					data-toggle="modal"
-					data-target="#modal-eval">
-					
-				</a>
+				<div class="col align-self-center centrado">
+					<p id="tituloEscritorio">$@tituloEscritorio</p>
+				</div>
+				<div class="col-1"></div>
+				<div class="col-1 align-self-center">
+					<a href="#" class="enlaceModulo"><strong>Inicio</strong></a>
+				</div>
+				<div class="col-1 align-self-center">
+					<a href="fase1.html" class="enlaceModulo enlaceActivo"><strong>Fase 1</strong></a>
+				</div>
+				<div class="col-1 align-self-center">
+					<a href="fase2.html" class="enlaceModulo enlaceActivo"><strong>Fase 2</strong></a>
+				</div>
+				<div class="col-1 align-self-center">
+					<a href="fase3.html" class="enlaceModulo enlaceActivo"><strong>Fase 3</strong></a>
+				</div>
+				<div class="col-3"></div>
+				
 			</div>
-        </div>
-    </section>
-    <!--/Contenido-->
-	
-    <!--Descarga-->
-    <section  id="descarga" class="fondo-verde">
-      <div class="container contenedor-seccion text-center">
-		<div class="row">
-			
-			
-			<div class="col">
-				<a
-				class="btn btn-lg btn-outline-primary"
-				href="#"
-				data-toggle="modal"
-				class="text-white enlace font-weight-bold"
-				data-target="#modal-instructor-uno">
-				  
-				  <span class="mr-3">Créditos</span>
-				  <i class="fas fa-users fa-2x"></i>
-				</a>
-			</div>
-			<div class="col">
-				<a
-				class="btn btn-lg btn-outline-primary"
-				target="_blank"
-				href="documentos/Precisiones_generales_ee_profa.pdf">
-				  
-				  <span class="mr-3">Precisiones</span>
-				  <i class="fas fa-clipboard-list fa-2x"></i>
-				</a>
-			</div>
-			<div class="col">
-				<a
-				  class="btn btn-lg btn-outline-primary"
-				  target="_blank"
-				  href="documentos/programa.pdf"
-				>
-				  <span class="mr-3">Programa de la EE</span>
-				  <i class="fas fa-file-download fa-2x"></i>
-				</a>
-			</div>
-		
 		</div>
-        
-      </div>
-    </section>
-    <!--/Descarga-->
-    <!--Datos de Contacto-->
-    <section id="datos-contacto" class="fondo-azul-claro">
-      <div class="container contenedor-seccion text-white">
-
-        <!--Disclaimer-->
-        <div class="row">
-          <div class="col">
-            <div class="accordion" id="accordionExample">
-              <div class="card fondo-verde"
-                <div class="card-header" id="headingOne">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left text-white"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      <i>Disclaimer</i>
-                    </button>
-                  </h2>
-                </div>
-
-                <div
-                  id="collapseOne"
-                  class="collapse"
-                  aria-labelledby="headingOne"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body" style="background-color: white;">
-						<p class="disclaimer"><sup>1</sup> </p>
-						
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--/Disclaimer-->
-      </div>
-    </section>
-    <!--Datos de Contacto-->
-    
-    <!--Logo Universidad Veracruzana-->
-    <section id="pie-pagina" class="p-1">
-      <div class="container">
-        <div class="row">
-          <div class="w-100">
-            <div class="row d-flex justify-content-center">
-              <div class="col-3 col-md-2">
-                <img src="images/logo-uv-texto.png" class="img-fluid" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
+		<div id = "compensacionEncabezadoEscritorio"></div>
+		<!-------------------------------------------- /Encabezado Escritorio---------------------->
 		
-      </div>
-    </section>
-	<div style="background-color: #0D47A1; color: white;">
-            © 2022 Universidad Veracruzana. Todos los derechos reservados.
-    </div>
-    <!--Logo Universidad Veracruzana-->
-    <div class="fixed-bottom-right" id="button-up">
-      <a class="btn btn-success indice btn-sm p-3" href="#presentacion">
-        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
-      </a>
-    </div>
-    <!--Ventanas Modales-->
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="modal-instructor-uno"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modal-instructor-uno"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-				Autor de la experiencia educativa: Ricardo Ramos Guillen
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-			<p><strong>Cr&eacute;ditos</strong></p>
-			<p><strong>Universidad Veracruzana</strong></p>
-			<p><br /> <strong>Dra. Elena Rustri&aacute;n Portilla</strong></p>
-			<p>Secretar&iacute;a Acad&eacute;mica</p>
-			<p><strong>Mtra. </strong><strong>Carla M&oacute;nica G&oacute;mez Salgado</strong></p>
-			<p>Coordinaci&oacute;n General de Educaci&oacute;n en L&iacute;nea</p>
-			<p><br /> <strong>Dra. Elizabeth Ocampo&nbsp; </strong></p>
-			<p>Direcci&oacute;n General de Desarrollo Acad&eacute;mico e Innovaci&oacute;n Educativa (DGDAIE)</p>
-			<p><strong>Mtro. Miguel &Aacute;ngel Barradas Ger&oacute;n</strong></p>
-			<p>Direcci&oacute;n de Innovaci&oacute;n Educativa</p>
-			<p><strong>Mtra. Araceli Arg&uuml;ello Aguilar</strong></p>
-			<p>Direcci&oacute;n de Fortalecimiento Acad&eacute;mico</p>
-			<p><strong>Mtro. Rafael Lucio P&eacute;rez Rojas</strong></p>
-			<p>Departamento de Formaci&oacute;n Acad&eacute;mica</p>
-			<p><strong>C&eacute;lula de Desarrollo de Experiencias Educativas Virtuales de la DGDAIE</strong></p>
-			<p><strong>Mtra. Yahel Teresa Vichi Mart&iacute;nez</strong></p>
-			<p>Autor&iacute;a de la Experiencia Educativa del Programa de Formaci&oacute;n de Acad&eacute;micos</p>
-			<p><strong>Mtro. Mario Evaristo Gonz&aacute;lez M&eacute;ndez </strong></p>
-			<p>Dise&ntilde;o instruccional</p>
-			<p><strong>Mtro. Josafat Murillo Hern</strong><strong>&aacute;</strong><strong>ndez</strong></p>
-			<p>Gesti&oacute;n de contenido</p>
-			<p><strong>Mtra. Alicia Mora Rodr</strong><strong>&iacute;</strong><strong>guez</strong></p>
-			<p>Correcci&oacute;n de estilo</p>
-			<p><strong>Mtro. Aurelio Hern&aacute;ndez Guerrero</strong></p>
-			<p>Dise&ntilde;o gr&aacute;fico</p>
-			<p><strong>Mtro. J&oacute;nathan Iv&aacute;n Guti&eacute;rrez Palma</strong></p>
-			<p>Experto en medios</p>
-			<p><strong>Mtro. Renato Vargas G&oacute;mez</strong></p>
-			<p>Programaci&oacute;n</p>
-			<p><strong>Mtra. Luz Mariela Cabrera Hern&aacute;ndez</strong></p>
-			<p>Coordinaci&oacute;n</p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-outline-secondary waves-effect"
-              data-dismiss="modal"
-            >
-              Cerrar
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-	<!--/modal-->
-	<div
-      class="modal fade"
-      id="modal-eval"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modal-eval"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Evaluación de desempeño
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-				<table >
-				<tbody>
-				<tr>
-				<td >
-				<p><strong>Fases</strong></p>
-				</td>
-				<td >
-				<p><strong>Evidencias de desempe&ntilde;o</strong></p>
-				</td>
-				<td >
-				<p><strong>Porcentaje</strong></p>
-				</td>
-				</tr>
-				<tr>
-				<td >
-				<p>Fase 1</p>
-				</td>
-				<td >
-				<p>Foro: An&aacute;lisis del video <em>Comic: captura de los sistemas alimentarios</em>.</p>
-				</td>
-				<td >
-				<p>20%</p>
-				</td>
-				</tr>
-				<tr>
-				<td >
-				<p>Fase 2</p>
-				</td>
-				<td >
-				<p>C&aacute;lculo del gasto energ&eacute;tico y elaboraci&oacute;n del men&uacute;.</p>
-				</td>
-				<td >
-				<p>40%</p>
-				</td>
-				</tr>
-				<tr>
-				<td >
-				<p>Fase 3</p>
-				</td>
-				<td >
-				<p>Recetario saludable.</p>
-				</td>
-				<td >
-				<p>30%</p>
-				</td>
-				</tr>
-				<tr>
-				<td >
-				<p>Actividad grupal</p>
-				</td>
-				<td >
-				<p>Mejorando mi ambiente alimentario.</p>
-				</td>
-				<td >
-				<p>10%</p>
-				</td>
-				</tr>
-				<tr>
-				<td></td>
-				<td >
-				<p><strong>Total</strong></p>
-				</td>
-				<td >
-				<p><strong>100 %</strong></p>
-				</td>
-				</tr>
-				</tbody>
-				</table>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-outline-secondary waves-effect"
-              data-dismiss="modal"
-            >
-              Cerrar
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/Ventanas Modales-->
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
-      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/mdb.min.js"></script>
-    <script src="js/easyScrollDots.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/inicializacion.js"></script>
-	<script>
+		<!-------------------------------------------- Cuadro de presentacion ---------------------->
+		<div id="cuadroPresentacion" class="container-fluid">
+			<div class="row">
+				<h5 id="cintillo">Universidad Veracruzana</h5>
+			</div>
+			<div class="row">
+				<div class="col-6 align-self-center centrado">
+					<p id="tituloPresentacion">$@tituloPresentacion</p>
+				</div>
+				<div class="col-6 align-self-center centrado">
+					<img src="imagenes/portada.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+				</div>
+			</div>
+			<div class="row" id="airePresentacion"></div>
+		</div>
+		<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+		<!-------------------------------------------- Encabezado en Scroll ---------------------->
+		<div id="encabezadoScroll">
+			<div class="container-fluid">
+				<div class="row">
+					<span id="cintilloScroll">Universidad Veracruzana</span>
+				</div>
+				<div class="row">
+					<div class="col-2" >
+						<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i class="bi bi-list"></i></button>
+					</div>
+					<div class="col" id="tituloPresentacionScroll">
+						$@tituloPresentacionScroll
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------------------------------------- /Encabezado en Scroll ---------------------->
 	
-	var slideIndex = 1;
-	showSlides(slideIndex);
-	var carruselRecorrido=0;
-	
-	
-	
-	
-	function plusSlides(n) {
+		<!-------------------------------------------- Menú lateral ---------------------->
+		<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+			<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+			<a href="#" class="w3-bar-item w3-button" ><i class="bi bi-house-door"></i> Inicio</a>
+			<a href="#" class="w3-bar-item w3-button">Modulo 1</a>
+			<a href="#" class="w3-bar-item w3-button">Modulo 2</a>
+			<a href="#" class="w3-bar-item w3-button">Modulo 3</a>
+		</div>
+		<!--------------------------------------------/Menú lateral---------------------->
 		
-		if(carruselRecorrido>0){
-			showSlides(slideIndex += n);
-		}else{
-			carruselRecorrido++;
-			var alturaPresentacion = document.getElementById('slidePresentacion').clientHeight;
-			showSlides(slideIndex += n);
-			document.getElementById("slideUnidad").style.height = alturaPresentacion+"px";
-			document.getElementById("slideUnidad").style.backgroundColor = "#4c5bfc";
+		<!-------------------------------------------- Banner ---------------------->
+		<div class="video-container" id="banner">
+			<div class="overlay"></div>
+			<video autoplay muted loop>
+				<source src="videos/banner.mp4" type="video/mp4" />
+			</video>
+		</div>
+		<!-------------------------------------------- /Banner ---------------------->
+		<br>
+
+
+
+		<!-------------------------------------------- Contenido ---------------------->
+		<div class="container-fluid">
+			<!-------------- Información general -------------->
+			<p class="textoSeccion">Información general</p>
 			
-		}
-		
-	}
+			
+			
+			<!-------------- Información general Movil-------------->
+			<div class="accordion" id="acordeonInformacion">
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="encabezadoPresentacion">
+						<button class="accordion-button collapsed" id="botonPresentacion" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false" aria-controls="collapsePresentacion">
+							 <p><i class="bi bi-info-circle-fill"></i> Presentación</p>
+						</button>
+					</h2>
+					<div id="collapsePresentacion" class="accordion-collapse collapse" aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+						<div class="accordion-body" id="textoPresentacion">
+							$@textoPresentacion
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="encabezadoUnidad">
+						<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+							<p><i class="bi bi-intersect"></i> Unidad de competencia</p>
+						</button>
+					</h2>
+					<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad" data-bs-parent="#acordeonInformacion">
+						<div class="accordion-body" id="textoUnidad">
+							$@textoUnidad
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-------------- /Información general Movil-------------->
+			
+			
+			
+			<!-------------- /Información general Escritorio-------------->
+			<div id="diapositivasInformacion">
+				<div class="row aire fondoVerde">
+					<div class="col-2 vacio"></div>
+					<div class="col fondoVerde" id="aireSuperior"></div>
+					<div class="col-2 vacio"></div>
+				</div>
+				<div class="row fondoVerde" id="cuerpoCarrusel">
+					<div class="col-2 vacio"></div>
+					<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+						<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
+					</div>
+					<div class="col align-self-center centrado">
+						<img src="imagenes/presentacion.jpg" class="img-fluid" id="imagenDiapositivas" alt="presentacion">
+						<p id="numeral" style="text-align: right;">[1]</p>
+					</div>
+					<div class="col-4 align-self-center centrado">
+						<div id="tituloCarrusel">
+							<strong><i class="bi bi-info-circle-fill"></i> Presentación</strong>
+						</div>
+						<br>
+						<div id="textoCarrusel">
+							$@textoPresentacion
+						</div>
+					</div>
+					<div class="col-1 col align-self-center centrado" id="columnaDerecha">
+						<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
+					</div>
+					<div class="col-2 vacio"></div>
+				</div>
+				<div class="row aire fondoVerde">
+					<div class="col-2 vacio"></div>
+					<div class="col fondoVerde" id="aireInferior"></div>
+					<div class="col-2 vacio"></div>
+				</div>
+			</div>
+			<!-------------- /Información general Escritorio-------------->
 
-	function currentSlide(n) {
-	  showSlides(slideIndex = n);
-	}
+			
+			<!-------------- /Información general -------------->
+			<br>
+			<!-------------- Desarrollo de la EE -------------->
+			
+			<p class="textoSeccion">Desarrollo de la Experiencia Educativa</p>
+			<!-------------- Desarrollo de la EE Escritorio-------------->
+			<div id="desarrolloEscritorio" class="container-fluid">
+				<div class="row">
+					<div class="col-2"></div>
+					<div class="col">
+						<div class="row">
+							<div class="col moduloContenido" id="modulo1" onclick="location.href = 'fase1.html';">
+								<p class="textoModuloEscritorio" id="tituloModulo1Movil">$@tituloModulo1</p>
+							</div>
+							<div class="col-1"></div>
+							<div class="col moduloContenido" id="modulo2" onclick="location.href = 'fase2.html';">
+								<p class="textoModuloEscritorio" id="tituloModulo2Movil">$@tituloModulo2</p>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-2"></div>
+							<div class="col moduloContenido" id="modulo3" onclick="location.href = 'fase3.html';">
+								<p class="textoModuloEscritorio" id="tituloModulo3Movil">$@tituloModulo3</p>
+							</div>
+							<div class="col-2"></div>
+						</div>
+					</div>
+					<div class="col-1"></div>
+					<div class="col-2 evaluacion" data-bs-toggle="modal" data-bs-target="#modalEvaluacion"></div>
+					<div class="col-2"></div>
+				</div>
+			</div>
+			<!-------------- /Desarrollo de la EE Escritorio-------------->
+			
+			<!-------------- Desarrollo de la EE Movil-------------->
+			<div id="desarrolloMovil">
+				<a href="fase1.html">
+					<div class="row campoModulo centrado">
+						<div class="col-1">
+							<div class="circuloModulo" id="circuloModulo1"></div>
+						</div>
+						<div class="col align-self-center">
+							<div class="contenidoModulo"><p class="textoModulo" id="tituloModulo1">$@tituloModulo1</p></div>
+						</div>
+					</div>
+				</a>
+				<br>
+				<a href="fase2.html">
+					<div class="row campoModulo centrado">
+						<div class="col-1 align-self-center">
+							<div class="circuloModulo" id="circuloModulo2"></div>
+						</div>
+						<div class="col align-self-center">
+							<div class="contenidoModulo"><p class="textoModulo" id="tituloModulo2">$@tituloModulo2</p></div>
+						</div>
+					</div>
+				</a>
+				<br>
+				<a href="fase2.html">
+					<div class="row campoModulo centrado">
+						<div class="col-1 align-self-center">
+							<div class="circuloModulo" id="circuloModulo3"></div>
+						</div>
+						<div class="col align-self-center">
+							<div class="contenidoModulo"><p class="textoModulo" id="tituloModulo3">$@tituloModulo3</p></div>
+						</div>
+					</div>
+				</a>
+				<br>
+				<div class="row">
+					<div class="col"></div>
+					<div class="col">
+						<div class="card" style="width: 12rem;">
+							<img src="imagenes/evaluacion-color.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEvaluacion">
+									Ver
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col"></div>
+				</div>
+			</div>
+			<!-------------- /Desarrollo de la EE Movil-------------->
+			<!-------------- /Desarrollo de la EE -------------->
+		</div>
+		<!---------------------- Contenido ---------------------->
+		<br>
+		<p class="textoSeccion">Sobre la Experiencia Educativa</p>
+		<!---------------------- Sobre la EE ---------------------->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col">
+					<br>
+					<div class="accordion accordion-flush" id="acordeonCreditos">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="encabezadoCreditos" >
+								<button 
+									class="accordion-button collapsed fondoAcordeon letraBlanca"
+								 	type="button" 
+									data-bs-toggle="collapse" 
+									data-bs-target="#contenidoCreditos" 
+									aria-expanded="false" 
+									aria-controls="flush-collapseOne" 
+								>
+									<em>Créditos</em>
+								</button>
+							</h2>
+							<div id="contenidoCreditos" class="accordion-collapse collapse" aria-labelledby="encabezadoCreditos" data-bs-parent="#acordeonCreditos">
+								<div class="accordion-body" id="textoCreditos">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion accordion-flush" id="acordeonPresiciones">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="encabezadoPresiciones" >
+								<button 
+									class="accordion-button collapsed fondoAcordeon letraBlanca"
+								 	type="button" 
+									data-bs-toggle="collapse" 
+									data-bs-target="#contenidoPresiciones" 
+									aria-expanded="false" 
+									aria-controls="flush-collapseOne" 
+								>
+									<em>Precisiones</em>
+								</button>
+							</h2>
+							<div id="contenidoPresiciones" class="accordion-collapse collapse" aria-labelledby="encabezadoPresiciones" data-bs-parent="#acordeonPresiciones">
+								<div class="accordion-body centrado">
+									<a href="documentos/precisiones.pdf" target="_blank">
+										<img src="imagenes/descarga2.png" class="icono">
+									</a>
+									<p>Precisiones.pdf</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion accordion-flush" id="acordeonPrograma">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="encabezadoPrograma" >
+								<button 
+									class="accordion-button collapsed fondoAcordeon letraBlanca"
+								 	type="button" 
+									data-bs-toggle="collapse" 
+									data-bs-target="#contenidoPrograma" 
+									aria-expanded="false" 
+									aria-controls="flush-collapseOne" 
+								>
+									<em>Programa</em>
+								</button>
+							</h2>
+							<div id="contenidoPrograma" class="accordion-collapse collapse" aria-labelledby="encabezadoPrograma" data-bs-parent="#acordeonPrograma">
+								<div class="accordion-body centrado">
+									<a href="https://www.uv.mx/formacionacademica/files/2022/05/ProFA-Alimentacion-sostenible-para-la-salud-colectiva-Marzo-2022.pdf" target="_blank">
+										<img src="imagenes/descarga3.png" class="icono">
+									</a>
+									<p>Programa.pdf</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="col-2"></div>
 
-	function showSlides(n) {
-	  var i;
-	  var slides = document.getElementsByClassName("mySlides");
-	  if (n > slides.length) {slideIndex = 1}    
-	  if (n < 1) {slideIndex = slides.length}
-	  for (i = 0; i < slides.length; i++) {
-		  slides[i].style.display = "none";  
-	  }
-	  slides[slideIndex-1].style.display = "block";  
-	}
-	
-	
-	
-	</script>
-  </body>
+			</div>
+		</div>
+		<!---------------------- /Sobre la EE ---------------------->
+		<!---------------------- Disclaimer ---------------------->
+		<div class="container-fluid">
+			<div class="row fondoAzul">
+				<div class="col-2"></div>
+				<div class="col">
+					<br>
+					<div class="accordion accordion-flush" id="acordeonDisclaimer">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="encabezadoDisclaimer" >
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contenidoDisclaimer" aria-expanded="false" aria-controls="flush-collapseOne" id="boton-disclaimer">
+									<em>Disclaimer</em>
+								</button>
+							</h2>
+							<div id="contenidoDisclaimer" class="accordion-collapse collapse" aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+								<div class="accordion-body">
+									
+									<p class="referencia" id="referencias">*Fruits and vegetables photo created by freepik - www.freepik.com y su enlace: <a href="https://www.freepik.com/free-photo/healthy-fruits-vegetables-dryfruits-bread-seeds-cheese-egg-oil-with-empty-plate-white-background_3681462.htm">https://www.freepik.com/free-photo/healthy-fruits-vegetables-dryfruits-bread-seeds-cheese-egg-oil-with-empty-plate-white-background_3681462.htm</a> C&eacute;lula de Desarrollo de la Direcci&oacute;n General de Innovaci&oacute;n Educativa de la Universidad Veracruzana. Foto de Cuerpo y mente creado por jcomp - www.freepik.es y su enlace es: <a href="https://www.freepik.es/foto-gratis/mujer-concentrada-estirando-sus-brazos-cielo-fondo_931643.htm">https://www.freepik.es/foto-gratis/mujer-concentrada-estirando-sus-brazos-cielo-fondo_931643.htm</a> Foto de Persona con energ&iacute;a creado por user18526052 - www.freepik.es y su enlace es: <a href="https://www.freepik.es/foto-gratis/mujer-activa-llena-energia-salta-aire-usa-ropa-deportiva-prepara-competiciones-deportivas_8988402.htm">https://www.freepik.es/foto-gratis/mujer-activa-llena-energia-salta-aire-usa-ropa-deportiva-prepara-competiciones-deportivas_8988402.htm</a> Cancer cell photo created by kjpargeter - www.freepik.com y su enlace es: <a href="https://www.freepik.com/free-photo/human-body-with-cells-blue-tones_929228.htm">https://www.freepik.com/free-photo/human-body-with-cells-blue-tones_929228.htm</a> Foto de Frutas ex&oacute;ticas creado por freepik - www.freepik.es y su enlace es: https://www.freepik.es/foto-gratis/uvas-fresas-pina-kiwi-albaricoque-platano-pina-entera_3630863.htm</p>
+
+									<p class="referencia" id="referencias">
+										<sup class="contadorReferencia">1</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+									</p>
+									<p class="referencia" id="referencias">
+										<sup class="contadorReferencia">2</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="col-2"></div>
+			</div>
+		</div>
+		<!---------------------- /Disclaimer ---------------------->
+		<!---------------------- Pie de página ---------------------->
+		<div class="container">
+			<div class="row">
+				<div class="col centrado">
+					<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+				</div>
+			</div>
+			<br>
+			<div class="row"  >
+				<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+			</div>
+		</div>
+		<div id="pieFijo">
+		  <span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+		<!---------------------- /Pie de página ---------------------->
+
+
+
+		<!-------------------------------------------- Modales ---------------------->
+			<!---------------------- Modal Evaluacion ---------------------->
+			<div class="modal fade" id="modalEvaluacion" tabindex="-1" aria-labelledby="modalEvaluacion" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="modalEvaluacionEtiqueta">Evaluación de desempeño</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<table id="tablaEvaluacion">
+								<tbody>
+								<tr>
+								<td style="width: 10%;">
+								<p><strong>Fases</strong></p>
+								</td>
+								<td>
+								<p><strong>Evidencias de desempe&ntilde;o</strong></p>
+								</td>
+								<td>
+								<p><strong>Porcentaje</strong></p>
+								</td>
+								</tr>
+								<tr>
+								<td>
+								<p>Fase 1</p>
+								</td>
+								<td>
+								<p>Foro 1. Análisis del video <em>Comic: captura de los sistemas alimentarios</em>.</p>
+								</td>
+								<td>
+								<p style="text-align: right;">20%</p>
+								</td>
+								</tr>
+								<tr>
+								<td rowspan="2">
+								<p>Fase 2</p>
+								</td>
+								<td>
+								<p> Actividad 1. Cálculo de gasto energético.</p>
+								</td>
+								<td>
+								<p style="text-align: right;">20%</p>
+								</td>
+								</tr>
+								<tr>
+								<td>
+								<p> Actividad 2. Elaboración de menú. </p>
+								</td>
+								<td>
+								<p style="text-align: right;">20%</p>
+								</td>
+								</tr>
+								<tr>
+								<td rowspan="2">
+								<p>Fase 3</p>
+								</td>
+								<td>
+								<p> Actividad 3: Recetas saludables.</p>
+								</td>
+								<td>
+								<p style="text-align: right;">30%</p>
+								</td>
+								</tr>
+								<tr>
+								<td>
+								<p>Foro 2. Conclusiones.</p>
+								</td>
+								<td>
+								<p style="text-align: right;">10%</p>
+								</td>
+								</tr>
+
+								<tr>
+								<td>&nbsp;</td>
+								<td>
+								<p style="text-align: right; margin-right: 2em;"><strong>Total</strong></p>
+								</td>
+								<td>
+								<p style="text-align: right;"><strong>100%</strong></p>
+								</td>
+								</tr>
+								</tbody>
+								</table>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---------------------- Modal Evaluacion ---------------------->
+		<!-------------------------------------------- Modales ---------------------->
+
+		<!-------------------------------------------- Script ---------------------->
+		<script src="js/contenidoIndex.js"></script>
+		<script src="js/scriptIndex.js"></script>
+		<!-------------------------------------------- /Script ---------------------->
+	</body>
 </html>
