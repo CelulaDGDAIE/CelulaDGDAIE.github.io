@@ -1,0 +1,424 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Desarrollo de mini-videos como recurso didáctico para la enseñanza</p>
+				<p id="subtituloPresentacion">Fase 3: Evaluación y registro de mini-videos en RUAUV.</p>
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+<div class='col-1 align-self-center'>
+<a href = 'fase1.html' class='enlaceModulo enlaceActivo'><strong>Fase 1</strong></a>
+</div>
+<div class='col-1 align-self-center'>
+<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Fase 2</strong></a>
+</div>
+<div class='col-1 align-self-center'>
+<a href = '#' class='enlaceModulo'><strong>Fase 3</strong></a>
+</div>
+			
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">$@tituloPresentacion</p>
+				<p id="subtituloPresentacionMovil">$@subtituloPresentacion</p>
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">$@tituloPresentacionScroll</p>
+					<p id="subtituloPresentacionScroll">$@subtituloPresentacion</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+		<a href="fase2.html" class="w3-bar-item w3-button">Fase 2</a>
+		<a href="fase3.html" class="w3-bar-item w3-button">Fase 3</a>
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						<p>El participante autoevalúa su mini-video, a través de indicadores de evaluación para mini-videos, con el fin de mejorar su diseño técnico y en contenido para así compartirlo en la Red Universitaria de Aprendizaje de la Universidad Veracruzana (RUAUV).</p>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						<p>A lo largo de este curso hemos visto que dise&ntilde;ar y realizar un video no es sencillo, ya que se deben valorar ciertos aspectos t&eacute;cnicos, expresivos, pedag&oacute;gicos y funcionales.</p>
+						<p>Por ello le invito a que observe el siguiente video:</p>
+						<div style="text-align: center;"><iframe title="YouTube video player" src="https://www.youtube.com/embed/kYx5oq9yNkk" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+						<p><strong>Reflexione:</strong></p>
+						<ol>
+						<li>De acuerdo con el video anterior, &iquest;considera que cumple con los aspectos t&eacute;cnicos, expresivos, pedag&oacute;gicos y funcionales que se han estudiado a lo largo de este curso?</li>
+						<li>&iquest;Ha realizado alg&uacute;n video educativo para sus clases?</li>
+						</ol>
+						<p>Si su respuesta es afirmativa, &iquest;cree que su video ha sido elaborado correctamente o necesita alg&uacute;n cambio?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<br>
+					<br>
+					<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenDiapositivas"
+						alt="presentacion">
+						<p style="text-align: right;">[1]</p>
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						<p>El participante autoevalúa su mini-video, a través de indicadores de evaluación para mini-videos, con el fin de mejorar su diseño técnico y en contenido para así compartirlo en la Red Universitaria de Aprendizaje de la Universidad Veracruzana (RUAUV).</p>
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<br>
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoAzul" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado">
+					<div>
+						<strong><i class="bi bi-info-circle-fill"></i> Situación problematizadora</strong>
+					</div>
+					<br>
+					<div id="textoUnidadEscritorio">
+						<p>A lo largo de este curso hemos visto que dise&ntilde;ar y realizar un video no es sencillo, ya que se deben valorar ciertos aspectos t&eacute;cnicos, expresivos, pedag&oacute;gicos y funcionales.</p>
+						<p>Por ello le invito a que observe el siguiente video:</p>
+						<div style="text-align: center;"><iframe title="YouTube video player" src="https://www.youtube.com/embed/kYx5oq9yNkk" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+						<p><strong>Reflexione:</strong></p>
+						<ol>
+						<li>De acuerdo con el video anterior, &iquest;considera que cumple con los aspectos t&eacute;cnicos, expresivos, pedag&oacute;gicos y funcionales que se han estudiado a lo largo de este curso?</li>
+						<li>&iquest;Ha realizado alg&uacute;n video educativo para sus clases?</li>
+						</ol>
+						<p>Si su respuesta es afirmativa, &iquest;cree que su video ha sido elaborado correctamente o necesita alg&uacute;n cambio?</p>
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
+		
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="https://www.uv.mx/" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p class="fuente">Coordinaci&oacute;n de Aprendizaje Basado en Problemas&nbsp; UV. (2020, 14 de septiembre). <em>Presentaci&oacute;n RUA a Docentes.</em> [Video]. Youtube. <a href="https://www.youtube.com/watch?v=VGgOHQdxrlg">https://www.youtube.com/watch?v=VGgOHQdxrlg</a></p>
+						<p class="fuente">Marqu&eacute;s, P. (2018<em>). La evaluaci&oacute;n de los videos did&aacute;cticos</em>. Departamento de Pedagog&iacute;a Aplicada UAB. <a href="http://www.peremarques.net/videoav2.htm">http://www.peremarques.net/videoav2.htm</a></p>
+						<p class="fuente">Medina, A., de la Herr&aacute;n, A., &amp; Dom&iacute;nguez, M. C. (2017). <em>Nuevas perspectivas de formaci&oacute;n de profesores</em>. UNED.</p>
+						<p class="fuente">Medina, A. <em>et al.</em> (2013). <em>Formaci&oacute;n del Profesorado: Actividades Innovadoras para el dominio de las competencias docentes</em>. Editorial Universitaria Ram&oacute;n Areces.</p>
+						<p class="fuente">Ortiz, F. (2019). Ventajas del uso de videos educativos como herramienta de ense&ntilde;anza en nivel de educaci&oacute;n b&aacute;sica. <em>Revista Atlante: Cuadernos de Educaci&oacute;n y Desarrollo.</em> <a href="https://www.eumed.net/rev/atlante/2019/03/videos-educativos-ensenanza.html">https://www.eumed.net/rev/atlante/2019/03/videos-educativos-ensenanza.html</a></p>
+						<p class="fuente">P&eacute;rez, E., Rodr&iacute;guez, J. &amp; Garc&iacute;a, M. (2015). El uso de mini-videos en la pr&aacute;ctica docente universitaria. <em>Revista de Educaci&oacute;n Medi&aacute;tica y TIC (EDMETIC), 4</em>(2), 51-70.</p>
+						<p class="fuente">P&eacute;rez, E. y Zagalaz, M. L. (2017). Mini-videos como instrumento did&aacute;ctico en la formaci&oacute;n del profesorado. En <em>Perspectiva Psicol&oacute;gica y Educativa de las Necesidades Educativas Especiales</em>, 239-245. SCINFOPER.</p>
+						<p class="fuente">P&eacute;rez, E. &amp; Maldonado, G.A. (2015). Los video-tutoriales como recurso en el &aacute;mbito educativo. En Cacheiro, M. L., S&aacute;nchez, C. y Gonz&aacute;lez, J. M. (coords.). <em>Recursos tecnol&oacute;gicos en Contextos Educativos</em>, 313-334. UNED.</p>
+						<p class="fuente">Solis, K. (21 de abril de 2020). <em>Tipos de textos&nbsp; Espa&ntilde;ol 2. </em>[Video]. YouTube.&nbsp; <a href="https://www.youtube.com/watch?v=kYx5oq9yNkk">https://www.youtube.com/watch?v=kYx5oq9yNkk</a></p>
+						<p class="fuente">Torres, C. A &amp; Moreno, G. (2013). Inclusi&oacute;n de las TIC en los escenarios de aprendizaje universitario. <em>Apertura. Revista de Innovaci&oacute;n Educativa, 5 </em>(1). <a href="http://www.udgvirtual.udg.mx/apertura/index.php/apertura/article/view/369/308">http://www.udgvirtual.udg.mx/apertura/index.php/apertura/article/view/369/38</a></p>
+						
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+						<p class="fuente">Medina, A., Dom&iacute;nguez, M. C., Cacheiro-Gonz&aacute;lez, M. L. &amp; Medina, M. (2018). Innovative Teaching-Learning Processes For The Development of Competences. <em>Inclusion and Exclusion, Resources for Educational Research? </em>Universiad de Bolzano (UNIBZ).</p>
+						<p class="fuente">P&eacute;rez, E. &amp; Jim&eacute;nez, A. (2016). Instrumentos para la mejora de la Orientaci&oacute;n Educativa. El mini-video. En Rosati, L, Bocciolesi, E. y Rosati, A. <em>Orientamenti</em> <em>Educativi</em><em>. </em><em>Tecnoogie</em><em>, </em><em>comunicazione</em><em> e </em><em>societ&agrave;</em><em>, </em>pp. 45-56. Editoriale Anicia.</p>
+
+					</div>
+
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Disclaimer</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">1</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<div class="row">
+					  <div class="col-md-1 align-self-center"><a class="flechaCarrusel" onclick="cambiarEvidencia()">&#10094;</a></div>
+					  <div class="col">
+						<div id="evidencia1">
+							<p><strong>Actividad 3.</strong></p>
+						<p><strong>E</strong><strong>valuaci&oacute;n de miniv&iacute;deo y registro en RUAUV</strong></p>
+						<ol>
+						<li>1.. Con base en la r&uacute;brica adjunta autoeval&uacute;e su mini-video. En el caso de que aplique el aspecto a evaluar, determine si se cumple, se cumple medianamente o no se cumple con la descripci&oacute;n de cada aspecto.</li>
+						</ol>
+						<div style="text-align: center;">
+							<a target="_blank" href=""><img style="width: 10%;" src="imagenes/descarga2.png"></a>
+						</div>
+						
+						<ol start="2">
+						<li>Registre su video en el portal de la Red Universitaria de Aprendizaje de la Universidad Veracruzana (RUAUV-MX) dando clic en el siguiente formulario:&nbsp;<u><a href="https://cutt.ly/OKwoN91">https://cutt.ly/OKwoN91</a></u></li>
+						</ol>
+						<p><strong>Nota: </strong>Si su video pesa menos de 20 MB puede adjuntarlo en el formulario, pero si es m&aacute;s pesado debe colocar forzosamente la liga de Youtube. Si tiene dudas para llenar el formulario, consulte el manual accediendo a la siguiente liga: <u><a href="https://www.uv.mx/abp/files/2021/01/RUA_T_MANUALUsuarioCatalogac.pdf">https://www.uv.mx/abp/files/2021/01/RUA_T_MANUALUsuarioCatalogac.pdf</a></u></p>
+						<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+						<ol>
+						<li>Evaluaci&oacute;n realizada (3 puntos).</li>
+						<li>Registro del video en la plataforma RUAUV (7 puntos).</li>
+						<li>Total: 10 puntos, que corresponden al 20% de la calificaci&oacute;n final.</li>
+						</ol>
+						<p><strong>Lineamientos de entrega:</strong></p>
+						<ol>
+						<li>Archivo pdf con la evaluaci&oacute;n realizada.</li>
+						<li>Archivo extensi&oacute;n de imagen (por ejemplo .jpg) con la captura de pantalla del registro exitoso del video en la RUAUV.</li>
+						<li>Titule el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo: Act3_VillanuevaMariaTeresa</li>
+						<li>Suba su archivo a trav&eacute;s del apartado <strong>Actividades</strong> de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario</strong> de entregas.</li>
+						</ol>
+						</div>
+					  </div>
+					  <div class="col-md-1 align-self-center">
+						<a class="flechaCarrusel" onclick="cambiarEvidencia()">&#10095;</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>

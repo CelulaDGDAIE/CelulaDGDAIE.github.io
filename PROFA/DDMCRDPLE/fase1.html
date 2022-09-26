@@ -1,0 +1,639 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Desarrollo de mini-videos como recurso didáctico para la enseñanza</p>
+				<p id="subtituloPresentacion">Fase 1: Elementos necesarios para el desarrollo de mini-videos como recursos didácticos.</p>
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+<div class='col-1 align-self-center'>
+<a href = '#' class='enlaceModulo'><strong>Fase 1</strong></a>
+</div>
+<div class='col-1 align-self-center'>
+<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Fase 2</strong></a>
+</div>
+<div class='col-1 align-self-center'>
+<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Fase 3</strong></a>
+</div>
+			
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">$@tituloPresentacion</p>
+				<p id="subtituloPresentacionMovil">$@subtituloPresentacion</p>
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">$@tituloPresentacionScroll</p>
+					<p id="subtituloPresentacionScroll">$@subtituloPresentacion</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+		<a href="fase2.html" class="w3-bar-item w3-button">Fase 2</a>
+		<a href="fase3.html" class="w3-bar-item w3-button">Fase 3</a>
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<br>
+					<br>
+					<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenDiapositivas"
+						alt="presentacion">
+						<p style="text-align: right;">[1]</p>
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						<p>El participante identifica saberes teóricos que requerirá para desarrollar un mini-video, así como la metodología a implementar para incluirlo en una clase. 
+						</p>
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<br>
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoAzul" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado">
+					<div>
+						<strong><i class="bi bi-info-circle-fill"></i> Situación problematizadora</strong>
+					</div>
+					<br>
+					<div id="textoUnidadEscritorio">
+						<p>Como docentes de una experiencia educativa, podemos darnos cuenta de las problemáticas que existen en el aprendizaje de algunos saberes y tratamos de implementar estrategias didácticas que permitan atenderlas, desde el uso de recursos educativos y metodologías activas en las diferentes modalidades pedagógicas.
+						</p>
+						<p>Partiendo de su práctica docente, al impartir una experiencia educativa: ¿qué saberes identifica más complejos y en los que se han presentado problemáticas para el aprendizaje de los estudiantes?, ¿cómo realizaría un mini-video para mejorar el desarrollo de esos saberes y contribuir a lograr aprendizajes?
+						</p>
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
+		<div class='row' style='color: white;'>
+<div class='col-2'></div>
+<div class='col'>
+<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'> 1.1. Los mini videos como recursos didácticos de apoyo al aprendizaje
+</h1>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+<p>Observe el siguiente mini-video en el que se explica en qu&eacute; consiste este tipo de recurso did&aacute;ctico.</p>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-3'></div>
+<div class='col'>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/66U_CU4ois0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class='col-3'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+<p>En el siguiente mapa conceptual se exponen los aspectos que se deben considerar para el desarrollo de videos educativos.</p>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row' >
+<div class='col-2'></div>
+<div class='col'>
+<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+<path
+d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+id='path2'
+style='fill:#0055d4' />
+</svg> Haga clic en cada concepto del siguiente esquema para ver su contenido.</p>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-3'></div>
+<div class='col'>
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 35.833333333333336%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="430px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/63063dfddfa50a00114bd897" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+</div>
+<div class='col-3'></div>
+</div>
+<hr>
+<br>
+<br>
+<div class='row' style='color: white;'>
+<div class='col-2'></div>
+<div class='col'>
+<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'> 1.2.Tipos de mini-videos
+</h1>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+<p>En la siguiente infograf&iacute;a se exponen cinco tipos de videos educativos considerando su estructura.</p>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row' >
+<div class='col-2'></div>
+<div class='col'>
+<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+<path
+d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+id='path2'
+style='fill:#0055d4' />
+</svg> Haga clic en cada elemento de este recurso para acceder a su contenido.</p>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-3'></div>
+<div class='col'>
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 108.33333333333333%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="1300px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6306438e1437e600188e1baa" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+</div>
+<div class='col-3'></div>
+</div>
+<hr>
+<br>
+<br>
+<div class='row' style='color: white;'>
+<div class='col-2'></div>
+<div class='col'>
+<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'> 1.3 Técnicas didácticas o metodologías activas que incluyen el uso de videos como recurso didáctico
+</h1>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+<h1 class='subtitulo'>1.3.1 Aprendizaje invertido como técnica didáctica </h1>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+<p><em>Flipped</em> <em>learning</em> o <strong>aprendizaje invertido </strong>es una t&eacute;cnica did&aacute;ctica en la que la exposici&oacute;n de contenido se hace por medio de videos que pueden ser consultados en l&iacute;nea de manera libre por los estudiantes, mientras que el tiempo de aula se dedica a la discusi&oacute;n, resoluci&oacute;n de problemas y actividades pr&aacute;cticas bajo la supervisi&oacute;n y asesor&iacute;a del profesor (Observatorio de Innovaci&oacute;n Educativa ITESM, 2014).&nbsp;</p>
+<p>En la siguiente presentaci&oacute;n se describen las caracter&iacute;sticas de esta t&eacute;cnica.</p>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row' >
+<div class='col-2'></div>
+<div class='col'>
+<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+<path
+d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+id='path2'
+style='fill:#0055d4' />
+</svg> Haga clic en el bot&oacute;n de la derecha para ver su contenido.</p>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-3'></div>
+<div class='col'>
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6306674a020f23001199bfa7" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+</div>
+<div class='col-3'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+<h1 class='subtitulo'>1.3.2 B-learning o Aprendizaje híbrido</h1>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+<p>El <em>Blended</em> <em>learning</em> o <strong>aprendizaje h&iacute;brido </strong>es una modalidad educativa formal en la que bajo la gu&iacute;a y supervisi&oacute;n del profesor, el estudiante aprende de manera combinada: por una parte a trav&eacute;s de la entrega de contenidos e instrucci&oacute;n en l&iacute;nea y, por otra parte, a trav&eacute;s de un formato presencial en el sal&oacute;n de clases. El estudiante bajo esta modalidad tiene la posibilidad de controlar algunos aspectos del proceso como el tiempo, el lugar, la ruta y el ritmo, manteniendo la posibilidad de interactuar con su profesor y sus compa&ntilde;eros (Observatorio de Innovaci&oacute;n Educativa ITESM, 2014).</p>
+<p>En la siguiente presentaci&oacute;n se describen algunos de los modelos de aplicaci&oacute;n del aprendizaje h&iacute;brido.</p>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row' >
+<div class='col-2'></div>
+<div class='col'>
+<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+<path
+d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+id='path2'
+style='fill:#0055d4' />
+</svg> Haga clic en el bot&oacute;n de la derecha para ver su contenido.</p>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-3'></div>
+<div class='col'>
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/630674d9020f23001199de61" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+</div>
+<div class='col-3'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+<h1 class='subtitulo'>1.3.3 E-learning o Aprendizaje en línea</h1>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-2'></div>
+<div class='col'>
+<p>El <em>E-learning</em> o <strong>aprendizaje en l&iacute;nea</strong> es un proceso de ense&ntilde;anza-aprendizaje que se lleva a cabo a trav&eacute;s de Internet y caracterizado por la separaci&oacute;n f&iacute;sica entre el profesorado y los estudiantes, pero con el predominio de una comunicaci&oacute;n tanto s&iacute;ncrona como as&iacute;ncrona, favoreciendo una interacci&oacute;n did&aacute;ctica continuada. El estudiante se convierte en el centro de formaci&oacute;n al autogestionar su aprendizaje con ayuda de tutores y compa&ntilde;eros (Observatorio de Innovaci&oacute;n Educativa ITESM, 2014).</p>
+<p>A continuaci&oacute;n, se muestra una presentaci&oacute;n en la que se describen algunas claves de formaci&oacute;n docente para fortalecer el proceso de ense&ntilde;anza-aprendizaje en l&iacute;nea.</p>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row' >
+<div class='col-2'></div>
+<div class='col'>
+<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+<path
+d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+id='path2'
+style='fill:#0055d4' />
+</svg> Haga clic en el bot&oacute;n de la derecha para ver su contenido.</p>
+</div>
+<div class='col-2'></div>
+</div>
+<div class='row'>
+<div class='col-3'></div>
+<div class='col'>
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/630675aa1b33160018e1786c" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+</div>
+<div class='col-3'></div>
+</div>
+
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="https://www.uv.mx/" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="false">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="true">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p class="fuente">Atenas Educativas (2016, 24 de junio). Atenas Educativas: Video como recurso didactico. [Video]. YouTube. <a href="https://youtu.be/66U_CU4ois0">https://youtu.be/66U_CU4ois0</a></p>
+						<p class="fuente">Bravo, L. (1996). &iquest;Qu&eacute; es el video educativo?. <em>Revista Comunicar, 6</em>(1). <a href="https://www.redalyc.org/pdf/158/15800620.pdf">https://www.redalyc.org/pdf/158/15800620.pdf</a></p>
+						<p class="fuente">Educaci&oacute;n 3.0 (2020). <em>&iquest;C&oacute;mo deber&iacute;a ser realmente la docencia en l&iacute;nea? </em>Educaciontrespuntocero.com<a href="https://www.educaciontrespuntocero.com/opinion/como-deberia-ser-realmente-la-docencia-online/"> https://www.educaciontrespuntocero.com/opinion/como-deberia-ser-realmente-la-docencia-online/</a> <em>&nbsp;</em></p>
+						<p class="fuente">Fredin, E. (2017). <em>Aprendizaje h&iacute;brido: &iquest;el futuro de la educaci&oacute;n superior? </em>Observatorio. Instituto para el Futuro de la Educaci&oacute;n. Tecnol&oacute;gico de Monterrey. <a href="https://observatorio.tec.mx/edu-news/2017/10/13/aprendizaje-hibrido-el-futuro-de-la-educacion-superior">https://observatorio.tec.mx/edu-news/2017/10/13/aprendizaje-hibrido-el-futuro-de-la-educacion-superior</a></p>
+						<p class="fuente">Garc&iacute;a, M.A. (2014). Uso Instruccional del video did&aacute;ctico. <em>Revista de Investigaci&oacute;n, 81</em>(38), pp. 43-67. <a href="https://www.redalyc.org/pdf/3761/376140396002.pdf">https://www.redalyc.org/pdf/3761/376140396002.pdf</a></p>
+						<p class="fuente">Medina, A., de la Herr&aacute;n, A., &amp; Dom&iacute;nguez, M. C. (2017). <em>Nuevas perspectivas de formaci&oacute;n de profesores</em>. UNED.</p>
+						<p class="fuente">Medina, A. et al. (2013). <em>Formaci&oacute;n del Profesorado: Actividades Innovadoras para el dominio de las competencias docentes</em>. Editorial Universitaria Ram&oacute;n Areces.</p>
+						<p class="fuente">Ortiz, F. (2019). Ventajas del uso de videos educativos como herramienta de ense&ntilde;anza en nivel de educaci&oacute;n b&aacute;sica. <em>Revista Atlante: Cuadernos de Educaci&oacute;n y Desarrollo. </em><a href="https://www.eumed.net/rev/atlante/2019/03/videos-educativos-ensenanza.html">https://www.eumed.net/rev/atlante/2019/03/videos-educativos-ensenanza.html</a></p>
+						<p class="fuente">P&eacute;rez-Nav&iacute;o, E., Rodr&iacute;guez, J. &amp; Garc&iacute;a, M. (2015). El uso de mini-videos en la pr&aacute;ctica docente universitaria<em>. Revista de Educaci&oacute;n Medi&aacute;tica y TIC (EDMETIC), 4 </em>(2). 51-70. <a href="https://www.uco.es/ucopress/ojs/index.php/edmetic/article/view/3962">https://www.uco.es/ucopress/ojs/index.php/edmetic/article/view/3962</a></p>
+						<p class="fuente">P&eacute;rez, E. y Zagalaz, M. L. (2017). Mini-videos como instrumento did&aacute;ctico en la formaci&oacute;n del profesorado. En <em>Perspectiva Psicol&oacute;gica y Educativa de las Necesidades Educativas Especiales</em>. SCINFOPER. 239-245.</p>
+						<p class="fuente">P&eacute;rez, E. y Maldonado, G. A. (2015). Los video-tutoriales como recurso en el &aacute;mbito educativo. En Cacheiro-Gonz&aacute;lez, M. L., S&aacute;nchez Romero, C. &amp; Gonz&aacute;lez, J. M. (coords.) <em>Recursos tecnol&oacute;gicos en Contextos Educativos</em>, pp. 313-334. UNED.</p>
+						<p class="fuente">Tecnol&oacute;gico de Monterrey (2014<em>). Aprendizaje Invertido. Reporte </em><em>EduTrends</em>. <a href="https://observatorio.tec.mx/edutrendsaprendizajeinvertido">https://observatorio.tec.mx/edutrendsaprendizajeinvertido</a></p>
+						<p class="fuente">Torres, C. A &amp; Moreno, G. (2013). Inclusi&oacute;n de las TIC en los escenarios de aprendizaje universitario. Apertura. <em>Revista de Innovaci&oacute;n Educativa, 5 </em>(1). <a href="http://www.udgvirtual.udg.mx/apertura/index.php/apertura/article/view/369/308">http://www.udgvirtual.udg.mx/apertura/index.php/apertura/article/view/369/308</a></p>
+						
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+						<p class="fuente">Medina, A., Dom&iacute;nguez, M. C., Cacheiro-Gonz&aacute;lez, M. L. &amp; Medina, M. (2018). Innovative Teaching-Learning Processes For The Development of Competences. <em>Inclusion</em><em> and </em><em>Exclusion</em><em>, </em><em>Resources</em> <em>for</em> <em>Educational</em> <em>Research</em><em>? </em>Universiad de Bolzano (UNIBZ).</p>
+						<p class="fuente">P&eacute;rez, E. &amp; Jim&eacute;nez, A. (2016). Instrumentos para la mejora de la Orientaci&oacute;n Educativa. El mini-video. En Rosati, L, Bocciolesi, E. y Rosati, A. <em>Orientamenti</em> <em>Educativi</em><em>. </em><em>Tecnoogie</em><em>, </em><em>comunicazione</em><em> e </em><em>societ&agrave;</em>, pp. 45-56. Editoriale Anicia</p>
+					</div>
+				</div>
+				
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Disclaimer</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">1</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<div class="row">
+					  <div class="col">
+						<div id="evidencia1">
+							<p><strong>Actividad</strong><strong> 1. </strong><strong>Definici&oacute;n del objetivo y metodolog&iacute;a a implementar en el mini-video</strong></p>
+							<p><strong>Descripci&oacute;n:</strong></p>
+							<ol>
+							<li>En un documento <em>Word</em> complete los siguientes datos del video que desarrollar&aacute; a lo largo de este curso:
+							<ol style="list-style-type: lower-alpha;">
+							<li>
+							<p>Autor.</p>
+							</li>
+							<li>
+							<p>El saber o tema del cual le gustar&iacute;a realizar un video, seleccionado de la experiencia educativa que imparte.</p>
+							</li>
+							<li>
+							<p>Con base en la infograf&iacute;a presentada en esta fase, determine qu&eacute; tipo de video dise&ntilde;ar&aacute;.</p>
+							</li>
+							<li>
+							<p>Describa cu&aacute;l ser&aacute; el objetivo del video que dise&ntilde;ar&aacute; (m&aacute;ximo 100 palabras).</p>
+							</li>
+							<li>
+							<p>Modalidad: si ser&aacute; en l&iacute;nea, presencial o mixta.</p>
+							</li>
+							<li>
+							<p>Metodolog&iacute;a activa o t&eacute;cnica did&aacute;ctica: los pasos a seguir para implementar el video en la modalidad seleccionada (en l&iacute;nea, presencial o mixta), puede ser una metodolog&iacute;a propia o implementar alguna metodolog&iacute;a activa o t&eacute;cnica did&aacute;ctica como el aprendizaje.</p>
+							</li>
+							</ol>
+							</li>
+							</ol>
+							<p>&nbsp;</p>
+							<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+							<ol>
+							<li>Los 6 puntos por completar en la gu&iacute;a o planeaci&oacute;n deben tener coherencia, buena redacci&oacute;n y ortograf&iacute;a.
+							<ol style="list-style-type: lower-alpha;">
+							<li>
+							<p>Autor (1 punto).</p>
+							</li>
+							<li>
+							<p>El saber o tema (1 punto).</p>
+							</li>
+							<li>
+							<p>Tipo de video (1 punto).</p>
+							</li>
+							<li>
+							<p>Objetivo del video (1 punto).</p>
+							</li>
+							<li>
+							<p>Modalildad (1 punto).</p>
+							</li>
+							<li>
+							<p>Metodolog&iacute;a activa o t&eacute;cnica did&aacute;ctica (5 puntos).</p>
+							</li>
+							</ol>
+							</li>
+							</ol>
+							<p>&nbsp;</p>
+							<p>Total de 10 puntos, que corresponden al 20% de la calificaci&oacute;n final.</p>
+							<p><strong>Lineamientos de entrega:</strong></p>
+							<ol>
+							<li>Titule el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo: Act1_VillanuevaMariaTeresa</li>
+							<li>Env&iacute;e su archivo, en formato <em>Word</em>, a trav&eacute;s del apartado <strong>Actividades</strong> de la plataforma Eminus.</li>
+							<li>Entregue de acuerdo con la fecha establecida en el <strong>Calendario de entrega de actividades.</strong></li>
+							</ol>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>
