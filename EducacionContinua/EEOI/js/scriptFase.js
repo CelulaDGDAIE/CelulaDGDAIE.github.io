@@ -89,6 +89,6 @@ function cambiarDiapositiva(){
 		cuerpoCarrusel.classList.add("fondoVerde");
 		document.getElementById("textoCarrusel").innerHTML = contenidoFase.textoProposito;
 		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Purpose</strong>";
-		document.getElementById("imagenDiapositivas").src="imagenes/Fase1/Proposito.jpg";
+		document.getElementById("imagenDiapositivas").src="https://lumen.uv.mx/resources/files/images/2022/10/7/7405/01af4971-e109-4e13-bbc2-4b55b6d10e8a.jpg";
 	}
 }
