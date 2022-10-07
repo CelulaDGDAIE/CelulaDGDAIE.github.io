@@ -48,8 +48,6 @@ function cambiarDiapositiva(){
 		aireInferior.classList.add("fondoAzul");
 		cuerpoCarrusel.classList.add("fondoAzul");
 		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-intersect'></i> Unidad de competencia</strong>";
-		document.getElementById("imagenDiapositivas").src="imagenes/unidad.jpg";
-		document.getElementById("referenciaImagen").innerHTML= "[2]";
 		contPres.style.display="none";
 		contUni.style.display="block";
 	}else{
@@ -61,8 +59,6 @@ function cambiarDiapositiva(){
 		aireInferior.classList.add("fondoVerde");
 		cuerpoCarrusel.classList.add("fondoVerde");
 		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Presentacion</strong>";
-		document.getElementById("imagenDiapositivas").src="imagenes/presentacion.jpg";
-		document.getElementById("referenciaImagen").innerHTML= "[1]";
 		contPres.style.display="block";
 		contUni.style.display="none";
 	}
