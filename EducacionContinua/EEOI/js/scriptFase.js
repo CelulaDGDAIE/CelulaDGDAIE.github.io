@@ -92,3 +92,29 @@ function cambiarDiapositiva(){
 		document.getElementById("imagenDiapositivas").src="https://lumen.uv.mx/resources/files/images/2022/10/7/7405/01af4971-e109-4e13-bbc2-4b55b6d10e8a.jpg";
 	}
 }
+
+function reducirLetra(){
+	var fSize = document.getElementsByTagName('p');
+	for(let i = 0; i < fSize.length; i++) {
+		let currentSize = window.getComputedStyle(fSize[i], null).getPropertyValue('font-size');
+		fSize[i].style.fontSize = `${Number(currentSize.replace('px','')) - 1}px`
+	  }
+	  var liSize = document.getElementsByTagName('li');
+	for(let i = 0; i < fSize.length; i++) {
+		let currentSize = window.getComputedStyle(liSize[i], null).getPropertyValue('font-size');
+		liSize[i].style.fontSize = `${Number(currentSize.replace('px','')) - 1}px`
+	  }
+}
+
+function aumentarLetra(){
+	var fSize = document.getElementsByTagName('p');
+	for(let i = 0; i < fSize.length; i++) {
+		let currentSize = window.getComputedStyle(fSize[i], null).getPropertyValue('font-size');
+		fSize[i].style.fontSize = `${Number(currentSize.replace('px','')) + 1}px`
+	  }
+	  var liSize = document.getElementsByTagName('li');
+	for(let i = 0; i < fSize.length; i++) {
+		let currentSize = window.getComputedStyle(liSize[i], null).getPropertyValue('font-size');
+		liSize[i].style.fontSize = `${Number(currentSize.replace('px','')) + 1}px`
+	  }
+}
