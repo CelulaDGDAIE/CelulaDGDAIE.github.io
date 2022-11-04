@@ -65,7 +65,7 @@ function cambiarDiapositiva(){
 		cuerpoCarrusel.classList.add("fondoAzul");
 		document.getElementById("textoCarrusel").innerHTML = contenidoIndex.textoUnidad;
 		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-intersect'></i> Unidad de competencia</strong>";
-		document.getElementById("imagenDiapositivas").src="imagenes/unidad.jpg";
+		document.getElementById("imagenDiapositivas").src="https://lumen.uv.mx/resources/files/images/2022/10/6/7382/de09f27a-ccd6-4cac-a928-038634f29e16.jpg";
 		document.getElementById("referenciaImagen").innerHTML= "[2]";
 	}else{
 		carruselInformacionDiapositivaActual = "presentacion";
@@ -77,7 +77,7 @@ function cambiarDiapositiva(){
 		cuerpoCarrusel.classList.add("fondoVerde");
 		document.getElementById("textoCarrusel").innerHTML = contenidoIndex.textoPresentacion;
 		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Presentacion</strong>";
-		document.getElementById("imagenDiapositivas").src="imagenes/presentacion.jpg";
+		document.getElementById("imagenDiapositivas").src="https://lumen.uv.mx/resources/files/images/2022/10/6/7380/f5c0bfec-878c-4e81-8d0b-5ede6df4b328.jpg";
 		document.getElementById("referenciaImagen").innerHTML= "[1]";
 	}
 }
