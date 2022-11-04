@@ -260,11 +260,11 @@ table, th, td {
 		height: 40px;
 	}
 	.enlaceModulo{
-		color: #777b8e;
+		color: black;
 		z-index:100;
 	}
 	.enlaceActivo{
-		color: black;
+		color: #777b8e;
 		transition: 0.6s ease;
 	}
 	.enlaceModulo:hover{
