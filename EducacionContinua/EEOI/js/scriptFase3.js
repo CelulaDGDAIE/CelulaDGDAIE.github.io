@@ -77,7 +77,7 @@ function cambiarDiapositiva(){
 		aireInferior.classList.add("fondoAzul");
 		cuerpoCarrusel.classList.add("fondoAzul");
 		document.getElementById("textoCarrusel").innerHTML = contenidoFase.textoSituacion;
-		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-intersect'></i> Situación problematizadora</strong>";
+		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-intersect'></i> Generating ideas</strong>";
 	}else{
 		carruselInformacionDiapositivaActual = "presentacion";
 		aireSuperior.classList.remove("fondoAzul");
@@ -88,7 +88,7 @@ function cambiarDiapositiva(){
         document.getElementById("columnaImagen").style.display = "block";
 		cuerpoCarrusel.classList.add("fondoVerde");
 		document.getElementById("textoCarrusel").innerHTML = contenidoFase.textoProposito;
-		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Propósito</strong>";
+		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Purpose</strong>";
 		document.getElementById("imagenDiapositivas").src="imagenes/Fase1/Proposito.jpg";
 	}
 }
