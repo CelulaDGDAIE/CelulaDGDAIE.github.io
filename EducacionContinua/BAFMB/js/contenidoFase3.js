@@ -1,0 +1,16 @@
+var situacion='"<p>Es com&uacute;n observar estudiantes confundidos por la forma en la que deben redactar la metodolog&iacute;a o la discusi&oacute;n de sus textos acad&eacute;micos. La propuesta de este curso es simplificar la escritura de estos apartados mediante el uso de prosas de base: por ejemplo, en la metodolog&iacute;a se trabajan las estrategias de redacci&oacute;n de textos descriptivos e instructivos; en la presentaci&oacute;n de resultados, el tono expositivo; y en la discusi&oacute;n, el argumentativo.</p><p>En cada prosa de base se trabaja la cohesi&oacute;n a partir del uso de conectores en cada caso, para perfilar el discurso adecuado. Por lo que esta EE se apoya en el manejo de conectores textuales para marcar las diferencias en el uso de las prosas de base.</p>"';
+const contenidoEE = '{"tituloPresentacion":"Producción de artículos académicos con fines de publicación",'+
+                    '"textoProposito":"<p>El participante describe la metodología que emplea en su artículo, expone los resultados y argumenta la discusión. </p>",'+
+                    '"textoSituacion":'+ situacion + ','+
+                    '"tituloModulo1":"Módulo 1: Selección de revista académica especializada",'+
+                    '"tituloModulo2":"Módulo 2: Planteamiento del problema y estado del arte",'+
+                    '"tituloModulo3":"Módulo 3: Materiales y métodos, presentación de resultados y discusión.",'+
+                    '"textoCreditos":"<strong>Cr&eacute;ditos</strong><br><strong>Universidad Veracruzana</strong><br><br /> <strong>Dra. Elena Rustri&aacute;n Portilla</strong><br>Secretar&iacute;a Acad&eacute;mica<br><strong>Mtra. </strong><strong>Carla M&oacute;nica G&oacute;mez Salgado</strong><br>Coordinaci&oacute;n General de Educaci&oacute;n en L&iacute;nea<br><br /> <strong>Dra. Elizabeth Ocampo&nbsp; </strong><br>Direcci&oacute;n General de Desarrollo Acad&eacute;mico e Innovaci&oacute;n Educativa (DGDAIE)<br><strong>Mtro. Miguel &Aacute;ngel Barradas Ger&oacute;n</strong><br>Direcci&oacute;n de Innovaci&oacute;n Educativa<br><strong>Mtra. Araceli Arg&uuml;ello Aguilar</strong><br>Direcci&oacute;n de Fortalecimiento Acad&eacute;mico<br><strong>Mtro. Rafael Lucio P&eacute;rez Rojas</strong><br>Departamento de Formaci&oacute;n Acad&eacute;mica<br><strong>C&eacute;lula de Desarrollo de Experiencias Educativas Virtuales de la DGDAIE</strong><br><strong>Mtra. Yahel Teresa Vichi Mart&iacute;nez</strong><br>Autor&iacute;a de la Experiencia Educativa del Programa de Formaci&oacute;n de Acad&eacute;micos<br><strong>Mtro. Mario Evaristo Gonz&aacute;lez M&eacute;ndez </strong><br>Dise&ntilde;o instruccional<br><strong>Mtro. Josafat Murillo Hern</strong><strong>&aacute;</strong><strong>ndez</strong><br>Gesti&oacute;n de contenido<br><strong>Mtra. Alicia Mora Rodr</strong><strong>&iacute;</strong><strong>guez</strong><br>Correcci&oacute;n de estilo<br><strong>Mtro. Aurelio Hern&aacute;ndez Guerrero</strong><br>Dise&ntilde;o gr&aacute;fico<br><strong>Mtro. J&oacute;nathan Iv&aacute;n Guti&eacute;rrez Palma</strong><br>Experto en medios<br><strong>Mtro. Renato Vargas G&oacute;mez</strong><br>Programaci&oacute;n<br><strong>Mtra. Luz Mariela Cabrera Hern&aacute;ndez</strong><br>Coordinaci&oacute;n<br>"'+
+                '}';
+
+
+
+
+
+
+                
