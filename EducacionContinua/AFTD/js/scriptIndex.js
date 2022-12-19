@@ -1,7 +1,7 @@
 cargarContenido();
 window.onscroll = function() {scrollFunction()};
-let carruselInformacionDiapositivaActual = "presentacion";
-let anchoPantalla = window.innerWidth;
+var carruselInformacionDiapositivaActual = "presentacion";
+var anchoPantalla = window.innerWidth;
 if (anchoPantalla>1000){
 	let alturaPantalla = window.innerHeight;
 	let encabezado = document.getElementById("encabezadoEscritorio");
@@ -48,7 +48,7 @@ function cargarContenido(){
 	document.getElementById("tituloModulo1Movil").innerHTML = contenidoIndex.tituloModulo1;
 	document.getElementById("tituloModulo2Movil").innerHTML = contenidoIndex.tituloModulo2;
 	document.getElementById("tituloModulo3Movil").innerHTML = contenidoIndex.tituloModulo3;
-	document.getElementById("textoCreditos").innerHTML = contenidoIndex.textoCreditos;
+	//document.getElementById("textoCreditos").innerHTML = contenidoIndex.textoCreditos;
 }
 function cambiarDiapositiva(){
 	var aireSuperior = document.getElementById("aireSuperior");
