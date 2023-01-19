@@ -205,6 +205,15 @@ a{
 	.aire{
 		height: 50px;
 	}
+	
+	.evaluacion{
+		background-color: #6133fc;
+		background-image: url("../imagenes/evaluacion.png");
+		background-repeat: no-repeat;
+		background-size: 200px 200px;
+		background-position: center;
+		transition: 0.6s ease;
+	}
 	.enlaceModulo{
 		color: black;
 		z-index:100;
@@ -222,14 +231,7 @@ a{
 		color: #2c5766;
 		text-decoration: underline;
 		cursor: pointer;
-	}
-	.evaluacion{
-		background-color: #6133fc;
-		background-image: url("../imagenes/evaluacion.png");
-		background-repeat: no-repeat;
-		background-size: 200px 200px;
-		background-position: center;
-		transition: 0.6s ease;
+		
 	}
 	.evaluacion:hover{
 		background-size: 230px 230px;
