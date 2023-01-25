@@ -61,7 +61,7 @@ function cambiarDiapositiva(){
 		aireInferior.classList.add("fondoVerde");
 		cuerpoCarrusel.classList.add("fondoVerde");
 		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Presentacion</strong>";
-		document.getElementById("imagenDiapositivas").src="https://lumen.uv.mx/resources/files/images/";
+		document.getElementById("imagenDiapositivas").src="imagenes/presentacion.jpg";
 		document.getElementById("referenciaImagen").innerHTML= "[1]";
 		contPres.style.display="block";
 		contUni.style.display="none";
