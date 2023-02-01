@@ -514,23 +514,8 @@ style='fill:#0055d4' />
 						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
 							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
 							<div class="accordion-body">
-								<p class="referencia">
+								<p class="referencia" id="referencias">
 									<sup class="contadorReferencia">1</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
-								</p>
-								<p class="referencia">
-									<sup class="contadorReferencia">2</sup> Documental iconos creados por Freepik – Flaticon https://www.flaticon.es/icono- gratis/documental_5190159 
-								</p>
-								<p class="referencia">
-									<sup class="contadorReferencia">3</sup> Apoyo iconos creados por monkik - Flaticon. https://www.flaticon.es/icono-gratis/apoyo_994410 
-								</p>
-								<p class="referencia">
-									<sup class="contadorReferencia">4</sup> Clase virtual iconos creados por Vector Squad - Flaticon. https://www.flaticon.es/icono-gratis/clase- virtual_5841863
-								</p>
-								<p class="referencia">
-									<sup class="contadorReferencia">5</sup> Puño iconos creados por Freepik - Flaticon.  https://www.flaticon.es/icono- gratis/motivacion_1885613 
-								</p>
-								<p class="referencia">
-									<sup class="contadorReferencia">6</sup> Vr iconos creados por Smashicons - Flaticon. https://www.flaticon.es/icono-gratis/video- 360_7504606 
 								</p>
 							</div>
 						</div>
