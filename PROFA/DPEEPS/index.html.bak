@@ -91,7 +91,7 @@
 		<!-------------------------------------------- Banner ---------------------->
 		<div class="video-container" id="banner">
 			<video autoplay muted loop>
-				<source src="https://lumen.uv.mx/resources/files/videos/2023/1/31/7622/e627f6a9-2e42-41c6-b1af-cd0e86c3a541.mp4" type="video/mp4" />
+				<source src="https://lumen.uv.mx/resources/files/videos/.mp4" type="video/mp4" />
 			</video>
 		</div>
 		<!-------------------------------------------- /Banner ---------------------->
