@@ -155,7 +155,7 @@
 				<div class="col align-self-center centrado" id="columnaImagen">
 					<br>
 					<br>
-					<img src="imagenes/proposito.png" class="img-fluid" id="imagenDiapositivas"
+					<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenDiapositivas"
 						alt="presentacion">
 						<p style="text-align: right;">[1]</p>
 				</div>
