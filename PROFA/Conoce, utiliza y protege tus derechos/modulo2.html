@@ -1,0 +1,454 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Conoce, utiliza y protege tus derechos</p>
+
+				<p id="subtituloPresentacion">Fase 2: Acceso a la información.</p>
+
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+<div class='col-1 align-self-center'>
+<!--<a href = '#' class='enlaceModulo'><strong>Fase  1</strong></a>-->
+
+<a href = 'modulo1.html' class='enlaceModulo enlaceActivo'><strong>Fase 1</strong></a>
+
+</div>
+<div class='col-1 align-self-center'>
+<!--<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Fase  2</strong></a>-->
+
+<a href = '#' class='enlaceModulo'><strong>Fase  2</strong></a>
+
+</div>
+<div class='col-1 align-self-center'>
+<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Fase  3</strong></a>-->
+
+<a href = 'modulo3.html' class='enlaceModulo enlaceActivo'><strong>Fase  3</strong></a>
+
+</div>
+			
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">Conoce, utiliza y protege tus derechos</p>
+
+				<p id="subtituloPresentacionMovil">Fase 2: Acceso a la información.</p>
+
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">Conoce, utiliza y protege tus derechosScroll</p>
+
+					<p id="subtituloPresentacionScroll">Fase 2: Acceso a la información.</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+
+		<a href="fase2.html" class="w3-bar-item w3-button">Fase 2</a>
+
+		<a href="fase3.html" class="w3-bar-item w3-button">Fase 3</a>
+
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<br>
+					<br>
+					<img src="" class="img-fluid" id="imagenDiapositivas"
+						alt="presentacion">
+						<p style="text-align: right;">[1]</p>
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						<p>Los participantes comprenden en qué consiste el Derecho Humano de Acceso a la Información; el marco normativo que lo regula y la utilidad que tiene como enlace para el ejercicio de otros DDHH. 
+						</p>
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<br>
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoAzul" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado">
+					<div>
+						<strong><i class="bi bi-info-circle-fill"></i> Situación problematizadora</strong>
+					</div>
+					<br>
+					<div id="textoUnidadEscritorio" style="text-align: justify;">
+						<p>&iquest;Por qu&eacute; es &uacute;til y necesario ejercer nuestro derecho al acceso a la informaci&oacute;n p&uacute;blica? Le invitamos a mirar el Cap&iacute;tulo I de la serie <em>Clarita</em>, una historia sobre la importancia de hacer valer este derecho.</p>
+<div style="text-align: center;"><iframe title="YouTube video player" src="https://www.youtube.com/embed/eF3TbC8pCHE" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+<div style="text-align: center;">&nbsp;</div>
+<div style="text-align: center;">
+<p style="text-align: left;">Despu&eacute;s de revisar el video sugerido, reflexione y responda:</p>
+<ol>
+<li style="text-align: left;">&iquest;Qu&eacute; beneficios tiene contar con el acceso a la informaci&oacute;n p&uacute;blica?</li>
+<li style="text-align: left;">&iquest;Sabe de alguna institucion que se haya negado a brindar informacion que deber&iacute;a ser p&uacute;blica?</li>
+<li style="text-align: left;">&iquest;Ha ejercido alguna vez este derecho en beneficio propio o de su comunidad?</li>
+</ol>
+</div>
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
+		
+			
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p class="fuente">Asociaci&oacute;n Mexicana de Derecho a la Informaci&oacute;n [AMEDI]. (2015). El derecho a la informaci&oacute;n. Amedi. : <a href="https://www.amedi.org.mx/el-derecho-a-la-informacion/">https://www.amedi.org.mx/el-derecho-a-la-informacion/</a></p>
+<p class="fuente">C&aacute;mara de Diputados del H. Congreso de la Uni&oacute;n (2022). Constituci&oacute;n Pol&iacute;tica de los Estados Unidos Mexicanos, Art&iacute;culo 6&ordm;. <em>Diario Oficial de la Federaci&oacute;n. </em><a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf">https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf</a></p>
+<p class="fuente">Cejudo, G. M. (Coord.). (2015). <em>Diccionario de Transparencia y Acceso a la Informaci&oacute;n P&uacute;blica. </em>INAI. <a href="https://inai.janium.net/janium/Documentos/3401.pdf">https://inai.janium.net/janium/Documentos/3401.pdf</a></p>
+<p class="fuente">IAIP El Salvador. (2019, 26 de junio). Claridad. Cap&iacute;tulo 1: "El derecho de acceso a la informaci&oacute;n P&uacute;blica nos pertenece a todos&rdquo;. [Video]. Youtube. <a href="https://youtu.be/eF3TbC8pCHE">https://youtu.be/eF3TbC8pCHE</a></p>
+<p class="fuente">Inaimexico (2022, 1 de junio). <em>20 A&ntilde;os de Transparencia en M&eacute;xico. </em>[Video]. Youtube. <a href="https://youtu.be/r2G79cg8TIc">https://youtu.be/r2G79cg8TIc</a></p>
+<p class="fuente">Inaimexico (2019, 7 de abril). <em>&iquest;Qué es la Plataforma Nacional de Transparencia? </em>[Video]. Youtube. <a href="https://youtu.be/PS6DBh7WKDc">https://youtu.be/PS6DBh7WKDc</a></p>
+<p class="fuente">Instituto de transparencia, informaci&oacute;n p&uacute;blica y protecci&oacute;n de datos personales del Estado de Jalisco [Itei]. <em>Procedimiento de solicitud de informaci&oacute;n p&uacute;blica</em>.&nbsp; Itei.org.mx. <a href="https://www.itei.org.mx/v4/procedimientos">https://www.itei.org.mx/v4/procedimientos</a></p>
+<p class="fuente">Plataforma Nacional de Transparencia. (s. f.). Preguntas frecuentes. <a href="https://www.plataformadetransparencia.org.mx/web/guest/preguntasfrecuentes">https://www.plataformadetransparencia.org.mx/web/guest/preguntasfrecuentes</a></p>
+<p class="fuente">Plataforma Nacional de Transparencia. (s. f.). <a href="https://www.plataformadetransparencia.org.mx/">https://www.plataformadetransparencia.org.mx/</a></p>
+<p class="fuente">Soto, D. (s. f.). <em>Derecho de acceso a la informaci&oacute;n. </em>CNDH M&eacute;xico. <a href="https://www.cndh.org.mx/noticia/derecho-de-acceso-la-informacion">https://www.cndh.org.mx/noticia/derecho-de-acceso-la-informacion#_ftn%206</a></p>
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+
+					</div>
+
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-1 align-self-center"><a class="flechaCarrusel" onclick="evidenciaAnterior()">&#10094;</a></div>
+					  <div class="col">
+						<input type="hidden" id="numeroEvidencias" value="2">
+						<input type="hidden" id="evidenciaActual" value="1">
+						<div class="evidencia" id="evidencia1" style="display: block;">
+							<p style="text-align: center;"><strong>Actividad 4:</strong></p>
+<p style="text-align: center;"><strong>Elaboraci&oacute;n de solicitud de acceso a la informaci&oacute;n. </strong></p>
+<p><strong>Descripci&oacute;n:</strong></p>
+<p>Con base en los requisitos establecidos en el art&iacute;culo 124 de la Ley General de Transparencia y Acceso a la Informaci&oacute;n P&uacute;blica, redacte de forma clara y sencilla, en un archivo electr&oacute;nico Word, una solicitud de acceso a la informaci&oacute;n en la cual se cumpla con los requisitos establecidos en dicho precepto legal.</p>
+<p><strong><em>Art&iacute;culo 124. Para presentar una solicitud no se podr&aacute;n exigir mayores requisitos que los siguientes:</em></strong></p>
+<p>I.<em>Nombre o, en su caso, los datos generales de su representante; </em></p>
+<p>II.<em>Domicilio o medio para recibir notificaciones; </em></p>
+<p>III.<em>La descripci&oacute;n de la informaci&oacute;n solicitada; </em></p>
+<p>IV.<em>Cualquier otro dato que facilite su b&uacute;squeda y eventual localizaci&oacute;n, y </em></p>
+<p>V.<em>La modalidad en la que prefiere se otorgue el acceso a la informaci&oacute;n, la cual podr&aacute; ser verbal, siempre y cuando sea para fines de orientaci&oacute;n, mediante consulta directa, mediante la expedici&oacute;n de copias simples o certificadas o la reproducci&oacute;n en cualquier otro medio, incluidos los electr&oacute;nicos.</em></p>
+<p><em>En su caso, el solicitante señalará el formato accesible o la lengua indígena en la que se requiera la información de acuerdo con lo señalado en la presente Ley.</em></p>
+<p><em>La información de las fracciones </em><strong><em>I</em></strong><em> y </em><strong><em>IV</em></strong><em> será proporcionada por el solicitante de manera opcional y, en ningún caso, podrá ser un requisito indispensable para la procedencia de la solicitud. </em></p>
+<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+<ol>
+<li>El escrito deber&aacute; contener, al menos, las consideraciones de las fracciones I a la V.</li>
+<li>La solicitud debe ser dirigida a un Sujeto Obligado existente.</li>
+<li>La redacci&oacute;n deber&aacute; ser clara y sencilla.</li>
+<li>Se deber&aacute; establecer un periodo de tiempo respecto de la informaci&oacute;n solicitada (a&ntilde;o).</li>
+</ol>
+<p><strong>Lineamientos de entrega: </strong></p>
+<ol>
+<li>Titule el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo: Act<em>4</em>_VillanuevaMariaTeresa</li>
+<li>Env&iacute;e su archivo, en formato word, a trav&eacute;s del apartado <strong>Actividade</strong>s de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario de entregas</strong>.</li>
+</ol>
+						</div>
+						<div class="evidencia" id="evidencia2" style="display: none;">
+							<p style="text-align: center;"><strong>Actividad 5:</strong></p>
+<p style="text-align: center;"><strong>Infograf&iacute;a sobre del Derecho de Acceso a la Informaci&oacute;n (DAI). </strong></p>
+							<p><strong>Descripci&oacute;n:</strong></p>
+<p>Elabore una infograf&iacute;a que contenga los elementos b&aacute;sicos del derecho humano de acceso a la informaci&oacute;n.</p>
+<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+<ol>
+<li>La infograf&iacute;a contiene ideas b&aacute;sicas sobre: antecedentes, principios, marco jur&iacute;dico, sujeto obligado y plataforma nacional de transparencia.</li>
+<li>El contenido permite entender los elementos b&aacute;sicos del derecho de acceso a la informaci&oacute;n</li>
+<li>Se incluyen im&aacute;genes relacionadas con el tema.</li>
+<li>El formato utilizado para la elaboraci&oacute;n de la activdad es alguno de los establecidos en los lineamientos de entrega.</li>
+</ol>
+<p><strong>Lineamientos de entrega: </strong></p>
+<ol>
+<li>El documento debe ser elaborado preferentemente en un archivo <em>Power Point </em>o, en su caso, mediante el uso de la plataforma Canva o alguna de su preferencia que de igual manera que las anteriores, permita su elaboraci&oacute;n de manera f&aacute;cil.</li>
+<li>Titule el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo: Act<em>5</em>_VillanuevaMariaTeresa</li>
+<li>Env&iacute;e su archivo, en formato ppt o PDF, a trav&eacute;s del apartado <strong>Actividades</strong> de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario de entregas</strong>.</li>
+</ol>
+						</div>
+						
+					  </div>
+					  <div class="col-md-1 align-self-center">
+						<a class="flechaCarrusel" onclick="siguienteEvidencia()">&#10095;</a>
+					  </div>
+
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>
