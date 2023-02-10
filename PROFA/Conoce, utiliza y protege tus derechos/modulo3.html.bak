@@ -530,8 +530,8 @@ tipología de los datos personales.</span></p>
 <!---------Contenido html con imagen izquierda--------->
 <div class='row'>
 <div class='col-2'></div>
-<div class='col-3 align-self-center'>
-<img src='https://lumen.uv.mx/resources/files/images/2023/2/9/7632/b73cd63a-bfa5-4811-b640-7fb2c5a1e713.jpg' alt='imagenContenido' class='img-fluid'>
+<div class='col-2 align-self-center'>
+<img src='' alt='imagenContenido' class='img-fluid'>
 </div>
 <div class='col'>
 ¿Sabía que…?
