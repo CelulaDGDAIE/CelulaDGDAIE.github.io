@@ -22,20 +22,20 @@
 
 			<div class="col align-self-center centrado">
 				<p id="tituloEscritorio">Diseño de Programas de Experiencia Educativa (PEE) con pertinencia social</p>
-				<p id="subtituloPresentacion">Fase 3: Demostración de desempeños.</p>
+				<p id="subtituloPresentacion">Fase 1: La Experiencia Educativa como espacio de formación disciplinar y ejercicio de la profesión.</p>
 			</div>
 			<div class="col-1"></div>
 			<div class="col-1 align-self-center">
 				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
 			</div>
 <div class='col-1 align-self-center'>
-<a href = 'fase1.html' class='enlaceModulo enlaceActivo'><strong>Fase 1</strong></a>
+<a href = '#' class='enlaceModulo'><strong>Fase 1</strong></a>
 </div>
 <div class='col-1 align-self-center'>
 <a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Fase 2</strong></a>
 </div>
 <div class='col-1 align-self-center'>
-<a href = '#' class='enlaceModulo'><strong>Fase 3</strong></a>
+<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Fase 3</strong></a>
 </div>
 			
 			<div class="col-3"></div>
@@ -154,7 +154,7 @@
 				<div class="col align-self-center centrado" id="columnaImagen">
 					<br>
 					<br>
-					<img src="https://lumen.uv.mx/resources/files/images/2009/3/20/260/78b10990-2885-400c-bf2b-5ab3b430fe99_c.jpg" class="img-fluid" id="imagenDiapositivas"
+					<img src="imagenes/proposito1.jpg" class="img-fluid" id="imagenDiapositivas"
 						alt="presentacion">
 						<p style="text-align: right;">[1]</p>
 				</div>
@@ -164,7 +164,8 @@
 					</div>
 					<br>
 					<div id="textoCarrusel">
-						<p>El participante dise&ntilde;a la estrategia de evaluaci&oacute;n de los desempe&ntilde;os profesionales esperados a trav&eacute;s de la imbricaci&oacute;n de la expertis disciplinar, profesional y la metodolog&iacute;a del dise&ntilde;o curricular.</p>
+						<p>El participante desarrolla el planteamiento sustantivo y específico de la Experiencia educativa enmarcado en el Plan de estudios, a través del uso de la metodología de diseño curricular. </p>
+						
 					</div>
 				</div>
 				<div class="col-1 col align-self-center centrado">
@@ -187,30 +188,36 @@
 			</div>
 			<div class="row fondoAzul" id="cuerpoCarrusel">
 				<div class="col-2 vacio"></div>
-				<div class="col align-self-center centrado" style="margin-left:1em; margin-right:1em;">
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado">
 					<div>
 						<strong><i class="bi bi-info-circle-fill"></i> Situación problematizadora</strong>
 					</div>
 					<br>
-					<div id="textoUnidadEscritorio">
-						<div>
-					<img src="https://lumen.uv.mx/resources/files/images/2009/3/20/111/f635cd00-24fd-403d-9fd7-e2a4f5b3a54f_c.jpg" style="width: 50%;" class="img-fluid" id="imagenDiapositivas"
-						alt="situacion">
-						<p style="text-align: right;">[2]</p>
-				</div>
-						<p>Realice, de manera individual, la carta asociativa &ldquo;Formas en las que valoro&rdquo;, comp&aacute;rtala en el <strong>Foro 3. Formas en las que </strong><strong>valoro,</strong> y retroalimente a dos de sus compa&ntilde;eros.</p>
-						<p>Haga clic en el siguiente icono, para acceder al formato de la Carta asociativa.</p>
-						<br>
-				<div style="text-align: center;">
-					<a class="recursoExterno" href="documentos/CARTA.docx" target="_blank">
-						<img src="imagenes/descarga1.png" class="img-fluid" style="width: 15%;">
-					</a>
-				</div>
-			<br>
+					<div id="textoUnidadEscritorio" style="text-align: justify;">
+						<p><strong>&iquest;Qu&eacute; sucede?</strong></p>
+						<p>Observe el siguiente video. Preste atenci&oacute;n a la informaci&oacute;n que expone y reflexione acerca del modo en que esos sucesos configuran necesidades sociales de inter&eacute;s educativo.</p>
+						<div style="text-align: center;">
+							<video width="320" height="240" controls>
+							  <source src="imagenes/problematizadora.mp4" type="video/mp4">
+							</video>
+						</div>
+						<p><strong>De las problem&aacute;ticas expuestas, &iquest;cu&aacute;les se atienden en </strong><strong>nuestros Planes de estudio?</strong></p>
+						<p>Revise el Plan de estudios del Programa educativo donde labora, identifique la fundamentaci&oacute;n o justificaci&oacute;n y responda:</p>
+						<ol>
+						<li>&iquest;Es clara la contribuci&oacute;n del Perfil de egreso que propone el Plan de estudio para aportar soluciones a alguna problem&aacute;tica social actual?</li>
+						<li>&iquest;Es suficiente el alcance de la EE en su nivel cognitivo y de complejidad para abordar esa problem&aacute;tica social?</li>
+						<li>&iquest;Los medios o recursos propuestos en la EE pueden contribuir a la resoluci&oacute;n de la problem&aacute;tica?</li>
+						<li>&iquest;Se enuncian acciones concretas de intervenci&oacute;n/contribuci&oacute;n en que se despliega la EE?</li>
+						<li>&iquest;Se advierte la vinculaci&oacute;n con otras disciplinas o profesiones en la resoluci&oacute;n colaborativa de la problem&aacute;tica?</li>
+						</ol>
 					</div>
 				</div>
-				
-
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
 				<div class="col-2 vacio"></div>
 			</div>
 			<div class="row aire fondoAzul">
@@ -228,13 +235,12 @@
 
 		<!-------------- /Información general -------------->
 		<br>
-		<p class="textoSeccion">Desarrollo de los saberes de este curso</p>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
 		
-
 		<div class='row' style='color: white;'>
 			<div class='col-2'></div>
 			<div class='col'>
-			<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'> 3.1. Recursos para el reconocimiento del aprendizaje 
+			<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'> 1.1. Flexibilidad, integralidad y transversalidad como estrategias de formación profesional
 			
 			</h1>
 			</div>
@@ -243,10 +249,30 @@
 			<div class='row'>
 			<div class='col-2'></div>
 			<div class='col'>
-			<p>Organizados en grupo colaborativo, lean el Capítulo 7: La educación en diferentes
-			tiempos y espacio, del informe <em>Reimaginar</em><em> </em><em>juntos
-			</em><em>nuestros
-			futuros: un nuevo contrato social para la educación </em>(UNESCO, 2022)<em>. </em></p>
+			<p>Observe el siguiente video sobre la
+			iniciativa de la UNESCO para promover el debate mundial sobre las necesarias
+			transformaciones en la producción del conocimiento y del aprendizaje para
+			transformar el futuro.</p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+			<div style='text-align: center'>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/NZERiSRRcrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			</div>
+			<div class='col-3'></div>
+			</div>
+			<br>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>Después, realice la lectura del Capítulo 4: Los planes de estudio y la
+			evolución de los “conocimientos comunes”,
+			del informe <em>Reimaginar</em><em>
+			juntos nuestros futuros: un nuevo contrato social para la educación </em>(UNESCO, 2022)<em>. </em></p>
 			</div>
 			<div class='col-2'></div>
 			</div>
@@ -273,9 +299,11 @@
 			<div class='row'>
 			<div class='col-2'></div>
 			<div class='col'>
-			<p>Enseguida, identifiquen los
-			elementos de evaluación que requiere el nuevo contrato social para la
-			educación.</p>
+			<p>A continuación, reúnase con tres compañeros del
+			curso para dialogar y realizar anotaciones en forma de enunciados declarativos
+			sobre la imbricación entre los tres conceptos: flexibilidad, transversalidad e
+			integralidad, para consolidar una <em>estrategia</em> que contribuya a la formación
+			profesional.</p>
 			</div>
 			<div class='col-2'></div>
 			</div>
@@ -285,7 +313,7 @@
 			<div class='row' style='color: white;'>
 			<div class='col-2'></div>
 			<div class='col'>
-			<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'> 3.2. Presentación de la estrategia de evaluación de los aprendizajes 
+			<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'> 1.2. Perfil de egreso
 			
 			</h1>
 			</div>
@@ -293,22 +321,15 @@
 			</div>
 			<div class='row'>
 			<div class='col-2'></div>
-			<div class='col'>
-				<p>En grupo colaborativo, realicen las siguientes actividades:
-				</p>
-			<p>1. De acuerdo con la UC, los saberes y las estrategias seleccionadas para el logro de la EE, describan las evidencias de desempeño (por producto y por demostración).</p><p>2.
-			Desarrollen los
-			indicadores generales del desempeño de cada evidencia y de acuerdo con su carácter, de manera que
-			corresponda, explicite y valore tal distinción.</p><p>3.
-			Desarrollen los
-			procedimiento(s), técnica(s) e instrumento(s) de
-			evaluación que darán seguimiento a las evidencias, detallando todas las
-			condiciones que configuran la evaluación: si es grupal, individual,
-			autoevaluación, coevaluación, retroalimentación, el instrumento que apoyará la
-			evaluación-rúbrica, lista de cotejo, guía de
-			observación, etcétera.</p><p>4.
-			Anoten el porcentaje asignado a cada evaluación, explicitando el carácter de la
-			elección.</p>
+			<div class='col align-self-center'>
+				<ol style="text-align: justify;">
+					<li>Elija alguna de las experiencias educativas que imparte.</li>
+					<li>Con base en la lectura y reflexi&oacute;n anterior, revise el perfil de egreso del Plan de estudios y valore la congruencia con la Experiencia Educativa para abordar la problem&aacute;tica social identificada en su fundamentaci&oacute;n o justificaci&oacute;n.</li>
+					<li>Socialice la valoraci&oacute;n de las competencias y caracter&iacute;sticas del perfil en el Foro &ldquo;Valorando el perfil de egreso&rdquo;.</li>
+					</ol>
+			</div>
+			<div class='col align-self-center'>
+				<img src="imagenes/egreso.jpg" alt="egreso" class="img-fluid">
 			</div>
 			<div class='col-2'></div>
 			</div>
@@ -318,7 +339,7 @@
 			<div class='row' style='color: white;'>
 			<div class='col-2'></div>
 			<div class='col'>
-			<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'> 3.3. Identidad del perfil docente
+			<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'> 1.3. Contribución de la Experiencia Educativa al perfil de egreso
 			
 			</h1>
 			</div>
@@ -327,8 +348,53 @@
 			<div class='row'>
 			<div class='col-2'></div>
 			<div class='col'>
-			<p>En grupo colaborativo, lean el Capítulo 5. El papel transformador de los docentes, del informe <em>Reimaginar</em><em>
-			juntos nuestros futuros: un nuevo contrato social para la educación</em> (UNESCO, 2022). </p>
+			<p>Observe el siguiente video sobre
+			los desafíos de la educación superior en el siglo XXI.</p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+			<div style='text-align: center'>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/hctW_9tRov4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			</div>
+			<div class='col-3'></div>
+			</div>
+			<br>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>Considerando la información del
+			video y la reflexión generada hasta ahora en el desarrollo de este módulo,
+			valore la contribución de la Experiencia Educativa al perfil de egreso
+			propuesto en el Plan de estudios.</p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<hr>
+			<br>
+			<br>
+			<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'> 1.4.  Formación integral en educación superior
+			
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>Lea la Viñeta 3. Aprender más, ganar menos: el papel de los
+			rendimientos decrecientes de la educación y la experiencia en la “reducción” de
+			la desigualdad,
+			del
+			libro <em>Cuando
+			la coyuntura se encuentra con la estructura: viñetas sobre el desarrollo y la
+			crisis del Covid-19 en América y el Caribe</em> (Bolch, Fernández y López Calva, 2022). </p>
 			</div>
 			<div class='col-2'></div>
 			</div>
@@ -340,34 +406,50 @@
 			d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
 			id='path2'
 			style='fill:#0055d4' />
-			</svg> Haga clic en el siguiente icono para ir al sitio web del documento.
+			</svg> Haga clic en el  siguiente icono para ver el texto.
 			<br>
 				<div style="text-align: center;">
-					<a class="recursoExterno" href="https://unesdoc.unesco.org/ark:/48223/pf0000381560 " target="_blank">
+					<a class="recursoExterno" href="https://www.undp.org/es/latin-america/publications/cuando-la-coyuntura-se-encuentra-con-la-estructura-vi%C3%B1etas-sobre-el-desarrollo-y-la-crisis-de-la-covid-19-en-am%C3%A9rica " target="_blank">
 						<img src="imagenes/descarga2.png" class="img-fluid" style="width: 10%;">
 					</a>
 				</div>
 			<br>
-			
 			</div>
 			<div class='col-2'></div>
 			</div>
 			<div class='row'>
 			<div class='col-2'></div>
 			<div class='col'>
-			<p>Con base en lo expuesto en la
-			lectura y la reflexión de todos los elementos antes desarrollados, describan
-			una identidad específica del profesional idóneo para acompañar la Experiencia Educativa, considerando la dimensión
-			académica, profesional y axiológica.</p>
+			<p>Una vez leído el texto, como
+			ejercicio autónomo, rehaga la viñeta articulándola con la Experiencia Educativa
+			en particular y el Plan de estudios en general.</p><p></p><p>Para concluir este módulo, lea el apartado:
+			La intensa pedagogía del virus: las
+			primeras lecciones, del libro <em>La
+			Cruel Pedagogía del Virus </em>(De
+			Sousa, 2020). </p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row' >
+			<div class='col-2'></div>
+			<div class='col'>
+			<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+			<path
+			d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+			id='path2'
+			style='fill:#0055d4' />
+			</svg> Haga clic en el siguiente icono para ver este recurso.
+			<br>
+				<div style="text-align: center;">
+					<a class="recursoExterno" href="http://biblioteca.clacso.edu.ar/clacso/se/20200430083046/La-cruel-pedagogia-del-virus.pdf " target="_blank">
+						<img src="imagenes/descarga2.png" class="img-fluid" style="width: 10%;">
+					</a>
+				</div>
+			<br>
 			</div>
 			<div class='col-2'></div>
 			</div>
 			
-
-
-		<hr>
-		<br>
-		<br>
 
 
 		<div style="text-align: center;">
@@ -399,10 +481,15 @@
 				  </nav>
 				  <div class="tab-content" id="nav-tabContent">
 					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-						
+						<p class="fuente">Centro de Investigaciones y Servicios Educativos. (2018, 19 de abril). <em>Desaf&iacute;os de la </em><em>Educación</em><em> Superior en el Siglo XXI, en </em><em>Búsqueda</em><em> de la </em><em>Pertinencia</em><em>.</em> [Video]. Youtube. <a href="https://youtu.be/hctW_9tRov4">https://youtu.be/hctW_9tRov4</a></p>
+						<p class="fuente">De Sousa S. B. (2020). <em>La cruel pedagog&iacute;a del virus</em>. CLACSO. <u><a href="http://biblioteca.clacso.edu.ar/clacso/se/20200430083046/La-cruel-pedagogia-del-virus.pdf">La-cruel-pedagogia-del-virus.pdf (clacso.edu.ar)</a></u></p>
+						<p class="fuente">L&oacute;pez-Calva, F. Bolch, K. &amp; Fern&aacute;ndez, A. (2022) <em>Cuando la Coyuntura se encuentra con la estructura. Vi&ntilde;etas sobre el desarrollo y la crisis de COVID-19 en Am&eacute;rica Latina y el Caribe</em>. PNUD. &nbsp;<u><a href="https://www.undp.org/sites/g/files/zskgke326/files/migration/latinamerica/undp-rblac-libro-Cuando-la-coyuntura-se-encuentra-con-la-estructura.pdf">https://www.undp.org/sites/g/files/zskgke326/files/migration/latinamerica/undp-rblac-libro-Cuando-la-coyuntura-se-encuentra-con-la-estructura.pdf</a></u></p>
+						<p class="fuente">Organizaci&oacute;n de las Naciones Unidas para la Educaci&oacute;n, la Ciencia y la Cultura (UNESCO). (2022). <em>Reimaginar</em><em> juntos nuestros futuros: un nuevo contrato social para la educaci&oacute;n.</em> UNESCO y Fundaci&oacute;n SM. <u><a href="https://unesdoc.unesco.org/ark:/48223/pf0000381560">https://unesdoc.unesco.org/ark:/48223/pf0000381560</a></u></p>
+						<p class="fuente">UNESCO. (2022, 26 de enero). <em>Informe de la UNESCO sobre los futuros de la educaci&oacute;n: </em><em>Reimaginar</em><em> juntos nuestros </em><em>futuros.</em> [Video]. &nbsp;Youtube. <a href="https://youtu.be/NZERiSRRcrg">https://youtu.be/NZERiSRRcrg</a></p>
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
 						
 					</div>
-					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"></div>
 
 				  </div>
 
@@ -437,11 +524,12 @@
 							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
 							<div class="accordion-body">
 								<p class="referencia" id="referencias">
-									<sup class="contadorReferencia">1</sup> Lumen. Repositorio Digital Universitario (Universidad Veracruzana
+									<sup class="contadorReferencia">1</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
 								</p>
-								<p class="referencia" id="referencias">
-									<sup class="contadorReferencia">2</sup> Lumen. Repositorio Digital Universitario (Universidad Veracruzana
+								<p class="referencia">
+									<sup class="contadorReferencia">2</sup> Lumen. Repositorio Digital Universitario (Universidad Veracruzana).
 								</p>
+								
 							</div>
 						</div>
 					</div>
@@ -484,55 +572,49 @@
 			<div class="modal-body" id="cuerpoModal">
 				<div class="container-fluid">
 					<div class="row">
-					  <div class="col-md-1 align-self-center"><a class="flechaCarrusel" onclick="cambiarEvidencia()">&#10094;</a></div>
-					  <div class="col">
-						<div id="evidencia1">
-							<p style="text-align: center;"><strong>Foro 3:</strong></p>
-							<p style="text-align: center;"><strong>Formas en las que valoro</strong></p>
+						<div class="col-md-1 align-self-center"><a class="flechaCarrusel" onclick="cambiarEvidencia()">&#10094;</a></div>
+						<div class="col">
+						  <div id="evidencia1">
+							<p style="text-align: center;"><strong>Foro 1:</strong></p>
+							<p style="text-align: center;"><strong>V</strong><strong>alorando el perfil de </strong><strong>egreso.</strong></p>
 							<p><strong>Descripci&oacute;n:</strong></p>
-							<p>Comparta en este espacio la <strong>Carta asociativa</strong> elaborada al inicio de esta fase.</p>
+							<p>Elabore un comentario que valore la congruencia entre el perfil de egreso propuesto en el Plan de estudios y la Experiencia Educativa</p>
 							<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
 							<ol>
-							<li>Consulte las <a href="documentos/reglasForo.pdf" target="_blank">Reglas para participar en foros de discusi&oacute;n.</a></li>
+							<li>Consulte las <a target="_blank" href="documentos/reglasForo.pdf">Reglas para participar en foros de discusi&oacute;n.</a></li>
 							<li>Apego a las instrucciones.</li>
-							<li>Dominio del tema.</li>
-							<li>Aporte constructivo.</li>
+							<li>Redacci&oacute;n y ortograf&iacute;a adecuadas.</li>
+							<li>Retroalimentaci&oacute;n de la participaci&oacute;n de un compa&ntilde;ero.</li>
 							</ol>
 							<p><strong>Lineamientos de entrega:</strong></p>
 							<ol>
-							<li>Suba su evidencia al apartado<em>&nbsp;Foro </em><em>3: </em><em>Formas en las que valoro</em>, en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el<strong>&nbsp;Calendario&nbsp;de entregas</strong>.</li>
+							<li>Suba su evidencia al apartado<em>&nbsp;Foro 1 . Valorando el perfil de egreso</em>, en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el<strong>&nbsp;Calendario&nbsp;de entregas</strong>.</li>
 							</ol>
+						  </div>
+						  <div id="evidencia2">
+							<p style="text-align: center;"><strong>Actividad 1:</strong></p>
+							<p style="text-align: center;"><strong>Redacci&oacute;n de la justificaci&oacute;n de la Experiencia </strong><strong>Educativa.</strong></p>
+							<p><strong>Descripci&oacute;n</strong></p>
+							<p>Integre en un texto, no menor a cuatro p&aacute;rrafos, la justificaci&oacute;n de la Experiencia Educativa, recuperando las reflexiones y actividades hechas a lo largo de esta Fase 1.&nbsp;</p>
+							<p><strong>Criterios de evaluaci&oacute;n</strong></p>
+							<p>El texto debe integrar los siguientes elementos:</p>
+							<ol>
+							<li>El alcance de la Experiencia Educativa (su nivel cognitivo y de complejidad).</li>
+							<li>Los medios por los que la Experiencia Educativa puede contribuir a la resoluci&oacute;n de la problem&aacute;tica.</li>
+							<li>Las acciones concretas de intervenci&oacute;n/contribuci&oacute;n en que se despliega la Experiencia Educativa.</li>
+							</ol>
+							<p><strong>Lineamientos de entrega:</strong></p>
+							<ol>
+							<li>Suba su actividad en archivo Word.</li>
+							<li>Titule el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo: Act<em>1</em>_VillanuevaMariaTeresa</li>
+							<li>Suba su archivo a trav&eacute;s del apartado <strong>Actividades</strong> de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario de entregas</strong>.</li>
+							</ol>
+						  </div>
 						</div>
-						<div id="evidencia2">
-							<p style="text-align: center;"><strong>Actividad 3:</strong></p>
-<p style="text-align: center;"><strong>Dise&ntilde;o de la estrategia de evaluaci&oacute;n y descripci&oacute;n del perfil acad&eacute;mico.</strong></p>
-<p><strong>Descripci&oacute;n:</strong></p>
-<p>En grupo colaborativo, redacten:</p>
-<ol style="text-align: justify;">
-<li>Las evidencias de desempe&ntilde;o por demostraci&oacute;n y por producto, cuidando que la cantidad de cada una de ellas corresponda a la modalidad de aprendizaje de la Experiencia Educativa y su car&aacute;cter.</li>
-<li>Los indicadores generales de desempe&ntilde;o de manera clara, concisa y que responda a atributos visibles.</li>
-<li>Los procedimientos, técnicas e instrumentos de evaluación, puntualizando cada uno de ellos y haciendo explícitos los atributos que se desea valorar y calificar, buscando el equilibrio entre lo cualitativo y lo cuantitativo de la evaluación.</li>
-<li>La identidad id&oacute;nea del acad&eacute;mico, cuidando su condici&oacute;n integradora entre: una expertis disciplinar flexible y compleja, la formaci&oacute;n pedag&oacute;gica, el desempe&ntilde;o profesional y el compromiso &eacute;tico.</li>
-</ol>
-<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
-<p>Consideren incluir los siguientes criterios en su actividad:</p>
-<ol>
-<li>La diversidad de condiciones y atributos de la evaluación que le confieran un carácter integral y de autenticidad.</li>
-<li>La interacci&oacute;n dial&oacute;gica entre el resto de los elementos de la EE.</li>
-<li>La integralidad del perfil docente que atienda la necesidad formativa que propone la EE, las relaciones multidisciplinares y el m&aacute;ximo beneficio de los estudiantes.</li>
-</ol>
-<p><strong>Lineamientos de entrega:</strong></p>
-<ol>
-<li>Suban su actividad en archivo Word.</li>
-<li>Titulen el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo: Act<em>3</em>_VillanuevaMariaTeresa</li>
-<li>Suban su archivo a trav&eacute;s del apartado <strong>Actividades</strong> de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario de entregas</strong>.</li>
-</ol>
+						<div class="col-md-1 align-self-center">
+						  <a class="flechaCarrusel" onclick="cambiarEvidencia()">&#10095;</a>
 						</div>
 					  </div>
-					  <div class="col-md-1 align-self-center">
-						<a class="flechaCarrusel" onclick="cambiarEvidencia()">&#10095;</a>
-					  </div>
-					</div>
 				</div>
 			</div>
 			<div class="modal-footer">
