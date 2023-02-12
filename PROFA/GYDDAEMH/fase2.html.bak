@@ -1,0 +1,738 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Gestión y desarrollo del aprendizaje en modalidad híbrida</p>
+				<p id="subtituloPresentacion">Fase 2: Planeación del aprendizaje en modalidad híbrida. </p>
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+<div class='col-1 align-self-center'>
+<a href = 'fase1.html' class='enlaceModulo enlaceActivo'><strong>Fase 1</strong></a>
+</div>
+<div class='col-1 align-self-center'>
+<a href = '#' class='enlaceModulo'><strong>Fase 2</strong></a>
+</div>
+<div class='col-1 align-self-center'>
+<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Fase 3</strong></a>
+</div>
+			
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">$@tituloPresentacion</p>
+				<p id="subtituloPresentacionMovil">$@subtituloPresentacion</p>
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">$@tituloPresentacionScroll</p>
+					<p id="subtituloPresentacionScroll">$@subtituloPresentacion</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+		<a href="fase2.html" class="w3-bar-item w3-button">Fase 2</a>
+		<a href="fase3.html" class="w3-bar-item w3-button">Fase 3</a>
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad" style="text-align: justify;">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<br>
+					<br>
+					<img src="https://lumen.uv.mx/resources/files/images/2022/10/6/7393/1c0415d2-7d37-42bb-9831-20eed755f010.jpg" class="img-fluid" id="imagenDiapositivas"
+						alt="presentacion">
+						<p style="text-align: right;">[1]</p>
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						<p>El participante desarrolla saberes teóricos y prácticos para planear una sesión de aprendizaje en modalidad híbrida, considerando los elementos de diseño instruccional de la plataforma Eminus 4.
+						</p>
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<br>
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoAzul" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado">
+					<div>
+						<strong><i class="bi bi-info-circle-fill"></i> Situación problematizadora</strong>
+					</div>
+					<br>
+					<div id="textoUnidadEscritorio">
+						<p>A continuación, observe atentamente el siguiente video.
+						</p>
+						<div style="text-align: center;">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/nsoOTh4Mv0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</diV>
+						<p>Con base en lo expuesto en el anterior video, reflexione:</p>
+<ol style="text-align: justify;">
+<li>&iquest;Qu&eacute; saberes necesito fortalecer respecto de la planeaci&oacute;n did&aacute;ctica para mis clases en modalidad h&iacute;brida?</li>
+<li>&iquest;Qu&eacute; acciones concretas voy a realizar para lograr un desarrollo &oacute;ptimo de pr&aacute;ctica docente en esta modalidad?</li>
+</ol>
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'> 2.1. Planeación de actividades  
+			
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<h1 class='subtitulo'>2.1.1. Planeación didáctica en la modalidad híbrida
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>Observe y lea atentamente la
+			siguiente infografía que expone algunas orientaciones generales para la
+			planeación de las actividades de enseñanza y de aprendizaje en modalidad
+			híbrida.</p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+			<div style='text-align: center'>
+			<div style="width: 100%;"><div style="position: relative; padding-bottom: 143.33333333333334%; padding-top: 0; height: 0;"><iframe title="PROFA_Educ Híbrida - F2 - 2.1.1" frameborder="0" width="1200px" height="1720px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/631b423f9a3d0a0019ac341f" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+			</div>
+			</div>
+			<div class='col-3'></div>
+			</div>
+			<br>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<h1 class='subtitulo'>2.1.2. Recomendaciones básicas para planear en modelos híbridos
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>Consulte
+			el sitio IntegraTic
+			(UNAM), en el que se proponen orientaciones específicas para el desarrollo del
+			proceso de enseñanza-aprendizaje en modalidad híbrida. </p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row' >
+			<div class='col-2'></div>
+			<div class='col'>
+			<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+			<path
+			d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+			id='path2'
+			style='fill:#0055d4' />
+			</svg> Para lo anterior, haga clic en el icono de descarga.
+			
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<br>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col' style = "text-align: center;">
+				<a target="_blank" href="https://integratic.politicas.unam.mx/?page_id=1649">
+					<img style="width: 10%;" src="imagenes/descarga2.png"/>
+				</a>
+				<p style = "text-align: center;">Facultad
+de Ciencias Políticas y sociales-UNAM (2022). Recomendaciones básicas. <em>IntegraTic</em>.</p>
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<h1 class='subtitulo'>2.1.3. Ejemplos de planeación de EE en modalidad híbrida
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>A continuación se presentan una serie de documentos guía para planear sus Experiencias
+Educativas en la modalidad híbrida, sin embargo, el participante puede crear la propia
+tomando en cuenta lo mencionado en los subtemas anteriores.</p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row' >
+			<div class='col-2'></div>
+			<div class='col'>
+			<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+			<path
+			d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+			id='path2'
+			style='fill:#0055d4' />
+			</svg> Haga clic en cada uno de los iconos para consultar los ejemplos.
+			
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<br>
+			<br>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col' style = "text-align: center;">
+				<a target="_blank" href="https://lienzos.uv.mx/Uploads/resources/InstrumentoRutasAprendizajeML_2_bb77_533e.pdf">
+					<img style="width: 20%;" src="imagenes/descarga2.png"/>
+				</a>
+				<p style = "text-align: center;">Planeación de rutas de consulta</p>
+			</h1>
+			</div>
+			<div class='col' style = "text-align: center;">
+				<a target="_blank" href="https://lienzos.uv.mx/Uploads/resources/M1_Cartadescriptiva_4b98_4838.pdf">
+					<img style="width: 20%;" src="imagenes/descarga2.png"/>
+				</a>
+				<p style = "text-align: center;">Carta descriptiva</p>
+			</h1>
+			</div>
+			<div class='col' style = "text-align: center;">
+				<a target="_blank" href="https://lienzos.uv.mx/Uploads/resources/Copia-de-M1Docentes_planeaci%C3%B3nmodelo-h%C3%ADbrido_dea4.pdf">
+					<img style="width: 20%;" src="imagenes/descarga2.png"/>
+				</a>
+				<p style = "text-align: center;">Planeación en modelo híbrido</p>
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<hr>
+			<br>
+			<br>
+			<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'> 2.2. Diseño instruccional en la plataforma Eminus 4
+			
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<h1 class='subtitulo'>2.2.1. ¿Qué es el diseño instruccional?
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>Revise atentamente el siguiente esquema que explica, en síntesis, qué es el diseño
+instruccional.</p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+			<div style='text-align: center'>
+			<div style="width: 100%;"><div style="position: relative; padding-bottom: 27.89473684210526%; padding-top: 0; height: 0;"><iframe title="PROFA_Educ Híbrida - F2 - 2.2.1" frameborder="0" width="1900px" height="530px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/631b817a3438e20012b74cbc" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+			</div>
+			</div>
+			<div class='col-3'></div>
+			</div>
+			<br>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<h1 class='subtitulo'>2.2.2. Modelo ADDIE (Analizar, Diseñar, Desarrollar, Implementar, Evaluar)
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>Existen varios modelos de diseño instruccional, sin embargo, en esta fase se explorará el
+modelo ADDIE por considerarlo más práctico para el trabajo docente en la universidad.</p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+			<div style='text-align: center'>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/j2xv-Z7w69s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			</div>
+			<div class='col-3'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>Para profundizar en los detalles de
+			este modelo, lea el <strong>Capítulo
+			VI: Diseño Instruccional en ambientes virtuales, basado en el Modelo ADDIE </strong>del libro <em>El
+			Diseño Instruccional. Elemento clave para la Innovación en el Aprendizaje:
+			Modelos y Enfoques, </em>pp.
+			122-148<em>. </em></p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row' >
+			<div class='col-2'></div>
+			<div class='col'>
+			<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+			<path
+			d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+			id='path2'
+			style='fill:#0055d4' />
+			</svg>           Haga clic en el siguiente icono para ir al sitio de consulta.
+			
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<br>
+
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col' style = "text-align: center;">
+				<a target="_blank" href="https://mta.udg.mx/sites/default/files/adjuntos/el_diseno_instruccional_interactivo.pdf">
+					<img style="width: 10%;" src="imagenes/descarga2.png"/>
+				</a>
+				<p style = "text-align: center;">El Diseño Instruccional, Elemento clave para la Innovación en el Aprendizaje: Modelos y Enfoques </p>
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<br>
+			<hr>
+			<br>
+			<br>
+			<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'> 2.3. Aula virtuales con perspectiva de género
+			
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<h1 class='subtitulo'>2.3.1. Expresiones de ciberviolencia
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>La virtualidad configura un espacio de
+			relaciones sociales que cada día cobra mayor importancia, sobre todo para los
+			estudiantes jóvenes que construyen algunos de sus vínculos con los otros,
+			mediante el uso de diversos medios tecnológicos de comunicación.</p><p>Lo anterior exige, de parte del docente, la gestión de un ambiente de aprendizaje seguro
+para todos, permeado por el respeto y la inclusión, evitando y sancionando oportunamente
+cualquier expresión de violencia y discriminación.</p><p>Es importante reconocer las expresiones de
+			violencia y discriminación para prevenir, evitar y sancionar. A continuación,
+			observe
+			el siguiente video que expone los tipos de violencia digital.</p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+			<div style='text-align: center'>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/j3z7mimyPp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			</div>
+			<div class='col-3'></div>
+			</div>
+			<br>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<h1 class='subtitulo'>2.3.2. Orientaciones para prevenir la violencia en el aula virtual
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+			<div style='text-align: center'>
+			<div style="width: 100%;"><div style="position: relative; padding-bottom: 60%; padding-top: 0; height: 0;"><iframe title="PROFA_Educ Híbrida - F2 - 2.3.2" frameborder="0" width="2200px" height="1320px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6329f916c24f7500119c4626" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+			</div>
+			</div>
+			<div class='col-3'></div>
+			</div>
+			
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="https://www.uv.mx/" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p class="fuente">Agudelo, M. (2009). Importancia del dise&ntilde;o instruccional en ambientes virtuales de aprendizaje. En J. S&aacute;nchez (ed.). <em>Nuevas Ideas en Inform&aacute;tica Educativa, 5</em>, 118-127. <a href="http://www.tise.cl/2009/tise_2009/pdf/14.pdf">http://www.tise.cl/2009/tise_2009/pdf/14.pdf</a></p>
+						<p class="fuente">Andriano, J. (17 de julio de 2020). Planeaci&oacute;n h&iacute;brida en tiempos de COVID-19. <em>Educaci&oacute;n futura</em>. <a href="https://www.educacionfutura.org/planeacion-hibrida-en-tiempos-de-covid-19/">https://www.educacionfutura.org/planeacion-hibrida-en-tiempos-de-covid-19/#:~:text=La%20denominada%20educaci%C3%B3n%20h%C3%ADbrida%2C%20es,objetivos%20que%20marca%20la%20educaci%C3%B3n</a></p>
+						<p class="fuente">Lirmi.com (2021, 4 de enero). <em>&iquest;C&oacute;mo implementar educaci&oacute;n h&iacute;brida? </em>[Video]. Youtube. <a href="https://www.youtube.com/watch?v=nsoOTh4Mv0k">https://www.youtube.com/watch?v=nsoOTh4Mv0k</a></p>
+						<p class="fuente">Cultura UNAM. (2021, 3 de agosto). <em>Tipos de violencia digital. </em>[Video]. Youtube. <a href="https://youtu.be/j3z7mimyPp8">https://youtu.be/j3z7mimyPp8</a></p>
+						<p class="fuente">De Jes&uacute;s, L. E. &amp; Ayala, S. (2021). Dise&ntilde;o instruccional en ambientes virtuales, basado en el modelo ADDIE. En Luna Rizo, M., Ayala Ram&iacute;rez, S. y Rosas Ch&aacute;vez, P. (coords. ). <em>El dise&ntilde;o instruccional. Elemento clave para la innovaci&oacute;n en el aprendizaje: modelos y enfoques</em>, p&aacute;gs. 122-148. <a href="https://mta.udg.mx/sites/default/files/adjuntos/el_diseno_instruccional_interactivo.pdf">https://mta.udg.mx/sites/default/files/adjuntos/el_diseno_instruccional_interactivo.pdf</a></p>
+						<p class="fuente">Facultad de Ciencias Pol&iacute;ticas y Sociales. (2022). Aulas Virtuales con Perspectiva de G&eacute;nero. <em>IntegraTic</em>. <a href="https://integratic.politicas.unam.mx/?page_id=2557">https://integratic.politicas.unam.mx/?page_id=2557</a></p>
+						<p class="fuente">Facultad de Ciencias Pol&iacute;ticas y sociales (2022). Recomendaciones b&aacute;sicas. <em>IntegraTic</em>. <a href="https://integratic.politicas.unam.mx/?page_id=1649">https://integratic.politicas.unam.mx/?page_id=1649</a></p>
+						<p class="fuente">Ingenia UdA. (2016, 5 de abril). <em>Dise&ntilde;o instruccional ADDIE. </em>[Video]. Youtube. <a href="https://youtu.be/j2xv-Z7w69s">https://youtu.be/j2xv-Z7w69s</a></p>
+						
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"></div>
+
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">1</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">2</sup> Tecnología iconos creados por Eucalyp - Flaticon</a>. https://www.flaticon.es/iconogratis/
+									tecnologia_3715323
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">3</sup> El respeto iconos creados por Eucalyp - Flaticon</a>. https://www.flaticon.es/iconogratis/
+									el-respeto_5865417
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">4</sup> Idioma iconos creados por Sebastian Belalcazar - Flaticon</a>.
+									https://www.flaticon.es/icono-gratis/idioma_3642541
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">5</sup> Conferencia iconos creados por Freepik - Flaticon. https://www.flaticon.es/iconogratis/
+									videollamada_7253897
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">6</sup> Reunión iconos creados por Freepik - Flaticon. https://www.flaticon.es/iconogratis/
+									reunion-en-linea_3374371
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">7</sup> Broma iconos creados por noomtah - Flaticon. https://www.flaticon.es/iconogratis/
+									chisme_3680185
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">8</sup> Equipo iconos creados por Freepik - Flaticon. https://www.flaticon.es/iconogratis/
+									grupo_921296
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">9</sup> Educación sexual iconos creados por Freepik - Flaticon.
+									https://www.flaticon.es/icono-gratis/educacion-sexual_5332380
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">10</sup> Información iconos creados por Vitaly Gorbachev - Flaticon.
+									https://www.flaticon.es/icono-gratis/privacidad_7453252
+								</p>
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">11</sup> Intimidad iconos creados por Vector Stall - Flaticon.
+									https://www.flaticon.es/icono-gratis/politica-de-privacidad_5818605 
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<div class="row">
+					  <div class="col">
+						<div id="evidencia1">
+							<p><strong>Actividad 1. Dise&ntilde;o de </strong><strong>planeaci</strong><strong>&oacute;n</strong><strong> de clase.</strong></p>
+							<p><strong>Descripci&oacute;n:</strong></p>
+							<ol>
+							<li>Realice el dise&ntilde;o y planeaci&oacute;n de, por lo menos, una clase, tema, unidad o fase (de un d&iacute;a, semana o mes) en la modalidad de educaci&oacute;n h&iacute;brida, tomando en cuenta la flexibilidad de la misma para las adecuaciones que sean necesarias en la puesta en pr&aacute;ctica de acuerdo con los diferentes escenarios que se pueden presentar.</li>
+							<li>Aqu&iacute; mismo le compartimos tres formatos de planeaci&oacute;n, puede usar cualquiera o alguno que se acomode mejor a las necesidades de la clase, tema o fase que vaya a usar como ejercicio de trabajo en un aula h&iacute;brida.</li>
+							</ol>
+							<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+							<p>Consulte la <a target="_blank" href="documentos/rubrica.pdf"><strong>R&uacute;brica de evaluaci&oacute;n </strong></a>para la participaci&oacute;n en este foro.</p>
+							<p><strong>Lineamientos de entrega</strong><strong>:</strong></p>
+							<ol>
+							<li>Titule el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo: Act<em>1</em>_VillanuevaMariaTeresa</li>
+							<li>Env&iacute;e su archivo, en formato word, PDF o ppt, a trav&eacute;s del apartado <strong>Actividades </strong>de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario de entregas</strong>.</li>
+							</ol>
+						</div>
+					  </div>
+
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>

@@ -1,0 +1,662 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Gestión y desarrollo del aprendizaje en modalidad híbrida</p>
+				<p id="subtituloPresentacion">Fase 1: Educación híbrida.</p>
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+<div class='col-1 align-self-center'>
+<a href = '#' class='enlaceModulo'><strong>Fase 1</strong></a>
+</div>
+<div class='col-1 align-self-center'>
+<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Fase 2</strong></a>
+</div>
+<div class='col-1 align-self-center'>
+<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Fase 3</strong></a>
+</div>
+			
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">$@tituloPresentacion</p>
+				<p id="subtituloPresentacionMovil">$@subtituloPresentacion</p>
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">$@tituloPresentacionScroll</p>
+					<p id="subtituloPresentacionScroll">$@subtituloPresentacion</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+		<a href="fase2.html" class="w3-bar-item w3-button">Fase 2</a>
+		<a href="fase3.html" class="w3-bar-item w3-button">Fase 3</a>
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<br>
+					<br>
+					<img src="https://lumen.uv.mx/resources/files/images/2022/10/6/7398/c9083bb1-bc64-40ca-a23e-f5e8547ce005.jpg" class="img-fluid" id="imagenDiapositivas"
+						alt="presentacion">
+						<p style="text-align: right;">[1]</p>
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						<p>El participante desarrolla saberes teóricos acerca de las diferentes modalidades de aprendizaje: presencial, virtual, híbrida y los diversos escenarios de este último, reflexionando al respecto de su uso en un futuro cercano. 
+						</p>
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<br>
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoAzul" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado">
+					<div>
+						<strong><i class="bi bi-info-circle-fill"></i> Situación problematizadora</strong>
+					</div>
+					<br>
+					<div id="textoUnidadEscritorio" style="text-align: justify;">
+						<p><strong>Reflexionemos:</strong></p>
+						<ol>
+						<li>&iquest;Se ha visto en la necesidad de impartir clases en donde asisten alumnos en modalidad f&iacute;sica y virtual?</li>
+						<li>&iquest;Qu&eacute; dificultades ha identificado en esa pr&aacute;ctica y c&oacute;mo las ha superado?</li>
+						<li>&iquest;C&oacute;mo espera que este curso le ayude a superar el reto que esta modalidad le ha implicado?</li>
+						</ol>
+						<p>Veamos algunos conceptos y elementos pr&aacute;cticos que le ayudar&aacute;n a planear este tipo de sesiones de aprendizaje.</p>
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'> 1.1. Educación en modalidad híbrida
+			
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<h1 class='subtitulo'>Introducción
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>La pandemia por COVID 19 impactó en
+			los procesos de enseñanza-aprendizaje; obligó a migrar de una modalidad de
+			educación presencial a una virtual. Ambas modalidades comparten
+			características, sin embargo, implican un abordaje didáctico distinto para favorecer
+			el aprendizaje de los estudiantes.</p><p></p><p>Ante esto, la Universidad
+			Veracruzana activó diversas plataformas institucionales que conforman un
+			ecosistema para el aprendizaje en modalidad virtual: Lienzos, Lumen, Eminus 4; además, se incorporaron las
+			herramientas de <em>Microsoft</em> que se renuevan constantemente,
+			siendo la actualización, capacitación y formación, procesos inacabados para el
+			trabajo docente. </p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>Por ello, comprender la diferencia
+			que hay en los procesos de aprendizaje de nuestros alumnos en una modalidad
+			presencial y una virtual se vuelve más que necesario, aunado a esto se suma
+			otra forma de enseñanza en la que involucramos ambas: el Modelo híbrido. </p><p></p><p>Por tal motivo, necesitamos
+			comprender el concepto de <strong>educación híbrida </strong>para crear, diseñar y planear
+			experiencias educativas en el ecosistema de plataformas de la Universidad
+			Veracruzana que, a su vez, integra el uso de <em>Teams</em>
+			de <em>Microsoft</em>. 
+			</p><p></p><p>Pero, ¿a qué se refiere
+			concretamente este concepto?, ¿cuál es la diferencia específica con otras
+			modalidades?, ¿qué implicaciones tiene a nivel pedagógico y didáctico?, ¿cómo
+			debe ser la práctica docente en esa modalidad específica? </p><p>Comencemos por definir
+			conceptualmente las categorías implicadas en la comprensión de lo que es la
+			modalidad híbrida. </p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<h1 class='subtitulo'>1.1.1. Educación presencial
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>Interactúe con la siguiente
+			presentación para conocer las características, ventajas y desventajas de la
+			educación en modalidad presencial.</p>
+			<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+			<path
+			d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+			id='path2'
+			style='fill:#0055d4' />
+			</svg>Haga clic en el botón de la derecha para ver el contenido.</p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+			<div style='text-align: center'>
+			<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6310d4a38002910012fc8e14" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+			</div>
+			</div>
+			<div class='col-3'></div>
+			</div>
+			<br>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<h1 class='subtitulo'>1.1.2. Educación virtual
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>La educación virtual se caracteriza
+			por la diversidad de sistemas de interacción y de trabajo educativo.  </p><p></p><p>Se soporta en una terciarización de los aspectos tecnológicos tanto
+			de conectividad (asociado a las formas sincrónicas: <em>Zoom</em>, <em>Google</em>, <em>Teams</em>),
+			como de plataformas con tutores;
+			de modelos de gestión de aprendizaje (<em>Learning Management </em><em>System</em>: LMS): <em>Moodle</em>, <em>Canvas</em>, <em>Schoology</em>, <em>Blackboard</em>, etc.; de cursos <em>online</em> masivos y abiertos (<em>Massive</em><em>
+			Online Open </em><em>Courses</em>:<em> </em>MOOC):
+			<em>Miriada</em><em> X</em>, <em>Coursera</em>, etc., y de aplicaciones en
+			laboratorios informáticos de simuladores o de realidad aumentada para adquirir
+			competencias.  </p><p></p><p>A continuación, observe los
+			siguientes videos que pondrán en perspectiva cómo se puede entender la
+			educación virtual. Es importante poner atención en las características que se
+			mencionan y en los errores de su definición.</p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>Resuelva el videoquiz <em>¿Qué es la educación virtual? </em>(con base en Mercadeo Opensky, 2013), en el que se muestra una
+			definición sintética de educación virtual y pone un ejemplo de las plataformas
+			que se pueden utilizar para la aplicación de este modelo. </p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+			<div style='text-align: center'>
+			<iframe width="795" height="690" frameborder="0" src="https://es.educaplay.com/juego/12890776-educacion_virtual.html"></iframe>
+			</div>
+			</div>
+			<div class='col-3'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>Ahora, observe la siguiente
+			infografía que expone algunos errores que se cometen en la educación en
+			modalidad virtual.</p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+			<div style='text-align: center'>
+			<div style="width: 100%;"><div style="position: relative; padding-bottom: 141.66666666666669%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="1700px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6310e00bf1ece80018206c63" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+			</div>
+			</div>
+			<div class='col-3'></div>
+			</div>
+			<br>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<h1 class='subtitulo'>1.1.3. Educación híbrida
+			</h1>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>Según Rama (2021), la educación
+			híbrida implica la construcción de una nueva educación, formas de gestión
+			diferenciadas con uso de estructuras sincrónicas, asincrónicas, automatizadas y
+			manuales; dinámicas más flexibles para atender la creciente demanda de acceso y
+			promover la creación de una diversidad de ambientes de aprendizaje ajustados a
+			las singularidades de los diversos campos profesionales, del conocimiento y
+			sociales. </p><p></p><p>La educación híbrida es la
+			expresión integrada de pedagogías informáticas y de los impulsos a la
+			internacionalización de la enseñanza y la movilidad académica. En este
+			contexto, los recursos digitales de aprendizaje imponen nuevas formas del
+			trabajo docente, y conforman un sistema en el que la inteligencia artificial y
+			la programación informática y educativa permiten sustituir componentes de las
+			tradicionales labores docentes directas o presenciales en el proceso de
+			enseñanza-aprendizaje.</p><p></p><p>La educación híbrida expresa una
+			articulación entre el trabajo del docente y los ambientes virtuales y, al mismo
+			tiempo, mejora las experiencias estudiantiles y docentes, creando interacciones
+			pedagógicas más acordes con la realidad contemporánea. </p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>La siguiente presentación
+			profundiza acerca de las características específicas de la educación en
+			modalidad híbrida.</p>
+			<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+			<path
+			d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+			id='path2'
+			style='fill:#0055d4' />
+			</svg>A continuación, haga clic en la flecha de la derecha para ver su contenido.</p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+			<div style='text-align: center'>
+			<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6310d98d8002910012fc9b0e" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+			</div>
+			</div>
+			<div class='col-3'></div>
+			</div>
+			<br>
+			<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+			<p>Una
+			vez que ha analizado las características de la educación en modalidad híbrida,
+			explore la siguiente infografía interactiva para conocer los distintos
+			escenarios en los que se puede mostrar esta modalidad.</p>
+			</div>
+			<div class='col-2'></div>
+			</div>
+			<div class='row'>
+				<div class='col-3'></div>
+				<div class='col'>
+				<div style='text-align: center'>
+					<div style="width: 100%;"><div style="position: relative; padding-bottom: 93.85%; padding-top: 0; height: 0;"><iframe title="PROFA_Educ Híbrida - F1- 1.1.3_2" frameborder="0" width="1300" height="1220" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/63c44f0a93d47f0019a300c4" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+				</div>
+				</div>
+				<div class='col-3'></div>
+				</div>
+			
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="https://www.uv.mx/" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p class="fuente">Mercadeo Opensky. (2013, 14 de Agosto). <em>&iquest;Qu&eacute; es la </em><em>Educacion</em><em> Virtual. </em>[Video]. Youtube. <a href="https://www.youtube.com/watch?v=SW_esTMlu7w">https://www.youtube.com/watch?v=SW_esTMlu7w</a></p>
+						<p class="fuente">MicrosoftES. (2020, 16 de marzo). <em>Qu&eacute; es Teams</em>. [Video]. Youtube. <a href="https://www.youtube.com/watch?v=BEN_frSQaW8">https://www.youtube.com/watch?v=BEN_frSQaW8</a></p>
+						<p class="fuente">Rama, C. (2021). <em>La Nueva Educaci&oacute;n Hibrida. </em>Cuadernos de Universidades. Uni&oacute;n de Universidades de Am&eacute;rica Latina y el Caribe. <a href="https://www.udual.org/principal/wp-content/uploads/2021/03/educacion_hibrida_isbn_interactivo.pdf">https://www.udual.org/principal/wp-content/uploads/2021/03/educacion_hibrida_isbn_interactivo.pdf</a></p>
+						<p class="fuente">Romero-Mayoral, J., Garc&iacute;a-Dom&iacute;nguez, M., Roca-Gonz&aacute;lez, C., Sanju&aacute;n Hern&aacute;n-P&eacute;rez, A. &amp; Pulido-Alonso, A. (2014). Dise&ntilde;o de un aprendizaje adaptado a las necesidades del alumno. <em>Teor&iacute;a de la Educaci&oacute;n. Educaci&oacute;n y Cultura en la Sociedad de la Informaci&oacute;n, 15</em>(3), 172-189. Universidad de Salamanca. <a href="https://www.redalyc.org/pdf/2010/201032662010.pdf">https://www.redalyc.org/pdf/2010/201032662010.pdf</a></p>
+						
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+						<p class="fuente">Amestoy, M. (2002). La investigaci&oacute;n sobre el desarrollo y la ense&ntilde;anza de las habilidades de pensamiento. <em>Revista Electr&oacute;nica de Investigaci&oacute;n Educativa</em>, 4(1). <a href="https://redie.uabc.mx/redie/article/view/55/1379">https://redie.uabc.mx/redie/article/view/55/1379</a></p>
+						<p class="fuente">Andriano, J. (2020). <em>Planeaci&oacute;n h&iacute;brida en tiempos de COVID-19. </em>Educaci&oacute;n futura. Periodismo de inter&eacute;s P&uacute;blico. <a href="https://www.educacionfutura.org/planeacion-hibrida-en-tiempos-de-covid-19/">https://www.educacionfutura.org/planeacion-hibrida-en-tiempos-de-covid-19/</a></p>
+						<p class="fuente">Barber&aacute;, E. (2006). Aportaciones de la Tecnolog&iacute;a a la e-Evaluaci&oacute;n. <em>RED. Revista de Educaci&oacute;n a Distancia. </em>Universidad de Murcia. <a href="https://www.um.es/ead/red/M6/barbera.pdf">https://www.um.es/ead/red/M6/barbera.pdf</a></p>
+						<p class="fuente">Bordas, F. &amp; Cabrera, F. A. (2010). Evaluaci&oacute;n educativa de aprendizajes y competencias. <em>Revista Espa&ntilde;ola de Pedagog</em><em>&iacute;a</em><em>. </em></p>
+						<p class="fuente">Castillo, S. &amp; Cabrerizo, J. (2001). Estrategias de Evaluaci&oacute;n de los aprendizajes centrados en el proceso. <em>Revista Espa&ntilde;ola de Pedagog&iacute;a</em>, LIX(25-48).&nbsp;</p>
+						<p class="fuente">El Pa&iacute;s. (2021, enero, 26). Un pa&iacute;s para aprender (resumen) con Mariano Fern&aacute;ndez Enguita, Luis Miguel Olivas y Magdalena Brier. [Video]. Youtube. <a href="https://www.youtube.com/watch?v=JjjhKFM8FcE&amp;t=88s">https://www.youtube.com/watch?v=JjjhKFM8FcE&amp;t=88s</a></p>
+						<p class="fuente">Ibarra, M. S. &amp; Rodr&iacute;guez, G. (2010). Aproximaci&oacute;n al discurso dominante sobre la evaluaci&oacute;n del aprendizaje en la universidad. <em>Revista de Educaci&oacute;n, </em>35 (385-407). Gobierno de Espa&ntilde;a. Ministerio de Educaci&oacute;n y Formaci&oacute;n Profesional.</p>
+						<p class="fuente">Jos&eacute; Francisco Leyva Vasquez. (2020). <em>Educaci&oacute;n hibrida. </em>[Video]. Youtube. <a href="https://www.youtube.com/watch?v=Zkcin5m3zuA&amp;t=1s">https://www.youtube.com/watch?v=Zkcin5m3zuA&amp;t=1s</a></p>
+						<p class="fuente">Rodr&iacute;guez, G., Ibarra, M. S. &amp; G&oacute;mez, M. A. (2011). e-Autoevaluaci&oacute;n en la universidad: un reto para profesores y estudiantes. <em>Revista de Educaci&oacute;n (Madrid)</em>, 356(401-430).<a href="http://www.revistaeducacion.educacion.es/re356/re3%2056_17.pdf">http://www.revistaeducacion.educacion.es/re356/re3 56_17.pdf</a></p>
+						<p class="fuente">Ruiz, Y. A. (2014). E-Evaluaci&oacute;n del aprendizaje: Aproximaci&oacute;n conceptual. <em>Revistas Cient&iacute;ficas de Educaci&oacute;n en Red. </em><a href="https://cuedespyd.hypotheses.org/358">https://cuedespyd.hypotheses.org/358</a></p>
+						<p class="fuente">Santos, M. A. (1999). Un proceso de di&aacute;logo, comprensi&oacute;n y mejora. <em>Evaluaci&oacute;n educativa 1. </em>Magisterio del R&iacute;o Plata, (pp. 4-17). <a href="https://www.cucs.udg.mx/avisos/Martha_Pacheco/Software%20e%20hipertexto/Antologia_Electronica_pa121/Santos%20G.Eval.PDF">https://www.cucs.udg.mx/avisos/Martha_Pacheco/Software%20e%20hipertexto/Antologia_Electronica_pa121/Santos%20G.Eval.PDF</a></p>
+
+					</div>
+
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">1</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+								<p class="referencia">
+									<sup class="contadorReferencia">2</sup> Lumen UV. https://lumen.uv.mx/recursoseducativos/aulas-hibridas/tema-2.html
+								</p>
+								<p class="referencia">
+									<sup class="contadorReferencia">3</sup> Lumen UV. https://lumen.uv.mx/recursoseducativos/aulas-hibridas/tema-2.html
+								</p>
+								<p class="referencia">
+									<sup class="contadorReferencia">4</sup> Lumen UV. https://lumen.uv.mx/recursoseducativos/aulas-hibridas/tema-2.html
+								</p>
+								<p class="referencia">
+									<sup class="contadorReferencia">5</sup> Lumen UV. https://lumen.uv.mx/recursoseducativos/aulas-hibridas/tema-2.html
+								</p>
+								<p class="referencia">
+									<sup class="contadorReferencia">6</sup> Lumen UV. https://lumen.uv.mx/recursoseducativos/aulas-hibridas/tema-2.html
+								</p>
+								<p class="referencia">
+									<sup class="contadorReferencia">7</sup> Lumen UV. https://lumen.uv.mx/recursoseducativos/aulas-hibridas/tema-2.html
+								</p>
+								<p class="referencia">
+									<sup class="contadorReferencia">8</sup> Lumen UV. https://lumen.uv.mx/recursoseducativos/aulas-hibridas/tema-2.html
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<div class="row">
+					  <div class="col">
+						<div id="evidencia1">
+							<p><strong>Foro 1. Modalidad h&iacute;brida y sus diferentes escenarios. </strong></p>
+							<p><strong>Descripci&oacute;n:</strong></p>
+							<ol>
+							<li>Despu&eacute;s de consultar los recursos que corresponden a esta primera fase, en un archivo de Word, responda las siguientes preguntas gu&iacute;a:
+							<ol type="a">
+							<li>&iquest;C&oacute;mo se entiende el concepto de <strong>educaci&oacute;n h&iacute;brida</strong>?</li>
+							<li>Adem&aacute;s de los revisados, &iquest;qu&eacute; otros escenarios educativos considera que pueden ser h&iacute;bridos?</li>
+							<li>Tomando en cuenta el contexto, &iquest;c&oacute;mo debe ser la pr&aacute;ctica docente en esa modalidad espec&iacute;fica?</li>
+							<li>&iquest;Qu&eacute; facilidades u obst&aacute;culos considera que se pueden dar con este modelo en la pr&aacute;ctica docente?</li>
+							</ol>
+							</li>
+							<li>Recuerde: el apartado de Foros se encuentra en la plataforma Eminus 4, en el menú de la izquierda, se puede identificar con el icono en forma de nube de chat.</li>
+							<li>Intercambie el documento Word con el compa&ntilde;ero de su elecci&oacute;n.</li>
+							<li>A partir de una actitud de apertura a las ideas, respeto y colaboración, intercambie opiniones y retroalimente a su compañero.</li>
+							<li>Su intervenci&oacute;n deber&aacute; apegarse estrictamente a las consideraciones descritas en las&nbsp;<a target="_blank" href="documentos/reglasForo.pdf">Reglas para participar en los foros de discusi&oacute;n</a>.</li>
+							</ol>
+							<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+							<ol>
+							<li>Consulte la <a href="documentos/rubrica.pdf" target="_blank">R&uacute;brica de evaluaci&oacute;n</a> para la participaci&oacute;n en este foro.</li>
+							<li>Apego a las instrucciones.</li>
+							<li>Redacci&oacute;n y ortograf&iacute;a adecuadas.</li>
+							<li>Retroalimentaci&oacute;n de la participaci&oacute;n de un compa&ntilde;ero.</li>
+							</ol>
+							<p><strong>Lineamientos de entrega:</strong></p>
+							<ol>
+							<li>Titule el archivo de la siguiente manera: Foro1_PrimerApellidoyPrimerNombre. Por ejemplo: Foro1_VillanuevaTeresa.</li>
+							<li>Suba su evidencia al apartado&nbsp;<strong>Foro 1 . Modalidad h&iacute;brida y sus diferentes escenarios</strong>, en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el&nbsp;<strong>Calendario</strong>&nbsp;de entregas.</li>
+							</ol>
+						</div>
+					  </div>
+
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>

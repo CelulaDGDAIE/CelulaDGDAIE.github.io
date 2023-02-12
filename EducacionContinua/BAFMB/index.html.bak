@@ -19,7 +19,7 @@
 			<div class="row">
 				
 				<div class="col align-self-center centrado">
-					<p id="tituloEscritorio">$@tituloEscritorio</p>
+					<p id="tituloEscritorio">Bioarqueología y Antropología forense: metodologías básicas </p>
 				</div>
 				<div class="col-1"></div>
 				<div class="col-1 align-self-center">
@@ -34,6 +34,9 @@
 				<div class="col-1 align-self-center">
 					<a href="fase3.html" class="enlaceModulo enlaceActivo"><strong>Módulo 3</strong></a>
 				</div>
+				<div class="col-1 align-self-center">
+				<span><strong>Zoom: </strong><button style="height:40px;width:40px" onclick="reducirLetra()" type="button" style="text-align:center; font-size:small;">A-</button><button style="height:40px;width:40px" onclick="aumentarLetra()" type="button" style="text-align:center; font-size:large;">A+</button></span>
+			</div>
 				<div class="col-3"></div>
 				
 			</div>
@@ -69,7 +72,8 @@
 						<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i class="bi bi-list"></i></button>
 					</div>
 					<div class="col" id="tituloPresentacionScroll">
-						$@tituloPresentacionScroll
+						Bioarqueología y Antropología forense: metodologías básicas 
+
 					</div>
 				</div>
 			</div>
@@ -88,11 +92,11 @@
 		
 		<!-------------------------------------------- Banner ---------------------->
 		<div class="video-container" id="banner">
-			<div class="overlay"></div>
 			<video autoplay muted loop>
-				<source src="videos/banner.mp4" type="video/mp4" />
+				<source src="https://lumen.uv.mx/resources/files/videos/2022/11/3/7467/6a8750cf-89ae-41c1-af00-2c2ed6601302.mp4" type="video/mp4" />
 			</video>
 		</div>
+		<p style="text-align: right;">[1]</p>
 		<!-------------------------------------------- /Banner ---------------------->
 		<br>
 
@@ -115,7 +119,8 @@
 					</h2>
 					<div id="collapsePresentacion" class="accordion-collapse collapse" aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
 						<div class="accordion-body" id="textoPresentacion">
-							$@textoPresentacion
+							<p>La Biorqueolog&iacute;a se centra en el estudio de las sociedades antiguas a trav&eacute;s de los restos &oacute;seos en contextos arqueol&oacute;gicos. El objetivo de este curso es proporcionar las bases te&oacute;ricas y metodol&oacute;gicas para la identificaci&oacute;n humana mediante el an&aacute;lisis de los restos &oacute;seos, lo cual te permitir&aacute; realizar planteamientos integrales en la investigaci&oacute;n de poblaciones pret&eacute;ritas, considerando el ambiente social, econ&oacute;mico, pol&iacute;tico y f&iacute;sico. Por otra parte, dentro del &aacute;mbito forense, la identificaci&oacute;n de restos humanos, actualmente se considera como una necesidad social y legal&nbsp; en nuestro pa&iacute;s, por ello los interesados en esta &aacute;rea podr&aacute;n colaborar en la resoluci&oacute;n de casos legales, fij&aacute;ndose como objetivo central regresar su identidad a las v&iacute;ctimas, ayudando a sus familiares a procesar su duelo.</p>
+<p>Este curso tiene una duraci&oacute;n de 40 horas distribuidas en diversas actividades de aprendizaje asincr&oacute;nico.</p>
 						</div>
 					</div>
 				</div>
@@ -148,19 +153,44 @@
 					<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
 						<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
 					</div>
-					<div class="col align-self-center centrado">
-						<br><br>
-						<img src="imagenes/presentacion.jpg" class="img-fluid" id="imagenDiapositivas" alt="presentacion">
-						<p class="derecha" id="referenciaImagen">[1]</p>
-					</div>
-					<div class="col-3 align-self-center centrado">
-						<div id="tituloCarrusel">
-							<strong><i class="bi bi-info-circle-fill"></i> Presentacion</strong>
+					
+						<div class="col align-self-center centrado">
+							<br><br>
+							<div id="imagenPresentacion">
+								<img src="https://lumen.uv.mx/resources/files/images/2022/11/7/7486/4dab3e06-31af-4db3-8be7-ee53ee6b843a.jpg" class="img-fluid" id="imagenDiapositivas" alt="presentacion">
+								<p class="derecha" id="referenciaImagen">[2]</p>
+								
+							</div>
+							<div id="imagenUnidad" style="display: none;">
+								<img src="https://lumen.uv.mx/resources/files/images/2022/11/7/7482/d249af82-8abe-4082-ac22-8cd7a8420105.jpg" class="img-fluid" id="imagenDiapositivas" alt="presentacion">
+								<p class="derecha" id="referenciaImagen">[3]</p>
+							</div>
 						</div>
-						<div id="textoCarrusel">
-							$@textoPresentacion
+						<div class="col-3 align-self-center centrado">
+							<div id="divPresentacion">
+								<div id="tituloCarrusel">
+									<strong><i class="bi bi-info-circle-fill"></i> Presentación</strong>
+								</div>
+								<div id="textoCarrusel">
+									<p>La Biorqueolog&iacute;a se centra en el estudio de las sociedades antiguas a trav&eacute;s de los restos &oacute;seos en contextos arqueol&oacute;gicos. El objetivo de este curso es proporcionar las bases te&oacute;ricas y metodol&oacute;gicas para la identificaci&oacute;n humana mediante el an&aacute;lisis de los restos &oacute;seos, lo cual te permitir&aacute; realizar planteamientos integrales en la investigaci&oacute;n de poblaciones pret&eacute;ritas, considerando el ambiente social, econ&oacute;mico, pol&iacute;tico y f&iacute;sico. Por otra parte, dentro del &aacute;mbito forense, la identificaci&oacute;n de restos humanos, actualmente se considera como una necesidad social y legal&nbsp; en nuestro pa&iacute;s, por ello los interesados en esta &aacute;rea podr&aacute;n colaborar en la resoluci&oacute;n de casos legales, fij&aacute;ndose como objetivo central regresar su identidad a las v&iacute;ctimas, ayudando a sus familiares a procesar su duelo.</p>
+									<p>Este curso tiene una duraci&oacute;n de 40 horas distribuidas en diversas actividades de aprendizaje asincr&oacute;nico.</p>
+								</div>
+							</div>
+							<div id="divUnidad" style="display: none;">
+
+							<div id="tituloCarrusel">
+								<strong><i class="bi bi-info-circle-fill"></i> Objetivo general</strong>
+							</div>
+							<div id="textoCarrusel">
+								<p>Proporcionar las metodologías básicas para la identificación humana a través de los restos óseos.
+</p>
+							</div>
+							</div>
 						</div>
-					</div>
+						
+					
+						
+					
 					<div class="col-1 col align-self-center centrado" id="columnaDerecha">
 						<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
 					</div>
@@ -187,18 +217,18 @@
 					<div class="col">
 						<div class="row">
 							<div class="col moduloContenido" id="modulo1" onclick="location.href = 'fase1.html';">
-								<p class="textoModuloEscritorio" id="tituloModulo1Movil">$@tituloModulo1</p>
+								<p class="textoModuloEscritorio" id="tituloModulo1Movil">Módulo 1. Interdisciplinariedad. </p>
 							</div>
 							<div class="col-1"></div>
 							<div class="col moduloContenido" id="modulo2" onclick="location.href = 'fase2.html';">
-								<p class="textoModuloEscritorio" id="tituloModulo2Movil">$@tituloModulo2</p>
+								<p class="textoModuloEscritorio" id="tituloModulo2Movil">Módulo 2. El cuerpo humano. </p>
 							</div>
 						</div>
 						<br>
 						<div class="row">
 							<div class="col-2"></div>
 							<div class="col moduloContenido" id="modulo3" onclick="location.href = 'fase3.html';">
-								<p class="textoModuloEscritorio" id="tituloModulo3Movil">$@tituloModulo3</p>
+								<p class="textoModuloEscritorio" id="tituloModulo3Movil">Módulo 3. Paleopatología. </p>
 							</div>
 							<div class="col-2"></div>
 						</div>
@@ -287,8 +317,46 @@
 								</button>
 							</h2>
 							<div id="contenidoCreditos" class="accordion-collapse collapse" aria-labelledby="encabezadoCreditos" data-bs-parent="#acordeonCreditos">
-								<div class="accordion-body" id="textoCreditos">
-									
+								<div class="accordion-body" id="textoCreditos" style="margin-left: 30px" >
+									<p><strong>CR&Eacute;DITOS</strong></p>
+<p style="margin-left: -20px"><strong>Universidad Veracruzana</strong></p>
+<p>&nbsp;</p>
+
+<p><strong>Dr. Juan Ortiz Escamilla</strong></p>
+<p>Secretar&iacute;a Acad&eacute;mica</p>
+<p><strong>Dr. Luis Alejandro Gazca Herrera</strong></p>
+<p>Coordinaci&oacute;n General de Educaci&oacute;n en L&iacute;nea</p>
+<p>&nbsp;</p>
+<p style="margin-left: -20px"><strong>Direcci&oacute;n General de Desarrollo Acad&eacute;mico e Innovaci&oacute;n Educativa (DGDAIE)</strong></p>
+<p>&nbsp;</p>
+<p><strong>Dra. Elizabeth Ocampo G&oacute;mez</strong><br /> Direcci&oacute;n General</p>
+<p><strong>Mtro. Edgar Iván	Nájera Morales</strong></p>
+<p>Direcci&oacute;n de Innovaci&oacute;n Educativa</p>
+<p><strong>Mtra.	Araceli	Argüello	Aguilar</strong></p>
+<p>Dirección	de	Fortalecimiento	Académico</p>
+<p><strong>Mtro. Rafael Lucio Pérez Rojas</strong></p>
+<p>Departamento de Educaci&oacute;n Continua</p>
+<br>
+<p style="margin-left: -20px"><strong>Autoría	del	curso	de	Educación	Continua</strong></p>
+<p><strong>Dra. Margarita Meza Manzanilla</strong></p>
+<p>Experta en contenido</p>
+<p>&nbsp;</p>
+<p><strong>C&eacute;lula de desarrollo de Experiencias Educativas virtuales de la DGDAIE</strong></p>
+<p>&nbsp;</p>
+<p><strong>Mtra. Luz Mariela Cabrera Hern&aacute;ndez</strong></p>
+<p>Coordinaci&oacute;n de C&eacute;lula de Desarrollo</p>
+<p><strong>Mtro. Mario Evaristo Gonz&aacute;lez M&eacute;ndez</strong></p>
+<p>Dise&ntilde;o instruccional</p>
+<p><strong>Mtro. Josafat Murillo Hern&aacute;ndez</strong></p>
+<p>Gesti&oacute;n de contenido</p>
+<p><strong>Mtra. Alicia Mora Rodr&iacute;guez</strong></p>
+<p>Correcci&oacute;n de estilo</p>
+<p><strong>Mtro. Aurelio Hern&aacute;ndez Guerrero</strong></p>
+<p>Dise&ntilde;o gr&aacute;fico</p>
+<p><strong>Mtro. Jonathan Iv&aacute;n Guti&eacute;rrez Palma</strong></p>
+<p>Experto en medios</p>
+<p><strong>Mtro. Renato Vargas G&oacute;mez</strong></p>
+<p>Programaci&oacute;n</p>
 								</div>
 							</div>
 						</div>
@@ -358,16 +426,22 @@
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="encabezadoDisclaimer" >
 								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contenidoDisclaimer" aria-expanded="false" aria-controls="flush-collapseOne" id="boton-disclaimer">
-									<em>Disclaimer</em>
+									<em>Descargo de responsabilidad</em>
 								</button>
 							</h2>
 							<div id="contenidoDisclaimer" class="accordion-collapse collapse" aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
 								<div class="accordion-body">
 									<p class="referencia" id="referencias">
-										<sup class="contadorReferencia">1</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+										<sup class="contadorReferencia">1</sup> Lumen. Repositorio Digital Universitario. Universidad Veracruzana.
+										https://lumen.uv.mx/lumen/resource/filter/organization/33/channel/293/resources
 									</p>
 									<p class="referencia" id="referencias">
-										<sup class="contadorReferencia">2</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+										<sup class="contadorReferencia">2</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección
+										General de Desarrollo e Innovación Educativa (DGDAIE).
+									</p>
+									<p class="referencia" id="referencias">
+										<sup class="contadorReferencia">3</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección
+										General de Desarrollo e Innovación Educativa (DGDAIE).
 									</p>
 								</div>
 							</div>
@@ -408,70 +482,70 @@
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div class="modal-body">
-							<table id="tablaEvidencia">
-								<tbody>
-								<tr>
-								<td style="width:20%">
-								<p><strong>M&oacute;dulo</strong></p>
-								</td>
-								<td>
-								<p><strong>Evidencias de desempe&ntilde;o</strong></p>
-								</td>
-								<td>
-								<p><strong>Porcentaje</strong></p>
-								</td>
-								</tr>
-								<tr>
-								<td>
-								<p>M&oacute;dulo 1</p>
-								</td>
-								<td>
-								<p>Actividad 1. Cuadro de registro de tres opciones de revistas para publicar el art&iacute;culo.</p>
-								</td>
-								<td>
-								<p>15%</p>
-								</td>
-								</tr>
-								<tr>
-								<td rowspan="2">
-								<p>M&oacute;dulo 2</p>
-								</td>
-								<td>
-								<p>Actividad 2. Borrador del planteamiento del problema.</p>
-								</td>
-								<td>
-								<p>25%</p>
-								</td>
-								</tr>
-								<tr>
-								<td>
-								<p>Actividad 3. Borrador del estado del arte.</p>
-								</td>
-								<td>
-								<p>30%</p>
-								</td>
-								</tr>
-								<tr>
-								<td>
-								<p>M&oacute;dulo 3</p>
-								</td>
-								<td>
-								<p>Actividad 4. Borrador de metodología, presentación y discusión de resultados.</p>
-								</td>
-								<td>
-								<p>30%</p>
-								</td>
-								</tr>
-								<tr>
-								<td>&nbsp;</td>
-								<td>
-								<p><strong>Total</strong></p>
-								</td>
-								<td>
-								<p><strong>100 %</strong></p>
-								</td>
-								</tr>
-								</tbody>
+							<table class="table table-bordered">
+							<tbody>
+							<tr>
+							<td>
+							<p><strong>M&oacute;dulos</strong></p>
+							</td>
+							<td>
+							<p><strong>Evidencias de desempe&ntilde;o</strong></p>
+							</td>
+							<td>
+							<p><strong>Porcentaje</strong></p>
+							</td>
+							</tr>
+							<tr>
+							<td rowspan="2">
+							<p>M&oacute;dulo 1</p>
+							</td>
+							<td>
+							<p>Cuestionario.</p>
+							</td>
+							<td>
+							<p>15%</p>
+							</td>
+							</tr>
+							<tr>
+							<td>
+							<p>Cuadro comparativo.</p>
+							</td>
+							<td>
+							<p>15%</p>
+							</td>
+							</tr>
+							<tr>
+							<td>
+							<p>M&oacute;dulo 2</p>
+							</td>
+							<td>
+							<p>Cuestionario.</p>
+							</td>
+							<td>
+							<p>30%</p>
+							</td>
+							</tr>
+							<tr>
+							<td>
+							<p>M&oacute;dulo 3</p>
+							</td>
+							<td>
+							<p>Informe final.</p>
+							</td>
+							<td>
+							<p>40%</p>
+							</td>
+							</tr>
+							<tr>
+							<td>&nbsp;</td>
+							<td>
+							<p><strong>Total</strong></p>
+							</td>
+							<td>
+							<p><strong>100 %</strong></p>
+							</td>
+							</tr>
+							</tbody>
 							</table>
 						</div>
 						<div class="modal-footer">

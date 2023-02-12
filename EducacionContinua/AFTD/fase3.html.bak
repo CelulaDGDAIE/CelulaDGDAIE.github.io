@@ -1,0 +1,448 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">$@tituloEscritorio</p>
+				<p id="subtituloPresentacion">$@subtituloModulo1</p>
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="fase1.html" class="enlaceModulo enlaceActivo"><strong>Módulo 1</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="fase2.html" class="enlaceModulo enlaceActivo"><strong>Módulo 2</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+                <a href="#" class="enlaceModulo"><strong>Módulo 3</strong></a>
+			</div>
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">$@tituloPresentacion</p>
+				<p id="subtituloPresentacionMovil">$@subtituloPresentacion</p>
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">$@tituloPresentacionScroll</p>
+					<p id="subtituloPresentacionScroll">$@subtituloPresentacion</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="#" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Módulo 1</a>
+		<a href="#" class="w3-bar-item w3-button">Módulo 2</a>
+		<a href="#" class="w3-bar-item w3-button">Módulo 3</a>
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aireSuperior fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<img src="https://lumen.uv.mx/resources/files/images/2022/10/6/7375/b274a858-87d2-4275-bb42-15003e246b3f.jpg" class="img-fluid" id="imagenDiapositivas"
+						alt="presentacion">
+						<p style="text-align: right;">[1]</p>
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						$@textoPresentacion
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaDerecha">
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<br>
+		<div id="diapositivasInformacion">
+			<div class="row aireSuperior fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoAzul" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Situación problematizadora</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						<p>El siguiente video expone la importancia de calcular el <strong>punto de equilibrio </strong>financiero en cualquier emprendimiento, rev&iacute;selo atentamente.</p><div style="text-align: center;"><iframe title="YouTube video player" src="https://www.youtube.com/embed/R1fudBO1Fpk" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><p><strong>Reflexione:</strong></p><ol><li>&iquest;Ha emprendido alg&uacute;n negocio?, &iquest;en qu&eacute; informaci&oacute;n se ha basado para la toma de decisiones financieras respecto de su negocio?</li><li>&iquest;Ha calculado el punto de equilibrio de su emprendimiento?</li><li>&iquest;Considera que esta informaci&oacute;n financiera ser&iacute;a &uacute;til para los emprendedores en las PyMEs?, &iquest;por qu&eacute;?</li></ol>
+
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaDerecha">
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire Azul">
+				<div class="col-2 vacio"></div>
+				<div class="col Azul" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo del contenido del curso</p>
+		<div class="row" style="color: white;">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold;" class="fondoVerde tituloSeccion">3.1. Punto de equilibrio
+				</h1>
+                <br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+        <div class="row" >
+			<div class="col-2"></div>
+			<div class="col">
+                <p>Observe y analice la siguiente presentación en la que se explica qué es el <strong>punto de equilibrio</strong> y cómo calcularlo.</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg>Haga clic en el botón de la derecha para revisar la información.
+				</p>
+				<div style="text-align: center;">
+					<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6317a056942b660018e5447c" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+				</div>
+                
+			</div>
+			<div class="col-2"></div>
+		</div>
+		
+		<hr>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold; color: white;" class="fondoAzul tituloSeccion">3.2. Método de Z2 Altman
+				</h1>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<br>
+
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<p>Observe y analice la siguiente presentación en la que se explica cómo aplicar el Método de Z2 Altman.
+				</p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg> Haga clic en el botón de la derecha para conocer la información.
+				</p>
+				<div style="text-align: center;">
+					<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6317db76041e5e0018e0e215" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de Desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="https://www.uv.mx/" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p class="fuente">Fundaci&oacute;n Ita&uacute; Argentina. (2021, 25 de junio). <em>Punto de equilibrio: un dato clave en tu emprendimiento</em>. [Video]. Youtube. <a href="https://youtu.be/R1fudBO1Fpk">https://youtu.be/R1fudBO1Fpk</a></p>
+						<p class="fuente">Gitman, L. G. &amp; Zutter, Ch. J. (2021). <em>Principios de administraci&oacute;n financiera</em>. 14&ordf; ed. Pearson Education.</p>
+						<p class="fuente">Guajardo, G. (2020). <em>Contabilidad Financiera</em>. Mc Graw Hill.</p>
+						<p class="fuente">Mej&iacute;a, M., &amp; Flores, J. (2020). Aplicaci&oacute;n del Modelo Z- Score de Altman para clasificar niveles de quiebra financiera en el sector comercial de la provincia de Manab&iacute;-Ecuador. 593 <em>Digital Publisher CEIT, 5</em>(5-1), 26-39. <a href="https://doi.org/10.33386/593dp.2020.5-1.318">https://doi.org/10.33386/593dp.2020.5-1.318</a></p>
+						<p class="fuente">Perdomo, A. (2021). <em>An&aacute;lisis e interpretaci&oacute;n de estados financieros</em> 14a ed. Pema.</p>
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+						<p class="fuente">Besley, S. &amp; Brigham, E. (2009). Fundamentos de administraci&oacute;n financiera, 14&ordf; ed.&nbsp;Cengage Learning. <u><a href="https://elibro.net/es/lc/bibliotecauv/titulos/40028">https://elibro.net/es/lc/bibliotecauv/titulos/40028</a></u></p>
+						<p class="fuente">Dom&iacute;nguez, J. (2012). An&aacute;lisis de punto de equilibrio. <em>Finanzas</em>. Wiki EOI. <a href="https://www.eoi.es/wiki/index.php/An%C3%A1lisis_de_punto_de_equilibrio_en_Finanzas">https://www.eoi.es/wiki/index.php/An%C3%A1lisis_de_punto_de_equilibrio_en_Finanzas</a></p>
+						<p class="fuente">Dom&iacute;nguez, J. Olalla, F. &amp; Catalina, J. (2020). <em>Finanzas</em>. Wiki EOI. <a href="https://www.eoi.es/wiki/index.php/Finanzas">https://www.eoi.es/wiki/index.php/Finanzas</a></p>
+						<p class="fuente">Kennedy R. D. (1992). <em>Estados Financieros: forma, an&aacute;lisis e interpretaci&oacute;n, </em>2&ordf; ed. Limusa.</p>
+						<p class="fuente">Ochoa, G. (2020). <em>Administraci&oacute;n Financiera correlacionada con las </em><em>NIF&rsquo;s</em><em>. </em>Mc Graw Hill.&nbsp;</p>
+						<p class="fuente">Rocha, R. (2021). <em>Estados Financieros seg&uacute;n las </em><em>NIF&rsquo;s</em>. Fondo Editorial del IMCP.</p>
+						<p class="fuente">Salazar, B. (2019). An&aacute;lisis del punto de equilibrio. Ingenier&iacute;a Industrial Online.com. <a href="https://www.ingenieriaindustrialonline.com/produccion/analisis-del-punto-de-equilibrio/">https://www.ingenieriaindustrialonline.com/produccion/analisis-del-punto-de-equilibrio/</a></p>
+						<p class="fuente">Wiki, T. (s. f.).&nbsp;<em>Puntaje Z de Altman</em>. Hmong.es; tok.wiki. Recuperado el 19 de agosto de 2022, de <a href="https://hmong.es/wiki/Altman_Z-score">https://hmong.es/wiki/Altman_Z-score</a></p>
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								<p class="referencia" id="referencias">
+									<sup class="contadorReferencia">1</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+								</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<div class="row">
+					  <div class="col">
+						<div id="evidencia1">
+							<p><strong>Actividad 4: Caso práctico 2. Aplicación del Método Z Altman y otros indicadores.</strong></p>
+                            <p><strong>Descripci&oacute;n:</strong></p>
+                            <p>El participante  utilizará los datos de los estados financieros de la empresa X, S.A., contenidos en la hoja de Excel disponible al dar clic en el icono de descarga.</p>
+                            <div style="text-align: center;">
+								<a target="_blank" href="documentos/Caso1_Módulo2_19ago2022.xlsx"><img src="imagenes/externo2.png" style="width: 10%;"></a>
+							
+							</div>
+							<p>Con base en la información del archivo determine, mediante el metodo Z Altman, la evaluación de la empresa.</p>
+							<p><strong>Criterios de desempe&ntilde;o:</strong></p>
+							<p>Este es un caso práctico aplicando tendencias, porcientos integrales, razones financieras con un valor de 40 puntos, en donde el participante interpretará cada uno de los indicadores, utilizando los ejemplos descritos.
+							</p>
+                            <p><strong>Lineamientos de entrega: </strong></p>
+                            <ol>
+								<li>Debe entregarse al concluir el tercer m&oacute;dulo, en un formato de Excel y con los cuadros res&uacute;menes contenidos en el mismo.</li>
+								<li>Titule el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo: Act4_VillanuevaMariaTeresa</li>
+								<li>Suba su archivo Excel a trav&eacute;s del apartado <strong>Actividades</strong> de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario de entregas</strong>.</li>
+							</ol>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/contenidoFase3.js"></script>
+	<script src="js/scriptFase3.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>

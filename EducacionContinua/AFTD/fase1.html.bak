@@ -1,0 +1,683 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">$@tituloEscritorio</p>
+				<p id="subtituloPresentacion">$@subtituloModulo1</p>
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="#" class="enlaceModulo"><strong>Módulo 1</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="fase2.html" class="enlaceModulo enlaceActivo"><strong>Módulo 2</strong></a>
+			</div>
+			<div class="col-1 align-self-center">
+				<a href="fase3.html" class="enlaceModulo enlaceActivo"><strong>Módulo 3</strong></a>
+			</div>
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">$@tituloPresentacion</p>
+				<p id="subtituloPresentacionMovil">$@subtituloPresentacion</p>
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">$@tituloPresentacionScroll</p>
+					<p id="subtituloPresentacionScroll">$@subtituloPresentacion</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="#" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Módulo 1</a>
+		<a href="#" class="w3-bar-item w3-button">Módulo 2</a>
+		<a href="#" class="w3-bar-item w3-button">Módulo 3</a>
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aireSuperior fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<img src="https://lumen.uv.mx/resources/files/images/2022/10/6/7377/3f367a57-e8be-42ab-bf1b-57aabd53c459.jpg" class="img-fluid" id="imagenDiapositivas"
+						alt="presentacion">
+						<p style="text-align: right;">[1]</p>
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						$@textoPresentacion
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaDerecha">
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<br>
+		<div id="diapositivasInformacion">
+			<div class="row aireSuperior fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoAzul" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Situación Problematizadora</strong>
+					</div>
+					<br>
+					<div>
+						<p><strong>Observe el siguiente video en el que se explica la importancia del an&aacute;lisis financiero y algunas de sus caracter&iacute;sticas. Luego reflexione:</strong></p>
+						<ol style="text-align: justify;"><li>&iquest;Cu&aacute;l es la importancia de realizar un an&aacute;lisis financiero dentro de una empresa?</li><li>&iquest;De qu&eacute; manera influye la informaci&oacute;n que nos proporcionan los estados financieros para la toma de decisiones dentro de una empresa?</li><li>&iquest;C&oacute;mo espera que este curso le ayude a superar los nuevos retos de sostenibilidad financiera a los que se enfrentan las empresas?</li></ol><p>&nbsp;</p><div style="text-align: center;"><iframe title="YouTube video player" src="https://www.youtube.com/embed/vxp6jeVAEQE" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaDerecha">
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo del contenido del curso</p>
+		<div class="row" style="color: white;">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold;" class="fondoVerde tituloSeccion">1.1. Estructura de los estados financieros
+				</h1>
+				<hr>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg> Haga clic en la pestaña correspondiente para ver su contenido. </p>
+				<div style="background-color: #fff"><!--Div por si se quiere editar el fondo de los tabs-->
+					<nav class="nav nav-pills flex-column flex-sm-row">
+					  <a class="flex-sm-fill text-sm-center nav-link active" data-bs-toggle="tab" data-bs-target="#balance">1.1.1. Balance general</a>
+					  <a class="flex-sm-fill text-sm-center nav-link" data-bs-toggle="tab" data-bs-target="#integral">1.1.2. Estado de resultados integral</a>
+					  <a class="flex-sm-fill text-sm-center nav-link" data-bs-toggle="tab" data-bs-target="#efectivo">1.1.3. Estado de flujo de efectivo</a>
+					  <a class="flex-sm-fill text-sm-center nav-link" data-bs-toggle="tab" data-bs-target="#variacion">1.1.4. Estado de variaciones en el capital contable</a>
+
+					</nav>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="balance" role="tabpanel" aria-labelledby="balance-tab" style="text-align: center; margin: 2%">
+							<br>
+							<p >El Balance General o Estado de Situación Financiera (NIF B-6), es el informe financiero que a una fecha específica,  muestra la posición financiera de una entidad económica a un momento determinado y para ese fin se presentan en secciones los activos (lo que posee la entidad), los pasivos (las deudas de la entidad) y la diferencia entre ellos (activos menos pasivos) que es el capital contable de la entidad.</p>
+							<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg>Haga clic en el botón de la derecha para ver el contenido de la siguiente presentación, en el que se exponen los elementos básicos del balance, los formatos de presentación y las partes que lo integran. </p>
+							<div style="text-align: center;">
+								<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6310f99756018000112bf9f3" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+							</div>
+							<br>
+						</div>
+						<div class="tab-pane fade" id="integral" role="tabpanel" aria-labelledby="integral-tab" style="text-align: center; margin: 2%">
+							<br>
+							<p>Observe el siguiente video que expone qué es el Estado de resultados integral, según la NIF B-3, cuál es su estructura y algunas orientaciones para su elaboración.</p>
+							<div style="text-align: center;">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/RgwlrV1a4KI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<br>
+						</div>
+						<div class="tab-pane fade" id="efectivo" role="tabpanel" aria-labelledby="efectivo-tab" style="text-align: center; margin: 2%">
+							<br>
+							<p>El estado de flujo de efectivo (NIF B-2), presenta en forma condensada y comprensible, informaci&oacute;n sobre el manejo de efectivo, es decir, su obtenci&oacute;n y utilizaci&oacute;n por parte de la entidad durante un periodo determinado; es decir, muestra una s&iacute;ntesis de los cambios ocurridos en la situaci&oacute;n financiera para que los usuarios de los estados financieros conozcan y eval&uacute;en la liquidez o solvencia de la entidad.</p>
+<p>La importancia del estado de flujos de efectivo radica en dar a conocer el origen de los flujos de efectivo generados y el destino de los flujos de efectivo aplicados.</p>
+<p>Observe la siguiente informaci&oacute;n para conocer la clasificaci&oacute;n, estructura y m&eacute;todos del estado de flujo de efectivo.</p>
+							<div style="text-align: center;">
+								<div style="width: 100%;"><div style="position: relative; padding-bottom: 122.22222222222223%; padding-top: 0; height: 0;"><iframe frameborder="0" width="900px" height="1100px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6310f99ab8f85c0018fa59e9" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+							</div>
+							<br>
+						</div>
+						<div class="tab-pane fade" id="variacion" role="tabpanel" aria-labelledby="variacion-tab" style="text-align: center; margin: 2%">
+							<br>
+							<p>El estado financiero b&aacute;sico, denominado de variaciones en el capital contable NIF B-4, es donde se presentan todas las operaciones que hayan impactado contablemente a la secci&oacute;n de capital contable, por ejemplo, aportaciones, donaciones, reembolsos, dividendos, capitalizaciones, <em>splits</em>, etc&eacute;tera.</p>
+							<p>Observe el siguiente esquema en el que se exponen su estructura y sus secciones:&nbsp;&nbsp;&nbsp;</p>
+							<div style="text-align: center;">
+								<div style="width: 100%;"><div style="position: relative; padding-bottom: 111.11111111111111%; padding-top: 0; height: 0;"><iframe frameborder="0" width="900px" height="1000px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6312199df3a2ca0012aa536a" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+							</div>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<div class="row" style="color: white;">
+			<div class="col-2"></div>
+			<div class="col">
+				<h1 style="text-align:center; font-weight: bold;" class="fondoAzul tituloSeccion">1.2. Interpretación de estados financieros
+				</h1>
+				<hr>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="3%" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 16 16">
+					<path
+					d="m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z"
+					id="path2"
+					style="fill:#0055d4" />
+				  </svg> Haga clic en la pestaña correspondiente para ver su contenido. </p>
+				<div style="background-color: #fff"><!--Div por si se quiere editar el fondo de los tabs-->
+					<nav class="nav nav-pills flex-column flex-sm-row">
+					  <a class="flex-sm-fill text-sm-center nav-link active" data-bs-toggle="tab" data-bs-target="#importancia1">1.2.1.  Importancia de la información financiera</a>
+					  <a class="flex-sm-fill text-sm-center nav-link" data-bs-toggle="tab" data-bs-target="#importancia2">1.2.2. Importancia de la información financiera</a>
+					  <a class="flex-sm-fill text-sm-center nav-link" data-bs-toggle="tab" data-bs-target="#usuarios">1.2.3.  Usuarios de la información financiera</a>
+					  <a class="flex-sm-fill text-sm-center nav-link" data-bs-toggle="tab" data-bs-target="#ciclo">1.2.4.  Ciclo operativo de la información financiera </a>
+					  <a class="flex-sm-fill text-sm-center nav-link" data-bs-toggle="tab" data-bs-target="#gestion">1.2.5. La gestión empresarial y la información financiera</a>
+
+					</nav>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="importancia1" role="tabpanel" aria-labelledby="importancia1-tab" style="text-align: center; margin: 2%">
+							<br>
+							<p>En la actualidad, las empresas no pueden competir si no cuentan con información financiera veraz, oportuna y confiable, misma que se encuentra contenida en los estados financieros. Mediante la información financiera es posible ver cómo se obtienen y cómo se utilizan los recursos; asimismo, tomar decisiones adecuadas y estratégicas para realizar objetivos, planes y proyectos.</p>
+							<p>Para la obtenci&oacute;n de estos &uacute;ltimos existen dos fuentes principales:</p>
+							<ol style="text-align: left;" type="a">
+							<li><strong> Recursos provenientes </strong>de la operaci&oacute;n del negocio, lo que implica decisiones de operaci&oacute;n.</li>
+							<li><strong> Recursos que aportan los socios</strong>, o bien los obtenidos mediante préstamos bancarios, lo que conduce a decisiones relativas al financiamiento. </li>
+							</ol>
+							<br>
+						</div>
+						<div class="tab-pane fade" id="importancia2" role="tabpanel" aria-labelledby="importancia2-tab" style="text-align: center; margin: 2%">
+							<br>
+							<p>Observe la siguiente infografía que presenta los tipos de decisiones a partir de la información financiera.</p>
+							<div style="text-align: center;">
+								<div style="width: 100%;"><div style="position: relative; padding-bottom: 111.11111111111111%; padding-top: 0; height: 0;"><iframe frameborder="0" width="900px" height="1000px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/63121bb6f3a2ca0012aa5800" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+							</div>
+							<br>
+						</div>
+						<div class="tab-pane fade" id="usuarios" role="tabpanel" aria-labelledby="usuarios-tab" style="text-align: center; margin: 2%">
+							<br>
+							<p>La información financiera que emana de la contabilidad, es una información cuantitativa que muestra la posición, desempeño financiero y rentabilidad de una entidad plasmada en los estados financieros, y cuyo objetivo esencial es el de ser útil al usuario general que permite proporcionar elementos de juicio en la toma de sus decisiones económicas.</p>
+							<p>La información financiera tiene por objetivo cubrir las necesidades de dos diferentes tipos de usuarios: los externos y los internos. Para conocer más acerca de este tema, revise la siguiente infografía:</p>
+							<div style="text-align: center;">
+								<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/63167fd258f0f80018fdd6c1" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+							</div>
+							<br>
+						</div>
+						<div class="tab-pane fade" id="ciclo" role="tabpanel" aria-labelledby="ciclo-tab" style="text-align: center; margin: 2%">
+							<br>
+							<p>El ciclo de operaci&oacute;n de la informaci&oacute;n financiera es el conjunto de actividades que realiza una empresa con el fin de lograr sus objetivos a trav&eacute;s de la satisfacci&oacute;n de sus clientes.</p>
+							<p>A continuaci&oacute;n, haga clic en cada etiqueta del siguiente esquema para conocer m&aacute;s sobre los momentos del ciclo operativo de la informaci&oacute;n financiera.</p>
+							<div style="text-align: center;">
+								<div style="width: 100%;"><div style="position: relative; padding-bottom: 77.27272727272727%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1100px" height="850px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/63167603761b1c00117cfac7" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+
+							</div>
+							<p>En el siguiente cuadro se presenta una comparación de tres empresas del giro de autoservicio en el que se puede apreciar el tiempo promedio que tardan para vender su mercancía o días de inventario, los días que tardan en cobrar a sus clientes o periodo de cobranza y el tiempo promedio que tardan en pagar a sus proveedores o días de pago.</p>
+							<div style="text-align: center;">
+							<table style="background-color: rgb(215, 215, 255);">
+								<tbody>
+								<tr>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>Autoservicio A</td>
+								<td>Autoservicio B</td>
+								<td>Autoservicio C</td>
+								</tr>
+								<tr>
+								<td>Periodo promedio de inventario</td>
+								<td>d&iacute;as</td>
+								<td>62</td>
+								<td>71</td>
+								<td>43</td>
+								</tr>
+								<tr>
+								<td>Periodo promedio de cobro</td>
+								<td>d&iacute;as</td>
+								<td>3</td>
+								<td>7</td>
+								<td>3</td>
+								</tr>
+								<tr>
+								<td><strong>Ciclo para vender y cobrar</strong></td>
+								<td><strong>d&iacute;as</strong></td>
+								<td><strong>65</strong></td>
+								<td><strong>78</strong></td>
+								<td><strong>46</strong></td>
+								</tr>
+								<tr>
+								<td>Periodo promedio de pago a proveedores</td>
+								<td>d&iacute;as</td>
+								<td>65</td>
+								<td>66</td>
+								<td>49</td>
+								</tr>
+								<tr>
+								<td>D&iacute;as de financiamiento para ciclo de operaci&oacute;n</td>
+								<td>d&iacute;as</td>
+								<td>0</td>
+								<td>12</td>
+								<td>-3</td>
+								</tr>
+								</tbody>
+								</table>
+							</div>
+
+							<br>
+							<p>Con base en esta informaci&oacute;n, considere:</p>
+							<ol style="list-style-type: lower-alpha; text-align: left;">
+							<li>La empresa m&aacute;s eficiente para vender sus productos debe ser la que tenga menos d&iacute;as promedio de inventarios, asimismo la empresa que sea m&aacute;s eficiente para cobrar y recuperar su venta ser&aacute; aquella que tenga el periodo de cobro m&aacute;s corto.</li>
+							<li>En cuanto al periodo promedio de pago a proveedores, cuanto mayor sea &eacute;ste, significa que se logr&oacute; negociar mejores plazos con los proveedores y consecuentemente se podr&aacute; trabajar con dinero de &eacute;stos sin pagar costo alguno.</li>
+							<li>La empresa m&aacute;s eficiente ser&aacute; la que en conjunto logre tener un ciclo menor. As&iacute;, podemos ver que la empresa m&aacute;s exitosa en vender fue C, la m&aacute;s eficiente en su cobranza fue A y la que consigui&oacute; mejores plazos con sus proveedores fue B.</li>
+							<li>Debido a que C fue la que tuvo la mayor rotaci&oacute;n en sus inventarios, su ciclo de operaci&oacute;n result&oacute; de 3 d&iacute;as, lo que significa que la empresa recuper&oacute; su dinero tres d&iacute;as antes de tener que pagar a sus proveedores, lo cual le permitir&iacute;a reinvertir ese dinero y obtener un rendimiento adicional o iniciar antes un nuevo ciclo de operaci&oacute;n y generar mayores utilidades.</li>
+							<li>En el caso de A, su ciclo de operaci&oacute;n es de 0, lo que indica que sus proveedores le financian su periodo de inventario y de cobranza. En el caso de B, como su ciclo de operaci&oacute;n es de 12 d&iacute;as, significa que para poder operar necesita obtener financiamiento.</li>
+							</ol>
+							<br>
+						</div>
+						<div class="tab-pane fade" id="gestion" role="tabpanel" aria-labelledby="gestion-tab" style="text-align: center; margin: 2%">
+							<br>
+							<p>Observe la siguiente infografía que expone la importancia de la información financiera en el ámbito de la gestión empresarial.</p>
+							<div style="text-align: center;">
+								<div style="width: 100%;"><div style="position: relative; padding-bottom: 159.0909090909091%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1100px" height="1750px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/63178a56d75caa001240c8db" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+
+							</div>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+
+		
+		
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de Desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="https://www.uv.mx/" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0" style="margin-left: 2%">
+						<p class="fuente">Gitman, L. &amp; Chad, J. Z. (2021). <em>Principios de administraci&oacute;n financiera</em>, 14&ordf;. Ed. Pearson Education.</p>
+						<p class="fuente">Guajardo, G. (2020). Contabilidad Financiera. Mc Graw Hill. Ingenio Contable. (2921, 20 de enero). <em>Estado de Resultado Integral NIF B-3/Conoce la estructura del Estado de Resultados</em>. [Video]. Youtube. <a href="https://youtu.be/RgwlrV1a4KI">https://youtu.be/RgwlrV1a4KI</a></p>
+						<p class="fuente">Ingenio Contable. (2021, 20 de enero). <em>Estado de Resultado Integral NIF B-3 | Conoce la estructura del Estado de Resultados. </em>[Video]. Youtube. <a href="https://youtu.be/RgwlrV1a4KI">https://youtu.be/RgwlrV1a4KI</a></p>
+						<p class="fuente">Ourway Business. (2020, 01 de octubre). <em>Importancia del an&aacute;lisis financiero para las micro, peque&ntilde;as y medianas empresas. </em>[Video]. Youtube. <a href="https://youtu.be/vxp6jeVAEQE">https://youtu.be/vxp6jeVAEQE</a>&nbsp;</p>
+						<p class="fuente">Perdomo, A. (2021). <em>An&aacute;lisis e interpretaci&oacute;n de estados financieros</em>, 14&ordf;. Ed. Pema. &nbsp;</p>
+						<p class="fuente">San Mart&iacute;n, N. B. <em>Normas de Informaci&oacute;n Financiera.</em> (2021). Fondo Editorial del IMCP.</p>
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+						<p class="fuente">Besley, S. &amp; Brigham, E . (2009). <em>Fundamentos de administraci&oacute;n financiera</em>, 14&ordf;. Ed. Cengage Learning.&nbsp;</p>
+						<p class="fuente">Bravo, M de L. &amp; Lambret&oacute;n, V. (2019). <em>Introducci&oacute;n a las finanzas</em>. Pearson.</p>
+						<p class="fuente">C&oacute;rdoba, M. (2014). <em>An&aacute;lisis financiero</em>. Ecoe Ediciones.</p>
+						<p class="fuente">Kennedy, R. D. (1992). <em>Estados financieros: forma, an&aacute;lisis e interpretaci&oacute;n</em>, 2&ordf;. Ed. Limusa.</p>
+						<p class="fuente">Ochoa, G. (2020). <em>Administraci&oacute;n financiera correlacionada con las </em><em>NIF&rsquo;s</em>. Mc Graw Hill.&nbsp;</p>
+						<p class="fuente">Rocha, R. (2021). Estados financieros seg&uacute;n las NIF&rsquo;s. Fondo Editorial del IMCP.</p>
+					</div>
+						
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								<p class="referencia" >
+										<sup class="contadorReferencia">1</sup> Elaboración de la Célula de Desarrollo de Experiencias Educativas de la Dirección General de Desarrollo e Innovación Educativa (DGDAIE).
+									</p>
+								<p class="referencia" >
+									<sup class="contadorReferencia">2</sup> <a href="https://www.flaticon.es/iconos-gratis/proceso" title="proceso
+									iconos">Proceso iconos creados por Freepik - Flaticon</a>.
+									https://www.flaticon.es/icono-gratis/administracion_1721930
+								</p>
+								<p class="referencia" >
+									<sup class="contadorReferencia">3</sup> <a href="https://www.flaticon.es/iconos-gratis/financiero" title="financiero
+									iconos">Financiero iconos creados por toempong - Flaticon</a>.
+									https://www.flaticon.es/icono-gratis/ahorro_4547604
+								</p>
+								<p class="referencia" >
+									<sup class="contadorReferencia">4</sup> a href="https://www.flaticon.es/iconos-gratis/adquisicion" title="adquisición
+									iconos">Adquisición iconos creados por surang - Flaticon</a>.
+									https://www.flaticon.es/icono-gratis/acuerdo_1731480
+								</p>
+								<p class="referencia" >
+									<sup class="contadorReferencia">5</sup> <a href="https://www.flaticon.es/iconos-gratis/reunion" title="reunión
+									iconos">Reunión iconos creados por photo3idea_studio - Flaticon</a>.
+									https://www.flaticon.es/icono-gratis/coworking_1965701
+								</p>
+								<p class="referencia" >
+									<sup class="contadorReferencia">6</sup> <a href="https://www.flaticon.es/iconos-gratis/equipo" title="equipo iconos">Equipo
+										iconos creados por Freepik - Flaticon</a>. https://www.flaticon.es/iconogratis/grupo_921296
+								</p>
+								<p class="referencia" >
+									<sup class="contadorReferencia">7</sup> <a href="https://www.flaticon.es/iconos-gratis/carrito-inteligente" title="carrito
+									inteligente iconos">Carrito inteligente iconos creados por Freepik - Flaticon</a>.
+									https://www.flaticon.es/icono-gratis/carrito-de-compras_3144456
+								</p>
+								<p class="referencia" >
+									<sup class="contadorReferencia">8</sup> <a href="https://www.flaticon.es/iconos-gratis/efectivo" title="efectivo
+									iconos">Efectivo iconos creados por Freepik - Flaticon</a>.
+									https://www.flaticon.es/icono-gratis/metodo-de-pago_1019709
+								</p>
+								<p class="referencia" >
+									<sup class="contadorReferencia">9</sup> <a href="https://www.flaticon.es/iconos-gratis/finanzas" title="finanzas
+									iconos">Finanzas iconos creados por flatart_icons - Flaticon</a>.
+									https://www.flaticon.es/icono-gratis/financiar_2171680
+								</p>
+								<p class="referencia" >
+									<sup class="contadorReferencia">10</sup> <a href="https://www.flaticon.es/iconos-gratis/lanzamiento" title="lanzamiento
+									iconos">Lanzamiento iconos creados por Eucalyp - Flaticon</a>.
+									https://www.flaticon.es/icono-gratis/nuevo-producto_1474613
+								</p>
+								<p class="referencia" >
+									<sup class="contadorReferencia">11</sup> <a href="https://www.flaticon.es/iconos-gratis/gastos" title="gastos iconos">Gastos
+										iconos creados por Eucalyp - Flaticon</a>. https://www.flaticon.es/iconogratis/gastos_2244464
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-1 align-self-center"><a class="flechaCarrusel" onclick="cambiarEvidencia()">&#10094;</a></div>
+						<div class="col">
+						  	<div id="evidencia1">
+								<p><strong>Actividad 1</strong></p>
+								<p><strong>Mapa conceptual: Estructura de los estados financieros.</strong></p>
+								<p><strong>Descripci&oacute;n:</strong></p>
+								<ol>
+									<li>Realice un mapa conceptual en Canva o Prezi, con el tema <em>E</em><em>structura</em><em> de</em><em> los estados financieros</em>.</li>
+									<li>Use palabras clave, im&aacute;genes u otras formas, que expongan lo m&aacute;s relevante del tema.</li>
+									<li>Considere como fuente de informaci&oacute;n b&aacute;sica los libros electr&oacute;nicos: <em>Normas de Informaci&oacute;n Financiera</em> <em>de la serie B </em>(Fondo Editorial IMCP) y <em>Contabilidad Financiera </em>de Gerardo Guajardo Cant&uacute; (Mc Graw Hill), disponibles en la Biblioteca Virtual de la UV: <a href="https://elibro.net/es/lc/bibliotecauv/inicio">https://elibro.net/es/lc/bibliotecauv/inicio</a></li>
+									<li>Consulte el documento <a target="_blank" href="documentos/accesibiblio.pdf">&iquest;C&oacute;mo acceder a la Biblioteca Virtual de la UV?</a>, en el que se describen las indicaciones para consultar los recursos bibliogr&aacute;ficos sugeridos.</li>
+								</ol>
+								<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+								<ol>
+									<li>Se considerar&aacute; una presentaci&oacute;n ordenada, resumida, concisa, congruente y muy clara.</li>
+									<li>Redacci&oacute;n con excelente ortograf&iacute;a.</li>
+									<li>Valor de diez puntos.</li>
+								</ol>
+								<p><strong>Lineamientos de entrega:</strong></p>
+								<ol>
+									<li>Titule el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo: Act1_VillanuevaMariaTeresa</li>
+									<li>Env&iacute;e en archivo Word el enlace para ver su mapa conceptual en Canva o Prezi.</li>
+									<li>Suba su archivo a trav&eacute;s del apartado <strong>Actividades</strong> de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario</strong> de entregas.</li>
+								</ol>
+							</div>
+							<div id="evidencia2">
+								<p><strong>Actividad 2:</strong></p>
+								<p><strong>Cuestionario: Estructura de los estados financieros.</strong></p>
+								<p><strong>Descripci&oacute;n:</strong></p>
+								<ol>
+								<li>Responda el cuestionario sobre la Estructura de los estados financieros, disponible en el enlace: <a href="https://forms.office.com/r/4zQTK0hPBe">https://forms.office.com/r/4zQTK0hPBe</a></li>
+								<li>Considere la lectura del tema en los textos: <em>Normas de Informaci&oacute;n Financiera de la serie B</em> (Fondo Editorial IMCP) y <em>Contabilidad Financiera </em>de Gerardo Guajardo Cant&uacute; (Editorial Mc Graw Hill), disponibles en la Biblioteca Virtual de la UV: <a href="https://elibro.net/es/lc/bibliotecauv/inicio">https://elibro.net/es/lc/bibliotecauv/inicio</a>&nbsp;</li>
+								<li>Consulte el documento  <a target="_blank" href="documentos/accesibiblio.pdf">&iquest;C&oacute;mo acceder a la Biblioteca Virtual de la UV?</a>, en el que se describen las indicaciones para consultar los recursos bibliogr&aacute;ficos sugeridos.</li>
+								</ol>
+								<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+								<ol>
+								<li>Se consideran un total de 16 aciertos con respuestas correctas.</li>
+								<li>Cada reactivo tiene un valor de 0.625, para un total de diez puntos.</li>
+								</ol>
+								<p><strong>Lineamientos de entrega:</strong></p>
+								<ol>
+								<li>Este debe contestarse al concluir el primer m&oacute;dulo.</li>
+								<li>Haga clic en el siguiente enlace para contestar el cuestionario: <a href="https://forms.office.com/r/4zQTK0hPBe">https://forms.office.com/r/4zQTK0hPBe</a></li>
+								</ol>
+							</div>
+						</div>
+						<div class="col-md-1 align-self-center">
+						  <a class="flechaCarrusel" onclick="cambiarEvidencia()">&#10095;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/contenidoFase.js"></script>
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>
