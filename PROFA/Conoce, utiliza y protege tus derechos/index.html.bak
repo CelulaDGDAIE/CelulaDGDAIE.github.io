@@ -97,7 +97,7 @@
 		<!-------------------------------------------- Banner ---------------------->
 		<div class="video-container" id="banner">
 			<video autoplay muted loop>
-				<source src="" type="video/mp4" />
+				<source src="https://lumen.uv.mx/resources/files/videos/2023/2/9/7629/a6e11f12-05ef-42a7-a914-5e3deac24bb6.mp4" type="video/mp4" />
 
 			</video>
 		</div>
@@ -158,28 +158,38 @@
 					<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
 						<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
 					</div>
-					<div class="col align-self-center centrado" id="imagenDiapositivas">
-						<br><br>
-						<img src="" class="img-fluid"  alt="imagenPresentacion" id="imagenPresentacion" style="display: block;">
-
-						<img src="" class="img-fluid"  alt="imagenUnidad" id="imagenUnidad" style="display: none;">
-
-						<p class="derecha" id="referenciaImagen">[1]</p>
-					</div>
-					<div class="col-3 align-self-center centrado">
+					<div class="col align-self-center centrado">
 						<div id="tituloCarrusel">
 							<strong><i class="bi bi-info-circle-fill"></i> Presentación</strong>
 						</div>
-						<div id="contenidoPresentacion" style="text-align: justify;">
-							
+						<div id="contenidoPresentacion">
+							<div class="embed-responsive embed-responsive-16by9" style="text-align: center;">
+							  <iframe class="embed-responsive-item" src="https://lumen.uv.mx/lumen/shared/embed/resource/7638" allowfullscreen></iframe>
+							</div>
 
 						</div>
-						<div id="contenidoUnidad" style="text-align: justify;">
-							<p>Los participantes conocen las obligaciones de transparencia, acceso a la informaci&oacute;n y protecci&oacute;n de datos personales y utilizan plataformas ciudadanas para que se hagan efectivos los DDHH en las funciones sustantivas y adjetivas de la comunidad universitaria.</p>
+						<div id="contenidoUnidad">
+							<br>
+							<div class="row">
+								<div class="col align-self-center"> 
+									<figure>
+										<img src="" alt="pendiente" class="img-fluid">
+										<figcaption style="text-align: right;">[2]</figcaption>
+									  </figure>
+								</div>
+								<div class="col"> 
+									<p style="text-align: justify;">Los participantes conocen las obligaciones de transparencia, acceso a la informaci&oacute;n y protecci&oacute;n de datos personales y utilizan plataformas ciudadanas para que se hagan efectivos los DDHH en las funciones sustantivas y adjetivas de la comunidad universitaria.</p>
+								</div>
+							</div>
+							
 
 						</div>
 						
 					</div>
+					
+					
+					
+					
 					<div class="col-1 col align-self-center centrado" id="columnaDerecha">
 						<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
 					</div>

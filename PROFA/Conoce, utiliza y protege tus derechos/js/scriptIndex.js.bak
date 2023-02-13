@@ -39,6 +39,8 @@ function cambiarDiapositiva(){
 	var cuerpoCarrusel = document.getElementById("cuerpoCarrusel");
 	var contPres = document.getElementById("contenidoPresentacion");
 	var contUni = document.getElementById("contenidoUnidad");
+	var imgPres = document.getElementById("imagenPresentacion");
+	var imgUni = document.getElementById("imagenUnidad");
 	if(carruselInformacionDiapositivaActual == "presentacion"){
 		carruselInformacionDiapositivaActual = "unidad";
 		aireSuperior.classList.remove("fondoVerde");
@@ -48,8 +50,11 @@ function cambiarDiapositiva(){
 		aireInferior.classList.add("fondoAzul");
 		cuerpoCarrusel.classList.add("fondoAzul");
 		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-intersect'></i> Unidad de competencia</strong>";
+		document.getElementById("referenciaImagen").innerHTML= "[2]";
 		contPres.style.display="none";
 		contUni.style.display="block";
+		imgPres.style.display="none";
+		imgUni.style.display="block";
 	}else{
 		carruselInformacionDiapositivaActual = "presentacion";
 		aireSuperior.classList.remove("fondoAzul");
@@ -59,33 +64,10 @@ function cambiarDiapositiva(){
 		aireInferior.classList.add("fondoVerde");
 		cuerpoCarrusel.classList.add("fondoVerde");
 		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Presentacion</strong>";
+		document.getElementById("referenciaImagen").innerHTML= "[1]";
 		contPres.style.display="block";
 		contUni.style.display="none";
+		imgPres.style.display="block";
+		imgUni.style.display="none";
 	}
-}
-
-function reducirLetra(){
-	var fSize = document.getElementsByTagName('p');
-	for(let i = 0; i < fSize.length; i++) {
-		let currentSize = window.getComputedStyle(fSize[i], null).getPropertyValue('font-size');
-		fSize[i].style.fontSize = `${Number(currentSize.replace('px','')) - 1}px`
-	  }
-	  var liSize = document.getElementsByTagName('li');
-	for(let i = 0; i < fSize.length; i++) {
-		let currentSize = window.getComputedStyle(liSize[i], null).getPropertyValue('font-size');
-		liSize[i].style.fontSize = `${Number(currentSize.replace('px','')) - 1}px`
-	  }
-}
-
-function aumentarLetra(){
-	var fSize = document.getElementsByTagName('p');
-	for(let i = 0; i < fSize.length; i++) {
-		let currentSize = window.getComputedStyle(fSize[i], null).getPropertyValue('font-size');
-		fSize[i].style.fontSize = `${Number(currentSize.replace('px','')) + 1}px`
-	  }
-	  var liSize = document.getElementsByTagName('li');
-	for(let i = 0; i < fSize.length; i++) {
-		let currentSize = window.getComputedStyle(liSize[i], null).getPropertyValue('font-size');
-		liSize[i].style.fontSize = `${Number(currentSize.replace('px','')) + 1}px`
-	  }
 }
