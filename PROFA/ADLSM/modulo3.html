@@ -1,0 +1,839 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Autocuidado de la salud mental</p>
+
+				<p id="subtituloPresentacion">Fase 3: Estrategias y hábitos para el cuidado de la salud mental. </p>
+
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = '#' class='enlaceModulo'><strong>Fase  1</strong></a>-->
+
+				<a href='modulo1.html' class='enlaceModulo enlaceActivo'><strong>Fase 1</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Fase  2</strong></a>-->
+
+				<a href='modulo2.html' class='enlaceModulo enlaceActivo'><strong>Fase 2</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Fase  3</strong></a>-->
+
+				<a href='#' class='enlaceModulo'><strong>Fase 3</strong></a>
+
+			</div>
+			<div class="col-1 align-self-center">
+				<span><strong>Zoom: </strong><button style="height:40px;width:40px" onclick="reducirLetra()"
+						type="button" style="text-align:center; font-size:small;">A-</button><button
+						style="height:40px;width:40px" onclick="aumentarLetra()" type="button"
+						style="text-align:center; font-size:large;">A+</button></span>
+			</div>
+
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">Autocuidado de la salud mental</p>
+
+				<p id="subtituloPresentacionMovil">Fase 3: Estrategias y hábitos para el cuidado de la salud mental.
+				</p>
+
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">Autocuidado de la salud mentalScroll</p>
+
+					<p id="subtituloPresentacionScroll">Fase 3: Estrategias y hábitos para el cuidado de la salud
+						mental. </p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+
+		<a href="fase2.html" class="w3-bar-item w3-button">Fase 2</a>
+
+		<a href="fase3.html" class="w3-bar-item w3-button">Fase 3</a>
+
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<br>
+					<br>
+					<img src="" class="img-fluid" id="imagenDiapositivas" alt="presentacion">
+					<p style="text-align: right;">[1]</p>
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+
+						<p>El participante identifica y analiza los h&aacute;bitos como la alimentaci&oacute;n
+							saludable, ejercicio, sue&ntilde;o y ocio, y su impacto positivo en la salud mental,
+							adem&aacute;s conoce estrategias de autocuidado de salud mental como la rutina, la
+							comunicaci&oacute;n asertiva, el manejo de emociones y la psicoterapia.</p>
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<br>
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoAzul" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+
+				</div>
+				<div class="col align-self-center centrado">
+					<div>
+						<strong><i class="bi bi-info-circle-fill"></i> Situación problematizadora</strong>
+					</div>
+					<br>
+					<div id="textoUnidadEscritorio" style="text-align: justify;">
+						<p>A continuaci&oacute;n, observe el siguiente video:</p>
+						<div style="text-align: center;"><iframe title="YouTube video player"
+								src="https://www.youtube.com/embed/QmFTLHbp1As" width="560" height="315" frameborder="0"
+								allowfullscreen="allowfullscreen"></iframe></div>
+						<p>Con base en lo expuesto en el video, reflexione y responda:</p>
+						<ol>
+							<li>&iquest;C&oacute;mo cuida su salud mental?</li>
+							<li>&iquest;Sabe la importancia de mantener una rutina?</li>
+							<li>&iquest;Qu&eacute; tan asertivamente se comunica con los dem&aacute;s?</li>
+						</ol>
+
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
+		<!---------Titulo--------->
+<div class='row' style='color: white;'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+	3.1. Estilos de vida saludable 
+	
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>En el módulo de barreras para la
+	salud mental se abordaron los incorrectos hábitos de estilo de vida como
+	factores que pueden perjudicar la salud mental. Tener un estilo de vida
+	saludable tendrá, por otro lado, un impacto positivo en general y, por consiguiente,
+	en la salud mental. Se debe tener presente que un estilo de vida saludable
+	puede concebirse como un conjunto de patrones de comportamiento relacionados
+	con la salud, determinados por las elecciones que el individuo hace de las
+	opciones disponibles acordes con sus condiciones de vida determinadas por
+	factores socioculturales y características personales, esto último puede
+	llevarlo a encontrarse con complicaciones al adoptarlos y es natural que se
+	presenten, sin embargo, es posible que cada persona realice la adopción de
+	ellos a su propio ritmo (Montoya </span><span style="font-style:italic">et al., </span><span>2010).</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>Ahora, revise atentamente la
+	siguiente presentación para conocer más sobre los hábitos que ayudan a mantener
+	un estilo de vida mentalmente saludable.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Haga clic en la flecha de la derecha para ver su contenido.
+	
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<p style='color: red; font-weight: bold;'>Material pendiente</p>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<hr>
+	<br>
+	<br>
+	<!---------Titulo--------->
+	<div class='row' style='color: white;'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'>
+	3.2. Autocuidado 
+	
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span style="font-weight:bold">Autocuidado</span></p>
+	
+	
+	
+	<p><span>Puede
+	comprenderse comola práctica de
+	actividades desarrolladas porlaspersonasenunasituacióndeterminadaypordecisiónpropia,conelpropósito de mantener la salud
+	y elevar suexpectativadevida,desarrollopersonal y bienestar</span><span>; </span><span>por
+	esta razóninvolucraladisposición,autopercepción y
+	compromiso personal con la propia salud (Cancio-Bello </span><span style="
+	font-style:italic">et
+	al., </span><span>2019).
+	</span><span>Cuidarse a sí mismoimplica conocer nuestras necesidades, la
+	capacidad de manifestarlas y buscar métodos que permitan el cubrirlas.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>¿Qué acciones realiza para cuidar
+	su salud mental? Revise la siguiente presentación en la que se exponen algunas
+	estrategias y técnicas que pueden ayudarle a cuidar de su bienestar mental.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Haga clic en la flecha de la derecha para ver su contenido.
+	
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<p style='color: red; font-weight: bold;'>Material pendiente</p>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>Si desea profundizar más acerca
+	deeste tema, le sugerimos revisar el
+	siguiente video:</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<iframe width='560' height='315' src='https://www.youtube.com/embed/cGLZYPVX784 
+	' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<hr>
+	<br>
+	<br>
+	<!---------Titulo--------->
+	<div class='row' style='color: white;'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+	3.3. Psicoterapia 
+	
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html con imagen izquierda--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col-2 align-self-center'>
+	<img src='' alt='imagenContenido' class='img-fluid'>
+	</div>
+	<div class='col'>
+	La psicoterapia puede concebirse como un tratamiento que se basa en una relación de, al menos, dos personas (psicoterapeuta y paciente), en donde una realiza algún tipo de operación discursiva sobre la otra. La psicoterapia basa sus intervenciones en una teoría científica del funcionamiento y del cambio conductual/psicológico y presenta un conjunto organizado de técnicas, capacidades o formas de tratamiento (Benito, 2019). 
+	
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html con imagen derecha--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	La psicoterapia será implementada por un psicólogo clínico, ellos evalúan, diagnostican y tratan individuos y grupos con una serie de métodos y técnicas, con el objeto de lograr una mejora en el malestar subjetivo sentido o manifestado del sujeto. Entre las modalidades de la psicoterapia encontramos la individual, de pareja, familiar y de grupos (Benito, 2019). 
+	
+	</div>
+	<div class='col-2 align-self-center'>
+	<img src='' alt='imagenContenido' class='img-fluid'>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html con imagen izquierda--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col-2 align-self-center'>
+	<img src='' alt='imagenContenido' class='img-fluid'>
+	</div>
+	<div class='col'>
+	Las técnicas e intervención dependerán del enfoque teórico en el cual el psicoterapeuta sea experto (Oblitas, 2008). Se debe tener presente que cualquier duda que se puede generar con respecto a la psicoterapia se debe manifestar sin importar si el proceso está por comenzar o se encuentra en un estado avanzado, el paciente tiene derecho a externar todo aquello que le genere inquietud y el psicoterapeuta la obligación ética de responderle.
+	
+	</div>
+	<div class='col-2'></div>
+	</div>
+	
+
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center">
+				<a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+						<button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+							type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+						<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+							type="button" role="tab" aria-controls="nav-profile"
+							aria-selected="false">Complementarias</button>
+					</div>
+				</nav>
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+						tabindex="0">
+						<p><span>Aguilar,
+								J. E. (2019). </span><span style="font-style:italic">Comunicación asertiva</span><span>.
+								Dirección de personal.com. </span><span><a
+									href="http://www.direcciondepersonal.com/comunicacion_asertiva.pdf">http://www.direcciondepersonal.com/comunicacion_asertiva.pdf</a></span><span></span>
+						</p>
+
+						<p><span>Bello,
+								Z., Rionda, H. D. &amp; Rodríguez, M. E. (2010). La inteligencia emocional y su
+								educación. </span><span style="
+font-style:italic">VARONA</span><span>,
+								(51), 36-43. Universidad Pedagógica Enrique José Varona. ISSN: 0864-196X.
+							</span><span><a
+									href="https://www.redalyc.org/articulo.oa?id=360635569006">https://www.redalyc.org/articulo.oa?id=360635569006</a></span>
+						</p>
+
+						<p><span>Benito,
+								E. (abril, 2019). Las psicoterapias. </span><span style="font-style:italic">PSIENCIA.
+								Revista Latinoamericana
+								de Ciencia Psicológica, 1</span><span>(1),
+								1-9. Asociación para el Avance de la Ciencia Psicológica. ISSN: 2250-5490.
+							</span><span><a
+									href="https://www.redalyc.org/pdf/3331/333127084005.pdf">https://www.redalyc.org/pdf/3331/333127084005.pdf</a></span>
+						</p>
+
+						<p><span>Cancio-Bello Ayes, C., Lorenzo, A., &amp;
+								Alarcó, G. (2020). Autocuidado: una aproximación teórica al concepto. </span><span
+								style="
+font-style:italic">Informes
+								Psicológicos, </span><span>20(2),
+								119</span><span>-</span><span>138. </span><span><a
+									href="https://doi.org/10.18566/infpsic.v20n2a9">https://doi.org/10.18566/infpsic.v20n2a9</a></span>
+						</p>
+
+						<p><span>Gómez,
+								S. (julio-diciembre, 2021). Equilibrio y organización de la rutina diaria. </span><span
+								style="font-style:
+italic">Revista
+								Chilena De Terapia Ocupacional, 22</span><span>(2),
+								169-176. </span><span><a
+									href="https://doi.org/10.5354/0719-5346.2006.111">https://doi.org/10.5354/0719-5346.2006.111</a></span>
+						</p>
+
+						<p><span>Montoya, G., Ramón, L., Salazar, L.,
+								&amp; Ramón, A. (2010). Estilo de vida y salud. EDUCERE, 14(48), 13–19. </span><span><a
+									href="http://www.redalyc.org/articulo.oa?id=35616720002">http://www.redalyc.org/articulo.oa?id=35616720002</a></span>
+						</p>
+
+						<p><span>Oblitas,
+								L. A. (2008). </span><span style="font-style:italic">Psicoterapias
+								contemporáneas</span><span>.
+							</span><span>Cengage</span><span>Learning</span><span> Editores</span><span>.</span></p>
+
+						<p><span>Patri
+								psicóloga (2017, 27 de septiembre). Hábitos saludables y salud mental.
+							</span><span>[Video].
+							</span><span>YouTube: </span><span><a
+									href="https://youtu.be/cGLZYPVX784">https://youtu.be/cGLZYPVX784</a></span></p>
+
+						<p><span>Psicólogo
+								Jorge Alberto Franco Carranza. (2018, 16 de mayo). </span><span style="font-style:
+italic">SALUD
+								MENTAL. </span><span>[Video].</span><span> YouTube: </span><span><a
+									href="https://youtu.be/QmFTLHbp1As">https://youtu.be/QmFTLHbp1As</a></span></p>
+
+						<p><span>Rodríguez,
+								T., García, C. M., </span><span>&amp;</span><span> Cruz, R. (2005). Técnicas de
+								relajación y autocontrol emocional. </span><span
+								style="font-style:italic">MediSur</span><span style="font-style:
+italic">, 3</span><span>(3), 55-70. Universidad de Ciencias
+								Médicas de Cienfuegos. </span><span><a
+									href="https://www.redalyc.org/articulo.oa?id=180019787003">https://www.redalyc.org/articulo.oa?id=180019787003</a></span>
+						</p>
+
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+						tabindex="0">
+						<p><span>Aguilar, J. E. (2019). Comunicación
+								asertiva. </span><span style="
+font-style:italic">Guía
+								de dirección de personal</span><span>.
+								Direcci</span><span>ón</span><span>
+								de </span><span>personal.com</span><span><a
+									href="http://www.direcciondepersonal.com/comunicacion_asertiva.pdf">http://www.direcciondepersonal.com/comunicacion_asertiva.pdf</a></span>
+						</p>
+
+						<p><span>Alomoto</span><span>, M., Calero, S. &amp; Vaca, M. R.
+								(2018). Intervención con actividad físico-recreativa para la ansiedad y la
+								depresión en el adulto mayor.&nbsp;</span><span style="font-style:italic">Revista Cubana
+								de Investigaciones
+								Biomédicas</span><span>,&nbsp;</span><span style="font-style:
+italic">37</span><span>(1), 47-56. </span><span><a
+									href="http://scielo.sld.cu/scielo.php?script=sci_arttext&amp;pid=S0864-03002018000100005&amp;lng=es&amp;tlng=es">http://scielo.sld.cu/scielo.php?script=sci_arttext&amp;pid=S0864-03002018000100005&amp;lng=es&amp;tlng=es</a></span>
+						</p>
+
+						<p><span>Hermanas hospitalarias. (2019, 27 de
+								agosto). </span><span style="
+font-style:italic">Ocio,
+								tiempo libre y salud mental. </span><span>[Internet]. AITA MENNI. </span><span><a
+									href="https://www.aita-menni.org/es/noticias/ocio-tiempo-libre-salud-mental-13161.html">https://www.aita-menni.org/es/noticias/ocio-tiempo-libre-salud-mental-13161.html</a></span>
+						</p>
+
+						<p><span>Rivera, L. N. (2006). Autocuidado y
+								capacidad de agencia de autocuidado. </span><span style="font-style:italic">Avances en
+								Enfermería,</span><span>
+								24(2):91</span><span>-</span><span>8. </span><span><a
+									href="https://revistas.unal.edu.co/index.php/avenferm/article/view/35969">https://revistas.unal.edu.co/index.php/avenferm/article/view/35969</a></span>
+						</p>
+
+						<p><span>Rodríguez, T., García, C. M. </span><span>&amp; </span><span>Cruz,
+								R. (2005). Técnicas de relajación y auto control emocional. </span><span style="
+font-style:italic">MediSur,</span><span>
+								3(3): 55</span><span>-</span><span>70. </span><span><a
+									href="https://www.redalyc.org/pdf/1800/180019787003.pdf">https://www.redalyc.org/pdf/1800/180019787003.pdf</a></span>
+						</p>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body" id="cuerpoModal">
+					<div class="container-fluid">
+						<input type="hidden" id="numeroEvidencias" value="4">
+
+						<input type="hidden" id="evidenciaActual" value="1">
+						<div class="row">
+							<div class='col-md-1 align-self-center'><a class='flechaCarrusel'
+									onclick='evidenciaAnterior()'>&#10094;</a></div>
+							<div class='col'>
+								<div class='evidencia' id='evidencia1' style='display: block;'>
+									<p style="text-align: center;"><strong>Actividad 5.</strong></p>
+									<p style="text-align: center;"><strong>Autoan&aacute;lisis de estilo de vida
+											saludable y autocuidado.</strong></p>
+									<p><strong>Descripci&oacute;n:</strong></p>
+									<p>Haga clic en el&nbsp; bot&oacute;n <em>Actividad 5</em> para descargar el archivo
+										editable en el que deber&aacute; realizar el ejercicio.</p>
+									<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+									<ol>
+										<li>Redacci&oacute;n y ortograf&iacute;a correctas.</li>
+										<li>Claridad del contenido.</li>
+										<li>Originalidad del contenido.</li>
+										<li>Argumentos reflexivos.</li>
+										<li>Citas y referencias (en caso de ser necesarias).</li>
+									</ol>
+									<p><strong>Lineamientos de entrega:</strong></p>
+									<ol>
+										<li>Titula el archivo de la siguiente forma:
+											Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo:
+											Act<em>5</em>_VillanuevaMar&iacute;aTeresa.</li>
+										<li>Env&iacute;e su archivo en formato Word, a trav&eacute;s del apartado
+											<strong>Actividades</strong> de la plataforma Eminus, a m&aacute;s tardar en
+											la fecha establecida en el <strong>Calendario de entregas</strong>.</li>
+									</ol>
+								</div>
+								<div class='evidencia' id='evidencia2' style='display: none;'>
+									<p style="text-align: center;"><strong>Actividad 6.</strong></p>
+									<p style="text-align: center;"><strong>Sopa de letras
+											&laquo;Psicoterapia&raquo;.</strong></p>
+									<p><strong>Descripci&oacute;n:</strong></p>
+									<p>Haga clic en el&nbsp; bot&oacute;n <em>Actividad 6</em> para descargar el archivo
+										editable en el que deber&aacute; realizar el ejercicio.</p>
+									<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+									<ol>
+										<li>Redacci&oacute;n y ortograf&iacute;a correctas.</li>
+										<li>Claridad del contenido.</li>
+										<li>Originalidad del contenido.</li>
+										<li>Argumentos reflexivos.</li>
+										<li>Citas y referencias (en caso de ser necesarias).</li>
+									</ol>
+									<p><strong>Lineamientos de entrega:</strong></p>
+									<ol>
+										<li>Titule el archivo de la siguiente forma:
+											Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo:
+											Act<em>6</em>_VillanuevaMar&iacute;aTeresa.</li>
+										<li>Env&iacute;e su archivo en formato Word, a trav&eacute;s del apartado
+											<strong>Actividades</strong> de la plataforma Eminus, a m&aacute;s tardar en
+											la fecha establecida en el <strong>Calendario de entregas</strong>.</li>
+									</ol>
+
+								</div>
+								<div class='evidencia' id='evidencia3' style='display: none;'>
+									<p style="text-align: center;"><strong>Actividad 7.</strong></p>
+									<p style="text-align: center;"><strong>Ensayo final.</strong></p>
+									<p><strong>Descripci&oacute;n:</strong></p>
+									<p>Haga clic en el&nbsp; bot&oacute;n <em>Actividad 7</em> para descargar el archivo
+										editable en el que deber&aacute; realizar el ejercicio.</p>
+									<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+									<ol>
+										<li>Redacci&oacute;n y ortograf&iacute;a correctas.</li>
+										<li>Claridad del contenido.</li>
+										<li>Originalidad del contenido.</li>
+										<li>Argumentos reflexivos.</li>
+										<li>Citas y referencias (en caso de ser necesarias).</li>
+									</ol>
+									<p><strong>Lineamientos de entrega:</strong></p>
+									<ol>
+										<li>Titule el archivo de la siguiente forma:
+											Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo:
+											Act<em>7</em>_VillanuevaMar&iacute;aTeresa.</li>
+										<li>Env&iacute;e su archivo en formato Word, a trav&eacute;s del apartado
+											<strong>Actividades</strong> de la plataforma Eminus, a m&aacute;s tardar en
+											la fecha establecida en el <strong>Calendario de entregas</strong>.</li>
+									</ol>
+
+
+								</div>
+								<div class='evidencia' id='evidencia4' style='display: none;'>
+									<p style="text-align: center;"><strong>Actividad 8. Cuestionario final</strong></p>
+									<p><strong>Descripci&oacute;n:</strong></p>
+									<ol>
+										<li>Responda el Cuestionario disponible en el siguiente enlace: <a
+												href="https://forms.office.com/r/NKXX3F6RDi">https://forms.office.com/r/NKXX3F6RDi</a>
+										</li>
+										<li>Tome una captura de pantalla cuando haya concluido el cuestionario y
+											env&iacute;ela como evidencia en formato PNGo PDF.</li>
+									</ol>
+									<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+									<p>Cuestionario respondido completamente.</p>
+									<p><strong>Lineamientos de entrega:</strong></p>
+									<ol>
+										<li>Titule el archivo de la siguiente forma:
+											Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo:
+											Act<em>8</em>_VillanuevaMariaTeresa</li>
+										<li>Env&iacute;e su archivo, en formato PNG o PDF, a trav&eacute;s del apartado
+											Actividades de la plataforma Eminus, a m&aacute;s tardar en la fecha
+											establecida en el Calendario de entregas.</li>
+									</ol>
+
+								</div>
+							</div>
+							<div class='col-md-1 align-self-center'><a class='flechaCarrusel'
+									onclick='siguienteEvidencia()'>&#10095;</a></div>
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>

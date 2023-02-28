@@ -1,0 +1,933 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Autocuidado  de la  salud mental</p>
+
+				<p id="subtituloPresentacion">Fase 2: Barreras para el bienestar de la salud mental.</p>
+
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+<div class='col-1 align-self-center'>
+<!--<a href = '#' class='enlaceModulo'><strong>Fase  1</strong></a>-->
+
+<a href = 'modulo1.html' class='enlaceModulo enlaceActivo'><strong>Fase 1</strong></a>
+
+</div>
+<div class='col-1 align-self-center'>
+<!--<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Fase  2</strong></a>-->
+
+<a href = '#' class='enlaceModulo'><strong>Fase  2</strong></a>
+
+</div>
+<div class='col-1 align-self-center'>
+<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Fase  3</strong></a>-->
+
+<a href = 'modulo3.html' class='enlaceModulo enlaceActivo'><strong>Fase  3</strong></a>
+
+</div>
+<div class="col-1 align-self-center">
+	<span><strong>Zoom: </strong><button style="height:40px;width:40px" onclick="reducirLetra()" type="button" style="text-align:center; font-size:small;">A-</button><button style="height:40px;width:40px" onclick="aumentarLetra()" type="button" style="text-align:center; font-size:large;">A+</button></span>
+</div>
+			
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">Autocuidado  de la  salud mental</p>
+
+				<p id="subtituloPresentacionMovil">Fase 2: Barreras para el bienestar de la salud mental.</p>
+
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">Autocuidado  de la  salud mentalScroll</p>
+
+					<p id="subtituloPresentacionScroll">Fase 2: Barreras para el bienestar de la salud mental.</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+
+		<a href="fase2.html" class="w3-bar-item w3-button">Fase 2</a>
+
+		<a href="fase3.html" class="w3-bar-item w3-button">Fase 3</a>
+
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<br>
+					<br>
+					<img src="" class="img-fluid" id="imagenDiapositivas"
+
+						alt="presentacion">
+						<p style="text-align: right;">[1]</p>
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						<p>El participante analiza el impacto negativo en la salud mental&nbsp; de estilos de vida inadecuados,&nbsp; el consumo de sustancias y medicalizaci&oacute;n. Adem&aacute;s, identifica las&nbsp; etiquetas, diagn&oacute;sticos imprecisos y estigmas como barreras para el cuidado de su salud mental.</p>
+
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<br>
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoAzul" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado">
+					<div>
+						<strong><i class="bi bi-info-circle-fill"></i> Situación problematizadora</strong>
+					</div>
+					<br>
+					<div id="textoUnidadEscritorio" style="text-align: justify;">
+						<p><span>Revise atentamente los siguientes videos:</span></p>
+						<div class="row">
+							<div class="col" style="text-align: center;">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/czmZ6aKCUZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							</div>
+							<div class="col" style="text-align: center;">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZeeHVs1FFj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							</div>
+
+						</div>
+						<ol>
+							<li>&iquest;Considera que tiene h&aacute;bitos inadecuados en su estilo de vida?</li>
+							<li>&iquest;C&oacute;mo impacta su estilo de vida en su salud mental?</li>
+							<li>&iquest;Es adecuado medicalizar y psiquiatrizar el malestar psicol&oacute;gico?</li>
+							<li>&iquest;Cu&aacute;l considera que es la diferencia entre una etiqueta y un diagn&oacute;stico?</li>
+							<li>&iquest;Qui&eacute;n debe realizar un diagn&oacute;stico en salud mental?</li>
+							</ol>
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
+		<!---------Titulo--------->
+<div class='row' style='color: white;'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+	2.1. Barreras para el bienestar de la salud mental
+	
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html con imagen derecha--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	Cuando intentamos cuidar de nuestra salud mental, es posible que nos lleguemos a encontrar barreras que dificulten el cuidado de ésta, dichos obstáculos pueden marcar la diferencia no sólo en su cuidado, sino también en su diagnóstico y tratamiento.
+	
+	</div>
+	<div class='col-2 align-self-center'>
+	<img src='' alt='imagenContenido' class='img-fluid'>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>¿Qué es la salud mental?
+	¿Identifica algunas condiciones que afecten su salud mental? Observe el
+	siguiente video en donde se explica más sobre el tema.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<iframe width='560' height='315' src='https://www.youtube.com/embed/ESPpyo75KGQ ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<hr>
+	<br>
+	<br>
+	<!---------Titulo--------->
+	<div class='row' style='color: white;'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'>
+	2.2. Inadecuados estilos de vida
+	
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Subitulo--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 class='subtitulo'>
+	¿Qué entendemos por estilo de vida?
+	
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html con imagen derecha--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	Los estilos pueden concebirse como el conjunto de conductas consistentes en el tiempo, abarcan comportamientos considerados complejos como la actividad física, el uso adecuado de tiempo libre, la alimentación saludable y el sueño, entre otros (Cfr. Gómez, 2018).
+	
+	</div>
+	<div class='col-2 align-self-center'>
+	<img src='' alt='imagenContenido' class='img-fluid'>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>Revise atentamente la siguiente
+	presentación acerca de las conductas que configuran estilos de vida inadecuados
+	y valore si algunos de sus comportamientos se identifican con esto.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Haga clic en el botón de la derecha para visualizar todo su contenido.
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<p style='color: red; font-weight: bold;'>Material pendiente</p>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<hr>
+	<br>
+	<br>
+	<!---------Titulo--------->
+	<div class='row' style='color: white;'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+	2.3. Consumo de sustancias 
+	
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html con imagen izquierda--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col-2 align-self-center'>
+	<img src='' alt='imagenContenido' class='img-fluid'>
+	</div>
+	<div class='col'>
+	¿Sabías qué ?
+	El consumo de sustancias se refiere al consumo de aquellas sustancias psicoactivas compuestas, naturales o sintéticas que actúan sobre el sistema nervioso y generan alteraciones en el pensamiento, las emociones y el comportamiento (OPS, s.f.).
+	
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html con imagen derecha--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	Con respecto a estas sustancias existen regulaciones para su control, ya sean de uso recreativo, como puede ser el alcohol, y también para su uso farmacológico, como los tranquilizantes o analgésicos, cuando hablamos de aquellas que es legal consumir, sin embargo, también es común el uso de aquellas que no se consideran legales como tal. De acuerdo con la OMS una parte considerable de la carga mundial de enfermedades y de discapacidades se le puede atribuir al consumo de sustancias psicoactivas, los trastornos afectivos son los que principalmente se han asociado a ellas, particularmente la depresión; cuando hablamos de accidentes (una causa importante de muerte en adolescentes) el consumo de alcohol, tabaco y droga son de los principales factores de riesgo (OPS, s. f.).
+	
+	</div>
+	<div class='col-2 align-self-center'>
+	<img src='' alt='imagenContenido' class='img-fluid'>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>A continuación, revise la siguiente
+	infografía en la que se exponen algunos criterios para el diagnóstico del
+	trastorno de consumo de sustancias. </span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<p style='color: red; font-weight: bold;'>Material pendiente</p>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>Para conocer más al respecto del
+	consumo de sustancia psicoactivas, le sugerimos observar el siguiente video.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<iframe width='560' height='315' src='https://www.youtube.com/embed/HgYFJhkQmVA 
+	' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<hr>
+	<br>
+	<br>
+	<!---------Titulo--------->
+	<div class='row' style='color: white;'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'>
+	2.4. Etiquetas y diagnósticos imprecisos
+	
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html con imagen izquierda--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col-2 align-self-center'>
+	<img src='' alt='imagenContenido' class='img-fluid'>
+	</div>
+	<div class='col'>
+	¿Sabías qué?
+	
+	Cuando nos referimos al diagnóstico en salud mental, se deben considerar las diferencias existentes entre éste y el diagnóstico médico (Fundación ONCE).
+	
+	El diagnóstico en salud mental indica, muchas veces, la presencia de una agrupación determinada de síntomas que el profesional objetiva durante la entrevista, pero no una información inequívoca acerca de la causa de dicha enfermedad. (Fundación ONCE).
+	
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>¿Cómo
+	se realiza un diagnóstico psicológico? ¿Por qué ante una misma sintomatología
+	puede haber impresiones diagnósticas distintas? Le invitamos a escuchar en el
+	siguiente video la exposición del Psiquiatra Víctor Navarra acerca de cómo se
+	realiza el diagnóstico en psiquiatría y psicología?</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<iframe width='560' height='315' src='https://www.youtube.com/embed/qKLHannsxoc' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>Una vez que hemos conocido algo más
+	sobre el diagnóstico en salud mental, es oportuno que sepa que el profesional
+	de la salud mental suele recurrir al </span><span style="font-style:italic">Manual Diagnóstico y Estadístico de
+	los trastornos mentales </span><span>(</span><span style="font-style:
+	italic">DSM </span><span>por sus siglas en inglés) para
+	tener referencia de los síntomas relacionados con padecimientos mentales.</span></p>
+	
+	
+	
+	<p><span>Revise atentamente la siguiente presentación
+	acerca del DSM para conocer algunas de sus generalidades. </span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Haga clic en la flecha de la derecha para acceder a su contenido.
+	
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<p style='color: red; font-weight: bold;'>Material pendiente</p>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<!---------Contenido html con imagen izquierda--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col-2 align-self-center'>
+	<img src='' alt='imagenContenido' class='img-fluid'>
+	</div>
+	<div class='col'>
+	Medicalización 
+	
+	La medicalización se refiere a un proceso por el que problemas no médicos se tratan como si lo fueran, normalmente en términos de enfermedad o trastorno, es convertir un problema personal o social en un problema médico susceptible de ser abordado por profesionales de la salud (Moré, 2013).
+	
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html con imagen derecha--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	Lo anterior puede ser fomentado por los profesionales de la salud, tanto especialistas de la salud mental como aquellos que no lo son, y por los pacientes mismos que en busca de una solución inmediata o tangible a sus malestares manifestados y sentidos recurren al uso de fármacos. Este uso puede llegar a niveles alarmantes, en algunos casos desemboca en lo que considera abuso de sustancias.
+	
+	</div>
+	<div class='col-2 align-self-center'>
+	<img src='' alt='imagenContenido' class='img-fluid'>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>Para profundizar en la comprensión
+	de este tema, lea atentamente </span><span style="font-style:italic">La medicalización de la vida y la
+	sociedad contemporánea: origen, participantes y consecuencias</span><span> (Parra, 2019). </span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Haga clic en el siguiente icono para ir al sitio de consulta del texto indicado. 
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Boton--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<div style='text-align: center;'>
+	<a class='recursoExterno' href='https://doi.org/10.15366/bp2019.22.011 ' target='_blank'>
+	<img src='imagenes/descarga2.png' class='img-fluid' style='width: 10%;'>
+	</a>
+	</div>
+	<br>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<hr>
+	<br>
+	<br>
+	<!---------Titulo--------->
+	<div class='row' style='color: white;'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+	2.6. Estigmas de la salud mental
+	
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html con imagen izquierda--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col-2 align-self-center'>
+	<img src='' alt='imagenContenido' class='img-fluid'>
+	</div>
+	<div class='col'>
+	La estigmatización se refiere al señalamiento negativo hacia una persona o grupo de personas con el fin de insultar, ofender, atacar o someter, justificado por el desprecio, prejuicios y estereotipos aprendidos.
+	
+	Para hablar sobre el tema es necesario conocer los términos que se definen a continuación:
+	
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<p style='color: red; font-weight: bold;'>Material pendiente</p>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>Es así como los estereotipos pueden
+	derivarse en prejuicios que a su vez convertimos en estigmas. Cuando un estigma
+	o conjunto de actitudes y creencias desfavorables se han establecido en
+	relación con la salud mental tienen como consecuencia la discriminación que
+	consiste en otorgar un trato equivocado o un desprecio inmerecido (CENSIDA,
+	2020). Como principal consecuencia del estigma, se puede impedir que las
+	personas con problemáticas de salud mental y sus familias recurran a recibir el
+	apoyo apropiado.</span></p>
+	
+	
+	
+	<p><span>El estigma en salud mental es algo
+	que se puede vivir en diversos niveles, los cuales se exponen en la siguiente
+	infografía.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<p style='color: red; font-weight: bold;'>Material pendiente</p>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>Como mecanismo para poder combatir
+	el estigma, principalmente el que se refiere a la autoconcepción, el
+	profesional puede recurrir a la psicoeducación que se describe como una
+	aproximación terapéutica, en la cual se proporciona al paciente y sus familiares
+	información específica acerca de su enfermedad, tratamiento y pronóstico,
+	basados en evidencia científica actual y relevante para el abordaje (Godoy </span><span style="font-style:
+	italic">et
+	al, </span><span>2020).</span></p>
+	
+	
+	
+	<p><span>Para conocer más acerca de lo antes
+	mencionado, a continuación se presenta el siguiente video:</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<iframe width='560' height='315' src='https://www.youtube.com/embed/fIxi_5nxPqY&amp;ab_channel=MHACentralCarolinas 
+	' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	
+			
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p class="fuente">Alomoto, M., Calero, S. &amp; Vaca, M. R. (2019). Intervenci&oacute;n con actividad f&iacute;sico-recreativa para la ansiedad y la depresi&oacute;n en el adulto mayor. <em>Revista Cubana de Investigaciones Biom&eacute;dicas, 37</em>(1), <a href="https://revibiomedica.sld.cu/index.php/ibi/article/view/95">https://revibiomedica.sld.cu/index.php/ibi/article/view/95</a></p>
+<p class="fuente">Arbu&eacute;s, E. R., Mart&iacute;nez, B., Granda, J. M., Ech&aacute;niz, E., Pellicer, B., Ju&aacute;rez, R., Guerrero &amp; Sa&eacute;z, M. (noviembre-diciembre, 2019). Conducta alimentaria y su relaci&oacute;n con el estr&eacute;s, la ansiedad, la depresi&oacute;n y el insomnio en estudiantes universitarios. <em>Nutrici&oacute;n Hospitalaria, 36</em>(6), 1339-1345. <a href="https://dx.doi.org/10.20960/nh.02641">https://dx.doi.org/10.20960/nh.02641</a></p>
+<p class="fuente">Bosch, M. J. &amp; Paz, M. (marzo, 2021). <em>Conociendo el sue&ntilde;o: beneficios y trastornos</em>. Gu&iacute;a pr&aacute;ctica, 18. Centro Trabajo y Familia; ESE Business School. Universidad de los Andes. <a href="https://www.ese.cl/ese/site/artic/20210430/asocfile/20210430115917/_18__sue__o_2021.pdf">https://www.ese.cl/ese/site/artic/20210430/asocfile/20210430115917/_18__sue__o_2021.pdf</a></p>
+<p class="fuente">CENSIDA. (1 de diciembre de 2020). <em>Estigma y discriminaci&oacute;n</em>. Gobierno de M&eacute;xico. <u>https://www.gob.mx/censida/es/</u><u>articulos</u><u>/</u><u>estigma-ydiscriminacion?idiom</u><u>=es&nbsp; </u></p>
+<p class="fuente">Ciudadan&iacute;a para la integraci&oacute;n Social AC . (2020, 31 de agosto). <em>Efectos del consumo de sustancias.&nbsp; </em>[Video]. YouTube: <a href="https://youtu.be/HgYFJhkQmVA">https://youtu.be/HgYFJhkQmVA</a></p>
+<p class="fuente">Columbia Psychiatry (2022, 14 febrero). <em>Hablemos de bienestar y salud mental. </em>[Video] . Youtube:&nbsp; <a href="https://youtu.be/ESPpyo75KGQ">https://youtu.be/ESPpyo75KGQ</a></p>
+<p class="fuente">Fern&aacute;ndez Zurita, C. (1 de marzo de 2021). <em>El poder de las palabras. &iquest;Cu&aacute;l es la diferencia entre etiquetar y diagnosticar? </em>FAROS-Hospital Sant Joan de D&eacute;u Barcelona. <u>https://faros.hsjdbcn.org/es/articulo/</u><u>poder-palabras-cual-diferencia-entreetiquetar-diagnosticar</u><u>&nbsp; </u></p>
+<p class="fuente">Fundaci&oacute;n CADAH. (2012). <em>&iquest;Qu&eacute; es el DSM? &iquest;Afectar&aacute; la nueva versi&oacute;n DSM-5 al TDAH? </em>Fundaci&oacute;ncadah.org. <a href="https://www.fundacioncadah.org/web/articulo/que-es-el-dsm-iv-tr-afectara-la-nueva-version-dsm-5-al-tdah.html">https://www.fundacioncadah.org//web/articulo/que-es-el-dsm-iv-tr-afectara-la-nueva-version-dsm-5-al-tdah.html</a></p>
+<p class="fuente">Fundaci&oacute;n ONCE. (s.f.). <em>Concepto y diagn&oacute;stico en psiquiatr&iacute;a y/o salud mental</em>. Discapnet. <a href="https://www.discapnet.es/salud/guias-y-articulos-de-salud/guia-sobre-salud-mental/concepto-y-diagnostico-en-psiquiatria-yo-salud-mental">https://www.discapnet.es/salud/guias-y-articulos-de-salud/guia-sobre-salud-mental/concepto-y-diagnostico-en-psiquiatria-yo-salud-mental</a></p>
+<p class="fuente">Godoy, D., Eberhard, A., Abarca, F., Acu&ntilde;a, B. &amp; Mu&ntilde;oz, R. (marzo-abril, 2020). Psicoeducaci&oacute;n en salud mental: una herramienta para pacientes y familiares. <em>Revista M&eacute;dica Cl&iacute;nica Las Condes, 31</em>(2), 169-173. DOI: 10.1016/j.rmclc.2020.01.005</p>
+<p class="fuente">G&oacute;mez, C. A. (2018). Factores psicol&oacute;gicos predictores de estilos de vida saludable. <em>Salud P&uacute;blica, 20</em>(2), 155-62. <a href="https://doi.org/10.15446/rsap.v20n2.50676">https://doi.org/10.15446/rsap.v20n2.50676</a></p>
+<p class="fuente">Mascayano, F., Lips, W., Mena, C. &amp; Manchego, C. (enero-febrero, 2015). Estigma hacia los trastornos mentales: caracter&iacute;sticas e intervenciones. <em>Salud Mental, 38</em>(1), 53-58. <a href="https://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S0185-33252015000100008">https://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S0185-33252015000100008</a></p>
+<p class="fuente">MHACentral carolinas. (2016,27 de abril). <em>Eliminando el Estigma Asociado con la Salud Mental</em>. [Video]. YouTube: <a href="https://youtu.be/fIxi_5nxPqY">https://youtu.be/fIxi_5nxPqY</a></p>
+<p class="fuente">Mor&eacute; Herrero, M.A. (2013). Medicalizaci&oacute;n de la Vida. Abordaje de su Demanda en Salud Mental. <em>Revista Cl&iacute;nica</em> <em>Contempor&aacute;nea, 4</em>(1), 45-54. Colegio Oficial de la Psicolog&iacute;a de Madrid. DOI <a href="https://doi.org/10.5093/cc2013a3">https://doi.org/10.5093/cc2013a3</a></p>
+<p class="fuente">Nutrimente. (2022, 21 de febrero). <em>La MEDICACI&Oacute;N de los ESTADOS de &Aacute;NIMO. </em>[Video]. YouTube: <a href="https://youtu.be/ZeeHVs1FFj0">https://youtu.be/ZeeHVs1FFj0</a></p>
+<p class="fuente">Organizaci&oacute;n Panamericana de la Salud [OPS]. (s. f.). <em>Abuso de sustancias</em>. OPS-OMS. <a href="https://www.paho.org/es/temas/abuso-sustancias">https://www.paho.org/es/temas/abuso-sustancias</a></p>
+<p class="fuente">Parra, J. (2019). La medicalizaci&oacute;n de la vida y la sociedad contempor&aacute;nea: origen, participantes y consecuencias. <em>Bajo Palabra</em>, <em>22</em>, 221-238. <a href="https://doi.org/10.15366/bp2019.22.011">https://doi.org/10.15366/bp2019.22.011</a></p>
+<p class="fuente">Tena, A., Castro, G., Mar&iacute;n, R., G&oacute;mez, P., De la fuente, A. &amp; G&oacute;mez, R. (marzo, 2018). Consumo de sustancias en adolescentes: consideraciones para la pr&aacute;ctica m&eacute;dica. <em>Medicina Interna de M&eacute;xico, 34</em>(2), 264-277. DOI: <a href="https://doi.org/10.24245/mim.v34i2.1595">https://doi.org/10.24245/mim.v34i2.1595</a></p>
+<p class="fuente">V&iacute;ctor Navarro Psiquiatra. (2018, 19 de febrero). <em>&iquest;C&oacute;mo se realiza el diagnostico&nbsp; en psiquiatr&iacute;a y psicolog&iacute;a? </em>[Video]. YouTube: <a href="https://youtu.be/qKLHannsxoc">https://youtu.be/qKLHannsxoc</a></p>
+
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+						<p class="fuente"><span>Arabia, J. J. (2020). Inactividad
+física, ejercicio y pandemia COVID-19.&nbsp;</span><span style="font-style:italic">VIREF Revista de educación física</span><span>. 9:2, 43-56. </span><span><a href="https://revistas.udea.edu.co/index.php/viref/article/view/342196">https://revistas.udea.edu.co/index.php/viref/article/view/342196</a></span></p>
+
+<p class="fuente"><span>Faros, Sant Joan de </span><span>Déu</span><span>.
+(</span><span>2021).
+</span><span style="font-style:
+italic">El
+poder de las palabras. ¿Cuál es la diferencia entre etiquetar y diagnosticar? </span><span>SJD. </span><span><a href="https://faros.hsjdbcn.org/es/articulo/poder-palabras-cual-diferencia-entre-etiquetardiagnosticar">https://faros.hsjdbcn.org/es/articulo/poder-palabras-cual-diferencia-entre-etiquetardiagnosticar</a></span></p>
+
+<p class="fuente"><span>Alomoto</span><span>, M., Calero, S. </span><span>&amp;
+</span><span>Vaca, M. R.(2018). Intervención con actividad
+físico-recreativa para la ansiedad y la depresión en el adulto mayor. </span><span style="font-style:
+italic">Revista
+Cubana de Investigaciones Biomédicas, </span><span>37(1),
+47-56. </span><span>http://scielo.sld.cu/scielo.php?script=sci_arttext&amp;pid=S0864-
+03002018000100005</span></p>
+
+<p class="fuente"><span>Orueta</span><span>, R., Santos, C., González, E., </span><span>Fagundo</span><span>, E. M., </span><span>Alejandre</span><span>, G., Carmona, J., </span><span style="font-style:
+italic">et
+al. </span><span>(2011). Medicalización de la vida
+(II). </span><span style="font-style:
+italic">Revista
+Clínica Médica Familiar, </span><span>4(3):211-8.
+</span><span>https://scielo.isciii.es/scielo.php?script=sci_arttext&amp;pid=S1699-
+695X2011000300005 </span></p>
+
+					</div>
+
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<input type="hidden" id="numeroEvidencias" value="1">
+
+					<input type="hidden" id="evidenciaActual" value="1">
+					<div class="row">
+						<div class='col'><div class='evidencia' id='evidencia1' style='display: block;'>
+							<p style="text-align: center;"><strong>Actividad 4:</strong></p>
+<p style="text-align: center;"><strong>Identificaci&oacute;n de barreras para el bienestar de la salud mental</strong></p>
+<p><strong>Descripci&oacute;n:</strong></p>
+<p>Haga clic en el&nbsp; bot&oacute;n para descargar el archivo editable en donde deber&aacute; realizar el siguiente ejercicio.</p>
+<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+<ol>
+<li>Entrega puntual.</li>
+<li>Argumentos reflexivos.</li>
+<li>Redacci&oacute;n y ortograf&iacute;a correctos.</li>
+<li>Claridad del contenido.</li>
+</ol>
+<p><strong>Lineamientos de entrega:</strong></p>
+<ol>
+<li>Titule el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre. Por ejemplo: Act<em>4</em>_VillanuevaMar&iacute;aTeresa.</li>
+<li>Env&iacute;e su archivo en formato Word, a trav&eacute;s del apartado <strong>Actividades</strong> de la plataforma Eminus, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario de entregas</strong>.</li>
+</ol>
+						</div></div>
+
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>
