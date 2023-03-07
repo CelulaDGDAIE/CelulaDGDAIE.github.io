@@ -1,4 +1,4 @@
-const contenidoEE = '{"tituloPresentacion":"Expresión escrita y oral en inglés en el ámbito laboral",'+
+const contenidoEE = '{"tituloPresentacion":"Expresión escrita y oral en inglés para el ámbito laboral",'+
                     '"textoPresentacion":"<p>This course aims to introduce common basic documents related to the work context. While practicing&nbsp;written and oral skills, you will develop strategies like scanning and getting the main idea, as well as increasing some vocabulary and expressions used in the work context.</p><p>Each module has a series of activities where you will show your progress. Make sure you understand the exercises well before doing them. Our recommendation is to dedicate minimum four hours per week.</p><p>There are no examinations, only written and speaking activities, which should reflect your progress in learning and your own insights.</p>",'+
                     '"textoUnidad":"<p>Participants will develop essential skills to communicate more effectively at work.</p>",'+
                     '"tituloModulo1":"Module 1: Personal documents used at work.",'+
