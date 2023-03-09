@@ -394,7 +394,7 @@
 	<div class='row'>
 	<div class='col-2'></div>
 	<div class='col-2 align-self-center'>
-	<img src='imagenes/2 3 1 Consumo de sustancias.jpg' alt='imagenContenido' class='img-fluid'>
+	<img src='imagenes/2 3 2 Consumo de sustancias.jpg' alt='imagenContenido' class='img-fluid'>
 	</div>
 	<div class='col align-self-center'>
 	¿Sabías qué ?
@@ -411,7 +411,7 @@
 	
 	</div>
 	<div class='col-2 align-self-center'>
-	<img src='imagenes/2 3 2 Consumo de sustancias.jpg'  alt='imagenContenido' class='img-fluid'>
+	<img src='' alt='imagenContenido' class='img-fluid'>
 	</div>
 	<div class='col-2'></div>
 	</div>
