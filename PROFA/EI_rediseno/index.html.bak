@@ -156,7 +156,7 @@
 					</div>
 					<div class="col align-self-center centrado">
 						<div id="tituloCarrusel">
-							<strong><i class="bi bi-info-circle-fill"></i> Presentacion</strong>
+							<strong><i class="bi bi-info-circle-fill"></i> Presentación</strong>
 						</div>
 						<br>
 						<div id="textoCarrusel" style="font-size: 0.6em;">
@@ -360,7 +360,7 @@
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="encabezadoDisclaimer" >
 								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contenidoDisclaimer" aria-expanded="false" aria-controls="flush-collapseOne" id="boton-disclaimer">
-									<em>Disclaimer</em>
+									<em>Descargo de responsabilidad</em>
 								</button>
 							</h2>
 							<div id="contenidoDisclaimer" class="accordion-collapse collapse" aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
