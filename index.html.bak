@@ -88,7 +88,7 @@ background: radial-gradient(circle, rgba(109,180,246,1) 0%, rgba(13,106,193,1) 2
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Autocuidado de la Salud Mental</h5>
-            <a href="PROFA/ADLSM/index.html" class="btn btn-succes">En desarrollo</a>
+            <a href="PROFA/ADLSM/index.html" class="btn btn-success">Ver EE</a>
           </div>
         </div>
       </div>

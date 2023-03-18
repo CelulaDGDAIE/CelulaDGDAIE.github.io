@@ -1,0 +1,491 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">El aprendizaje a  través de medios digitales  </p>
+
+				<p id="subtituloPresentacion">Fase 1: Los medios digitales: definición. </p>
+
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+<div class='col-1 align-self-center'>
+<!--<a href = '#' class='enlaceModulo'><strong>Fase  1</strong></a>-->
+
+<a href = '#' class='enlaceModulo'><strong>Fase 1</strong></a>
+
+</div>
+<div class='col-1 align-self-center'>
+<!--<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Fase  2</strong></a>-->
+
+<a href = 'modulo2.html' class='enlaceModulo enlaceActivo'><strong>Fase  2</strong></a>
+
+</div>
+<div class='col-1 align-self-center'>
+<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Fase  3</strong></a>-->
+
+<a href = 'modulo3.html' class='enlaceModulo enlaceActivo'><strong>Fase  3</strong></a>
+
+</div>
+<div class="col-1 align-self-center">
+	<span><strong>Zoom: </strong><button style="height:40px;width:40px" onclick="reducirLetra()" type="button" style="text-align:center; font-size:small;">A-</button><button style="height:40px;width:40px" onclick="aumentarLetra()" type="button" style="text-align:center; font-size:large;">A+</button></span>
+</div>
+			
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">El aprendizaje a  través de medios digitales  </p>
+
+				<p id="subtituloPresentacionMovil">Fase 1: Los medios digitales: definición. </p>
+
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">El aprendizaje a  través de medios digitales  Scroll</p>
+
+					<p id="subtituloPresentacionScroll">Fase 1: Los medios digitales: definición. </p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+
+		<a href="fase2.html" class="w3-bar-item w3-button">Fase 2</a>
+
+		<a href="fase3.html" class="w3-bar-item w3-button">Fase 3</a>
+
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<br>
+					<br>
+					<img src="" class="img-fluid" id="imagenDiapositivas"
+
+						alt="presentacion">
+						<p style="text-align: right;">[1]</p>
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						<p><span>Los
+docentes </span><span>identifican el concepto de medios
+digitales, las ventajas y desventajas que ofrecen, reflexionando sobre el
+fenómeno de resistencia al cambio.</span></p>
+
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<br>
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoAzul" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado">
+					<div>
+						<strong><i class="bi bi-info-circle-fill"></i> Situación problematizadora</strong>
+					</div>
+					<br>
+					<div id="textoUnidadEscritorio" style="text-align: justify;">
+						<p><span>Observe el siguiente fragmento del corto </span><span style="
+font-style:italic">Ciudadanía
+digital </span><span>(Fundación
+VTR, 2021):</span></p>
+
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
+		
+			
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p><span>Córica</span><span>, J. L. (2020). Resistencia docente
+al cambio: Caracterización y estrategias para un problema no resuelto. </span><span style="font-style:
+italic">RIED.
+Revista Iberoamericana de Educación a Distancia, 23</span><span>(2), pp. 255-272. </span><span><a href="http://dx.doi.org/10.5944/ried.23.2.26578">http</a></span><span><a href="http://dx.doi.org/10.5944/ried.23.2.26578">://dx.doi.org/10.5944/ried.23.2.26578</a></span></p>
+
+<p><span>Fundación
+VTR. (2021, 23 de abril). </span><span style="font-style:italic">Ciudadanía </span><span style="font-style:
+italic">digital.
+</span><span>[Video</span><span>]</span><span>.
+</span><span>YouTube. </span><span><a href="https://youtu.be/YUVdyWravjk?t=502">https://youtu.be/YUVdyWravjk?t=502</a></span></p>
+
+<p><span>Lifeder</span><span> Educación. (2021, 17 de agosto). </span><span style="font-style:
+italic">Ventajas
+y desventajas de la tecnología: aplicaciones positivas y negativas. </span><span>[Video]</span><span>. YouTube</span><span>. </span><span><a href="https://youtu.be/woDgxgslDQk">https://youtu.be/woDgxgslDQk</a></span></p>
+
+<p><span>Mouawad</span><span>, W. </span><span>(2012).
+</span><span style="font-style:
+italic">Alphonse-</span><span style="font-style:
+italic">Pacamambo</span><span>(B. </span><span>Schoemann</span><span>, </span><span>H.
+</span><span>Arrevillaga</span><span>&amp;
+R. </span><span>Urióstegui</span><span>, </span><span>trads</span><span>.). </span><span style="font-style:italic">Los textos de la </span><span style="font-style:
+italic">capilla</span><span>. Colección dramaturgia
+internacional.</span></p>
+
+<p><span>Sorroza</span><span>, </span><span>N</span><span>. A</span><span>.,
+</span><span>Jinez</span><span>,
+</span><span>J</span><span>.
+P</span><span>., </span><span>Rodríguez,
+</span><span>J</span><span>.
+E</span><span>., </span><span>Caraguay,
+</span><span>W</span><span>.
+A</span><span>. &amp; Sotomayor, M</span><span>. V</span><span>.
+</span><span>(2018</span><span>).
+Las Tic y la resistencia al cambio en la Educación Superior. </span><span style="font-style:
+italic">Revista
+Científica Mundo de la Investigación y el Conocimiento, (2)</span><span>2, 477-495. </span><span><a href="https://doi.org/10.26820/recimundo/2.(2).2018.477-495">https://doi.org/10.26820/recimundo/2.(2).2018.477-495</a></span></p>
+
+<p><span>Southern</span><span> New Hampshire </span><span>University</span><span> (2022, 11 de marzo). ¿Cuáles son
+los tipos de medios digitales? </span><span style="font-style:italic">Snhu</span><span style="font-style:italic">. </span><span style="font-style:italic">Southern</span><span style="font-style:
+italic"> New
+Hampshire </span><span style="font-style:
+italic">University</span><span style="font-style:
+italic">.</span><span><a href="https://es.snhu.edu/noticias/cuales-son-los-tipos-de-medios-digitales">https://es.snhu.edu/noticias/cuales-son-los-tipos-de-medios-digitales</a></span><span></span></p>
+
+<p><span>Tucho</span><span> Consultoría. (2022). </span><span style="font-style:
+italic">Cuestionario
+de resistencia al cambio. </span><span style="font-style:italic">Tucho</span><span>.
+</span><span><a href="https://www.tuchoconsultoria.com/herramientas/cuestionario-resistencia-cambio">https://www.tuchoconsultoria.com/herramientas/cuestionario-resistencia-cambio</a></span></p>
+
+<p><span>WILSON
+TE EDUCA. (2019, 4 de septiembre). </span><span style="font-style:italic">¿Qué son los medio digitales? </span><span>[Video]. YouTube. </span><span><a href="https://youtu.be/AyM_xjzyaNc">https://youtu.be/AyM_xjzyaNc</a></span></p>
+
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+						<p><span>Dirección
+General de Desarrollo </span><span>Informático.
+</span><span>(2020</span><span>).
+Eminus estudiantes. </span><span><a href="https://sway.office.com/ieePIaPKfDblxJvc">https://sway.office.com/ieePIaPKfDblxJvc</a></span></p>
+
+<p><span>Dirección
+General de Desarrollo </span><span>Informático.
+</span><span>(2020</span><span>). </span><span>Eminus
+</span><span>académicos.</span><span><a href="https://sway.office.com/3h44hCG0BvAYLe07">https</a></span><span><a href="https://sway.office.com/3h44hCG0BvAYLe07">://sway.office.com/3h44hCG0BvAYLe07</a></span></p>
+
+<p><span>Dirección
+General de Desarrollo </span><span>Informático.
+</span><span>(2020</span><span>). </span><span>Repositorio
+Digital </span><span>Universitario.</span><span><a href="https://lumen.uv.mx/lumen/resource/filter/detail/3886">https://lumen.uv.mx/lumen/resource/filter/detail/3886</a></span></p>
+
+<p><span>Guato,
+</span><span>G</span><span>. (</span><span>24 </span><span>de </span><span>septiembre,
+2022). Educación y </span><span>Ética
+</span><span>en
+una sociedad </span><span>“Líquida”</span><span style="
+font-style:italic">.
+Redalyc.org. </span><span><a href="https://www.redalyc.org/pdf/4418/441846109004.pdf">https</a></span><span><a href="https://www.redalyc.org/pdf/4418/441846109004.pdf">://www.redalyc.org/pdf/4418/441846109004.pdf</a></span></p>
+
+<p><span>Universidad
+Complutense Madrid. (2020). </span><span style="font-style:italic">Microsoft </span><span style="
+font-style:italic">Teams:
+Manual de Uso</span><span>.
+</span><span>Servicios
+Informáticos. Ucm.es</span><span>.
+</span><span><a href="https://www.ucm.es/data/cont/media/www/faq/31/TutotialTEAMS_v2_0.pdf">https://www.ucm.es/data/cont/media/www/faq/31/TutotialTEAMS_v2_0.pdf</a></span></p>
+
+<p><span>Universidad
+Veracruzana</span><span>. (24
+de septiembre, 2022). </span><span style="font-style:italic">Guía de uso para la plataforma Lienzos. </span><span><a href="https://www.uv.mx/plataformasacademicas/files/2021/07/lienzos-v3-2021.pdf">https</a></span><span><a href="https://www.uv.mx/plataformasacademicas/files/2021/07/lienzos-v3-2021.pdf">://www.uv.mx/plataformasacademicas/files/2021/07/lienzos-v3-2021.pdf</a></span></p>
+
+<p><span>Universidad
+Veracruzana. (24 de septiembre, 2022). </span><span style="font-style:italic">Manual </span><span style="
+font-style:italic">de
+uso del facilitador Eminus 4.</span><span><a href="https://www.uv.mx/plataformasacademicas/files/2020/11/Manual-del-Facilitador-Eminus-4-Noviembre2020.pdf">https</a></span><span><a href="https://www.uv.mx/plataformasacademicas/files/2020/11/Manual-del-Facilitador-Eminus-4-Noviembre2020.pdf">://www.uv.mx/plataformasacademicas/files/2020/11/Manual-del-Facilitador-Eminus-4-Noviembre2020.pdf</a></span></p>
+
+					</div>
+
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<input type="hidden" id="numeroEvidencias" value="2">
+
+					<input type="hidden" id="evidenciaActual" value="1">
+					<div class="row">
+						<div class='col-md-1 align-self-center'><a class='flechaCarrusel' onclick='evidenciaAnterior()'>&#10094;</a></div><div class='col'><div class='evidencia' id='evidencia1' style='display: block;'><p><span style="font-weight:bold;font-style:normal">Actividad 1.</span></p>
+
+<p><span style="font-weight:bold;font-style:normal">Evaluación conceptual: medios digitales. </span></p></div><div class='evidencia' id='evidencia2' style='display: none;'><p><span style="font-weight:bold;font-style:normal">Actividad 2:</span></p>
+
+<p><span style="font-weight:bold;font-style:normal">Evaluación reflexiva </span></p></div></div><div class='col-md-1 align-self-center'><a class='flechaCarrusel' onclick='siguienteEvidencia()'>&#10095;</a></div>
+
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>
