@@ -39,7 +39,6 @@ function cambiarDiapositiva(){
 	var cuerpoCarrusel = document.getElementById("cuerpoCarrusel");
 	var contPres = document.getElementById("contenidoPresentacion");
 	var contUni = document.getElementById("contenidoUnidad");
-	var imgPres = document.getElementById("imagenPresentacion");
 	var imgUni = document.getElementById("imagenUnidad");
 	if(carruselInformacionDiapositivaActual == "presentacion"){
 		carruselInformacionDiapositivaActual = "unidad";
@@ -53,7 +52,6 @@ function cambiarDiapositiva(){
 		document.getElementById("referenciaImagen").innerHTML= "[2]";
 		contPres.style.display="none";
 		contUni.style.display="block";
-		imgPres.style.display="none";
 		imgUni.style.display="block";
 	}else{
 		carruselInformacionDiapositivaActual = "presentacion";
@@ -67,7 +65,6 @@ function cambiarDiapositiva(){
 		document.getElementById("referenciaImagen").innerHTML= "[1]";
 		contPres.style.display="block";
 		contUni.style.display="none";
-		imgPres.style.display="block";
 		imgUni.style.display="none";
 	}
 }
