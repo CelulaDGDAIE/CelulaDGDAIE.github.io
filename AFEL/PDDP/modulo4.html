@@ -1,0 +1,565 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Protección de Datos Personales </p>
+
+				<p id="subtituloPresentacion">Módulo 4:  Seguridad y cuidado de los datos personales.</p>
+
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+<div class='col-1 align-self-center'>
+<!--<a href = '#' class='enlaceModulo'><strong>Fase  1</strong></a>-->
+
+<a href = 'modulo1.html' class='enlaceModulo enlaceActivo'><strong>Módulo1</strong></a>
+
+</div>
+<div class='col-1 align-self-center'>
+<!--<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Módulo 2</strong></a>-->
+
+<a href = 'modulo2.html' class='enlaceModulo enlaceActivo'><strong>Módulo 2</strong></a>
+
+</div>
+<div class='col-1 align-self-center'>
+<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Módulo 3</strong></a>-->
+
+<a href = 'modulo3.html' class='enlaceModulo enlaceActivo'><strong>Módulo 3</strong></a>
+
+</div>
+<div class='col-1 align-self-center'>
+	
+	<a href = '#' class='enlaceModulo'><strong>Módulo 4</strong></a>
+	
+	</div>
+<div class="col-1 align-self-center">
+	<span><strong>Zoom: </strong><button style="height:40px;width:40px" onclick="reducirLetra()" type="button" style="text-align:center; font-size:small;">A-</button><button style="height:40px;width:40px" onclick="aumentarLetra()" type="button" style="text-align:center; font-size:large;">A+</button></span>
+</div>
+			
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">Protección de Datos Personales </p>
+
+				<p id="subtituloPresentacionMovil">Módulo 3:  Aviso de privacidad y derechos ARCO.</p>
+
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">Protección de Datos Personales Scroll</p>
+
+					<p id="subtituloPresentacionScroll">Módulo 3:  Aviso de privacidad y derechos ARCO.</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+
+		<a href="fase2.html" class="w3-bar-item w3-button">Fase 2</a>
+
+		<a href="fase3.html" class="w3-bar-item w3-button">Fase 3</a>
+
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						<p>Comprender la importancia que tiene el uso de la información personal, conocer las medidas de seguridad que se deben aplicar para evitar vulneraciones de datos personales, así como aprender a diseñar la privacidad en redes sociales.
+ 
+						</p>
+
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<br>
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoAzul" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado">
+					<div>
+						<strong><i class="bi bi-info-circle-fill"></i> Situación problematizadora</strong>
+					</div>
+					<br>
+					<div id="textoUnidadEscritorio" style="text-align: justify;">
+						<p>
+                            Para iniciar este módulo, observa atentamente el siguiente video:
+
+                        </p>
+                        <div style="text-align: center;">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/DfLLAwQzoEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                        </div>
+                        <p><strong>Con base en la historia presentada en el video, reflexiona y responde:</strong></p>
+<ol>
+<li>&iquest;Has protegido adecuadamente tus datos personales al usar las redes sociales u otros medios digitales?</li>
+<li>&iquest;T&uacute; o alg&uacute;n conocido tuyo han sido vulnerados en el ejercicio de la protecci&oacute;n de sus datos personales?</li>
+</ol>
+
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
+		
+			
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p class="fuente">C&aacute;mara de Diputados del H. Congreso de la Uni&oacute;n (26 de enero de 2017).&nbsp;<em>Ley General de Protecci&oacute;n de Datos Personales en Posesi&oacute;n de Sujetos Obligados</em>. DOF. <u><a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPDPPSO.pdf">https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPDPPSO.pdf</a></u></p>
+                        <p class="fuente">Cervantes Padilla, Alexis (14 de junio de 2018). <em>Impacto laboral tras vulneraci&oacute;n de datos personales.</em> [Video]. Youtube. <u><a href="https://youtu.be/nkmSpZfZIqE">https://youtu.be/nkmSpZfZIqE</a></u></p>
+                        <p class="fuente">Google (s. f.). <em>Herramientas y consejos para&nbsp;ayudarte&nbsp;a navegar de forma segura</em>. Centro de Seguridad. <u><a href="https://safety.google/intl/es_es/security/security-tips/">https://safety.google/intl/es_es/security/security-tips/</a></u></p>
+                        <p class="fuente">INAI (2018). <em>Recomendaciones para mantener segura tu privacidad y datos personales en el entorno digital</em>. Instituto Nacional de Acceso a la Informaci&oacute;n. <u><a href="https://inicio.inai.org.mx/Guias/5RecomendacionesPDP_Web.pdf">https://inicio.inai.org.mx/Guias/5RecomendacionesPDP_Web.pdf</a></u></p>
+                        <p class="fuente">INAIMEXICO (24 de octubre de 2019). <em>M&oacute;dulo 2: Seguridad de datos personales</em> [Video]. Youtube. <u><a href="https://www.youtube.com/watch?v=HJ9m_Z88_MA&amp;t=94s">https://www.youtube.com/watch?v=HJ9m_Z88_MA&amp;t=94s</a></u></p>
+                        <p class="fuente">INEGI (5 de julio de 2021). <em>M&oacute;dulo sobre </em><em>ciberacoso</em>. Comunicado de prensa. <u><a href="https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2021/EstSociodemo/MOCIBA-2020.pdf">https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2021/EstSociodemo/MOCIBA-2020.pdf</a></u></p>
+                        <p class="fuente">Leyva, Jeanette (29 d junio de 2015). Banorte sufre &lsquo;asalto&rsquo;; roban datos de sus clientes. Econom&iacute;a, Diario <em>El Financiero</em>. <u><a href="https://www.elfinanciero.com.mx/economia/roban-datos-de-clientes-de-banorte/">https://www.elfinanciero.com.mx/economia/roban-datos-de-clientes-de-banorte/</a></u></p>
+                        <p class="fuente">Portaltic / EP (2021). Los datos de 1.2 millones de clientes de WordPress est&aacute;n expuestos debido a una filtraci&oacute;n. Internacional, Revista <em>Proceso</em>. <u><a href="https://www.proceso.com.mx/internacional/2021/11/23/los-datos-de-12-millones-de-clientes-de-wordpress-estan-expuestos-debido-una-filtracion-276287.html">https://www.proceso.com.mx/internacional/2021/11/23/los-datos-de-12-millones-de-clientes-de-wordpress-estan-expuestos-debido-una-filtracion-276287.html</a></u></p>
+                        <p class="fuente">Rosenberg,&nbsp;M., Confessore, N.&nbsp;y&nbsp;Cadwalladr, C. (20 de marzo de 2018). La empresa que explot&oacute; millones de datos de usuarios de Facebook. Tecnolog&iacute;a, diario <em>The</em><em> New York Times</em>. <u><a href="https://www.nytimes.com/es/2018/03/20/espanol/cambridge-analytica-facebook.html">https://www.nytimes.com/es/2018/03/20/espanol/cambridge-analytica-facebook.html</a></u></p>
+                        <p class="fuente">TVCiudadanaMexico (24 de enero de 2013). <em>Tus datos personales en Facebook o redes sociales. </em>[Video]. Youtube.&nbsp; <u><a href="https://youtu.be/DfLLAwQzoEs">https://youtu.be/DfLLAwQzoEs</a></u>&nbsp;</p>
+                        <p class="fuente">UPM (25 de enero de 2013). <em>Lecci&oacute;n 17: Datos Personales. Gu&iacute;a de Seguridad para Usuarios</em> (intypedia). [Video]. Youtube. <u><a href="https://www.youtube.com/watch?v=qNKozIsD31M&amp;t=789s">https://www.youtube.com/watch?v=qNKozIsD31M&amp;t=789s</a></u></p>
+                        <p class="fuente">Wertman, L. (2022). <em>Formas de prevenir robo de datos personales y fraudes por dispositivos M&oacute;viles.</em> [Video]. Youtube. <u><a href="https://www.youtube.com/watch?v=xOZkZpPKcH4&amp;t=22s">https://www.youtube.com/watch?v=xOZkZpPKcH4&amp;t=22s</a></u></p>
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+						<p class="fuente">D&iacute;az, S. (2021). <em>La importancia de la protecci&oacute;n de datos en el entorno empresarial</em>.&nbsp;Observatorio de Delitos Inform&aacute;ticos de Canarias (ODIC). <u><a href="https://ecofin.es/la-importancia-de-la-proteccion-de-datos-en-el-entorno-empresarial/">https://ecofin.es/la-importancia-de-la-proteccion-de-datos-en-el-entorno-empresarial/</a></u></p>
+                        <p class="fuente">S&aacute;nchez, C. (5 de febrero de 2020). <em>Citar Revista&ndash;Referencia Bibliogr&aacute;fica</em>. Normas APA (7&ordf;. ed.). <a href="https://normas-apa.org/referencias/citar-revista/">https://normas-apa.org/referencias/citar-revista/</a></p>
+					</div>
+
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<input type="hidden" id="numeroEvidencias" value="3">
+
+					<input type="hidden" id="evidenciaActual" value="1">
+					<div class="row">
+						<div class='col-md-1 align-self-center'><a class='flechaCarrusel'
+							onclick='evidenciaAnterior()'>&#10094;</a></div>
+						<div class='col'>
+							<div class='evidencia' id='evidencia1' style='display: block;'>
+								<p style="text-align: center;"><strong>Actividad</strong><strong> 12</strong></p>
+                                <p style="text-align: center;"><strong>Ensayo: S</strong><strong>eguridad de datos personales y recomendaciones. </strong></p>
+                                <p><strong>Descripci&oacute;n:</strong></p>
+                                <p>El ensayo descriptivo refiere a la forma detallada de un determinado elemento o situaci&oacute;n, como una persona, cosa o lugar. Es subjetivo y el autor da su punto de vista u observancia sobre aquello que describe.</p>
+                                <p>&nbsp;</p>
+                                <ol>
+                                <li>Elabora un breve ensayo descriptivo (cinco cuartillas como m&aacute;ximo), que detalle la seguridad requerida en la protecci&oacute;n de datos personales, su cuidado y las recomendaciones. Para ello, agrega tu punto de vista y describe lo que hayas observado de este tema.</li>
+                                </ol>
+                                <p>&nbsp;</p>
+                                <ol start="2">
+                                <li>Para elaborar el ensayo atiende y analiza las siguientes fuentes de consulta:&nbsp;
+                                <ol style="list-style-type: lower-alpha;">
+                                <li><strong><em>Seguridad de datos personales</em></strong>. Analiza su contexto, el sistema de gesti&oacute;n, el documento, las vulneraciones y el proceso de investigaci&oacute;n previa y verificaci&oacute;n de la vulneraci&oacute;n. <u><a href="https://www.youtube.com/watch?v=HJ9m_Z88_MA&amp;t=94s">https://www.youtube.com/watch?v=HJ9m_Z88_MA&amp;t=94s</a></u></li>
+                                <li><strong><em>Herramientas y consejos para&nbsp;ayudarte&nbsp;a navegar de forma segura</em></strong>. Observa y analiza c&oacute;mo Google refuerza la seguridad de las cuentas de sus usuarios. <u><a href="https://safety.google/intl/es_es/security/security-tips/">https://safety.google/intl/es_es/security/security-tips/</a></u></li>
+                                <li><strong><em>Formas de prevenir robo de datos personales y fraudes por dispositivos m&oacute;viles</em></strong>. Observa las recomendaciones para cuidar los datos personales. <a href="https://www.youtube.com/watch?v=xOZkZpPKcH4&amp;t=22s">https://www.youtube.com/watch?v=xOZkZpPKcH4&amp;t=22s</a></li>
+                                <li><strong><em>Datos Personales. Gu&iacute;a de Seguridad para Usuarios</em></strong>. Observa el video y determina los riesgos y amenazas a la que te expones como usuario si no atiendes las recomendaciones de seguridad. <u><a href="https://www.youtube.com/watch?v=qNKozIsD31M&amp;t=789s">https://www.youtube.com/watch?v=qNKozIsD31M&amp;t=789s</a></u></li>
+                                </ol>
+                                </li>
+                                </ol>
+                                <ol start="3">
+                                <li>El ensayo del tema seguridad de datos personales debe contener su contexto, el sistema de gesti&oacute;n, el documento de seguridad, las vulneraciones de la seguridad, su procedimiento de investigaci&oacute;n y las recomendaciones de seguridad mencionadas. En cuanto a la estructura debe incluir:</li>
+                                </ol>
+                                <ol style="list-style-type: lower-alpha;">
+                                <li><strong>Introducci&oacute;n</strong>. Debe incluir el contexto, conceptos m&iacute;nimos y punto de vista del escrito. Debe ser breve y explicativo.</li>
+                                <li><strong>Desarrollo</strong>. Debe incluir las ideas principales del tema, el argumento del autor, posturas o puntos de vista.</li>
+                                <li><strong>Conclusi&oacute;n</strong>. Debe incluir las interpretaciones finales de lo expuesto, resumiendo o repasando los puntos vitales y la postura del autor.</li>
+                                <li><strong>Bibliograf&iacute;a</strong>. En formato APA 7&ordf;. edici&oacute;n.</li>
+                                </ol>
+                                <p><strong>Recomendaciones</strong>:</p>
+                                <ol>
+                                <li>Redacta el ensayo del tema en <em>Word</em>, usa letra Arial, tama&ntilde;o 12, interlineado de 1.5, p&aacute;rrafos justificados y aplica el corrector ortogr&aacute;fico.</li>
+                                <li>Para citar y referenciar usa el formato APA 7&ordf;. edici&oacute;n, mismo que puedes consultar en: <a href="https://normas-apa.org/">https://normas-apa.org/</a>.</li>
+                                <li>Puedes agregar una p&aacute;gina de presentaci&oacute;n de dise&ntilde;o libre que contenga, por lo menos, t&iacute;tulo del art&iacute;culo, nombre, carrera y semestre que cursas, lugar y fecha.</li>
+                                </ol>
+                                <p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+                                <ol>
+                                <li>Entregar el ensayo en tiempo y forma.</li>
+                                <li>Cubrir el criterio de calidad y razonamiento personal.</li>
+                                <li>Atender los requisitos indicados en descripci&oacute;n de la actividad.</li>
+                                </ol>
+                                <p><strong>Lineamientos de entrega:</strong></p>
+                                <ol>
+                                <li>La entrega del ensayo no amerita pr&oacute;rroga, salvo en condiciones especiales que deber&aacute;n aprobarse por el facilitador.</li>
+                                <li>Nombra el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre, por ejemplo: Act12_VillanuevaMariaTeresa</li>
+                                <li>Sube tu archivo a trav&eacute;s del apartado <strong>Actividades</strong> de la plataforma Eminus4, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario de entregas</strong></li>
+                                </ol>
+							</div>
+							<div class='evidencia' id='evidencia2' style='display: none;'>
+								<p style="text-align: center;"><strong>Actividad</strong><strong> 13</strong></p>
+                                <p style="text-align: center;"><strong>S&iacute;ntesis: Casos de vulneraci&oacute;n de datos personales.</strong></p>
+                                <p><strong>Descripci&oacute;n:</strong></p>
+                                <p>Recuerda que la s&iacute;ntesis es una exposici&oacute;n breve, escrita u oral, en modo descriptivo contiene un conjunto de ideas fundamentales y relacionadas con un asunto o materia y que estaban dispersas.</p>
+                                <ol>
+                                <li>Elabora una s&iacute;ntesis (cuatro cuartillas como m&aacute;ximo), en donde analices, expongas y describas las ideas fundamentales de la seguridad de datos personales y su vulneraci&oacute;n con las fuentes siguientes:
+                                <ol style="list-style-type: lower-alpha;">
+                                <li><strong><em>Impacto laboral tras la vulneraci&oacute;n de datos personales</em></strong>. Observa el video y analiza en qu&eacute; consiste la vulneraci&oacute;n de la seguridad de datos personales, c&oacute;mo &eacute;sta afecta el trabajo, qui&eacute;n debe brindar la seguridad, qu&eacute; es la vulneraci&oacute;n de datos, etc&eacute;tera.</li>
+                                <li><strong><em>Banorte sufre &lsquo;asalto&rsquo;; roban datos de sus clientes</em></strong>. Analiza el caso Banorte y describe qui&eacute;nes fueron los afectados, c&oacute;mo ocurri&oacute;, qui&eacute;n investig&oacute; el caso y qu&eacute; hizo la empresa para proteger los datos personales ante los riesgos.</li>
+                                <li><strong><em>Los datos de 1.2 millones de clientes de WordPress est&aacute;n expuestos debido a una filtraci&oacute;n</em></strong>. Analiza el caso WordPress y describe qui&eacute;nes fueron los afectados, c&oacute;mo ocurri&oacute;, qui&eacute;n investig&oacute; el caso y qu&eacute; hizo la empresa para proteger los datos personales ante los riesgos.</li>
+                                <li><strong><em>La empresa que explot&oacute; millones de datos de usuarios de Facebook</em></strong>. Analiza el caso <em>Cambridge Analytica </em>y describe qui&eacute;nes fueron los afectados, c&oacute;mo ocurri&oacute;, qui&eacute;n investig&oacute; el caso y qu&eacute; hizo la empresa para proteger los datos personales ante los riesgos.</li>
+                                </ol>
+                                </li>
+                                </ol>
+                                <p>&nbsp;</p>
+                                <ol start="2">
+                                <li>La s&iacute;ntesis debe contener:
+                                <ol style="list-style-type: lower-alpha;">
+                                <li>T&iacute;tulo.</li>
+                                <li>Introducci&oacute;n.</li>
+                                <li>Desarrollo:
+                                <ul>
+                                <li>Ideas principales o directrices.</li>
+                                <li>Explicaciones o justificaciones.</li>
+                                <li>Asociaci&oacute;n de ideas.</li>
+                                <li>Argumentos.</li>
+                                </ul>
+                                </li>
+                                <li>Conclusi&oacute;n</li>
+                                <li>Bibliograf&iacute;a: en formato APA 7&ordf;. edici&oacute;n.</li>
+                                </ol>
+                                </li>
+                                </ol>
+                                <p>El caso de la empresa <em>Cambridge anal&iacute;tica</em>, fue un caso especial sobre la violaci&oacute;n de la privacidad y la vulneraci&oacute;n la seguridad, en <em>Netflix</em> existe el documental <em>Nada es Privado</em>, el cual te recomiendo ver en familia.</p>
+                                <p><strong>Recomendaciones</strong>:</p>
+                                <ol>
+                                <li>Redacta el ensayo del tema en <em>Word</em>, usa letra Arial, tama&ntilde;o 12, interlineado de 1.5, p&aacute;rrafos justificados y aplica el corrector ortogr&aacute;fico.</li>
+                                <li>Para citar y referenciar usa el formato APA 7&ordf;. edici&oacute;n, mismo que puedes consultar en: <a href="https://normas-apa.org/">https://normas-apa.org/</a>.</li>
+                                <li>Puedes agregar una p&aacute;gina de presentaci&oacute;n de dise&ntilde;o libre que contenga, por lo menos, t&iacute;tulo del art&iacute;culo, nombre, carrera y semestre que cursas, lugar y fecha.</li>
+                                </ol>
+                                <p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+                                <ol>
+                                <li>Entregar la s&iacute;ntesis en tiempo y forma.</li>
+                                <li>Cubrir el criterio de calidad y razonamiento personal.</li>
+                                <li>Atender los requisitos indicados en descripci&oacute;n de la actividad.</li>
+                                </ol>
+                                <p><strong>Lineamientos de entrega:</strong></p>
+                                <ol>
+                                <li>La entrega de la s&iacute;ntesis no amerita pr&oacute;rroga, salvo en condiciones especiales que deber&aacute;n aprobarse por el facilitador.</li>
+                                <li>Nombra el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre, por ejemplo: Act13_VillanuevaMariaTeresa</li>
+                                <li>Sube tu archivo a trav&eacute;s del apartado <strong>Actividades</strong> de la plataforma Eminus4, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario de entregas</strong>.</li>
+                                </ol>
+							</div>
+							<div class='evidencia' id='evidencia3' style='display: none;'>
+								<p style="text-align: center;"><strong>Actividad</strong><strong> 14</strong></p>
+<p style="text-align: center;"><strong>Resumen: El entorno digital y tu privacidad.</strong></p>
+<p><strong>Descripci&oacute;n:</strong></p>
+<ol>
+<li>Elabora un resumen (cinco cuartillas como m&aacute;ximo), en el que expongas de manera abreviada, concisa y fiel las recomendaciones de lo m&aacute;s importante que debe hacerse para mantener segura tu privacidad y tus datos personales en el entorno digital.</li>
+</ol>
+<ol start="2">
+<li>El siguiente texto contienen los temas resumir sobre el entorno digital y la privacidad:</li>
+</ol>
+<ol style="list-style-type: lower-alpha;">
+<li><strong><em>Recomendaciones para mantener segura tu privacidad y datos personales en el entorno digital</em></strong>. Analiza el entorno digital en el cual radican tus datos personales. El uso de dispositivos, de la internet, redes, as&iacute; como los riesgos a tu privacidad y atiende el c&oacute;mo configurar tu privacidad en las redes sociales y brindarles seguridad. Lo anterior mediante las recomendaciones sugeridas. <u><a href="https://inicio.inai.org.mx/Guias/5RecomendacionesPDP_Web.pdf">https://inicio.inai.org.mx/Guias/5RecomendacionesPDP_Web.pdf</a></u></li>
+</ol>
+<ol start="3">
+<li>El resumen debe contener:
+<ol style="list-style-type: lower-alpha;">
+<li><strong><em>T&iacute;tulo</em></strong>:&nbsp;acorde al tema principal.</li>
+<li><strong><em>Introducci&oacute;n</em></strong>:&nbsp;Contenido general del texto (ideas, planteamientos, etc.).</li>
+<li><strong><em>Contenido</em></strong>:&nbsp;Informaci&oacute;n principal del contenido.</li>
+<li><strong><em>Conclusi&oacute;n</em></strong>:&nbsp;Opiniones personales (opcional).</li>
+<li><strong><em>Bibliograf&iacute;a</em></strong>: Referencias en formato APA 7&ordf;. edici&oacute;n.</li>
+</ol>
+</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>Recomendaciones</strong>:</p>
+<ol>
+<li>Redacta el ensayo en un archivo <em>Word</em>, usa letra Arial, tama&ntilde;o 12, interlineado de 1.5, p&aacute;rrafos justificados y aplica el corrector ortogr&aacute;fico.</li>
+<li>Para citar y referenciar usa el formato APA 7&ordf;. edici&oacute;n, mismo que puedes consultar en: <a href="https://normas-apa.org/">https://normas-apa.org/</a>.</li>
+<li>Puedes agregar una p&aacute;gina de presentaci&oacute;n de dise&ntilde;o libre que contenga, por lo menos, t&iacute;tulo del art&iacute;culo, nombre, carrera y semestre que cursas, lugar y fecha.</li>
+</ol>
+<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+<ol>
+<li>Entregar la s&iacute;ntesis en tiempo y forma.</li>
+<li>Cubrir el criterio de calidad y razonamiento personal.</li>
+<li>Atender los requisitos indicados en descripci&oacute;n de la actividad.</li>
+</ol>
+<p><strong>Lineamientos de entrega:</strong></p>
+<ol>
+<li>La entrega del resumen no amerita pr&oacute;rroga, salvo en condiciones especiales que deber&aacute;n aprobarse por el facilitador.</li>
+<li>Nombra el archivo de la siguiente forma: Act<em>n</em>_PrimerApellidoyPrimerNombre, ejemplo: Act14_VillanuevaMariaTeresa</li>
+<li>Sube tu archivo a trav&eacute;s del apartado <strong>Actividades</strong> de la plataforma Eminus4, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario de entregas</strong>.</li>
+</ol>
+							</div>
+						</div>
+						<div class='col-md-1 align-self-center'><a class='flechaCarrusel'
+							onclick='siguienteEvidencia()'>&#10095;</a></div>
+
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>
