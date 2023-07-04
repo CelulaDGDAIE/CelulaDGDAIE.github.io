@@ -50,7 +50,7 @@ function cambiarDiapositiva(){
 		aireInferior.classList.add("fondoAzul");
 		cuerpoCarrusel.classList.add("fondoAzul");
 		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-intersect'></i> Unidad de competencia</strong>";
-		document.getElementById("referenciaImagen").innerHTML= "[2]";
+		document.getElementById("referenciaImagen").innerHTML= "[3]";
 		contPres.style.display="none";
 		contUni.style.display="block";
 		imgPres.style.display="none";
@@ -64,7 +64,7 @@ function cambiarDiapositiva(){
 		aireInferior.classList.add("fondoVerde");
 		cuerpoCarrusel.classList.add("fondoVerde");
 		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-info-circle-fill'></i> Presentacion</strong>";
-		document.getElementById("referenciaImagen").innerHTML= "[1]";
+		document.getElementById("referenciaImagen").innerHTML= "[2]";
 		contPres.style.display="block";
 		contUni.style.display="none";
 		imgPres.style.display="block";
