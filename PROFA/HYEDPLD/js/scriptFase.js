@@ -1,107 +1,162 @@
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 let carruselInformacionDiapositivaActual = "presentacion";
 let evidenciaActual = 1;
 let numeroEvidencias = document.getElementById("numeroEvidencias").value;
 let anchoPantalla = window.innerWidth;
 var infoActual = 1;
-if (anchoPantalla>1000){
+if (anchoPantalla > 1000) {
 	let alturaPantalla = window.innerHeight;
 	let encabezado = document.getElementById("encabezadoEscritorio");
 	let alturaEncabezado = encabezado.clientHeight;;
 	document.getElementById("compensacionEncabezadoEscritorio").style.height = alturaEncabezado + "px";
-	let altoModulos = (.15 *alturaPantalla);
+	let altoModulos = (.15 * alturaPantalla);
 	const modulos = document.getElementsByClassName("moduloContenido");
 	for (let i = 0; i < modulos.length; i++) {
-	  modulos[i].style.height = altoModulos + "px";
+		modulos[i].style.height = altoModulos + "px";
 	}
 }
-function mostrarDatos(){
+function mostrarDatos() {
 	const numerosModulos = document.getElementsByClassName("numeroModulo");
 	for (let i = 0; i < numerosModulos.length; i++) {
-	  numerosModulos[i].style.display="block";
+		numerosModulos[i].style.display = "block";
 	}
 }
-function scrollFunction(){
+function scrollFunction() {
 	let anchoPantalla = window.innerWidth;
-	if(anchoPantalla<1000){
+	if (anchoPantalla < 1000) {
 		if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
 			document.getElementById("cuadroPresentacion").style.display = "none";
 			document.getElementById("encabezadoScroll").style.display = "block";
-		}else{
+		} else {
 			document.getElementById("cuadroPresentacion").style.display = "block";
 			document.getElementById("encabezadoScroll").style.display = "none";
 		}
 	}
 }
 function abrir_menu_lateral() {
-  document.getElementById("menuLateral").style.display = "block";
+	document.getElementById("menuLateral").style.display = "block";
 }
 function cerrar_menu_lateral() {
-  document.getElementById("menuLateral").style.display = "none";
+	document.getElementById("menuLateral").style.display = "none";
 }
-function siguienteEvidencia(){
+function siguienteEvidencia() {
 	evidenciaActual = document.getElementById("evidenciaActual").value;
-	document.getElementById("evidencia"+evidenciaActual).style.display = "none";
-	evidenciaActual = Number(evidenciaActual)+1;
-	if(evidenciaActual>numeroEvidencias){
-		evidenciaActual=1;
+	document.getElementById("evidencia" + evidenciaActual).style.display = "none";
+	evidenciaActual = Number(evidenciaActual) + 1;
+	if (evidenciaActual > numeroEvidencias) {
+		evidenciaActual = 1;
 	}
 	document.getElementById("evidenciaActual").value = evidenciaActual;
-	document.getElementById("evidencia"+evidenciaActual).style.display = "block";
+	document.getElementById("evidencia" + evidenciaActual).style.display = "block";
 }
 
-function evidenciaAnterior(){
+function evidenciaAnterior() {
 	evidenciaActual = document.getElementById("evidenciaActual").value;
-	document.getElementById("evidencia"+evidenciaActual).style.display = "none";
-	evidenciaActual = Number(evidenciaActual)-1;
-	
-	if(evidenciaActual==0){
-		evidenciaActual=numeroEvidencias;
+	document.getElementById("evidencia" + evidenciaActual).style.display = "none";
+	evidenciaActual = Number(evidenciaActual) - 1;
+
+	if (evidenciaActual == 0) {
+		evidenciaActual = numeroEvidencias;
 	}
 	document.getElementById("evidenciaActual").value = evidenciaActual;
-	document.getElementById("evidencia"+evidenciaActual).style.display = "block";
+	document.getElementById("evidencia" + evidenciaActual).style.display = "block";
 }
-function reducirLetra(){
+function reducirLetra() {
 	var fSize = document.getElementsByTagName('p');
-	for(let i = 0; i < fSize.length; i++) {
+	for (let i = 0; i < fSize.length; i++) {
 		let currentSize = window.getComputedStyle(fSize[i], null).getPropertyValue('font-size');
-		fSize[i].style.fontSize = `${Number(currentSize.replace('px','')) - 1}px`
-	  }
-	  var liSize = document.getElementsByTagName('li');
-	for(let i = 0; i < fSize.length; i++) {
+		fSize[i].style.fontSize = `${Number(currentSize.replace('px', '')) - 1}px`
+	}
+	var liSize = document.getElementsByTagName('li');
+	for (let i = 0; i < fSize.length; i++) {
 		let currentSize = window.getComputedStyle(liSize[i], null).getPropertyValue('font-size');
-		liSize[i].style.fontSize = `${Number(currentSize.replace('px','')) - 1}px`
-	  }
+		liSize[i].style.fontSize = `${Number(currentSize.replace('px', '')) - 1}px`
+	}
 }
 
-function aumentarLetra(){
+function aumentarLetra() {
 	var fSize = document.getElementsByTagName('p');
-	for(let i = 0; i < fSize.length; i++) {
+	for (let i = 0; i < fSize.length; i++) {
 		let currentSize = window.getComputedStyle(fSize[i], null).getPropertyValue('font-size');
-		fSize[i].style.fontSize = `${Number(currentSize.replace('px','')) + 1}px`
-	  }
-	  var liSize = document.getElementsByTagName('li');
-	for(let i = 0; i < fSize.length; i++) {
+		fSize[i].style.fontSize = `${Number(currentSize.replace('px', '')) + 1}px`
+	}
+	var liSize = document.getElementsByTagName('li');
+	for (let i = 0; i < fSize.length; i++) {
 		let currentSize = window.getComputedStyle(liSize[i], null).getPropertyValue('font-size');
-		liSize[i].style.fontSize = `${Number(currentSize.replace('px','')) + 1}px`
-	  }
+		liSize[i].style.fontSize = `${Number(currentSize.replace('px', '')) + 1}px`
+	}
 }
 
-function cambiarDiapositiva(){
-	if(infoActual == 1){
+function cambiarDiapositiva() {
+	if (infoActual == 1) {
 		infoActual = 2;
-		document.getElementById("tituloCarruselInformacion").innerHTML = "<i class='bi bi-compass-fill'></i> Propósito";
-		document.getElementById("contenidoSituacion").style.display = "none";
-		document.getElementById("contenidoProposito").style.display = "block";
-		document.getElementById("carruselInformación").classList.add('fondoVerde');
-		document.getElementById("carruselInformación").classList.remove('fondoAzul');
-		
-	}else{
+		var op = 1;
+		var timer = setInterval(function () {
+			if (op <= 0.1){
+				clearInterval(timer);
+				mostrarProposito();
+			}
+			document.getElementById("carruselInformación").style.opacity = op;
+			document.getElementById("carruselInformación").style.filter = 'alpha(opacity=' + op * 100 + ")";
+			op -= op * 0.1;
+		}, 15);
+	} else {
 		infoActual = 1;
-		document.getElementById("tituloCarruselInformacion").innerHTML = "<i class='bi bi-info-circle-fill'></i> Situación problematizadora";
-		document.getElementById("contenidoProposito").style.display = "none";
-		document.getElementById("contenidoSituacion").style.display = "block";
-		document.getElementById("carruselInformación").classList.add('fondoAzul');
-		document.getElementById("carruselInformación").classList.remove('fondoVerde');
+		var op = 1;
+		var timer = setInterval(function () {
+			if (op <= 0.1){
+				clearInterval(timer);
+				mostrarSituacion();
+			}
+			document.getElementById("carruselInformación").style.opacity = op;
+			document.getElementById("carruselInformación").style.filter = 'alpha(opacity=' + op * 100 + ")";
+			op -= op * 0.1;
+		}, 15);
+		
+
 	}
+}
+
+function mostrarProposito(){
+	var op = 0.1;  
+    document.getElementById("tituloCarruselInformacion").innerHTML = "<i class='bi bi-compass-fill'></i> Propósito";
+	document.getElementById("contenidoSituacion").style.display = "none";
+	document.getElementById("contenidoProposito").style.display = "block";
+	document.getElementById("carruselInformación").classList.add('fondoVerde');
+	document.getElementById("carruselInformación").classList.remove('fondoAzul');
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        document.getElementById("carruselInformación").style.opacity = op;
+        document.getElementById("carruselInformación").style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 10);
+
+
+	
+}
+
+function mostrarSituacion(){
+	var op = 0.1;  
+	document.getElementById("tituloCarruselInformacion").innerHTML = "<i class='bi bi-info-circle-fill'></i> Situación problematizadora";
+	document.getElementById("contenidoProposito").style.display = "none";
+	document.getElementById("contenidoSituacion").style.display = "block";
+	document.getElementById("carruselInformación").classList.add('fondoAzul');
+	document.getElementById("carruselInformación").classList.remove('fondoVerde');
+	var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        document.getElementById("carruselInformación").style.opacity = op;
+        document.getElementById("carruselInformación").style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 10);
+}
+
+function fadeIn(idElemento) {
+	document.getElementById(idElemento).style.display = "inline";
+}
+function fadeOut(idElemento) {
+	document.getElementById(idElemento).style.display = "none";
 }
