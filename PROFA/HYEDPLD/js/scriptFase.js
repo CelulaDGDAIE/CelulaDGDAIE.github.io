@@ -27,9 +27,24 @@ function scrollFunction() {
 		if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
 			document.getElementById("cuadroPresentacion").style.display = "none";
 			document.getElementById("encabezadoScroll").style.display = "block";
+			
 		} else {
+
 			document.getElementById("cuadroPresentacion").style.display = "block";
 			document.getElementById("encabezadoScroll").style.display = "none";
+			alert("Hola");
+		}
+	}else{
+		if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+			document.getElementById("encabezadoUV").style.display = "none";
+			document.getElementById("tituloEscritorio").style.fontSize = "0.8em";
+			document.getElementById("subtituloPresentacion").style.fontSize = "0.8em";
+		}else{
+			document.getElementById("encabezadoUV").style.display = "block";
+			document.getElementById("tituloEscritorio").style.fontSize = "1.2em";
+			document.getElementById("subtituloPresentacion").style.fontSize = "1.2em";
+			document.getElementById("enlaceModulo").style.fontSize = "1em";
+
 		}
 	}
 }
