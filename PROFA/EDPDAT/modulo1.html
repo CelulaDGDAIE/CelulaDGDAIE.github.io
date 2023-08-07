@@ -1,0 +1,501 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Elaboración del Plan de Acción Tutorial</p>
+
+				<p id="subtituloPresentacion">Fase 1:  El coordinador del sistema tutorial como gestor de procesos académicos.</p>
+
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+<div class='col-1 align-self-center'>
+<!--<a href = '#' class='enlaceModulo'><strong>Fase  1</strong></a>-->
+
+<a href = '#' class='enlaceModulo'><strong>Fase 1</strong></a>
+
+</div>
+<div class='col-1 align-self-center'>
+<!--<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Fase  2</strong></a>-->
+
+<a href = 'modulo2.html' class='enlaceModulo enlaceActivo'><strong>Fase  2</strong></a>
+
+</div>
+<div class='col-1 align-self-center'>
+<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Fase  3</strong></a>-->
+
+<a href = 'modulo3.html' class='enlaceModulo enlaceActivo'><strong>Fase  3</strong></a>
+
+</div>
+<div class="col-1 align-self-center">
+	<span><strong>Zoom: </strong><button style="height:40px;width:40px" onclick="reducirLetra()" type="button" style="text-align:center; font-size:small;">A-</button><button style="height:40px;width:40px" onclick="aumentarLetra()" type="button" style="text-align:center; font-size:large;">A+</button></span>
+</div>
+			
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">Elaboración del Plan de Acción Tutorial</p>
+
+				<p id="subtituloPresentacionMovil">Fase 1:  El coordinador del sistema tutorial como gestor de procesos académicos.</p>
+
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">Elaboración del Plan de Acción TutorialScroll</p>
+
+					<p id="subtituloPresentacionScroll">Fase 1:  El coordinador del sistema tutorial como gestor de procesos académicos.</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+
+		<a href="fase2.html" class="w3-bar-item w3-button">Fase 2</a>
+
+		<a href="fase3.html" class="w3-bar-item w3-button">Fase 3</a>
+
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<br>
+					<br>
+					<img src="" class="img-fluid" id="imagenDiapositivas"
+
+						alt="presentacion">
+						<p style="text-align: right;">[1]</p>
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						<p><span>El
+coordinador de sistema tutorial conoce las dimensiones que orientan la
+actividad tutorial en la UV, así como la normatividad que rige su labor y la
+articulación con las diferentes figuras que participan en el proceso de</span><span>planeación, organización,
+ejecución, seguimiento y evaluación de la actividad tutorial en la Institución.
+</span></p>
+
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<br>
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoAzul" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado">
+					<div>
+						<strong><i class="bi bi-info-circle-fill"></i> Situación problematizadora</strong>
+					</div>
+					<br>
+					<div id="textoUnidadEscritorio" style="text-align: justify;">
+						
+
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
+		
+			
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p><span>Departamento
+de apoyo a la Formación Integral del Estudiante-DAFIE (2019). </span><span style="font-style:italic">Manual
+del usuario, Modulo del Coordinador del Sistema Tutorial. </span><span>Obtenido de: </span><span><a href="https://www.uv.mx/formacionintegral/files/2019/11/Manual_CoordinadorST_v1_1.pdf">https://www.uv.mx/formacionintegral/files/2019/11/Manual_CoordinadorST_v1_1.pdf</a></span></p>
+
+<p><span>Departamento
+de apoyo a la Formación Integral del Estudiante-DAFIE (2019). </span><span style="font-style:italic">Programas
+de Apoyo a la Formación Integral (PAFI). Guía para el registro de PAFI del
+Profesor Tutor.</span><span>
+Obtenido de: </span><span><a href="https://www.uv.mx/formacionintegral/files/2019/08/Manual_Profesor-Tutor.pdf">https://www.uv.mx/formacionintegral/files/2019/08/Manual_Profesor-Tutor.pdf</a></span></p>
+
+<p><span>Departamento
+de apoyo a la Formación Integral del Estudiante-DAFIE (2019). </span><span style="font-style:italic">Programas
+de Apoyo a la Formación Integral (PAFI). Guía para la inscripción del
+estudiante. </span><span>Obtenido de: </span><span><a href="https://www.uv.mx/formacionintegral/files/2019/10/zManualIncripcionPAFI12Julio19.pdf">https://www.uv.mx/formacionintegral/files/2019/10/zManualIncripcionPAFI12Julio19.pdf</a></span></p>
+
+<p><span>Universidad
+Veracruzana (2017). </span><span style="
+font-style:italic">Ley
+Orgánica</span><span>. Obtenido de: </span><span><a href="https://www.uv.mx/legislacion/files/2019/04/Ley-Organica-Universidad-Veracruzana-reimpresion2017.pdf">https://www.uv.mx/legislacion/files/2019/04/Ley-Organica-Universidad-Veracruzana-reimpresion2017.pdf</a></span></p>
+
+<p><span>Universidad
+Veracruzana (2023). </span><span style="
+font-style:italic">Departamento
+de Apoyo a la Formación Integral del Estudiante.</span><span>
+Obtenido de: </span></p>
+
+<p><span>Universidad
+Veracruzana (2008). </span><span style="
+font-style:italic">Estatuto
+de alumnos 2008.</span><span>
+Obtenido de: </span><span><a href="https://www.uv.mx/legislacion/files/2023/03/EstatutodeAlumnos27032023.pdf">https://www.uv.mx/legislacion/files/2023/03/EstatutodeAlumnos27032023.pdf</a></span></p>
+
+<p><span>Universidad
+Veracruzana (2008). </span><span style="
+font-style:italic">Reglamento
+del Sistema Institucional Tutorial. </span><span>Obtenido
+de: </span><span><a href="https://www.uv.mx/legislacion/files/2012/12/Reglamento_del_Sistema_Institucional_de_Tutorias.pdf">https://www.uv.mx/legislacion/files/2012/12/Reglamento_del_Sistema_Institucional_de_Tutorias.pdf</a></span></p>
+
+<p><span>Naciones
+Unidas/CEPAL (S. f). </span><span style="
+font-style:italic">Interrelaci</span><span style="font-style:italic">ón</span><span style="font-style:italic"> de
+las autonomías. </span><span>Observatorio
+de Igualdad de Género de América Latina y el Caribe. </span><span><a href="https://oig.cepal.org/es/autonomias/interrelacion-autonomias">https://oig.cepal.org/es/autonomias/interrelacion-autonomias</a></span></p>
+
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+						<p><span>Organizaci</span><span>ón</span><span>
+de las Naciones Unidas para la Educación, la Ciencia y la Cultura (S. f.). </span><span style="font-style:italic">Plan
+de Acción 2018-2028. III Conferencia Regional de Educación Superior para
+América Latina y el Caribe.</span><span>
+Instituto Internacional para la Educaci</span><span>ón</span><span> Superior en América Latina y el
+Caribe. </span><span><a href="https://www.iesalc.unesco.org/wp-content/uploads/2019/02/PlandeAccionCRES2018-2028-Def.pdf">https://www.iesalc.unesco.org/wp-content/uploads/2019/02/PlandeAccionCRES2018-2028-Def.pdf</a></span></p>
+
+					</div>
+
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<input type="hidden" id="numeroEvidencias" value="1">
+
+					<input type="hidden" id="evidenciaActual" value="1">
+					<div class="row">
+						<div class='col'><div class='evidencia' id='evidencia1' style='display: block;'><p><span style="font-weight:bold">Descripción:</span></p>
+
+<p><span>Para este módulo, realizará el análisis
+de casos&nbsp;que le serán asignados por el facilitador. </span></p>
+
+<span><span>1.</span></span><span>Revise los casos que el facilitador le
+asignará y para cada uno de ellos deberá señalar la orientación a brindar.
+Además de indicar al tutor el procedimiento general, deberá compartirle los
+datos de en d</span><span>ó</span><span>nde
+puede encontrar mayor información para atender sus inquietudes y necesidades
+planteadas.</span>
+
+<span><span>2.</span></span><span>Una vez que haya atendido y orientado
+cada uno de los casos expuestos por su facilitador, deberá publicar el
+documento en el foro de discusión correspondiente.</span>
+
+
+
+<p><span style="font-weight:bold">Criterios
+de evaluación:</span></p>
+
+
+
+<span><span>1.</span></span><span>Dar
+atención a cada uno de los casos asignados y explicar el procedimiento a
+seguir, así como indicar en dónde puede encontrar más información.</span>
+
+<span><span>2.</span></span><span>Comentar
+y retroalimentar la participación en el foro de dos compañeros, como m</span><span>ínimo</span><span>.</span>
+
+<span><span>3.</span></span><span>Ortograf</span><span>ía</span><span> y redacción adecuadas</span><span>.</span>
+
+<span><span>4.</span></span><span>Apego
+a las indicaciones.</span>
+
+<span><span>5.</span></span><span>Compartir
+información precisa y relevante.</span>
+
+<span><span>6.</span></span><span>Respeto
+por la opinión de los demás.</span>
+
+<span><span>7.</span></span><span>Publicar
+la participación en tiempo y forma.</span>
+
+
+
+<p><span style="font-weight:bold">Lineamiento
+de entrega:</span></p>
+
+
+
+<p><span>Integre su participación en
+el&nbsp;</span><span style="font-weight:bold">Foro
+1. </span><span style="font-weight:bold">Dando
+seguimiento a la actividad tutorial de mi programa educativo, </span><span>en la
+plataforma&nbsp;EMINUS 4, a más tardar en la fecha establecida en&nbsp;el
+Calendario de entregas.</span></p></div></div>
+
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>
