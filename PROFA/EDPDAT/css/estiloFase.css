@@ -1,77 +1,95 @@
 /******************Etiquetas******************/
-body{
+body {
 	background-color: #f2f2f2;
 }
-a{
+
+a {
 	text-decoration: none;
 }
-p{
+
+p {
 	text-align: justify;
 }
+
 /******************Clases******************/
-.centrado{
-		text-align: center;
-}
-.contadorReferencia{
-	font-size:60%;
+.centrado {
+	text-align: center;
 }
 
-.fondoAcordeon{
+.contadorReferencia {
+	font-size: 60%;
+}
+
+.fondoAcordeon {
 	background-color: #18529D;
 	border: 2px solid #6cbdb4;
 }
-.fondoAzul{
-	background-color: #4C5BFC;
+
+.fondoAzul {
+	background: rgb(44,60,201);
+	background: linear-gradient(66deg, rgba(44,60,201,1) 26%, rgba(57,62,191,1) 49%, rgba(94,116,222,1) 77%);
 }
-.fondoVerde{
-	background-color: #6CBDB4;
+
+.fondoVerde {
+	background: rgb(45,125,77);
+	background: linear-gradient(66deg, rgba(45,125,77,1) 26%, rgba(38,103,83,1) 49%, rgba(56,91,79,1) 77%);
 }
-.fuente{
-	margin-left:15.65pt;
-	text-indent:-15.65pt;
+
+.fuente {
+	margin-left: 15.65pt;
+	text-indent: -15.65pt;
 	text-align: left;
 }
-.letraBlanca{
+
+.letraBlanca {
 	color: white;
 }
-.referencia{
+
+.referencia {
 	font-size: small;
-	margin-left:15.65pt;
-	text-indent:-15.65pt;
-	margin:0.3em;
+	margin-left: 15.65pt;
+	text-indent: -15.65pt;
+	margin: 0.3em;
 	color: black;
 }
-.subtitulo{
+
+.subtitulo {
 	font-size: 1.5em;
 	color: #1e56aa;
 	font-weight: bold;
 }
-.textoSeccion{
+
+.textoSeccion {
 	color: #1e56aa;
 	font-size: 20pt;
 	font-weight: bold;
 }
+
 /******************IDs******************/
-#airePresentacion{
+#airePresentacion {
 	background-color: white;
 	height: 10px;
 }
-#boton-disclaimer{
+
+#boton-disclaimer {
 	background-color: #69B7AE;
 	color: white;
 }
-#botonPresentacion{
+
+#botonPresentacion {
 	background-color: #3CADB8;
 	color: white;
 	font-weight: bold;
 }
-#botonUnidad{
+
+#botonUnidad {
 	background-color: #4C5BFC;
 	color: white;
 	font-weight: bold;
 }
-#botonEvidencias{
-	background-color: #355ca7; 
+
+#botonEvidencias {
+	background-color: #355ca7;
 	height: 250px;
 	background-image: url('../imagenes/actividad.png');
 	background-repeat: no-repeat;
@@ -79,138 +97,166 @@ p{
 	background-position: center;
 	transition: 0.6s ease;
 }
-#botonEvidencias:hover{
+
+#botonEvidencias:hover {
 	background-size: 230px 230px;
 }
-#cintillo{
+
+#cintillo {
 	background-color: #0E47A1;
 	color: white;
 }
-#cintilloScroll{
+
+#cintilloScroll {
 	background-color: #0E47A1;
 	color: white;
 	top: 0;
-	font-size: 10px; 
+	font-size: 10px;
 	font-weight: none;
 }
-#cuerpoModal{
+
+#cuerpoModal {
 	background-image: url('../imagenes/cuaderno-azul.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	transition: 0.6s ease;
 }
-#compensacionEncabezadoEscritorio{
-	display:none;
+
+#compensacionEncabezadoEscritorio {
+	display: none;
 }
-#cuadroPresentacion{
+
+#cuadroPresentacion {
 	background-color: white;
 	border-bottom: solid;
 	border-width: 1px;
 }
-#desarrolloEscritorio{
+
+#desarrolloEscritorio {
 	display: none;
 }
-#diapositivasInformacion{
+
+#diapositivasInformacion {
 	display: none;
 }
-#encabezadoEscritorio{
+
+#encabezadoEscritorio {
 	display: none;
 }
-#encabezadoScroll{
+
+#encabezadoScroll {
 	background-color: white;
-	padding: 20px 10px; 
+	padding: 20px 10px;
 	color: #1e56aa;
-	text-align: letf; 
-	font-size: 15px; 
+	text-align: letf;
+	font-size: 15px;
 	font-weight: bold;
-	position: fixed; 
+	position: fixed;
 	top: 0;
-	width: 100%; 
+	width: 100%;
 	transition: 0.2s;
 	display: none;
 }
-#evidencia1{
-	display:block;
+
+#evidencia1 {
+	display: block;
 }
-#evidencia2{
-	display:none;
+
+#evidencia2 {
+	display: none;
 }
-#fondo1{
-	background-image: url('imagenes/Fase1/fondo.png'); 
-	background-position: center; 
-	background-size: cover; 
-	border-radius: 50%; 
-	height: 300px; 
+
+#fondo1 {
+	background-image: url('imagenes/Fase1/fondo.png');
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	height: 300px;
 	width: 300px;
 }
+
 #fondo1:hover {
-	background-image: url('imagenes/Fase1/video1.gif'); 
-	background-position: center; 
-	background-size: cover; 
-	border-radius: 50%; 
-	height: 300px; 
+	background-image: url('imagenes/Fase1/video1.gif');
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	height: 300px;
 	width: 300px;
 }
-#fondo2{
-	background-image: url('imagenes/Fase1/fondo2.png'); 
-	background-position: center; 
-	background-size: cover; 
-	border-radius: 50%; 
-	height: 300px; 
+
+#fondo2 {
+	background-image: url('imagenes/Fase1/fondo2.png');
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	height: 300px;
 	width: 300px;
 }
+
 #fondo2:hover {
-	background-image: url('imagenes/Fase1/video2.gif'); 
-	background-position: center; 
-	background-size: cover; 
-	border-radius: 50%; 
-	height: 300px; 
+	background-image: url('imagenes/Fase1/video2.gif');
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	height: 300px;
 	width: 300px;
 }
-#imagenPortada{
+
+#imagenPortada {
 	max-height: 250px;
 }
-#logoUV{
-    max-height: 200px;
+
+#logoUV {
+	max-height: 200px;
 }
-#pie{
+
+#pie {
 	background-color: #dbdbdb;
 }
+
 #pieFijo {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #0E47A1;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #0E47A1;
 }
-#subtituloPresentacionMovil{
-    color: #1e56aa;
+
+#subtituloPresentacionMovil {
+	color: #1e56aa;
 	font-size: 2em;
 	font-weight: bold;
 }
-#subtituloPresentacionScroll{
-    color: #1e56aa;
+
+#subtituloPresentacionScroll {
+	color: #1e56aa;
 	font-size: 1.5em;
 	font-weight: bold;
 }
-#subtituloPresentacion{
+
+#subtituloPresentacion {
 	color: #1e56aa;
 	font-size: 1.3em;
 	font-weight: bold;
 }
-#textoPresentacion, #textoUnidad{
+
+#textoPresentacion,
+#textoUnidad {
 	text-align: justify;
 }
-#tituloPresentacion{
+
+#tituloPresentacion {
 	color: #1e56aa;
 	font-size: 1em;
 	font-weight: bold;
 }
-.tituloSeccion{
+
+.tituloSeccion {
 	font-size: 2.8em;
 	color: white;
 }
-.youtube{
+
+.youtube {
 	width: 288px;
 	height: 162px;
 }
@@ -219,50 +265,58 @@ p{
 
 
 
-@media only screen and (min-width: 1000px) {
-	.youtube{
+@media only screen and (min-width: 900px) {
+	.youtube {
 		width: 352px;
 		height: 198px;
 	}
-	
+
 	/*Desaparece elementos moviles*/
-	#cuadroPresentacion{
+	#cuadroPresentacion {
 		display: none;
 	}
-	#desarrolloMovil{
+
+	#desarrolloMovil {
 		display: none;
 	}
-	#encabezadoScroll{
+
+	#encabezadoScroll {
 		display: none;
 	}
-	#acordeonInformacion{
+
+	#acordeonInformacion {
 		display: none;
 	}
+
 	/*/Desaparece elementos moviles*/
-	
+
 	/*Aparece elementos de escritorio*/
-	.aire{
+	.aire {
 		height: 30px;
 	}
-	.enlaceModulo{
+
+	.enlaceModulo {
 		color: black;
-		z-index:100;
+		z-index: 100;
 	}
-	.enlaceActivo{
+
+	.enlaceActivo {
 		color: #777b8e;
 		transition: 0.6s ease;
 	}
-	.enlaceModulo:hover{
+
+	.enlaceModulo:hover {
 		color: black;
 		cursor: default;
 	}
-	.enlaceActivo:hover{
+
+	.enlaceActivo:hover {
 		color: #2c5766;
 		text-decoration: underline;
 		cursor: pointer;
 	}
-	
-	.flechaCarrusel{
+
+	.flechaCarrusel {
 		background-color: black;
 		font-size: 2em;
 		cursor: pointer;
@@ -276,52 +330,64 @@ p{
 		border-radius: 0 3px 3px 0;
 		user-select: none;
 	}
+
 	.flechaCarrusel:hover {
-	  background-color: #757575;
-	  color: black;
+		background-color: #757575;
+		color: black;
 	}
-	.fondoAcordeon{
+
+	.fondoAcordeon {
 		background-color: #18529D;
 		border: 2px solid #6cbdb4;
 	}
-	.fondoAzul{
+
+	.fondoAzul {
 		background-color: #4c5bfc;
 	}
-	.fondoVerde{
+
+	.fondoVerde {
 		background-color: #6cbdb4;
 	}
-	.letraBlanca{
+
+	.letraBlanca {
 		color: white;
 	}
 
-	.textoSeccion{
+	.textoSeccion {
 		text-align: center;
 	}
-	.tituloModulo{
-		width: 300px; 
+
+	.tituloModulo {
+		width: 300px;
 		top: 80px;
 		position: absolute;
 		color: white;
 		z-index: 10;
 	}
-	.tituloModulo h3{
+
+	.tituloModulo h3 {
 		font-weight: bold;
 	}
-	.vacio{
+
+	.vacio {
 		background-color: #f2f2f2;
 	}
-	#compensacionEncabezadoEscritorio{
+
+	#compensacionEncabezadoEscritorio {
 		display: block;
 	}
-	#desarrolloEscritorio{
+
+	#desarrolloEscritorio {
 		display: block;
 	}
-	#diapositivasInformacion{
+
+	#diapositivasInformacion {
 		display: block;
 		color: white;
 		font-size: 1.5em;
 	}
-	#encabezadoEscritorio{
+
+	#encabezadoEscritorio {
 		padding: 10px 16px;
 		background: white;
 		color: black;
@@ -330,42 +396,47 @@ p{
 		width: 100%;
 		z-index: 10;
 	}
-	
-	#logoUV{
+
+	#logoUV {
 		max-height: 200px;
 	}
-	#modulo1{
+
+	#modulo1 {
 		background-image: url("../imagenes/modulo1.png");
 	}
-	#modulo2{
+
+	#modulo2 {
 		background-image: url("../imagenes/modulo2.png");
 	}
-	#modulo3{
+
+	#modulo3 {
 		background-image: url("../imagenes/modulo3.png");
 	}
-	#textoCarrusel{
+
+	#textoCarrusel {
 		text-align: justify;
 	}
-	#tituloEscritorio{
+
+	#tituloEscritorio {
 		color: #1e56aa;
 		font-size: 1.2em;
 		font-weight: bold;
 	}
-	
 
-	
-		
-		
+
+
+
+
 	/*/Aparece elementos de escritorio*/
-	
-  }
 
-  @media only screen and (min-width: 1300px) {
-	
+}
 
-	.youtube{
+@media only screen and (min-width: 1300px) {
+
+
+	.youtube {
 		width: 352px;
 		height: 198px;
 	}
-	
+
 }
