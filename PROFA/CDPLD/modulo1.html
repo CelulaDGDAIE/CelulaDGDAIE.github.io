@@ -1,0 +1,564 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Competencias digitales para la docencia</p>
+
+				<p id="subtituloPresentacion">Fase 1: Contexto actual y transformación de la educación en la era digital.</p>
+
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+<div class='col-1 align-self-center'>
+<!--<a href = '#' class='enlaceModulo'><strong>Fase  1</strong></a>-->
+
+<a href = '#' class='enlaceModulo'><strong>Fase 1</strong></a>
+
+</div>
+<div class='col-1 align-self-center'>
+<!--<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Fase  2</strong></a>-->
+
+<a href = 'modulo2.html' class='enlaceModulo enlaceActivo'><strong>Fase  2</strong></a>
+
+</div>
+<div class='col-1 align-self-center'>
+<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Fase  3</strong></a>-->
+
+<a href = 'modulo3.html' class='enlaceModulo enlaceActivo'><strong>Fase  3</strong></a>
+
+</div>
+<div class="col-1 align-self-center">
+	<span><strong>Zoom: </strong><button style="height:40px;width:40px" onclick="reducirLetra()" type="button" style="text-align:center; font-size:small;">A-</button><button style="height:40px;width:40px" onclick="aumentarLetra()" type="button" style="text-align:center; font-size:large;">A+</button></span>
+</div>
+			
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">Competencias digitales para la docencia</p>
+
+				<p id="subtituloPresentacionMovil">Fase 1: Contexto actual y transformación de la educación en la era digital.</p>
+
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">Competencias digitales para la docenciaScroll</p>
+
+					<p id="subtituloPresentacionScroll">Fase 1: Contexto actual y transformación de la educación en la era digital.</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+
+		<a href="fase2.html" class="w3-bar-item w3-button">Fase 2</a>
+
+		<a href="fase3.html" class="w3-bar-item w3-button">Fase 3</a>
+
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado" id="columnaImagen">
+					<br>
+					<br>
+					<img src="" class="img-fluid" id="imagenDiapositivas"
+
+						alt="presentacion">
+						<p style="text-align: right;">[1]</p>
+				</div>
+				<div class="col align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Propósito</strong>
+					</div>
+					<br>
+					<div id="textoCarrusel">
+						<p><span>El
+propósito de esta fase 1 es que el docente-estudiante logre una comprensión
+sólida de conocimientos y desarrolle competencias necesarias para enfrentar los
+desafíos y reconocer las oportunidades que ofrece este entorno en constante
+evolución digital.</span></p>
+
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+		<br>
+		<div id="diapositivasInformacion">
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireSuperior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row fondoAzul" id="cuerpoCarrusel">
+				<div class="col-2 vacio"></div>
+				<div class="col-1 col align-self-center centrado">
+				
+				</div>
+				<div class="col align-self-center centrado">
+					<div>
+						<strong><i class="bi bi-info-circle-fill"></i> Situación problematizadora</strong>
+					</div>
+					<br>
+					<div id="textoUnidadEscritorio" style="text-align: justify;">
+						<p><span>Vivimos en una época en la que la
+tecnología está omnipresente en nuestra vida diaria, y el campo de la educación
+no es una excepción. Las aulas tradicionales han evolucionado hacia entornos
+digitales en constante cambio, y es fundamental que los docentes estén
+preparados para enfrentar los desafíos y aprovechar las oportunidades que este
+entorno en constante evolución ofrece.</span></p>
+
+<p><span>Es por ello que </span><span>examinaremos de cerca cómo la
+educación ha experimentado una transformación significativa en los últimos
+años. De igual manera, discutiremos el impacto de las tecnologías digitales en
+los métodos de enseñanza y en las expectativas de los estudiantes y, finalmente,
+exploraremos cómo las herramientas digitales, la conectividad y el acceso a la
+información han revolucionado la forma en que los docentes transmiten el
+conocimiento y cómo los estudiantes lo adquieren.</span></p>
+
+					</div>
+				</div>
+				<div class="col-1 col align-self-center centrado">
+					
+				</div>
+				<div class="col-2 vacio"></div>
+			</div>
+			<div class="row aire fondoAzul">
+				<div class="col-2 vacio"></div>
+				<div class="col fondoAzul" id="aireInferior"></div>
+				<div class="col-2 vacio"></div>
+			</div>
+		</div>
+
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
+		
+			
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center" >
+				<a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+						
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+					  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Complementarias</button>
+					</div>
+				  </nav>
+				  <div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<p><span>Ángel,
+C. J., Valdés, J. C. &amp; Guzmán, T. (2017). Límites, desafíos y oportunidades
+para enseñar en los mundos virtuales.&nbsp;</span><span style="font-style:italic">Innovación
+educativa (México, DF)</span><span>,&nbsp;</span><span style="font-style:
+italic">17</span><span>(75),
+149-168. Scielo.org. </span><span><a href="http://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S1665-26732017000300149&amp;lng=es&amp;tlng=es">http://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S1665-26732017000300149&amp;lng=es&amp;tlng=es</a></span></p>
+
+<p><span>Aprende.intef.es (2022). </span><span style="font-style:italic">Marco de Referencia de la Competencia Digital. </span><span><a href="http://aprende.intef.es/sites/default/files/2023-02/MRCDD_V06B_GTTA.pdf">http://aprende.intef.es/sites/default/files/2023-02/MRCDD_V06B_GTTA.pdf</a></span></p>
+
+<p><span>Calderón,
+M., Loza, I. &amp; Castellanos, S. (2023). Propuestas de solución a los
+desafíos de la transformación digital en la educación superior.&nbsp;</span><span style="font-style:
+italic">Repositorio de la Red Internacional de
+Investigadores en Competitividad</span><span>,&nbsp;</span><span style="font-style:
+italic">16</span><span>(16),
+433-449. </span><span><a href="https://riico.net/index.php/riico/article/view/2154">https://riico.net/index.php/riico/article/view/2154</a></span></p>
+
+<p><span>Conexion</span><span>Cinvestav</span><span>.</span><span>
+(julio&nbsp;7, 2020).&nbsp;</span><span style="font-style:italic">El impacto de las herramientas
+digitales durante la pandemia</span><span>. Gobierno de México.&nbsp;</span><span><a href="https://conexion.cinvestav.mx/Publicaciones/el-impacto-de-las-herramientas-digitales-durante-la-pandemia">https://conexion.cinvestav.mx/Publicaciones/el-impacto-de-las-herramientas-digitales-durante-la-pandemia</a></span></p>
+
+<p><span>Instituto
+Nacional de Tecnologías Educativas y de Formación del Profesorado. (2017). </span><span style="font-style:
+italic">Marco Común de Competencia Digital
+Docente. Octubre 2017. </span><span>&nbsp;Ministerio de Educación,
+Cultura y Deporte del Gobierno de España.</span></p>
+
+<p><span><a href="https://aprende.intef.es/sites/default/files/2018-05/2017_1020_Marco-Com%C3%BAn-de-Competencia-Digital-Docente.pdf">https://aprende.intef.es/sites/default/files/2018-05/2017_1020_Marco-Com%C3%BAn-de-Competencia-Digital-Docente.pdf</a></span><span></span></p>
+
+<p><span>Pérez,
+L., Tapia, M. E., Justo, S. Miranda, F. &amp; Naranjo, G. B. (2022). </span><span style="font-style:
+italic">La mejora continua de la educación</span><span>.&nbsp;Gobierno
+de México/MEJOREDU.&nbsp;</span><span><a href="https://www.mejoredu.gob.mx/images/publicaciones/principios.pdf">https://www.mejoredu.gob.mx/images/publicaciones/principios.pdf</a></span></p>
+
+<p><span>Prendes,
+M. P. &amp; Cerdán, F. (2021). Tecnologías avanzadas para afrontar el reto de
+la innovación educativa. </span><span style="font-style:italic">RIED. Revista Iberoamericana de
+Educación a Distancia</span><span>, 24(1), pp. 35-53.&nbsp;</span><span><a href="https://doi.org/10.5944/ried.24.1.28415">https://doi.org/10.5944/ried.24.1.28415</a></span></p>
+
+<p><span>Ramírez,
+A. &amp; Casillas, M. A. (</span><span>coords</span><span>.).
+(2017). </span><span style="font-style:
+italic">Saberes digitales de los docentes de
+educación básica. Una propuesta para la discusión desde Veracruz. </span><span>Secretaría
+de Educación de Veracruz. </span><span><a href="https://www.uv.mx/blogs/brechadigital/files/2017/04/Saberes-Digitales-SEV-libro-final.pdf">https://www.uv.mx/blogs/brechadigital/files/2017/04/Saberes-Digitales-SEV-libro-final.pdf</a></span></p>
+
+<p><span>Solórzano,
+N., Noboa, S. &amp; Gómez, R. (2022). Dominio docente de las TIC en educación
+4.0 para ambientes de virtualidad infantil. </span><span style="font-style:italic">Revista
+Ibérica de Sistemas y Tecnologías de Información, 0</span><span>(4),
+90-105. </span><span><a href="https://www.proquest.com/openview/6968625fad08c8a3757a8d65cbc05689/1?pq-origsite=gscholar&amp;cbl=1006393">https://www.proquest.com/openview/6968625fad08c8a3757a8d65cbc05689/1?pq-origsite=gscholar&amp;cbl=1006393</a></span></p>
+
+<p><span>&nbsp;Sosa,
+M. J. &amp; Valverde, J. (2022). Hacia una educación digital. Modelos de
+integración&nbsp;de las TIC&nbsp;en los centros educativos.&nbsp;</span><span style="font-style:
+italic">Revista Mexicana de Investigación
+Educativa</span><span>
+(939-970). &nbsp;</span><span><a href="https://www.comie.org.mx/v5/sitio/wp-content/uploads/2022/07/RMIE_94.pdf">https://www.comie.org.mx/v5/sitio/wp-content/uploads/2022/07/RMIE_94.pdf</a></span></p>
+
+<p><span>TEDx </span><span>Talks</span><span>
+(mayo 6, 2020).&nbsp;</span><span style="font-style:italic">Presencia en el aula virtual/Hernán
+Aldana/</span><span style="font-style:
+italic">TEDxPuraVidaSalon</span><span style="font-style:
+italic">. </span><span>[Video].
+</span><span>Youtube</span><span>.&nbsp;&nbsp;</span><span><a href="https://www.youtube.com/watch?v=oi4vo0YoEKM">https://www.youtube.com/watch?v=oi4vo0YoEKM</a></span></p>
+
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+						<p><span>Alaniz</span><span>, L. D. (2021). El tratamiento de la
+infancia en las ciencias sociales: racionalidades e influjos. </span><span style="
+font-style:italic">Revista
+Virtual Universidad Católica del Norte</span><span>, (63), 5-38. </span><span><a href="https://doi.org/10.35575/rvucn.n63a2">https://doi.org/10.35575/rvucn.n63a2</a></span></p>
+
+<p><span>Balladares,
+J. (2021). Hacia un nuevo humanismo </span><span>post-pandemia</span><span>
+a partir de una ética digital. Universidad Andina Simón Bolívar. </span><span><a href="https://www.researchgate.net/publication/354389604_Hacia_un_nuevo_humanismo_post-_pandemia_a_partir_de_una_etica_digital">https://www.researchgate.net/publication/354389604_Hacia_un_nuevo_humanismo_post-_pandemia_a_partir_de_una_etica_digital</a></span></p>
+
+<p><span>Lebrusán</span><span> I., Larrañaga, K. P. &amp; Monguí,
+M. (2022). La digitalización como oportunidad para el desarrollo de la
+ciudadanía en la infancia y la adolescencia.&nbsp;</span><span style="font-style:italic">Política y Sociedad</span><span>,&nbsp;</span><span style="font-style:italic">59</span><span>(3),
+e81906. </span><span><a href="https://doi.org/10.5209/poso.81906">https://doi.org/10.5209/poso.81906</a></span></p>
+
+<p><span>OECDiLibrary</span><span>
+(s. f.). </span><span style="font-style:italic">Education</span><span style="font-style:italic">Policy</span><span style="
+font-style:italic">
+Outlook 2019: Trabajando juntos para ayudar a los estudiantes a alcanzar su
+potencial. </span><span><a href="https://www.oecd-ilibrary.org/sites/2b8ad56e-en/index.html?itemId=/content/publication/2b8ad56e-en">https://www.oecd-ilibrary.org/sites/2b8ad56e-en/index.html?itemId=/content/publication/2b8ad56e-en</a></span></p>
+
+<p><span>Orozco, T. (2013). Competencia digital
+docente [Infografía]. </span><span><a href="https://tamaraorozco.tumblr.com/">https://tamaraorozco.tumblr.com/</a></span></p>
+
+<p><span>Prendes, M. P. &amp; Cerdán, F. (2021).
+Tecnologías avanzadas para afrontar el reto de la innovación educativa. </span><span style="
+font-style:italic">RIED-Revista
+Iberoamericana de Educación a Distancia</span><span>, 24(1), 35-53. </span><span><a href="https://doi.org/10.5944/ried.24.1.28415">https://doi.org/10.5944/ried.24.1.28415</a></span></p>
+
+<p><span>UNESCO. (2021). Digital </span><span>citizenship</span><span>education</span><span>: A global </span><span>framework</span><span>. </span><span>United</span><span>Nations</span><span>Educational</span><span>, </span><span>Scientific</span><span> and Cultural </span><span>Organization</span><span>. </span><span><a href="https://unesdoc.unesco.org/ark:/48223/pf0000381534">https://unesdoc.unesco.org/ark:/48223/pf0000381534</a></span></p>
+
+<p><span>Palmer, T. (2015). </span><span style="font-style:italic">15
+characteristics of a 21st-century teacher.</span><span> Edutopia. George Lucas Educational
+Foundation. </span><span><a href="https://www.edutopia.org/discussion/15-characteristics-21st-century-teacher">https://www.edutopia.org/discussion/15-characteristics-21st-century-teacher</a></span></p>
+
+<p><span>Pimienta, J. (2012). </span><span style="font-style:italic">Estrategias
+de Enseñanza Aprendizaje</span><span>.
+Pearson.</span></p>
+
+<p><span>Programa de Apoyo Curricular y
+Evaluación de los Aprendizajes (PACE) </span><span>&amp;</span><span>
+Programa de Aprendizaje en Línea (PAL) (2018). </span><span style="
+font-style:italic">Consideraciones
+para la selección de estrategias y técnicas que pueden utilizarse en las
+herramientas de la plataforma virtual de la UNED. </span><span>Universidad
+Estatal a Distancia de Costa Rica.</span></p>
+
+<p><span><a href="https://www.uned.ac.cr/dpmd/pal/images/documentos/Profesores/consideraciones-seleccion-estrategias.pdf">https://www.uned.ac.cr/dpmd/pal/images/documentos/Profesores/consideraciones-seleccion-estrategias.pdf</a></span></p>
+
+<p><span>Román, J. M., Carbonero, M. A.,
+Martin, L. J. </span><span>&amp; </span><span>De Frutos, C. (2010). Docencia
+presencial y habilidades docentes básicas en profesorado universitario. </span><span style="font-style:italic">International
+</span><span style="font-style:italic">Journal</span><span style="font-style:italic">of</span><span style="font-style:italic">Developmental</span><span style="font-style:italic">
+and </span><span style="font-style:italic">Educational</span><span style="font-style:italic">Psychology</span><span style="font-style:italic">.
+</span><span>4(1),
+85</span><span>-</span><span>95.
+Redalyc.org. </span><span><a href="https://www.redalyc.org/pdf/3498/349832327008.pdf">https://www.redalyc.org/pdf/3498/349832327008.pdf</a></span><span></span></p>
+
+<p><span>Sánchez,
+M. C., Aguilar, M., Martínez, J. L. &amp; Sánchez, J. L. (2020). </span><span style="font-style:italic">Estrategias
+didácticas en entornos de aprendizaje enriquecidos con tecnología (antes del
+Covid-19). </span><span>Universidad Autónoma Metropolitana.
+</span><span><a href="https://www.casadelibrosabiertos.uam.mx/contenido/contenido/Libroelectronico/estrategias-didacticas.pdf">https://www.casadelibrosabiertos.uam.mx/contenido/contenido/Libroelectronico/estrategias-didacticas.pdf</a></span></p>
+
+<p><span>Tantale</span><span>án</span><span>, J.
+C., Campana, H., Salazar, L. D., Arellanos, R., Arroyo, T. A., Oscar, E. C.,
+Ordoñez, A. C. </span><span>&amp; </span><span>Montoya, D. (2023). </span><span style="font-style:italic">Estrategias
+didácticas en la educación universitaria </span><span style="font-style:italic">pospandemia</span><span style="font-style:italic">.
+</span><span>Fondo
+Editorial. Repositorio de la Universidad C</span><span>ésar</span><span> Vallejo.</span><span><a href="https://repositorio.ucv.edu.pe/handle/20.500.12692/109912">https://repositorio.ucv.edu.pe/handle/20.500.12692/109912</a></span></p>
+
+<p><span>Vargas-Murillo,
+G. (2020). Estrategias educativas y tecnología digital en el proceso enseñanza
+aprendizaje</span><span style="font-style:italic">. </span><span style="font-style:italic">Cuadernos
+Hospital de Clínicas</span><span>,
+61(1), 114-129. </span><span><a href="http://www.scielo.org.bo/scielo.php?script=sci_arttext&amp;pid=S1652-67762020000100010">http://www.scielo.org.bo/scielo.php?script=sci_arttext&amp;pid=S1652-67762020000100010</a></span><span></span></p>
+
+<p><span>Valle,
+A., González, R., Cuevas, L. </span><span>&amp;</span><span>
+Fernández, A. P. (1998). Las estrategias de aprendizaje: características
+básicas y su relevancia en el contexto escolar. </span><span style="font-style:italic">Revista
+de </span><span style="font-style:italic">Psicodidáctica</span><span>. 6 (53-68). </span><span><a href="https://www.redalyc.org/pdf/175/17514484006.pdf">https://www.redalyc.org/pdf/175/17514484006.pdf</a></span></p>
+
+<p><span>Villarreal-Villa, S., García-</span><span>Guliany</span><span>, J.,
+Hernández-Palma, H., &amp; </span><span>Steffens</span><span>-Sanabria,
+E. (2019). </span><span style="font-style:italic">Competencias
+Docentes y Transformaciones en la Educación en la Era Digital.</span><span>
+Formación Universitaria, 12(6), 3</span><span>-</span><span>4. </span><span><a href="https://doi.org/10.4067/s0718-50062019000600003">https://doi.org/10.4067/s0718-50062019000600003</a></span><span></span></p>
+
+<p><span>Viñals, B. &amp; Cuenca, J. (2016).
+El rol del docente en la era digital. </span><span style="font-style:italic">Revista
+Interuniversitaria de Formación del Profesorado</span><span>. </span><span><a href="https://dialnet.unirioja.es/servlet/articulo?codigo=5670199">https://dialnet.unirioja.es/servlet/articulo?codigo=5670199</a></span><span></span></p>
+
+					</div>
+
+				  </div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body" id="cuerpoModal">
+				<div class="container-fluid">
+					<input type="hidden" id="numeroEvidencias" value="0">
+
+					<input type="hidden" id="evidenciaActual" value="1">
+					<div class="row">
+						<div class='col'><div class='evidencia' id='evidencia1' style='display: block;'></div></div>
+
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>
