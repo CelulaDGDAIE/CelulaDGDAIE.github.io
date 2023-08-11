@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="css/estiloIndex.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Sistemas políticos de Norteamérica</p>
+
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="#" class="enlaceModulo"><strong>Inicio</strong></a>
+			</div>
+			<div class='col-1 align-self-center'>
+				<a href='modulo1.html' class='enlaceModulo enlaceActivo'><strong>Fase 1</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<a href='modulo2.html' class='enlaceModulo enlaceActivo'><strong>Fase 2</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<a href='modulo3.html' class='enlaceModulo enlaceActivo'><strong>Fase 3</strong></a>
+
+			</div>
+			<div class="col-1 align-self-center">
+				<span><strong>Zoom: </strong><button class="botonZoom" onclick="reducirLetra()"
+						type="button">A-</button><button class="botonZoom" onclick="aumentarLetra()"
+						type="button">A+</button></span>
+			</div>
+			<!--$@Modulos-->
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">Sistemas políticos de Norteamérica</p>
+
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/portada.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col" id="tituloPresentacionScroll">
+					Sistemas políticos de Norteamérica
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="#" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+
+		<a href="#" class="w3-bar-item w3-button">Fase 2</a>
+
+		<a href="#" class="w3-bar-item w3-button">Fase 3</a>
+
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+
+	<!-------------------------------------------- Banner ---------------------->
+	<div class="video-container" id="banner">
+		<video autoplay muted loop>
+			<source src="" type="video/mp4" />
+
+		</video>
+	</div>
+	<!-------------------------------------------- /Banner ---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Presentación</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						<p><span>El
+								curso Sistemas políticos de Norteamérica, se inscribe dentro del Área de
+								Ciencias Políticas del Programa de Estudios sobre América del Norte, de la
+								Universidad Veracruzana, y está dirigido a estudiantes de cualquier carrera
+								universitaria. Tiene como propósito incrementar el conocimiento e intercambio
+								de experiencias académicas entre los tres países que forman parte del acuerdo
+								de libre comercio del TMEC. Se propone también conocer cómo funcionan las
+								instituciones políticas de los tres países, estudiar desde un enfoque sistémico
+								y comparado, los orígenes, las características, los elementos, la organización
+								y la situación actual de sus sistemas políticos, analizando sus semejanzas y
+								diferencias, desde una perspectiva que enriquezca el conocimiento de las
+								realidades sociales y políticas de las tres naciones.</span></p>
+
+						<p><span>Este
+								curso aporta seis créditos del Área de Formación de Elección Libre, incluye un
+								total de 45 horas de formación académica y otorga a los estudiantes un
+								acercamiento al diseño institucional de los sistemas y regímenes políticos de
+								la región de Norteamérica, integrados en el Tratado México, Estados Unidos y
+								Canadá, actualizado en 2020, pero firmado desde 1994 entre los tres países. Se
+								enfoca hacia el estudio de la conformación, desarrollo y características
+								actuales de los sistemas políticos de cada país desde una perspectiva comparada
+								para analizar sus semejanzas y diferencias más significativas, a la luz de los
+								retos actuales de la integración económica de las tres naciones. Se privilegia
+								la evaluación por competencias, mediante el desarrollo de productos y
+								actividades de aprendizaje, que demuestren los conocimientos adquiridos por el
+								estudiante</span><span>.</span></p>
+
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Unidad de competencia</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						<p><span>El
+								estudiante distingue las características de los sistemas políticos de México,
+								Estados Unidos y Canadá, a través de la revisión y el análisis de textos
+								especializados, videos y documentales educativos, en un ambiente de apertura,
+								disposición, intercambio y respeto al trabajo académico, con el fin de
+								perfeccionar su desenvolvimiento en contextos profesionales a nivel regional o
+								internacional.</span></p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="diapositivasInformacion">
+			<div class="row aire aire superior fondoVerde">
+				<div class="col-1 vacio"></div>
+				<div class="col fondoVerde" id="aireSuperior"></div>
+				<div class="col-1 vacio"></div>
+			</div>
+			<div class="row fondoVerde" id="cuerpoCarrusel">
+				<div class="col-1 vacio"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
+				</div>
+				<div class="col align-self-center centrado" id="imagenPresentacion">
+					<br><br>
+					<img src="" class="img-fluid" style="display: block;">
+
+					<p class="derecha" id="referenciaImagen">[1]</p>
+				</div>
+				<div class="col-5 align-self-center centrado">
+					<div id="tituloCarrusel">
+						<strong><i class="bi bi-info-circle-fill"></i> Presentación</strong>
+					</div>
+					<div id="contenidoPresentacion" style="text-align: justify;">
+						<p><span>El
+								curso Sistemas políticos de Norteamérica, se inscribe dentro del Área de
+								Ciencias Políticas del Programa de Estudios sobre América del Norte, de la
+								Universidad Veracruzana, y está dirigido a estudiantes de cualquier carrera
+								universitaria. Tiene como propósito incrementar el conocimiento e intercambio
+								de experiencias académicas entre los tres países que forman parte del acuerdo
+								de libre comercio del TMEC. Se propone también conocer cómo funcionan las
+								instituciones políticas de los tres países, estudiar desde un enfoque sistémico
+								y comparado, los orígenes, las características, los elementos, la organización
+								y la situación actual de sus sistemas políticos, analizando sus semejanzas y
+								diferencias, desde una perspectiva que enriquezca el conocimiento de las
+								realidades sociales y políticas de las tres naciones.</span></p>
+
+						<p><span>Este
+								curso aporta seis créditos del Área de Formación de Elección Libre, incluye un
+								total de 45 horas de formación académica y otorga a los estudiantes un
+								acercamiento al diseño institucional de los sistemas y regímenes políticos de
+								la región de Norteamérica, integrados en el Tratado México, Estados Unidos y
+								Canadá, actualizado en 2020, pero firmado desde 1994 entre los tres países. Se
+								enfoca hacia el estudio de la conformación, desarrollo y características
+								actuales de los sistemas políticos de cada país desde una perspectiva comparada
+								para analizar sus semejanzas y diferencias más significativas, a la luz de los
+								retos actuales de la integración económica de las tres naciones. Se privilegia
+								la evaluación por competencias, mediante el desarrollo de productos y
+								actividades de aprendizaje, que demuestren los conocimientos adquiridos por el
+								estudiante</span><span>.</span></p>
+
+					</div>
+					<div id="contenidoUnidad" style="text-align: justify;">
+						<p><span>El
+								estudiante distingue las características de los sistemas políticos de México,
+								Estados Unidos y Canadá, a través de la revisión y el análisis de textos
+								especializados, videos y documentales educativos, en un ambiente de apertura,
+								disposición, intercambio y respeto al trabajo académico, con el fin de
+								perfeccionar su desenvolvimiento en contextos profesionales a nivel regional o
+								internacional.</span></p>
+
+					</div>
+
+				</div>
+				<div class="col align-self-center centrado" id="imagenUnidad" style="display: none;">
+					<br><br>
+					<img src="" class="img-fluid">
+
+					<p class="derecha" id="referenciaImagen">[2]</p>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaDerecha">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
+				</div>
+				<div class="col-1 vacio"></div>
+			</div>
+			<div class="row aire fondoVerde">
+				<div class="col-1 vacio"></div>
+				<div class="col fondoVerde" id="aireInferior"></div>
+				<div class="col-1 vacio"></div>
+			</div>
+		</div>
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<!-------------- Desarrollo de la EE -------------->
+
+		<p class="textoSeccion">Desarrollo de este curso</p>
+		<!-------------- Desarrollo de la EE Escritorio-------------->
+		<div id="desarrolloEscritorio" class="container-fluid">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col">
+					<!-------------- $@titulosModulos -------------->
+					<div class="row">
+						<div class="col moduloContenido" id="modulo1" onclick="location.href = 'modulo1.html';">
+							<p class="textoModuloEscritorio" id="tituloModulo1Movil">Fase 1: Introducción al estudio
+								comparado de los sistemas políticos.</p>
+
+
+						</div>
+						<div class="col-1"></div>
+						<div class="col moduloContenido" id="modulo2" onclick="location.href = 'modulo2.html';">
+							<p class="textoModuloEscritorio" id="tituloModulo2Movil">Fase 2: Los elementos de los
+								sistemas políticos en Estados Unidos, México y Canadá.</p>
+
+
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-2"></div>
+						<div class="col moduloContenido" id="modulo3" onclick="location.href = 'modulo3.html';">
+							<p class="textoModuloEscritorio" id="tituloModulo3Movil">Fase 3: La perspectiva comparada en
+								el estudio de los sistemas políticos.</p>
+
+
+						</div>
+						<div class="col-2"></div>
+					</div>
+				</div>
+				<div class="col-1"></div>
+				<div class="col-2 evaluacion" data-bs-toggle="modal" data-bs-target="#modalEvaluacion"></div>
+				<div class="col-2"></div>
+			</div>
+		</div>
+		<!-------------- /Desarrollo de la EE Escritorio-------------->
+
+		<!-------------- Desarrollo de la EE Movil-------------->
+		<div id="desarrolloMovil">
+			<a href="modulo1.html">
+				<div class="row campoModulo centrado">
+					<div class="col-1">
+						<div class="circuloModulo" id="circuloModulo1"></div>
+					</div>
+					<div class="col align-self-center">
+						<div class="contenidoModulo">
+							<p class="textoModulo" id="tituloModulo1">Fase 1: Introducción al estudio comparado de los
+								sistemas políticos.</p>
+						</div>
+
+
+					</div>
+				</div>
+			</a>
+			<br>
+			<a href="modulo2.html">
+				<div class="row campoModulo centrado">
+					<div class="col-1 align-self-center">
+						<div class="circuloModulo" id="circuloModulo2"></div>
+					</div>
+					<div class="col align-self-center">
+						<div class="contenidoModulo">
+							<p class="textoModulo" id="tituloModulo2">Fase 2: Los elementos de los sistemas políticos en
+								Estados Unidos, México y Canadá.</p>
+						</div>
+
+
+					</div>
+				</div>
+			</a>
+			<br>
+			<a href="modulo2.html">
+				<div class="row campoModulo centrado">
+					<div class="col-1 align-self-center">
+						<div class="circuloModulo" id="circuloModulo3"></div>
+					</div>
+					<div class="col align-self-center">
+						<div class="contenidoModulo">
+							<p class="textoModulo" id="tituloModulo3">Fase 3: La perspectiva comparada en el estudio de
+								los sistemas políticos.</p>
+						</div>
+
+
+					</div>
+				</div>
+			</a>
+			<br>
+			<div class="row">
+				<div class="col"></div>
+				<div class="col">
+					<div class="card" style="width: 12rem;">
+						<img src="imagenes/evaluacion-color.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+								data-bs-target="#modalEvaluacion">
+								Ver
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col"></div>
+			</div>
+		</div>
+		<!-------------- /Desarrollo de la EE Movil-------------->
+		<!-------------- /Desarrollo de la EE -------------->
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+	<p class="textoSeccion">Sobre este curso</p>
+	<!---------------------- Sobre la EE ---------------------->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonCreditos">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoCreditos">
+							<button class="accordion-button collapsed fondoAcordeon letraBlanca" type="button"
+								data-bs-toggle="collapse" data-bs-target="#contenidoCreditos" aria-expanded="false"
+								aria-controls="flush-collapseOne">
+								<em>Créditos</em>
+							</button>
+						</h2>
+						<div id="contenidoCreditos" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoCreditos" data-bs-parent="#acordeonCreditos">
+							<div class="accordion-body" id="textoCreditos">
+								<p><strong>Cr&eacute;ditos</strong></p>
+								<p><strong>Universidad Veracruzana</strong></p>
+								<p><br /> <strong>Dr. Juan Ortiz Escamilla</strong></p>
+								<p>Secretar&iacute;a Acad&eacute;mica</p>
+								<p><strong>Dr. Luis Alejandro Gazca Herrera</strong><br /> Coordinaci&oacute;n General
+									de Educaci&oacute;n en L&iacute;nea</p>
+								<p><strong><br /> Direcci&oacute;n General de Desarrollo Acad&eacute;mico e
+										Innovaci&oacute;n Educativa (DGDAIE)</strong></p>
+								<p>&nbsp;</p>
+								<p><strong>Dra. Elizabeth Ocampo G&oacute;mez </strong><br /> Direcci&oacute;n General
+								</p>
+								<p><strong>Mtro. Edgar Iv&aacute;n N&aacute;jera Morales</strong></p>
+								<p>Direcci&oacute;n de Innovaci&oacute;n Educativa</p>
+								<p><strong>Mtra. Araceli Arg</strong><strong>&uuml;</strong><strong>ello
+										Aguilar</strong></p>
+								<p>Direcci&oacute;n de Fortalecimiento Acad&eacute;mico</p>
+								<p><strong>Mtra.&nbsp;Alejandra </strong><strong>Yamel</strong><strong> Assad
+										Meza</strong></p>
+								<p>Departamento de Apoyo a la Formaci&oacute;n Integral del Estudiante</p>
+								<p><strong>Autor&iacute;a de la Experiencia Educativa del Programa de Formaci&oacute;n
+										de Acad&eacute;micos</strong></p>
+								<p><strong>Dr. &Aacute;ngel Ignacio Mart&iacute;nez Armengol</strong></p>
+								<p>Experto en contenido</p>
+								<p><strong>C&eacute;lula de Desarrollo de Experiencias Educativas virtuales de la
+										DGDAIE</strong></p>
+								<p>&nbsp;</p>
+								<p><strong>Mtro. Camilo Ortega S&aacute;nchez </strong></p>
+								<p>Coordinaci&oacute;n de C&eacute;lula de Desarrollo</p>
+								<p><strong>Arlet </strong><strong>Yushely</strong><strong> Dom&iacute;nguez
+										Garc&iacute;a </strong></p>
+								<p>Dise&ntilde;o instruccional</p>
+								<p><strong>Mtro. Josafat Murillo
+										Hern</strong><strong>&aacute;</strong><strong>ndez</strong></p>
+								<p>Gesti&oacute;n de contenido</p>
+								<p><strong>Mtra. Alicia Mora Rodr</strong><strong>&iacute;</strong><strong>guez</strong>
+								</p>
+								<p>Correcci&oacute;n de estilo</p>
+								<p><strong>Mtro. Aurelio Hern&aacute;ndez Guerrero</strong></p>
+								<p>Dise&ntilde;o gr&aacute;fico</p>
+								<p><strong>Mtro. J</strong><strong>o</strong><strong>nathan Iv&aacute;n
+										Guti</strong><strong>&eacute;</strong><strong>rrez Palma</strong></p>
+								<p>Experto en medios</p>
+								<p><strong>Mtro. Renato Vargas G</strong><strong>&oacute;</strong><strong>mez</strong>
+								</p>
+								<p>Programaci&oacute;n</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion accordion-flush" id="acordeonPresiciones">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoPresiciones">
+							<button class="accordion-button collapsed fondoAcordeon letraBlanca" type="button"
+								data-bs-toggle="collapse" data-bs-target="#contenidoPresiciones" aria-expanded="false"
+								aria-controls="flush-collapseOne">
+								<em>Precisiones</em>
+							</button>
+						</h2>
+						<div id="contenidoPresiciones" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoPresiciones" data-bs-parent="#acordeonPresiciones">
+							<div class="accordion-body centrado">
+								<a href="" target="_blank">
+
+									<img src="imagenes/descarga2.png" class="icono">
+								</a>
+								<p>Precisiones.pdf</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion accordion-flush" id="acordeonPrograma">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoPrograma">
+							<button class="accordion-button collapsed fondoAcordeon letraBlanca" type="button"
+								data-bs-toggle="collapse" data-bs-target="#contenidoPrograma" aria-expanded="false"
+								aria-controls="flush-collapseOne">
+								<em>Formato del curso</em>
+							</button>
+						</h2>
+						<div id="contenidoPrograma" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoPrograma" data-bs-parent="#acordeonPrograma">
+							<div class="accordion-body centrado">
+								<a href="" target="_blank">
+
+									<img src="imagenes/descarga3.png" class="icono">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+	</div>
+	<!---------------------- /Sobre la EE ---------------------->
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!---------------------- Modal Evaluacion ---------------------->
+	<div class="modal fade" id="modalEvaluacion" tabindex="-1" aria-labelledby="modalEvaluacion" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalEvaluacionEtiqueta">Evaluación de desempeño</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<table width="1855">
+						<tbody>
+							<tr>
+								<td>
+									<p><strong>Fases</strong></p>
+								</td>
+								<td>
+									<p><strong>Evidencias de desempe&ntilde;o</strong></p>
+								</td>
+								<td>
+									<p><strong>Porcentaje</strong></p>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="3" width="306">
+									<p>M&oacute;dulo 1</p>
+								</td>
+								<td>
+									<p>Actividad 1: Sistemas pol&iacute;ticos<strong>.</strong></p>
+								</td>
+								<td>
+									<p>5%</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Actividad 2: Enfoque comparativo de los sistemas pol&iacute;ticos
+										cl&aacute;sicos.</p>
+								</td>
+								<td>
+									<p>5%</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Actividad 3: Elementos del sistema pol&iacute;tico.</p>
+								</td>
+								<td>
+									<p>5%</p>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="4" width="306">
+									<p>M&oacute;dulo 2</p>
+								</td>
+								<td>
+									<p>Actividad 4: Sistemas pol&iacute;tico de Estados Unidos.</p>
+								</td>
+								<td>
+									<p>15%</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Actividad 5: Sistema pol&iacute;tico de Canad&aacute;.</p>
+								</td>
+								<td>
+									<p>15%</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Actividad 6: Elementos del sistema pol&iacute;tico de M&eacute;xico.</p>
+								</td>
+								<td>
+									<p>15%</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Foro 1. Caracter&iacute;sticas de los sistemas pol&iacute;ticos de
+										Norteam&eacute;rica.</p>
+								</td>
+								<td>
+									<p>5%</p>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="2" width="306">
+									<p>M&oacute;dulo 3</p>
+								</td>
+								<td>
+									<p>Actividad 7: Ensayo &ldquo;La perspectiva comparada en el estudio de los sistemas
+										pol&iacute;ticos&rdquo;.</p>
+								</td>
+								<td>
+									<p>30%</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Actividad 8: Video.</p>
+								</td>
+								<td>
+									<p>5%</p>
+								</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td>
+									<p><strong>Total</strong></p>
+								</td>
+								<td>
+									<p><strong>100 %</strong></p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!---------------------- Modal Evaluacion ---------------------->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/contenidoIndex.js"></script>
+	<script src="js/scriptIndex.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>
