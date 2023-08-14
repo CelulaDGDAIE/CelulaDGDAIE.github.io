@@ -180,19 +180,27 @@
 				<div class="col align-self-center">
 					<div id="contenidoSituacion">
 
-					</div>
-					<div id="contenidoProposito" style="display: none;">
 						<table>
 							<tr>
 								<td>
-									<img src="" alt="imagen pendiente" class="img-fluid" />
+									<p>Promover el uso y aprovechamiento de las herramientas que ofrece la Biblioteca Virtual para la gestión bibliográfica y el análisis textual.
+									</p>
+
 								</td>
 								<td style="width: 2em;"></td>
 								<td>
-						
+									<img src="" alt="imagen pendiente" class="img-fluid" />
 								</td>
 							</tr>
 						</table>
+					</div>
+					<div id="contenidoProposito" style="display: none;">
+
+						<ol>
+							<li>&iquest;C&oacute;mo el plagio puede afectar negativamente su credibilidad como estudiante o investigador?&nbsp;</li>
+							<li>&iquest;Qu&eacute; herramientas, t&eacute;cnicas y estrategias se pueden utilizar para evitar el plagio en sus trabajos acad&eacute;micos?&nbsp;</li>
+							<li>&iquest;Cu&aacute;les son las ventajas de utilizar un gestor bibliogr&aacute;fico en comparaci&oacute;n con la gesti&oacute;n manual de referencias bibliogr&aacute;ficas?&nbsp;</li>
+							</ol>
 					</div>
 					<br>
 				</div>
@@ -246,7 +254,9 @@
 				  </nav>
 				  <div class="tab-content" id="nav-tabContent">
 					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-						
+						<p>Copyleaks (S. f.). <em>Ai-</em><em>based</em> <em>plagiarism</em><em> &amp; Ai Content </em><em>Detection</em>. <a href="https://copyleaks.com/">https://copyleaks.com/</a></p>
+<p>Elsevier LATAM (2021). Tutorial #Mendeley. [Video]. Youtube. <u><a href="https://www.youtube.com/watch?v=BdOrncz0NYQ">https://www.youtube.com/watch?v=BdOrncz0NYQ</a></u></p>
+<p>Mendeley (S. f.). <em>I Discovery. Mendeley brings your research to life, so you can make an impact on tomorrow. Mendeley.com. </em><a href="https://www.mendeley.com/">https://www.mendeley.com/</a></p>
 
 					</div>
 					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
@@ -329,11 +339,37 @@
 			</div>
 			<div class="modal-body" id="cuerpoModal">
 				<div class="container-fluid">
-					<input type="hidden" id="numeroEvidencias" value="0">
+					<input type="hidden" id="numeroEvidencias" value="3">
 
 					<input type="hidden" id="evidenciaActual" value="1">
 					<div class="row">
-						<div class='col'><div class='evidencia' id='evidencia1' style='display: block;'></div></div>
+						<div class='col-md-1 align-self-center'><a class='flechaCarrusel'
+								onclick='evidenciaAnterior()'>&#10094;</a></div>
+						<div class='col'>
+							<div class='evidencia' id='evidencia1' style='display: block;'>
+								<p style="text-align: center;"><strong>Actividad 13. Herramientas antiplagio. Copyleaks.
+								</strong></p>
+								<p><strong>Descripci&oacute;n:</strong></p>
+								
+
+							</div>
+							<div class='evidencia' id='evidencia2' style='display: none;'>
+								<p style="text-align: center;"><strong>Actividad 14. Gestores bibliográficos. Mendeley.
+								</strong>
+								</p>
+								<p><strong>Descripci&oacute;n:</strong></p>
+								
+							</div>
+							<div class='evidencia' id='evidencia3' style='display: none;'>
+								<p style="text-align: center;"><strong>Actividad 15. Gestores bibliográficos. Mendeley.
+								</strong></p>
+										<p><strong>Descripci&oacute;n:</strong></p>
+
+								
+							</div>
+						</div>
+						<div class='col-md-1 align-self-center'><a class='flechaCarrusel'
+								onclick='siguienteEvidencia()'>&#10095;</a></div>
 
 					</div>
 				</div>
