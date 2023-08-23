@@ -1,0 +1,52 @@
+<!-------------------------------------------- Modales ---------------------->
+<!--Ventanas Modales-->
+<!-- Modal -->
+<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="cuerpoModal">
+                <div class="container-fluid">
+                    <input type="hidden" id="numeroEvidencias" value=""> <!--Número Evidencias-->
+
+                    <input type="hidden" id="evidenciaActual" value="1">
+                    <div class="row">
+                        <div class='col-md-1 align-self-center'><a class='flechaCarrusel'
+                                onclick='evidenciaAnterior()'>&#10094;</a></div>
+                        <div class='col'>
+                            <div class='evidencia' id='evidencia1' style='display: block;'>
+                                <p style="text-align: center;"><strong>Actividad/Foro</strong></p>
+                                <p><strong>Descripci&oacute;n:</strong></p>
+                                
+                                <p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+                                
+                                <p><strong>Lineamiento de entrega:</strong></p>
+                            </div>
+                            <div class='evidencia' id='evidencia2' style='display: none;'>
+                                <p style="text-align: center;"><strong>Actividad/Foro</strong></p>
+                                <p><strong>Descripci&oacute;n:</strong></p>
+                                
+                                <p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+                                
+                                <p><strong>Lineamiento de entrega:</strong></p>
+                            </div>
+                            
+                        </div>
+                        <div class='col-md-1 align-self-center'><a class='flechaCarrusel' onclick='siguienteEvidencia()'>&#10095;</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--/Ventanas Modales-->
