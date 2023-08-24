@@ -175,3 +175,43 @@ function fadeIn(idElemento) {
 function fadeOut(idElemento) {
 	document.getElementById(idElemento).style.display = "none";
 }
+
+function avanzarDiapositivaRecurso (idElemento){
+	var numeroDia = document.getElementById(idElemento).value;
+	var diaAct = document.getElementById(idElemento + 'Act').value;
+	var colAct = document.getElementById(idElemento + 'col').style.backgroundColor;
+	document.getElementById(idElemento + 'dia' + diaAct).style.display = 'none';
+	if(diaAct == numeroDia){
+		diaAct=1;
+	}else{
+		diaAct++;
+	}
+	document.getElementById(idElemento + 'dia' + diaAct).style.display = 'block';
+	if(colAct == "limegreen"){
+		document.getElementById(idElemento + 'col').style.backgroundColor = "lightblue";
+	}else{
+		document.getElementById(idElemento + 'col').style.backgroundColor = "limegreen";
+	}
+	document.getElementById(idElemento + 'Act').value = diaAct;
+
+}
+
+function regresarDiapositivaRecurso(idElemento){
+	var numeroDia = document.getElementById(idElemento).value;
+	var diaAct = document.getElementById(idElemento + 'Act').value;
+	var colAct = document.getElementById(idElemento + 'col').style.backgroundColor;
+	document.getElementById(idElemento + 'dia' + diaAct).style.display = 'none';
+	if(diaAct == 1){
+		diaAct=numeroDia;
+	}else{
+		diaAct--;
+	}
+	document.getElementById(idElemento + 'dia' + diaAct).style.display = 'block';
+	if(colAct == "limegreen"){
+		document.getElementById(idElemento + 'col').style.backgroundColor = "lightblue";
+	}else{
+		document.getElementById(idElemento + 'col').style.backgroundColor = "limegreen";
+	}
+	document.getElementById(idElemento + 'Act').value = diaAct;
+
+}

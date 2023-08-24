@@ -1,0 +1,68 @@
+<!---------Carrusel--------->
+<div class='row'>
+    <div class='col-2'></div>
+    <div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+        <a class="flechaCarrusel" onclick="regresarDiapositivaRecurso('carr1')">&#10094;</a>
+    </div>
+    <div class='col' id="carr1col" style="background-color: limegreen; border-radius: 25px; padding: 1em;">
+        <input id="carr1" value="3" type="hidden">
+        <input id="carr1Act" value="1" type="hidden">
+        <div id="carr1dia1" style="display: block;">
+            <!--Contendio-->
+        </div>
+        <div id="carr1dia2" style="display: none;">
+            <!--Contendio-->
+        </div>
+        <div id="carr1dia3" style="display: none;">
+            <!--Contendio-->
+        </div>
+    </div>
+    <div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+        <a class="flechaCarrusel" onclick="avanzarDiapositivaRecurso('carr1')">&#10095;</a>
+    </div>
+    <div class='col-2'></div>
+</div>
+<br>
+
+<script>
+
+    function avanzarDiapositivaRecurso(idElemento) {
+        var numeroDia = document.getElementById(idElemento).value;
+        var diaAct = document.getElementById(idElemento + 'Act').value;
+        var colAct = document.getElementById(idElemento + 'col').style.backgroundColor;
+        document.getElementById(idElemento + 'dia' + diaAct).style.display = 'none';
+        if (diaAct == numeroDia) {
+            diaAct = 1;
+        } else {
+            diaAct++;
+        }
+        document.getElementById(idElemento + 'dia' + diaAct).style.display = 'block';
+        if (colAct == "limegreen") {
+            document.getElementById(idElemento + 'col').style.backgroundColor = "lightblue";
+        } else {
+            document.getElementById(idElemento + 'col').style.backgroundColor = "limegreen";
+        }
+        document.getElementById(idElemento + 'Act').value = diaAct;
+
+    }
+
+    function regresarDiapositivaRecurso(idElemento) {
+        var numeroDia = document.getElementById(idElemento).value;
+        var diaAct = document.getElementById(idElemento + 'Act').value;
+        var colAct = document.getElementById(idElemento + 'col').style.backgroundColor;
+        document.getElementById(idElemento + 'dia' + diaAct).style.display = 'none';
+        if (diaAct == 1) {
+            diaAct = numeroDia;
+        } else {
+            diaAct--;
+        }
+        document.getElementById(idElemento + 'dia' + diaAct).style.display = 'block';
+        if (colAct == "limegreen") {
+            document.getElementById(idElemento + 'col').style.backgroundColor = "lightblue";
+        } else {
+            document.getElementById(idElemento + 'col').style.backgroundColor = "limegreen";
+        }
+        document.getElementById(idElemento + 'Act').value = diaAct;
+
+    }
+</script>
