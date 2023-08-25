@@ -425,6 +425,78 @@
 			</div>
 			<div class='col-2'></div>
 		</div>
+
+
+		<!---------Carrusel--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+				<a class="flechaCarrusel" onclick="regresarDiapositivaRecurso('carr1')">&#10094;</a>
+			</div>
+			<div class='col' id="carr1col" style="background-color: limegreen; border-radius: 25px; padding: 1em;">
+				<input id="carr1" value="4" type="hidden">
+				<input id="carr1Act" value="1" type="hidden">
+				<div id="carr1dia1" style="display: block;">
+					<table>
+						<td><img class="img-fluid"
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Seal_of_the_President_of_the_United_States.svg/599px-Seal_of_the_President_of_the_United_States.svg.png?20190310093241">
+						</td>
+						<td style="width: 2em;"></td>
+						<td>
+							<p>El Poder Ejecutivo está encabezado por el Presidente de los Estados Unidos, quien es
+								elegido mediante voto popular indirecto para un mandato de cuatro años. Puede ser
+								reelecto por una sola ocasión consecutiva para un periodo similar. El Presidente es el
+								jefe de Estado y de gobierno, y tiene la responsabilidad de ejecutar las leyes y dirigir
+								la política exterior del país. El Vicepresidente apoya al presidente y asume sus
+								funciones en caso de ausencia o incapacidad.
+							</p>
+						</td>
+
+					</table>
+
+				</div>
+				<div id="carr1dia2" style="display: none;">
+					<p>El Vicepresidente tiene también la tarea de presidir las sesiones del Senado, aunque no puede
+						votar en las decisiones de éste, salvo en caso de empate. Esto representa un suceso atípico de
+						participación del poder Ejecutivo en el Legislativo. El Presidente también nombra a los miembros
+						del Gabinete, que son responsables de dirigir los diferentes departamentos y agencias del
+						gobierno y puede destituirlos a voluntad. Algunos de los miembros del gabinete son aprobados por
+						el Senado.
+					</p>
+				</div>
+				<div id="carr1dia3" style="display: none;">
+					<p>El gabinete está formado por los jefes de los diferentes departamentos ejecutivos, también
+						conocidos como secretarios. Actualmente, existen 15 departamentos ejecutivos en el gabinete
+						federal de Estados Unidos: Departamento de Estado, Departamento del Tesoro, Departamento de
+						Defensa, Departamento de Justicia, Departamento del Interior, Departamento de Agricultura,
+						Departamento de Comercio, Departamento de Trabajo, Departamento de Salud y Servicios Humanos,
+						Departamento de Vivienda y Desarrollo Urbano, Departamento de Transporte, Departamento de
+						Energía, Departamento de Educación, Departamento de Seguridad Nacional y Departamento de Asuntos
+						de los Veteranos.
+					</p>
+				</div>
+				<div id="carr1dia4" style="display: none;">
+					<p>Además de los departamentos, existen numerosas agencias federales que son responsables de
+						diversas áreas de política y administración. Estas agencias funcionan dentro de los
+						departamentos ejecutivos y están encabezadas por funcionarios nombrados por el presidente.
+						Algunas de las principales agencias federales son: Agencia de Protección Ambiental (EPA),
+						Administración de Alimentos y Medicamentos (FDA), Administración Nacional de Aeronáutica y del
+						Espacio (NASA), Agencia Central de Inteligencia (CIA), Administración Federal de Aviación (FAA)
+						y Oficina Federal de Investigaciones (FBI), entre otras. 
+					</p>
+				</div>
+			</div>
+			<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+				<a class="flechaCarrusel" onclick="avanzarDiapositivaRecurso('carr1')">&#10095;</a>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+
+
+
+
+
 		<!---------Subitulo--------->
 		<div class='row'>
 			<div class='col-2'></div>
@@ -870,7 +942,10 @@
 			<div class='col-3'></div>
 			<div class='col'>
 				<div style='text-align: center'>
-					PkwKV20Tbxg
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/PkwKV20Tbxg?si=qbvc5rN05QluN8Pl"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen></iframe>
 				</div>
 			</div>
 			<div class='col-3'></div>
@@ -914,12 +989,88 @@
 							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
 							id='path2' style='fill:#0055d4'></path>
 					</svg>
-					Para leer la información de cada poder, haga clic en la flecha correspondiente.
+					Para leer la información de cada poder, haga clic en el apartado correspondiente.
 					<br>
 				</p>
 			</div>
 			<div class='col-2'></div>
 		</div>
+
+		<!---------Cortinas--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<table style="margin-left: auto; margin-right: auto;" id="cortina1">
+					<tr>
+						<td style="padding: 5em; padding-bottom: 0.1em; background-color: aqua; display: none;"
+							id="contenidoIzquierdacortina1" rowspan="2">
+							<p><strong>El Poder Ejecutivo: Primer ministro y gabinete</strong>&nbsp;</p>
+							<p>En tanto una monarqu&iacute;a parlamentaria constitucional, el Poder Ejecutivo en
+								Canad&aacute; lo ejercen tanto el monarca como el primer ministro. El soberano
+								brit&aacute;nico (actualmente Carlos III) es el Jefe del Estado y desempe&ntilde;a un
+								papel m&aacute;s bien simb&oacute;lico y ceremonial. Como el monarca no reside en
+								Canad&aacute; sino en Inglaterra, es representado en el dominio por un Gobernador
+								General, quien tiene la potestad de sancionar las leyes y representar a la corona en
+								todos los actos y ceremonias oficiales del pa&iacute;s. El Gobernador General es
+								nombrado, formalmente, por el Soberano ingl&eacute;s, aunque para ello atiende la
+								recomendaci&oacute;n que hace el primer ministro. Por otra parte, el jefe del Gobierno
+								canadiense est&aacute; encabezado por el Primer Ministro, quien es el l&iacute;der del
+								partido pol&iacute;tico con mayor representaci&oacute;n en la C&aacute;mara de los
+								Comunes (parlamento). El Primer Ministro es responsable de formar el gobierno y tiene la
+								autoridad para nombrar a los miembros del gabinete, que son los ministros encargados de
+								las diferentes &aacute;reas del gobierno, como Finanzas, Justicia, Salud, entre otros,
+								que deben ser aprobados y son responsables ante el Parlamento. El gabinete tiene la
+								funci&oacute;n de asesorar al Primer Ministro y tomar decisiones en relaci&oacute;n con
+								las pol&iacute;ticas y programas del gobierno.&nbsp;</p>
+						</td>
+						<td style="padding: 2em; padding-bottom: 0.1em; background-color: royalblue; display: none;"
+							id="regresoIzquierdacortina1" rowspan="2">
+							<a class="flechaCarrusel" onclick="regresar('cortina1')">&#10095;</a>
+						</td>
+						<td style="padding: 5em; padding-bottom: 0.1em; background-color: aqua; cursor: pointer;"
+							id="iconoIzquierdacortina1" onclick="muestraIzquierda('cortina1')">
+							<img class="img-fluid" alt="icon pendiente" src="">
+						</td>
+						<td style="padding: 5em; padding-bottom: 0.1em; background-color: aqua; display: none;"
+							id="regresoDerechacortina1" rowspan="2">
+							<a class="flechaCarrusel" onclick="regresar('cortina1')">&#10094;</a>
+
+						</td>
+						<td style="padding: 5em; padding-bottom: 0.1em; background-color: royalblue; cursor: pointer;"
+							id="iconoDerechacortina1" onclick="muestraDerecha('cortina1')">
+							<img class="img-fluid" alt="icon pendiente" src="">
+						</td>
+						<td style="padding: 5em; padding-bottom: 0.1em; background-color: royalblue; display: none;"
+							id="contenidoDerechacortina1" rowspan="2">
+							<p><strong>El Poder Judicial</strong></p>
+							<p>El Poder Judicial en Canad&aacute; es independiente y est&aacute; encabezado por la Corte
+								Suprema de Canad&aacute;, que es el tribunal de mayor jerarqu&iacute;a en el
+								pa&iacute;s. La Corte Suprema es responsable de interpretar las leyes y la
+								Constituci&oacute;n, y de resolver conflictos legales. Adem&aacute;s de la Corte
+								Suprema, hay otros tribunales federales y provinciales en todo el pa&iacute;s que tratan
+								casos en &aacute;reas espec&iacute;ficas del derecho.</p>
+						</td>
+
+					</tr>
+					<tr>
+						<td style="padding: 5em; padding-top: 0.1em; text-align: center; background-color: aqua; cursor: pointer;"
+							id="tituloIzquierdacortina1" onclick="muestraIzquierda('cortina1')"><strong>
+								2.2 El Poder Ejecutivo: Primer ministro y gabinete
+							</strong></td>
+						<td style="padding: 5em; padding-top: 0.1em; text-align: center; background-color: royalblue; cursor: pointer;"
+							id="tituloDerechacortina1" onclick="muestraDerecha('cortina1')"><strong>
+								2.3 El Poder Judicial
+							</strong></td>
+					</tr>
+				</table>
+			</div>
+			<div class='col-2'></div>
+		</div>
+
+		<br>
+
+
+
 		<!---------Instruccion--------->
 		<div class='row'>
 			<div class='col-2'></div>
@@ -1127,6 +1278,47 @@
 			</div>
 			<div class='col-2'></div>
 		</div>
+
+
+		<!--Ventanas emergentes-->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<table style="margin-left: auto; margin-right: auto; width: 100%; table-layout: fixed;" id="Grupo1Mod">
+					<tr>
+							<td style="cursor: pointer; background-color: aqua; color: white;" data-bs-toggle="modal" data-bs-target="#Grupo1Mod1">
+								<p style="text-align: center;">
+									<strong>
+										1.3.1 El régimen presidencial mexicano. El Poder Ejecutivo
+									</strong>
+								</p>
+							</td>
+
+						<td style="cursor: pointer; background-color: royalblue; color: white;" data-bs-toggle="modal" data-bs-target="#Grupo1Mod2">
+							<p style="text-align: center;">
+								<strong>
+									1.3.2 El Poder Legislativo federal
+								</strong>
+							</p>
+						</td>
+						<td style="cursor: pointer; background-color: aqua; color: white;" data-bs-toggle="modal" data-bs-target="#Grupo1Mod3">
+							<p style="text-align: center;">
+								<strong>
+									1.3.3 El Poder Judicial federal
+								</strong>
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+
+
+
+
+
 		<!---------Subitulo--------->
 		<div class='row'>
 			<div class='col-2'></div>
@@ -1233,22 +1425,47 @@
 			</div>
 			<div class='col-2'></div>
 		</div>
-		<!---------Contenido html--------->
-		<div class='row'>
-			<div class='col-2'></div>
-			<div class='col'>
-				<p><span>El
-						federalismo mexicano es un elemento fundamental en la organización política del
-						país. Se basa en la división y distribución de poderes entre el gobierno
-						federal, los Estados y los municipios. A través del federalismo, se busca
-						fortalecer la autonomía y participación de las entidades subnacionales en la
-						toma de decisiones y en la gestión de asuntos locales. Los Estados en México
-						son las entidades federativas que conforman la República. Cada Estado tiene su
-						propia Constitución y cuenta con un gobierno propio, ejercido por un
-						Gobernador, un Congreso estatal y un Poder Judicial de competencia estatal.</span></p>
-			</div>
-			<div class='col-2'></div>
-		</div>
+		<!---------Carrusel--------->
+<div class='row'>
+    <div class='col-2'></div>
+    <div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+        <a class="flechaCarrusel" onclick="regresarDiapositivaRecurso('carr2')">&#10094;</a>
+    </div>
+    <div class='col' id="carr2col" style="background-color: limegreen; border-radius: 25px; padding: 1em;">
+        <input id="carr2" value="3" type="hidden">
+        <input id="carr2Act" value="1" type="hidden">
+        <div id="carr2dia1" style="display: block;">
+			<table>
+				<tr>
+					<td><img class="img-fluid" src="https://cdn.pixabay.com/photo/2020/06/03/19/22/vintage-5256110_1280.jpg"></td>
+					<td style="width: 2em;"></td>
+					<td>
+						<p>
+							El federalismo mexicano es un elemento fundamental en la organización política del país. Se basa en la división y distribución de poderes entre el gobierno federal, los Estados y los municipios. A través del federalismo, se busca fortalecer la autonomía y participación de las entidades subnacionales en la toma de decisiones y en la gestión de asuntos locales. Los Estados en México son las entidades federativas que conforman la República. Cada Estado tiene su propia Constitución y cuenta con un gobierno propio, ejercido por un Gobernador, un Congreso estatal y un Poder Judicial de competencia estatal.
+						</p>
+					</td>
+				</tr>
+				
+			</table>
+            
+        </div>
+        <div id="carr2dia2" style="display: none;">
+            <p>
+				En cuanto a la división política interna de los Estados, éstos se dividen en municipios, que son las divisiones administrativas más pequeñas y básicas del país. Los municipios tienen autonomía y capacidad de decisión en asuntos locales, como la administración de servicios públicos, la promoción del desarrollo local, la seguridad y el orden público. Cada municipio cuenta con su propio gobierno municipal, encabezado por un presidente municipal y un cabildo. 
+			</p>
+        </div>
+        <div id="carr2dia3" style="display: none;">
+            <p>
+				En el país, existen un total de 2,446 municipios. Los Estados con mayor número de municipios son Oaxaca, con 570 municipios, y Veracruz, con 212 municipios. Estos Estados presentan una gran diversidad geográfica y poblacional, lo que ha contribuido a la formación de un mayor número de municipios. Por otro lado, los Estados con menos municipios son Baja California Sur, con cinco  municipios, y Colima, con 10 municipios. 
+			</p>
+        </div>
+    </div>
+    <div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+        <a class="flechaCarrusel" onclick="avanzarDiapositivaRecurso('carr2')">&#10095;</a>
+    </div>
+    <div class='col-2'></div>
+</div>
+<br>
 
 		<hr>
 		<br>
@@ -1288,7 +1505,8 @@
 				<div class="tab-content" id="nav-tabContent">
 					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
 						tabindex="0">
-						<p class="fuente">Academia Play. (2017, diciembre 13). <em>La Independencia de Estados Unidos en 11
+						<p class="fuente">Academia Play. (2017, diciembre 13). <em>La Independencia de Estados Unidos en
+								11
 								minutos</em>. [Video]. Youtube. &nbsp;<u><a
 									href="https://youtu.be/nMA5ykesU0I">https://youtu.be/nMA5ykesU0I</a></u></p>
 						<p class="fuente">Aguirre, P. (Coord.) (2001). <em>Sistemas pol&iacute;ticos y electorales
@@ -1299,47 +1517,59 @@
 								contempor&aacute;neos: Canad&aacute;. </em>IFE. <u><a
 									href="https://biblio.juridicas.unam.mx/bjv/detalle-libro/524-canada-2a-ed">https://biblio.juridicas.unam.mx/bjv/detalle-libro/524-canada-2a-ed</a></u>&nbsp;&nbsp;
 						</p>
-						<p class="fuente">Bandala, O. (2012). Sistema pol&iacute;tico mexicano. <em>Red Tercer Milenio</em>. <u><a
+						<p class="fuente">Bandala, O. (2012). Sistema pol&iacute;tico mexicano. <em>Red Tercer
+								Milenio</em>. <u><a
 									href="https://www.aliat.click/BibliotecasDigitales/derecho_y_ciencias_sociales/Sistema_politico_mexicano.pdf">https://www.aliat.click/BibliotecasDigitales/derecho_y_ciencias_sociales/Sistema_politico_mexicano.pdf</a></u>&nbsp;&nbsp;
 						</p>
-						<p class="fuente">BBC News M (2020, octubre 22). <em>C&oacute;mo funciona el sistema electoral en EE.UU. y por
+						<p class="fuente">BBC News M (2020, octubre 22). <em>C&oacute;mo funciona el sistema electoral
+								en EE.UU. y por
 								qu&eacute; no siempre gana el candidato m&aacute;s votado. </em>[Video]. Youtube. <u><a
 									href="https://youtu.be/75ttaX-Csno">https://youtu.be/75ttaX-Csno</a></u>&nbsp;&nbsp;
 						</p>
-						<p class="fuente">Carbonell, M. (2006). <em>Divisi&oacute;n de poderes y r&eacute;gimen presidencial en
+						<p class="fuente">Carbonell, M. (2006). <em>Divisi&oacute;n de poderes y r&eacute;gimen
+								presidencial en
 								M&eacute;xico. </em>Instituto de Investigaciones Jur&iacute;dicas-UNAM.&nbsp; <u><a
 									href="https://elibro.net/es/ereader/bibliotecauv/74548?page=140">https://elibro.net/es/ereader/bibliotecauv/74548?page=140</a></u>
 						</p>
-						<p class="fuente">Del Olmo, R. (2018). <em>El sistema pol&iacute;tico mexicano del siglo XX. </em>CESOP. <u><a
+						<p class="fuente">Del Olmo, R. (2018). <em>El sistema pol&iacute;tico mexicano del siglo XX.
+							</em>CESOP. <u><a
 									href="http://www5.diputados.gob.mx/index.php/esl/content/download/108045/540880/file/CESOP-IL-72-14-SistemaPolitico-300318.pdf">http://www5.diputados.gob.mx/index.php/esl/content/download/108045/540880/file/CESOP-IL-72-14-SistemaPolitico-300318.pdf</a></u>&nbsp;&nbsp;
 						</p>
-						<p class="fuente">El Mapa de Sebas (2019, noviembre 20). <em>Historia de Canad&aacute; en 15 minutos</em>.
+						<p class="fuente">El Mapa de Sebas (2019, noviembre 20). <em>Historia de Canad&aacute; en 15
+								minutos</em>.
 							[Video]. Youtube. <u><a
 									href="https://youtu.be/PkwKV20Tbxg">https://youtu.be/PkwKV20Tbxg</a></u>&nbsp;&nbsp;
 						</p>
-						<p class="fuente">Juan Carlos Montero (2020, octubre 9). <em>Sistema Pol&iacute;tico Mexicano</em>. [Video].
+						<p class="fuente">Juan Carlos Montero (2020, octubre 9). <em>Sistema Pol&iacute;tico
+								Mexicano</em>. [Video].
 							Youtube. <u><a
 									href="https://youtu.be/F-_3CtKdyJw">https://youtu.be/F-_3CtKdyJw</a></u>&nbsp;</p>
-						<p class="fuente">Kip Kipy Tiny (2015, febrero 20). Provincias y territorios canadienses - Aprende sobre
+						<p class="fuente">Kip Kipy Tiny (2015, febrero 20). Provincias y territorios canadienses -
+							Aprende sobre
 							Canad&aacute;. [Video]. Youtube. <u><a
 									href="https://youtu.be/JvU04l-WK6o">https://youtu.be/JvU04l-WK6o</a></u>&nbsp;</p>
-						<p class="fuente">Lifeder Educaci&oacute;n (2022, julio 29). <em>La historia de Estados Unidos: primeros
+						<p class="fuente">Lifeder Educaci&oacute;n (2022, julio 29). <em>La historia de Estados Unidos:
+								primeros
 								pobladores, colonizaci&oacute;n, guerras, actualidad.</em> [Video]. Youtube. <u><a
 									href="https://youtu.be/l6PqhzuWZLU">https://youtu.be/l6PqhzuWZLU</a></u>&nbsp;&nbsp;
 						</p>
-						<p class="fuente">Memorias de Pez (2020, febrero 26). <em>La historia De Estados Unidos en 13 minutos | Resumen
+						<p class="fuente">Memorias de Pez (2020, febrero 26). <em>La historia De Estados Unidos en 13
+								minutos | Resumen
 								r&aacute;pido. </em>[Video]. Youtube. <u><a
 									href="https://youtu.be/4pK_KGB4KmA">https://youtu.be/4pK_KGB4KmA</a></u>&nbsp;&nbsp;
 						</p>
-						<p class="fuente">Politizandote (2021, enero 27). <em>Poder Legislativo En M&eacute;xico</em>. [Video].
+						<p class="fuente">Politizandote (2021, enero 27). <em>Poder Legislativo En M&eacute;xico</em>.
+							[Video].
 							Youtube. <u><a
 									href="https://www.youtube.com/watch?v=6Os7BjlWHy0">https://www.youtube.com/watch?v=6Os7BjlWHy0</a></u>&nbsp;
 						</p>
-						<p class="fuente">Rafael Guar&iacute;n (2021, septiembre 21). <em>Estructura administrativa de los Estados
+						<p class="fuente">Rafael Guar&iacute;n (2021, septiembre 21). <em>Estructura administrativa de
+								los Estados
 								Unidos de Am&eacute;rica</em><em>. </em>[Video]. Youtube. <u><a
 									href="https://youtu.be/AVw3Jz_tsKQ?t=280">https://youtu.be/AVw3Jz_tsKQ?t=280</a></u>&nbsp;&nbsp;
 						</p>
-						<p class="fuente">Woehrling, J. (2011). El sistema federal de Canad&aacute;: origen, evoluci&oacute;n y
+						<p class="fuente">Woehrling, J. (2011). El sistema federal de Canad&aacute;: origen,
+							evoluci&oacute;n y
 							problemas actuales. <em>Teor&iacute;a y Realidad Constitucional</em>, (28), 431-459. <u><a
 									href="https://doi.org/10.5944/trc.28.2011.6967">https://doi.org/10.5944/trc.28.2011.6967</a></u>&nbsp;&nbsp;
 						</p>
@@ -1594,6 +1824,70 @@
 			</div>
 		</div>
 	</div>
+
+
+	<!-- Modal -->
+<div class="modal fade" id="Grupo1Mod1" tabindex="-1" aria-labelledby="Grupo1Mod1Label" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="Grupo1Mod1Label">1.3.1 El régimen presidencial mexicano. El Poder Ejecutivo
+		</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<p>El Poder Ejecutivo en M&eacute;xico es encabezado por el presidente de la Rep&uacute;blica, quien es elegido por voto popular para un mandato de seis a&ntilde;os sin posibilidad de reelecci&oacute;n inmediata. El presidente es tanto el jefe de Estado como el jefe de Gobierno, y tiene la responsabilidad de ejecutar y hacer cumplir las leyes del pa&iacute;s. Vivimos, pues, en un sistema pol&iacute;tico presidencialista. Pero el presidencialismo en M&eacute;xico ha tenido unas caracter&iacute;sticas muy diferentes a las que se viven, por ejemplo, en Estados Unidos. Las atribuciones legales y meta-legales del Presidente mexicano, le otorgaron ampl&iacute;simas facultades llegando, incluso, a una concentraci&oacute;n autoritaria del ejercicio del poder y un sometimiento pol&iacute;tico e institucional de los otros poderes p&uacute;blicos (Legislativo y Judicial), lo que hizo impracticable en M&eacute;xico el principio de &ldquo;pesos y contrapesos&rdquo; al estilo estadounidense.&nbsp;</p>
+			<p>En cuanto a sus caracter&iacute;sticas generales, el funcionamiento del Poder Ejecutivo en M&eacute;xico se describe de la siguiente forma: Es unipersonal, es decir, en una sola persona recae tanto la Jefatura del Estado como la direcci&oacute;n del gobierno; es elegido cada seis a&ntilde;os sin posibilidad de reelecci&oacute;n (ni inmediata ni posterior) mediante voto popular directo, bajo el principio de mayor&iacute;a; su elecci&oacute;n es independiente de la del Poder Legislativo, ante quien puede presentar iniciativas de ley (creaci&oacute;n o reformas) y proponer nombramientos de funcionarios de Estado; designa y remueve libremente a los funcionarios que lo acompa&ntilde;an en la titularidad de las dependencias de la administraci&oacute;n p&uacute;blica federal (m&aacute;s de 400 funcionarios p&uacute;blicos), aunque en algunos casos &eacute;stos requieren ratificaci&oacute;n legislativa; dirige la pol&iacute;tica exterior y la representaci&oacute;n diplom&aacute;tica de M&eacute;xico ante el exterior; es el comandante supremo de las fuerzas armadas, entre otras.&nbsp;</p>
+			<p>Para abundar en este tema, es importante leer el <strong>Cap&iacute;tulo XI. El Presidencialismo mexicano</strong>, del libro <em>Divisi&oacute;n de poderes y r&eacute;gimen presidencial en M&eacute;xico</em>, de Miguel Carbonell, que puede localizar en el siguiente enlace: <strong><a href="https://elibro.net/es/ereader/bibliotecauv/74548?page=140">https://elibro.net/es/ereader/bibliotecauv/74548?page=140</a></strong><strong>&nbsp;</strong>&nbsp;</p>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="Grupo1Mod2" tabindex="-1" aria-labelledby="Grupo1Mod2Label" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="Grupo1Mod2Label">1.3.2 El Poder Legislativo federal </h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<p>El Poder Legislativo en M&eacute;xico se deposita en el Congreso de la Uni&oacute;n y est&aacute; compuesto por dos c&aacute;maras: la C&aacute;mara de Diputados y el Senado. La C&aacute;mara de Diputados est&aacute; integrada por 500 representantes populares elegidos cada tres a&ntilde;os, con posibilidad de reelecci&oacute;n hasta en cutro ocasiones (es decir, pueden permanecer en el cargo, si son reelectos, hasta 12 a&ntilde;os en el cargo). La C&aacute;mara de Senadores est&aacute; formada por 128 integrantes, que son representantes de los Estados y del Distrito Federal. La elecci&oacute;n de Senadores ocurre cada seis a&ntilde;os. Tambi&eacute;n pueden relegirse hasta en una ocasi&oacute;n. Ambas c&aacute;maras son responsables de la elaboraci&oacute;n y aprobaci&oacute;n de leyes, as&iacute; como de la fiscalizaci&oacute;n del gobierno.&nbsp;</p>
+			<p>La elecci&oacute;n de los miembros del poder legislativo en M&eacute;xico se realiza mediante voto popular directo, a trav&eacute;s de dos mecanismos: de mayor&iacute;a relativa y de representaci&oacute;n proporcional. Hay 300 diputados federales que son elegidos en igual n&uacute;mero de distritos uninominales en todo el pa&iacute;s. En esta elecci&oacute;n aplica el principio de mayor&iacute;a relativa, es decir, gana el candidato que obtiene el mayor n&uacute;mero de votos en una elecci&oacute;n. Hay otros 200 diputados elegidos de manera proporcional al n&uacute;mero de votos que obtienen los partidos pol&iacute;ticos, en cinco circunscripciones plurinominales en las que se divide el pa&iacute;s. En cada una de ellas, los partidos presentan una lista cerrada de candidatos (40 en cada una) y se asignan los lugares en proporci&oacute;n al porcentaje de votos obtenidos.&nbsp;</p>
+			<p>Por cuanto hace a la C&aacute;mara de Senadores, su integraci&oacute;n de una mezcla de principios de mayor&iacute;a relativa, primera minor&iacute;a y representaci&oacute;n proporcional. De los 128 senadores, 64 son electos por el principio de mayor&iacute;a, que corresponden a dos por cada estado de la Rep&uacute;blica m&aacute;s la ciudad de M&eacute;xico. Otros 32 son elegidos por el principio de primera minor&iacute;a, es decir, asigna al partido que obtiene el segundo lugar en la votaci&oacute;n total emitida en cada Estado. Los otros 32 senadores restantes se eligen mediante el principio de representaci&oacute;n proporcional, de acuerdo con el porcentaje de votos obtenidos por los partidos pol&iacute;ticos en la elecci&oacute;n nacional para senadores, a trav&eacute;s de una lista cerrada de candidatos que &eacute;stos presentan.&nbsp;</p>
+			<p>Para aprender m&aacute;s de este tema, revise el siguiente video : <strong><a href="https://youtu.be/6Os7BjlWHy0">https://youtu.be/6Os7BjlWHy0</a></strong><strong>&nbsp;</strong>&nbsp;</p>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="Grupo1Mod3" tabindex="-1" aria-labelledby="Grupo1Mod3Label" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="Grupo1Mod3Label">1.3.3 El Poder Judicial federal
+		</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<p>El Poder Judicial de M&eacute;xico est&aacute; compuesto por la Suprema Corte de Justicia de la Naci&oacute;n, el Tribunal Electoral, los tribunales colegiados de circuito y los juzgados de distrito. La Suprema Corte de Justicia de la Naci&oacute;n es la m&aacute;xima autoridad en materia constitucional y tiene la facultad de interpretar y aplicar las leyes. El Poder Judicial tiene la responsabilidad de garantizar la legalidad y proteger los derechos de los ciudadanos. Los jueces y magistrados son designados por el Consejo de la Judicatura Federal, y se espera que ejerzan su funci&oacute;n de manera imparcial e independiente. En tanto, los ministros de la Suprema Corte son designados mediante un procedimiento de colaboraci&oacute;n entre los poderes Ejecutivo y Legislativo, espec&iacute;ficamente el Senado. Ante una vacancia de un ministro, el Presidente tiene la facultad de proponer una terna a la C&aacute;mara de Senadores, para que de &eacute;sta se designe, por mayor&iacute;a calificada (2/3 de los senadores presentes en la sesi&oacute;n), a quien deber&aacute; ocupar el cargo. Los ministros son designados por un periodo de 15 a&ntilde;os. En tanto, los magistrados del tribunal electoral son designados tambi&eacute;n por el Senado, a propuesta de la Suprema Corte.&nbsp;</p>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
 
 
 

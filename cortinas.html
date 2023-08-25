@@ -1,0 +1,80 @@
+<!---------Cortinas--------->
+<div class='row'>
+    <div class='col-2'></div>
+    <div class='col'>
+        <table style="margin-left: auto; margin-right: auto;" id="cortina1">
+            <tr>
+                <td style="padding: 5em; padding-bottom: 0.1em; background-color: aqua; display: none;" id="contenidoIzquierdacortina1"
+                    rowspan="2">
+                    <!--Contenido-->
+                </td>
+                <td style="padding: 2em; padding-bottom: 0.1em; background-color: royalblue; display: none;" id="regresoIzquierdacortina1"
+                    rowspan="2">
+                    <a class="flechaCarrusel" onclick="regresar('cortina1')">&#10095;</a>
+                </td>
+                <td style="text-align: center; padding: 5em; padding-bottom: 0.1em; background-color: aqua; cursor: pointer;" id="iconoIzquierdacortina1"
+                    onclick="muestraIzquierda('cortina1')">
+                    <img style="width: 15em;" class="img-fluid" alt="icon pendiente"
+                        src="">
+                </td>
+                <td style="padding: 5em; padding-bottom: 0.1em; background-color: aqua; display: none;" id="regresoDerechacortina1"
+                    rowspan="2">
+                    <a class="flechaCarrusel" onclick="regresar('cortina1')">&#10094;</a>
+
+                </td>
+                <td style="text-align: center; padding: 5em; padding-bottom: 0.1em; background-color: royalblue; cursor: pointer;" id="iconoDerechacortina1"
+                    onclick="muestraDerecha('cortina1')">
+                    <img style="width: 15em;" class="img-fluid" alt="icon pendiente"
+                        src="">
+                </td>
+                <td style="padding: 5em; padding-bottom: 0.1em; background-color: royalblue; display: none;" id="contenidoDerechacortina1"
+                    rowspan="2">
+                    <!--Contenido-->
+                </td>
+
+            </tr>
+            <tr>
+                <td style="padding: 5em; padding-top: 0.1em; text-align: center; background-color: aqua; cursor: pointer;" id="tituloIzquierdacortina1"
+                    onclick="muestraIzquierda('cortina1')"><strong>
+                        <!--Titulo-->
+                    </strong></td>
+                <td style="padding: 5em; padding-top: 0.1em; text-align: center; background-color: royalblue; cursor: pointer;" id="tituloDerechacortina1"
+                    onclick="muestraDerecha('cortina1')"><strong>
+                        <!--Titulo-->
+                    </strong></td>
+            </tr>
+        </table>
+    </div>
+    <div class='col-2'></div>
+</div>
+
+<br>
+
+<script>
+    function muestraIzquierda(idCortina){
+	document.getElementById('contenidoIzquierda' + idCortina).style.display = "table-cell";
+	document.getElementById('regresoIzquierda' + idCortina).style.display = "table-cell";
+	document.getElementById('iconoIzquierda' + idCortina).style.display = "none";
+	document.getElementById('tituloIzquierda' + idCortina).style.display = "none";
+	document.getElementById('iconoDerecha' + idCortina).style.display = "none";
+	document.getElementById('tituloDerecha' + idCortina).style.display = "none";
+}
+function regresar(idCortina){
+	document.getElementById('contenidoDerecha' + idCortina).style.display = "none";
+	document.getElementById('regresoDerecha' + idCortina).style.display = "none";
+	document.getElementById('contenidoIzquierda' + idCortina).style.display = "none";
+	document.getElementById('regresoIzquierda' + idCortina).style.display = "none";
+	document.getElementById('iconoIzquierda' + idCortina).style.display = "table-cell";
+	document.getElementById('tituloIzquierda' + idCortina).style.display = "table-cell";
+	document.getElementById('iconoDerecha' + idCortina).style.display = "table-cell";
+	document.getElementById('tituloDerecha' + idCortina).style.display = "table-cell";
+}
+function muestraDerecha(idCortina){
+	document.getElementById('contenidoDerecha' + idCortina).style.display = "table-cell";
+	document.getElementById('regresoDerecha' + idCortina).style.display = "table-cell";
+	document.getElementById('iconoDerecha' + idCortina).style.display = "none";
+	document.getElementById('tituloDerecha' + idCortina).style.display = "none";
+	document.getElementById('iconoIzquierda' + idCortina).style.display = "none";
+	document.getElementById('tituloIzquierda' + idCortina).style.display = "none";
+}
+</script>
