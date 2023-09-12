@@ -1,0 +1,2636 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Métodos y herramientas para el desarrollo de innovaciones en el campo de la
+					educación </p>
+
+				<p id="subtituloPresentacion">Fase 1: Introducción e importancia de la Innovación en la educación.</p>
+
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = '#' class='enlaceModulo'><strong>Fase  1</strong></a>-->
+
+				<a href='#' class='enlaceModulo'><strong>Fase 1</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Fase  2</strong></a>-->
+
+				<a href='modulo2.html' class='enlaceModulo enlaceActivo'><strong>Fase 2</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Fase  3</strong></a>-->
+
+				<a href='modulo3.html' class='enlaceModulo enlaceActivo'><strong>Fase 3</strong></a>
+
+			</div>
+			<div class="col-1 align-self-center">
+				<span><strong>Zoom: </strong><button class="botonZoom" onclick="reducirLetra()"
+						type="button">A-</button><button class="botonZoom" onclick="aumentarLetra()"
+						type="button">A+</button></span>
+			</div>
+
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">Métodos y herramientas para el desarrollo de innovaciones en el campo de la
+					educación </p>
+
+				<p id="subtituloPresentacionMovil">Fase 1: Introducción e importancia de la Innovación en la educación.
+				</p>
+
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">Métodos y herramientas para el desarrollo de innovaciones en el
+						campo de la educación Scroll</p>
+
+					<p id="subtituloPresentacionScroll">Fase 1: Introducción e importancia de la Innovación en la
+						educación.</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+
+		<a href="fase2.html" class="w3-bar-item w3-button">Fase 2</a>
+
+		<a href="fase3.html" class="w3-bar-item w3-button">Fase 3</a>
+
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="carruselInformación" class="fondoAzul letraBlanca">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col align-self-center">
+					<br>
+					<p id="tituloCarruselInformacion" style="text-align: center; font-weight: bold;">
+						<i class="bi bi-info-circle-fill"></i> Situación problematizadora
+					</p>
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
+				</div>
+				<div class="col align-self-center">
+					<div id="contenidoSituacion" style="text-align: center;">
+						<table>
+							<tr>
+								<td>
+									<p><span>Las instituciones de educación
+											superior enfrentan el reto de transformar sus sistemas educativos con el uso
+											de
+											las tecnologías que ayuden a acercar el conocimiento a una mayor cantidad de
+											población diversa; así como prácticas pedagógicas de aprendizaje
+											significativo
+											para la vida. La Universidad Veracruzana, consciente de la importancia de
+											abordar estos desafíos que afectan el aprendizaje de los estudiantes, se ha
+											dado a la tarea de buscar enfoques didácticos que incorporen recursos
+											educativos y metodologías activas que modelen el desempeño y desarrollen las
+											habilidades en diversas modalidades pedagógicas. La práctica docente
+											advierte
+											la&nbsp;necesidad de introducir innovaciones en el proceso de
+											enseñanza-aprendizaje, mediante métodos y herramientas&nbsp;que fomenten el
+											avance en el campo educativo. Con base en lo anterior, en este curso-taller
+											se
+											compartirán conceptos y&nbsp;términos claves relacionados con la innovación
+											educativa, que serán de gran utilidad en su práctica como docente&nbsp;y en
+											el
+											proceso de enseñanza-aprendizaje. De esta manera, al final de esta fase
+											usted
+											logrará una reflexión profunda&nbsp;acerca de&nbsp;la importancia de la
+											investigación, la innovación y sus aplicaciones en el ámbito educativo, lo
+											cual
+											se&nbsp;plasmará en la actividad entregable como parte de la evaluación del
+											curso.&nbsp;</span></p>
+								</td>
+								<td style="width: 2em;"></td>
+								<td>
+									<img src="" alt="imagen pendiente" class="img-fluid" />
+								</td>
+
+							</tr>
+						</table>
+					</div>
+					<div id="contenidoProposito" style="display: none;">
+
+						<p><span>El
+								propósito de este curso es que los participantes adquieran una comprensión
+								profunda de la importancia de la innovación en el ámbito educativo y
+								desarrollen habilidades prácticas para aplicarla en su contexto profesional. Al
+								finalizar el curso, los participantes tendrán la capacidad de identificar
+								oportunidades de innovación, diseñar y aplicar estrategias innovadoras en sus
+								prácticas docentes, así como evaluar y adaptar sus enfoques en función de los
+								resultados obtenidos. Este curso busca promover una cultura de mejora continua
+								y transformación en el campo de la educación, con el objetivo de proporcionar
+								experiencias de aprendizaje más enriquecedoras y significativas para los
+								estudiantes.</span></p>
+
+					</div>
+					<br>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
+				</div>
+				<div class="col-1"></div>
+			</div>
+
+		</div>
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
+<!---------Subitulo--------->
+<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 class='subtitulo'>
+	Introducción
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>En
+	esta fase del curso Métodos y Herramientas para el Desarrollo de Innovaciones
+	en el Campo de la Educación nos sumergiremos en el fascinante mundo de la
+	investigación y su estrecha relación con la innovación. En este tema
+	introductorio exploraremos los fundamentos de la investigación y su importancia
+	en el ámbito de la innovación, así como la relación intrínseca entre la
+	investigación y el desarrollo de Proyectos Educativos
+	Innovadores.&nbsp;Comenzaremos definiendo y explorando el concepto de investigación,
+	una actividad que desempeña un papel fundamental en la adquisición de
+	conocimientos, la resolución de problemas y el avance de la sociedad en su
+	conjunto.&nbsp;Así mismo, se conocerá a la investigación como una herramienta
+	efectiva para explorar, descubrir y explicar los fenómenos que nos rodean,
+	permitiéndonos comprender mejor el mundo en el que vivimos; además, descubrirá
+	la importancia de la investigación en el ámbito de la innovación y que ésta
+	implica la generación de ideas nuevas y creativas que conducen a la mejora, el
+	cambio y la creación de valor. La investigación se convierte en un componente
+	esencial de este proceso, ya que proporciona la base sólida para la generación
+	de ideas innovadoras; de igual manera, explorará cómo la investigación permite
+	conocer nuevas oportunidades, identificar necesidades no satisfechas y
+	encontrar soluciones creativas para los desafíos actuales.&nbsp;A lo largo de
+	esta fase, examinaremos de cerca la relación entre la investigación y el
+	desarrollo de nuevos productos, servicios o procesos.&nbsp;</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Titulo--------->
+	<div class='row' style='color: white;'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+	1.1 Investigación e innovación&nbsp;
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html con imagen derecha--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col' style="background-color: rgb(172, 207, 244);">
+	<p>"La investigación es un proceso sistemático y riguroso que involucra la recolección, análisis e interpretación de&nbsp;datos con el fin de generar nuevo conocimiento, resolver problemas, o mejorar la comprensión y práctica en&nbsp;un campo específico. Implica la formulación de preguntas de investigación, el diseño de un plan&nbsp;metodológico, la recopilación y el análisis de datos, y la interpretación de los resultados obtenidos. La&nbsp;investigación se lleva a cabo utilizando métodos y enfoques científicos, con el objetivo de aportar evidencia&nbsp;confiable y contribuir al avance del conocimiento en un área determinada" (Luna-Trujillo, 2021, p. 25).​ 1
+	</p>
+	</div>
+	<div class='col-2 align-self-center' style="background-color: rgb(172, 207, 244);">
+	<img src='' alt='imagenContenido' class='img-fluid'>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Para una visión&nbsp;ampliada, le sugerimos leer los siguientes artículos:
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Boton--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<div style='text-align: center;'>
+	<a class='recursoExterno' href='https://conrado.ucf.edu.cu/index.php/conrado/article/view/1332/1323Dialnet-FormacionDocenteEnElProcesoDeCambioEInnovaconEnLa-8890830.pdf' target='_blank'>
+	<img src='imagenes/descarga2.png' class='img-fluid' style='width: 10%;'>
+	</a>
+	</div>
+	<br>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>La
+	innovación se puede definir como "el proceso de creación, implementación y
+	difusión de nuevas ideas,&nbsp;productos, servicios, procesos o modelos de
+	negocio que generan valor y contribuyen a mejorar o transformar&nbsp;un sistema
+	o contexto existente" (Díaz-Vázquez, 2021, p. 12).</span><span>​ </span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Observe y reflexione acerca de lo que se presenta en los siguientes videos:
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Pestañas--------->
+<div class='row'>
+    <div class='col-2'></div>
+    <div class='col'>
+        <ul class="nav nav-tabs" id="grupo1Pestanas" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="grupo1Pestana1" data-bs-toggle="tab"
+                    data-bs-target="#grupo1Pestana1-pane" type="button" role="tab"
+                    aria-controls="grupo1Pestana1-pane" aria-selected="true">
+                    Innovación educativa
+
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="grupo1Pestana2" data-bs-toggle="tab"
+                    data-bs-target="#grupo1Pestana2-pane" type="button" role="tab"
+                    aria-controls="grupo1Pestana2-pane" aria-selected="false">
+                    Innovación educativa
+
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="grupo1PestanasContenido">
+            <div class="tab-pane fade show active" id="grupo1Pestana1-pane" role="tabpanel"
+                aria-labelledby="grupo1Pestana1" tabindex="0">
+                <div style="text-align: center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YD4W4u5mcDE?si=huacgrIr4m3jl9dt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="grupo1Pestana2-pane" role="tabpanel" aria-labelledby="grupo1Pestana2"
+                tabindex="0">
+                <div style="text-align: center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OvXye0-YYmc?si=WFOpWEdTxKCj_5NO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='col-2'></div>
+</div>
+
+<br>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Para conocer algunas de las definiciones que hay sobre innovación, haga clic sobre cada pestaña
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Accordion--------->
+<div class='row'>
+    <div class='col-3'></div>
+    <div class='col'>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Definición de innovación de acuerdo con el Manual de Oslo (2018) 
+
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>Una innovación es un producto o proceso nuevo o mejorado (o una combinación de ambos) que difiere significativamente de los productos o procesos anteriores de la unidad y que ha sido puesto a disposición de los usuarios potenciales (producto) o implementado por la unidad (proceso) (p. 20).
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Definición de innovación de acuerdo con la <em>European Commision</em>
+
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>"La innovaci&oacute;n es un proceso din&aacute;mico que implica la transformaci&oacute;n de ideas creativas en productos, servicios o procesos con valor econ&oacute;mico y social, a trav&eacute;s de la experimentaci&oacute;n, la colaboraci&oacute;n y el aprendizaje continuo" (<em>European Commission</em>, 2017).&nbsp;</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Definición de innovación de acuerdo con el <em>World Economic Forum</em>
+
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>"La innovaci&oacute;n es un proceso din&aacute;mico y continuo que involucra la generaci&oacute;n, implementaci&oacute;n y difusi&oacute;n de ideas, pr&aacute;cticas, productos o servicios nuevos o mejorados, que resultan en mejoras significativas en la sociedad, la econom&iacute;a y la calidad de vida. La innovaci&oacute;n va m&aacute;s all&aacute; de la mera invenci&oacute;n, incluyendo la capacidad de adaptarse al cambio, la experimentaci&oacute;n, la colaboraci&oacute;n, el aprendizaje constante y la capacidad de aprovechar las oportunidades emergentes" (<em>World Economic Forum</em>, 2020).</p>
+
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class='col-3'></div>
+</div>
+<br>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>La
+	investigación y la innovación están estrechamente relacionadas, ya que la
+	investigación proporciona la base de conocimientos necesaria para impulsar la
+	innovación y, a su vez, promueve nuevos enfoques y soluciones que la
+	enriquecen. A continuación, analice el siguiente recurso. </span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<p style='color: red; font-weight: bold;'>Material pendiente</p>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>A
+	continuación, en la siguiente infografía se exponen aspectos importantes que
+	relacionan la investigación con la innovación</span><span>.
+	</span><span>Revise
+	con atención</span><span>.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<p style='color: red; font-weight: bold;'>Material pendiente</p>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Para una visión&nbsp;ampliada, le sugerimos revisar los siguientes videos:
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Pestañas--------->
+<div class='row'>
+    <div class='col-2'></div>
+    <div class='col'>
+        <ul class="nav nav-tabs" id="grupo2Pestanas" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="grupo2Pestana1" data-bs-toggle="tab"
+                    data-bs-target="#grupo2Pestana1-pane" type="button" role="tab"
+                    aria-controls="grupo2Pestana1-pane" aria-selected="true">
+                    ¿Qué es innovar?
+
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="grupo2Pestana2" data-bs-toggle="tab"
+                    data-bs-target="#grupo2Pestana2-pane" type="button" role="tab"
+                    aria-controls="grupo2Pestana2-pane" aria-selected="false">
+                    ¿Qué es investigación y cuáles son sus características?
+
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="grupo2Pestana3" data-bs-toggle="tab"
+                    data-bs-target="#grupo2Pestana3-pane" type="button" role="tab"
+                    aria-controls="grupo2Pestana3-pane" aria-selected="false">
+                    La relación entre investigación e innovación educativa
+
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="grupo2PestanasContenido">
+            <div class="tab-pane fade show active" id="grupo2Pestana1-pane" role="tabpanel"
+                aria-labelledby="grupo2Pestana1" tabindex="0">
+                <div style="text-align: center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/X8StTzDG5VI?si=-MTgRQgQ0oFh9z4j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="grupo2Pestana2-pane" role="tabpanel" aria-labelledby="grupo2Pestana2"
+                tabindex="0">
+                <div style="text-align: center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qjJP_cz-ra4?si=yenRF4VWcNdaJmyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="grupo2Pestana3-pane" role="tabpanel" aria-labelledby="grupo2Pestana3"
+                tabindex="0">
+                <div style="text-align: center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/z9f4-y9MUlk?si=LGLP1IjqsRKWxsxz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='col-2'></div>
+</div>
+
+<br>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>Con
+	lo descrito anteriormente usted se puede percatar de cómo la investigación e
+	innovación son dos conceptos intrínsecamente interrelacionados que desempeñan
+	un papel fundamental en el avance y la transformación de diversos campos,
+	incluida la educación. La investigación proporciona la base de conocimiento
+	necesaria para comprender mejor los desafíos y oportunidades en el ámbito
+	educativo, mientras que la innovación implica la creación y aplicación de ideas
+	y enfoques novedosos para abordar esos desafíos.&nbsp;La investigación impulsa
+	la generación de nuevas ideas, teorías y evidencia empírica, y la innovación
+	las convierte en soluciones prácticas y efectivas. Juntas, la investigación y
+	la innovación fomentan la mejora continua, la transformación y la búsqueda de
+	un sistema educativo más eficaz y adaptado a las necesidades de las nuevas
+	generaciones.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<hr>
+	<br>
+	<br>
+	<!---------Titulo--------->
+	<div class='row' style='color: white;'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'>
+	1.2 Investigación en la educación
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>La
+	investigación en el ámbito educativo tiene como objetivo la búsqueda de nuevos
+	conocimientos útiles para mejorar la forma en que enseñamos y aprendemos, su
+	propósito es lograr que los estudiantes se sientan motivados y comprometidos
+	con su proceso de aprendizaje, al tiempo que permita que los docentes cumplan
+	efectivamente con su rol educativo.</span></p>
+	
+	
+	
+	<p><span>A
+	través de la investigación educativa, buscamos comprender y analizar cómo
+	ocurre el proceso de enseñanza y aprendizaje, para así identificar las mejores
+	prácticas, políticas y estrategias que promuevan un desarrollo integral de los
+	estudiantes.</span></p>
+	
+	
+	
+	<p><span>Es
+	importante destacar que la investigación en educación juega un papel
+	fundamental, ya que impulsa una mejora continua en la calidad de la educación.
+	Permite evaluar la eficacia de diferentes métodos, tecnologías y enfoques
+	pedagógicos, y contribuye a generar conocimientos que impulsan la innovación en
+	el campo educativo.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Subitulo--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 class='subtitulo'>
+	La investigación en el aula&nbsp;
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>En
+	educación se requieren de diferentes clases de conocimiento, y son muchos los
+	tipos&nbsp;de investigación que en&nbsp;el campo educativo están orientados al
+	desarrollo&nbsp;del mismo. La investigación educativa se ha identificado como
+	una&nbsp;búsqueda&nbsp;científica y sistemática en la Ciencia Social. Es por
+	ello que es considerada como un proceso sistemático de construcción de
+	conocimiento basado en la aplicación de&nbsp;una serie de métodos y técnicas
+	específicas dirigidas a la búsqueda, la obtención,&nbsp;la organización, la
+	interpretación de un conjunto de datos conformes y coherentes&nbsp;a un
+	propósito previamente definido que se encuentra directamente
+	relacionado&nbsp;con el fenómeno de la educación.</span></p>
+	
+	
+	
+	<p><span>Actualmente,
+	los estudiantes crecen rodeados de tecnología, lo que provoca el desarrollo de
+	una relación tecnología-sociedad muy estrecha. Esta relación puede tener
+	efectos negativos en la actitud de los estudiantes hacia el proceso de </span><span>enseñanza-aprendizaje</span><span>
+	(E-A), ya que en la mayoría de las ocasiones se plantean actividades en las
+	que&nbsp;lo extrae del entorno digital en el que vive.</span></p>
+	
+	
+	
+	<p><span>Por
+	lo anterior, una de las acciones apremiantes de atender como docentes, es tener
+	la competencia de la&nbsp;investigación para entender cómo gestionar, manejar y
+	controlar las metodologías que sean las más adecuadas en cada situación que se
+	presenta en el aula. Es por ello&nbsp;que la investigación en educación se
+	dirige hacia la búsqueda de nuevos conocimientos que resulten útiles&nbsp;para
+	facilitar la transformación y mejora de la acción&nbsp;educativa, en la
+	que&nbsp;los alumnos se sientan&nbsp;motivados y&nbsp;el docente pueda cumplir
+	con el fin educativo.&nbsp;</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Subitulo--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 class='subtitulo'>
+	Las funciones de la investigación educativa
+	
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>Considerando
+	algunos de los usos posibles de la investigación en situaciones educativas
+	y&nbsp;con el objetivo de entender cómo la investigación hace avanzar el
+	conocimiento&nbsp;y mejora la práctica, es importante entender algunos tipos y
+	usos de la&nbsp;investigación.&nbsp;Las funciones de la investigación se
+	clasifican en&nbsp;básica, aplicada y evaluativa.&nbsp;</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Para leer la descripción de cada función, haga clic en el signo de (+).
+	
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<p style='color: red; font-weight: bold;'>Material pendiente</p>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>Las
+	diferencias entre investigación básica, aplicada&nbsp;y evaluativa radican
+	esencialmente en las funciones, especialmente en el grado&nbsp;en que facilitan
+	la toma de decisiones.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Subitulo--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 class='subtitulo'>
+	Enfoques en investigación educativa
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>Existen
+	características comunes a diversos tipos de investigación, mismos que
+	se&nbsp;realizan en el contexto de la educación: objetiva, precisa,
+	verificable, explicativa, empírica, lógica y condicional</span><span>.
+	</span></p>
+	
+	
+	
+	<p><span>Asimismo,
+	hay diferentes enfoques que pueden aplicarse en este ámbito, tal como se
+	muestra en la siguiente tabla.</span></p>
+
+	<table class="table" style="border: 1px solid black; border-collapse: collapse;" >
+		<tbody>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p style="text-align: center;"><strong>Enfoque de investigaci&oacute;n</strong></p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+			<p style="text-align: center;"><strong>Descripci&oacute;n</strong></p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+			<p style="text-align: center;"><strong>Ejemplo</strong></p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Enfoque cuantitativo</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Se basa en recopilar y analizar datos num&eacute;ricos&nbsp;para examinar relaciones causales, patrones y&nbsp;tendencias en la educaci&oacute;n.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Realizar un estudio para investigar la&nbsp;relaci&oacute;n entre el tiempo dedicado al&nbsp;estudio y el rendimiento acad&eacute;mico de&nbsp;los estudiantes mediante pruebas&nbsp;estandarizadas.</p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Enfoque cualitativo</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Se centra en la comprensi&oacute;n profunda y detallada&nbsp;de los fen&oacute;menos educativos utilizando m&eacute;todos&nbsp;como entrevistas, observaciones y an&aacute;lisis de&nbsp;texto.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Realizar una investigaci&oacute;n cualitativa&nbsp;para explorar las experiencias y&nbsp;percepciones de los estudiantes sobre&nbsp;el uso de la tecnolog&iacute;a en el aula.</p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Enfoque mixto</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Combina elementos cuantitativos y cualitativos en&nbsp;una misma investigaci&oacute;n para obtener una&nbsp;comprensi&oacute;n m&aacute;s completa de los fen&oacute;menos&nbsp;educativos.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Utilizar encuestas cuantitativas para&nbsp;recopilar datos sobre la participaci&oacute;n de&nbsp;los estudiantes en actividades&nbsp;extracurriculares y realizar entrevistas&nbsp;cualitativas para comprender c&oacute;mo esas&nbsp;actividades impactan en su desarrollo&nbsp;personal.</p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Investigaci&oacute;n-acci&oacute;n</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Implica a los profesionales de la educaci&oacute;n en la&nbsp;investigaci&oacute;n de su propia pr&aacute;ctica docente para&nbsp;resolver problemas y mejorar la ense&ntilde;anza y el&nbsp;aprendizaje.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Colaborar con otros profesores para&nbsp;investigar el uso de estrategias de&nbsp;ense&ntilde;anza activa en el aula y reflexionar&nbsp;sobre los resultados para ajustar y&nbsp;mejorar la pr&aacute;ctica docente.</p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Investigaci&oacute;n experimental</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Se utiliza para examinar el impacto causal de las&nbsp;intervenciones educativas mediante la&nbsp;manipulaci&oacute;n de variables y la asignaci&oacute;n&nbsp;aleatoria de los participantes.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Realizar un ensayo controlado&nbsp;aleatorizado para evaluar la efectividad&nbsp;de un programa de tutor&iacute;a en el&nbsp;rendimiento acad&eacute;mico de los&nbsp;estudiantes comparado con un grupo&nbsp;de control que no recibe la tutor&iacute;a.</p>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Para dar continuidad al tema, revise el siguiente video. 
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<iframe width='560' height='315' src='https://www.youtube.com/embed/t_1a0o-CfGY' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<!---------Subitulo--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 class='subtitulo'>
+	Comparación entre los enfoques cuantitativo y cualitativo 
+	
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+		<table class="table" style="border: 1px solid black; border-collapse: collapse;" >
+			<tbody>
+			<tr>
+			<td style="border: 1px solid black; border-collapse: collapse; text-align: center;">
+			<p style="text-align: center;"><strong>Caracter&iacute;stica</strong></p>
+			</td>
+			<td style="border: 1px solid black; border-collapse: collapse; text-align: center;">
+				<p style="text-align: center;"><strong>Cualitativo</strong></p>
+			</td>
+			<td style="border: 1px solid black; border-collapse: collapse; text-align: center;">
+				<p style="text-align: center;"><strong>Cuantitativo</strong></p>
+			</td>
+			</tr>
+			<tr>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Objetivo</p>
+			</td>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Comprender la complejidad de las experiencias y los significados de los participantes.</p>
+			</td>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Medir y cuantificar variables para probar hip&oacute;tesis.</p>
+			</td>
+			</tr>
+			<tr>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>M&eacute;todo</p>
+			</td>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Entrevistas, grupos focales, observaci&oacute;n participante, an&aacute;lisis de documentos.</p>
+			</td>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Cuestionarios, escalas, pruebas, an&aacute;lisis estad&iacute;stico.</p>
+			</td>
+			</tr>
+			<tr>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Datos</p>
+			</td>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Texto, im&aacute;genes, audio, video.</p>
+			</td>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>N&uacute;meros.</p>
+			</td>
+			</tr>
+			<tr>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>An&aacute;lisis</p>
+			</td>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Te&oacute;rico, inductivo.</p>
+			</td>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Deductivo, estad&iacute;stico.</p>
+			</td>
+			</tr>
+			<tr>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Fortalezas</p>
+			</td>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Proporciona una comprensi&oacute;n rica y detallada de las experiencias de los participantes.</p>
+			</td>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Es preciso y confiable.</p>
+			</td>
+			</tr>
+			<tr>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Debilidades</p>
+			</td>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Puede ser subjetivo y sesgado.</p>
+			</td>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Puede ser dif&iacute;cil de interpretar y comprender.</p>
+			</td>
+			</tr>
+			<tr>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Mejor utilizado para&hellip;</p>
+			</td>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Preguntas abiertas, exploratorias.</p>
+			</td>
+			<td style="border: 1px solid black; border-collapse: collapse;">
+			<p>Preguntas cerradas, deterministas.</p>
+			</td>
+			</tr>
+			</tbody>
+			</table>
+			<br>
+	<p><span>Los
+	enfoques </span><span>anteriores
+	describen la naturaleza de la investigación, sin embargo, en este curso se
+	considerarán dos formas que pueden ser utilizadas para diseñar y poner en
+	marcha de manera efectiva una investigación: la cuantitativa y cualitativa.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Para leer la explicación de cada enfoque, haga clic en la ventana correspondiente. 
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!--Ventanas emergentes-->
+<div class='row'>
+    <div class='col-2'></div>
+    <div class='col'>
+        <table style="margin-left: auto; margin-right: auto; width: 100%; table-layout: fixed;" id="Grupo1Mod">
+            <tr>
+                <td style="cursor: pointer; background-color: aqua; color: white;" data-bs-toggle="modal"
+                    data-bs-target="#Grupo1Mod1">
+                    <p style="text-align: center;">
+                        <strong>
+                            Enfoque cuantitativo
+                        </strong>
+                    </p>
+                </td>
+
+                <td style="cursor: pointer; background-color: royalblue; color: white;" data-bs-toggle="modal"
+                    data-bs-target="#Grupo1Mod2">
+                    <p style="text-align: center;">
+                        <strong>
+                            Enfoque  cualitativo
+
+                        </strong>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class='col-2'></div>
+</div>
+<br>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Para complementar la información sobre los dos enfoques, revise el siguiente cuadro.   
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<p style='color: red; font-weight: bold;'>Material pendiente</p>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Ahora puede apreciar los ejemplos de investigaciones educativas, aplicando los enfoques anteriores. 	Para consultar la información completa, haga clic sobre la pestaña y lea la descripción que 	corresponde.  
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+<!---------Accordion--------->
+<div class='row'>
+    <div class='col-3'></div>
+    <div class='col'>
+        <div class="accordion accordion-flush" id="accordion2">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush2-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Tecnología  educati-va 
+
+                    </button>
+                </h2>
+                <div id="flush2-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                    <div class="accordion-body">
+                        <p>investigaciones sobre el impacto de la tecnología en la enseñanza y el aprendizaje, el diseño de entornos de aprendizaje digitales efectivos y el uso de herramientas tecnológicas para mejorar la educación.​
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush2-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Aprendizaje basado en competencias
+
+                    </button>
+                </h2>
+                <div id="flush2-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                    <div class="accordion-body">
+                        <p>Investigaciones centradas en el desarrollo y evaluación de habilidades y competencias clave para el siglo XXI, como el pensamiento crítico, la resolución de problemas, la colaboración y la creatividad.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush2-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Equidad y justicia educativa
+
+                    </button>
+                </h2>
+                <div id="flush2-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordion2">
+                    <div class="accordion-body">
+                        <p>Investigaciones que examinan las desigualdades educativas, las barreras de acceso y participación, así como las estrategias para promover la equidad y la inclusión en la educación</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush2-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Evaluación y retroalimentación
+
+                    </button>
+                </h2>
+                <div id="flush2-collapseFour" class="accordion-collapse collapse"
+                    data-bs-parent="#accordion2">
+                    <div class="accordion-body">
+                        <p>Investigaciones que exploran nuevas formas de evaluación auténtica y formativa, así como el uso efectivo de la retroalimentación para mejorar el aprendizaje de los estudiantes. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush2-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Desarrollo profesional docente
+
+                    </button>
+                </h2>
+                <div id="flush2-collapseFive" class="accordion-collapse collapse"
+                    data-bs-parent="#accordion2">
+                    <div class="accordion-body">
+                        <p>Investigaciones sobre enfoques de formación y desarrollo profesional docente efectivos, así como estrategias de apoyo para mejorar la práctica docente.​
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class='col-3'></div>
+</div>
+<br>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>De
+	este tema abordado, queda claro que, como docentes, una de las acciones
+	apremiantes de atender es contar con la competencia de
+	la&nbsp;investigación,&nbsp;para entender cómo gestionar, manejar y controlar
+	las metodologías que sean las más adecuadas en cada situación que se presente
+	en el aula. Para ello es imprescindible distinguir las funciones básica,
+	aplicada y evaluativa de la investigación.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<hr>
+	<br>
+	<br>
+	<!---------Titulo--------->
+	<div class='row' style='color: white;'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+	3. Innovación educativa
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>La
+	innovación se contempla como una de las posibles vertientes de la investigación
+	educativa aplicable en el entorno escolar, las propuestas de innovación
+	educativa se fundamentan en hallazgos investigativos, si bien no todas las
+	investigaciones en el campo educativo culminan en una innovación concreta.</span></p>
+	
+	
+	
+	<p><span>La
+	innovación no surge de manera espontánea, sino que se desarrolla a partir de
+	una base de conocimientos adquiridos a través de procesos de investigación, o
+	mediante un análisis exhaustivo de las necesidades previo a la fase de
+	planificación.</span></p>
+	
+	
+	
+	<p><span>En el
+	contexto de la innovación educativa, la investigación desempeña un papel
+	central al proporcionar los fundamentos teóricos y empíricos necesarios para el
+	desarrollo y la implementación de prácticas innovadoras en el ámbito educativo.
+	Esta investigación posibilita la evaluación de la efectividad de las nuevas
+	metodologías, tecnologías y enfoques pedagógicos, al mismo tiempo que
+	contribuye a la creación de conocimiento que estimula la innovación en la
+	educación.&nbsp;Además, es importante destacar que la investigación y la
+	innovación interactúan de manera recíproca, ya que la innovación educativa
+	puede generar preguntas de investigación y la necesidad de evaluar su impacto y
+	eficacia.</span></p>
+	
+	
+	
+	<p><span>En el
+	proceso de innovación educativa, se incorporan igualmente procedimientos de
+	evaluación y seguimiento respaldados por la investigación.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Subitulo--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 class='subtitulo'>
+	Innovación educativa en el contexto de la Universidad Veracruzana
+	
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>En el
+	ámbito educativo, la innovación se manifiesta a través de diversas
+	definiciones, desde la perspectiva de la Universidad Veracruzana, se entiende
+	como "la aplicación de enfoques creativos que transforman de manera
+	original uno o varios elementos del proceso educativo, con el propósito de
+	abordar desafíos y elevar el nivel de aprendizaje de los estudiantes"</span><span>(UNAM,
+	2022, p. 14). </span></p>
+	
+	
+	
+	<p><span>En
+	este concepto de innovación, se destacan tres componentes esenciales: </span><span style="font-weight:bold">la
+	"implementación" de nuevas prácticas, la introducción de
+	"novedad" en el enfoque educativo y la resolución efectiva de
+	"problemáticas educativas" </span><span>(Santos, González y Sánchez, 2022).</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Revise el siguiente esquema sobre las implicaciones de la innovación educativa.
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<p style='color: red; font-weight: bold;'>Material pendiente</p>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>La </span><span style="font-weight:bold">investigación
+	en innovación </span><span>se puede definir como </span><span style="font-weight:bold">el
+	proceso de indagación y estudio sistemático que busca generar nuevos
+	conocimientos, comprender y mejorar los procesos de innovación, así como
+	identificar y evaluar enfoques, prácticas y estrategias innovadoras en
+	diferentes ámbitos y sectores, incluyendo la educación. </span><span>La
+	investigación en innovación tiene como objetivo principal generar evidencia
+	empírica que permita informar y orientar el diseño, la implementación y la
+	evaluación de procesos y políticas de innovación.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Para profundizar en el tema, revise el siguiente video. 
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/l6NuGKEtK14?si=VKRpX8H3Vp_JA5hm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Ahora, revise el siguiente esquema que explica la relación entre la investigación y la innovación educativa.
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<p style='color: red; font-weight: bold;'>Material pendiente</p>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>La
+	innovación educativa se configura como un proceso social, constituyendo una
+	forma de innovación social que reconfigura prácticas sociales en un contexto
+	específico. Este cambio es impulsado por diversos actores con la intención de
+	abordar problemas de relevancia. Cabe destacar que la innovación social
+	requiere necesariamente de la participación activa de los actores sociales
+	involucrados.</span></p>
+	
+	<p><span>Las
+	universidades del siglo XXI experimentan momentos críticos en medio de un
+	entorno de cambio constante. Se encuentran ante la tarea de abordar desafíos
+	sociales novedosos y complejos, tales como las nuevas dinámicas de interacción,
+	pensamiento y comunicación surgidas a raíz de la revolución.</span></p>
+	
+	
+	
+	<p><span>Para
+	concebir soluciones viables y sostenibles, resulta imperativo ampliar nuestra
+	perspectiva. Esto implica incorporar enfoques interdisciplinarios y avanzar
+	hacia la </span><span>transdisciplinariedad</span><span>. A
+	continuación, le presento el esquema propuesto para su revisión.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<p style='color: red; font-weight: bold;'>Material pendiente</p>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>Para conocer más sobre el tema, lea
+	los siguientes requerimientos de la innovación en el aula.</span></p>
+	
+	<ul>
+		<li>Entorno distribuido, conectado en red.</li>
+		<li>Favorecer la comunicaci&oacute;n entre diversos actores involucrados.</li>
+		<li>La experimentaci&oacute;n.</li>
+		<li>La discusi&oacute;n sobre los fundamentos, estrategias y finalidades.</li>
+		<li>La observaci&oacute;n sistem&aacute;tica de los resultados.</li>
+		<li>La visi&oacute;n sobre las perspectivas de sostenibilidad de las propuestas que resultan en el proceso.</li>
+		</ul>
+
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>Observe atentamente la siguiente
+	infografía para conocer qué son y cuáles son los elementos del Método
+	Científico&nbsp; y su aplicación en la Investigación en Innovación
+	Educativa.&nbsp;</span></p>
+
+	<table class="table" style="border: 1px solid black; border-collapse: collapse;">
+		<tbody>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p style="text-align: center;"><strong>Elemento del M&eacute;todo Cient&iacute;fico</strong></p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p style="text-align: center;"><strong>Aplicaci&oacute;n en Investigaci&oacute;n en Innovaci&oacute;n Educativa</strong></p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p style="text-align: center;"><strong>Ejemplos de aplicaci&oacute;n</strong></p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Observaci&oacute;n e identificaci&oacute;n del problema.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Observar el entorno educativo para identificar problemas o necesidades que requieran soluciones innovadoras.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Observar la falta de participaci&oacute;n de los estudiantes en el aula y la necesidad de implementar enfoques pedag&oacute;gicos m&aacute;s interactivos.</p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Planteamiento de preguntas de investigaci&oacute;n.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Formular preguntas claras y espec&iacute;ficas que gu&iacute;en la investigaci&oacute;n en innovaci&oacute;n educativa.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>&iquest;C&oacute;mo impacta el uso de la gamificaci&oacute;n en el aprendizaje de las matem&aacute;ticas?</p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Revisi&oacute;n de literatura.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Realizar una revisi&oacute;n exhaustiva de la literatura existente sobre innovaci&oacute;n educativa para contextualizar el estudio.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Revisar estudios previos sobre el uso de la tecnolog&iacute;a en el aula y sus efectos en el aprendizaje.</p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Dise&ntilde;o de investigaci&oacute;n.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Determinar la metodolog&iacute;a m&aacute;s adecuada, seleccionar instrumentos de recopilaci&oacute;n de datos y definir el alcance del estudio.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Dise&ntilde;ar un estudio mixto que combine entrevistas en profundidad con docentes y an&aacute;lisis de datos cuantitativos de rendimiento estudiantil.</p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Recolecci&oacute;n de datos.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Recolectar datos cualitativos o cuantitativos, utilizando t&eacute;cnicas y herramientas apropiadas en proyectos innovadores.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Utilizar encuestas en l&iacute;nea para recopilar datos sobre la percepci&oacute;n de los estudiantes hacia el uso de la realidad virtual en el aprendizaje.</p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>An&aacute;lisis de datos.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Analizar los datos recopilados mediante m&eacute;todos y t&eacute;cnicas relevantes para extraer conclusiones significativas.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Aplicar an&aacute;lisis de contenido en las respuestas abiertas de los estudiantes para identificar patrones tem&aacute;ticos emergentes.</p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Interpretaci&oacute;n y presentaci&oacute;n de resultados.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Interpretar los resultados de la investigaci&oacute;n y presentarlos de manera clara y coherente, destacando las implicaciones y recomendaciones para la innovaci&oacute;n educativa.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Elaborar un informe que presente los hallazgos del estudio y proporcione recomendaciones para implementar estrategias de aprendizaje basadas en juegos.</p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Implementaci&oacute;n y evaluaci&oacute;n de la innovaci&oacute;n.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Implementar la innovaci&oacute;n propuesta en entornos educativos reales y recopilar datos para evaluar su efectividad y su impacto.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Implementar un programa de tutor&iacute;as en l&iacute;nea y recopilar datos de rendimiento acad&eacute;mico antes y despu&eacute;s de su implementaci&oacute;n.</p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Retroalimentaci&oacute;n y mejora continua.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Utilizar los resultados y las lecciones aprendidas para retroalimentar el ciclo de investigaci&oacute;n y mejorar el dise&ntilde;o y la implementaci&oacute;n de futuras innovaciones.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Organizar una sesi&oacute;n de retroalimentaci&oacute;n con docentes y estudiantes para recopilar comentarios y sugerencias sobre la innovaci&oacute;n implementada.</p>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+
+
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Subitulo--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 class='subtitulo'>
+	Ámbitos de la innovación educativa
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	A continuación, observe el siguiente cuadro que explica los ámbitos de las innovaciones educativas 	según Barraza (2005).
+	
+	<br>
+	</p>
+	<table class="table" style="border: 1px solid black; border-collapse: collapse;">
+		<tbody>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p style="text-align: center;"><strong>Institucional</strong></p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p style="text-align: center;"><strong>Curricular</strong></p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p style="text-align: center;"><strong>Did&aacute;ctica</strong></p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Pr&aacute;cticas pol&iacute;ticas: negociar el conflicto y toma de decisiones.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Pr&aacute;cticas de elaboraci&oacute;n de diagn&oacute;stico: definir modelos y construir estrategias de recolecci&oacute;n de informaci&oacute;n.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Pr&aacute;cticas de planeaci&oacute;n did&aacute;ctica:</p>
+		<p>Elaboraci&oacute;n de registros, construcci&oacute;n de modelos y definici&oacute;n de procesos.</p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Pr&aacute;cticas administrativas:</p>
+		<p>Planeaci&oacute;n, direcci&oacute;n, organizaci&oacute;n, comunicaci&oacute;n y evaluaci&oacute;n.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Pr&aacute;cticas de estructuraci&oacute;n curricular: definici&oacute;n de modelos y enfoques.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Pr&aacute;cticas de intervenci&oacute;n did&aacute;ctica: construcci&oacute;n de estrategias did&aacute;cticas y medios para la ense&ntilde;anza.</p>
+		</td>
+		</tr>
+		<tr>
+		<td style="border: 1px solid black; border-collapse: collapse;">&nbsp;</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Pr&aacute;cticas de evaluaci&oacute;n curricular: definici&oacute;n de modelos y construcci&oacute;n de estrategias de informaci&oacute;n.</p>
+		</td>
+		<td style="border: 1px solid black; border-collapse: collapse;">
+		<p>Pr&aacute;cticas de evaluaci&oacute;n de los aprendizajes: dise&ntilde;o de instrumentos y construcci&oacute;n de estrategias.</p>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Subitulo--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 class='subtitulo'>
+	Metodologías en innovación educativa
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>La metodología de investigación
+	desempeña un papel fundamental en la innovación educativa al proporcionar un
+	enfoque sistemático y riguroso para investigar y comprender los desafíos y
+	oportunidades en el ámbito educativo.</span></p>
+	
+	
+	
+	<p><span>A través de métodos de investigación sólidos,
+	como la recopilación y análisis de datos, la evaluación de resultados y la
+	revisión de la literatura existente, la metodología de investigación nos
+	permite identificar las mejores prácticas, diseñar intervenciones efectivas y
+	medir el impacto de nuestras acciones. </span></p>
+	
+	
+	
+	<p><span>Al utilizar una metodología de
+	investigación sólida, podemos tomar decisiones informadas basadas en
+	evidencias, promoviendo así la mejora continua y la transformación positiva en
+	el campo de la educación.&nbsp;</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Revise ahora la siguiente infografía sobre los beneficios de la innovación en el aula. 
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<p style='color: red; font-weight: bold;'>Material pendiente</p>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>En
+	este apartado introducimos a una comprensión profunda de la innovación
+	educativa y su aplicación práctica en el diseño y evaluación de proyectos
+	educativos. Reflexionamos sobre la innovación educativa como proceso
+	fundamental en el contexto actual, en el que la educación se enfrenta a
+	desafíos y oportunidades en constante evolución. Exploraremos la importancia de
+	la innovación educativa como motor de transformación y mejora en los procesos
+	de enseñanza/aprendizaje, proporcionando </span><span>los conocimientos y herramientas
+	necesarios para comprender la innovación en el ámbito educativo, con el
+	objetivo de mejorar la enseñanza-aprendizaje.</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Ahora, recapitulemos lo aprendido. Haga clic en cada ventana para leer la información que corresponde. 
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+
+	<!--Ventanas emergentes-->
+<div class='row'>
+    <div class='col-2'></div>
+    <div class='col'>
+        <table style="margin-left: auto; margin-right: auto; width: 100%; table-layout: fixed;" id="Grupo2Mod">
+            <tr>
+                <td style="cursor: pointer; background-color: aqua; color: white;" data-bs-toggle="modal"
+                    data-bs-target="#Grupo2Mod1">
+                    <p style="text-align: center;">
+                        <strong>
+                            ¿Qué entendemos por…?
+
+                        </strong>
+                    </p>
+                </td>
+
+                <td style="cursor: pointer; background-color: royalblue; color: white;" data-bs-toggle="modal"
+                    data-bs-target="#Grupo2Mod2">
+                    <p style="text-align: center;">
+                        <strong>
+                            ¿Cómo investigar…?
+                        </strong>
+                    </p>
+                </td>
+                <td style="cursor: pointer; background-color: aqua; color: white;" data-bs-toggle="modal"
+                    data-bs-target="#Grupo2Mod3">
+                    <p style="text-align: center;">
+                        <strong>
+                            En resumen…características del Método Científico vs. investigación educativa 
+                        </strong>
+                    </p>
+                </td>
+                <td style="cursor: pointer; background-color: royalblue; color: white;" data-bs-toggle="modal"
+                    data-bs-target="#Grupo2Mod3">
+                    <p style="text-align: center;">
+                        <strong>
+                            Enfoques de investigación educativa
+                        </strong>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class='col-2'></div>
+</div>
+<br>
+
+
+
+	
+
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center">
+				<a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+						<button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+							type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+						<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+							type="button" role="tab" aria-controls="nav-profile"
+							aria-selected="false">Complementarias</button>
+					</div>
+				</nav>
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+						tabindex="0">
+						<p><span>Annetta, L. (2010).&nbsp;Los “yoes”
+								lo tienen: un marco para el diseño de juegos educativos serios. &nbsp;</span><span
+								style="font-style:italic">Revisión
+								de Psicología General, </span><span>14(2), 105-112.&nbsp;</span></p>
+
+						<p><span>Banerjee, B &amp; Ceri</span><span>, S. </span><span>(eds.)
+								(2016). Creando líderes de innovación. Una perspectiva global. </span><span
+								style="font-style:italic">Springer
+								International&nbsp;Publishing. </span><span><a
+									href="https://link.springer.com/book/10.1007/978-3-319-20520-5">https://link.springer.com/book/10.1007/978-3-319-20520-5</a></span>
+						</p>
+
+						<p><span>Díaz-Vázquez, R. (2021). </span><span style="font-style:italic">Innovación
+								educativa: Fundamentos, procesos y retos.</span><span> Octaedro.</span></p>
+
+						<p><span>Espinoza, E. E. (2020). La
+								investigación formativa. Una reflexión teórica. </span><span style="
+font-style:italic">Revista
+								Conrado, </span><span>16(74),
+								45-53. </span><span><a
+									href="https://conrado.ucf.edu.cu/index.php/conrado/article/view/1332">https://conrado.ucf.edu.cu/index.php/conrado/article/view/1332</a></span>
+						</p>
+
+						<p><span>European Commission. (2017). </span><span style="font-style:italic">Communication
+								from the Commission to the European Parliament, the Council,
+								the&nbsp;European&nbsp;Economic and&nbsp;Social Committee and the Com</span><span
+								style="font-style:italic">m</span><span style="font-style:italic">ittee</span><span
+								style="font-style:italic">
+								of the Regions</span><span
+								style="font-style:italic">.</span><span>Eur.Lex.Europa.EU</span><span>. </span><span><a
+									href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52017DC0490">https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52017DC0490</a></span>
+						</p>
+
+						<p><span>Guo, X., &amp; Zhang, J. (2016).
+								Rapid&nbsp;Prototyping&nbsp;for&nbsp;Virtual&nbsp;Reality&nbsp;Applications.
+							</span><span
+								style="font-style:italic">Virtual&nbsp;Reality&nbsp;and&nbsp;Augmented&nbsp;Reality</span><span>&nbsp;(pp.
+								183-210).&nbsp;Springer.&nbsp;</span></p>
+
+						<p><span>Havelock, R. G. y Huberman, A. M.,
+								(1980).&nbsp;Innovación&nbsp;y&nbsp;problemas&nbsp;de
+								la&nbsp;educación.&nbsp;</span><span
+								style="font-style:italic">Teoría&nbsp;y&nbsp;realidad&nbsp;en&nbsp;los&nbsp;países&nbsp;en&nbsp;desarrollo.
+							</span><span>UNESCO-OIE.</span></p>
+
+						<p><span>Kim, H., &amp; Reeves,
+								T.&nbsp;(2007).&nbsp;Reframing&nbsp;research&nbsp;on&nbsp;learning&nbsp;with&nbsp;technology:&nbsp;In&nbsp;search&nbsp;of&nbsp;the&nbsp;meaning&nbsp;of&nbsp;cognitive&nbsp;tools.</span><span
+								style="font-style:italic">&nbsp;Instructional&nbsp;Science</span><span>,
+								35(3), 207-256.</span></p>
+
+						<p><span>Luna-Trujillo, A. (2021). </span><span style="font-style:italic">Metodología
+								de la investigación: Un enfoque práctico para las ciencias sociales y
+								humanas.</span><span>&nbsp;Pearson&nbsp;Educación.&nbsp;</span></p>
+
+						<p><span>Mella, R. S. (2018). Reflexiones
+								sobre el concepto de innovación</span><span style="font-style:italic">. Revista San
+								Gregorio, </span><span>(24),
+								120-131.</span></p>
+
+						<p><span>Ministerio
+								de Educación Nacional [MEN](2022). </span><span style="font-style:italic">Orientaciones
+								para el fomento de la innovación educativa como estrategia de desarrollo
+								escolar: nota técnica. </span><span>Oficina
+								de Innovación Educativa, Colombia. </span></p>
+
+						<p><span>Mulder, M., </span><span>Weigel</span><span>, T.,
+								Collins, K., &amp;&nbsp;</span><span>Muffels</span><span>, R.
+								(Eds.). (2020). Innovation, diversity and the employment impact of
+								multinational enterprises. Edward Elgar&nbsp;Publishing</span><span>.</span></p>
+
+						<p><span>Navarro, E., Jiménez-García E., </span><span>Rappoport</span><span>, S.
+								&amp; </span><span>Thoilliez</span><span>&nbsp;,&nbsp;B.&nbsp;(2017).&nbsp;</span><span
+								style="font-style:italic">Fundamentos&nbsp;de
+								la&nbsp;investigación&nbsp;y
+								la&nbsp;innovación&nbsp;educativa.&nbsp;</span><span>Universidad
+								Internacional de la Rioja. UNIR.</span></p>
+
+						<p><span>OECD. Better Policies for Better
+								Lives (2018). </span><span style="font-style:italic">Oslo Manual 2018: Guidelines for
+								collecting, reporting and using data on innovation (4th edition).
+							</span><span>Publications&nbsp;Office
+								of the&nbsp;European Union. </span><span><a
+									href="https://www.oecd.org/science/oslo-manual-2018-9789264304604-en.htm">https://www.oecd.org/science/oslo-manual-2018-9789264304604-en.htm</a></span>
+						</p>
+
+						<p><span>Oviedo,
+								P. E. (2012). </span><span style="
+font-style:italic">Innovar
+								la enseñanza. Estrategias derivadas de la investigación.</span><span> Universidad de la
+								Salle.</span></p>
+
+						<p><span>Rodríguez, Á. F., Medina, M. A.,
+								Medina, D. A. &amp; Rodríguez-</span><span>Alvear</span><span>, J. C.
+								(2022).&nbsp;</span><span>Formación</span><span>docente</span><span>en</span><span>el</span><span>proceso</span><span>&nbsp;de&nbsp;</span><span>cambio</span><span>&nbsp;e
+							</span><span>iinnovacion</span><span>en</span><span>&nbsp;la&nbsp;</span><span>educación</span><span
+								style="font-style:italic">.
+							</span><span style="font-style:italic">Revista</span><span
+								style="font-style:italic">Venezolana</span><span style="font-style:italic">
+								de&nbsp;</span><span style="font-style:italic">Gerencia</span><span
+								style="font-style:italic">:
+								RVG, </span><span>27(8),
+								1420-1434.&nbsp;</span></p>
+
+						<p><span>Sánchez, M. &amp; Escamilla, J.
+								(2021).&nbsp;</span><span
+								style="font-style:italic">Innovación&nbsp;Educativa&nbsp;en&nbsp;Educación&nbsp;Superior.
+								Una&nbsp;mirada&nbsp;de 360</span><span>. RIE 360. CUAIEED.</span></p>
+
+						<p><span>Santos, R, González,&nbsp;P.</span><span>
+								&amp; </span><span>Sánchez,&nbsp;M.
+								(2022).&nbsp;</span><span style="font-style:italic">Glosario&nbsp;de
+							</span><span style="font-style:italic">I</span><span
+								style="font-style:italic">nnovación&nbsp;Educativa.
+								Lista de&nbsp;términos&nbsp;clave, </span><span>1</span><span>ª</span><span>.
+							</span><span>e</span><span>d. </span><span>Coordinacióhn</span><span> de
+								Universidad Abierta, Innovación Educativa y Educación a Distancia. UNAM.</span></p>
+
+						<p><span>Smith, J., &amp; Johnson, A.
+								(2018).
+								Mobile&nbsp;</span><span>Application</span><span>Prototyping</span><span>.&nbsp;</span><span
+								style="font-style:italic">Research</span><span
+								style="font-style:italic">Methods</span><span style="font-style:italic">&nbsp;in
+								Human-</span><span style="font-style:italic">Computer</span><span
+								style="font-style:italic">Interaction</span><span>&nbsp;(pp.
+								355-383).&nbsp;Morgan Kaufmann.</span></p>
+
+						<p><span>Unión </span><span>Europea</span><span>
+								(2017). </span><span style="font-style:italic">Reflection
+								paper on harnessing </span><span style="font-style:italic">globalisation</span><span>.
+								Eur.Lex.Europa.EU. &nbsp;</span><span><a
+									href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52017DC0240">https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52017DC0240</a></span>
+						</p>
+
+						<p><span>Van de Ven, A. H. &amp; Angle, H.
+								L. (2019). </span><span style="font-style:italic">Research
+								on the management of innovation: The Minnesota studies</span><span>.
+								Oxford University Press.</span></p>
+
+						<p><span>World Economic Forum. (2020). </span><span style="font-style:italic">The
+								Global Competitiveness Report 2020</span><span>. World Economic Forum.</span></p>
+
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+						tabindex="0">
+						<p><span>González-Flores, S. R. &amp; Sánchez, M.
+								(2022). </span><span style="
+font-style:italic">Glosario</span><span style="
+font-style:italic">
+								de </span><span style="
+font-style:italic">Innovación</span><span style="
+font-style:italic">Educativa</span><span style="
+font-style:italic">.
+							</span><span style="
+font-style:italic">Lista</span><span style="
+font-style:italic">
+								de terminus clave</span><span>,
+								1a. </span><span>e</span><span>d. </span><span>Coordinación</span><span> de
+								Universidad </span><span>Abierta</span><span>,
+							</span><span>Innovación</span><span>Educativa</span><span> y
+							</span><span>Educación</span><span> a </span><span>Distancia</span><span>.
+								UNAM.</span></p>
+
+						<p><span>McMillan, J. H. &amp; </span><span>Shumacher</span><span>, S.
+								(eds.). (2005). </span><span style="font-style:italic">Investigación</span><span style="
+font-style:italic">Educativa</span><span style="
+font-style:italic">.
+							</span><span style="
+font-style:italic">Una</span><span style="
+font-style:italic">introducción</span><span style="
+font-style:italic">
+								conceptual.</span><span> 5a.
+								ed. Pearson </span><span>Educación</span><span>.</span></p>
+
+						<p><span>Roig</span><span>-Vila, R. (2019). </span><span style="
+font-style:italic">Investigación</span><span style="
+font-style:italic">
+								e </span><span style="
+font-style:italic">innovación</span><span style="
+font-style:italic">
+								en la </span><span style="
+font-style:italic">Enseñanza</span><span style="
+font-style:italic">
+								Superior. </span><span style="
+font-style:italic">Nuevos</span><span style="
+font-style:italic">contextos</span><span style="
+font-style:italic">,
+							</span><span style="
+font-style:italic">nuevas</span><span style="
+font-style:italic">
+								ideas</span><span>. </span><span>Octaedro</span><span>. </span></p>
+
+						<p><span>Sarmiento, S. M., </span><span>García</span><span>, K.
+								H. &amp; </span><span>Sacta</span><span>, E.
+								S. (2021). </span><span>Innovaciones</span><span>pedagógicas</span><span> en
+							</span><span>educación</span><span>
+								intercultural: Un </span><span>desafío</span><span>para</span><span> la
+							</span><span>práctica</span><span>docente</span><span>. </span><span style="
+font-style:italic">Revista</span><span style="
+font-style:italic">Electrónica</span><span style="
+font-style:italic">Entrevista</span><span style="
+font-style:italic">Académica</span><span style="
+font-style:italic">
+								(REEA)</span><span>, </span><span style="
+font-style:italic">2</span><span>(8),
+								121-141.</span></p>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body" id="cuerpoModal">
+					<div class="container-fluid">
+						<input type="hidden" id="numeroEvidencias" value="2">
+
+						<input type="hidden" id="evidenciaActual" value="1">
+						<div class="row">
+							<div class='col-md-1 align-self-center'><a class='flechaCarrusel'
+									onclick='evidenciaAnterior()'>&#10094;</a></div>
+							<div class='col'>
+								<div class='evidencia' id='evidencia1' style='display: block;'>
+									<p style="text-align: center;"><strong>Foro 1.</strong> <strong>Importancia de la investigaci&oacute;n y la innovaci&oacute;n.</strong></p>
+<p><strong>Descripci&oacute;n: </strong></p>
+<p>Reflexione sobre la importancia de la investigaci&oacute;n, la innovaci&oacute;n y su aplicaci&oacute;n en la educaci&oacute;n dando respuesta a las siguientes preguntas.</p>
+<ol>
+<li>&iquest;C&oacute;mo se relaciona la investigaci&oacute;n, la innovaci&oacute;n y la educaci&oacute;n, qu&eacute; importancia tiene?</li>
+<li>&iquest;Qu&eacute; elementos considera que son claves para la investigaci&oacute;n en educaci&oacute;n?</li>
+<li>&iquest;Cu&aacute;les competencias debe tener el profesorado para involucrarse en el proceso de cambio e innovaci&oacute;n educativa?</li>
+<li>&iquest;Qu&eacute; oportunidades y retos enfrenta la investigaci&oacute;n educativa?</li>
+</ol>
+<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+<ol>
+<li>Apego a las instrucciones para la elaboraci&oacute;n de la actividad.</li>
+<li>Redacci&oacute;n y ortograf&iacute;a adecuadas.</li>
+<li>Coherencia y organizaci&oacute;n de ideas principales.</li>
+<li>Citaci&oacute;n con base en el <em>Manual de Publicaciones de la APA, 7&ordf;. ed</em>.</li>
+</ol>
+<p><strong>Lineamiento de entrega:</strong></p>
+<p>1.Suba su evidencia al apartado <strong><em>Foro 1,</em></strong> en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el <strong>Calendario</strong> de entregas.</p>
+<p>&nbsp;</p>
+								</div>
+								<div class='evidencia' id='evidencia2' style='display: none;'>
+									<p style="text-align: center;"><strong>Actividad 1. Proyecto integrador: reflexi&oacute;n sobre la innovaci&oacute;n en la educaci&oacute;n.</strong></p>
+<p><strong>Descripci&oacute;n: </strong></p>
+<p>Reflexione sobre los factores de tipo personal, institucional y social que dificultan o favorecen el cambio en las instituciones educativas.</p>
+<ol>
+<li>Identifique alguna situaci&oacute;n de su experiencia personal en que intent&oacute; o realiz&oacute; cambios importantes en el &aacute;mbito educativo que transformaron el curso de su vida.&nbsp;</li>
+<li>Reflexione sobre estos cambios y responda a las siguientes cuestiones:
+<ol style="list-style-type: lower-alpha;">
+<li>&iquest;En qu&eacute; consisti&oacute; este cambio?&nbsp;</li>
+<li>&iquest;Por qu&eacute; decidi&oacute; cambiar?&nbsp;</li>
+<li>&iquest;Cu&aacute;les fueron sus temores ante el cambio?&nbsp;</li>
+</ol>
+</li>
+<li>Dise&ntilde;e una tabla en la que refiera lo siguiente:
+<ol style="list-style-type: lower-alpha;">
+<li>&iquest;Qu&eacute; funci&oacute;n de investigaci&oacute;n educativa considera que aplic&oacute;?</li>
+<li>&iquest;Cu&aacute;l enfoque de investigaci&oacute;n educativa emple&oacute;?</li>
+<li>&iquest;El cambio realizado fue una innovaci&oacute;n educativa?, &iquest;por qu&eacute;?</li>
+<li>&iquest;En qu&eacute; &aacute;mbito realiz&oacute; la innovaci&oacute;n?, &iquest;aplic&oacute; alguna TIC?, &iquest;cu&aacute;l?</li>
+<li>&iquest;Considera que el cambio fue f&aacute;cil o no?, &iquest;por qu&eacute;?</li>
+</ol>
+</li>
+</ol>
+<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+<ol>
+<li>Apego a las instrucciones para la elaboraci&oacute;n de la actividad.</li>
+<li>Redacci&oacute;n y ortograf&iacute;a correctas.</li>
+<li>Coherencia y organizaci&oacute;n de ideas principales.</li>
+<li>Citaci&oacute;n con base en el <em>Manual de Publicaciones de la APA, 7&ordf;. ed</em>.</li>
+</ol>
+<p><strong>Lineamiento de entrega:</strong></p>
+<ol>
+<li>Formato: fuente Arial a 12&nbsp;puntos,&nbsp;con interlineado de 1.5.&nbsp;</li>
+<li>Su documento no debe exceder las cuatro cuartillas: tres cuartillas como m&aacute;ximo para el desarrollo y&nbsp;en la cuarta agregue su conclusi&oacute;n, as&iacute; como la fuente de informaci&oacute;n consultada, seg&uacute;n corresponda.</li>
+<li>Titule el archivo bajo la siguiente nomenclatura: &nbsp;Actx_PrimerApellidoyPrimerNombre. Por&nbsp;ejemplo:&nbsp;Act1_VillanuevaTeresa&nbsp;</li>
+<li>Suba su evidencia en formato PDF, al apartado&nbsp;Actividad 1,&nbsp;en la plataforma EMINUS 4, a m&aacute;s tardar en&nbsp;la fecha establecida en el&nbsp;Calendario&nbsp;de entregas.</li>
+</ol>
+								</div>
+							</div>
+							<div class='col-md-1 align-self-center'><a class='flechaCarrusel'
+									onclick='siguienteEvidencia()'>&#10095;</a></div>
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+<div class="modal fade" id="Grupo1Mod1" tabindex="-1" aria-labelledby="Grupo1Mod1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Grupo1Mod1Label">
+                    Enfoque cuantitativo
+
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>En el enfoque cuantitativo o técnico, el proceso se inicia siempre con la formulación de un problema en forma de pregunta de investigación, el cual se busca resolver a través del desarrollo de la investigación. La fase de definición del problema culmina con la elaboración del marco teórico. La planificación de la investigación implica la formulación de hipótesis que deben ser contrastadas empíricamente, además de la selección del diseño más adecuado para dar respuesta a dichas hipótesis planteadas.
+				</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Grupo1Mod2" tabindex="-1" aria-labelledby="Grupo1Mod2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Grupo1Mod2Label">
+                    Enfoque  cualitativo
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>El enfoque cualitativo se centra en comprender las experiencias de los estudiantes desde su propia perspectiva.</p>
+<p>Se emplea una variedad de m&eacute;todos de investigaci&oacute;n cualitativa, tales como entrevistas, notas de observaci&oacute;n y documentos.</p>
+<p>Los resultados de dicha investigaci&oacute;n se utilizan para desarrollar nuevos m&eacute;todos de ense&ntilde;anza y aprendizaje y se espera que &eacute;sta contribuya a mejorar la calidad de la educaci&oacute;n para todos los estudiantes.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="Grupo2Mod1" tabindex="-1" aria-labelledby="Grupo2Mod1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Grupo2Mod1Label">
+                    ¿Qué entendemos por…?
+
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Con base en la investigaci&oacute;n realizada por Navarro E., Jim&eacute;nez E., Redondo S. y Thoilliez R. (2017) se presenta un esquema que explica los conceptos enumerados a continuaci&oacute;n y su relaci&oacute;n con la innovaci&oacute;n educativa.</p>
+                <ol>
+                <li>Investigaci&oacute;n.</li>
+                <li>Investigaci&oacute;n en educaci&oacute;n.</li>
+                <li>Innovaci&oacute;n.</li>
+                <li>Innovaci&oacute;n educativa.</li>
+                <li>Proyecto educativo innovador.</li>
+                </ol>
+                <p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+                    <path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+                    </svg>
+                    A continuación, lea el siguiente esquema con atención. 
+                    <br>
+                    </p>
+                    <p style="color: red;">Material pendiente</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Grupo2Mod2" tabindex="-1" aria-labelledby="Grupo2Mod2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Grupo2Mod2Label">
+                    ¿Cómo investigar…?
+
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>Existen muchas formas de investigar, pero el m&eacute;todo empleado es lo que determina el tipo de conocimiento que se genera. El m&eacute;todo cient&iacute;fico produce un tipo de conocimiento verdadero para cualquier persona y para conseguirlo, debemos asegurarnos de que las fuentes de informaci&oacute;n sean fiables y v&aacute;lidas.</li>
+                    <li>Una fuente es fiable cuando se controlan los posibles errores que pudieran cometerse al utilizar una herramienta para recabar informaci&oacute;n y con ello se obtienen resultados concretos y precisos.</li>
+                    <li>La validez de una fuente o herramienta existe si el procedimiento que se emplea para recabar informaci&oacute;n permite obtener los datos que realmente estamos buscando y se interpreta por los sujetos involucrados de la misma manera.</li>
+                    <li>En el contexto educativo, no todos los fen&oacute;menos pueden separarse en aspectos cuantitativos como ocurre en otras &aacute;reas de conocimiento, por ejemplo, las Ciencias Exactas, por lo que el M&eacute;todo Cient&iacute;fico para resolver problemas educativos tiene connotaciones distintas al de otras ramas y se considera s&oacute;lo una aproximaci&oacute;n; de tal manera que los procedimientos de investigaci&oacute;n han evolucionado para adaptarse de forma m&aacute;s precisa a la realidad que estudian. &nbsp;</li>
+                    </ol>
+                    <p>A continuaci&oacute;n, se presenta una tabla con el objetivo de establecer algunas de las diferencias entre la investigaci&oacute;n que se realiza utilizando el M&eacute;todo Cient&iacute;fico y la investigaci&oacute;n en el &aacute;mbito educativo.</p>
+                    <br>
+                    <table class="table" style="border: 1px solid black; border-collapse: collapse;">
+                        <tbody>
+                        <tr>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p style="text-align: center;"><strong>Descripci&oacute;n</strong></p>
+                        </td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p style="text-align: center;"><strong>M&eacute;todo cient&iacute;fico</strong></p>
+                        </td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p style="text-align: center;"><strong>Investigaci&oacute;n en educaci&oacute;n o investigaci&oacute;n educativa</strong></p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>Definici&oacute;n</p>
+                        </td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>Es un conjunto de procedimientos por los cuales se plantean los problemas cient&iacute;ficos y se ponen a prueba las hip&oacute;tesis y los instrumentos de trabajo investigativo.</p>
+                        </td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>Proceso sistem&aacute;tico dirigido a la resoluci&oacute;n de problemas, que afectan directamente a los procesos de ense&ntilde;anza-aprendizaje.</p>
+                        <p>&nbsp;</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>Finalidad</p>
+                        </td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>Ofrecer explicaciones de los fen&oacute;menos que estudia a partir de reglas o leyes generales, desde una concepci&oacute;n positivista de la ciencia.</p>
+                        <p>&nbsp;</p>
+                        </td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>Explicaci&oacute;n del fen&oacute;meno estudiado tratando de establecer leyes generales (enfoque cuantitativo) o su comprensi&oacute;n en profundidad para transformarla (enfoque cualitativo).</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>Caracter&iacute;stica fundamental</p>
+                        <p>&nbsp;</p>
+                        </td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>Replicabilidad. Cualquier investigador que recabe y analice la misma informaci&oacute;n con el mismo procedimiento obtendr&aacute; resultados similares.</p>
+                        <p>&nbsp;</p>
+                        </td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>Los fen&oacute;menos educativos pueden estar determinados por el contexto social en el que se producen y, por tanto, tratar de establecer explicaciones a partir de leyes generales que se cumplan siempre de la misma forma en todas las situaciones resulta complicado (emp&iacute;rico-anal&iacute;tica).</p>
+                        <p>&nbsp;</p>
+                        <p>En educaci&oacute;n es dif&iacute;cil encontrar una respuesta que sea v&aacute;lida y aplicable a todos los contextos. Y, por estos motivos, surgieron otros enfoques o manera de abordar la investigaci&oacute;n de fen&oacute;menos educativos.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>Enfoque o modalidad de investigaci&oacute;n: conjunto de pr&aacute;cticas que emplean los investigadores para llevar a cabo la b&uacute;squeda de conocimiento y la soluci&oacute;n de problemas. Posiciones ideol&oacute;gicas o filos&oacute;ficas sobre el entendimiento de la realidad.</p>
+                        </td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>Esta caracter&iacute;stica se puede obtener a trav&eacute;s de:</p>
+                        <p>1.Razonamiento inductivo: Su punto de partida es la experiencia, se basa en la observaci&oacute;n o estudio sistem&aacute;tico de casos concretos para establecer, a partir de la generalizaci&oacute;n de esa observaci&oacute;n, leyes o reglas.</p>
+                        <p>2.Razonamiento deductivo: Va de lo general a lo particular, partiendo de teor&iacute;as generales para contrastarla con la realidad emp&iacute;rica, es decir, trata de probar teor&iacute;as con datos reales. Se emplea en las matem&aacute;ticas.</p>
+                        <p>3.Razonamiento hipot&eacute;tico-deductivo. Se vincula al m&eacute;todo cient&iacute;fico y es una mezcla de las dos estrategias. Para generar conocimiento es necesario pasar de la teor&iacute;a a los datos y viceversa. Significa que de una teor&iacute;a se pueden deducir hip&oacute;tesis concretas que deben comprobarse de forma emp&iacute;rica; o bien, a trav&eacute;s de la propia observaci&oacute;n se pueden generar hip&oacute;tesis que deben contrastarse con datos reales.</p>
+                        </td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>Cuantitativo (positivista, emp&iacute;rico-anal&iacute;tica): quiere establecer leyes generales para explicar los fen&oacute;menos educativos que puedan trasladarse a otros casos y contextos.</p>
+                        <p>&nbsp;</p>
+                        <p>Cualitativo (cognitivista, naturalista-fenomenol&oacute;gica) trata de describir a profundidad un fen&oacute;meno para lograr su comprensi&oacute;n, transformar la realidad educativa desde la acci&oacute;n pr&aacute;ctica y comprender la realidad a partir del sentido que tiene para los implicados.</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>Hay un tercer enfoque cuyo objetivo es la resoluci&oacute;n pr&aacute;ctica de problemas educativos en donde se ubica la metodolog&iacute;a de investigaci&oacute;n-acci&oacute;n. Esta forma de investigar busca la soluci&oacute;n a problemas concretos mediante la pr&aacute;ctica, con la acci&oacute;n o intervenci&oacute;n educativa y la podemos situar dentro del paradigma pragm&aacute;tico o sociocr&iacute;tico, que mezcla premisas de las dos aproximaciones anteriores. Esta metodolog&iacute;a de investigaci&oacute;n est&aacute; directamente vinculada a la innovaci&oacute;n en el aula.</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>M&eacute;todo. Proceso que sigue una investigaci&oacute;n.</p>
+                        </td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>Observaci&oacute;n.</p>
+                        <p>Planteamiento del problema.</p>
+                        <p>Hip&oacute;tesis.</p>
+                        <p>Experimentaci&oacute;n.</p>
+                        <p>An&aacute;lisis.</p>
+                        <p>Conclusi&oacute;n.</p>
+                        </td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>Se debe contar con conocimiento educativo e investigaci&oacute;n para generar innovaci&oacute;n en este &aacute;mbito.</p>
+                        <p>Diagn&oacute;stico (problemas, necesidades, implicados).</p>
+                        <p>Dise&ntilde;o (cualitativos o cuantitativos).</p>
+                        <p>Aplicaci&oacute;n.</p>
+                        <p>Evaluaci&oacute;n.</p>
+                        <p>&nbsp;</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>Dise&ntilde;o. Parte del m&eacute;todo que se centra en la forma de recoger y analizar la informaci&oacute;n necesaria para resolver el problema de investigaci&oacute;n.</p>
+                        </td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>Experimentales.</p>
+                        <p>No experimentales.</p>
+                        </td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">
+                        <p>T&eacute;cnicas cuantitativas o cualitativas.</p>
+                        </td>
+                        </tr>
+                        </tbody>
+                        </table>
+                    <p>Fuente: Elaborada con base en la investigaci&oacute;n realizada por Navarro E., Jim&eacute;nez E., Redondo S. y Thoilliez R. (2017).</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Grupo2Mod3" tabindex="-1" aria-labelledby="Grupo2Mod3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Grupo2Mod3Label">
+                    En resumen...
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>En resumen, las características del Método Científico y la investigación educativa son:
+                </p>
+                <table class="table" style="border: 1px solid black; border-collapse: collapse;">
+                    <tbody>
+                    <tr>
+                    <td style="border: 1px solid black; border-collapse: collapse;">
+                    <p style="text-align: center;">M&eacute;todo Cient&iacute;fico</p>
+                    </td>
+                    <td style="border: 1px solid black; border-collapse: collapse;">
+                    <p style="text-align: center;">Investigaci&oacute;n educativa</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td style="border: 1px solid black; border-collapse: collapse;">
+                    <p>El conocimiento surge al emplear el M&eacute;todo Cient&iacute;fico para resolver problemas o interrogantes espec&iacute;ficos.</p>
+                    <p>Es importante considerar que los fen&oacute;menos del mundo real pueden descomponerse en sus partes esenciales para su an&aacute;lisis, denominadas variables de investigaci&oacute;n.</p>
+                    <p>Este conocimiento se basa en la observaci&oacute;n de hechos, experiencias y mediciones objetivas de variables, evitando la influencia de opiniones subjetivas.</p>
+                    <p>Es esencial disponer de fuentes confiables y herramientas adecuadas para recopilar informaci&oacute;n.</p>
+                    <p>La objetividad es fundamental tanto en la recopilaci&oacute;n como en el an&aacute;lisis de datos, asegurando que est&eacute;n exentos de influencias personales.</p>
+                    <p>El proceso es repetible y comprobable por cualquier investigador.</p>
+                    <p>El conocimiento cient&iacute;fico se actualiza y progresa constantemente a medida que se incorporan nuevos datos y teor&iacute;as.</p>
+                    <p>No se puede afirmar con certeza absoluta si se ha alcanzado la verdad; las conclusiones son provisionales hasta que futuras investigaciones las reeval&uacute;en.</p>
+                    <p>Utiliza un lenguaje espec&iacute;fico y compartido para facilitar la comprensi&oacute;n entre todos los usuarios.</p>
+
+                    </td>
+                    <td style="border: 1px solid black; border-collapse: collapse;">
+                    <p>Tiene una finalidad principalmente orientada a la aplicaci&oacute;n pr&aacute;ctica y al estudio de los procesos de cambio educativo.</p>
+                    <p>Combina los enfoques cuantitativo y cualitativo, abarcando tanto las variables susceptibles de medici&oacute;n como las interpretaciones de los involucrados en el proceso.</p>
+                    <p>Este proceso implica la participaci&oacute;n activa de los sujetos implicados, desde la fase de planificaci&oacute;n hasta la evaluaci&oacute;n de los resultados, aunque tambi&eacute;n puede contar con la asesor&iacute;a de diversos expertos.</p>
+                    <p>Su objetivo es fomentar la reflexi&oacute;n de los actores involucrados en la pr&aacute;ctica educativa. Se trata de un ciclo continuo que no s&oacute;lo revisa la intervenci&oacute;n realizada, sino que tambi&eacute;n analiza la metodolog&iacute;a empleada en el estudio.</p>
+
+                    </td>
+                    </tr>
+                    </tbody>
+                    </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Grupo2Mod4" tabindex="-1" aria-labelledby="Grupo2Mod4Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Grupo2Mod4Label">
+                    Enfoques de investigación educativa
+
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Son el conjunto de pr&aacute;cticas utilizadas por los investigadores para buscar conocimiento y resolver cuestiones o problemas. Estas metodolog&iacute;as abarcan desde posiciones ideol&oacute;gicas o filos&oacute;ficas sobre la comprensi&oacute;n de la realidad, hasta la forma m&aacute;s adecuada de recolectar informaci&oacute;n, y suelen distinguirse entre enfoques cuantitativos y cualitativos.</p>
+<p>La distinci&oacute;n entre ambos enfoques reside en sus objetivos. La aproximaci&oacute;n cuantitativa tiene como meta establecer leyes generales para explicar fen&oacute;menos educativos y aplicar esos conocimientos a diferentes casos y contextos. En contraste, el enfoque cualitativo busca describir minuciosamente un fen&oacute;meno para lograr una comprensi&oacute;n profunda, transformar la realidad educativa mediante la acci&oacute;n pr&aacute;ctica y entenderla desde el significado que tiene para las personas implicadas.</p>
+<p>A continuaci&oacute;n, se presenta un cuadro comparativo entre los enfoques de la investigaci&oacute;n educativa, el cuantitativo y cualitativo; y dentro de la aproximaci&oacute;n cualitativa la metodolog&iacute;a de la investigaci&oacute;n-acci&oacute;n.</p>
+
+<table class="table" style="border: 1px solid black; border-collapse: collapse;">
+    <tbody>
+    <tr>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p style="text-align: center;"><strong>Concepto</strong></p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p style="text-align: center;"><strong>Enfoque cuantitativo</strong></p>
+    <p style="text-align: center;"><strong>Positivista </strong></p>
+    <p style="text-align: center;"><strong>(emp&iacute;rico-anal&iacute;tica)</strong></p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p style="text-align: center;"><strong>Enfoque cualitativo</strong></p>
+    <p style="text-align: center;"><strong>Cognitivista </strong></p>
+    <p style="text-align: center;"><strong>(naturalista-fenomenol&oacute;gica)</strong></p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p style="text-align: center;"><strong>Metodolog&iacute;a de investigaci&oacute;n-acci&oacute;n dentro de la aproximaci&oacute;n cualitativa</strong></p>
+    <p style="text-align: center;"><strong>(paradigma pragm&aacute;tico o socio-cr&iacute;tico)</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Paradigma conceptual: Visi&oacute;n del investigador sobre el conocimiento y el objeto &uacute;ltimo de la investigaci&oacute;n.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Finalidad: Explicaci&oacute;n del fen&oacute;meno estudiado tratando de establecer leyes generales.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Finalidad: Comprender la realidad a partir del sentido que tienen para los implicados.</p>
+    <p>&nbsp;</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Finalidad: La transformaci&oacute;n de la realidad educativa para su mejora, modificando actitudes o metodolog&iacute;as que intervienen en los procesos de ense&ntilde;anza-aprendizaje.</p>
+    </td>
+    </tr>
+    <tr>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>M&eacute;todo o metodolog&iacute;a: Proceso completo que se utiliza para formular cuestiones de investigaci&oacute;n.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Entiende la realidad como un fen&oacute;meno que debe descubrirse a trav&eacute;s de la medici&oacute;n rigurosa y objetiva de variables mediante pruebas estandarizadas y validadas, cuestionarios o la experimentaci&oacute;n y el an&aacute;lisis estad&iacute;stico de datos.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Considera que la realidad se construye y est&aacute; mediatizada por los sujetos que la viven y, por tanto, para recoger informaci&oacute;n emplea la observaci&oacute;n, la entrevista o el an&aacute;lisis de documentos.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Combina los planteamientos y la metodolog&iacute;a de los enfoques cuantitativo y cualitativo, lo que implica considerar las variables susceptibles de medici&oacute;n y tambi&eacute;n las interpretaciones de los agentes implicados en el proceso.</p>
+    </td>
+    </tr>
+    <tr>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Concepci&oacute;n de la realidad a estudiar.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>&Uacute;nica y objetiva. Puede separarse en variables medibles.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>M&uacute;ltiple y hol&iacute;stica. Filtrada por el investigador y los implicados.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Revisa la intervenci&oacute;n realizada y analiza el proceso metodol&oacute;gico con que se ha desarrollado el estudio.</p>
+    </td>
+    </tr>
+    <tr>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Objetivo &uacute;ltimo de la investigaci&oacute;n.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Explicaci&oacute;n mediante el estudio de relaciones entre variables.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Pone el foco de atenci&oacute;n en el an&aacute;lisis del contexto concreto en donde se produce el fen&oacute;meno y de las personas que intervienen.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Busca la reflexi&oacute;n de los implicados sobre esa pr&aacute;ctica educativa.</p>
+    </td>
+    </tr>
+    <tr>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Tipo de razonamiento.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Hipot&eacute;tico-deductivo (tambi&eacute;n inductivo).</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Inductivo.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Paradigmas de investigaci&oacute;n.</p>
+    </td>
+    </tr>
+    <tr>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Dise&ntilde;os de investigaci&oacute;n.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Experimentales. Experimental, puro, pre-experimental, cuasi-experimentales. No experimentales o expostfacto: descriptivos, comparativos, correlacionales, causales, etc.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Etnogr&aacute;fico, biogr&aacute;fico, estudio de casos, teor&iacute;a fundamentada, investigaci&oacute;n-acci&oacute;n.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Mezcla las dos anteriores para generar innovaciones que supongan un proceso de reflexi&oacute;n sobre la propia pr&aacute;ctica para transformarla.</p>
+    </td>
+    </tr>
+    <tr>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>T&eacute;cnicas de recogida de informaci&oacute;n.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Pruebas estandarizadas (test) y cuestionarios. Tambi&eacute;n observaciones altamente estructuradas.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Observaci&oacute;n participante, entrevistas, grupos de discusi&oacute;n, DAFO, Delphi y an&aacute;lisis de documentos.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Observaci&oacute;n, entrevistas individuales y grupales, diario de campo, etc. (puede combinar las t&eacute;cnicas).</p>
+    </td>
+    </tr>
+    <tr>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Informaci&oacute;n (datos).</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Num&eacute;rica. Es fundamental seleccionar muestras de casos que garanticen la representatividad.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Textual.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Considera variables susceptibles de medici&oacute;n e interpretaciones de los agentes implicados.</p>
+    </td>
+    </tr>
+    <tr>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Resultados.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>Generalizables a una poblaci&oacute;n.</p>
+    <p>&nbsp;</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>No generalizables.</p>
+    </td>
+    <td style="border: 1px solid black; border-collapse: collapse;">
+    <p>En educaci&oacute;n es dif&iacute;cil encontrar una respuesta v&aacute;lida y aplicable en todos los contextos.</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+
+<p>Fuente: Elaborada con base en la investigaci&oacute;n realizada por Navarro E., Jim&eacute;nez E., Redondo S. y Thoilliez R. (2017).</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>

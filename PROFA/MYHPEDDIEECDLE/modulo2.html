@@ -1,0 +1,1872 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Métodos y herramientas para el desarrollo de innovaciones en el campo de la
+					educación </p>
+
+				<p id="subtituloPresentacion">Fase 2: Modelos de innovación educativa, tendencias metodológicas en el
+					campo educativo, uso de nuevas tecnologías</p>
+
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = '#' class='enlaceModulo'><strong>Fase  1</strong></a>-->
+
+				<a href='modulo1.html' class='enlaceModulo enlaceActivo'><strong>Fase 1</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Fase  2</strong></a>-->
+
+				<a href='#' class='enlaceModulo'><strong>Fase 2</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Fase  3</strong></a>-->
+
+				<a href='modulo3.html' class='enlaceModulo enlaceActivo'><strong>Fase 3</strong></a>
+
+			</div>
+			<div class="col-1 align-self-center">
+				<span><strong>Zoom: </strong><button class="botonZoom" onclick="reducirLetra()"
+						type="button">A-</button><button class="botonZoom" onclick="aumentarLetra()"
+						type="button">A+</button></span>
+			</div>
+
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">Métodos y herramientas para el desarrollo de innovaciones en el campo de la
+					educación </p>
+
+				<p id="subtituloPresentacionMovil">Fase 2: Modelos de innovación educativa, tendencias metodológicas en
+					el campo educativo, uso de nuevas tecnologías</p>
+
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">Métodos y herramientas para el desarrollo de innovaciones en el
+						campo de la educación Scroll</p>
+
+					<p id="subtituloPresentacionScroll">Fase 2: Modelos de innovación educativa, tendencias
+						metodológicas en el campo educativo, uso de nuevas tecnologías</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+
+		<a href="fase2.html" class="w3-bar-item w3-button">Fase 2</a>
+
+		<a href="fase3.html" class="w3-bar-item w3-button">Fase 3</a>
+
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="carruselInformación" class="fondoAzul letraBlanca">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col align-self-center">
+					<br>
+					<p id="tituloCarruselInformacion" style="text-align: center; font-weight: bold;">
+						<i class="bi bi-info-circle-fill"></i> Situación problematizadora
+					</p>
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
+				</div>
+				<div class="col align-self-center">
+					<div id="contenidoSituacion" style="text-align: center;">
+
+						<p>
+							Una vez realizada la reflexión de la fase anterior, tomando en cuenta los conceptos y
+							temas abordados, se reitera que la innovación educativa cuenta con una amplia gama de
+							modelos, herramientas y tendencias, que pueden emplearse en la práctica docente. Para el
+							profesor es de suma importancia contar con estos conocimientos y adoptar el uso de
+							herramientas tecnológicas que le permitirán detonar su creatividad en la resolución de
+							problemas educativos y, con ello, fortalecer los procesos de enseñanza-aprendizaje.
+
+						</p>
+					</div>
+					<div id="contenidoProposito" style="display: none;">
+						<table>
+							<tr>
+								<td>
+									<p>El propósito de explorar los modelos de innovación educativa, las tendencias
+										metodológicas en el campo educativo y el uso de nuevas tecnologías es promover
+										una educación más efectiva, relevante y adaptada a las necesidades del siglo
+										XXI. Estos elementos se centran en mejorar la experiencia de aprendizaje de los
+										estudiantes, fomentar su participación activa, desarrollar habilidades clave y
+										prepararlos para enfrentar los desafíos del mundo actual.
+
+									</p>
+								</td>
+								<td style="width: 2em;"></td>
+								<td>
+									<img src="" alt="imagen pendiente" class="img-fluid" />
+								</td>
+
+							</tr>
+						</table>
+					</div>
+					<br>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
+				</div>
+				<div class="col-1"></div>
+			</div>
+
+		</div>
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
+		<!---------Subitulo--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 class='subtitulo'>
+					Introducción
+
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>Dentro
+						del campo educativo, existe una constante búsqueda de métodos y enfoques que
+						fomenten una experiencia de aprendizaje más eficaz y con mayor significado.
+						Esto ha dado lugar a la aparición de diversos modelos de innovación educativa,
+						tendencias en la metodología de enseñanza y la creciente adopción de
+						tecnologías vanguardistas. Estos tres componentes convergen con el propósito
+						compartido de revolucionar la educación, adaptándola a las cambiantes
+						necesidades de los estudiantes y aprovechando al máximo las herramientas
+						tecnológicas a nuestro alcance.</span></p>
+
+
+
+				<p><span>Los
+						modelos de innovación educativa proporcionan estructuras y enfoques pedagógicos
+						que hacen hincapié en la participación activa, el pensamiento crítico y la
+						resolución de problemas. Por su parte, las tendencias en la metodología de
+						enseñanza exploran nuevos enfoques para el aprendizaje que fomentan la
+						personalización, la colaboración y la inmersión en proyectos. En este contexto,
+						la incorporación de tecnologías emergentes se ha convertido en un factor clave
+						para enriquecer la experiencia educativa, proporcionando recursos interactivos,
+						herramientas de colaboración y acceso a información actualizada.</span></p>
+
+
+
+				<p><span>Este
+						enfoque global, que amalgama modelos de innovación educativa, tendencias
+						metodológicas y tecnologías novedosas, busca elevar la calidad y pertinencia de
+						la educación, preparando a los estudiantes para afrontar los desafíos del siglo
+						XXI y promoviendo un aprendizaje sustancial y perdurable.</span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Titulo--------->
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+					2.1. Modelos en innovación educativa &nbsp;
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>En la
+						educación actual, los modelos de innovación, tendencias metodológicas y nuevas
+						tecnologías convergen para transformar el aprendizaje, adaptando entornos
+						dinámicos a las necesidades del siglo XXI. Los modelos innovadores potencian la
+						participación, creatividad y resolución de problemas. Las tendencias
+						metodológicas exploran personalización, colaboración y proyectos. Las
+						tecnologías enriquecen recursos, facilitan acceso a datos actualizados y
+						fomentan interacción. Esta combinación busca crear aprendizaje relevante y
+						significativo en la era digital. En esta fase, se explorarán modelos de
+						innovación, tendencias metodológicas y tecnologías para brindar una visión
+						panorámica.</span></p>
+
+
+
+				<p><span>Para
+						iniciar con este tema, es importante definir algunos&nbsp;términos con la
+						finalidad de comprender la relación de los </span><span>mismos </span><span>con
+						esta experiencia educativa. </span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Subitulo--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 class='subtitulo'>
+					2.1.1 El modelo y el método
+
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>En
+						esta </span><span>fase,
+					</span><span>antes
+						de explorar los modelos o metodologías de innovación educativa, </span><span>es
+					</span><span>necesario
+						tener una definición clara de conceptos. </span><span>Haga clic </span><span>en el
+						recuadro con el nombre del término para leer la definición que corresponde. </span></p>
+				<!--Ventanas emergentes-->
+				<div class='row'>
+					<div class='col-2'></div>
+					<div class='col'>
+						<table style="margin-left: auto; margin-right: auto; width: 100%; table-layout: fixed;"
+							id="Grupo1Mod">
+							<tr>
+								<td style="cursor: pointer; background-color: aqua; color: white;"
+									data-bs-toggle="modal" data-bs-target="#Grupo1Mod1">
+									<p style="text-align: center;">
+										<strong>
+											Modelo
+
+										</strong>
+									</p>
+								</td>
+
+								<td style="cursor: pointer; background-color: royalblue; color: white;"
+									data-bs-toggle="modal" data-bs-target="#Grupo1Mod2">
+									<p style="text-align: center;">
+										<strong>
+											Método
+										</strong>
+									</p>
+								</td>
+
+							</tr>
+						</table>
+					</div>
+					<div class='col-2'></div>
+				</div>
+				<br>
+
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>A lo largo de la historia,
+						diversas investigaciones han explorado maneras de mejorar la enseñanza y el
+						aprendizaje, generando distintas perspectivas educativas que se reflejan en
+						diversos modelos pedagógicos.</span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>Al hablar de modelos pedagógicos,
+						generalmente se asocia como sinónimo a las tendencias pedagógicas, escuelas
+						pedagógicas o enfoques pedagógicos, asociándose a las acciones para la
+						organización del proceso de E-A y éste&nbsp;sea efectivo.</span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Subitulo--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 class='subtitulo'>
+					2.1.2 Modelos pedagógicos
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>En el siguiente cuadro se pueden
+						visualizar los </span><span>modelos
+						pedagógicos</span><span>&nbsp;más conocidos, aplicados en
+						el aula&nbsp;y que han trascendido en el mundo entero con diferentes
+						experiencias y estrategias de desarrollo. Consúltelo detenidamente. </span></p>
+				<table class="table" style="border: 1px solid black; border-collapse: collapse;">
+					<tbody>
+						<tr>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p><strong>Modelo pedag&oacute;gico</strong></p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p><strong>Caracter&iacute;sticas</strong></p>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p><strong>Escuela tradicional</strong></p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p>El maestro es el centro del aprendizaje, y los estudiantes son pasivos.</p>
+								<p>El maestro transmite informaci&oacute;n a los estudiantes, quienes la memorizan y
+									reproducen.</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p><strong>Conductismo</strong></p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p>El aprendizaje se produce a trav&eacute;s de la repetici&oacute;n y la recompensa.
+								</p>
+								<p>El maestro presenta a los estudiantes est&iacute;mulos, y los estudiantes responden a
+									ellos.</p>
+								<p>Si los estudiantes responden correctamente, son recompensados; si no, son castigados.
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p><strong>Cognitivismo</strong></p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p>El aprendizaje se produce a trav&eacute;s de la comprensi&oacute;n.</p>
+								<p>El maestro ayuda a los estudiantes a comprender los conceptos y principios a
+									trav&eacute;s de la instrucci&oacute;n directa, la pr&aacute;ctica guiada y la
+									retroalimentaci&oacute;n.</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p><strong>Constructivismo</strong></p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p>El aprendizaje se produce a trav&eacute;s de la construcci&oacute;n de significados
+									por parte de los estudiantes.</p>
+								<p>El maestro proporciona a los estudiantes experiencias y oportunidades para que
+									construyan sus propios conocimientos.</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p><strong>Social-cognitivo</strong></p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p>El aprendizaje se produce a trav&eacute;s de la interacci&oacute;n con los
+									dem&aacute;s. El maestro crea un ambiente de aprendizaje colaborativo, en el que los
+									estudiantes pueden aprender unos de otros.</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p><strong>Escuela activa</strong></p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p>El alumno es el centro del aprendizaje y es activo en su proceso de aprendizaje.</p>
+								<p>El maestro facilita el aprendizaje proporcionando a los estudiantes experiencias y
+									oportunidades para que exploren y descubran por s&iacute; mismos.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<!---------Titulo--------->
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'>
+					2.2. Metodologías en el proceso enseñanza aprendizaje
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>En el
+						proceso enseñanza-aprendizaje, las metodologías desempeñan un papel fundamental
+						al determinar cómo se organiza y desarrolla la enseñanza para facilitar el
+						aprendizaje de los estudiantes. Estas metodologías son enfoques pedagógicos que
+						guían la planificación de las actividades, interacciones y recursos utilizados
+						en el aula. Su objetivo es promover un aprendizaje efectivo, activo y
+						significativo, adaptado a las necesidades individuales de los estudiantes. Al
+						emplear diferentes metodologías, como el aprendizaje basado en proyectos, el
+						aprendizaje cooperativo, el aprendizaje por indagación y otros enfoques, se
+						busca fomentar el pensamiento crítico, la creatividad y la resolución de
+						problemas. Además, se busca promover la participación activa de los estudiantes,
+						estimulando su interés, motivación y compromiso con el proceso de aprendizaje.
+						A través de la implementación de diversas metodologías en el proceso
+						enseñanza-aprendizaje, se busca crear un ambiente de aprendizaje dinámico y
+						enriquecedor, que proporcione a los estudiantes las habilidades y conocimientos
+						necesarios para enfrentar los desafíos del mundo actual.</span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Para conocer más acerca de este tema, revise el siguiente video.
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<p style='color: red; font-weight: bold;'>Material pendiente</p>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<!---------Subitulo--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 class='subtitulo'>
+					2.2.1 Aprendizaje activo
+
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>El
+						aprendizaje activo es un enfoque pedagógico en el que los estudiantes
+						participan de manera activa en su propio proceso de aprendizaje, involucrándose
+						en actividades prácticas, reflexiones y discusiones. A través de la
+						participación activa, los estudiantes construyen su conocimiento, desarrollan
+						habilidades de pensamiento crítico y resolución de problemas, y aplican lo
+						aprendido a situaciones reales. Este enfoque contrasta con el modelo
+						tradicional de aprendizaje pasivo, </span><span>en donde </span><span>los estudiantes son
+						receptores pasivos de
+						información.</span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					A continuación, revise el siguiente video.
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<iframe width='560' height='315' src='https://www.youtube.com/embed/mTCNeRTVZG8'
+						title='YouTube video player' frameborder='0'
+						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+						allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>Las
+						metodologías activas son enfoques educativos que promueven la participación
+						activa de los estudiantes en su propio aprendizaje, estas metodologías se
+						centran en el estudiante como protagonista, fomentando la exploración, el
+						pensamiento crítico y la resolución de problemas, la siguiente lectura </span><span>le
+						servirá </span><span>para
+						comprender el papel de las metodologías en el proceso de enseñanza
+						aprendizaje:&nbsp;</span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Boton--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<div style='text-align: center;'>
+					<a class='recursoExterno'
+						href='https://ojs.docentes20.com/index.php/revista-docentes20/article/view/27' target='_blank'>
+						<img src='imagenes/descarga2.png' class='img-fluid' style='width: 10%;'>
+					</a>
+				</div>
+				<br>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Ahora, revisaremos algunos conceptos importantes sobre metodologías activas. Para ello, observe el
+					siguiente video sobre las metodologías activas. &nbsp;
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<p style='color: red; font-weight: bold;'>Material pendiente</p>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					A continuación, revise la siguiente tabla, en la que podrá encontrar una breve descripción de
+					algunas metodologías activas.
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<p style='color: red; font-weight: bold;'>Material pendiente</p>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>Es
+						importante destacar que existe en un Proyecto Educativo Innovador se pueden
+						emplear&nbsp; metodologías activas y modelos de innovación educativa,
+						existiendo de acuerdo al proyecto una diversidad de formas de integrar las
+						metodologías activas en cada modelo específico.</span><span>​ Revise el siguiente esquema que
+						le permitirá conocer más sobre el tema. </span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<p style='color: red; font-weight: bold;'>Material pendiente</p>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<p style='color: red; font-weight: bold;'>Material pendiente</p>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>En
+						este sentido, un </span><span style="font-weight:bold">Proyecto Educativo Innovador</span><span>
+						puede utilizar una </span><span style="font-weight:bold">metodología activa</span><span>,
+						como el Aprendizaje Basado en Problemas (ABP), </span><span>en el
+						que los </span><span>estudiantes
+						se involucran en la resolución de problemas prácticos y reales. Por ejemplo,
+						los estudiantes podrían trabajar en un proyecto de diseño de jardines
+						sostenibles en la escuela, donde investigan, planifican y crean un diseño
+					</span><span>ecoamigable,
+					</span><span>utilizando
+						principios de agricultura urbana. Además, el proyecto podría integrar el</span><span
+						style="font-weight:bold">
+						modelo de innovación</span><span> como el </span><span style="
+	font-style:italic">Design
+						Thinking</span><span>, </span><span>en
+						donde </span><span>los
+						estudiantes identifican las necesidades y desafíos de su comunidad escolar y
+						desarrollan soluciones creativas. Por ejemplo, podrían diseñar una aplicación
+						móvil para promover la comunicación y el intercambio de ideas entre los
+						estudiantes, profesores y padres de familia, fortaleciendo así la colaboración
+						y participación activa en la comunidad educativa.</span></p>
+
+
+
+				<p><span>Conociendo</span><span>las </span><span>metodologías
+						activas y </span><span>cómo
+						éstas </span><span>se </span><span>relacionan</span><span>&nbsp;con
+						los modelos de innovación educativa en los Proyectos educativos innovadores,
+						profundicemos un poco más en los modelos.&nbsp;</span></p>
+
+
+
+				<p><span>En </span><span>la
+						siguiente tabla se presenta una recopilación de modelos y enfoques destacados
+						para la integración efectiva de la tecnología en la educación. Los modelos
+						incluyen el </span><span style="font-style:italic">Design</span><span
+						style="font-style:italic">Thinking</span><span>, </span><span style="font-style:italic">Lean
+						Startup</span><span>, </span><span style="font-style:italic">Agile</span><span>,
+						SAMR, TPACK, FRAME y TIM, cada uno ofreciendo perspectivas y estrategias únicas
+						para el diseño y la implementación de experiencias de aprendizaje
+						enriquecedoras. Estos modelos pueden brindar pautas claras y concretas para
+						aprovechar al máximo las herramientas tecnológicas, promoviendo la innovación y
+						el desarrollo de prácticas educativas efectivas.</span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Observe el siguiente video sobre algunos modelos de innovación educativa.
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<p style='color: red; font-weight: bold;'>Material pendiente</p>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<hr>
+		<br>
+		<br>
+		<!---------Titulo--------->
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+					2.3. Tendencias en innovación educativa&nbsp;
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>Las
+						tendencias en innovación educativa se enfocan en el estudiante, utilizan la
+						tecnología como herramienta de aprendizaje, fomentan habilidades del siglo XXI,
+						promueven la inclusión y diversidad, y aplican metodologías activas. Estas
+						tendencias buscan crear entornos educativos dinámicos, personalizados y
+						relevantes para los estudiantes.</span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					A continuación, revise el siguiente recurso que presenta algunos ejemplos de tendencias en
+					innovación educativa.&nbsp;Para ello, haga clic en el signo de + para leer la descripción de cada
+					tendencia.
+
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<p style='color: red; font-weight: bold;'>Material pendiente</p>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Para reafirmar la importancia de las tendencias en innovación educativa, le compartimos el siguiente
+					video:
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<iframe width='560' height='315' src='https://www.youtube.com/embed/TZS1pHc9JQw'
+						title='YouTube video player' frameborder='0'
+						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+						allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<hr>
+		<br>
+		<br>
+		<!---------Titulo--------->
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'>
+					4. Uso de entornos digitales&nbsp;
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>En la
+					</span><span>actualidad</span><span>, el </span><span>contexto</span><span> de
+						la </span><span>vida</span><span>cotidiana</span><span> se
+						ha </span><span>desarrollado</span><span> y </span><span>reorganizado</span><span> a
+					</span><span>partir</span><span style="font-weight:bold">de
+						la </span><span style="font-weight:bold">evolución</span><span
+						style="font-weight:bold">tecnológica</span><span style="font-weight:bold">
+						al </span><span style="font-weight:bold">ámbito</span><span style="font-weight:bold">
+						digital, </span><span>pero</span><span>también</span><span> en
+						la forma en que </span><span>nos</span><span>comunicamos</span><span> y
+					</span><span>cómo</span><span>aprendemos</span><span>. </span><span>Por</span><span> lo
+					</span><span>tanto</span><span>, las
+					</span><span>necesidades</span><span> de
+					</span><span>aprendizaje</span><span>ahora</span><span>tienden</span><span> a
+					</span><span>su</span><span>alrededor</span><span>(</span><span>Siemens,
+						2004</span><span>).</span></p>
+
+
+
+				<p><span>La
+						influencia de la tecnología en nuestra forma de vida actual, comunicación y
+						aprendizaje en la era digital, ha impulsado una revisión profunda y </span><span>el
+						análisis </span><span>crítico
+						de las restricciones presentes en las teorías conductistas, cognitivistas y
+						constructivistas. Esto busca comprender cómo los procesos evolucionan en
+						diversos entornos que a menudo escapan al control individual.</span></p>
+
+
+
+				<p><span>Ahora,
+						revise la </span><span>siguiente
+						tabla que presenta la e</span><span>volución</span><span>
+						de la educación, sus características y los diferentes roles. </span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+
+				<table class="tabel" style="border: 1px solid black; border-collapse: collapse;">
+					<tbody>
+						<tr>
+							<td colspan="5" style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;"><strong>Evoluci&oacute;n de la
+									</strong><strong>educaci&oacute;n</strong></p>
+							</td>
+						</tr>
+						<tr>
+							<td rowspan="2" style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Principales caracter&iacute;sticas</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;"><strong>Educaci&oacute;n 1.0</strong></p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;"><strong>Educaci&oacute;n 2.0</strong></p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;"><strong>Educaci&oacute;n 3.0</strong></p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;"><strong>Educaci&oacute;n 4.0</strong></p>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Aprendizaje tradicional centrado en el profesor.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Enfoque en la comunicaci&oacute;n y colaboraci&oacute;n.
+									Uso incipiente de tecnolog&iacute;a.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Personalizaci&oacute;n del aprendizaje, acceso a
+									informaci&oacute;n en l&iacute;nea.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Integraci&oacute;n de tecnolog&iacute;as avanzadas,
+									enfoque en habilidades del siglo XXI, aprendizaje adaptativo y basado en datos.</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Rol del profesor</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Transmisor de conocimiento.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Facilitador, gu&iacute;a y mediador.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Mentor y gu&iacute;a.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Dise&ntilde;ador de experiencias de aprendizaje, analista
+									de datos.</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Rol del estudiante</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Receptor pasivo de informaci&oacute;n.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Participante activo, colaborador.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Aut&oacute;nomo, autoaprendizaje.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Protagonista del propio aprendizaje, habilidades de
+									pensamiento cr&iacute;tico y resoluci&oacute;n de problemas.</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Tecnolog&iacute;a educativa</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Pizarra y material impreso.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Plataformas en l&iacute;nea, blogs, wikis.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Aprendizaje en l&iacute;nea, MOOCs, redes sociales.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Realidad virtual, inteligencia artificial,
+									an&aacute;lisis de datos, aprendizaje adaptativo.</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Metodolog&iacute;as</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Tradicionales, conferencias.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Aprendizaje colaborativo, proyectos.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Aprendizaje basado en problemas, dise&ntilde;o
+									instruccional.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Aprendizaje experiencial, gamificaci&oacute;n, proyectos
+									aut&eacute;nticos.</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Enfoque curricular</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Contenido predefinido.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Adaptaci&oacute;n a intereses y estilos de aprendizaje.
+								</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Personalizaci&oacute;n del contenido.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Aprendizaje centrado en competencias, habilidades y
+									valores.</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Evaluaci&oacute;n</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Ex&aacute;menes estandarizados.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Evaluaci&oacute;n formativa, r&uacute;bricas.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Evaluaci&oacute;n aut&eacute;ntica, portafolios.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Evaluaci&oacute;n continua, an&aacute;lisis de datos,
+									retroalimentaci&oacute;n personalizada.</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Herramientas de comunicaci&oacute;n</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Cara a cara, correo.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Correo electr&oacute;nico, foros.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Chat en l&iacute;nea, videoconferencias.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Plataformas integradas, mensajer&iacute;a
+									instant&aacute;nea, redes sociales educativas.</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Objetivo</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Transmisi&oacute;n de conocimientos.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Conexi&oacute;n, colaboraci&oacute;n, acceso a
+									informaci&oacute;n.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Aprendizaje personalizado.</p>
+							</td>
+							<td style="border: 1px solid black; border-collapse: collapse;">
+								<p style="text-align: center;">Preparaci&oacute;n para la sociedad digital, desarrollo
+									integral.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+				<p><span>La gran </span><span>variedad</span><span> de
+					</span><span>tecnologías</span><span>proporcionan</span><span> la
+					</span><span>flexibilidad</span><span>necesaria</span><span> para
+					</span><span>cubrir</span><span>necesidades</span><span>individuales</span><span> y
+					</span><span>sociales</span><span>, </span><span>lograr</span><span
+						style="font-weight:bold;font-style:italic">entornos</span><span>de
+					</span><span>aprendizaje</span><span>efectivos</span><span> y la
+					</span><span>interacción</span><span> de </span><span>estudiantes</span><span> con
+					</span><span>sus</span><span>respectivos</span><span>profesores</span><span>,
+					</span><span>como</span><span>es</span><span> el </span><span>caso</span><span> del </span><span
+						style="font-weight:bold;font-style:italic">e-learning, b-learning y
+						m-learning, </span><span>entornos</span><span> en lo que se
+					</span><span>pueden</span><span>desarrollar</span><span> personal y
+					</span><span>autónomamente</span><span>acciones</span><span> de
+					</span><span>aprendizaje</span><span>utilizando</span><span> las TIC,
+					</span><span>siendo</span><span>instrumentos</span><span> en el </span><span>desarrollo</span><span>
+						de </span><span>cualquier</span><span>profesión</span><span> y que
+					</span><span>permiten</span><span> un </span><span>proceso</span><span> de
+					</span><span>innovación</span><span> en la </span><span>docencia</span><span>
+						(</span><span>Acuña</span><span>, 2022).</span></p>
+
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<!---------Titulo--------->
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+					2.5. Entornos de aprendizaje&nbsp;&nbsp;<em>e-learning</em>, <em>b-learning</em> y
+					<em>m-learning</em>
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>En
+						el&nbsp;</span><span>mundo</span><span> en
+						el </span><span>que</span><span>vivimos</span><span>,</span><span>toda</span><span> la
+					</span><span>información</span><span>que</span><span>manejamos</span><span>es</span><span>
+						digital o </span><span>puede</span><span>digitalizarse</span><span>,
+					</span><span>para</span><span>poder</span><span>manejar</span><span>cantidades</span><span>increíbles</span><span>
+						de </span><span>datos</span><span> en
+					</span><span>dispositivos</span><span>muy</span><span>pequeños</span><span>, en
+					</span><span>cualquier</span><span>tiempo</span><span> y
+					</span><span>lugar</span><span>.&nbsp;</span></p>
+
+
+
+				<p><span>En el
+					</span><span>ámbito</span><span> de
+						la </span><span>educación</span><span>podemos</span><span> hoy
+					</span><span>digitalizar</span><span>materiales</span><span>educativos</span><span>,
+					</span><span>aulas</span><span>, </span><span>trabajos</span><span> de
+					</span><span>estudiantes</span><span>, </span><span>comunicaciones</span><span>
+						entre </span><span>estudiantes</span><span> y
+						maestros, </span><span>es</span><span>decir</span><span>, </span><span>que</span><span>
+						lo </span><span>básico</span><span> de los&nbsp;</span><span>procesos</span><span> de
+					</span><span>enseñanza</span><span> y
+					</span><span>aprendizaje</span><span>están</span><span>&nbsp;en
+					</span><span>condiciones</span><span> de </span><span>ser</span><span>digitales</span><span>.
+					</span><span>Estos</span><span>materiales</span><span>pueden</span><span>ser</span><span>almacenados</span><span>&nbsp;en
+					</span><span>cualquier</span><span>dispositivo</span><span>, en
+					</span><span>todo</span><span>tiempo</span><span> y </span><span>lugar</span><span>.
+					</span><span>Esto</span><span>significa</span><span>que</span><span>puede</span><span>haber</span><span>una</span><span>independencia</span><span>
+						del aula material </span><span>creando</span><span>una</span><span>transformación</span><span>
+						en&nbsp;</span><span>entornos</span><span>diferentes</span><span> y
+					</span><span>que</span><span>pueden</span><span>ser</span><span> los
+					</span><span>siguientes</span><span>:</span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<p style='color: red; font-weight: bold;'>Material pendiente</p>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<hr>
+		<br>
+		<br>
+		<!---------Titulo--------->
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'>
+					2.6. Uso de nuevas tecnologías
+
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Observe el siguiente video sobre nuevas tecnologías en innovación educativa.
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<iframe width='560' height='315' src='https://www.youtube.com/embed/7qbvA44EV1I?t=34&nbsp;'
+						title='YouTube video player' frameborder='0'
+						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+						allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Con la intención de profundizar en el tema, revise el siguiente cuadro que muestra algunos ejemplos
+					de tendencias en innovación educativa.&nbsp;&nbsp;
+
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>Para cerrar esta segunda fase,
+						revise la siguiente tabla que muestra ejemplos de experiencias docentes en
+						innovación educativa.</span></p>
+				<br>
+
+				<table class="table" style="border: 1px solid black; border-collapse: collapse;;">
+					<tbody>
+					<tr>
+					<td style="border: 1px solid black; border-collapse: collapse; ">
+					<p style="text-align: center;"><strong>Ejemplos</strong></p>
+					</td>
+					<td style="border: 1px solid black; border-collapse: collapse; ">
+					<p style="text-align: center;"><strong>Enlaces</strong></p>
+					</td>
+					</tr>
+					<tr>
+					<td style="border: 1px solid black; border-collapse: collapse; ">
+					<p><a href="http://www.innovacesal.org/micrositio_redic_2015/">Metodolog&iacute;as activas que tienen como componente esencial la vinculaci&oacute;n con el entorno para la formaci&oacute;n de los estudiantes e incluyen temas transversales de formaci&oacute;n para los estudiantes de educaci&oacute;n superior.</a></p>
+					</td>
+					<td style="border: 1px solid black; border-collapse: collapse; ">
+					<p>&bull;<a href="http://www.innovacesal.org/micrositio_redic_2015/02_guia_cbasic_ing_cbioagro.pdf">Sistematizaci&oacute;n de estrategias de vinculaci&oacute;n en la formaci&oacute;n en Ciencias B&aacute;sicas, Biol&oacute;gico- Agropecuarias e </a><a href="http://www.innovacesal.org/micrositio_redic_2015/02_guia_cbasic_ing_cbioagro.pdf">Ingenier&iacute;a</a>.</p>
+					<p>&bull;<a href="http://www.innovacesal.org/micrositio_redic_2015/03_guia_grupal_vincul_eco_adm.pdf">Estrategias docentes para fortalecer la Vinculaci&oacute;n profesional con el entorno social en el &aacute;rea Econ&oacute;mico-</a><a href="http://www.innovacesal.org/micrositio_redic_2015/03_guia_grupal_vincul_eco_adm.pdf">Administrativa</a>.</p>
+					<p>&bull;<a href="http://www.innovacesal.org/micrositio_redic_2015/04_guia_2015_salud.pdf">La vinculaci&oacute;n entre la universidad y la sociedad aplicada en la formaci&oacute;n superior en el &aacute;rea de Ciencias de la </a><a href="http://www.innovacesal.org/micrositio_redic_2015/04_guia_2015_salud.pdf">Salud</a>.</p>
+					<p>&bull;<a href="http://www.innovacesal.org/micrositio_redic_2015/05_redIC_HCS_ADA_guia_ed.pdf">La vinculaci&oacute;n como estrategia de formaci&oacute;n en la educaci&oacute;n superior en las &aacute;reas de Humanidades y Ciencias Sociales y de Artes, Arquitectura y </a><a href="http://www.innovacesal.org/micrositio_redic_2015/05_redIC_HCS_ADA_guia_ed.pdf">Dise&ntilde;o</a>.</p>
+					</td>
+					</tr>
+					<tr>
+					<td style="border: 1px solid black; border-collapse: collapse; ">
+					<p><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/ic_pub_02.htm">Metodolog&iacute;as activas que tienen como componente esencial el desarrollo de competencias de investigaci&oacute;n e incluyen temas transversales de formaci&oacute;n para los estudiantes de educaci&oacute;n superior.</a></p>
+					</td>
+					<td style="border: 1px solid black; border-collapse: collapse; ">
+					<p>&bull;<a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc04.pdf">Estrategias innovadoras para desarrollar la competencia investigadora en los procesos de ense&ntilde;anza-aprendizaje de las </a><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc04.pdf">artes</a>.</p>
+					<p>&bull;<a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc05.pdf">Ciencias </a><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc05.pdf">b&aacute;sicas.</a> <a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc05.pdf">Estrategias </a><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc05.pdf">para el desarrollo de un v&iacute;nculo entre docencia e investigaci&oacute;n a nivel de </a><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc05.pdf">pregrado</a>.</p>
+					<p>&bull;<a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc06.pdf">Ciencias de la </a><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc06.pdf">salud. </a><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc06.pdf">Estrategias para el desarrollo del v&iacute;nculo docencia </a><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc07.pdf">&ndash;</a><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc06.pdf"> investigaci&oacute;n</a></p>
+					<p>&bull;<a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc07.pdf">Econ&oacute;mico-administrativas </a><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc07.pdf">Estrategias para el desarrollo de la investigaci&oacute;n en la </a><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc07.pdf">docencia</a>.</p>
+					<p>&bull;<a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc08.pdf">Humanidades y ciencias </a><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc08.pdf">sociales. </a><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc08.pdf">Estrategias para la articulaci&oacute;n de la investigaci&oacute;n con la docencia en el aula y su vinculaci&oacute;n con la sociedad y estrategias de formaci&oacute;n para la investigaci&oacute;n y la </a><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc08.pdf">innovaci&oacute;n</a>.</p>
+					<p>&bull;<a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc09.pdf">Ingenier&iacute;as y </a><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc09.pdf">tecnolog&iacute;as. </a><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc09.pdf">Estrategias para el aprendizaje de competencias por </a><a href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc09.pdf">investigaci&oacute;n</a>.</p>
+					</td>
+					</tr>
+					<tr>
+					<td style="border: 1px solid black; border-collapse: collapse; ">
+					<p><a href="http://www.innovacesal.org/redic_gamificacion/">Metodolog&iacute;as activas que tienen como componente esencial de dise&ntilde;o la Gamificaci&oacute;n.</a></p>
+					</td>
+					<td style="border: 1px solid black; border-collapse: collapse; ">
+					<p>&bull;<a href="http://www.innovacesal.org/redic_gamificacion/construccion_videojuegos.html">Construcci&oacute;n de juegos.</a></p>
+					<p>&bull;<a href="http://www.innovacesal.org/redic_gamificacion/juegos_aplicaciones_web.html">Juegos en aplicaciones en la WEB.</a></p>
+					<p>&bull;<a href=" &bull;Juegos en app m&oacute;vil + app de la web y/o app m&oacute;vil + red social.  http://www.innovacesal.org/redic_gamificacion/juegos_app_web_social.html">Juegos en aplicaci&oacute;n m&oacute;vil.</a></p>
+					<p>&bull;<a href="http://www.innovacesal.org/redic_gamificacion/juegos_aplicacion_movil.html">Juegos en app m&oacute;vil + app de la web y/o app m&oacute;vil + red social.</a></p>
+					</td>
+					</tr>
+					</tbody>
+					</table>
+
+			</div>
+			<div class='col-2'></div>
+		</div>
+
+
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center">
+				<a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+						<button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+							type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+						<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+							type="button" role="tab" aria-controls="nav-profile"
+							aria-selected="false">Complementarias</button>
+					</div>
+				</nav>
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+						tabindex="0">
+						<p><span>Acosta, E. &amp; Barradas, M. A. (</span><span>coords</span><span>.)
+								(s. f.). </span><span style="font-style:italic">Estrategias
+								docentes para fortalecer la Vinculación profesional con el entorno social en el
+								Área Económico Administrativa. </span><span>Innovacesal.org</span><span>.
+							</span><span><a
+									href="http://www.innovacesal.org/micrositio_redic_2015/03_guia_grupal_vincul_eco_adm.pdf">http://www.innovacesal.org/micrositio_redic_2015/</a></span><span><a
+									href="http://www.innovacesal.org/micrositio_redic_2015/03_guia_grupal_vincul_eco_adm.pdf">03_guia_grupal_vincul_eco_adm.pdf</a></span>
+						</p>
+
+						<p><span>Ahumada</span><span>, M.
+								I., Arias, V., Cano, N. P., López, C. M., Fioretti, M. V. &amp; Gallo, A. M.
+								(s. f.). El m-learniung como oportunidad para incorporar la ludificación en el
+								aula en cursos masivos de estadística. </span><span
+								style="font-style:italic">Sistematización
+								de experiencias</span><span style="font-style:italic">… </span><span style="
+font-style:italic">Juegos
+								en aplicación móvil</span><span>. Innovacesal.org. </span><span><a
+									href="http://www.innovacesal.org/redic_gamificacion/juegos_aplicacion_movil.html">http://www.innovacesal.org/redic_gamificacion/</a></span><span><a
+									href="http://www.innovacesal.org/redic_gamificacion/juegos_aplicacion_movil.html">juegos_aplicacion_movil.html</a></span>
+						</p>
+
+						<p><span>Aparicio </span><span>de
+								Esquivel, E. La gamificación: una estrategia para potenciar el aprendizaje
+								significativo de la Historia de la Medicina. </span><span style="
+font-style:italic">Sistematización
+								de experiencias</span><span style="font-style:italic">… </span><span style="
+font-style:italic">Juegos
+								en app móvil + app de la web y/o app móvil + red social</span><span>.
+								Innovacesal.org. </span><span><a
+									href="http://www.innovacesal.org/redic_gamificacion/juegos_app_web_social.html">http://www.innovacesal.org/redic_gamificacion/</a></span><span><a
+									href="http://www.innovacesal.org/redic_gamificacion/juegos_app_web_social.html">juegos_app_web_social.html</a></span>
+						</p>
+
+						<p><span>Aprende</span><span>con
+								Gibson (2023, </span><span>febrero</span><span> 26).
+							</span><span style="font-style:italic">Método</span><span style="font-style:italic">
+								de </span><span style="font-style:italic">aprendizaje</span><span
+								style="font-style:italic">activo</span><span style="font-style:italic">.
+							</span><span>[Video].
+							</span><span>Youtube</span><span>. </span><span><a
+									href="https://youtu.be/mTCNeRTVZG8">https://youtu.be/mTCNeRTVZG8</a></span></p>
+
+						<p><span>Barbosa, J. C. (coord.), Arroyo, I.
+								C., </span><span>Carignano,C</span><span>. E.,
+								Farfán, D. Y., Marín, M. A., Estrada, M. E., Rodríguez, C. A. &amp;
+							</span><span>Villaveces</span><span>, M.
+								J. (2011). Económico-administrativas. Estrategias para el desarrollo de la
+								investigación en la docencia. </span><span style="font-style:italic">. Sistematización
+								de experiencias y
+								buenas prácticas de docentes universitarios</span><span>. Pp. 75-116.
+							</span><span>InnovaCESAL</span><span>/ALFA/</span><span>Universidad</span><span>Veracruzana</span><span>.
+							</span><span><a
+									href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_ic_2011_completo.pdf">http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_ic_2011_completo.pdf</a></span>
+						</p>
+
+						<p><span>Berrino</span><span>, L.
+								A. &amp; Carpené, C. M. (s. f.). Gamificación: la carrera de lideerazgo. Una
+								edxperiencia en aula universitaria. </span><span
+								style="font-style:italic">Sistematización
+								de experiencias</span><span style="font-style:italic">… </span><span style="
+font-style:italic">Juegos
+								en aplicaciones de la WEB</span><span>. InnovaCesal.org.</span><span><a
+									href="http://www.innovacesal.org/redic_gamificacion/juegos_aplicaciones_web.html">http://www.innovacesal.org/redic_gamificacion/juegos_aplicaciones_web.html</a></span>
+						</p>
+
+						<p><span>Bluecinante</span><span>
+								(2023, </span><span>febrero</span><span> 21).
+							</span><span style="font-style:italic">¿</span><span
+								style="font-style:italic">Cuál</span><span style="font-style:italic">es</span><span
+								style="font-style:italic">
+								la </span><span style="font-style:italic">diferencia</span><span
+								style="font-style:italic">
+								entre </span><span style="font-style:italic">aprendizaje</span><span
+								style="font-style:italic">,
+							</span><span style="font-style:italic">enseñanza</span><span style="font-style:italic">
+								y </span><span style="font-style:italic">educación</span><span
+								style="font-style:italic">?
+							</span><span>[Video].
+							</span><span>Youtube</span><span>. </span><span><a
+									href="https://www.youtube.com/watch?v=RPySUcRCvZU">https</a></span><span><a
+									href="https://www.youtube.com/watch?v=RPySUcRCvZU">://www.youtube.com/watch?v=</a></span><span><a
+									href="https://www.youtube.com/watch?v=RPySUcRCvZU">RPySUcRCvZU</a></span></p>
+
+						<p><span>Casas, J. C. (s. f.). Fiesta de la
+								cosecha de la salud: gamificación en el aula. Sistematización de experiencias.
+								Construcción de videojuegos. InnovaCesal.org. </span><span><a
+									href="http://www.innovacesal.org/redic_gamificacion/construccion_videojuegos.html">http://www.innovacesal.org/redic_gamificacion/</a></span><span><a
+									href="http://www.innovacesal.org/redic_gamificacion/construccion_videojuegos.html">construccion_videojuegos.html</a></span>
+						</p>
+
+						<p><span>Centro del Profesorado de Granada
+								(2017, febrero 3). </span><span style="font-style:italic">Recapitulación en torno a las
+								Metodologías Activas.</span><span>[Video]. </span><span>Youtube</span><span>.
+							</span><span><a href="https://youtu.be/sXv-492TxBA">https://youtu.be/</a></span><span><a
+									href="https://youtu.be/sXv-492TxBA">sXv-492TxBA</a></span></p>
+
+						<p><span>Echeverría, M. I. &amp; González,
+								S. L. (</span><span>coords</span><span>.), </span><span>Aayala</span><span>, J.
+								O., Balderrama, J. A., Calzada, L. D., Castillo, A., </span><span>Lecompte</span><span>,
+								N.,
+								Murillo, G., Ojeda, C. R., Priego, H. R., Salcedo, A. &amp; Vaca, S. L. (2011).
+								Ciencias de la salud</span><span style="font-style:italic">. Estrategias para el
+								desarrollo
+								del vínculo docencia-investigación. Sistematización de experiencias y buenas
+								prácticas de docentes universitarios.</span><span style="font-style:
+italic">Estrategias
+								para la incorporación de la investigación en los procesos de aprendizaje.
+								Sistematización de experiencias y buenas prácticas de docentes
+								universitarios</span><span>. Pp.
+								75-116. </span><span>InnovaCESAL/ALFA/Universidad
+								Veracruzana. </span><span><a
+									href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_ic_2011_completo.pdf">http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_ic_2011_completo.pdf</a></span>
+						</p>
+
+						<p><span>Freeman, S., Eddy, S. L., </span><span>McDonough</span><span>, M.,
+								Smith, M. K., </span><span>Okoroafor</span><span>, N.,
+							</span><span>Jordt</span><span>, H.
+								&amp; </span><span>Wenderoth</span><span>, M.
+								P. (2014). Active
+							</span><span>learning</span><span>increases</span><span>student</span><span>
+								performance in </span><span>science</span><span>, </span><span>engineering</span><span>,
+								and
+							</span><span>mathematics</span><span>. </span><span
+								style="font-style:italic">Proceedings</span><span
+								style="font-style:italic">of</span><span style="font-style:italic">the</span><span
+								style="font-style:italic">National</span><span
+								style="font-style:italic">Academy</span><span style="font-style:italic">of</span><span
+								style="font-style:italic">Sciences</span><span>,
+								111(23), 8410-8415. </span><span><a
+									href="https://www.pnas.org/doi/10.1073/pnas.1319030111">https://www.pnas.org/doi/10.1073/pnas.1319030111</a></span>
+						</p>
+
+						<p><span>Ic</span><span>/</span><span>innovaCESAL</span><span> (s.
+								f.). Estrategias para la incorporación de la investigación en los procesos de
+								aprendizaje. </span><span>Innovacesal.org</span><span><a
+									href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/ic_pub_02.htm">http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/ic_pub_02.htm</a></span>
+						</p>
+
+						<p><span>KM </span><span>Educación</span><span>
+								(2918, </span><span>octubre</span><span> 27).
+							</span><span style="font-style:italic">Modelos</span><span style="font-style:italic">
+								de </span><span style="font-style:italic">Innovación</span><span
+								style="font-style:italic">Educativa</span><span style="font-style:italic">.
+							</span><span>[Video].
+							</span><span>Youtube</span><span>. </span><span><a
+									href="https://youtu.be/LpffEspYQGw?t=28">https://youtu.be/LpffEspYQGw?t=28</a></span>
+						</p>
+
+						<p><span>Maass</span><span>, M. &amp; </span><span>Sabulsky</span><span>, G.
+								(</span><span>coords</span><span>.). </span><span style="font-style:italic">La
+								vinculación como estrategia de formación en la educación superior. Áreas de
+								Humanidades y Ciencias Sociales y de Artes, Arquitectura y Diseño.
+							</span><span>Innovacesal.org.</span><span><a
+									href="http://www.innovacesal.org/micrositio_redic_2015/05_redIC_HCS_ADA_guia_ed.pdf">http://www.innovacesal.org/micrositio_redic_2015/05_redIC_HCS_ADA_guia_ed.pdf</a></span>
+						</p>
+
+						<p><span>Max &amp; Ruth Training </span><span>Español</span><span>
+								(2023, </span><span>enero</span><span> 4). </span><span
+								style="font-style:italic">Tendencias</span><span
+								style="font-style:italic">Educativas</span><span style="font-style:italic">
+								2023.</span><span>[Video].
+							</span><span>Youtube</span><span>. </span><span><a
+									href="https://youtu.be/TZS1pHc9JQw">https://youtu.be/TZS1pHc9JQw</a></span></p>
+
+						<p><span>Max &amp; Ruth Training </span><span>Español</span><span>
+								(2023, mayo 24). </span><span style="font-style:italic">5 </span><span style="
+font-style:italic">maneras</span><span style="font-style:italic">innovadoras</span><span style="font-style:italic">
+								de </span><span style="font-style:italic">integrar</span><span
+								style="font-style:italic">
+								la </span><span style="font-style:italic">tecnología</span><span
+								style="font-style:italic">en</span><span style="font-style:italic">cursos</span><span
+								style="font-style:italic">.
+							</span><span>[Video].
+							</span><span>Youtube</span><span>. </span><span><a
+									href="https://youtu.be/7qbvA44EV1I?t=34">https://youtu.be/7qbvA44EV1I?t=34</a></span>
+						</p>
+
+						<p><span>Quintá</span><span>, M.
+								C. &amp; Rosales, J. H. (</span><span>coords</span><span>.),
+								Barradas, M. A., Calderón, J. J., Enríquez, F., Martínez, A. A., Ramos, F.,
+							</span><span>Sabulsky</span><span>, G.
+								&amp; Trigos, L. M. (2011). Humanidades y Ciencias Sociales. Estrategias para
+								la articulación de la investigación con la docencia en el aula y su vinculación
+								con la sociedad y estrategias de formación para la investigación y la
+								innovación. </span><span style="font-style:italic">Sistematización
+								de experiencias y buenas prácticas de docentes universitarios</span><span>. Pp.
+								151-225. </span><span>InnovaCESAL/ALFA/Universidad
+								Veracruzana. </span><span><a
+									href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_ic_2011_completo.pdf">http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_ic_2011_completo.pdf</a></span>
+						</p>
+
+						<p><span>Redic</span><span>innovaCESAL</span><span> (s.
+								f.). </span><span style="font-style:italic">La
+								vinculación como estrategia de formación en educación superior. Sistematización
+								de experiencias y buenas prácticas de docentes
+								universitarios.</span><span>Innovacesal.org.</span><span><a
+									href="http://www.innovacesal.org/micrositio_redic_2015/">http</a></span><span><a
+									href="http://www.innovacesal.org/micrositio_redic_2015/">://www.innovacesal.org/micrositio_redic_2015/</a></span>
+						</p>
+
+						<p><span>Salcedo, A. (coord.). </span><span style="font-style:italic">La
+								vinculación entre la Universidad y la sociedad aplicada en la formación
+								superior en el área de Ciencias de la Salud.
+							</span><span>Innovacesal.org.</span><span><a
+									href="http://www.innovacesal.org/micrositio_redic_2015/04_guia_2015_salud.pdf">http://www.innovacesal.org/micrositio_redic_2015/04_guia_2015_salud.pdf</a></span>
+						</p>
+
+						<p><span>Suniaga</span><span>, A.
+								(2019). </span><span>Metodologías</span><span>
+								Activas: </span><span>Herramientas</span><span> para
+							</span><span>el</span><span>empoderamiento</span><span>docente</span><span>.&nbsp;</span><span
+								style="font-style:italic">Revista</span><span
+								style="font-style:italic">Tecnológica-Educativa</span><span
+								style="font-style:italic">Docentes</span><span style="font-style:italic">
+								2.0</span><span>,&nbsp;7(1),
+								65-80.</span></p>
+
+						<p><span><a
+									href="https://ojs.docentes20.com/index.php/revista-docentes20/article/view/27">https://ojs.docentes20.com/index.php/revista-docentes20/article/view/27</a></span>
+						</p>
+
+						<p><span>Trejos-Zelaya, J. (coord.),
+								Arguedas, J., Castillo, M., Chaves, E., Cueva, S., Gangoso, Z., Guevara, R. A.,
+								Quesada, F. J., </span><span>Regnaut</span><span>, C.,
+								Torres, J. C., Tovar, M., Villamizar, J. &amp; Díaz-</span><span>Sobac</span><span>, R.
+								(2011). Ciencias básicas. Estrategias para el desarrollo de un vínculo entre
+								docencia e investigación a nivel pregrado. </span><span
+								style="font-style:italic">Estrategias
+								para la incorporación de la investigación en los procesos de aprendizaje.
+								Sistematización de experiencias y buenas prácticas de docentes
+								universitarios</span><span>. Pp.
+								61-71. </span><span>InnovaCESAL/ALFA/Universidad
+								Veracruzana. </span><span><a
+									href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_ic_2011_completo.pdf">http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_ic_2011_completo.pdf</a></span>
+						</p>
+
+						<p><span>Velasco, M. I. (coord.), Cordero,
+								C. M., Mazón, I., Ordóñez, G., </span><span>Raichman</span><span> de
+							</span><span>Mirasso</span><span>, S.
+								R., Rocha, J. A., Rodríguez, N. &amp; </span><span>Totter</span><span>, E.
+								(2011). Ingenierías y Tecnología. Estrategias para el aprendizaje de
+								competencias por investigación. </span><span style="font-style:italic">Sistematización
+								de experiencias y buenas prácticas de docentes universitarios</span><span>. Pp.
+								227-225. </span><span>InnovaCESAL/ALFA/Universidad
+								Veracruzana. </span><span><a
+									href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_ic_2011_completo.pdf">http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_ic_2011_completo.pdf</a></span>
+						</p>
+
+						<p><span>Verdejo, P. &amp; Valdés, R. (</span><span>coords</span><span>.)
+								(s. f.). Sistematización de estrategias de vinculación en la formación en
+								Ciencias Básicas, Bilógico-</span><span>agropeuarias</span><span> e
+								Ingeniería. Innovacesal.org.</span><span><a
+									href="http://www.innovacesal.org/micrositio_redic_2015/02_guia_cbasic_ing_cbioagro.pdf">http://www.innovacesal.org/micrositio_redic_2015/02_guia_cbasic_ing_cbioagro.pdf</a></span>
+						</p>
+
+						<p><span>Zúñiga, X. (coord.), Cárdenas, J. L., Casas,
+								P., Monteros, K., Pérez, S., </span><span>Trozzo</span><span>, E.
+								&amp; Velasco del Valle, E. (2011). Estrategias innovadoras para desarrollar la
+								competencia investigadora en los procesos de
+							</span><span>enseñanza_aprendizaje</span><span> de
+								las artes. </span><span style="font-style:italic">Estrategias
+								para la incorporación de la investigación en los procesos de aprendizaje</span><span>.
+								Innovacesal.org. Pp. 35-5. </span><span></span><span><a
+									href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc04.pdf">http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc04.pdf</a></span>
+						</p>
+
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+						tabindex="0">
+
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body" id="cuerpoModal">
+					<div class="container-fluid">
+						<input type="hidden" id="numeroEvidencias" value="1">
+
+						<input type="hidden" id="evidenciaActual" value="1">
+						<div class="row">
+							<div class='col'>
+								<div class='evidencia' id='evidencia1' style='display: block;'>
+									<p style="text-align: center;"><strong>Foro </strong><strong>2. </strong><strong>Mi
+											estructura de </strong><strong>aprendizaje.</strong></p>
+									<p><strong>Descripci&oacute;n: </strong></p>
+									<p>Describa en dos cuartillas un ejemplo en el que aborde un tema relacionado a una
+										experiencia educativa que imparta, indicando qu&eacute; metodolog&iacute;a
+										activa y qu&eacute; modelo de innovaci&oacute;n educativa utilizar&iacute;a para
+										abordarlo, justifique su propuesta.</p>
+									<p><strong>Criterios de evaluaci&oacute;n</strong><strong>:</strong></p>
+									<ol>
+										<li>Apego a las instrucciones para la elaboraci&oacute;n de la actividad.</li>
+										<li>Redacci&oacute;n y ortograf&iacute;a adecuadas.</li>
+										<li>Coherencia y organizaci&oacute;n de ideas principales.</li>
+										<li>Citaci&oacute;n con base en el <em>Manual de Publicaciones de la APA,
+												7&ordf;. ed</em>.</li>
+									</ol>
+									<p><strong>Lineamiento de entrega</strong><strong>:</strong></p>
+									<ol>
+										<li>Formato: fuente Arial de 12&nbsp;puntos,con interlineado de 1.5.&nbsp;</li>
+										<li>En total, su documento no debe exceder las tres cuartillas: dos cuartillas
+											como m&aacute;ximo para su s&iacute;ntesis y en la tercera, ubique su
+											reflexi&oacute;n y la fuente de informaci&oacute;n consultada, seg&uacute;n
+											corresponda.</li>
+										<li>Titule el archivo bajo la siguiente nomenclatura:
+											&nbsp;Actx_PrimerApellidoyPrimerNombre.
+											Por&nbsp;ejemplo:&nbsp;Foro2_VillanuevaTeresa&nbsp;</li>
+									</ol>
+									<ol start="4">
+										<li>Suba su evidencia en formato PDF, al apartado&nbsp;<strong>Foro
+												2,&nbsp;</strong>en la plataforma EMINUS 4, a m&aacute;s tardar
+											en&nbsp;la fecha establecida en el&nbsp;Calendario&nbsp;de entregas.</li>
+									</ol>
+									<p>&nbsp;</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="Grupo1Mod1" tabindex="-1" aria-labelledby="Grupo1Mod1Label" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="Grupo1Mod1Label">
+						Modelo
+					</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>Un modelo representa nuestra percepci&oacute;n y marco conceptual sobre el mundo y sus
+						direcciones futuras. En el contexto educativo, un modelo se refiere a un conjunto organizado de
+						propiedades, principios, m&eacute;todos y contenidos que gu&iacute;an el proceso de
+						ense&ntilde;anza-aprendizaje.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="Grupo1Mod2" tabindex="-1" aria-labelledby="Grupo1Mod2Label" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="Grupo1Mod2Label">
+						Método
+
+					</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>El m&eacute;todo consiste en una serie de pasos coordinados para lograr un resultado
+						espec&iacute;fico. En educaci&oacute;n, engloba procedimientos, recursos, criterios y
+						t&eacute;cnicas que sistematizan el proceso de ense&ntilde;anza-aprendizaje.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>

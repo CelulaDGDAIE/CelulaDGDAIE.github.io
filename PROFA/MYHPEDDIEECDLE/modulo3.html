@@ -1,0 +1,705 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Métodos y herramientas para el desarrollo de innovaciones en el campo de la
+					educación </p>
+
+				<p id="subtituloPresentacion">Fase 3: Formulación del proyecto Educativo Innovador.</p>
+
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = '#' class='enlaceModulo'><strong>Fase  1</strong></a>-->
+
+				<a href='modulo1.html' class='enlaceModulo enlaceActivo'><strong>Fase 1</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Fase  2</strong></a>-->
+
+				<a href='modulo2.html' class='enlaceModulo enlaceActivo'><strong>Fase 2</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Fase  3</strong></a>-->
+
+				<a href='#' class='enlaceModulo'><strong>Fase 3</strong></a>
+
+			</div>
+			<div class="col-1 align-self-center">
+				<span><strong>Zoom: </strong><button class="botonZoom" onclick="reducirLetra()"
+						type="button">A-</button><button class="botonZoom" onclick="aumentarLetra()"
+						type="button">A+</button></span>
+			</div>
+
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">Métodos y herramientas para el desarrollo de innovaciones en el campo de la
+					educación </p>
+
+				<p id="subtituloPresentacionMovil">Fase 3: Formulación del proyecto Educativo Innovador.</p>
+
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">Métodos y herramientas para el desarrollo de innovaciones en el
+						campo de la educación Scroll</p>
+
+					<p id="subtituloPresentacionScroll">Fase 3: Formulación del proyecto Educativo Innovador.</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Fase 1</a>
+
+		<a href="fase2.html" class="w3-bar-item w3-button">Fase 2</a>
+
+		<a href="fase3.html" class="w3-bar-item w3-button">Fase 3</a>
+
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="carruselInformación" class="fondoAzul letraBlanca">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col align-self-center">
+					<br>
+					<p id="tituloCarruselInformacion" style="text-align: center; font-weight: bold;">
+						<i class="bi bi-info-circle-fill"></i> Situación problematizadora
+					</p>
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
+				</div>
+				<div class="col align-self-center">
+					<div id="contenidoSituacion" style="text-align: center;">
+						<table>
+							<tr>
+								<td>
+									<p>Se espera que los participantes elaboren una propuesta de Proyecto Educativo
+										Innovador que incorpore los conocimientos y enfoques explorados en las etapas
+										previas y que a través de los métodos y herramientas para el desarrollo de la
+										innovación en el campo de la educación, permitan mejorar la experiencia de
+										aprendizaje de los estudiantes.
+
+									</p>
+								</td>
+								<td style="width: 2em;"></td>
+								<td>
+									<img src="" alt="imagen pendiente" class="img-fluid" />
+								</td>
+
+							</tr>
+						</table>
+					</div>
+					<div id="contenidoProposito" style="display: none;">
+						<p>
+							Mediante el desarrollo de un Proyecto Educativo Innovador, se busca encontrar nuevas formas
+							de abordar los desafíos educativos y de mejorar los procesos de enseñanza y aprendizaje, un
+							proyecto educativo innovador puede transformar la experiencia educativa, fomentando la
+							participación activa de los estudiantes, promoviendo el pensamiento crítico y creativo, y
+							adaptándose a las necesidades y demandas de la sociedad actual.
+							A continuación, observe el siguiente video que le dará una visión general de un Proyecto
+							educativo Innovador.
+
+						</p>
+						<div style="text-align: center;">
+							<iframe width="560" height="315"
+								src="https://www.youtube.com/embed/tEMtAq-IXWM?si=c02GPOh-Ng42WN73"
+								title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen></iframe>
+
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
+				</div>
+				<div class="col-1"></div>
+			</div>
+
+		</div>
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes de la Experiencia Educativa</p>
+<!---------Titulo--------->
+<div class='row' style='color: white;'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+	3.1 Elaboración de la propuesta de un Proyecto Educativo Innovador (PEI)
+	
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Subitulo--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<h1 class='subtitulo'>
+	3.1.1 Descripción del Proyecto Educativo Innovador (PEI) 
+	</h1>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>Un
+	PEI refiere al reporte descriptivo de un proyecto de innovación, creado,
+	implementado y evaluado por el personal académico</span><span>en
+	atención a una problemática o necesidad identificada dentro del fenómeno
+	educativo de aprendizaje y enseñanza. Es el resultado de un proceso sistemático
+	en el que además de identificar una problemática, se genera una idea creativa,
+	se ejecuta y evalúa su impacto en el aula, esto en consideración del contexto
+	del MEI, de los temas estratégicos institucionales y de las necesidades
+	educativas y sociales emergentes de las IES. Entonces, la cualidad de los PEI
+	es la innovación. Para este curso, se entiende como innovación educativa a: “La
+	implementación de procesos creativos que transforman de manera novedosa alguno
+	de los componentes del fenómeno educativo, con la intención de resolver
+	problemas y mejorar los aprendizajes de los estudiantes” (UNAM, 2022).&nbsp;&nbsp;&nbsp;</span></p>
+	
+	
+	
+	<p><span>Dentro
+	del concepto de innovación se pone énfasis en componentes clave tales como
+	“implementación”, “novedad” y “resolución de problemas educativos”. A
+	continuación, lea la descripción de estos componentes haciendo clic en el
+	nombre de cada uno.&nbsp;</span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!--Ventanas emergentes-->
+<div class='row'>
+    <div class='col-2'></div>
+    <div class='col'>
+        <table style="margin-left: auto; margin-right: auto; width: 100%; table-layout: fixed;" id="Grupo1Mod">
+            <tr>
+                <td style="cursor: pointer; background-color: aqua; color: white;" data-bs-toggle="modal"
+                    data-bs-target="#Grupo1Mod1">
+                    <p style="text-align: center;">
+                        <strong>
+                            Implementación
+
+                        </strong>
+                    </p>
+                </td>
+
+                <td style="cursor: pointer; background-color: royalblue; color: white;" data-bs-toggle="modal"
+                    data-bs-target="#Grupo1Mod2">
+                    <p style="text-align: center;">
+                        <strong>
+                            Novedad
+
+                        </strong>
+                    </p>
+                </td>
+                <td style="cursor: pointer; background-color: aqua; color: white;" data-bs-toggle="modal"
+                    data-bs-target="#Grupo1Mod3">
+                    <p style="text-align: center;">
+                        <strong>
+                            Resolución de problemas educativos
+
+                        </strong>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class='col-2'></div>
+</div>
+<br>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Los ámbitos en los que se  puede impactar con PEI puede consultarlos en el siguiente recurso dando clic en el signo de +: 
+	
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+
+
+	<!---------Iframe--------->
+	<div class='row'>
+		<div class='col-3'></div>
+		<div class='col'>
+		<div style='text-align: center'>
+		<p style='color: red; font-weight: bold;'>Material pendiente</p>
+		</div>
+		</div>
+		<div class='col-3'></div>
+		</div>
+		<br>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>El </span><span style="font-weight:bold">PEI</span><span>
+	contribuye al desarrollo formativo del estudiantado, y su origen puede estar
+	vinculado: </span></p>
+	
+	<ul>
+		<li>Directamente a una Experiencia Educativa, o en un conjunto de saberes de la misma.</li>
+		<li>A un conjunto de Experiencias Educativas del mismo plan.</li>
+		<li>A varias Experiencias Educativas de distintos planes de estudio de la misma &aacute;rea acad&eacute;mica o de diferentes &aacute;reas.</li>
+		<li>A elementos de la profesi&oacute;n vinculados a las necesidades sociales, temas transversales (como los derechos humanos y la sustentabilidad), campos profesionales emergentes, saberes disciplinares contempor&aacute;neos de reci&eacute;n aparici&oacute;n, entre otros.</li>
+		<li>Con otras instituciones de educaci&oacute;n superior nacionales e internacionales.</li>
+		<li>A l&iacute;neas de generaci&oacute;n y aplicaci&oacute;n del conocimiento de cuerpos acad&eacute;micos.</li>
+		<li>Entre programas de licenciatura y posgrado.</li>
+		</ul>
+	
+	
+	
+	<p><span>Tomado
+	de </span><span><a href="https://www.uv.mx/abp/files/2022/09/Pautas-2022.pdf">https://www.uv.mx/abp/files/2022/09/Pautas-2022.pdf</a></span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Contenido html--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><span>Por
+	otro lado, podemos decir que </span><span style="font-weight:bold">no</span><span> se
+	trata de un PEI cuando: </span></p>
+	
+	<ul>
+		<li>Una pr&aacute;ctica/actividad propia de la o las experiencias educativas que no incorpore los tres componentes de innovaci&oacute;n (implementaci&oacute;n, novedad, resoluci&oacute;n de problemas).</li>
+		<li>La organizaci&oacute;n de eventos acad&eacute;micos que se realizan peri&oacute;dicamente de la misma manera sin generar alg&uacute;n cambio significativo en la soluci&oacute;n de una necesidad del estudiantado o comunidad UV.</li>
+		<li>Un proyecto de investigaci&oacute;n, vinculaci&oacute;n o internacionalizaci&oacute;n que no presente la estructura de un reporte descriptivo del proceso planificado, implementado y evaluado por los acad&eacute;micos en atenci&oacute;n a alguna necesidad de aprendizaje particular.</li>
+		</ul>
+	
+	<p><span>Es
+	así que para iniciar con el desarrollo de un Proyecto Educativo Innovador es
+	muy importante </span><span>cosiderar que </span><span>primero
+	es necesario identificar necesidades y desafíos actuales, para luego fomentar
+	la creatividad y el pensamiento crítico, integrar tecnología y metodologías
+	innovadoras, así como promover la participación activa, el aprendizaje y la
+	aplicación práctica. </span></p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<!---------Instruccion--------->
+	<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+	<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor' class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+	<path d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z' id='path2' style='fill:#0055d4'></path>
+	</svg>
+	Para cerrar este tema, le invito a revisar los siguientes elementos importantes para el diseño de un PEI. A continuación, haga clic en el signo de + para consultar la información completa. 
+	
+	<br>
+	</p>
+	</div>
+	<div class='col-2'></div>
+	</div>
+	<br>
+	<!---------Iframe--------->
+	<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+	<div style='text-align: center'>
+	<p style='color: red; font-weight: bold;'>Material pendiente</p>
+	</div>
+	</div>
+	<div class='col-3'></div>
+	</div>
+	<br>
+	
+
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center">
+				<a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+						<button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+							type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+						<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+							type="button" role="tab" aria-controls="nav-profile"
+							aria-selected="false">Complementarias</button>
+					</div>
+				</nav>
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+						tabindex="0">
+						<p><span>Miriam Rangel (2020, abril 20). </span><span style="font-style:italic">Innovación
+								educativa, ¿cómo elaborar un proyecto de innovación educativa?
+							</span><span>[</span><span>Video</span><span>]</span><span>. Youtube. </span><span><a
+									href="https://youtu.be/tEMtAq-IXWM">https://youtu.be/tEMtAq-IXWM</a></span></p>
+
+						<p><span>Universidad Veracruzana (2023). </span><span style="font-style:italic">Convocatoria
+								PEI 2023. </span><span>UV.mx</span><span>. </span><span><a
+									href="https://www.uv.mx/abp/convocatoria-pei/">https://www.uv.mx/abp/convocatoria-pei/</a></span>
+						</p>
+
+						<p><span>UniversidadNacional Autónoma de México (2022). </span><span
+								style="font-style:italic">¿Qué
+								es la innovación educativa? </span><span>UNAM/CUAIEDD.</span><span><a
+									href="https://recrea.cuaieed.unam.mx/conceptos-de-innovacion/innovaci%C3%B3n-educativa-e">https://recrea.cuaieed.unam.mx/conceptos-de-innovacion/innovaci%C3%B3n-educativa-e</a></span>
+						</p>
+
+						<p><span>Universidad Veracruzana (2022). </span><span style="font-style:italic">Proyecto
+								educativo innovador. </span><span>Secretaría Académica/Dirección General de
+								Desarrollo Académico e Innovación Educativa/Dirección de Innovación
+								Educativa.</span><span><a
+									href="https://www.uv.mx/abp/files/2022/09/Pautas-2022.pdf">https://www.uv.mx/abp/files/2022/09/Pautas-2022.pdf</a></span>
+						</p>
+
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+						tabindex="0">
+
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body" id="cuerpoModal">
+					<div class="container-fluid">
+						<input type="hidden" id="numeroEvidencias" value="1">
+
+						<input type="hidden" id="evidenciaActual" value="1">
+						<div class="row">
+							<div class='col'>
+								<div class='evidencia' id='evidencia1' style='display: block;'>
+									<p style="text-align: center;"><strong>Actividad 2. Proyecto Educativo Innovador.
+										</strong></p>
+									<p><strong>Descripci&oacute;n: </strong></p>
+									<p>Tomando en cuenta los elementos te&oacute;ricos abordados en este tema y la
+										<a href="https://www.uv.mx/abp/convocatoria-pei">convocatoria del PEI</a>, realice una propuesta acorde a una Experiencia Educativa
+										que imparta. No es indispensable tener resultados o evidencias de
+										aplicaci&oacute;n completos, aunque es deseable contemplar un piloto o plantear
+										posibles resultados de su aplicaci&oacute;n. Considere la metodolog&iacute;a
+										activa y un modelo de innovaci&oacute;n educativa de los abordados en los
+										m&oacute;dulos anteriores.&nbsp;</p>
+									<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+									<ol>
+										<li>Apego a las instrucciones para la elaboraci&oacute;n de la actividad.</li>
+										<li>Redacci&oacute;n y ortograf&iacute;a adecuadas.</li>
+										<li>Coherencia y organizaci&oacute;n de ideas principales.</li>
+										<li>Citaci&oacute;n con base en el <em>Manual de Publicaciones de la APA,
+												7&ordf;. ed</em>.</li>
+									</ol>
+									<p><strong>Lineamiento de entrega:</strong></p>
+									<ol>
+										<li>Formato: de acuerdo con lo sugerido en la convocatoria:
+											https://www.uv.mx/abp/convocatoria-pei/&nbsp;&nbsp;</li>
+										<li>En total, su documento no debe exceder las diez cuartillas:</li>
+										<li>Titule el archivo bajo la siguiente nomenclatura:
+											&nbsp;Actx_PrimerApellidoyPrimerNombre. Por
+											ejemplo:&nbsp;Act2_VillanuevaTeresa&nbsp;</li>
+										<li>Suba su evidencia en formato PDF, al apartado <strong><em>Actividad
+													2,</em></strong> en la plataforma EMINUS 4, a m&aacute;s tardar en
+											la fecha establecida en el <strong>Calendario</strong> de entregas.</li>
+									</ol>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Modal -->
+<div class="modal fade" id="Grupo1Mod1" tabindex="-1" aria-labelledby="Grupo1Mod1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Grupo1Mod1Label">
+                    Implementación
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Proceso de aplicación práctica en escenarios reales con usuarios finales (estudiantes y docentes).
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="Grupo1Mod2" tabindex="-1" aria-labelledby="Grupo1Mod2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Grupo1Mod2Label">
+                    Novedad
+
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Introducción de nuevas formas de resolver un problema o mejorar soluciones existentes en el ámbito educativo. Puede ser local, regional o global en términos de su novedad.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="Grupo1Mod3" tabindex="-1" aria-labelledby="Grupo1Mod3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Grupo1Mod3Label">
+                    Resolución de problemas educativos
+
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Propósito de abordar y resolver problemas identificados en ámbitos institucionales, curriculares y didácticos en la educación.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>
