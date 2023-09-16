@@ -1,0 +1,26 @@
+.pregunta{
+    display: none;
+}
+.respuesta{
+    display: none;
+}
+
+#botonEmpezar{
+    padding: 0.5em;
+    font-size: 1.5em;
+    border-radius: 20%;
+    border-width: 0.2em;
+    border-color: rgb(216, 158, 216);
+    background-color: rgb(117, 88, 154);
+    color: white;
+}
+
+#botonSiguiente{
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 20%;
+    border-width: 0.2em;
+    border-color: rgb(116, 230, 234);
+    background-color: rgb(35, 146, 70);
+    color: white;
+}
