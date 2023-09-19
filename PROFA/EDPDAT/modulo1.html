@@ -1011,11 +1011,15 @@
 					</div>
 
 					<div style="display: none;" id="mensajeFin">
-						<p style="color: rgb(113, 55, 0); text-align: center;">Ha terminado la evaluación.</p>
+						<p style="color: rgb(113, 55, 0); text-align: center;">Ha terminado la autoevaluación.</p>
 						<p style="color: rgb(113, 55, 0); text-align: center;">Obtuvo un puntaje de <span
 								id="puntaje"></span> de 47.</p>
-						<p style="color: rgb(113, 55, 0); text-align: center;">En este curso taller vamos a tratar de
+						<p style="color: rgb(113, 55, 0); text-align: center;" id="mensajeRefuerzo">En este curso taller vamos a tratar de
 							reforzar nuestros conocimientos.</p>
+							<div class="centrado" id="divReempezar">
+								<button id="botonReempezar" onclick="reempezarEval()"><i class="bi bi-arrow-repeat"></i></button>
+							</div>
+
 					</div>
 					<p style="display: none;" id="contador">(<span id="respondidas"></span> de 47)</p>
 					<button id="botonSiguiente" style="display: none;" onclick="siguientePregunta()">Siguiente</button>
@@ -2009,6 +2013,7 @@ font-style:italic">Interrelaci</span><span style="font-style:italic">ón</span><
 
 	<!-------------------------------------------- Script ---------------------->
 	<script src="js/scriptFase.js"></script>
+	<script src="js/intentos1.js"></script>
 	<script src="js/autoeval.js"></script>
 	<!-------------------------------------------- /Script ---------------------->
 </body>

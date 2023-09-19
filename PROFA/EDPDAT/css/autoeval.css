@@ -24,3 +24,12 @@
     background-color: rgb(35, 146, 70);
     color: white;
 }
+#botonReempezar{
+    padding: 0.5em;
+    font-size: 1.5em;
+    border-radius: 20%;
+    border-width: 0.2em;
+    border-color: rgb(131, 220, 216);
+    background-color: rgb(8, 163, 34);
+    color: white;
+}

@@ -1,4 +1,5 @@
 var preguntaActual = 0;
+var intentos = 0;
 const respuestasCorrectas = [];
 respuestasCorrectas[0] = 2;
 respuestasCorrectas[1] = 2;
@@ -50,6 +51,7 @@ respuestasCorrectas[46] = 2;
 
 var respuestas = [];
 function empezarEval() {
+    intentos++;
     document.getElementById("botonEmpezar").style.display = "none";
     document.getElementById("autoeval").style.backgroundColor = "#bee2d5";
     preguntaActual++;
@@ -85,6 +87,12 @@ function siguientePregunta() {
             document.getElementById("botonSiguiente").style.display = "none";
             document.getElementById("contador").style.display = "none";
             document.getElementById("mensajeFin").style.display = "block";
+            if(intentosLimitados==1){
+                document.getElementById("mensajeRefuerzo").style.display = "none";
+            }
+            if((intentos>= 2) && (intentosLimitados==1)){
+                document.getElementById("botonReempezar").style.display = "none";
+            }
             document.getElementById("puntaje").innerHTML = obtenerPuntaje();
         }
     } else {
@@ -100,4 +108,16 @@ function obtenerPuntaje() {
         }
     }
     return puntos;
+}
+
+function reempezarEval(){
+    var ele = document.getElementsByTagName("input");
+    for(var i=0;i<ele.length;i++){
+        ele[i].checked = false;
+    }
+    
+    preguntaActual = 0;
+    document.getElementById("mensajeFin").style.display = "none";
+    empezarEval();
+
 }

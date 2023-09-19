@@ -1,0 +1,1 @@
+var intentosLimitados = 1;
