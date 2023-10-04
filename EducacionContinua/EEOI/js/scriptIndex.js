@@ -65,7 +65,7 @@ function cambiarDiapositiva(){
 		cuerpoCarrusel.classList.add("fondoAzul");
 		document.getElementById("textoCarrusel").innerHTML = contenidoIndex.textoUnidad;
 		document.getElementById("tituloCarrusel").innerHTML = "<strong><i class='bi bi-intersect'></i> Purpose</strong>";
-		document.getElementById("imagenDiapositivas").src="https://lumen.uv.mx/resources/files/images/2022/10/7/7404/1834017f-ce0f-46d4-a761-736bf2fda7ce.jpg";
+		document.getElementById("imagenDiapositivas").src="https://lumen.uv.mx/resources/files/images/2023/10/4/8934/232570c3-5cee-4678-8aea-7893ef6672cb.jpg";
 		document.getElementById("referenciaImagen").innerHTML= "[2]";
 	}else{
 		carruselInformacionDiapositivaActual = "presentacion";
