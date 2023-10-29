@@ -43,7 +43,7 @@ function scrollFunction() {
 			document.getElementById("encabezadoUV").style.display = "block";
 			document.getElementById("tituloEscritorio").style.fontSize = "1.2em";
 			document.getElementById("subtituloPresentacion").style.fontSize = "1.2em";
-			document.getElementById("enlaceModulo").style.fontSize = "1em";
+			//document.getElementById("enlaceModulo").style.fontSize = "1em";
 
 		}
 	}
@@ -187,10 +187,10 @@ function avanzarDiapositivaRecurso (idElemento){
 		diaAct++;
 	}
 	document.getElementById(idElemento + 'dia' + diaAct).style.display = 'block';
-	if(colAct == "limegreen"){
+	if(colAct == "rgb(92, 214, 177)"){
 		document.getElementById(idElemento + 'col').style.backgroundColor = "lightblue";
 	}else{
-		document.getElementById(idElemento + 'col').style.backgroundColor = "limegreen";
+		document.getElementById(idElemento + 'col').style.backgroundColor = "rgb(92, 214, 177)";
 	}
 	document.getElementById(idElemento + 'Act').value = diaAct;
 
@@ -207,10 +207,10 @@ function regresarDiapositivaRecurso(idElemento){
 		diaAct--;
 	}
 	document.getElementById(idElemento + 'dia' + diaAct).style.display = 'block';
-	if(colAct == "limegreen"){
+	if(colAct == "rgb(92, 214, 177)"){
 		document.getElementById(idElemento + 'col').style.backgroundColor = "lightblue";
 	}else{
-		document.getElementById(idElemento + 'col').style.backgroundColor = "limegreen";
+		document.getElementById(idElemento + 'col').style.backgroundColor = "rgb(92, 214, 177)";
 	}
 	document.getElementById(idElemento + 'Act').value = diaAct;
 
