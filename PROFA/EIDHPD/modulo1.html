@@ -1,0 +1,1039 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 id="encabezadoUV" style="text-align: right; background-color: #0D47A1; color: white;">Universidad
+			Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Educación inclusiva y derechos humanos de personas con discapacidad </p>
+
+				<p id="subtituloPresentacion">Módulo 1: La educación inclusiva, con énfasis en la población en situación
+					de discapacidad</p>
+
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = '#' class='enlaceModulo'><strong>Módulo  1</strong></a>-->
+
+				<a href='#' class='enlaceModulo'><strong>Módulo 1</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Módulo  2</strong></a>-->
+
+				<a href='modulo2.html' class='enlaceModulo enlaceActivo'><strong>Módulo 2</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Módulo  3</strong></a>-->
+
+				<a href='modulo3.html' class='enlaceModulo enlaceActivo'><strong>Módulo 3</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Módulo  3</strong></a>-->
+
+				<a href='modulo4.html' class='enlaceModulo enlaceActivo'><strong>Módulo 4</strong></a>
+
+			</div>
+			<div class="col-1 align-self-center">
+				<span><strong>Zoom: </strong><button class="botonZoom" onclick="reducirLetra()"
+						type="button">A-</button><button class="botonZoom" onclick="aumentarLetra()"
+						type="button">A+</button></span>
+			</div>
+
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">Habilidades y estrategias didácticas para la docencia</p>
+
+				<p id="subtituloPresentacionMovil">Módulo 1: Habilidades docentes y estrategias didácticas
+					contemporáneas
+				</p>
+
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">Habilidades y estrategias didácticas para la docenciaScroll</p>
+
+					<p id="subtituloPresentacionScroll">Módulo 1: Habilidades docentes y estrategias didácticas
+						contemporáneas</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Módulo 1</a>
+
+		<a href="fase2.html" class="w3-bar-item w3-button">Módulo 2</a>
+
+		<a href="fase3.html" class="w3-bar-item w3-button">Módulo 3</a>
+
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="carruselInformación" class="fondoAzul letraBlanca">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col align-self-center">
+					<br>
+					<p id="tituloCarruselInformacion" style="text-align: center; font-weight: bold;">
+						<i class="bi bi-info-circle-fill"></i> Situación problematizadora
+					</p>
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
+				</div>
+				<div class="col align-self-center">
+					<div id="contenidoSituacion">
+						<p>Comenzaremos por abordar una situación a nivel social en México acerca del proceso de
+							incorporación en materia de inclusión, abordando elementos teóricos sobre las definiciones
+							conceptuales de educación inclusiva, sus modelos y clasificaciones, con la finalidad de
+							comprender los términos adecuados en contextos sociales, laborales, empresariales,
+							educativos y de salud.
+
+						</p>
+
+					</div>
+					<div id="contenidoProposito" style="display: none;">
+						<table>
+							<tr>
+
+
+								<td>
+									<p>Los estudiantes analizan la importancia de los antecedentes sobre la educación
+										inclusiva, modelos, clasificaciones y definiciones, con la finalidad de
+										integrarlos a sus contextos universitarios, fomentando la cultura de la
+										inclusión en la sociedad y espacios laborales, así como para fomentar un debido
+										lenguaje inclusivo en todos los ámbitos de acción que ejerzan los futuros
+										profesionistas universitarios.
+									</p>
+								</td>
+								<td style="width: 2em;"></td>
+								<td>
+									<img src="" alt="imagen pendiente" class="img-fluid" />
+									<p style="text-align: right;" id="referenciaImagen">[1]</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<br>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
+				</div>
+				<div class="col-1"></div>
+			</div>
+
+		</div>
+
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes del curso</p>
+		<!---------Subitulo--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 class='subtitulo'>
+					Introducción
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p>Es importante indicar que el t&eacute;rmino <strong>inclusi&oacute;n</strong> no se refiere a una
+					simple suma o adici&oacute;n de individuos o cosas, sino que es un enfoque social que le da valor y
+					reconocimiento a habilidades, buscando que &eacute;stos sean parte activa de la sociedad, pero en
+					igualdad de circunstancias. As&iacute; mismo, implica la participaci&oacute;n de muchos sectores
+					tales como: familiar, educativo, social, entre otros.&nbsp;</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Para conocer más acerca de este tema, revise la siguiente información.
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col-2'>
+				<br>
+				<ul class="list-group" id="listaRecursos1">
+					<button type="button" class="list-group-item list-group-item-action active" aria-current="true"
+						onclick="camiarIframe(1, 'https://www.incluyeme.com/tag/definicion-de-inclusion/')">
+						Incluyeme.com. (2023). ¿Qué es la inclusión? Incluyeme.com.
+					</button>
+					<button type="button" class="list-group-item list-group-item-action"
+						onclick="camiarIframe(1, 'https://www.unesco.org/es/education/inclusion')">
+						Unesco. (s. f.). La inclusión en la educación. Que nadie quede rezagado. Unesco.
+					</button>
+				</ul>
+				<br>
+			</div>
+			<div class='col'>
+				<iframe id="iframe1" frameborder="0" style="width: 100%; height: 100%;"
+					src="https://www.incluyeme.com/tag/definicion-de-inclusion/ " type="text/html"
+					allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p>	La inclusión fomenta y garantiza que toda persona forme parte de y no que esté separada de. Por ello, todas las políticas y sistemas educativos y sociales deben proveer y garantizar acceso y participación total y recíproca, considerando también a aquellos en situación de discapacidad para que gocen de las mismas circunstancias e igualdad de condiciones: educativas, sociales, laborales, de salud, derechos humanos, entre otras.
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col' style="background-color: #0D47A1; color: white; border-radius: 10px;">
+				
+				<table>
+					<tr>
+
+
+						<td>
+							<p>De acuerdo con la Unesco, la inclusión parte de un enfoque positivo al respecto de la diversidad total de las personas, considerando sus diferencias individuales. Para ello, se debe comprender que la diversidad no es un problema, por el contrario, es una oportunidad para brindar riqueza a la sociedad por medio de la participación de la familia, en primer lugar, en los campos de la: educación, trabajo, así como en todos los procesos sociales, culturales y comunidades existentes en toda la sociedad.
+							</p>
+						</td>
+						<td style="width: 2em;"></td>
+						<td>
+							<img src="" alt="imagen pendiente" class="img-fluid" />
+							<p style="text-align: right;" id="referenciaImagen"></p>
+						</td>
+					</tr>
+				</table>
+
+
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Con la intención de profundizar en este tema, lea y consulte los siguientes documentos. Para 	acceder a la información, haga clic en el icono correspondiente.
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col-2'>
+				<br>
+				<ul class="list-group" id="listaRecursos2">
+					<button type="button" class="list-group-item list-group-item-action active" aria-current="true"
+						onclick="camiarIframe(2, 'https://libros.uv.mx/index.php/UV/catalog/view/UC012/1452/1426-1')">
+						<p>Libro digital.</p>
+<p>Garc&iacute;a, M. (coord). (2019). <em>Lineamientos para la inclusi&oacute;n de estudiantes con discapacidad</em>. UV. Universidad Veracruzana. (pág. 13-22)
+</p>
+					</button>
+					<button type="button" class="list-group-item list-group-item-action"
+						onclick="camiarIframe(2, 'https://odpc.ucsf.edu/sites/odpc.ucsf.edu/libraries/pdf.js/web/viewer.html?file=https%3A%2F%2Fodpc.ucsf.edu%2Fsites%2Fodpc.ucsf.edu%2Ffiles%2Fdocuments%2FMedical%2520and%2520Social%2520Models%2520of%2520Disability%2520SPAN%2520FINAL.pdf')">
+						<p>Documento.</p>
+<p>UCSF. University of California, San Francisco. (2018).&nbsp; <em>Modelos m&eacute;dicos y sociales de discapacidad.</em> Office of Developmental Primary Care.</p>
+					</button>
+				</ul>
+				<br>
+			</div>
+			<div class='col'>
+				<iframe id="iframe2" frameborder="0" style="width: 100%; height: 100%;"
+					src="https://libros.uv.mx/index.php/UV/catalog/view/UC012/1452/1426-1" type="text/html"
+					allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p>En cuanto a la educaci&oacute;n inclusiva, se le conoce como el proceso que busca responder a las necesidades de todos los alumnos, logrando la participaci&oacute;n en el aprendizaje, la cultura y las comunidades, reduciendo la exclusi&oacute;n desde la educaci&oacute;n, transformando la cultura, las pol&iacute;ticas y las pr&aacute;cticas escolares, lo que implica la eliminaci&oacute;n de las barreras que limitan la ense&ntilde;anza y la participaci&oacute;n de todos.</p>
+<p>Con ello, se busca alcanzar la diversidad como una oportunidad para transformar los entornos educativos y contextos sociales en los que se puedan desenvolver con plena libertad todas las personas.</p>
+
+			</div>
+			<div class='col-2'></div>
+		</div>
+
+
+		<!---------Titulo--------->
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+					1.1 Modelos de atención a la discapacidad: médico, social
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p>De acuerdo con la Organización Mundial de la Salud (OMS) (2001), para entender y explicar el funcionamiento de la discapacidad, existen dos modelos: médico y social.
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Para leer la información acerca de cada modelo, haga clic en la venta correspondiente. 
+
+
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+
+		<!--Ventanas emergentes-->
+<div class='row'>
+    <div class='col-2'></div>
+    <div class='col'>
+        <table style="margin-left: auto; margin-right: auto; width: 100%; table-layout: fixed;" id="Grupo1Mod">
+            <tr>
+                <td style="cursor: pointer; background-color: aqua; color: white;" data-bs-toggle="modal"
+                    data-bs-target="#Grupo1Mod1">
+                    <p style="text-align: center;">
+                        <strong>
+                            Modelo médico
+                        </strong>
+                    </p>
+                </td>
+
+                <td style="cursor: pointer; background-color: royalblue; color: white;" data-bs-toggle="modal"
+                    data-bs-target="#Grupo1Mod2">
+                    <p style="text-align: center;">
+                        <strong>
+                            Modelo social
+
+                        </strong>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class='col-2'></div>
+</div>
+<br>
+
+<!---------Instruccion--------->
+<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+		<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+				class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+				<path
+					d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+					id='path2' style='fill:#0055d4'></path>
+			</svg>
+			A continuación, lea con atención los siguientes documentos. Para acceder a toda la información, haga  clic en el icono corresponiente.
+
+			<br>
+		</p>
+	</div>
+	<div class='col-2'></div>
+</div>
+
+
+<!---------Lista Recursos--------->
+<div class='row'>
+	<div class='col-2'></div>
+	<div class='col-2'>
+		<br>
+		<ul class="list-group" id="listaRecursos3">
+			<button type="button" class="list-group-item list-group-item-action active" aria-current="true"
+				onclick="camiarIframe(3, 'documentos/9241545445_spa.pdf')">
+				<p>V&aacute;zquez-Barquero, J. (Coord). (2001). <em>Clasificaci&oacute;n Internacional del Funcionamiento, de la Discapacidad y de la Salud.</em> OMS. Organizaci&oacute;n Mundial de la Salud.</p>
+			</button>
+			<button type="button" class="list-group-item list-group-item-action"
+				onclick="camiarIframe(3, 'http://ensech.edu.mx/pdf/maestria/libro4/TP04-2-05-Covarrubias.pdf')">
+				<p>Covarrubias-Pizarro P. (2019) <em>Barreras para el aprendizaje y la participaci&oacute;n: una propuesta para su clasificaci&oacute;n.</em> Escuela Normal Superior Profr. Jos&eacute; E. Medrano R.</p>
+			</button>
+			<button type="button" class="list-group-item list-group-item-action"
+			onclick="camiarIframe(3, 'documentos/tccconvs.pdf')">				
+			<p>UNESCO. (s.f). Convención sobre los derechos de las personas con discapacidad. 
+			</p>
+			</button>
+			<button type="button" class="list-group-item list-group-item-action"
+			onclick="camiarIframe(3, 'https://es.unesco.org/gem-report/report/2020/inclusion')">	
+			<p>UNESCO. Informe de Seguimiento de la Educación en el Mundo (2023) Inclusión y educación. Unesco. 
+			</p>
+			</button>
+		</ul>
+		<br>
+	</div>
+	<div class='col'>
+		<iframe id="iframe3" frameborder="0" style="width: 100%; height: 100%;"
+			src="documentos/9241545445_spa.pdf" type="text/html"
+			allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+	</div>
+	<div class='col-2'></div>
+</div>
+<hr>
+		<br>
+
+
+<!---------Titulo--------->
+<div class='row' style='color: white;'>
+	<div class='col-2'></div>
+	<div class='col'>
+		<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'>
+			1.2 Clasificación de la discapacidad: física o motriz, sensorial, intelectual y psicosocial (basado en la CIF)
+		</h1>
+	</div>
+	<div class='col-2'></div>
+</div>
+
+<!---------Contenido html--------->
+<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+		<p>De acuerdo con la Confederación Española de Personas con Discapacidad Física y Orgánica (COCEMFE), en el año 2013 (citado por Olivares, 2018), afirma que se clasifican los siguientes tipos de discapacidad. Para leer la descripción de cada uno, haga clic en el signo de +
+		</p>
+	</div>
+	<div class='col-2'></div>
+</div>
+
+<!---------Iframe--------->
+<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+		<div style='text-align: center'>
+			<p style="color: red;"><strong>Material pendiente</strong></p>
+		</div>
+	</div>
+	<div class='col-3'></div>
+</div>
+<hr>
+		<br>
+
+<!---------Titulo--------->
+<div class='row' style='color: white;'>
+	<div class='col-2'></div>
+	<div class='col'>
+		<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+			1.3 Elementos conceptuales sobre educación inclusiva: docente inclusivo, aula inclusiva
+		</h1>
+	</div>
+	<div class='col-2'></div>
+</div>
+
+<!---------Instruccion--------->
+<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+		<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+				class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+				<path
+					d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+					id='path2' style='fill:#0055d4'></path>
+			</svg>
+			Para leer la descripción de cada elemento, seleccione el recuadro que dice “información”.
+
+			<br>
+		</p>
+	</div>
+	<div class='col-2'></div>
+</div>
+<!---------Iframe--------->
+<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+		<div style='text-align: center'>
+			<p style="color: red;"><strong>Material pendiente</strong></p>
+		</div>
+	</div>
+	<div class='col-3'></div>
+</div>
+<br>
+
+<!---------Instruccion--------->
+<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+		<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+				class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+				<path
+					d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+					id='path2' style='fill:#0055d4'></path>
+			</svg>
+			Para concluir este módulo, revisa el siguiente video. 
+
+			<br>
+		</p>
+	</div>
+	<div class='col-2'></div>
+</div>
+
+<!---------Iframe--------->
+<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+		<div style='text-align: center'>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/qGQwNYd7uIc?si=9TZm8dgXpdJ5oEFu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class='col-3'></div>
+</div>
+<br>
+
+
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center">
+				<a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+						<button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+							type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+						<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+							type="button" role="tab" aria-controls="nav-profile"
+							aria-selected="false">Complementarias</button>
+					</div>
+				</nav>
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+						tabindex="0">
+						<p class="fuente">Albarr&aacute;n, A. (2015). Algunas perspectivas y modelos de
+							comprensi&oacute;n de la discapacidad. <em>Revista Venezolana de An&aacute;lisis de
+								Coyuntura, 21</em>(2), 127-165. <a
+								href="https://www.redalyc.org/pdf/364/36448438007.pdf">https://www.redalyc.org/pdf/364/36448438007.pdf</a>
+						</p>
+						<p class="fuente">Alfonzo, I., Guill&eacute;n, D., y Escobar, E. (Coord.). (2017). Gu&iacute;a
+							para una escuela inclusiva. CRESUR. <a
+								href="https://cresur.edu.mx/cresur/app_guias/guias/4.pdf">https://cresur.edu.mx/cresur/app_guias/guias/4.pdf</a>
+						</p>
+						<p class="fuente">ANUIES. Asociaci&oacute;n Nacional de Universidades e Instituciones de
+							Educaci&oacute;n Superior. (2018). Visi&oacute;n y acci&oacute;n 2030. Propuesta de la
+							ANUIES para renovarla educaci&oacute;n superior en M&eacute;xico. ANUIES. <a
+								href="http://www.anuies.mx/media/docs/avisos/pdf/VISION_Y_ACCION_2030.pdf">http://www.anuies.mx/media/docs/avisos/pdf/VISION_Y_ACCION_2030.pdf</a>
+						</p>
+						<p class="fuente">ANUIES. (2012). Inclusi&oacute;n con responsabilidad social. Una nueva
+							generaci&oacute;n de pol&iacute;ticas de educaci&oacute;n superior. ANUIES. <a
+								href="https://crcs.anuies.mx/wp-content/uploads/2012/09/Inclusion-con-responsabilidad-social-ANUIES.pdf">https://crcs.anuies.mx/wp-content/uploads/2012/09/Inclusion-con-responsabilidad-social-ANUIES.pdf</a>
+						</p>
+						<p class="fuente">&Aacute;vila, A., y Esquivel, V. (2009). <em>Educaci&oacute;n Inclusiva en
+								Nuestras Aulas</em>. Coordinaci&oacute;n Educativa y Cultural Centroamericana,
+							CECC/SICA. <a
+								href="https://ceccsica.info/sites/default/files/content/Volumen_37.pdf">https://ceccsica.info/sites/default/files/content/Volumen_37.pdf</a>
+						</p>
+						<p class="fuente">Booth, T., Ainscow, M., y Kingston, D. (2006). <em>Index</em><em> para la
+								Inclusi&oacute;n. Desarrollo del juego, el aprendizaje y la participaci&oacute;n en
+								Educaci&oacute;n Infantil</em>. CSIE. <a
+								href="https://www.eenet.org.uk/resources/docs/Index%20EY%20Spanish.pdf">https://www.eenet.org.uk/resources/docs/Index%20EY%20Spanish.pdf</a>
+						</p>
+						<p class="fuente">Booth, T., y Ainscow, M. (2000). <em>&Iacute;NDICE DE INCLUSI&Oacute;N.
+								Desarrollando el aprendizaje y la participaci&oacute;n&nbsp; en las escuelas</em>.
+							UNESCO. <a
+								href="https://www.educacionespecial.sep.gob.mx/pdf/doctos/3internacionales/8indice_de_inclusion.pdf">https://www.educacionespecial.sep.gob.mx/pdf/doctos/3internacionales/8indice_de_inclusion.pdf</a>
+						</p>
+						<p class="fuente">Castillo, R. (2016). Docente inclusivo, aula inclusiva. <em>Revista nacional e
+								internacional de educaci&oacute;n inclusiva, 9</em>(2), 264-275. <a
+								href="https://revistaeducacioninclusiva.es/index.php/REI/article/view/64">https://revistaeducacioninclusiva.es/index.php/REI/article/view/64</a>
+						</p>
+						<p class="fuente">Comisi&oacute;n de Pol&iacute;tica Gubernamental en Materia de Derechos
+							Humanos. (s.f.) Glosario de T&eacute;rminos sobre Discapacidad. Gobierno Federal. <a
+								href="http://www.semar.gob.mx/derechos_humanos/glosario_terminos_discapacidad.pdf">http://www.semar.gob.mx/derechos_humanos/glosario_terminos_discapacidad.pdf</a>
+						</p>
+						<p class="fuente">CONAPRED. Consejo Nacional para Prevenir la Discriminaci&oacute;n. (2015).
+							Documento informativo. Por una educaci&oacute;n inclusiva y un cambio cultural. SEGOG. <a
+								href="https://www.conapred.org.mx/documentos_cedoc/EducacionInclusiva_2015_INACCSS.pdf">https://www.conapred.org.mx/documentos_cedoc/EducacionInclusiva_2015_INACCSS.pdf</a>
+						</p>
+						<p class="fuente">Documenta. (s.f.). <em>Apuntes para hablar de discapacidad y derechos
+								humanos</em>. Documenta A.C. <a
+								href="https://www.documenta.org.mx/wp-content/uploads/2020/04/Apuntes-para-hablar-de-discapacidad-y-ddhh.pdf">https://www.documenta.org.mx/wp-content/uploads/2020/04/Apuntes-para-hablar-de-discapacidad-y-ddhh.pdf</a>
+						</p>
+						<p class="fuente">DOF. Diario Oficial de la Federaci&oacute;n. (2022). <em>Constituci&oacute;n
+								Pol&iacute;tica de los Estados Unidos Mexicanos</em>. C&aacute;mara de Diputados del H.
+							Congreso de la Uni&oacute;n. <a
+								href="https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf">https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf</a>
+						</p>
+						<p class="fuente">DOF. (2021). <em>Ley General de Educaci&oacute;n Superior</em>. C&aacute;mara
+							de Diputados del H. Congreso de la Uni&oacute;n. <a
+								href="https://www.dof.gob.mx/nota_detalle.php?codigo=5616253&amp;fecha=20/04/2021">https://www.dof.gob.mx/nota_detalle.php?codigo=5616253&amp;fecha=20/04/2021#gsc.tab=0</a>
+						</p>
+						<p class="fuente">Fern&aacute;ndez, J. (2012). Capacidades y competencias docentes para la
+							inclusi&oacute;n del alumnado en la educaci&oacute;n superior. <em>Revista de la
+								Educaci&oacute;n Superior, 41,</em>(162), 9-24. <a
+								href="https://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S0185-27602012000200001">https://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S0185-27602012000200001</a>
+						</p>
+						<p class="fuente">Garc&iacute;a, M. (Coord). (2019). Lineamientos para la inclusi&oacute;n de
+							estudiantes con discapacidad. UV. <a
+								href="https://libros.uv.mx/index.php/UV/catalog/book/UC012">https://libros.uv.mx/index.php/UV/catalog/book/UC012</a>
+						</p>
+						<p class="fuente">Ju&aacute;rez, J., Comboni, S, y Garnique, F. (2010). De la educaci&oacute;n
+							especial a la educaci&oacute;n inclusiva. <em>Argumentos</em>, <em>23</em>(9), 41-83. <a
+								href="https://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S0187-57952010000100003">https://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S0187-57952010000100003</a>
+						</p>
+						<p class="fuente">Ministerio de Educaci&oacute;n de la Naci&oacute;n. (2019).
+							<em>Educaci&oacute;n Inclusiva. Fundamentos y Pr&aacute;cticas para la
+								Inclusi&oacute;n</em>. Aut&oacute;noma de Buenos Aires. <a
+								href="http://www.bnm.me.gov.ar/giga1/documentos/EL006578.pdf">http://www.bnm.me.gov.ar/giga1/documentos/EL006578.pdf</a>
+						</p>
+						<p class="fuente">Palacios, A. (2008). <em>El modelo social de discapacidad: or&iacute;genes,
+								caracterizaci&oacute;n y plasmaci&oacute;n en la Convenci&oacute;n Internacional sobre
+								los Derechos de las Personas con Discapacidad.</em> Cermi. <a
+								href="http://pronadis.mides.gub.uy/innovaportal/file/32232/1/el-modelo-social-de-discapacidad.pdf">http://pronadis.mides.gub.uy/innovaportal/file/32232/1/el-modelo-social-de-discapacidad.pdf</a>
+						</p>
+						<p class="fuente">SENADIS. (s.f). Medidas de Accesibilidad e Inclusi&oacute;n para personas con
+							discapacidad. Gobierno de Chile. <a
+								href="https://www.senadis.gob.cl/descarga/i/3408/documento">https://www.senadis.gob.cl/descarga/i/3408/documento</a>
+						</p>
+						<p class="fuente">Universidad Veracruzana. <em>Reglamento para la Inclusi&oacute;n de Personas
+								con Discapacidad</em>. UV. <a
+								href="https://www.uv.mx/veracruz/fcq/files/2021/08/Reglamento-Inclusion-Personas-Discapacidad-1.pdf">https://www.uv.mx/veracruz/fcq/files/2021/08/Reglamento-Inclusion-Personas-Discapacidad-1.pdf</a>
+						</p>
+						<p class="fuente">V&aacute;zquez-Barquero, J. (Coord). (2001). <em>Clasificaci&oacute;n
+								Internacional del Funcionamiento, de la Discapacidad y de la Salud.</em> OMS.
+							Organizaci&oacute;n Mundial de la Salud. <a
+								href="https://apps.who.int/iris/bitstream/handle/10665/43360/9241545445_spa.pdf">https://apps.who.int/iris/bitstream/handle/10665/43360/9241545445_spa.pdf</a>
+						</p>
+						<p class="fuente">Saldarriaga Concha. (2015). Convenci&oacute;n Naciones Unidas Derechos de Las
+							personas con Discapacidad. YouTube.&nbsp; <a
+								href="https://www.youtube.com/watch?v=qGQwNYd7uIc">https://www.youtube.com/watch?v=qGQwNYd7uIc</a>
+						</p>
+
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+						tabindex="0">
+
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								<p class="disclaimer"><sup>1</sup> Elaboración de la Célula de Desarrollo de
+									Experiencias Educativas de la Dirección General de
+									Desarrollo e Innovación Educativa (DGDAIE).</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body" id="cuerpoModal">
+					<div class="container-fluid">
+						<input type="hidden" id="numeroEvidencias" value="0">
+
+						<input type="hidden" id="evidenciaActual" value="1">
+						<div class="row">
+							<div class='col'>
+								<div class='evidencia' id='evidencia1' style='display: block;'>
+									<p><strong>Foro 1. La educación inclusiva.
+									</strong></p>
+									<p><strong>Descripci&oacute;n:</strong></p>
+<ol>
+<li>Retome los siguientes documentos:
+<ol style="list-style-type: lower-alpha;">
+<li>V&aacute;zquez-Barquero, J. (coord). (2001). <em>Clasificaci&oacute;n Internacional del Funcionamiento, de la Discapacidad y de la Salud.</em> OMS. Organizaci&oacute;n Mundial de la Salud. <u><a href="https://apps.who.int/iris/bitstream/handle/10665/43360/9241545445_spa.pdf">https://apps.who.int/iris/bitstream/handle/10665/43360/9241545445_spa.pdf</a></u></li>
+<li>Garc&iacute;a, M. (Coord). (2019). <em>Lineamientos para la inclusi&oacute;n de estudiantes con discapacidad</em>. UV. Universidad Veracruzana. <u><a href="https://libros.uv.mx/index.php/UV/catalog/view/UC012/1452/1426-1">https://libros.uv.mx/index.php/UV/catalog/view/UC012/1452/1426-1</a></u> (p&aacute;g. 13-22)</li>
+<li>Reglamento para las personas con discapacidad UV.</li>
+</ol>
+</li>
+<li>Identifique los antecedentes institucionales, definiciones y clasificaciones sobre discapacidad f&iacute;sica o motriz, sensorial, intelectual y psicosocial, anotando los elementos m&aacute;s importantes en sus diversos contextos.</li>
+<li>Al t&eacute;rmino de dicho an&aacute;lisis, elabore una lista en la que observe y comprenda los diversos contextos institucionales en materia de inclusi&oacute;n.</li>
+<li>Observe nuevamente el video titulado &ldquo;Convenci&oacute;n Naciones Unidas. Derechos de las personas con discapacidad&rdquo;, de la autora Saldarriaga Concha, publicado en el a&ntilde;o 2010. <u><a href="https://www.youtube.com/watch?v=qGQwNYd7uIc">https://www.youtube.com/watch?v=qGQwNYd7uIc</a></u></li>
+<li>En un archivo de <em>Word</em>, con letra Arial, a 12 puntos, responda de forma objetiva:
+<ol style="list-style-type: lower-alpha;">
+<li>De lo descrito en el video, &iquest;qu&eacute; es significativo para m&iacute;?</li>
+<li>&iquest;C&oacute;mo se relaciona la situaci&oacute;n presentada en el video con mi vida cotidiana y con mi formaci&oacute;n profesional?</li>
+<li>&iquest;Qu&eacute; motivos personales sobre el tema animan mi participaci&oacute;n en este curso?</li>
+<li>&iquest;Qu&eacute; motivos profesionales sobre el tema animan mi participaci&oacute;n en este curso?</li>
+</ol>
+</li>
+<li>Este foro ser&aacute; considerado para la evaluaci&oacute;n de desempe&ntilde;o.</li>
+<li>Su intervenci&oacute;n deber&aacute; apegarse estrictamente a las consideraciones descritas en las <u><a href="https://celuladgdaie.github.io/PROFA/EI_rediseno/documentos/reglasForo.pdf">Reglas para participar en los foros de discusi&oacute;n</a></u></li>
+</ol>
+
+									
+									<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+<ol>
+<li>Redacci&oacute;n y ortograf&iacute;a correctas.</li>
+<li>Retroalimentaci&oacute;n de la participaci&oacute;n de, al menos, dos compa&ntilde;eros.</li>
+</ol>
+<p><strong>Lineamiento de entrega:</strong>&nbsp;</p>
+<ol>
+<li>Integre su archivo en formato PDF al foro de participaci&oacute;n:&nbsp;La educaci&oacute;n inclusiva, en la plataforma&nbsp;EMINUS 4, a m&aacute;s tardar en la fecha establecida en&nbsp;el Calendario de entregas.</li>
+</ol>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Modal -->
+<div class="modal fade" id="Grupo1Mod1" tabindex="-1" aria-labelledby="Grupo1Mod1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Grupo1Mod1Label">
+                    Modelo médico
+
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>La discapacidad es causada por una enfermedad, trauma o condici&oacute;n de salud.</p>
+<p>Se requiere de cuidados m&eacute;dicos prestados en forma de tratamiento.</p>
+<p>Se considera primordial la atenci&oacute;n sanitaria y modificar-reformar la pol&iacute;tica.</p>
+<p>El modelo m&eacute;dico considera a la persona en situaci&oacute;n de discapacidad bajo las siguientes circunstancias.</p>
+<ol>
+<li>Es una enfermedad-tratamiento-cura.</li>
+<li>La persona debe adaptarse.</li>
+<li>La conducta de la persona es la que debe cambiar. El problema est&aacute; en la persona.</li>
+<li>Las causas del problema-resultado exclusivo del d&eacute;ficit funcional.</li>
+<li>Las personas est&aacute;n enfermas.</li>
+<li>Debe superar sus carencias y sus deficiencias.</li>
+<li>Deben adaptarse a la sociedad existente.</li>
+<li>Reciben prestaciones econ&oacute;micas o sociales-beneficencia.</li>
+</ol>
+<p>&nbsp;Las consecuencias derivadas de dicho modelo se extienden a la sociedad, provocando las siguientes:</p>
+<ol>
+<li>Apat&iacute;a, rechazo, desinter&eacute;s, discriminaci&oacute;n, exclusi&oacute;n, sobreprotecci&oacute;n, acoso, desconocimiento, ignorancia, etiquetaci&oacute;n, bajas expectativas.</li>
+<li>No reconocer lo que s&iacute; se puede hacer.</li>
+<li>Prejuicios, bajo significado y sentido de la educaci&oacute;n.</li>
+<li>Contradicci&oacute;n entre los normativos/ambig&uuml;edad.</li>
+<li>Creaci&oacute;n de espacios paralelos de atenci&oacute;n.</li>
+<li>Ausencia de un proyecto educativo con visi&oacute;n inclusiva.</li>
+<li>Divisi&oacute;n del trabajo entre la escuela regular y los especialistas.</li>
+<li>Desvinculaci&oacute;n con el mundo empresarial para el empleo.</li>
+<li>Separaci&oacute;n del alumnado en aulas especiales, priorizaci&oacute;n del trabajo individualizado en lugar del colaborativo.</li>
+</ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="Grupo1Mod2" tabindex="-1" aria-labelledby="Grupo1Mod2Label" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="Grupo1Mod2Label">
+						Modelo social
+
+					</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>Es un modelo ideol&oacute;gico enfocado en cambios sociales, basado en derechos humanos con responsabilidad colectiva para la participaci&oacute;n de las personas con discapacidad.</p>
+<p>Est&aacute; centrado en la integraci&oacute;n de la persona en la sociedad, creando condiciones por el contexto/entorno social.</p>
+<p>Se fundamenta en los derechos humanos (dignidad humana, libertad personal, igualdad).</p>
+<p>Est&aacute; basado en los principios de autonom&iacute;a personal, no discriminaci&oacute;n, accesibilidad universal, entre otros.</p>
+<p>En gran medida, las causas sociales dan origen a la discapacidad, propiciando la disminuci&oacute;n de barreras actitudinales, ideol&oacute;gicas, pol&iacute;ticas, de accesibilidad y de did&aacute;ctica (Covarrubias, 2019).</p>
+<p>La discapacidad es una construcci&oacute;n social, que impide que las personas con un d&eacute;ficit funcional se incluyan, decidan o dise&ntilde;en con autonom&iacute;a su propio plan de vida en igualdad de oportunidades.</p>
+<p>Su concepto evoluciona y resulta de la interacci&oacute;n entre las personas con un d&eacute;ficit funcional y las barreras debidas a la actitud y al entorno que evitan su participaci&oacute;n plena y efectiva en la sociedad, en igualdad de condiciones con las dem&aacute;s (CDPD, 2008).</p>
+<p>Por ello, este modelo conlleva a un an&aacute;lisis de lo que se puede hacer para mejorar el aprendizaje y la participaci&oacute;n de todo el alumnado, logrando as&iacute; la diversidad como fuente de enriquecimiento.</p>
+<p>Como gu&iacute;a para el trabajo de inclusi&oacute;n basado en el modelo social, se recomienda lo siguiente:</p>
+<ol>
+<li>Aprender a trabajar con ella (aceptaci&oacute;n y compromiso de las personas).</li>
+<li>Mejorar nuestra pr&aacute;ctica docente (saberes) y las pr&aacute;cticas laborales.</li>
+<li>Identificar y minimizar las barreras para el aprendizaje y la participaci&oacute;n.</li>
+<li>Maximizar los recursos que apoyan y permiten los procesos de aprendizaje y participaci&oacute;n (ser creativos y buscar alternativas).</li>
+<li>Curr&iacute;culo flexible y abierto, aprendizaje significativo, considerando que todos son diferentes.</li>
+<li>An&aacute;lisis del contexto educativo. Educaci&oacute;n com&uacute;n para todos, reconociendo y ajust&aacute;ndose a las necesidades de aprendizaje de cada uno de los alumnos.</li>
+<li>Equidad, entendida como igualdad de oportunidades.</li>
+<li>Calidad, que promueve el &eacute;xito para todos sus alumnos.</li>
+<li>Promover una educaci&oacute;n inclusiva, como el proceso que implica cambios en los enfoques, estructuras, estrategias, para el abordaje de las necesidades de todos, a trav&eacute;s de la creciente participaci&oacute;n en el aprendizaje.</li>
+</ol>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+
+	<script src="js/scriptFase.js"></script>
+	<script>
+		var buttons1 = document.querySelectorAll('#listaRecursos1' + ' button');
+		buttons1.forEach(function (button) {
+			button.addEventListener('click', function () {
+				buttons1.forEach(function (btn) {
+					btn.classList.remove('active');
+				});
+				button.classList.add('active');
+			});
+		});
+		var buttons2 = document.querySelectorAll('#listaRecursos2' + ' button');
+		buttons2.forEach(function (button) {
+			button.addEventListener('click', function () {
+				buttons2.forEach(function (btn) {
+					btn.classList.remove('active');
+				});
+				button.classList.add('active');
+			});
+		});
+		var buttons3 = document.querySelectorAll('#listaRecursos3' + ' button');
+		buttons3.forEach(function (button) {
+			button.addEventListener('click', function () {
+				buttons3.forEach(function (btn) {
+					btn.classList.remove('active');
+				});
+				button.classList.add('active');
+			});
+		});
+	</script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>

@@ -1,0 +1,1250 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Educación inclusiva y derechos humanos de personas con discapacidad  </p>
+
+				<p id="subtituloPresentacion">Módulo 3: Barreras para el aprendizaje y la participación </p>
+
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = '#' class='enlaceModulo'><strong>Módulo  1</strong></a>-->
+
+				<a href='modulo1.html' class='enlaceModulo enlaceActivo'><strong>Módulo 1</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Módulo  2</strong></a>-->
+
+				<a href='modulo2.html' class='enlaceModulo enlaceActivo'><strong>Módulo 2</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Módulo  3</strong></a>-->
+
+				<a href='#' class='enlaceModulo'><strong>Módulo 3</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Módulo  3</strong></a>-->
+
+				<a href='modulo4.html' class='enlaceModulo enlaceActivo'><strong>Módulo 4</strong></a>
+
+			</div>
+			<div class="col-1 align-self-center">
+				<span><strong>Zoom: </strong><button class="botonZoom" onclick="reducirLetra()"
+						type="button">A-</button><button class="botonZoom" onclick="aumentarLetra()"
+						type="button">A+</button></span>
+			</div>
+
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">Habilidades y estrategias didácticas para la docencia</p>
+
+				<p id="subtituloPresentacionMovil">Módulo 3: Las TICCAD para el aula</p>
+
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">Habilidades y estrategias didácticas para la docenciaScroll</p>
+
+					<p id="subtituloPresentacionScroll">Módulo 3: Las TICCAD para el aula</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Módulo 1</a>
+
+		<a href="fase2.html" class="w3-bar-item w3-button">Módulo 2</a>
+
+		<a href="fase3.html" class="w3-bar-item w3-button">Módulo 3</a>
+
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="carruselInformación" class="fondoAzul letraBlanca">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col align-self-center">
+					<br>
+					<p id="tituloCarruselInformacion" style="text-align: center; font-weight: bold;">
+						<i class="bi bi-info-circle-fill"></i> Situación problematizadora
+					</p>
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
+				</div>
+				<div class="col align-self-center">
+					<div id="contenidoSituacion">
+						<p>La creciente incorporaci&oacute;n de las Tecnolog&iacute;as de la Informaci&oacute;n,
+							Comunicaci&oacute;n, Conocimiento y Aprendizaje Digital (TICCAD) en el &aacute;mbito
+							educativo, ha brindado innumerables oportunidades para mejorar la ense&ntilde;anza y el
+							aprendizaje. No obstante, esta implementaci&oacute;n tambi&eacute;n ha dado lugar a
+							problem&aacute;ticas importantes que requieren una atenci&oacute;n diligente. Uno de los
+							principales obst&aacute;culos es la brecha digital, que deja a ciertos estudiantes y
+							comunidades en desventaja debido a la falta de acceso a dispositivos tecnol&oacute;gicos y
+							conectividad a Internet confiable. Esto crea disparidades en el aprendizaje, dejando a
+							sectores vulnerables excluidos de los beneficios de la educaci&oacute;n digital y
+							perpetuando desigualdades educativas. Otro aspecto preocupante es la tendencia hacia una
+							dependencia excesiva de las TICCAD en el proceso educativo. A medida que la
+							tecnolog&iacute;a avanza, existe el riesgo de sobrevalorar su papel en el aula, lo que puede
+							conducir a la marginalizaci&oacute;n de otras metodolog&iacute;as igualmente valiosas.</p>
+						<p>La saturación de contenido digital puede afectar negativamente la interacción social en el
+							entorno educativo y, en
+							consecuencia, reducir la capacidad de los estudiantes para desarrollar habilidades
+							esenciales como el pensamiento crítico y la
+							resolución de problemas. En este sentido, se vuelve crucial encontrar un equilibrio adecuado
+							entre la utilización de las
+							TICCAD y la promoción de enfoques educativos holísticos y diversos que fomenten un
+							aprendizaje completo y significativo.
+							Además, la seguridad y privacidad de los estudiantes se convierten en temas relevantes, ya
+							que la recopilación de datos
+							personales y la exposición de contenidos inapropiados pueden comprometer su integridad y
+							bienestar. Asimismo, la
+							dependencia de plataformas digitales deja a las instituciones educativas vulnerables a
+							amenazas cibernéticas, lo que
+							demanda la implementación de medidas sólidas de protección y salvaguardia de la información
+							sensible. Para aprovechar
+							plenamente los beneficios de las TICCAD y mitigar los posibles riesgos en el entorno
+							educativo, se hace esencial abordar de
+							forma proactiva estas problemáticas, promoviendo una integración responsable y segura de la
+							tecnología en los procesos
+							educativos.</p>
+
+					</div>
+					<div id="contenidoProposito" style="display: none;">
+						<table>
+							<tr>
+								<td>
+									<p>Que los participantes elaboren recursos didácticos, con
+										base en necesidades e intereses particulares, identificando
+										y delimitando las características necesarias para alcanzar
+										un objetivo de aprendizaje.</p>
+								</td>
+								<td style="width: 2em;"></td>
+								<td>
+									<img src="https://lumen.uv.mx/resources/files/images/2023/8/23/8555/3cadf5bd-87ae-463a-9cb9-4bd3bb07363d.jpg" alt="imagen pendiente" class="img-fluid" />
+									<p style="text-align: right;" id="referenciaImagen">[1]</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<br>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
+				</div>
+				<div class="col-1"></div>
+			</div>
+
+		</div>
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes del curso</p>
+		<!---------Titulo--------->
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+					3.1 Elaboración de recursos digitales
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>Teniendo
+						en cuenta el carácter proactivo de la creación de materiales, una de las
+						primeras tareas es aclarar los objetivos, contenidos, habilidades y criterios
+						de evaluación a abordar. La fuente original debe </span><span>ser el curso y debe estar
+						claramente seleccionada, de lo contrario, es posible que los resultados no se
+						puedan utilizar de inmediato en el aula.</span></p>
+
+
+
+				<p>A continuación, consulte la siguiente infografía que muestra los criterios para la elaboración y
+					selección de recursos.</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<div style="width: 100%;">
+						<div style="position: relative; padding-bottom: 151.67%; padding-top: 0; height: 0;"><iframe
+								title="PROFA- Habilidades y ED - F3- 3.1" frameborder="0" width="1200" height="1820"
+								style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+								src="https://view.genial.ly/64e8fdf1a761d40019a0564e" type="text/html"
+								allowscriptaccess="always" allowfullscreen="true" scrolling="yes"
+								allownetworking="all"></iframe> </div>
+					</div>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span style="font-weight:bold">Características
+						de los recursos digitales</span></p>
+
+
+
+				<p>Las características de los recursos digitales educativos incluyen interactividad, adaptabilidad,
+					accesibilidad, multimedia, actualización constante, colaboración y comunicación, así como
+					seguimiento y evaluación, y contribuyen a enriquecer el proceso de enseñanza y aprendizaje,
+					brindando a los estudiantes experiencias educativas más dinámicas y efectivas. A continuación, se
+					detallan estas características relevantes.</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Haga clic en cada pestaña para leer la descripción correspondiente.
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+
+
+		<!---------Accordion--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div class="accordion accordion-flush" id="accordionFlushExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne" aria-expanded="false"
+								aria-controls="flush-collapseOne">
+								Interactividad:
+							</button>
+						</h2>
+						<div id="flush-collapseOne" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<p>Los recursos digitales educativos permiten la interacción activa entre el estudiante y el contenido. A través de actividades interactivas, simulaciones, juegos educativos u otras herramientas, se fomenta la participación activa del estudiante, lo que facilita el aprendizaje y la comprensión de los conceptos.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTwo" aria-expanded="false"
+								aria-controls="flush-collapseTwo">
+								Adaptabilidad:
+
+							</button>
+						</h2>
+						<div id="flush-collapseTwo" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<p>Los recursos digitales educativos son flexibles y se pueden adaptar a las necesidades
+									individuales de los estudiantes. Pueden ofrecer diferentes niveles de dificultad,
+									proporcionar retroalimentación personalizada y adaptarse a diferentes estilos de
+									aprendizaje, lo que permite a cada estudiante progresar a su propio ritmo.
+								</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseThree" aria-expanded="false"
+								aria-controls="flush-collapseThree">
+								Accesibilidad:
+							</button>
+						</h2>
+						<div id="flush-collapseThree" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<p>Los recursos digitales educativos ofrecen la posibilidad de acceder al contenido en
+									cualquier momento y lugar, siempre que se tenga acceso a un dispositivo con conexión
+									a Internet. Esto permite el aprendizaje en entornos virtuales, eliminando las
+									barreras geográficas y horarias.
+								</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFour" aria-expanded="false"
+								aria-controls="flush-collapseFour">
+								Multimedia:
+							</button>
+						</h2>
+						<div id="flush-collapseFour" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<p>Los recursos digitales educativos integran diferentes formas de contenido multimedia,
+									como imágenes, videos, animaciones, audios y simulaciones. Estos elementos
+									multimedia enriquecen la experiencia de aprendizaje, capturan la atención de los
+									estudiantes y facilitan la comprensión de los conceptos.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFive" aria-expanded="false"
+								aria-controls="flush-collapseFive">
+								Actualización constante:
+							</button>
+						</h2>
+						<div id="flush-collapseFive" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<p>Los recursos digitales educativos pueden actualizarse fácilmente para reflejar los
+									avances y descubrimientos más recientes. Esto garantiza que el contenido esté
+									actualizado y relevante, brindando a los estudiantes acceso a información precisa y
+									actualizada.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseSix" aria-expanded="false"
+								aria-controls="flush-collapseSix">
+								Colaboración y comunicación:
+							</button>
+						</h2>
+						<div id="flush-collapseSix" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<p>Los recursos digitales educativos pueden promover la colaboración entre estudiantes,
+									permitiendo la participación en proyectos conjuntos, debates en línea y actividades
+									grupales. También facilitan la comunicación entre estudiantes y docentes, a través
+									de herramientas de mensajería y foros de discusión.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseSeven" aria-expanded="false"
+								aria-controls="flush-collapseSeven">
+								Seguimiento y evaluación:
+							</button>
+						</h2>
+						<div id="flush-collapseSeven" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<p>Los recursos digitales educativos suelen ofrecer herramientas para realizar un
+									seguimiento del progreso de los estudiantes y evaluar su desempeño. Estas
+									herramientas pueden incluir pruebas interactivas, cuestionarios y sistemas de
+									retroalimentación automatizada, lo que brinda a los docentes información valiosa
+									sobre el aprendizaje de los estudiantes.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+
+
+		<br>
+
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p>El diseño de objetos digitales de aprendizaje implica seguir un proceso estructurado que consta de
+					varias fases. A continuación, se describen las principales fases del diseño de objetos digitales de
+					aprendizaje, para conocerlas detalladamente, haga clic en el número correspondiente.</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<div style="width: 100%;">
+						<div style="position: relative; padding-bottom: 34.48%; padding-top: 0; height: 0;"><iframe
+								title="PROFA- Habilidades y ED - F3- 3.1_2" frameborder="0" width="1450" height="500"
+								style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+								src="https://view.genial.ly/64e904ab051bc50018435caa" type="text/html"
+								allowscriptaccess="always" allowfullscreen="true" scrolling="yes"
+								allownetworking="all"></iframe> </div>
+					</div>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>Estas
+						fases del diseño de objetos digitales de aprendizaje ofrecen una estructura
+						organizada para desarrollar recursos educativos digitales efectivos y alineados
+						con los objetivos de enseñanza y aprendizaje. Cada Módulo requiere atención y
+						planificación cuidadosas para garantizar la calidad y el éxito del objeto
+						digital en el proceso educativo (Peláez, 2008), (Romero y Barberá, 2007),
+						(Colazos y Echeverri, 2013) y (Prendes y Gutiérrez, 2010).</span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Para ampliar esta información, revise el siguiente documento que muestra información
+					sintetizada acerca de los objetos de aprendizaje, tipos, objetivo y principios.
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Boton--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<div style='text-align: center;'>
+					<a class='recursoExterno' href='https://padlet.com/embed/8eq3ssjzz7hl ' target='_blank'>
+						<img src='imagenes/descarga2.png' class='img-fluid' style='width: 10%;'>
+					</a>
+				</div>
+				<br>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Lea también el artículo <em>Objetos de aprendizaje, un estado del arte</em>, que nos brinda una visión
+					general del concepto de Objeto de Aprendizaje (OA), sus características e importancia en el mundo
+					actual.
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Boton--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<div style='text-align: center;'>
+					<a class='recursoExterno' href='https://www.redalyc.org/pdf/2654/265420116011.pdf ' target='_blank'>
+						<img src='imagenes/descarga2.png' class='img-fluid' style='width: 10%;'>
+					</a>
+				</div>
+				<br>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<!---------Titulo--------->
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'>
+					3.2 Situaciones de enseñanza
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>Al planificar situaciones de
+						aprendizaje, los docentes deben considerar una serie de preguntas fundamentales
+						que les ayuden a diseñar experiencias educativas significativas y efectivas.
+						Estas preguntas les permiten reflexionar sobre diversos aspectos y tomar
+						decisiones informadas para promover el aprendizaje de sus estudiantes. A
+						continuación, se presentan algunas de estas preguntas:</span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<ol>
+					<li><p><strong>&iquest;Cu&aacute;les son los objetivos de aprendizaje que se desean alcanzar?
+						</strong>Es importante definir claramente los objetivos espec&iacute;ficos que se espera que los
+						estudiantes logren al finalizar la situaci&oacute;n de aprendizaje.</p></li>
+					<li><p><strong>&iquest;Cu&aacute;les son las necesidades e intereses de los estudiantes? </strong>Es
+						esencial conocer las caracter&iacute;sticas individuales de los estudiantes y considerar sus
+						necesidades, intereses y estilos de aprendizaje para adaptar las actividades y recursos de
+						manera efectiva.</p></li>
+					<li><p><strong>&iquest;C&oacute;mo se relaciona la situaci&oacute;n de aprendizaje con el
+							curr&iacute;culo y los est&aacute;ndares educativos? </strong>Es necesario asegurarse de que
+						la planificaci&oacute;n est&eacute; alineada con el curr&iacute;culo establecido y los
+						est&aacute;ndares educativos relevantes.</p></li>
+					<li><p><strong>&iquest;Qu&eacute; estrategias de ense&ntilde;anza y recursos ser&aacute;n m&aacute;s
+							apropiados para alcanzar los objetivos de aprendizaje? </strong>Se deben seleccionar
+						estrategias pedag&oacute;gicas y recursos did&aacute;cticos que sean adecuados para abordar los
+						contenidos y promover el compromiso y la participaci&oacute;n de los estudiantes.</p></li>
+					<li><p><strong>&iquest;C&oacute;mo se fomentar&aacute; la participaci&oacute;n activa y el pensamiento
+							cr&iacute;tico de los estudiantes? </strong>Es importante dise&ntilde;ar actividades que
+						involucren a los estudiantes de manera activa, promoviendo el pensamiento cr&iacute;tico, la
+						colaboraci&oacute;n y la resoluci&oacute;n de problemas.</p></li>
+					<li><p><strong>&iquest;C&oacute;mo se evaluar&aacute; el aprendizaje de los estudiantes? </strong>Se
+						deben definir criterios claros de evaluaci&oacute;n y determinar las estrategias y herramientas
+						de evaluaci&oacute;n que se utilizar&aacute;n para recopilar evidencias del aprendizaje de los
+						estudiantes.</p></li>
+					<li><p><strong>&iquest;C&oacute;mo se brindar&aacute; retroalimentaci&oacute;n y apoyo a los
+							estudiantes? </strong>Es fundamental planificar c&oacute;mo se proporcionar&aacute;
+						retroalimentaci&oacute;n efectiva y apoyo individualizado a los estudiantes durante el proceso
+						de aprendizaje.</p></li>
+					<li><p><strong>&iquest;C&oacute;mo se fomentar&aacute; la transferencia y aplicaci&oacute;n de lo
+							aprendido a situaciones reales? </strong>Se deben considerar estrategias que promuevan la
+						transferencia de conocimientos y habilidades adquiridos a situaciones pr&aacute;cticas y
+						cotidianas.</p></li>
+				</ol>
+
+
+
+				<p><span>Estas preguntas orientan en el
+						proceso de planificación de situaciones de aprendizaje, asegurando que se
+						contemplen aspectos clave para promover un aprendizaje significativo y
+						relevante en el aula.</span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>En cuanto a la situación de
+						enseñanza, es necesario revisar si ésta ayuda a los estudiantes a
+						aprender el contenido relevante, si hay tiempo suficiente para ello o si es
+						necesario cambiar alguna tarea. Cuando los docentes presentan situaciones de
+						enseñanza, deben considerar todos los factores que permitirán a los
+						estudiantes adquirir nuevos conocimientos. </span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Para leer la descripción de los siguientes elementos, haga clic en cada uno de ellos.
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Accordion--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div class="accordion accordion-flush" id="accordionFlushExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne" aria-expanded="false"
+								aria-controls="flush-collapseOne">
+								Fomento de las competencias digitales de los estudiantes
+
+							</button>
+						</h2>
+						<div id="flush-collapseOne" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<p>Las competencias digitales permiten a los estudiantes adquirir habilidades y
+									conocimientos necesarios para desenvolverse de manera eficiente y responsable en un
+									entorno digital en constante evolución. Esto implica no sólo el dominio de
+									herramientas tecnológicas, sino también la capacidad de buscar, evaluar y utilizar
+									información de forma crítica, así como de comunicarse, colaborar y resolver
+									problemas en entornos virtuales. El fomento de las competencias digitales se logra a
+									través de experiencias educativas que integran el uso de tecnologías digitales en el
+									aula, promoviendo la creatividad, el pensamiento crítico, la alfabetización digital
+									y la ciudadanía digital. Al desarrollar estas competencias, los estudiantes se
+									preparan para enfrentar los desafíos y aprovechar las oportunidades que ofrece el
+									mundo digital en su vida académica, profesional y personal (Lévano, et al, 2019).
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTwo" aria-expanded="false"
+								aria-controls="flush-collapseTwo">
+								Recursos
+							</button>
+						</h2>
+						<div id="flush-collapseTwo" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<p>Las tecnologías educativas, como aplicaciones móviles, plataformas en línea,
+									herramientas de colaboración y software educativo, brindan a profesores y alumnos
+									acceso a una amplia gama de materiales interactivos y recursos multimedia. Estos
+									recursos digitales facilitan la exploración de contenidos, promueven el aprendizaje
+									autónomo y permiten una mayor personalización y adaptación a las necesidades
+									individuales de los estudiantes. Además, la era digital ofrece la posibilidad de
+									acceder a fuentes de información variadas, como bases de datos en línea, bibliotecas
+									digitales y recursos educativos abiertos, que enriquecen el proceso de enseñanza y
+									aprendizaje. Al aprovechar estos recursos, los educadores pueden crear experiencias
+									educativas más dinámicas, motivadoras y relevantes para sus alumnos (González, et
+									al, 2023) y (Paucar, et al, 2023).
+								</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseThree" aria-expanded="false"
+								aria-controls="flush-collapseThree">
+								Clases presenciales y no presenciales para profesores y alumnos
+							</button>
+						</h2>
+						<div id="flush-collapseThree" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<p>Las clases presenciales y no presenciales ofrecen diferentes enfoques de enseñanza y
+									aprendizaje para profesores y alumnos. En las clases presenciales, profesores y
+									alumnos interactúan físicamente en un entorno de aprendizaje, permitiendo una
+									comunicación directa, interacción inmediata y retroalimentación en tiempo real. Por
+									otro lado, las clases no presenciales se llevan a cabo a través de plataformas
+									digitales, brindando flexibilidad de tiempo y espacio, acceso a recursos digitales y
+									la posibilidad de aprendizaje autónomo. Ambos enfoques tienen ventajas y desafíos, y
+									la elección depende de los objetivos educativos y las necesidades de los estudiantes
+									(Aguilar, 2020) y (Cázares y Medina, 2023).
+								</p>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<hr>
+		<br>
+		<br>
+		<!---------Titulo--------->
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+					3.3 Herramientas digitales de evaluación
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>Recuerde</span><span> que
+						estas herramientas pueden variar en sus características y funcionalidades, por
+						lo que le recomiendo investigar y probar cada una de ellas para determinar cuál
+						se ajusta mejor a sus necesidades y las de sus estudiantes.</span></p>
+
+
+
+				<p>Las nuevas dinámicas de aprendizaje y enseñanza conducen a cambios en la interacción entre
+					docentes y alumnos. Actualmente, los maestros están buscando herramientas que les faciliten
+					verificar el progreso y las brechas de los estudiantes. A continuación, se presentan algunas de estas
+					herramientas (basadas en Educación 3.0, 2022 y Walss, 2021). Posicione el cursor en el círculo de su
+					preferencia y haga clic para consultar la información completa.</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<div style="width: 100%;">
+						<div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe
+								title="PROFA- Habilidades y ED - F3- 3.3" frameborder="0" width="1600" height="900"
+								style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+								src="https://view.genial.ly/64e904970cecbd00177885c7" type="text/html"
+								allowscriptaccess="always" allowfullscreen="true" scrolling="yes"
+								allownetworking="all"></iframe> </div>
+					</div>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>Ahora, analicemos la presentación </span><span style="font-style:italic">Herramientas
+						para diseñar OVAS, </span><span>la
+						cual nos muestra una lista de herramientas útiles para la creación de recursos
+						digitales de aprendizaje. </span></p>
+
+
+
+				<p><span>Para ello, haga clic en el
+						siguiente icono.</span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Boton--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<div style='text-align: center;'>
+					<a class='recursoExterno' href='https://prezi.com/5a44wvugtmet/herramientas-para-disenar-ovas/ '
+						target='_blank'>
+						<img src='imagenes/descarga2.png' class='img-fluid' style='width: 10%;'>
+					</a>
+				</div>
+				<br>
+			</div>
+			<div class='col-2'></div>
+		</div>
+
+
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center">
+				<a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+						<button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+							type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+						<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+							type="button" role="tab" aria-controls="nav-profile"
+							aria-selected="false">Complementarias</button>
+					</div>
+				</nav>
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+						tabindex="0">
+						<p class="fuente">Aguilar, F. d. R. (2020). Del aprendizaje en escenarios presenciales al
+							aprendizaje virtual en tiempos de pandemia. <em>Estudios Pedag&oacute;gicos, </em>46(3),
+							213&ndash;223. <a
+								href="https://doi.org/10.4067/s0718-07052020000300213">https://doi.org/10.4067/s0718-07052020000300213</a>
+						</p>
+						<p class="fuente">Barroso, J. M., Cabero, J., Garc&iacute;a, F., Calle, F. M., Gallego, O. &amp;
+							Casado, I. (2017) <em>Dise&ntilde;o, producci&oacute;n, evaluaci&oacute;n y
+								utilizaci&oacute;n educativa de la Realidad Aumentada. </em>Universidad de Sevilla.
+							Departamento de Did&aacute;ctica y Organizaci&oacute;n Educativa. Ministerio de
+							Econom&iacute;a y Competitividad (MINECO).</p>
+						<p class="fuente">Cabrera, B. T. &amp; V&aacute;squez, B. H. (2022). <em>Elaboraci&oacute;n de
+								recursos digitales para fortalecer conocimientos en el &aacute;rea de lengua extranjera
+								para el nivel A1. </em>Universidad Polit&eacute;cnica Salesiana Sede Cuenca, Edu.ec.
+							<a
+									href="https://dspace.ups.edu.ec/bitstream/123456789/22394/1/UPS-CT009710.pdf">https://dspace.ups.edu.ec/bitstream/123456789/22394/1/UPS-CT009710.pdf</a>&nbsp;
+						</p>
+						<p class="fuente">Callejas, M., Hern&aacute;ndez, E. J. &amp; Pinz&oacute;n, J. N. (2011).
+							<em>Objetos de aprendizaje, un estado del arte. </em>Redalyc.org. Recuperado el 17 de junio
+							de 2023, de <a
+									href="https://www.redalyc.org/pdf/2654/265420116011.pdf">https://www.redalyc.org/pdf/2654/265420116011.pdf</a>&nbsp;
+						</p>
+						<p class="fuente">C&aacute;zares, G. A. &amp; Medina-Mor&oacute;n, E. M. (2023).
+							Ense&ntilde;anza Presencial vs Virtual en el &Aacute;mbito Universitario. <em>Revista
+								Docentes 2.0, </em>16(1), 109-118. <a
+								href="https://doi.org/10.37843/rted.v16i1.362">https://doi.org/10.37843/rted.v16i1.362</a>
+						</p>
+						<p class="fuente">Coll, C., Mauri, T. y Onrubia, J. (2008). An&aacute;lisis de los usos reales
+							de las tic en contextos educativos formales: una aproximaci&oacute;n sociocultural.
+							<em>Revista Electr&oacute;nica de Investigaci&oacute;n Educativa, </em>10 (1). <a
+								href="http://redie.uabc.mx/vol10no1/contenido-coll2.html">http://redie.uabc.mx/vol10no1/contenido-coll2.html</a>
+						</p>
+						<p class="fuente">Collazos, C. A. &amp; Echeverri, A. L. (2013). Dise&ntilde;o y
+							evaluaci&oacute;n de objetos virtuales de aprendizaje para la educaci&oacute;n superior.
+							<em>RIED. Revista Iberoamericana de Educaci&oacute;n a Distancia</em>, 16(2), 115-135.</p>
+						<p class="fuente">Dianta, A. V. (2012). Dise&ntilde;o de Recursos Digitales de Aprendizaje.
+							E-historia.cl. <a
+									href="https://www.e-historia.cl/e-historia/diseno-de-recursos-digitales-de-aprendizaje/">https://www.e-historia.cl/e-historia/diseno-de-recursos-digitales-de-aprendizaje/</a>&nbsp;
+						</p>
+						<p class="fuente">Educaci&oacute;n 3.0 (2022, junio 1). <em>25 herramientas para evaluar a los
+								estudiantes. </em>Educaciontrespuntocero.com. <a
+								href="https://www.educaciontrespuntocero.com/recursos/herramientas-evaluar-estudiantes/">https://www.educaciontrespuntocero.com/recursos/herramientas-evaluar-estudiantes/</a>
+						</p>
+						<p class="fuente">Esteban, M. (2002). El dise&ntilde;o de entornos de aprendizaje
+							constructivista. <em>Revista de Educaci&oacute;n a Distancia (RED), </em>2(6). <a
+								href="https://revistas.um.es/red/article/view/25321">https://revistas.um.es/red/article/view/25321</a>
+						</p>
+						<p class="fuente">Gardu&ntilde;o, E. (2016). <em>Gesti&oacute;n de objetos digitales de
+								aprendizaje para </em><em>blended</em> <em>learning</em><em> y competencias docentes.
+							</em><em>ResearchGate</em><em>. </em><a
+									href="https://www.researchgate.net/publication/296059166_GESTION_DE_OBJETOS_DIGITALES_DE_APRENDIZAJE_PARA_BLENDED_LEARNING_Y_COMPETENCIAS_DOCENTES_EN_LA_UAGro">https://www.researchgate.net/publication/296059166_GESTION_DE_OBJETOS_DIGITALES_DE_APRENDIZAJE_PARA_BLENDED_LEARNING_Y_COMPETENCIAS_DOCENTES_EN_LA_UAGro</a>&nbsp;
+						</p>
+						<p class="fuente">Gonz&aacute;lez, P. &amp; Mes&iacute;as, J. M. (2023). <em>La realidad virtual
+								para la ense&ntilde;anza y aprendizaje de la perspectiva en el dibujo. </em>Edutec, 83,
+							188-207. <a
+								href="https://doi.org/10.21556/edutec.2023.83.2681">https://doi.org/10.21556/edutec.2023.83.2681</a>&nbsp;
+						</p>
+						<p class="fuente">Guzm&aacute;n, D. Y. (2020). <em>Caso pr&aacute;ctico 3. Investigaci&oacute;n
+								cualitativa. </em>Coursehero.com. <a
+									href="https://www.coursehero.com/file/78077049/CASO-PR%C3%81CTICO-3-INVESTIGACION-CUALITATIVApdf/">https://www.coursehero.com/file/78077049/CASO-PR%C3%81CTICO-3-INVESTIGACION-CUALITATIVApdf/</a>&nbsp;&nbsp;
+						</p>
+						<p class="fuente">Hern&aacute;ndez, R., Fern&aacute;ndez, C. &amp; Baptista, P. (2014).
+							<em>Metodolog&iacute;a de la investigaci&oacute;n. </em>McGraw-Hill Education.</p>
+						<p class="fuente">L&eacute;vano-Francia, L., S&aacute;nchez, S., Guill&eacute;n-Aparicio, P.,
+							Tello-Cabello, S., Herrera-Paico, N. &amp; Collantes-Inga, Z. (2019). Competencias digitales
+							y educaci&oacute;n. <em>Prop&oacute;sitos y</em> <em>Representaciones</em>, 7(2), 569-588.
+							doi:http://dx.doi.org/10.20511/pyr2019.v7n2.32</p>
+						<p class="fuente">Molina, H. (2020). <em>Dise&ntilde;o de recursos digitales. </em>Edu.co. <a
+								href="https://ieciudaddeasis.edu.co/organizarclase/diseo_de_recursos_digitales.html">https://ieciudaddeasis.edu.co/organizarclase/diseo_de_recursos_digitales.html</a>
+						</p>
+						<p class="fuente">Morales, L. Y., Guti&eacute;rrez, L. &amp; Ariza. L. M. (2016). Gu&iacute;a
+							para el dise&ntilde;o de objetos virtuales de aprendizaje (OVA). Aplicaci&oacute;n al
+							proceso ense&ntilde;anza-aprendizaje del &aacute;rea bajo la curva de c&aacute;lculo
+							integral. <em>Revista Cient&iacute;fica General Jos&eacute; Mar&iacute;a C&oacute;rdova,
+							</em>14(18), 127-147. <a
+								href="https://www.redalyc.org/pdf/4762/476255360008.pdf">https://www.redalyc.org/pdf/4762/476255360008.pdf</a>
+						</p>
+						<p class="fuente">Paucar, V. P., Chalco, C. L., Mina, B. P. &amp; Arizala, R. E. (2023). Impacto
+							de las plataformas digitales en el aprendizaje colaborativo: an&aacute;lisis de casos y
+							pr&aacute;cticas exitosas. <em>Ciencia Latina Revista Cient&iacute;fica Multidisciplinar,
+							</em>7(3), 1848&ndash;1865. <a
+								href="https://doi.org/10.37811/cl_rcm.v7i3.6316">https://doi.org/10.37811/cl_rcm.v7i3.6316</a>
+						</p>
+						<p class="fuente">Pel&aacute;ez, A. F. (2008). Objetos de aprendizaje, una propuesta para su
+							dise&ntilde;o desde una perspectiva constructivista social. <em>Revista Q, </em>5(1), 39-49.
+							<a
+								href="https://repository.upb.edu.co/handle/20.500.11912/6521">https://repository.upb.edu.co/handle/20.500.11912/6521</a>
+						</p>
+						<p class="fuente">Posada, F. (2012). <em>Dise&ntilde;o de recursos digitales educativos.
+							</em>Canaltic.com. <a
+								href="https://canaltic.com/blog/?p=889">https://canaltic.com/blog/?p=889</a></p>
+						<p class="fuente">Prendes, M. P. &amp; Guti&eacute;rrez, I. (2010). <em>Dise&ntilde;o de objetos
+								virtuales de aprendizaje</em>. Editorial UOC.</p>
+						<p class="fuente">Ram&iacute;rez, Y. (2021). <em>Componentes de </em><em>los red</em><em> y sus
+								posibilidades de uso. </em>Studocu. <a
+									href="https://www.studocu.com/co/document/universidad-de-santander/recursos-educativos-digitales/entregable-1/13909793">https://www.studocu.com/co/document/universidad-de-santander/recursos-educativos-digitales/entregable-1/13909793</a>&nbsp;
+						</p>
+						<p class="fuente">Romero, M. &amp; Barber&aacute;, E. (2007). <em>Dise&ntilde;o y desarrollo de
+								materiales multimedia para la ense&ntilde;anza. </em>Editorial UOC.</p>
+						<p class="fuente">Universidad Polit&eacute;cnica de Valencia (2007). <em>Plan de acciones para
+								la Convergencia Europea (PACE). Los objetos de aprendizaje como recurso para la docencia
+								universitaria: criterios para su elaboraci&oacute;n. </em>Aqu.cat. <a
+									href="https://www.aqu.cat/doc/doc_22391979_1.pdf">https://www.aqu.cat/doc/doc_22391979_1.pdf</a>
+						</p>
+						<p class="fuente">Walss, M. E. (2021). <em>Diez herramientas digitales para facilitar la
+								evaluaci&oacute;n formativa. </em>Tecnolog&iacute;a, Ciencia y Educaci&oacute;n. <a
+								href="https://www.tecnologia-ciencia-educacion.com/index.php/TCE/article/view/575">https://www.tecnologia-ciencia-educacion.com/index.php/TCE/article/view/575</a>
+						</p>
+						<p class="fuente">Wiggins, G. &amp; McTighe, J. (2005). <em>Understanding</em> <em>by</em>
+							<em>design</em><em>. </em>Pearson.</p>
+
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+						tabindex="0">
+						<p class="fuente">Gaceta CCH/UNAM. (2020). <em>Recursos digitales de apoyo al aprendizaje.
+							</em>Gaceta.cch.unam.mx. <a
+								href="https://gaceta.cch.unam.mx/sites/default/files/2020-10/recursodigitales_ok2.pdf">https://gaceta.cch.unam.mx/sites/default/files/2020-10/recursodigitales_ok2.pdf</a>&nbsp;
+						</p>
+						<p class="fuente">Guerrero, M. F. (2020). <em>Caracter&iacute;sticas e importancia de los
+								Materiales educativos digitales</em>. Mind Map. Mindomo.com. <a
+									href="https://www.mindomo.com/es/mindmap/caracteristicas-e-importantancia-de-los-materiales-educativos-digitales-39a40ab7e779426499d0a157fb00fd33">https://www.mindomo.com/es/mindmap/caracteristicas-e-importantancia-de-los-materiales-educativos-digitales-39a40ab7e779426499d0a157fb00fd33</a>
+						</p>
+						<p class="fuente">Guzm&aacute;n, M. A., Herrera, C. N., Gait&aacute;n, J. &amp; Barboza, E.
+							(2020). <em>Gu&iacute;a b&aacute;sica de </em><em>Educaplay</em><em>. </em>Ministerio de
+							Educaci&oacute;n P&uacute;blica, Direcci&oacute;n de Recursos Tecnol&oacute;gicos en
+							Educaci&oacute;n. Mep.go.cr. <a
+									href="https://www.mep.go.cr/sites/default/files/guia-educaplay.pdf">https://www.mep.go.cr/sites/default/files/guia-educaplay.pdf</a>
+						</p>
+						<p class="fuente">Herranz, G. (2021). <em>Manual </em><em>Genially</em><em>.
+							</em>Sagradafamiliasiervas.es. <a
+									href="https://sagradafamiliasiervas.es/wp-content/uploads/Manual-Genially.pdf">https://sagradafamiliasiervas.es/wp-content/uploads/Manual-Genially.pdf</a>
+						</p>
+						<p class="fuente">Mar&iacute;n, Y. (2014). <em>Herramientas para dise&ntilde;ar ovas.
+							</em>Prezi.com. <a
+									href="https://prezi.com/5a44wvugtmet/herramientas-para-disenar-ovas/">https://prezi.com/5a44wvugtmet/herramientas-para-disenar-ovas/</a>
+						</p>
+						<p class="fuente">Pina, J. A. (2019). <em>Tutorial Canva. </em>Pinae.es. <a
+									href="https://www.pinae.es/wp-content/uploads/2019/12/Tutorial-Canva-Castellano.pdf">https://www.pinae.es/wp-content/uploads/2019/12/Tutorial-Canva-Castellano.pdf</a>
+						</p>
+						<p class="fuente">Rodr&iacute;guez, M. A. (2012, agosto 3). <em>Recursos
+							</em><em>interactivos</em><em>.</em> Issuu.com. <a
+									href="https://issuu.com/chitzy/docs/recursos_interactivos/7">https://issuu.com/chitzy/docs/recursos_interactivos/7</a>
+						</p>
+						<p class="fuente">Romero, S. (2020). <em>Gu&iacute;a de uso de la herramienta de dise&ntilde;o
+								gr&aacute;fico Canva. </em>Bibliosaude.sergas.gal. <a
+									href="https://bibliosaude.sergas.gal/DXerais/864/GUIA_CANVA.pdf">https://bibliosaude.sergas.gal/DXerais/864/GUIA_CANVA.pdf</a>
+						</p>
+						<p class="fuente">Universidad del Pacifico (2020). <em>Gu&iacute;a de Kahoot.
+							</em>Edutic.up.edu.pe. <a
+									href="https://edutic.up.edu.pe/docs/guia_kahoot.pdf">https://edutic.up.edu.pe/docs/guia_kahoot.pdf</a>
+						</p>
+						<p class="fuente">Universidad del Pacifico. (2020). <em>Gu&iacute;a de Mentimeter.
+							</em>Edutic.up.edu.pe. <a
+									href="https://edutic.up.edu.pe/docs/guia-mentimeter.pdf">https://edutic.up.edu.pe/docs/guia-mentimeter.pdf</a>
+						</p>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								<p class="disclaimer"><sup>1</sup> Elaboración de la Célula de Desarrollo de
+									Experiencias Educativas de la Dirección General de
+									Desarrollo e Innovación Educativa (DGDAIE).</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 id="encabezadoUV" style="text-align: right; background-color: #0D47A1; color: white;">Universidad
+						Veracruzana</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body" id="cuerpoModal">
+					<div class="container-fluid">
+						<input type="hidden" id="numeroEvidencias" value="0">
+
+						<input type="hidden" id="evidenciaActual" value="1">
+						<div class="row">
+							<div class='col'>
+								<div class='evidencia' id='evidencia1' style='display: block;'></div>
+							</div>
+							<p><strong>Actividad 2. </strong><strong>Elaboraci&oacute;n de recursos
+									did&aacute;cticos</strong></p>
+							<p><strong>Descripci&oacute;n: </strong></p>
+							<ol>
+								<li>Despu&eacute;s de revisar el contenido de esta fase, elabore un recurso did&aacute;ctico
+									acorde a sus necesidades acad&eacute;micas, que pueda usar en la facilitaci&oacute;n de
+									una EE. Puede utilizar las siguientes herramientas o cualquier otra que sea de su
+									preferencia:
+									<ol type="a">
+										<li><strong>Canva</strong><strong>. </strong>Es una herramienta gratuita de
+											dise&ntilde;o gr&aacute;fico en l&iacute;nea. Puede usarla para crear publicaciones
+											en redes sociales, presentaciones, carteles, videos e infograf&iacute;as. Tutorial
+											en: <a
+													href="https://bibliosaude.sergas.gal/DXerais/864/GUIA_CANVA.pdf">https://bibliosaude.sergas.gal/DXerais/864/GUIA_CANVA.pdf</a>
+										</li>
+										<li><strong>Educaplay</strong><strong>. </strong>Es una plataforma basada en la web que
+											permite a los docentes crear diferentes tipos de actividades educativas multimedia,
+											utilizando diferentes escenarios o actividades como crucigramas, sopas de letras,
+											adivinanzas, dictado, etc. Tutorial en: <a
+													href="https://www.mep.go.cr/sites/default/files/guia-educaplay.pdf">https://www.mep.go.cr/sites/default/files/guia-educaplay.pdf</a>
+										</li>
+										<li><strong>Genially. </strong>Es una herramienta en l&iacute;nea para crear
+											r&aacute;pida y f&aacute;cilmente una variedad de contenido visual e interactivo
+											para uso individual o en equipo.&nbsp; Tutorial en: <a
+													href="https://sagradafamiliasiervas.es/wp-content/uploads/Manual-Genially.pdf">https://sagradafamiliasiervas.es/wp-content/uploads/Manual-Genially.pdf</a>
+										</li>
+										<li><strong>Kahoot</strong><strong>. </strong>Es una plataforma gratuita que permite
+											crear cuestionarios de evaluaci&oacute;n. Es una herramienta para que los maestros
+											creen competiciones en el aula para aprender o fortalecer el aprendizaje, y en donde
+											participan los estudiantes. Tutorial en: <a
+													href="https://edutic.up.edu.pe/docs/guia_kahoot.pdf">https://edutic.up.edu.pe/docs/guia_kahoot.pdf</a>
+										</li>
+										<li><strong>Mentimeter</strong><strong>. </strong>Es una aplicaci&oacute;n muy completa
+											con varias opciones de trabajo para generar <em>feedback</em> instant&aacute;neo a
+											profesores y alumnos. Tutorial en: <a
+													href="https://edutic.up.edu.pe/docs/guia-mentimeter.pdf">https://edutic.up.edu.pe/docs/guia-mentimeter.pdf</a>
+										</li>
+									</ol>
+								</li>
+								<li>En un archivo de texto realizará el proceso de presentación de su recurso, en el que determinará
+									el cómo lo hará, el uso del recurso en función del alcance de los saberes que conforman su
+									experiencia educativa e integrará el enlace para el mismo.</li>
+							</ol>
+							
+							
+							
+							<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+							<ol>
+								<li>Apego a las instrucciones para la elaboraci&oacute;n de la actividad.</li>
+								<li>Redacci&oacute;n y ortograf&iacute;a correctas.</li>
+								<li>Coherencia y organizaci&oacute;n de ideas principales.</li>
+								<li>Organización y representación adecuada de la información.</li>
+								<li><a href="documentos/Rubricaf3.docx" target="_blank">R&uacute;brica.</a></li>
+								<li>Citaci&oacute;n con base en el <em>Manual de Publicaciones de la APA, 7&ordf;.
+										ed</em>.</li>
+							</ol>
+							<p><strong>Lineamiento de entrega:</strong></p>
+							<ol>
+								<li>El documento entregable deber&aacute; integrar los siguientes apartados.
+									<ol style="list-style-type: lower-alpha;">
+										<li>Nombre del recurso.</li>
+										<li>Descripci&oacute;n breve y su importancia o utilidad para el estudiante.
+										</li>
+										<li>Objetivos o competencias que se desean alcanzar.</li>
+										<li>Actividades por realizar con instrucciones precisas y detalladas.</li>
+										<li>Plataforma en la cual se realiz&oacute; el recurso.</li>
+										<li>Fuentes de informaci&oacute;n.</li>
+									</ol>
+								</li>
+								<li>Titule el archivo bajo la siguiente nomenclatura:
+									&nbsp;Actx_PrimerApellidoyPrimerNombre. Por
+									ejemplo:&nbsp;Act2_VillanuevaTeresa&nbsp;</li>
+								<li>Suba su evidencia al apartado <strong><em>Actividad 2</em></strong><em>,</em> en la
+									plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en el
+									<strong>Calendario</strong> de entregas.
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>

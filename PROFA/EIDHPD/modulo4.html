@@ -1,0 +1,1194 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 id="encabezadoUV" style="text-align: right; background-color: #0D47A1; color: white;">Universidad
+			Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Educación inclusiva y derechos humanos de personas con discapacidad  </p>
+
+				<p id="subtituloPresentacion">Módulo 4: Estrategias de inclusión para personas en situación de discapacidad</p>
+
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = '#' class='enlaceModulo'><strong>Módulo  1</strong></a>-->
+
+				<a href='modulo1.html' class='enlaceModulo enlaceActivo'><strong>Módulo 1</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Módulo  2</strong></a>-->
+
+				<a href='modulo2.html' class='enlaceModulo enlaceActivo'><strong>Módulo 2</strong></a>
+
+			</div>
+
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Módulo  3</strong></a>-->
+
+				<a href='modulo3.html' class='enlaceModulo enlaceActivo'><strong>Módulo 3</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Módulo  3</strong></a>-->
+
+				<a href='#' class='enlaceModulo'><strong>Módulo 4</strong></a>
+
+			</div>
+			<div class="col-1 align-self-center">
+				<span><strong>Zoom: </strong><button class="botonZoom" onclick="reducirLetra()"
+						type="button">A-</button><button class="botonZoom" onclick="aumentarLetra()"
+						type="button">A+</button></span>
+			</div>
+
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">Habilidades y estrategias didácticas para la docencia</p>
+
+				<p id="subtituloPresentacionMovil">Módulo 3: Las TIC CAD para el aula</p>
+
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">Habilidades y estrategias didácticas para la docenciaScroll</p>
+
+					<p id="subtituloPresentacionScroll">Módulo 3: Las TIC CAD para el aula</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Módulo 1</a>
+
+		<a href="fase2.html" class="w3-bar-item w3-button">Módulo 2</a>
+
+		<a href="fase3.html" class="w3-bar-item w3-button">Módulo 3</a>
+
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="carruselInformación" class="fondoAzul letraBlanca">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col align-self-center">
+					<br>
+					<p id="tituloCarruselInformacion" style="text-align: center; font-weight: bold;">
+						<i class="bi bi-info-circle-fill"></i> Situación problematizadora
+					</p>
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
+				</div>
+				<div class="col align-self-center">
+					<div id="contenidoSituacion">
+						<p>La planificaci&oacute;n hace que el proceso de aprendizaje sea m&aacute;s eficiente,
+							fortalece la calidad, las oportunidades educativas y desarrolla habilidades esenciales. Por
+							este motivo, es importante realizar una adecuada planificaci&oacute;n para poder impartir
+							una formaci&oacute;n eficaz y eficiente, de forma que los alumnos puedan aprender
+							f&aacute;cilmente y aplicar en la pr&aacute;ctica lo aprendido. No es un proceso simple e
+							involucra varios procesos y estrategias que contribuyen al desarrollo y difusi&oacute;n de
+							conocimiento efectivo y de alta calidad.</p>
+						<p>Para desarrollar una planificaci&oacute;n adecuada a los nuevos entornos y din&aacute;micas
+							de los procesos de ense&ntilde;anza y aprendizaje se deben tener en cuenta las
+							interacciones, los roles de los docentes y de los estudiantes claros y definidos. El
+							objetivo de la planeaci&oacute;n es proporcionarles un entorno ideal para desarrollar y
+							aplicar sus conocimientos, habilidades, actitudes y valores para hacer frente a situaciones
+							problem&aacute;ticas.</p>
+						<p>La planificaci&oacute;n surge de la necesidad de organizar coherentemente lo que se quiere
+							lograr con los alumnos en las aulas. Esto incluye decidir qu&eacute; estudiar, por
+							qu&eacute; estudiar y cu&aacute;l es la mejor manera de lograrlo. Determinar el contenido,
+							alcance y profundidad conceptual, procedimental y actitudinal a abordar. Del mismo modo,
+							conocer y ser conscientes de que la finalidad de nuestra actividad es &uacute;til para que
+							los estudiantes se encuentren con nuevos aprendizajes y para ello es imprescindible
+							reconocer alg&uacute;n tipo de motivaci&oacute;n o est&iacute;mulo y, por &uacute;ltimo, la
+							forma m&aacute;s adecuada de trabajar con ellos es pensar en actividades que puedan
+							convertir el conocimiento en algo cercano e interesante.</p>
+					</div>
+					<div id="contenidoProposito" style="display: none;">
+
+
+
+						<table>
+							<tr>
+								<td>
+									<p>Que los participantes consoliden sus habilidades para el diseño de una planeación
+										didáctica acorde al ambiente educativo donde se desempeñan de manera presencial
+										o virtual, apoyándose de estrategias, herramientas y recursos digitales de
+										aprendizaje.
+									</p>
+								</td>
+								<td style="width: 2em;"></td>
+								<td>
+									<img src="https://lumen.uv.mx/resources/files/images/2023/9/25/8851/acc8e724-bda9-48eb-bdd9-3dfd9bad48f0.jpg" alt="imagen pendiente" class="img-fluid" />
+									<p style="text-align: right;" id="referenciaImagen">[1]</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<br>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
+				</div>
+				<div class="col-1"></div>
+			</div>
+
+		</div>
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes del curso</p>
+		<!---------Titulo--------->
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+					4.1 Planeación desde el enfoque tecnocrático
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>La
+						planeación desde el enfoque tecnocrático se caracteriza por su énfasis en el
+						uso de medios de comunicación y tecnología de aprendizaje como herramientas
+						fundamentales en el proceso educativo. Este enfoque se basa en una sólida
+						corriente que abarca conceptos relacionados con la educación, las interacciones
+						entre maestros y alumnos, la evaluación y certificación educativa, así como la
+						función social de la educación</span><span>.</span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Para profundizar más acerca de este tema, revise la siguiente presentación sobre el enfoque tecnocrático en la planeación. Para ello, haga clic en la flecha de la derecha.
+
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<div style="width: 100%;">
+						<div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe
+								title="PROFA- Habilidades y ED - F4 - 4.1" frameborder="0" width="1200" height="675"
+								style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+								src="https://view.genial.ly/64ee1db1952d4100180eba15" type="text/html"
+								allowscriptaccess="always" allowfullscreen="true" scrolling="yes"
+								allownetworking="all"></iframe> </div>
+					</div>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Analicemos ahora, el video <em>Enfoque de la planeación didáctica tecnocrática</em>, el cual nos presenta de
+					manera detallada el enfoque tecnocrático, sus características y los roles del docente y el alumno.
+
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<iframe width='560' height='315' src='https://www.youtube.com/embed/8kvHHrbbahc'
+						title='YouTube video player' frameborder='0'
+						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+						allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<hr>
+		<br>
+		<br>
+		<!---------Titulo--------->
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'>
+					4.2 Planeación desde el enfoque constructivista
+
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p>La planeación desde el enfoque constructivista es un proceso esencial y transformador en el ámbito
+					educativo, que se fundamenta en la idea de que los estudiantes construyen su propio conocimiento a
+					través de interacciones significativas con el entorno y los demás. En este enfoque, el papel del docente
+					no se limita a transmitir información de manera pasiva, sino que se convierte en un facilitador del
+					aprendizaje, que guía y acompaña a los estudiantes en su proceso de construcción de conocimiento. La
+					planeación constructivista se basa en la comprensión profunda de los intereses, experiencias y
+					conocimientos previos de los estudiantes. Es un proceso que busca crear ambientes de aprendizaje
+					significativos y desafiantes, en donde los estudiantes pueden relacionar los nuevos conceptos con sus
+					experiencias personales y construir así una comprensión más profunda y duradera.</p>
+
+
+
+				<p>En este enfoque, la influencia pedagógica se entiende como ayuda destinada a mejorar los procesos
+					asociados a las actividades constructivas de los estudiantes. Los docentes utilizan estrategias y recursos
+					que promueven la reflexión, el cuestionamiento y la participación activa de los alumnos en su propio
+					aprendizaje.</p>
+
+
+
+				<p>La visión constructivista del proceso de enseñanza en el aula identifica tres fuentes principales de
+					influencia pedagógica, mismas que se muestran a continuación.</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<div style="width: 100%;">
+						<div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe
+								title="PROFA- Habilidades y ED - F4 - 4.2" frameborder="0" width="1200" height="675"
+								style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+								src="https://view.genial.ly/64ee330c42df0300115c1a3e" type="text/html"
+								allowscriptaccess="always" allowfullscreen="true" scrolling="yes"
+								allownetworking="all"></iframe> </div>
+					</div>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Para conocer más acerca de la planeación constructivista, haga clic en la flecha de la derecha.					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Carrusel--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+				<a class="flechaCarrusel" onclick="regresarDiapositivaRecurso('carr1')">&#10094;</a>
+			</div>
+			<div class='col' id="carr1col" style="background-color: #5cd6b1; border-radius: 25px; padding: 1em;">
+				<input id="carr1" value="3" type="hidden">
+				<input id="carr1Act" value="1" type="hidden">
+				<div id="carr1dia1" style="display: block;">
+					<table>
+						<tr>
+							<td>
+								<img src="imagenes/ICONO 4.2.png" alt="imagen pendiente" class="img-fluid" />
+								<p style="text-align: right;" id="referenciaImagen">[2]</p>
+							</td>
+							<td style="width: 2em;"></td>
+							<td>
+								<p> La planeación constructivista implica una constante reflexión y adaptación por parte
+									del docente, ya que se ajusta a las necesidades y características individuales de
+									los estudiantes. Se promueve la diversidad de enfoques y estrategias para abordar
+									los contenidos, reconociendo que cada estudiante tiene su propio ritmo y estilo de
+									aprendizaje. La planeación desde el enfoque constructivista representa una poderosa
+									herramienta para fomentar un aprendizaje significativo y profundo en los
+									estudiantes. Al centrarse en sus experiencias y conocimientos previos, y al
+									brindarles la oportunidad de construir su propio conocimiento, se crea un ambiente
+									propicio para el desarrollo integral de los estudiantes y su preparación para
+									enfrentar los desafíos del mundo actual.
+								</p>
+							</td>
+
+
+						</tr>
+					</table>
+				</div>
+				<div id="carr1dia2" style="display: none;">
+					<p>El enfoque constructivista coloca al alumno en el centro de la teoría, reconociendo que su
+						actividad mental constructiva es clave para la adquisición de conocimientos y significados
+						formales y culturales. El proceso de aprendizaje se concibe como una experiencia activa y
+						personalizada, en donde los estudiantes se enfrentan a los contenidos escolares de manera
+						interactiva y significativa. Sólo cuando los estudiantes participan activamente en la
+						construcción de significados, el aprendizaje se vuelve efectivo y duradero. Así, el aprendizaje
+						se convierte en un proceso continuo de construcción y reconstrucción de conocimientos, lo que
+						puede llevar a la aparición de ideas y conceptos en constante evolución
+					</p>
+				</div>
+				<div id="carr1dia3" style="display: none;">
+					<p>El contenido educativo, como vehículo del conocimiento cultural, lleva consigo una diversidad de
+						niveles de estructura interna y organización, así como significados arraigados en la sociedad y
+						la cultura. Estos significados, previamente establecidos, juegan un papel esencial en la
+						conservación, reproducción y legitimación del contenido dentro del orden social y económico de
+						los grupos. Es a través de la interacción con este contenido culturalmente relevante, que los
+						estudiantes pueden dar sentido a su experiencia educativa y establecer conexiones significativas
+						con su entorno.
+					</p>
+				</div>
+			</div>
+			<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+				<a class="flechaCarrusel" onclick="avanzarDiapositivaRecurso('carr1')">&#10095;</a>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+
+
+
+
+
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p>Es por ello que el papel del docente adquiere una importancia vital, ya que desempeña tareas
+					importantes para la construcción del aprendizaje, las cuales son:</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<div style="width: 100%;">
+						<div style="position: relative; padding-bottom: 134.74%; padding-top: 0; height: 0;"><iframe
+								title="PROFA- Habilidades y ED - F4- 4.2_2" frameborder="0" width="950" height="1280"
+								style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+								src="https://view.genial.ly/64ee36bb5db48b001aa20473" type="text/html"
+								allowscriptaccess="always" allowfullscreen="true" scrolling="yes"
+								allownetworking="all"></iframe> </div>
+					</div>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Para continuar, revisemos el artículo <em>La didáctica, el constructivismo y su aplicación en el aula</em>,
+					el cual nos da un recorrido teórico y conceptual del enfoque, la didáctica frente a él, los modelos
+					cognitivos de enseñanza, los fundamentos aplicados en el aula y las actividades.
+
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Boton--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<div style='text-align: center;'>
+					<a class='recursoExterno'
+						href='https://www.revistacultura.com.pe/revistas/RCU_18_1_la-didactica-el-constructivismo-y-su-aplicacion-en-el-aula.pdf'
+						target='_blank'>
+						<img src='imagenes/descarga2.png' class='img-fluid' style='width: 10%;'>
+					</a>
+				</div>
+				<br>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<!---------Titulo--------->
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+					4.3 Planeación desde el enfoque por competencias
+
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p>La planeación desde el enfoque por competencias representa una poderosa herramienta pedagógica
+					que busca formar estudiantes aptos para enfrentar los retos del mundo actual. En este enfoque, el
+					aprendizaje va más allá de la simple adquisición de conocimientos teóricos y se enfoca en el desarrollo
+					de habilidades prácticas, destrezas, valores y actitudes que les permitan desempeñarse de manera
+					efectiva en diferentes situaciones y contextos. Al planificar desde este enfoque, el docente tiene como
+					objetivo central identificar las competencias a desarrollar. Estas competencias pueden ser de
+					diferentes tipos, y se muestran a continuación:</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<div style="width: 100%;">
+						<div style="position: relative; padding-bottom: 80%; padding-top: 0; height: 0;"><iframe
+								title="PROFA- Habilidades y ED - F4- 4.3" frameborder="0" width="1500" height="1200"
+								style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+								src="https://view.genial.ly/64ee3a033574420018ea87f0" type="text/html"
+								allowscriptaccess="always" allowfullscreen="true" scrolling="yes"
+								allownetworking="all"></iframe> </div>
+					</div>
+
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>Cada
+						una de ellas representa un conjunto de conocimientos, habilidades y actitudes
+						que se deben integrar y aplicar de manera coherente y significativa. </span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Para continuar aprendiendo sobre el tema, revise la siguiente presentación. Para acceder a la información, haga clic en la flecha de la derecha.
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<div style="width: 100%;">
+						<div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe
+								title="PROFA- Habilidades y ED - F4- 4.3_2" frameborder="0" width="1200" height="675"
+								style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+								src="https://view.genial.ly/64ee3b03a79f4600199e6d38" type="text/html"
+								allowscriptaccess="always" allowfullscreen="true" scrolling="yes"
+								allownetworking="all"></iframe> </div>
+					</div>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p>La planeación identifica cuatro áreas básicas que los docentes debemos abordar en el proceso de
+					aprendizaje. Haga clic en la pestaña correspondiente para leer la descripción.</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+
+
+		<!---------Accordion--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div class="accordion accordion-flush" id="accordionFlushExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne" aria-expanded="false"
+								aria-controls="flush-collapseOne">
+								Objetivos y resultados de aprendizaje
+							</button>
+						</h2>
+						<div id="flush-collapseOne" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<ul>
+									<li>Establecer objetivos educativos claros y concretos que definan lo que se espera
+										que los estudiantes logren al finalizar el proceso de ense&ntilde;anza.</li>
+									<li>Identificar los resultados de aprendizaje esperados, es decir, las habilidades,
+										conocimientos y competencias que los estudiantes deben adquirir durante el
+										proceso educativo.</li>
+									<li>Definir metas espec&iacute;ficas y medibles para cada &aacute;rea de
+										conocimiento, de manera que se puedan evaluar los avances y logros de los
+										estudiantes.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTwo" aria-expanded="false"
+								aria-controls="flush-collapseTwo">
+								Estrategias de enseñanza y actividades de aprendizaje
+
+							</button>
+						</h2>
+						<div id="flush-collapseTwo" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<ul>
+									<li>Seleccionar metodolog&iacute;as y enfoques pedag&oacute;gicos adecuados para
+										alcanzar los objetivos y resultados de aprendizaje planteados.</li>
+									<li>Dise&ntilde;ar actividades de aprendizaje pr&aacute;cticas, significativas y
+										motivadoras que promuevan la participaci&oacute;n activa de los estudiantes.
+									</li>
+									<li>Integrar recursos educativos, tecnolog&iacute;a y medios de comunicaci&oacute;n
+										para enriquecer el proceso de ense&ntilde;anza-aprendizaje y favorecer la
+										comprensi&oacute;n y aplicaci&oacute;n de los contenidos.</li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseThree" aria-expanded="false"
+								aria-controls="flush-collapseThree">
+								Evaluación y retroalimentación
+							</button>
+						</h2>
+						<div id="flush-collapseThree" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<ul>
+									<li>Establecer criterios claros y coherentes para evaluar el desempe&ntilde;o de los
+										estudiantes en relaci&oacute;n con los objetivos y resultados de aprendizaje.
+									</li>
+									<li>Implementar estrategias de evaluaci&oacute;n diversificadas y aut&eacute;nticas
+										que permitan observar las competencias de los estudiantes en contextos reales.
+									</li>
+									<li>Proporcionar retroalimentaci&oacute;n oportuna y constructiva a los estudiantes
+										para que puedan reflexionar sobre su progreso y mejorar su desempe&ntilde;o
+										acad&eacute;mico.</li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFour" aria-expanded="false"
+								aria-controls="flush-collapseFour">
+								Inclusión y diversidad
+							</button>
+						</h2>
+						<div id="flush-collapseFour" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<ul>
+									<li>Considerar las caracter&iacute;sticas individuales de los estudiantes, sus
+										estilos de aprendizaje, intereses y necesidades particulares.</li>
+									<li>Dise&ntilde;ar estrategias inclusivas que promuevan la participaci&oacute;n de
+										todos los estudiantes, independientemente de sus habilidades o circunstancias
+										personales.</li>
+									<li>Fomentar un ambiente educativo respetuoso y tolerante que valore la diversidad,
+										promueva la igualdad de oportunidades y favorezca el aprendizaje de todos los
+										estudiantes.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><span>Estas
+						cuatro áreas son fundamentales para el desarrollo de un proceso de aprendizaje
+						integral y </span><span>significativo </span><span>que responda a las necesidades y
+						características individuales de los estudiantes y </span><span>les</span><span>
+						prepare para enfrentar los desafíos de la vida y el mundo laboral. El abordaje
+						cuidadoso de estas áreas contribuye a la formación de individuos competentes,
+						motivados y comprometidos con su propio aprendizaje y desarrollo personal.</span></p>
+
+
+
+				<p><span>Analicemos
+						el </span><span>artículo </span><span style="font-style:italic">La </span><span
+						style="font-style:italic">planificación
+						de la enseñanza por competencias: ¿qué tipo de innovación implica</span><span
+						style="font-style:italic">?, </span><span>en el que encontraremos </span><span>el concepto de
+					</span><span style="font-weight:bold">competencia</span><span> y diferentes posiciones, las
+						etapas a seguir en el proceso de planificación y su importancia en el
+						aprendizaje, metodología, organización </span><span>y,
+						finalmente, </span><span>la naturaleza innovadora del diseño
+						instruccional basado en competencias y los cambios que se han producido,
+						particularmente en el desempeño docente, en comparación con los enfoques de
+						diseño tradicionales. </span></p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Boton--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<div style='text-align: center;'>
+					<a class='recursoExterno'
+						href='https://minerva.usc.es/xmlui/bitstream/handle/10347/4999/06.Rosales.pdf;jsessionid=8BAC43FD19B6DD136A349B712FF34953?sequence=1'
+						target='_blank'>
+						<img src='imagenes/descarga2.png' class='img-fluid' style='width: 10%;'>
+					</a>
+				</div>
+				<br>
+			</div>
+			<div class='col-2'></div>
+		</div>
+
+
+
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center">
+				<a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+						<button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+							type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+						<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+							type="button" role="tab" aria-controls="nav-profile"
+							aria-selected="false">Complementarias</button>
+					</div>
+				</nav>
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+						tabindex="0">
+						<p class="fuente">Arcenio, P. S., &amp; Lantigua, H. D. (2019). <em>Gu&iacute;a de
+								planeaci&oacute;n y evaluaci&oacute;n por competencias</em>. Intered.org. <a
+									href="https://www.intered.org/sites/default/files/guia_por_competencias.pdf">https://www.intered.org/sites/default/files/guia_por_competencias.pdf</a>&nbsp;
+						</p>
+						<p class="fuente">Ascencio, C. (2016). Adecuaci&oacute;n de la planeaci&oacute;n
+							did&aacute;ctica como herramienta docente en un modelo universitario orientado al
+							aprendizaje. <em>REICE Revista Iberoamericana sobre Calidad Eficacia y Cambio en
+								Educaci&oacute;n,</em> 14.3(2016). <a
+									href="https://doi.org/10.15366/reice2016.14.3.006">https://doi.org/10.15366/reice2016.14.3.006</a>
+						</p>
+						<p class="fuente">Carriazo, C., P&eacute;rez, M. &amp; Gaviria, K. (2020). Planificaci&oacute;n
+							educativa como herramienta fundamental para una educaci&oacute;n con calidad.
+							<em>Utop&iacute;a y Praxis Latinoamericana</em>, vol. 25, n&uacute;m. Esp.3, pp. 87-95, 2020
+							Universidad del Zulia. <a
+									href="https://www.redalyc.org/journal/279/27963600007/html/">https://www.redalyc.org/journal/279/27963600007/html/</a>
+						</p>
+						<p class="fuente">Editorial digital UNID (S. f.). <em>La ense&ntilde;anza por competencias, su
+								planeaci&oacute;n, proceso y evaluaci&oacute;n. </em>[Blog]. Red.unid.edu.mx.<a
+								href="https://red.unid.edu.mx/index.php/blog-edu/la-ensenanza-por-competencias-su-planeacion-proceso-y-evaluacion">https://red.unid.edu.mx/index.php/blog-edu/la-ensenanza-por-competencias-su-planeacion-proceso-y-evaluacion</a>
+						</p>
+						<p class="fuente">Huerta, M. &amp;&nbsp; Rodr&iacute;guez, B. E. (2009). <em>La
+								planeaci&oacute;n did&aacute;ctica desde un enfoque constructivista en la escuela
+								primaria. </em>(Tesis de Licenciatura). Universidad Nacional Aut&oacute;noma de
+							M&eacute;xico, M&eacute;xico. Unam.mx. <a
+									href="https://repositorio.unam.mx/contenidos/la-planeacion-didactica-desde-un-enfoque-constructivista-en-la-escuela-primaria-460756?c=4q72o7&amp;d=false&amp;q=*:*&amp;i=1&amp;v=1&amp;t=search_0&amp;as=0">https</a><a
+									href="https://repositorio.unam.mx/contenidos/la-planeacion-didactica-desde-un-enfoque-constructivista-en-la-escuela-primaria-460756?c=4q72o7&amp;d=false&amp;q=*:*&amp;i=1&amp;v=1&amp;t=search_0&amp;as=0">://repositorio.unam.mx/contenidos/la-planeacion-didactica-desde-un-enfoque-constructivista-en-la-escuela-primaria-460756?c=4q72o7&amp;d=false&amp;q=*:*&amp;i=1&amp;v=1&amp;t=search_0&amp;as=0</a>
+						</p>
+						<p class="fuente">Navarro, M., &amp; Mena, C. L. (2022). El paradigma tecnocr&aacute;tico: una
+							mirada cr&iacute;tica desde diversas perspectivas. <em>Teor&iacute;a y praxis</em>, 40,
+							58-77. <a
+									href="https://doi.org/10.5377/typ.v1i40.14061">https://doi.org/10.5377/typ.v1i40.14061</a>
+						</p>
+						<p class="fuente">Ortiz, D. (2015). El constructivismo como teor&iacute;a y m&eacute;todo de
+							ense&ntilde;anza. <em>Sophia</em><em>, </em>1(19), 93. <a
+									href="https://doi.org/10.17163/soph.n19.2015.04">https://doi.org/10.17163/soph.n19.2015.04</a>
+						</p>
+						<p class="fuente">Perla Yesenia Contreras Carrillo (2021, noviembre 6). <em>Enfoque de la
+								planeaci&oacute;n did&aacute;ctica tecnocr&aacute;tica. </em>[Video]. Youtube. <a
+									href="https://www.youtube.com/watch?v=8kvHHrbbahc">https://www.youtube.com/watch?v=8kvHHrbbahc</a>
+						</p>
+						<p class="fuente">PDFCOFFEE (S.f.). Enfoques de la planeaci&oacute;n did&aacute;ctica.
+							Pdfcoffee.com. <a
+								href="https://pdfcoffee.com/enfoques-planeacion-didactica-pdf-free.html">https://pdfcoffee.com/enfoques-planeacion-didactica-pdf-free.html</a>
+						</p>
+						<p class="fuente">Ram&iacute;rez, P. K. (2021)<em>. La ense&ntilde;anza por
+							</em><em>competencias. </em>Instituto de Estudios Superiores de Ense&ntilde;anza y
+							Capacitaci&oacute;n IESEC Universidad. Studocu. <a
+									href="https://www.studocu.com/es-mx/document/instituto-de-estudios-superiores-de-ensenanza-y-capacitacion/educacion/la-ensenanza-por-competencias/56570751">https://www.studocu.com/es-mx/document/instituto-de-estudios-superiores-de-ensenanza-y-capacitacion/educacion/la-ensenanza-por-competencias/56570751</a>
+						</p>
+						<p class="fuente">Ram&iacute;rez-D&iacute;az, J. L. (2020). El enfoque por competencias y su
+							relevancia en la actualidad: Consideraciones desde la orientaci&oacute;n ocupacional en
+							contextos educativos. <em>Revista Electr&oacute;nica Educare,</em> 24(2), 1-15. <a
+									href="https://doi.org/10.15359/ree.24-2.23">https://doi.org/10.15359/ree.24-2.23</a>
+						</p>
+						<p class="fuente">Rosales, C. (2010). La planificaci&oacute;n de la ense&ntilde;anza por
+							competencias: &iquest;Qu&eacute; tipo de innovaci&oacute;n implica? <em>Innovaci&oacute;n
+								educativa, </em>20, 77-78. <a
+									href="https://minerva.usc.es/xmlui/bitstream/handle/10347/4999/06.Rosales.pdf;jsessionid=8BAC43FD19B6DD136A349B712FF34953?sequence=1">https://minerva.usc.es/xmlui/bitstream/handle/10347/4999/06.Rosales.pdf;jsessionid=8BAC43FD19B6DD136A349B712FF34953?sequence=1</a>
+						</p>
+						<p class="fuente">Santiv&aacute;&ntilde;ez, V. (2012). La did&aacute;ctica, el constructivismo y
+							su aplicaci&oacute;n en el aula. <em>Cultura. Revista anual de la Asociaci&oacute;n de
+								Docentes de la Universidad de San Mart&iacute;n de Porres </em><em>Com.pe</em>, 137-148.
+							<a
+									href="https://www.revistacultura.com.pe/revistas/RCU_18_1_la-didactica-el-constructivismo-y-su-aplicacion-en-el-aula.pdf">https://www.revistacultura.com.pe/revistas/RCU_18_1_la-didactica-el-constructivismo-y-su-aplicacion-en-el-aula.pdf</a>
+						</p>
+						<p class="fuente">Serrano, M. (2014). <em>La ense&ntilde;anza por competencias, su
+								planeaci&oacute;n, proceso y evaluaci&oacute;n. </em>Edu.mx. <a
+									href="https://red.unid.edu.mx/index.php/blog-edu/la-ensenanza-por-competencias-su-planeacion-proceso-y-evaluacion/">https://red.unid.edu.mx/index.php/blog-edu/la-ensenanza-por-competencias-su-planeacion-proceso-y-evaluacion</a><a
+									href="https://red.unid.edu.mx/index.php/blog-edu/la-ensenanza-por-competencias-su-planeacion-proceso-y-evaluacion/">/</a>
+						</p>
+						<p class="fuente">Serrano, J. M. &amp; Pons, R. M. (2011). El constructivismo hoy: enfoques
+							constructivistas en educaci&oacute;n. <em>Revista electr&oacute;nica de investigaci&oacute;n
+								educativa</em>, 13 (1), 1-27. <a
+								href="https://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S1607-40412011000100001">https</a><a
+								href="https://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S1607-40412011000100001">://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S1607-40412011000100001</a>
+						</p>
+
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+						tabindex="0">
+						<p class="fuente">Euroinnova Business School. (2022, noviembre 22). <em>Actividades
+								complementarias y de descanso del alumnado con necesidades educativas especiales</em>.
+							Euroinnova.edu.es. <a
+									href="https://www.euroinnova.edu.es/blog/que-son-las-competencias-en-una-planificacion">https://www.euroinnova.edu.es/blog/que-son-las-competencias-en-una-planificacion</a>
+						</p>
+						<p class="fuente">Morales, R. E. (2018). La planeaci&oacute;n de la
+							ense&ntilde;anza-aprendizaje, competencia que fortalece el perfil docente. <em>RIDE Revista
+								Iberoamericana para la Investigaci&oacute;n y el Desarrollo Educativo, </em>8(16),
+							311-334. <a
+									href="https://doi.org/10.23913/ride.v8i16.343">https://doi.org/10.23913/ride.v8i16.343</a>
+						</p>
+						<p class="fuente">Morales, S. S., Flores, I. P. &amp; Castillo, D. (2006). Planeaci&oacute;n
+							Did&aacute;ctica, en base al m&eacute;todo constructivista de aprendizaje, del tema
+							&ldquo;Medici&oacute;n de variables de control&rdquo; de la asignatura de
+							Instrumentaci&oacute;n y control de la carrera de Ingenier&iacute;a Qu&iacute;mica
+							Industrial. <em>1er. Congreso Internacional de </em><em>Innovacion</em><em> educativa.
+							</em>Ipn.mx. <a
+									href="https://www.repo-ciie.dfie.ipn.mx/pdf/1045.pdf">https://www.repo-ciie.dfie.ipn.mx/pdf/1045.pdf</a>
+						</p>
+						<p class="fuente">Perla Yesenia Contreras Carrillo. (2021, noviembre 06). <em>Enfoque de la
+								Planeaci&oacute;n Did&aacute;ctica Tecnocr&aacute;tica</em>. [Video]. Youtube. <a
+									href="https://www.youtube.com/watch?v=8kvHHrbbahc">https://www.youtube.com/watch?v=8kvHHrbbahc</a>
+						</p>
+						<p class="fuente">Pimienta, J. H. (2007). <em>Metodolog&iacute;a Constructivista: Gu&iacute;a
+								para la planeaci&oacute;n docente</em>, 2&ordf;. ed<em>.</em> Pearson Educaci&oacute;n.
+							<a
+									href="https://investigarusac.files.wordpress.com/2021/02/librojuliopimientaestrategias.pdf">https://investigarusac.files.wordpress.com/2021/02/librojuliopimientaestrategias.pdf</a>
+						</p>
+						<p class="fuente">Rosales, C. (2010). La planificaci&oacute;n de la ense&ntilde;anza por
+							competencias: &iquest;qu&eacute; tipo de innovaci&oacute;n implica? <em>Innovaci&oacute;n
+							</em><em>educativa</em>, 20(77-88). <a
+								href="https://minerva.usc.es/xmlui/bitstream/handle/10347/4999/06.Rosales.pdf?sequence=1&amp;isAllowed=y">https://minerva.usc.es/xmlui/bitstream/handle/10347/4999/06.Rosales.pdf?sequence=1&amp;isAllowed=</a><a
+								href="https://minerva.usc.es/xmlui/bitstream/handle/10347/4999/06.Rosales.pdf?sequence=1&amp;isAllowed=y">y</a>
+						</p>
+						<p class="fuente">Ruano, A. (2021, febrero 9)<em>. Planificaci&oacute;n por competencias.
+							</em>Issuu.com. <a
+									href="https://issuu.com/amparoruano14/docs/publicaci_n_de_texto_dise_o_curricular_amparo_ruan">https://issuu.com/amparoruano14/docs/publicaci_n_de_texto_dise_o_curricular_amparo_ruan</a>
+						</p>
+						<p class="fuente">Santiv&aacute;&ntilde;ez, V. (2012). La did&aacute;ctica, el constructivismo y
+							su aplicaci&oacute;n en el aula. <em>Cultura. Revista anual de la Asociaci&oacute;n de
+								Docentes de la Universidad de San Mart&iacute;n de Porres </em><em>Com.pe</em>, 137-148.
+							<a
+									href="https://www.revistacultura.com.pe/revistas/RCU_18_1_la-didactica-el-constructivismo-y-su-aplicacion-en-el-aula.pdf">https://www.revistacultura.com.pe/revistas/RCU_18_1_la-didactica-el-constructivismo-y-su-aplicacion-en-el-aula.pdf</a>
+						</p>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								<p class="disclaimer"><sup>1</sup> Elaboración de la Célula de Desarrollo de
+									Experiencias Educativas de la Dirección General de
+									Desarrollo e Innovación Educativa (DGDAIE).</p>
+									<p class="disclaimer"><sup>2</sup> <a href="https://www.flaticon.es/iconos-gratis/base-de-conocimientos" title="base de conocimientos iconos">Base de conocimientos iconos creados por Freepik - Flaticon</a>. https://www.flaticon.es/icono-gratis/base-de-conocimientos_9592995</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="evidencias">Evidencias de desempeño</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body" id="cuerpoModal">
+					<div class="container-fluid">
+						<input type="hidden" id="numeroEvidencias" value="0">
+
+						<input type="hidden" id="evidenciaActual" value="1">
+						<div class="row">
+							<div class='col'>
+								<div class='evidencia' id='evidencia1' style='display: block;'>
+									<p><strong>Foro 2. Planeación didáctica.
+										</strong></p>
+
+									<p><strong>Descripci&oacute;n: </strong></p>
+									<p>Como producto de esta Módulo elaboraremos una planeaci&oacute;n did&aacute;ctica de
+										alguna
+										de nuestras experiencias educativas impartidas con anterioridad o cualquier otro
+										contenido del que dispongamos.</p>
+									<p>A continuaci&oacute;n, se indican los aspectos a considerar para realizar esta
+										actividad:
+									</p>
+									<ol>
+										<li style="text-align: justify;">Seleccionar el contenido, por cuestiones de tiempo se sugiere escoger aquel
+											en el
+											que se tenga mayor dominio y se cuente con material suficiente, al menos
+											para este
+											ejercicio.</li>
+										<li style="text-align: justify;">Si se va a partir de una EE previa, se sugiere revisar los objetivos,
+											competencias y
+											aprendizajes que se esperan alcanzar al final de dicha EE. Esta
+											revisi&oacute;n nos
+											permite ir visualizando actividades, materiales y recursos educativos que
+											podr&iacute;an ser incluidos como parte de nuestro curso. Si no se contara
+											con un
+											programa de base, &eacute;ste ser&iacute;a el momento de plantear los
+											objetivos,
+											competencias y/o aprendizajes esperados. Como gu&iacute;a para la
+											redacci&oacute;n
+											de objetivos puede consultar las Taxonom&iacute;as de Bloom y de Marzano,
+											las cuales
+											ayudan a identificar el nivel al que deben llegar los estudiantes y sugieren
+											verbos
+											para la redacci&oacute;n de nuestros objetivos de aprendizaje.</li>
+										<li style="text-align: justify;">Para apoyar nuestra planeaci&oacute;n, sugerimos hacer una b&uacute;squeda
+											en
+											internet para identificar materiales y recursos como: videos,
+											infograf&iacute;as,
+											esquemas, textos, entre otros, que puedan servir de base para la
+											organizaci&oacute;n
+											de nuestro curso. Integremos a estos recursos el elaborado en la Módulo 3 de
+											este
+											curso. Es importante anotar, confirmar y respetar la fuente de donde son
+											extra&iacute;dos.</li>
+										<li style="text-align: justify;">Con la informaci&oacute;n recopilada, procedemos a organizar y agrupar los
+											contenidos (por bloques, fases o etapas), cuidando que tengan secuencia
+											l&oacute;gica, que sean graduales y que ayuden al logro de los aprendizajes
+											esperados en los estudiantes. Es importante considerar el tiempo que se
+											tendr&aacute; para trabajar el contenido, tanto en semanas como en horas de
+											estudio
+											necesarias, pues debemos ser conscientes de que no ser&aacute; la
+											&uacute;nica EE a
+											cursar por los estudiantes durante el periodo escolar. Lo anterior nos ayuda
+											a
+											plantear un escenario real de las actividades que podr&aacute;n realizar los
+											estudiantes en l&iacute;nea o de manera presencial.</li>
+										<li style="text-align: justify;">Una vez que tenemos organizado nuestro contenido, pensemos en c&oacute;mo
+											podemos
+											crear un ambiente propicio para el aprendizaje, qu&eacute; actividades
+											pueden
+											resultar m&aacute;s relevantes, interesantes y motivantes para nuestros
+											estudiantes.
+											De qu&eacute; herramientas, materiales y recursos disponemos, entre
+											m&aacute;s
+											diversas sean nuestras opciones, resultar&aacute; mejor porque estaremos
+											abarcando
+											tambi&eacute;n la diversidad de estilos de aprendizaje que poseen los
+											estudiantes.
+											Algunos aprenden mejor leyendo art&iacute;culos, otros observando videos,
+											otros
+											sintetizando o elaborando productos con apoyo de aplicaciones disponibles en
+											la web.
+										</li>
+										<li style="text-align: justify;">Cumplidos los puntos anteriores, podemos comenzar a redactar actividades.
+										</li>
+									</ol>
+									<p><strong>Criterios </strong><strong>de
+										</strong><strong>evaluaci&oacute;n</strong><strong>:</strong></p>
+									<ol>
+										<li>Redacci&oacute;n y ortograf&iacute;a correctas.</li>
+										<li>Apego a las instrucciones para la elaboraci&oacute;n de la actividad.</li>
+										<li>Coherencia y organizaci&oacute;n de ideas principales.</li>
+										<li>Organizaci&oacute;n y representaci&oacute;n adecuada de la
+											informaci&oacute;n.</li>
+										<li><a href="documentos/Rubricaf4.docx" target="_blank">R&uacute;brica</a>.</li>
+										<li><em>Citaci&oacute;n con base en el Manual de Publicaciones de la APA,
+												7&ordf;.
+												ed.</em></li>
+										<li>Despu&eacute;s de publicar su r&uacute;brica, revise por lo menos la de dos
+											compa&ntilde;eros, para que compare puntos de vista y retroalimente su
+											participaci&oacute;n.</li>
+									</ol>
+									<p><strong>Lineamiento de entrega:</strong></p>
+									<ol>
+										<li>Titule el archivo bajo la siguiente nomenclatura:
+											&nbsp;Actx_PrimerApellidoyPrimerNombre. Por
+											ejemplo:&nbsp;Foro2_VillanuevaTeresa</li>
+										<li>Una vez realizada la planeaci&oacute;n, comparta el documento en PDF en el
+											<strong><em>Foro </em></strong><strong><em>2,</em></strong> en la plataforma
+											EMINUS 4, a m&aacute;s tardar en la fecha establecida en el
+											<strong>Calendario</strong> de entregas.</li>
+									</ol>
+
+
+								</div>
+							</div>
+
+
+
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>
