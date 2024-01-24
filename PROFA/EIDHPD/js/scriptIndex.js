@@ -15,15 +15,28 @@ function mostrarDatos(){
 	  numerosModulos[i].style.display="block";
 	}
 }
-function scrollFunction(){
+function scrollFunction() {
 	let anchoPantalla = window.innerWidth;
-	if(anchoPantalla<1000){
+	if (anchoPantalla < 1000) {
 		if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
 			document.getElementById("cuadroPresentacion").style.display = "none";
 			document.getElementById("encabezadoScroll").style.display = "block";
-		}else{
+			
+		} else {
+
 			document.getElementById("cuadroPresentacion").style.display = "block";
 			document.getElementById("encabezadoScroll").style.display = "none";
+			alert("Hola");
+		}
+	}else{
+		if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+			document.getElementById("encabezadoUV").style.display = "none";
+			document.getElementById("tituloEscritorio").style.fontSize = "0.8em";
+		}else{
+			document.getElementById("encabezadoUV").style.display = "block";
+			document.getElementById("tituloEscritorio").style.fontSize = "1.6em";
+			document.getElementById("enlaceModulo").style.fontSize = "1em";
+
 		}
 	}
 }
