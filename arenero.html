@@ -1,160 +1,1334 @@
+<!-- Desarrollado por: Célula de desarrollo, Dirección General de Desarrollo Académico e Innovación Educativa-->
+<!-- 2022 Universidad Veracruzana-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EE virtualizada</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="css/estiloFase.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-------------------------------------------- Encabezado Escritorio ---------------------->
+	<div class="container-fluid sticky" id="encabezadoEscritorio">
+		<h5 style="text-align: right; background-color: #0D47A1; color: white;">Universidad Veracruzana</h5>
+		<div class="row">
+
+			<div class="col align-self-center centrado">
+				<p id="tituloEscritorio">Educación inclusiva y derechos humanos de personas con discapacidad </p>
+
+				<p id="subtituloPresentacion">Módulo 3: Barreras para el aprendizaje y la participación </p>
+
+			</div>
+			<div class="col-1"></div>
+			<div class="col-1 align-self-center">
+				<a href="index.html" class="enlaceModulo enlaceActivo"><strong>Inicio</strong></a>
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = '#' class='enlaceModulo'><strong>Módulo  1</strong></a>-->
+
+				<a href='modulo1.html' class='enlaceModulo enlaceActivo'><strong>Módulo 1</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase2.html' class='enlaceModulo enlaceActivo'><strong>Módulo  2</strong></a>-->
+
+				<a href='modulo2.html' class='enlaceModulo enlaceActivo'><strong>Módulo 2</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Módulo  3</strong></a>-->
+
+				<a href='#' class='enlaceModulo'><strong>Módulo 3</strong></a>
+
+			</div>
+			<div class='col-1 align-self-center'>
+				<!--<a href = 'fase3.html' class='enlaceModulo enlaceActivo'><strong>Módulo  3</strong></a>-->
+
+				<a href='modulo4.html' class='enlaceModulo enlaceActivo'><strong>Módulo 4</strong></a>
+
+			</div>
+			<div class="col-1 align-self-center">
+				<span><strong>Zoom: </strong><button class="botonZoom" onclick="reducirLetra()"
+						type="button">A-</button><button class="botonZoom" onclick="aumentarLetra()"
+						type="button">A+</button></span>
+			</div>
+
+			<div class="col-3"></div>
+
+		</div>
+	</div>
+	<div id="compensacionEncabezadoEscritorio"></div>
+	<!-------------------------------------------- /Encabezado Escritorio---------------------->
+
+	<!-------------------------------------------- Cuadro de presentacion ---------------------->
+	<div id="cuadroPresentacion" class="container-fluid">
+		<div class="row">
+			<h5 id="cintillo">Universidad Veracruzana</h5>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center centrado">
+				<p id="tituloPresentacion">Habilidades y estrategias didácticas para la docencia</p>
+
+				<p id="subtituloPresentacionMovil">Módulo 3: Las TICCAD para el aula</p>
+
+			</div>
+			<div class="col-6 align-self-center centrado">
+				<img src="imagenes/Fase1/Proposito.jpg" class="img-fluid" id="imagenPortada" alt="portada">
+			</div>
+		</div>
+		<div class="row" id="airePresentacion"></div>
+	</div>
+	<!-------------------------------------------- /Cuadro de presentacion ---------------------->
+
+	<!-------------------------------------------- Encabezado en Scroll ---------------------->
+	<div id="encabezadoScroll">
+		<div class="container-fluid">
+			<div class="row">
+				<span id="cintilloScroll">Universidad Veracruzana</span>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" onclick="abrir_menu_lateral()" class="btn btn-outline-dark"><i
+							class="bi bi-list"></i></button>
+				</div>
+				<div class="col">
+					<p id="tituloPresentacionScroll">Habilidades y estrategias didácticas para la docenciaScroll</p>
+
+					<p id="subtituloPresentacionScroll">Módulo 3: Las TICCAD para el aula</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------- /Encabezado en Scroll ---------------------->
+
+	<!-------------------------------------------- Menú lateral ---------------------->
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="menuLateral">
+		<button onclick="cerrar_menu_lateral()" class="w3-bar-item w3-large">Cerrar &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button"><i class="bi bi-house-door"></i> Inicio</a>
+		<a href="#" class="w3-bar-item w3-button">Módulo 1</a>
+
+		<a href="fase2.html" class="w3-bar-item w3-button">Módulo 2</a>
+
+		<a href="fase3.html" class="w3-bar-item w3-button">Módulo 3</a>
+
+	</div>
+	<!--------------------------------------------/Menú lateral---------------------->
+	<br>
+
+
+
+	<!-------------------------------------------- Contenido ---------------------->
+	<div class="container-fluid">
+		<!-------------- Información general -------------->
+		<p class="textoSeccion">Información general</p>
+
+
+
+		<!-------------- Información general Movil-------------->
+		<div class="accordion" id="acordeonInformacion">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoPresentacion">
+					<button class="accordion-button collapsed" id="botonPresentacion" type="button"
+						data-bs-toggle="collapse" data-bs-target="#collapsePresentacion" aria-expanded="false"
+						aria-controls="collapsePresentacion">
+						<p><i class="bi bi-info-circle-fill"></i> Propósito</p>
+					</button>
+				</h2>
+				<div id="collapsePresentacion" class="accordion-collapse collapse"
+					aria-labelledby="encabezadoPresentacion" data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoPresentacion">
+						$@textoPresentacion
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="encabezadoUnidad">
+					<button class="accordion-button collapsed" id="botonUnidad" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseUnidad" aria-expanded="false" aria-controls="collapseUnidad">
+						<p><i class="bi bi-intersect"></i> Situación problematizadora</p>
+					</button>
+				</h2>
+				<div id="collapseUnidad" class="accordion-collapse collapse" aria-labelledby="encabezadoUnidad"
+					data-bs-parent="#acordeonInformacion">
+					<div class="accordion-body" id="textoUnidad">
+						$@textoUnidad
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------- /Información general Movil-------------->
+
+
+
+		<!-------------- /Información general Escritorio-------------->
+		<div id="carruselInformación" class="fondoAzul letraBlanca">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col align-self-center">
+					<br>
+					<p id="tituloCarruselInformacion" style="text-align: center; font-weight: bold;">
+						<i class="bi bi-info-circle-fill"></i> Situación problematizadora
+					</p>
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10094;</a>
+				</div>
+				<div class="col align-self-center">
+					<div id="contenidoSituacion">
+						<p>Actualmente, nuestro estado mexicano cuenta con muchas barreras para el aprendizaje y la
+							accesibilidad que se deben enfrentar desde diversos &aacute;mbitos socio-culturales y
+							educativos, por lo que se deben promover en nuestra sociedad soluciones generales y
+							espec&iacute;ficas que erradiquen dichas barreras, ejerciendo el pleno ejercicio de los
+							derechos humanos desde una cultura de inclusi&oacute;n en <strong>pro de las personas con
+								discapacidad</strong>.<br />Por ello, nos disponemos a cuestionar lo siguiente:</p>
+						<ol>
+							<li>&iquest;Qui&eacute;nes experimentan barreras para el aprendizaje y la
+								<strong>participaci&oacute;n</strong> en la Universidad?
+							</li>
+							<li>&iquest;Identificamos cu&aacute;les son las barreras para el aprendizaje y la
+								participaci&oacute;n en la Universidad?</li>
+							<li>&iquest;C&oacute;mo minimizar las barreras para el aprendizaje y la
+								participaci&oacute;n?</li>
+							<li>&iquest;Qu&eacute; recursos tenemos disponibles para apoyar el aprendizaje y la
+								participaci&oacute;n?</li>
+							<li>&iquest;De d&oacute;nde y c&oacute;mo se pueden movilizar recursos adicionales para
+								apoyar el aprendizaje y la participaci&oacute;n <strong>de todas/os</strong>?</li>
+						</ol>
+
+					</div>
+					<div id="contenidoProposito" style="display: none;">
+						<table>
+							<tr>
+								<td>
+									<p>Identificar las distintas barreras que impiden el aprendizaje y la participación
+										de las personas en situación de discapacidad en los diversos contextos
+										personales, familiares, educativos, sociales, laborales y empresariales.</p>
+								</td>
+								<td style="width: 2em;"></td>
+								<td>
+									<img src="https://lumen.uv.mx/resources/files/images/2024/1/11/9751/d08e8854-959a-4b3c-a34d-6a239ca0bd16.jpg"
+										alt="imagen pendiente" class="img-fluid" />
+									<p style="text-align: right;" id="referenciaImagen">[1]</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<br>
+				</div>
+				<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+					<a class="flechaCarrusel" onclick="cambiarDiapositiva()">&#10095;</a>
+				</div>
+				<div class="col-1"></div>
+			</div>
+
+		</div>
+
+		<!-------------- /Información general Escritorio-------------->
+
+
+		<!-------------- /Información general -------------->
+		<br>
+		<p class="textoSeccion">Desarrollo de los saberes del curso</p>
+
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p>Las barreras para el aprendizaje y la participaci&oacute;n son obst&aacute;culos que dificultan o
+					limitan el aprendizaje, la participaci&oacute;n y la convivencia en&nbsp;condiciones de equidad. En
+					la sociedad, a&uacute;n persisten y es deber de cada ciudadano, adoptar una cultura inclusiva y
+					contribuir a la eliminaci&oacute;n&nbsp;de &eacute;stas.</p>
+				<p>Es por eso que se describen las siguientes ideolog&iacute;as que se clasifican de la siguiente
+					manera:&nbsp;</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+
+
+
+
+
+		<!---------Titulo--------->
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+					3.1 Ideológicas, actitudinales, normativas, prácticas, escolares​
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p>En el sistema educativo se identifican prácticas educativas generadoras de segregación,
+					discriminación y exclusión en las aulas, motivo por el cual es importante visibilizar y eliminar
+					barreras a las que se enfrenta el alumnado, para conocerlas haga clic sobre el recuadro con el
+					nombre de cada una. </p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+
+		<!--Ventanas emergentes-->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<table style="margin-left: auto; margin-right: auto; width: 100%; table-layout: fixed;" id="Grupo1Mod">
+					<tr>
+						<td style="cursor: pointer; background-color: aqua; color: white;" data-bs-toggle="modal"
+							data-bs-target="#Grupo1Mod1">
+							<p style="text-align: center;">
+								<strong>
+									Actitudinales
+								</strong>
+							</p>
+						</td>
+
+						<td style="cursor: pointer; background-color: royalblue; color: white;" data-bs-toggle="modal"
+							data-bs-target="#Grupo1Mod2">
+							<p style="text-align: center;">
+								<strong>
+									Ideológicas
+								</strong>
+							</p>
+						</td>
+						<td style="cursor: pointer; background-color: aqua; color: white;" data-bs-toggle="modal"
+							data-bs-target="#Grupo1Mod3">
+							<p style="text-align: center;">
+								<strong>
+									Políticas
+								</strong>
+							</p>
+						</td>
+						<td style="cursor: pointer; background-color: royalblue; color: white;" data-bs-toggle="modal"
+							data-bs-target="#Grupo1Mod4">
+							<p style="text-align: center;">
+								<strong>
+									De accesibilidad
+								</strong>
+							</p>
+						</td>
+						<td style="cursor: pointer; background-color: aqua; color: white;" data-bs-toggle="modal"
+							data-bs-target="#Grupo1Mod5">
+							<p style="text-align: center;">
+								<strong>
+									De didáctica
+								</strong>
+							</p>
+						</td>
+					</tr>
+				</table>
+				<p style="text-align: right;">Fuente: Cazares, J. (s. f.).&nbsp;Barreras del aprendizaje y
+					la&nbsp;participaci&oacute;n.Slideshare.net.&nbsp;<a
+						href="https://es.slideshare.net/JorgeCzares1/barreras-aprendizaje-y-la-participacinpdf">https://es.slideshare.net/JorgeCzares1/barreras-aprendizaje-y-</a><a
+						href="https://es.slideshare.net/JorgeCzares1/barreras-aprendizaje-y-la-participacinpdf">la-participacinpdf</a>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Para conocer más acerca de este tema, lea con atención los siguientes documentos.
+					<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p>Gobierno de M&eacute;xico. (2011).&nbsp;<em>Declaraci&oacute;n de
+						Accesibilidad</em>.&nbsp;Gob.mx.&nbsp;&nbsp;</p>
+				<p><a href="https://www.gob.mx/accesibilidad">https://www.gob.mx/accesibilidad</a>&nbsp;&nbsp;</p>
+				<p>De Campo&nbsp;Velho, L. (2011).&nbsp;Ajuste&nbsp;razonable: un nuevo concepto desde la
+					&oacute;ptica&nbsp;de una gram&aacute;tica&nbsp;constitucional&nbsp;inclusiva.&nbsp;<em>Revista
+						Internacional de Derechos Humanos</em>,&nbsp;<em>8</em>(14),&nbsp;89-15.<a
+						href="https://www.corteidh.or.cr/tablas/r27675.pdf">https://www.corteidh.or.cr/tablas/r27675.pdf</a>&nbsp;
+				</p>
+				<p>Chaccal, N. (2020).&nbsp;<em>Discapacidad y empleo: &iquest;Qu&eacute; son los ajustes
+						razonables?</em>&nbsp;Fundaci&oacute;n&nbsp;Bensadoun&nbsp;Laurent.&nbsp;</p>
+				<p><a
+						href="https://fundacionbl.org/discapacidad-y-empleo-que-son-los-ajustes-razonables/">https://fundacionbl.org/discapacidad-y-empleo-que-son-los-ajustes-razonables/</a>&nbsp;
+				</p>
+				<p>Universidad Polit&eacute;cnica Salesiana Ecuador (s.f.).&nbsp;<em>Tecnolog&iacute;a de
+						informaci&oacute;n y comunicaci&oacute;n asociadas
+						a&nbsp;</em><em>discapacidad.&nbsp;</em><em>&nbsp;</em></p>
+				<p><a
+						href="https://ticad.blog.ups.edu.ec/adecuaciones-curriculares">https://ticad.blog.ups.edu.ec/adecuaciones-curriculares</a>&nbsp;
+				</p>
+				<p>Ministerio de trabajo y promoci&oacute;n de empleo&nbsp;(2022).&nbsp;<em>&iquest;Qu&eacute; son los
+						ajustes razonables?&nbsp;</em>&nbsp;</p>
+				<p><a
+						href="https://discapacidad.trabajo.gob.pe/ajustes-razonables/que-son-los-ajustes-razonables/">https://discapacidad.trabajo.gob.pe/ajustes-razonables/que-son-los-ajustes-razonables/</a>&nbsp;
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+
+		<hr>
+		<br>
+		<br>
+		<!---------Titulo--------->
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 style='text-align:center; font-weight: bold;' class='fondoAzul tituloSeccion'>
+					3.2 Dimensiones de la inclusión
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p>
+
+					Las dimensiones de la inclusión son tres: culturas, políticas y prácticas, mismas que contribuirán,
+					en un principio, a considerar los ajustes razonables. </p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					A continuación, haga clic en la pestaña correspondiente para leer la información completa de cada
+					ejemplo.​ <br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Pestañas--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<ul class="nav nav-tabs" id="grupo1Pestanas" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button class="nav-link active" id="grupo1Pestana1" data-bs-toggle="tab"
+							data-bs-target="#grupo1Pestana1-pane" type="button" role="tab"
+							aria-controls="grupo1Pestana1-pane" aria-selected="true">
+							Culturas
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="grupo1Pestana2" data-bs-toggle="tab"
+							data-bs-target="#grupo1Pestana2-pane" type="button" role="tab"
+							aria-controls="grupo1Pestana2-pane" aria-selected="false">
+							Políticas inclusivas</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="grupo1Pestana3" data-bs-toggle="tab"
+							data-bs-target="#grupo1Pestana3-pane" type="button" role="tab"
+							aria-controls="grupo1Pestana3-pane" aria-selected="false">
+							Directrices </button>
+					</li>
+				</ul>
+				<div class="tab-content" id="grupo1PestanasContenido">
+					<div class="tab-pane fade show active" id="grupo1Pestana1-pane" role="tabpanel"
+						aria-labelledby="grupo1Pestana1" tabindex="0">
+						<div style="text-align: center;">
+							<ul>
+								<li>Fomentar pautas que regulan el actuar de un individuo otorgando sentido y motivo a
+									la acci&oacute;n.</li>
+								<li>Construir comunidad (siete indicadores). Establecer valores inclusivos (seis
+									indicadores).</li>
+								<li>Inculcar hacia/promover/construir&nbsp;una comunidad escolar segura, acogedora,
+									colaboradora y estimulante, donde cada uno es valorado, para que todo el
+									alumnado&nbsp;tenga mayores niveles de logro, pueda desarrollar valores inclusivos
+									de igualdad y logre el reconocimiento de derechos compartidos por toda la
+									comunidad&nbsp;educativa. Estos principios gu&iacute;an las decisiones en el
+									quehacer diario, concretadas en pol&iacute;ticas escolares.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="grupo1Pestana2-pane" role="tabpanel" aria-labelledby="grupo1Pestana2"
+						tabindex="0">
+						<div style="text-align: center;">
+							<ul>
+								<li><span>Promover condiciones precisas para usar los recursos de manera
+										flexible.</span></li>
+								<li><span>Desarrollar una escuela para todos (seis
+										indicadores).</span><span>&nbsp;</span><span>Organizar el apoyo a la
+										diversidad</span><span>&nbsp;</span><span>(nueve indicadores).</span></li>
+								<li><span>Compromiso de la&nbsp;</span><span>administraci&oacute;n&nbsp;</span><span>con
+										la inclusi&oacute;n, asegurar que la inclusi&oacute;n est&eacute; en el centro
+										del proceso de innovaci&oacute;n, en todas las pol&iacute;ticas, en la
+										formaci&oacute;n del&nbsp;</span><span>profesorado, favoreciendo la
+										innovaci&oacute;n did&aacute;ctica, eliminando programas espec&iacute;ficos
+										categorizadores para los alumnos, mejorando el aprendizaje y la
+										participaci&oacute;n&nbsp;</span><span>de todos los estudiantes.</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="grupo1Pestana3-pane" role="tabpanel" aria-labelledby="grupo1Pestana3"
+						tabindex="0">
+						<div style="text-align: center;">
+							<ul>
+								<li><span>Implementar las pr&aacute;cticas de los centros educativos refleja la cultura
+										y las pol&iacute;ticas inclusivas. La docencia y los apoyos se integran para
+										orquestar el aprendizaje&nbsp;</span><span>de forma que se superen las barreras
+										para el aprendizaje y la participaci&oacute;n.</span></li>
+								<li><span>Orquestar el aprendizaje (12).</span><span>&nbsp;</span><span>Movilizar
+										recursos (cinco).</span></li>
+								<li><span>Retomar los referentes te&oacute;ricos, las actitudes y creencias del docente
+										en la atenci&oacute;n de la diversidad, es uno de los grandes pasos en la
+										eliminaci&oacute;n de las&nbsp;</span><span>barreras para la inclusi&oacute;n,
+										lo que permitir&aacute; potenciar los apoyos y los facilitadores. Movilizar los
+										recursos institucionales y de la comunidad,
+										agrupamientos&nbsp;</span><span>heterog&eacute;neos del alumnado, implicar a las
+										familias y a la comunidad, los apoyos dentro del aula, extender los tiempos y
+										espacios, la innovaci&oacute;n did&aacute;ctica para&nbsp;</span><span>mantener
+										el aprendizaje activo de todos.&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='col-2'></div>
+		</div>
+
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				
+				<p><span>Considerando los anteriores puntos, todo ente p&uacute;blico y particular, debe realizar los
+						siguientes ajustes razonables:</span></p>
+				<ul>
+					<li><span>Utilizar constantemente un leguaje claro, evitando los diminutivos y el lenguaje
+							infantilizado.&nbsp;</span></li>
+					<li><span>Respetar el ritmo personal del alumno cuando se expresa, no interrumpir, ni anticipar su
+							respuesta.&nbsp;</span></li>
+					<li><span>Al cometer errores el alumno, no re&iacute;rse, y corregir la expresi&oacute;n
+							respondiendo frecuentemente de la forma correcta.</span></li>
+					<li><span>Mirar a los ojos al alumno que se est&aacute; expresando.&nbsp;</span></li>
+					<li><span>Conversar de manera afectuosa y con buenos modelos de lenguaje, para brindar la
+							oportunidad de expresar ideas y&nbsp;</span><span>sentimientos.&nbsp;</span></li>
+					<li><span>No ofrecer un lenguaje parcelado.&nbsp;</span></li>
+					<li><span>Contestar todas las preguntas que los alumnos formulen.</span></li>
+					<li></li>
+				</ul>
+				<p><span>Por lo tanto, los ajustes razonables se refieren a los ajustes f&iacute;sicos, de actitud,
+						educativos y sociales para las personas con&nbsp;&nbsp;</span><span>discapacidad sin perjudicar
+						al estudiantado que no enfrenta barreras, permitiendo que todo el alumnado disfrute de
+						sus&nbsp;</span><span>derechos humanos y accesibilidad, con plena participaci&oacute;n, sin
+						importar el entorno en donde se desenvuelva (Garc&iacute;a-</span><span>Oramas</span><span>,
+						2019).</span></p>
+
+				
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					A continuación, lea los siguientes documentos para profundizar más en el tema. <br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p>Arias, C. (2021).&nbsp;<em>Ajustes razonables: C&oacute;mo hacer m&aacute;s inclusivo el lugar de trabajo</em>. Fundaci&oacute;n de Inclusi&oacute;n&nbsp;Laboral.&nbsp;<a href="https://fundacioncontrabajo.cl/blog/guias-para-la-empresa/ajustes-razonables/">https://fundacioncontrabajo.cl/blog/guias-para-la-empresa/ajustes-razonables/</a>&nbsp;</p>
+				<p>Chaccal, N. (2020).&nbsp;<em>Discapacidad y empleo: &iquest;Qu&eacute; son los ajustes razonables?&nbsp;</em>Fundaci&oacute;n&nbsp;Bensadoun&nbsp;Laurent.&nbsp;<a href="https://fundacionbl.org/discapacidad-y-empleo-que-son-los-ajustes-razonables/">https://fundacionbl.org/discapacidad-y-empleo-que-son-los-ajustes-</a><a href="https://fundacionbl.org/discapacidad-y-empleo-que-son-los-ajustes-razonables/">razonables/</a>&nbsp;</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					A continuación, revise con atención el siguiente video. ​<br>
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/wRsnzjEAND0?si=CNHsgdYtzPdcrW3f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					<p>Fundaci&oacute;n&nbsp;Bensadoun&nbsp;Laurent. (2019).&nbsp;<em>Ajustes razonables para el&nbsp;</em><em>empleo</em>.&nbsp;YouTube. </p>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+
+
+
+		<br>
+		<hr>
+		<br>
+		<br>
+		<!---------Titulo--------->
+		<div class='row' style='color: white;'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 style='text-align:center; font-weight: bold;' class='fondoVerde tituloSeccion'>
+					3.3 Accesibilidad
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<!---------Subitulo--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 class='subtitulo'>
+					3.3.1 Accesibilidad en términos generales
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p>La accesibilidad es la caracter&iacute;stica fundamental que permite que los entornos, los productos, y los servicios&nbsp;sean utilizados sin problemas por todas y cada una de las personas, obteniendo de ellos un uso eficiente, eficaz&nbsp;y satisfactorio, que pueda ser utilizado, independientemente de las capacidades, dimensiones, g&eacute;nero, edad o&nbsp;cultura de una persona.</p>
+				<p>De esta forma, la accesibilidad debe:&nbsp;</p>
+				<ul>
+				<li>Facilitar la difusi&oacute;n y disponibilidad de informaci&oacute;n.</li>
+				<li>Tomar en cuenta que la discapacidad no es el &uacute;nico factor que puede limitar a un usuario a la accesibilidad de&nbsp;contenidos.&nbsp;</li>
+				<li>No s&oacute;lo implica la necesidad de facilitar acceso, sino tambi&eacute;n la de facilitar el uso. La distinci&oacute;n entre&nbsp;usabilidad &ndash;facilidad de uso&ndash; y accesibilidad (Instituto Tecnol&oacute;gico Superior de Esc&aacute;rcega, 2018).</li>
+				</ul>
+				<p>As&iacute; mismo, la accesibilidad centra su actividad en la b&uacute;squeda de soluciones de dise&ntilde;o para que todas las&nbsp;personas, independientemente la condici&oacute;n en la que se encuentren,&nbsp;puedan&nbsp;utilizar los espacios, productos y&nbsp;servicios de su entorno, participando, al mismo tiempo, en el favorecimiento de la diversidad humana que&nbsp;caracteriza a nuestra sociedad.</p>
+				<p>As&iacute;, un entorno, producto o servicio accesible debe ser:&nbsp;</p>
+				<ol>
+				<li>Respetuoso.&nbsp;</li>
+				<li>Seguro.</li>
+				<li>Saludable.&nbsp;</li>
+				<li>Funcional.&nbsp;</li>
+				<li>Comprensible.&nbsp;</li>
+				<li>Est&eacute;tico.&nbsp;</li>
+				</ol>
+				<p>Por consiguiente, la accesibilidad como derecho fundamental es un postulado del modelo de derechos&nbsp;humanos de atenci&oacute;n a las personas con discapacidad, donde debe partir su an&aacute;lisis y alcance jur&iacute;dico. Al&nbsp;respecto, la accesibilidad como derecho se enuncia a trav&eacute;s de diversos art&iacute;culos, leyes y normativas.</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Ahora, observe la siguiente infografía que muestra algunos ejemplos. 
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<p style="color: red;">Material pendiente</p>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+		<!---------Subitulo--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 class='subtitulo'>
+					3.3.2 Accesibilidad en la web:
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Contenido html--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p>Cuando se habla de accesibilidad web, se hace referencia a la flexibilidad que debe de existir dentro de las&nbsp;p&aacute;ginas y sitios web, con la finalidad de cubrir las necesidades y preferencias de los usuarios de internet. En&nbsp;ese sentido, se trata de hacer la red accesible para que cualquier persona pueda navegar a partir de sus&nbsp;capacidades y habilidades, es decir, que pueda ser le&iacute;da y entendida recurriendo, de ser necesario, a la propia&nbsp;tecnolog&iacute;a.&nbsp;</p>
+				<p>La accesibilidad web es un tema fundamental para la educaci&oacute;n inclusiva y equitativa porque favorece la&nbsp;participaci&oacute;n plena y efectiva de todo el estudiantado, en condiciones de igualdad y sin discriminaci&oacute;n por&nbsp;discapacidad.</p>
+				<p>La implementaci&oacute;n de ayudas t&eacute;cnicas para la accesibilidad digital permite eliminar barreras y garantizar la&nbsp;igualdad de oportunidades para el estudiantado, independientemente de la condici&oacute;n de discapacidad; por ello,&nbsp;la accesibilidad digital mejora la experiencia educativa de toda la diversidad de estudiantes, al proporcionar&nbsp;herramientas y recursos que facilitan el acceso a la informaci&oacute;n, la comunicaci&oacute;n y la interacci&oacute;n. Esto incluye&nbsp;la adaptaci&oacute;n de contenidos a diferentes formatos, el uso de tecnolog&iacute;as de asistencia y la implementaci&oacute;n de&nbsp;dise&ntilde;os y navegaci&oacute;n intuitiva en plataformas digitales. Una experiencia educativa inclusiva y accesible&nbsp;fomenta la participaci&oacute;n, el compromiso y el &eacute;xito acad&eacute;mico de todo el estudiantado.&nbsp;</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Instruccion--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+						class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+						<path
+							d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+							id='path2' style='fill:#0055d4'></path>
+					</svg>
+					Para conocer los elementos a considerar expuestos por la Declaración de azccesibilidad (2019), revise la siguiente infografía. 
+				</p>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Iframe--------->
+		<div class='row'>
+			<div class='col-3'></div>
+			<div class='col'>
+				<div style='text-align: center'>
+					<p style="color: red;">Material pendiente</p>
+				</div>
+			</div>
+			<div class='col-3'></div>
+		</div>
+		<br>
+
+		<!---------Subitulo--------->
+		<div class='row'>
+			<div class='col-2'></div>
+			<div class='col'>
+				<h1 class='subtitulo'>
+					3.3.3 Accesibilidad en la infraestructura
+				</h1>
+			</div>
+			<div class='col-2'></div>
+		</div>
+		<br>
+		<!---------Carrusel--------->
+<div class='row'>
+	<div class='col-2'></div>
+	<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+		<a class="flechaCarrusel" onclick="regresarDiapositivaRecurso('carr1')">&#10094;</a>
+	</div>
+	<div class='col' id="carr1col" style="background-color: limegreen; border-radius: 25px; padding: 1em;">
+		<input id="carr1" value="4" type="hidden">
+		<input id="carr1Act" value="1" type="hidden">
+		<div id="carr1dia1" style="display: block;">
+			<p>Para abordar los elementos esenciales de accesibilidad, se debe considerar diversas guías y estándares universales para diseñar una estructura adecuada con los ajustes razonables, de manera específica, la accesibilidad en infraestructura. Por ello, nos basaremos en los aportes de la Fundación ONCE, para la cooperación e inclusión social para personas con discapacidad (2011), retomando las consideraciones del documento ”Accesibilidad Universal y Diseño para todos. Arquitectura y Urbanismo” (2011). </p>
+		</div>
+		<div id="carr1dia2" style="display: none;">
+			<p>La accesibilidad en la infraestructura hace hincapié en el diseño de entornos físicos transitables que puedan ser utilizados por todas las personas, en la mayor medida posible, esto sin necesidad de adaptarlos ni de diseñarlos especialmente para algo en concreto, si no, se trata de abarcar en una construcción la generalidad de un diseño que sea amable, gentil y accesible para cualquier persona, sea cual sea la necesidad que tenga.</p>
+		</div>
+		<div id="carr1dia3" style="display: none;">
+			<p>De esta manera, para alcanzar la <strong>accesibilidad universal</strong> en la infraestructura, debemos tener claro que requiere que el diseño de un entorno físico contemple la diversidad de las capacidades humanas, poniendo en primera instancia los grados de funcionalidad de las mismas y algunos criterios de diseño que deben ser utilizados para crear espacios funcionales para todas las personas.​</p>
+		</div>
+		<div id="carr1dia4" style="display: none;">
+			<p>Dichos criterios son llamados  DALCO y hacen referencia al conjunto de requisitos que facilitan acciones sencillas y claras que sirven para explicar genéricamente las capacidades que las personas ponen en juego cuando realizan actividades ligadas al uso de cualquier entorno. Estos criterios se mencionan a continuación (Fundación ONCE, 2011)</p>
+		</div>
+	</div>
+	<div class="col-1 col align-self-center centrado" id="columnaIzquierda">
+		<a class="flechaCarrusel" onclick="avanzarDiapositivaRecurso('carr1')">&#10095;</a>
+	</div>
+	<div class='col-2'></div>
+</div>
+<br>
+
+<!---------Iframe--------->
+<div class='row'>
+	<div class='col-3'></div>
+	<div class='col'>
+		<div style='text-align: center'>
+			<p style="color: red;">Material pendiente</p>
+		</div>
+	</div>
+	<div class='col-3'></div>
+</div>
+<br>
+
+
+<!---------Instruccion--------->
+<div class='row'>
+	<div class='col-2'></div>
+	<div class='col'>
+		<p><svg xmlns='http://www.w3.org/2000/svg' width='3%' fill='currentColor'
+				class='bi bi-hand-index-thumb-fill' viewBox='0 0 16 16'>
+				<path
+					d='m 14.599605,8.1503948 h -2.716 l 0.002,0.047 c 0.012,0.312 0.016,0.742 -0.046,1.051 -0.056,0.28 -0.18,0.543 -0.288,0.738 -0.152,0.2730002 -0.385,0.4560002 -0.642,0.5600002 l 0.012,0.132 c 0.024,0.312 0.038,0.794 -0.108,1.158 -0.148,0.37 -0.487,0.689 -0.716,0.88 -0.09,0.075 -0.1749998,0.141 -0.2479998,0.195 v 0.582 a 2,2 0 0 1 -2.199,1.99 l -2.715,-0.272 a 3.5,3.5 0 0 1 -1.389,-0.444 l -2.441,-1.395 a 1.5,1.5 0 0 1 -0.75600003,-1.302 V 5.7683948 a 1.5,1.5 0 0 1 0.83000003,-1.342 l 2.43,-1.215 4.151,-2.49099997 a 1.517,1.517 0 0 1 1.852,2.37299997 l -1.556,1.557 h 6.5429998 a 1.75,1.75 0 0 1 0,3.5 z'
+					id='path2' style='fill:#0055d4'></path>
+			</svg>
+			A continuación, lea con atención los siguientes documentos para conocer más acerca de este tema.
+		</p>
+	</div>
+	<div class='col-2'></div>
+</div>
+<br>
+
+
 <!---------Contenido html--------->
 <div class='row'>
-        <div class='col-2'></div>
-        <div class='col'>
-                <table class="table" style="border: 1px solid black; border-collapse: collapse;;">
-                        <tbody>
-                                <tr>
-                                        <td style="border: 1px solid black; border-collapse: collapse; ">
-                                                <p style="text-align: center;"><strong>Ejemplos</strong></p>
-                                        </td>
-                                        <td style="border: 1px solid black; border-collapse: collapse; ">
-                                                <p style="text-align: center;"><strong>Enlaces</strong></p>
-                                        </td>
-                                </tr>
-                                <tr>
-                                        <td style="border: 1px solid black; border-collapse: collapse; ">
-                                                <p><a target="_blank" href="http://www.innovacesal.org/micrositio_redic_2015/">Metodolog&iacute;as
-                                                                activas que tienen como componente esencial la
-                                                                vinculaci&oacute;n con el entorno
-                                                                para la formaci&oacute;n de los estudiantes e incluyen
-                                                                temas transversales de
-                                                                formaci&oacute;n para los estudiantes de
-                                                                educaci&oacute;n superior.</a></p>
-                                        </td>
-                                        <td style="border: 1px solid black; border-collapse: collapse; ">
-                                                <p>&bull;<a target="_blank"
-                                                                href="http://www.innovacesal.org/micrositio_redic_2015/02_guia_cbasic_ing_cbioagro.pdf">Sistematizaci&oacute;n
-                                                                de estrategias de vinculaci&oacute;n en la
-                                                                formaci&oacute;n en Ciencias
-                                                                B&aacute;sicas, Biol&oacute;gico- Agropecuarias e </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/micrositio_redic_2015/02_guia_cbasic_ing_cbioagro.pdf">Ingenier&iacute;a</a>.
-                                                </p>
-                                                <p>&bull;<a target="_blank"
-                                                                href="http://www.innovacesal.org/micrositio_redic_2015/03_guia_grupal_vincul_eco_adm.pdf">Estrategias
-                                                                docentes para fortalecer la Vinculaci&oacute;n
-                                                                profesional con el entorno social
-                                                                en el &aacute;rea Econ&oacute;mico-</a><a target="_blank"
-                                                                href="http://www.innovacesal.org/micrositio_redic_2015/03_guia_grupal_vincul_eco_adm.pdf">Administrativa</a>.
-                                                </p>
-                                                <p>&bull;<a target="_blank"
-                                                                href="http://www.innovacesal.org/micrositio_redic_2015/04_guia_2015_salud.pdf">La
-                                                                vinculaci&oacute;n entre la universidad y la sociedad
-                                                                aplicada en la
-                                                                formaci&oacute;n superior en el &aacute;rea de Ciencias
-                                                                de la </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/micrositio_redic_2015/04_guia_2015_salud.pdf">Salud</a>.
-                                                </p>
-                                                <p>&bull;<a target="_blank"
-                                                                href="http://www.innovacesal.org/micrositio_redic_2015/05_redIC_HCS_ADA_guia_ed.pdf">La
-                                                                vinculaci&oacute;n como estrategia de formaci&oacute;n
-                                                                en la educaci&oacute;n
-                                                                superior en las &aacute;reas de Humanidades y Ciencias
-                                                                Sociales y de Artes,
-                                                                Arquitectura y </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/micrositio_redic_2015/05_redIC_HCS_ADA_guia_ed.pdf">Dise&ntilde;o</a>.
-                                                </p>
-                                        </td>
-                                </tr>
-                                <tr>
-                                        <td style="border: 1px solid black; border-collapse: collapse; ">
-                                                <p><a target="_blank" href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/ic_pub_02.htm">Metodolog&iacute;as
-                                                                activas que tienen como componente esencial el
-                                                                desarrollo de competencias de
-                                                                investigaci&oacute;n e incluyen temas transversales de
-                                                                formaci&oacute;n para los
-                                                                estudiantes de educaci&oacute;n superior.</a></p>
-                                        </td>
-                                        <td style="border: 1px solid black; border-collapse: collapse; ">
-                                                <p>&bull;<a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc04.pdf">Estrategias
-                                                                innovadoras para desarrollar la competencia
-                                                                investigadora en los procesos de
-                                                                ense&ntilde;anza-aprendizaje de las </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc04.pdf">artes</a>.
-                                                </p>
-                                                <p>&bull;<a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc05.pdf">Ciencias
-                                                        </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc05.pdf">b&aacute;sicas.</a>
-                                                        <a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc05.pdf">Estrategias
-                                                        </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc05.pdf">para
-                                                                el desarrollo de un v&iacute;nculo entre docencia e
-                                                                investigaci&oacute;n a nivel
-                                                                de </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc05.pdf">pregrado</a>.
-                                                </p>
-                                                <p>&bull;<a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc06.pdf">Ciencias
-                                                                de la </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc06.pdf">salud.
-                                                        </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc06.pdf">Estrategias
-                                                                para el desarrollo del v&iacute;nculo docencia </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc07.pdf">&ndash;</a><a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc06.pdf">
-                                                                investigaci&oacute;n</a></p>
-                                                <p>&bull;<a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc07.pdf">Econ&oacute;mico-administrativas
-                                                        </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc07.pdf">Estrategias
-                                                                para el desarrollo de la investigaci&oacute;n en la
-                                                        </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc07.pdf">docencia</a>.
-                                                </p>
-                                                <p>&bull;<a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc08.pdf">Humanidades
-                                                                y ciencias </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc08.pdf">sociales.
-                                                        </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc08.pdf">Estrategias
-                                                                para la articulaci&oacute;n de la investigaci&oacute;n
-                                                                con la docencia en el
-                                                                aula y su vinculaci&oacute;n con la sociedad y
-                                                                estrategias de formaci&oacute;n
-                                                                para la investigaci&oacute;n y la </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc08.pdf">innovaci&oacute;n</a>.
-                                                </p>
-                                                <p>&bull;<a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc09.pdf">Ingenier&iacute;as
-                                                                y </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc09.pdf">tecnolog&iacute;as.
-                                                        </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc09.pdf">Estrategias
-                                                                para el aprendizaje de competencias por </a><a target="_blank"
-                                                                href="http://www.innovacesal.org/innova_public_docs01_innova/ic_publicaciones_2012/pubs_ic/pub_02_doc09.pdf">investigaci&oacute;n</a>.
-                                                </p>
-                                        </td>
-                                </tr>
-                                <tr>
-                                        <td style="border: 1px solid black; border-collapse: collapse; ">
-                                                <p><a target="_blank" href="http://www.innovacesal.org/redic_gamificacion/">Metodolog&iacute;as
-                                                                activas
-                                                                que tienen como componente esencial de dise&ntilde;o la
-                                                                Gamificaci&oacute;n.</a>
-                                                </p>
-                                        </td>
-                                        <td style="border: 1px solid black; border-collapse: collapse; ">
-                                                <p>&bull;<a target="_blank"
-                                                                href="http://www.innovacesal.org/redic_gamificacion/construccion_videojuegos.html">Construcci&oacute;n
-                                                                de juegos.</a></p>
-                                                <p>&bull;<a target="_blank"
-                                                                href="http://www.innovacesal.org/redic_gamificacion/juegos_aplicaciones_web.html">Juegos
-                                                                en aplicaciones en la WEB.</a></p>
-                                                <p>&bull;<a target="_blank"
-                                                                href=" &bull;Juegos en app m&oacute;vil + app de la web y/o app m&oacute;vil + red social.  http://www.innovacesal.org/redic_gamificacion/juegos_app_web_social.html">Juegos
-                                                                en aplicaci&oacute;n m&oacute;vil.</a></p>
-                                                <p>&bull;<a target="_blank"
-                                                                href="http://www.innovacesal.org/redic_gamificacion/juegos_aplicacion_movil.html">Juegos
-                                                                en app m&oacute;vil + app de la web y/o app m&oacute;vil
-                                                                + red social.</a></p>
-                                        </td>
-                                </tr>
-                        </tbody>
-                </table>
-
-        </div>
-        <div class='col-2'></div>
+	<div class='col-2'></div>
+	<div class='col'>
+		<p><span>Fundaci&oacute;n UNAM. (2017).&nbsp;</span><em><span>UNAM impulsa la accesibilidad tecnol&oacute;gica</span></em><span>.&nbsp;UNAM.&nbsp;</span><a href="https://www.fundacionunam.org.mx/unam-al-dia/unam-impulsa-la-accesibilidad-tecnologica/"><span>https://www.fundacionunam.org.mx/unam-al-dia/unam-impulsa-la-</span></a><a href="https://www.fundacionunam.org.mx/unam-al-dia/unam-impulsa-la-accesibilidad-tecnologica/"><span>accesibilidad-tecnologica/</span></a></p>
+		<p><span>Gobierno de M&eacute;xico/Educaci&oacute;n Especial (s. f.).&nbsp;</span><em><span>Primer Encuentro Nacional de Inclusi&oacute;n Educativa y &Eacute;xito Escolar.&nbsp;</span></em><span>Educacionespecial.sep.gob.mx. </span><a href="https://educacionespecial.sep.gob.mx/pdf/doctos/3internacionales/8indice_de_inclusion.pdf"><span>https://educacionespecial.sep.gob.mx/pdf/doctos/3internacionales/8indice_de_inclusion.pdf</span></a></p>
+		<p><span>INADI. Instituto Nacional contra la Discriminaci&oacute;n la Xenofobia y el Racismo (2014).&nbsp;</span><em><span>Accesibilidad e inclusi&oacute;n&nbsp;de personas con discapacidad. Gu&iacute;a&nbsp;</span></em><em><span>tem&aacute;tica.</span></em><span>&nbsp;INADI.&nbsp;</span><a href="https://www.argentina.gob.ar/sites/default/files/accesibilidad_e_inclusion_de_personas_con_discapacidad.pdf"><span>https://www.argentina.gob.ar/sites/default/files/accesibilidad_e_inclusion_de_personas_con_discapacidad.pdf</span></a></p>
+		<p><span>Incl&uacute;yeme (s. f.).&nbsp;</span><em><span>Ley de Accesibilidad para personas con discapacidad en M&eacute;xico</span></em><span>.&nbsp;Incluyeme.com.&nbsp;</span><a href="https://www.incluyeme.com/ley-de-accesibilidad-para-personas-con-discapacidad-en-mexico/%23:~:text=En%20M%C3%A9xico%20ya%20se%20comenz%C3%B3,cualquier%20lugar%20sin%20ning%C3%BAn%20impedimento"><span>https://www.incluyeme.com/ley-de-accesibilidad-para-</span></a><a href="https://www.incluyeme.com/ley-de-accesibilidad-para-personas-con-discapacidad-en-mexico/%23:~:text=En%20M%C3%A9xico%20ya%20se%20comenz%C3%B3,cualquier%20lugar%20sin%20ning%C3%BAn%20impedimento"><span>personas-con-discapacidad-en-</span></a><a href="https://www.incluyeme.com/ley-de-accesibilidad-para-personas-con-discapacidad-en-mexico/%23:~:text=En%20M%C3%A9xico%20ya%20se%20comenz%C3%B3,cualquier%20lugar%20sin%20ning%C3%BAn%20impedimento"><span>mexico/#:~:text=En%20M%C3%A9xico%20ya%20se%20comenz%C3%B3,cualquier%20lugar%20sin%20ning%C3%BAn%20impedimento</span></a></p>
+		<p><span>CNDH. Comisi&oacute;n Nacional de Derechos Humanos (2017).&nbsp;</span><em><span>Ley de la Accesibilidad para la Ciudad de M&eacute;xico</span></em><span>. CNDH.&nbsp;</span></p>
+		<p><a href="https://www.cndh.org.mx/sites/all/doc/Programas/Discapacidad/Ley-Accesibilidad-CDMX.pdf"><span>https://www.cndh.org.mx/sites/all/doc/Programas/Discapacidad/Ley-Accesibilidad-CDMX.pdf</span></a></p>
+		<p><span>CONAPRED. Consejo Nacional para Prevenir la Discriminaci&oacute;n (s. f.).&nbsp;</span><em><span>Accesibilidad en la web</span></em><span>. CONAPRED.&nbsp;</span></p>
+		<p><a href="https://www.conapred.org.mx/index.php?contenido=pagina&amp;id=470&amp;id_opcion=465&amp;op=465"><span>https://www.conapred.org.mx/index.php?contenido=pagina&amp;id=470&amp;id_opcion=465&amp;op=465</span></a></p>
+		<p><span>ICO-D (2022).&nbsp;</span><em><span>En lucha por los derechos humanos.&nbsp;</span></em><span>Nienal&nbsp;internacional del cartel en M&eacute;xico.&nbsp;</span><span>https://bienalcartel.org/programa-universitario-de-derechos-</span><span>humanos-unam-y-amnistia-internacional-mexico%EF%BF%BC/</span></p>
+		<p><span>Gobierno de la Ciudad de M&eacute;xico&nbsp;(2016).&nbsp;</span><em><span>Manual de normas t&eacute;cnicas de accesibilidad.&nbsp;</span></em><span>Gobierno de la Ciudad de M&eacute;xico.&nbsp;</span></p>
+		<p><a href="http://www.data.seduvi.cdmx.gob.mx/portal/images/banners/banner_derecho/documentos/Manual_Normas_Tecnicas_Accesibilidad_2016.pdf"><span>http://www.data.seduvi.cdmx.gob.mx/portal/images/banners/banner_derecho/documentos/Manual_Normas_Tecnicas_Accesibilidad_2016.pdf</span></a></p>
+		<p><span>DOF. Diario Oficial de la Federaci&oacute;n (2016). </span><em><span>Acuerdo mediante el cual el Pleno del Instituto Federal de Telecomunicaciones aprueba y emite los&nbsp;</span></em><em><span>lineamientos&nbsp;genrales&nbsp;de accesibilidad a servicios de telecomunicaciones para los usuarios con discapacidad.&nbsp;</span></em><a href="https://www.dof.gob.mx/nota_detalle.php?codigo=5466859&amp;fecha=23/12/2016%23gsc.tab=0"><span>https://www.dof.gob.mx/nota_detalle.php?codigo=5466859&amp;fecha=23/12/2016#gsc.tab=0</span></a></p>
+	</div>
+	<div class='col-2'></div>
 </div>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<br>
+		<hr>
+		<br>
+		<br>
+
+
+		<div style="text-align: center;">
+			<p class="textoSeccion">Evidencias de desempeño</p>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col align-self-center">
+				<a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#modalEvidencias">
+					<div id="botonEvidencias">
+
+					</div>
+				</a>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<p class="textoSeccion">Fuentes de información</p>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col">
+				<nav>
+					<div class="nav nav-tabs" id="nav-tab" role="tablist">
+						<button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+							type="button" role="tab" aria-controls="nav-home" aria-selected="true">Básicas</button>
+						<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+							type="button" role="tab" aria-controls="nav-profile"
+							aria-selected="false">Complementarias</button>
+					</div>
+				</nav>
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+						tabindex="0">
+						<p class="fuente">Aragall, F. (2010). La accesibilidad en los centros educativos. Cinca.&nbsp;<a
+								href="https://redined.educacion.gob.es/xmlui/bitstream/handle/11162/65744/00820102000043.pdf?sequence=1">https://redined.educacion.gob.es/xmlui/bitstream/handle/11162/65744/00820102000043.pdf?sequence=1</a>
+						</p>
+						<p class="fuente">Arias, C. (2021).&nbsp;<em>Ajustes razonables: C&oacute;mo hacer m&aacute;s
+								inclusivo el lugar de trabajo.&nbsp;</em>Fundaci&oacute;n de Inclusi&oacute;n
+							Laboral.&nbsp;<a
+								href="https://fundacioncontrabajo.cl/blog/guias-para-la-empresa/ajustes-razonables/">https://fundacioncontrabajo.cl/blog/guias-para-la-empresa/ajustes-razonables/</a>
+						</p>
+						<p class="fuente">Booth, t.&nbsp;<em>et al</em>. (2000).&nbsp;<em>&Iacute;ndice de
+								Inclusi&oacute;n Desarrollando el aprendizaje y la
+								participaci&oacute;n.&nbsp;</em>Centre for Studies on Inclusive
+							Education&nbsp;(CSIE).&nbsp;<a
+								href="https://unesdoc.unesco.org/ark:/48223/pf0000138159">https://unesdoc.unesco.org/ark:/48223/pf0000138159</a>
+						</p>
+						<p class="fuente">Cabrero, J. &amp;&nbsp;Aguaded, J. (2002).&nbsp;<em>Educar en red</em>.
+							ALJIBE.</p>
+						<p class="fuente">Chaccal, N. (2020).&nbsp;<em>Discapacidad y empleo: &iquest;Qu&eacute; son los
+								ajustes razonables?&nbsp;</em>Fundaci&oacute;n&nbsp;Bensadoun&nbsp;Laurent.&nbsp;<a
+								href="https://fundacionbl.org/discapacidad-y-empleo-que-son-los-ajustes-razonables/">https://fundacionbl.org/discapacidad-y-empleo-que-son-los-ajustes-razonables/</a>
+						</p>
+						<p class="fuente">CNDH. Comisi&oacute;n Nacional de Derechos Humanos (2017).&nbsp;<em>Ley de la
+								Accesibilidad para la Ciudad de M&eacute;xico.&nbsp;</em>CNDH.&nbsp;<a
+								href="https://www.cndh.org.mx/sites/all/doc/Programas/Discapacidad/Ley-Accesibilidad-CDMX.pdf">https://www.cndh.org.mx/sites/all/doc/Programas/Discapacidad/Ley-Accesibilidad-CDMX.pdf</a>
+						</p>
+						<p class="fuente">CNDH (2019). Informe Especial sobre el Derecho a la Accesibilidad de las
+							Personas con Discapacidad.&nbsp;<a
+								href="https://www.cndh.org.mx/sites/default/files/documentos/2019-08/IE-Accesibilidad.pdf">https://www.cndh.org.mx/sites/default/files/documentos/2019-08/IE-Accesibilidad.pdf</a>
+						</p>
+						<p class="fuente">CONAPRED. Consejo Nacional para Prevenir la Discriminaci&oacute;n (s.
+							f.).&nbsp;<em>Accesibilidad en la web.&nbsp;</em>CONAPRED. <a
+								href="https://www.conapred.org.mx/index.php?contenido=pagina&amp;id=470&amp;id_opcion=465&amp;op=465">https://www.conapred.org.mx/index.php?contenido=pagina&amp;id=470&amp;id_opcion=465&amp;op=465</a>
+						</p>
+						<p class="fuente">De Campo&nbsp;Velho, L. (2011). Ajuste razonable: un nuevo concepto desde la
+							&oacute;ptica de una gram&aacute;tica constitucional
+							inclusiva.&nbsp;<em>Revista&nbsp;</em><em>Internacional de Derechos
+								Humanos</em>,&nbsp;<em>8</em>(14), 89-15.&nbsp;<a
+								href="https://www.corteidh.or.cr/tablas/r27675.pdf">https://www.corteidh.or.cr/tablas/r27675.pdf</a>
+						</p>
+						<p class="fuente">Eslava, I. (2021, noviembre).&nbsp;<em>Accesibilidad, derechos humanos y
+								personas con discapacidad.&nbsp;</em>PERSEO. Programa Universitario de&nbsp;Derechos
+							Humanos. Universidad Nacional Aut&oacute;noma de M&eacute;xico. <a
+								href="http://www.pudh.unam.mx/perseo/accesibilidad-derechos-humanos-y-personas-con-discapacidad/">http://www.pudh.unam.mx/perseo/accesibilidad-derechos-</a><a
+								href="http://www.pudh.unam.mx/perseo/accesibilidad-derechos-humanos-y-personas-con-discapacidad/">humanos-y-personas-con-discapacidad/</a>
+						</p>
+						<p class="fuente">Fundaci&oacute;n Adecco (2022).&nbsp;<em>&iquest;Qu&eacute; es la
+								accesibilidad universal?&nbsp;</em>Fundaci&oacute;n Adecco.&nbsp;<a
+								href="https://www.youtube.com/watch?v=L2zilQjbTa0">https://www.youtube.com/watch?v=L2zilQjbTa0</a>
+						</p>
+						<p class="fuente">Fundaci&oacute;n Bensadoun Laurent (2019)<em>. Ajustes Razonables para el
+								Empleo.</em>&nbsp;[Video]. YouTube.&nbsp;<a
+								href="https://www.youtube.com/watch?v=wRsnzjEAND0">https://www.youtube.com/watch?v=wRsnzjEAND0</a>
+						</p>
+						<p class="fuente">Fundaci&oacute;n ONCE para la cooperaci&oacute;n e inclusi&oacute;n social de
+							personas con discapacidad. (2011).&nbsp;<em>Accesibilidad universal y
+								dise&ntilde;o&nbsp;</em><em>para todos. Arquitectura y
+								Urbanismo.&nbsp;</em>Fundaci&oacute;n Arquitectura COAM.&nbsp;<a
+								href="http://www.upv.es/contenidos/CAMUNISO/info/U0578035.pdf">www.upv.es/contenidos/CAMUNISO/info/U0578035.pdf</a>
+						</p>
+						<p class="fuente">Fundaci&oacute;n&nbsp;UNAM.&nbsp;(2017).&nbsp;<em>UNAM impulsa la
+								accesibilidad tecnol&oacute;gica</em>.&nbsp;UNAM&nbsp;<a
+								href="https://www.fundacionunam.org.mx/unam-al-dia/unam-impulsa-la-accesibilidad-tecnologica/">https://www.fundacionunam.org.mx/unam-al-</a><a
+								href="https://www.fundacionunam.org.mx/unam-al-dia/unam-impulsa-la-accesibilidad-tecnologica/">dia/unam-impulsa-la-accesibilidad-tecnologica/</a>
+						</p>
+						<p class="fuente">Garc&iacute;a-Oramas, M. J. (2019) Universidad
+							Veracruzana.&nbsp;<em>Lineamientos para la inclusi&oacute;n de estudiantes con
+								discapacidad.&nbsp;</em>Corpus Universitario.&nbsp;<a
+								href="https://www.uv.mx/idiomas/files/2023/01/Univeridad-Inclusiva.pdf">https://www.uv.mx/idiomas/files/2023/01/Univeridad-Inclusiva.pdf</a>
+						</p>
+						<p class="fuente">Gobierno de la Ciudad de M&eacute;xico (2017). <em>Accesibilidad</em>.
+							Gob.mx.&nbsp;<a href="https://www.gob.mx/accesibilidad">https://www.gob.mx/accesibilidad</a>
+						</p>
+						<p class="fuente">Gobierno de la Ciudad de M&eacute;xico (2016).&nbsp;<em>Manual de normas
+								t&eacute;cnicas de accesibilidad.&nbsp;</em>Gob.mx.&nbsp;<a
+								href="http://www.data.seduvi.cdmx.gob.mx/portal/images/banners/banner_derecho/documentos/Manual_Normas_Tecnicas_Accesibilidad_2016.pdf">http://www.data.seduvi.cdmx.gob.mx/portal/images/banners/banner_derecho/documentos/Manual_Normas_Tecnicas_Accesibil</a><a
+								href="http://www.data.seduvi.cdmx.gob.mx/portal/images/banners/banner_derecho/documentos/Manual_Normas_Tecnicas_Accesibilidad_2016.pdf">idad_2016.pdf</a>
+						</p>
+						<p class="fuente">Guenaga, M. L., Barbier, A. &amp;&nbsp;Egu&iacute;luz, A. (2017). La
+							accesibilidad y las tecnolog&iacute;as en la informaci&oacute;n y la
+							comunicaci&oacute;n.&nbsp;<em>TRANS:&nbsp;</em><em>Revista
+								De&nbsp;</em><em>Traductolog&iacute;a</em>, (11), 155-169.&nbsp;<a
+								href="https://www.revistas.uma.es/index.php/trans/article/view/3104/2867">https://www.revistas.uma.es/index.php/trans/article/view/3104/2867</a>
+						</p>
+						<p class="fuente">Hassan Y. &amp; Mart&iacute;n F. (2003). Qu&eacute; es la
+							Usabilidad.&nbsp;<em>NSU. No s&oacute;lo usabilidad: revistas sobre personas, dise&ntilde;o
+								y tecnolog&iacute;a.&nbsp;</em><a
+								href="https://www.nosolousabilidad.com/articulos/accesibilidad.htm?iframe=true&amp;width=90%23henry2002">https://www.nosolousabilidad.com/articulos/accesibilidad.htm?iframe=true&amp;width=90#henry2002</a>
+						</p>
+						<p class="fuente">Instituto Nacional contra la Discriminaci&oacute;n la Xenofobia y el Racismo
+							(2014).&nbsp;<em>Accesibilidad e inclusi&oacute;n de personas
+								con&nbsp;</em><em>discapacidad.&nbsp;</em>Gu&iacute;a tem&aacute;tica. INADI.&nbsp;<a
+								href="https://www.argentina.gob.ar/sites/default/files/accesibilidad_e_inclusion_de_personas_con_discapacidad.pdf">https://www.argentina.gob.ar/sites/default/files/accesibilidad_e_inclusion_de_personas_con_discapacidad.pdf</a>
+						</p>
+						<p class="fuente">Incl&uacute;yeme (s. f.).&nbsp;<em>Ley de Accesibilidad para personas con
+								discapacidad en M&eacute;xico.&nbsp;</em>Incluyeme.com.&nbsp;<a
+								href="https://www.incluyeme.com/ley-de-accesibilidad-para-personas-con-discapacidad-en-mexico/%23:~:text=En%20M%C3%A9xico%20ya%20se%20comenz%C3%B3,cualquier%20lugar%20sin%20ning%C3%BAn%20impedimento">https://www.incluyeme.com/ley-de-accesibilidad-</a><a
+								href="https://www.incluyeme.com/ley-de-accesibilidad-para-personas-con-discapacidad-en-mexico/%23:~:text=En%20M%C3%A9xico%20ya%20se%20comenz%C3%B3,cualquier%20lugar%20sin%20ning%C3%BAn%20impedimento">para-personas-con-discapacidad-en-</a><a
+								href="https://www.incluyeme.com/ley-de-accesibilidad-para-personas-con-discapacidad-en-mexico/%23:~:text=En%20M%C3%A9xico%20ya%20se%20comenz%C3%B3,cualquier%20lugar%20sin%20ning%C3%BAn%20impedimento">mexico/#:~:text=En%20M%C3%A9xico%20ya%20se%20comenz%C3%B3,cualquier%20lugar%20sin%20ning%C3%BAn%20impedimento</a>
+						</p>
+						<p class="fuente">Ministerio de Trabajo y Promoci&oacute;n de empleo. Per&uacute;
+							(2022).&nbsp;<em>&iquest;Qu&eacute; son los ajustes razonables?&nbsp;</em><a
+								href="https://discapacidad.trabajo.gob.pe/ajustes-razonables/que-son-los-ajustes-razonables/">https://discapacidad.trabajo.gob.pe/ajustes-</a><a
+								href="https://discapacidad.trabajo.gob.pe/ajustes-razonables/que-son-los-ajustes-razonables/">razonables/que-son-los-ajustes-razonables/</a>
+						</p>
+						<p class="fuente">Plan de accesibilidad (2018). Instituto del Instituto Tecnol&oacute;gico
+							Superior de Esc&aacute;rcega Campeche, M&eacute;xico.&nbsp;<a
+								href="https://escarcega.tecnm.mx/proteccion-accesibilidad/ACCESIBILIDAD/Plan%20de%20Accesibilidad%20ITSE%202019.pdf">https://escarcega.tecnm.mx/proteccion-</a><a
+								href="https://escarcega.tecnm.mx/proteccion-accesibilidad/ACCESIBILIDAD/Plan%20de%20Accesibilidad%20ITSE%202019.pdf">accesibilidad/ACCESIBILIDAD/Plan%20de%20Accesibilidad%20ITSE%202019&nbsp;</a>
+						</p>
+						<p class="fuente">P&eacute;rez, A. (2015).&nbsp;<em>M&eacute;xico, un pa&iacute;s inaccesible
+								para las personas con discapacidad.&nbsp;</em>Animal Pol&iacute;tico.&nbsp;<a
+								href="https://e-archivo.uc3m.es/bitstream/handle/10016/19288/accesibilidad_asis_PTD_2013.pdf"><strong>https://e-</strong></a><a
+								href="https://e-archivo.uc3m.es/bitstream/handle/10016/19288/accesibilidad_asis_PTD_2013.pdf"><strong>archivo.uc3m.es/bitstream/handle/10016/19288/accesibilidad_asis_PTD_2013.pdf</strong></a>
+						</p>
+						<p class="fuente">Schulze, M. (s. f.).&nbsp;<em>Entendiendo la Convenci&oacute;n de la ONU de
+								los Derechos de las Personas con Discapacidad/Understanding the UN Convention
+								on&nbsp;</em><em>the Rights of Persons with Disabilities</em>. Handicap International.
+						</p>
+						<p class="fuente">Serrano, E., Moratilla, A., &amp; Olmeda, I. (2009). Directrices
+							t&eacute;cnicas referidas a la accesibilidad web.&nbsp;<em>Anales de
+								documentaci&oacute;n</em>,&nbsp;<em>12</em>, 255-280.&nbsp;<a
+								href="https://revistas.um.es/analesdoc/article/view/70361/67831">https://revistas.um.es/analesdoc/article/view/70361/67831</a>
+						</p>
+						<p class="fuente">Universidad Polit&eacute;cnica Salesiana Ecuador (s. f.). Tecnolog&iacute;a de
+							informaci&oacute;n y Comunicaci&oacute;n Asociadas a Discapacidad.&nbsp;<a
+								href="https://ticad.blog.ups.edu.ec/adecuaciones-curriculares">https://ticad.blog.ups.edu.ec/adecuaciones-curriculares</a>
+						</p>
+						<p class="fuente">W3C. Web&nbsp;Accesibility/Initiative WAI (s. f.).&nbsp;<em>Accessibility,
+								usability, and inclusi&oacute;n. </em><a
+								href="https://www.w3.org/WAI/fundamentals/accessibility-usability-inclusion/">https://www.w3.org/WAI/fundamentals/accessibility-usability-</a><a
+								href="https://www.w3.org/WAI/fundamentals/accessibility-usability-inclusion/">inclusion/</a>
+						</p>
+						<p class="fuente">Diario Oficial de la Federaci&oacute;n (2016).&nbsp;<em>Acuerdo mediante el
+								cual el Plan del Instituto Federal de Telecomunicaciones aprueba y emite
+								los&nbsp;</em><em>Lineamientos generales de accesibilidad a servicios de
+								telecomunicaciones para los usuarios con discapacidad.&nbsp;</em>Dof.gob.mx.<a
+								href="https://www.dof.gob.mx/nota_detalle.php?codigo=5466859&amp;fecha=23/12/2016%23gsc.tab=0">https://www.dof.gob.mx/nota_detalle.php?codigo=5466859&amp;fecha=23/12/2016#gsc.tab=0</a>
+						</p>
+						<p class="fuente">Universidad Piloto de Colombia. (s. f.)&nbsp;<em>&iquest;Qu&eacute; es la
+								accesibilidad?&nbsp;</em>Universidad Piloto de Colombia. <a
+								href="https://www.unipiloto.edu.co/que-es-la-accesibilidad/%23:~:text=Partiendo%20de%20la%20definici%C3%B3n,%20es,con%20capacidades%20motrices%20o%20sensoriales">https://www.unipiloto.edu.co/que-es-la-</a><a
+								href="https://www.unipiloto.edu.co/que-es-la-accesibilidad/%23:~:text=Partiendo%20de%20la%20definici%C3%B3n,%20es,con%20capacidades%20motrices%20o%20sensoriales">accesibilidad/#:~:text=Partiendo%20de%20la%20definici%C3%B3n%2C%20es,con%20capacidades%20motrices%20o%20sensoriales</a>
+						</p>
+
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+						tabindex="0">
+
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col-2"></div>
+
+		</div>
+
+		<br>
+		<br>
+
+	</div>
+	<!---------------------- Contenido ---------------------->
+	<br>
+
+	<!---------------------- Disclaimer ---------------------->
+	<div class="container-fluid">
+		<div class="row fondoAzul">
+			<div class="col-2"></div>
+			<div class="col">
+				<br>
+				<div class="accordion accordion-flush" id="acordeonDisclaimer">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezadoDisclaimer">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#contenidoDisclaimer" aria-expanded="false"
+								aria-controls="flush-collapseOne" id="boton-disclaimer">
+								<em>Descargo de responsabilidad</em>
+							</button>
+						</h2>
+						<div id="contenidoDisclaimer" class="accordion-collapse collapse"
+							aria-labelledby="encabezadoDisclaimer" data-bs-parent="#acordeonDisclaimer">
+							<div class="accordion-body">
+								<p class="disclaimer"><sup>1</sup> Elaboración de la Célula de Desarrollo de
+									Experiencias Educativas de la Dirección General de
+									Desarrollo e Innovación Educativa (DGDAIE).</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<!---------------------- /Disclaimer ---------------------->
+	<!---------------------- Pie de página ---------------------->
+	<div class="container">
+		<div class="row">
+			<div class="col centrado">
+				<img src="imagenes/logo-uv.png" class="img-fluid" alt="imagenLogoUv" id="logoUV">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+		</div>
+	</div>
+	<div id="pieFijo">
+		<span id="cintilloScroll">© 2022 Universidad Veracruzana. Todos los derechos reservados.</span>
+	</div>
+	<!---------------------- /Pie de página ---------------------->
+
+
+
+	<!-------------------------------------------- Modales ---------------------->
+	<!--Ventanas Modales-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalEvidencias" tabindex="-1" aria-labelledby="evidencias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 id="encabezadoUV" style="text-align: right; background-color: #0D47A1; color: white;">Universidad
+						Veracruzana</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body" id="cuerpoModal">
+					<div class="container-fluid">
+						<input type="hidden" id="numeroEvidencias" value="0">
+
+						<input type="hidden" id="evidenciaActual" value="1">
+						<div class="row">
+							<div class='col'>
+								<div class='evidencia' id='evidencia1' style='display: block;'></div>
+							</div>
+							<p><strong>Actividad 2. Ideologías, dimensiones y accesibilidad.</strong></p>
+							<p><strong>Descripci&oacute;n: </strong></p>
+							<ol>
+								<li>Retoma los siguientes documentos.&nbsp;
+								<ol style="list-style-type: lower-alpha;">
+								<li>Ideolog&iacute;as&nbsp;sobre inclusi&oacute;n&nbsp;de&nbsp;Fundaci&oacute;n Adeco (2022).&nbsp;<em>&iquest;Qu&eacute; es la accesibilidad&nbsp;</em><em>universal?</em><a href="https://www.youtube.com/watch?v=L2zilQjbTa0">https://www.youtube.com/watch?v=L2zilQjbTa0</a></li>
+								<li>Dimensiones&nbsp;citadas en documento&nbsp;INDEX.</li>
+								<li>Arias, C. (2021).&nbsp;<em>Ajustes razonables: C&oacute;mo hacer m&aacute;s&nbsp;inclusivo&nbsp;el lugar de trabajo.&nbsp;</em>Fundaci&oacute;n de inclusi&oacute;n&nbsp;laboral. <a href="https://fundacioncontrabajo.cl/blog/guias-para-la-empresa/ajustes-razonables/">https://fundacioncontrabajo.cl/blog/guias-para-la-empresa/ajustes-razonables/</a></li>
+								<li>Fundaci&oacute;n ONCE (2011).&nbsp;<em>Accesibilidad universal y dise&ntilde;o para todos. Arquitectura y Urbanismo.&nbsp;</em>Fundaci&oacute;n Arquitectura&nbsp;COAM.&nbsp;<a href="http://www.upv.es/contenidos/CAMUNISO/info/U0578035.pdf">www.upv.es/contenidos/CAMUNISO/info/U0578035.pdf</a></li>
+								</ol>
+								</li>
+								<li>Una vez analizados los documentos,&nbsp;elaborara una lista en la que se reflejen los elementos m&aacute;s importantes sobre las&nbsp;ideolog&iacute;as,dimensiones, ajustes razonables y accesibilidad.&nbsp;</li>
+								<li>Con ayuda de esta lista, realiza un mapa mental que contenga de manera organizada y adecuada la&nbsp;informaci&oacute;n&nbsp;que anteriormente fuerevisada, teniendo en cuenta&nbsp;los criterios solicitados.&nbsp;</li>
+								</ol>
+							
+							
+							
+							<p><strong>Criterios de evaluaci&oacute;n:</strong></p>
+							<p><a target="_blank" href="#">Haga clic aquí para descargar la rúbrica.</a></p>
+							<p><strong>Lineamiento de entrega:</strong></p>
+							<ol>
+								<li>Fuente Arial a 12 puntos.&nbsp;</li>
+								<li>Titule el archivo bajo la siguiente nomenclatura: Actx_PrimerApellidoyPrimerNombre. Por ejemplo:&nbsp;Act2_VillanuevaTeresa&nbsp;</li>
+								<li>Suba su evidencia, en formato PDF, al apartado&nbsp;<strong><em>Actividad 2</em></strong>&nbsp;en la plataforma EMINUS 4, a m&aacute;s tardar en la fecha establecida en&nbsp;el&nbsp;<strong>Calendario</strong>&nbsp;de entregas.</li>
+								</ol>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="Grupo1Mod1" tabindex="-1" aria-labelledby="Grupo1Mod1Label" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="Grupo1Mod1Label">
+						Actitudinales
+					</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<ul>
+						<li><span>Apat&iacute;a.</span></li>
+						<li><span>Rechazo.</span></li>
+						<li><span>Desinter&eacute;s.</span></li>
+						<li><span>Discriminaci&oacute;n.</span></li>
+						<li><span>Exclusi&oacute;n.</span></li>
+						<li><span>Sobreprotecci&oacute;n.</span></li>
+						<li><span>Acoso.</span></li>
+						<li><span>Falta de comunicaci&oacute;n entre actores.</span></li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="Grupo1Mod2" tabindex="-1" aria-labelledby="Grupo1Mod2Label" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="Grupo1Mod2Label">
+						Ideológicas
+					</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<ul>
+						<li><span>Desconocimiento.</span></li>
+						<li><span>Ignorancia.</span></li>
+						<li><span>Etiquetaci&oacute;n.</span></li>
+						<li><span>Bajas expectativas.</span></li>
+						<li><span>No reconocer lo que s&iacute; se puede hacer.</span></li>
+						<li><span>Paradigmas err&oacute;neos ante la diversidad.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+						</li>
+						<li><span>Prejuicios.</span></li>
+						<li><span>Bajo significado y sentido de la educaci&oacute;n.&nbsp;</span></li>
+						<li><span>Estereotipos ante la diversidad.</span></li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="Grupo1Mod3" tabindex="-1" aria-labelledby="Grupo1Mod3Label" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="Grupo1Mod3Label">
+						Políticas
+					</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<ul>
+						<li><span>Falta de normativas que regulen la inclusi&oacute;n educativa.</span></li>
+						<li><span>Incumplimiento de la normatividad existente.</span></li>
+						<li><span>Contradicci&oacute;n entre las normativas/ambig&uuml;edad.</span></li>
+						<li><span>Creaci&oacute;n de espacios paralelos de atenci&oacute;n.</span></li>
+						<li><span>Ausencia de un proyecto educativo con visi&oacute;n inclusiva.</span></li>
+						<li><span>Rigidez en la administraci&oacute;n educativa.</span></li>
+						<li><span>Organizaci&oacute;n escolar y los procesos de gesti&oacute;n.</span></li>
+						<li><span>Divisi&oacute;n del trabajo entre la escuela regular y los especialistas.</span></li>
+						<li><span>Ausencia de mecanismos de preparaci&oacute;n
+								y&nbsp;</span><span>reprofesionalizaci&oacute;n</span><span>&nbsp;docente.</span></li>
+						<li><span>Insuficiente acompa&ntilde;amiento t&eacute;cnico y acad&eacute;mico a
+								docentes.</span></li>
+						<li><span>Asignaci&oacute;n inequitativa de recursos.</span></li>
+						<li><span>Falta de pol&iacute;ticas compensatorias.</span></li>
+						<li><span>Desvinculaci&oacute;n de niveles de educaci&oacute;n para la continuidad de la
+								atenci&oacute;n.</span></li>
+						<li><span>Insuficientes programas de becas de apoyo.</span></li>
+						<li><span>Desvinculaci&oacute;n con el mundo empresarial para el empleo.</span></li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="Grupo1Mod4" tabindex="-1" aria-labelledby="Grupo1Mod4Label" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="Grupo1Mod4Label">
+						De accesibilidad
+					</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<ul>
+						<li><span>Infraestructura inadecuada: mobiliario, rampas,
+								ba&ntilde;os,&nbsp;</span><span>adecuaciones, elevadores, se&ntilde;alamientos,
+								etc&eacute;tera.</span></li>
+						<li><span>Transporte o acceso al centro insuficiente.</span></li>
+						<li><span>Falta de apoyos, recursos y materiales espec&iacute;ficos&nbsp;</span><span>para la
+								participaci&oacute;n y/o el aprendizaje.</span></li>
+						<li><span>Organizaci&oacute;n espacio temporal del aula.</span></li>
+						<li><span>Ausencia de recursos tecnol&oacute;gicos.</span></li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="Grupo1Mod5" tabindex="-1" aria-labelledby="Grupo1Mod5Label" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="Grupo1Mod5Label">
+						De didáctica
+					</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<ul>
+						<li><span>Falta de metodolog&iacute;a did&aacute;ctica diversificada.</span></li>
+						<li><span>Ausencia de una ense&ntilde;anza flexible.</span></li>
+						<li><span>Curr&iacute;culo no diversificado.</span></li>
+						<li><span>Desconocimiento del qu&eacute;, para qu&eacute;, c&oacute;mo y
+								cu&aacute;ndo&nbsp;</span><span>ense&ntilde;ar y/o evaluar.</span></li>
+						<li><span>No existe trabajo colaborativo entre iguales (docentes&nbsp;</span><span>y
+								alumnos).</span></li>
+						<li><span>Hay desvinculaci&oacute;n con especialistas o tutores.</span></li>
+						<li><span>Hay desvinculaci&oacute;n con padres y madres de familia.</span></li>
+						<li><span>Separaci&oacute;n del alumnado en aulas especiales.</span></li>
+						<li><span>Priorizaci&oacute;n del trabajo individualizado en lugar
+								del&nbsp;</span><span>colaborativo/adecuaciones curriculares.</span></li>
+						<li><span>Rigidez en las evaluaciones del aprendizaje.</span></li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--/Ventanas Modales-->
+	<!-------------------------------------------- Modales ---------------------->
+
+	<!-------------------------------------------- Script ---------------------->
+	<script src="js/scriptFase.js"></script>
+	<!-------------------------------------------- /Script ---------------------->
+</body>
+
+</html>
